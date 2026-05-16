@@ -1,0 +1,127 @@
+{
+  "updatedAt": "2026-05",
+  "totalAssets": "非公開",
+  "holdingPolicy": [
+    "長期・分散・積立を基本方針とする（長期＝5年以上）",
+    "国内株はセクター分散（商社・銀行・保険・金融・不動産・AI）を意識した個別株選定",
+    "S&P500はeMAXIS Slim S&P500で毎月積立",
+    "米国株は個別株で厳選保有",
+    "金は証券会社の純金積立、仮想通貨は少量のヘッジポジション",
+    "現金は待機資金・生活防衛資金として一定割合を確保"
+  ],
+  "assets": [
+    { "name": "日本株", "category": "jp-stock", "allocation": 57, "note": "商社・銀行・保険・金融・不動産・AI（個別株）" },
+    { "name": "S&P500", "category": "us-stock", "allocation": 24, "note": "eMAXIS Slim S&P500（月次積立）" },
+    { "name": "米国株", "category": "us-stock-2", "allocation": 9, "note": "個別株" },
+    { "name": "仮想通貨", "category": "crypto", "allocation": 5, "note": "BTC・DeFi" },
+    { "name": "金", "category": "gold", "allocation": 3, "note": "純金積立" },
+    { "name": "現金", "category": "cash", "allocation": 2, "note": "待機資金・生活防衛資金" }
+  ],
+  "holdings": [
+    {
+      "group": "商社",
+      "region": "JP",
+      "items": [
+        { "name": "三菱商事", "ticker": "8058", "note": "総合商社・多角化ポートフォリオ" },
+        { "name": "伊藤忠商事", "ticker": "8001", "note": "非資源・消費関連に強み" },
+        { "name": "三井物産", "ticker": "8031", "note": "資源権益・インフラ" },
+        { "name": "住友商事", "ticker": "8053", "note": "権益・事業ハブ" },
+        { "name": "丸紅", "ticker": "8002", "note": "電力・穀物・インフラ" },
+        { "name": "兼松", "ticker": "8020", "note": "ICT・食料・素材" }
+      ]
+    },
+    {
+      "group": "銀行",
+      "region": "JP",
+      "items": [
+        { "name": "三菱UFJ FG", "ticker": "8306", "note": "信託報酬・金利上昇メリット" },
+        { "name": "三井住友 FG", "ticker": "8316", "note": "信託報酬・金利上昇メリット" }
+      ]
+    },
+    {
+      "group": "保険",
+      "region": "JP",
+      "items": [
+        { "name": "東京海上HD", "ticker": "8766", "note": "海上・火災・自動車保険" }
+      ]
+    },
+    {
+      "group": "金融",
+      "region": "JP",
+      "items": [
+        { "name": "SBIホールディングス", "ticker": "8473", "note": "証券・銀行・Fintech" },
+        { "name": "オリックス", "ticker": "8591", "note": "リース・金融・不動産多角化" },
+        { "name": "三菱HCキャピタル", "ticker": "8593", "note": "リース・インフラファイナンス" },
+        { "name": "みずほリース", "ticker": "8425", "note": "リース・ファイナンス" }
+      ]
+    },
+    {
+      "group": "不動産",
+      "region": "JP",
+      "items": [
+        { "name": "三井不動産", "ticker": "8801", "note": "総合不動産・商業・物流" }
+      ]
+    },
+    {
+      "group": "AI / Cloud",
+      "region": "US",
+      "items": [
+        { "name": "Microsoft", "ticker": "MSFT", "note": "Azure + OpenAI投資" },
+        { "name": "Alphabet", "ticker": "GOOGL", "note": "GCP + Gemini + 広告" },
+        { "name": "Amazon", "ticker": "AMZN", "note": "AWS + EC + Prime" },
+        { "name": "Cloudflare", "ticker": "NET", "note": "エッジネットワーク・Zero Trust" }
+      ]
+    },
+    {
+      "group": "Hardware / AI Infra",
+      "region": "US",
+      "items": [
+        { "name": "Apple", "ticker": "AAPL", "note": "デバイス × AI統合（Apple Intelligence）" },
+        { "name": "ソフトバンクHD", "ticker": "9984", "note": "ARM + OpenAI フライホイール" }
+      ]
+    },
+    {
+      "group": "Defense / Data",
+      "region": "US",
+      "items": [
+        { "name": "Palantir", "ticker": "PLTR", "note": "政府・軍事向けAIデータ分析" }
+      ]
+    },
+    {
+      "group": "Fintech / Crypto Infra",
+      "region": "US",
+      "items": [
+        { "name": "Circle Internet", "ticker": "CRCL", "note": "USDC発行・ステーブルコインインフラ" }
+      ]
+    },
+    {
+      "group": "仮想通貨",
+      "region": "Crypto",
+      "items": [
+        { "name": "Bitcoin", "ticker": "BTC", "note": "デジタルゴールド・長期保有" },
+        { "name": "JLP", "ticker": "JLP", "note": "Jupiter流動性プール" },
+        { "name": "OKB", "ticker": "OKB", "note": "OKXエコシステムトークン" },
+        { "name": "JUP", "ticker": "JUP", "note": "JupiterガバナンストークN" },
+        { "name": "EDGE", "ticker": "EDGE", "note": "EdgeX" },
+        { "name": "GRVT", "ticker": "GRVT", "note": "upcoming — ZK Perp DEX" }
+      ]
+    },
+    {
+      "group": "Stable運用",
+      "region": "DeFi",
+      "items": [
+        { "name": "JUICED", "ticker": "JUICED", "note": "ステーブルコインイールド" }
+      ]
+    }
+  ],
+  "monthlyNotes": [
+    {
+      "month": "2026-05",
+      "note": "日本株が堅調推移。円安基調の継続でTOPIXが高値圏。S&P500も底堅く推移しており、全体としてポートフォリオは安定。リバランス不要と判断。"
+    },
+    {
+      "month": "2026-04",
+      "note": "日銀の政策変更を受けて円高に振れたため、米国株の円換算評価額が一時的に低下。国内株比率が高いため影響は軽微。長期目線では変動なし。"
+    }
+  ]
+}
