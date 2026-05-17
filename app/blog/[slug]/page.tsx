@@ -3,6 +3,7 @@ import { getAllPostSlugs, getPostBySlug, getRelatedPosts, extractHeadings } from
 import TableOfContents from '@/components/blog/TableOfContents'
 import ArticleCard from '@/components/blog/ArticleCard'
 import Tag from '@/components/ui/Tag'
+import AdUnit from '@/components/ads/AdUnit'
 import type { Metadata } from 'next'
 
 interface Props {
@@ -89,6 +90,13 @@ export default async function ArticlePage({ params }: Props) {
             </div>
 
             <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
+
+            {/* Ad unit between article and related posts */}
+            <AdUnit
+              slot="5151883773"
+              format="auto"
+              className="my-10"
+            />
 
             {related.length > 0 && (
               <section className="mt-16 pt-10 border-t" style={{ borderColor: 'var(--border)' }}>
