@@ -19,7 +19,7 @@ export default function HomePage() {
             GAIZEN FINANCE
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6 leading-tight" style={{ color: 'var(--foreground)' }}>
-            Invest grow breathe.
+            Invest. Grow. Breathe.
           </h1>
           <p className="text-base sm:text-lg leading-relaxed mb-10" style={{ color: 'var(--muted)' }}>
             Focused on long-term, diversified growth —<br className="hidden sm:block" />
@@ -122,8 +122,9 @@ export default function HomePage() {
         <p className="text-3xl font-bold tracking-widest mb-4" style={{ color: 'var(--foreground)' }}>
           Invest. Grow. Breathe.
         </p>
-        <p className="text-base" style={{ color: 'var(--foreground)' }}>
-          資産形成で、ゆとりを。
+        <p className="text-base" style={{ color: 'var(--muted)' }}>
+          Focused on long-term, diversified growth —<br />
+          bridging traditional markets and crypto.
         </p>
       </section>
     </div>
