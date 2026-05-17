@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import AdUnit from '@/components/ads/AdUnit'
 
 function Row({ label, value, type = 'neutral' }: { label: string; value: string; type?: 'income' | 'expense' | 'neutral' }) {
   const color = type === 'income' ? '#10b981' : type === 'expense' ? '#ef4444' : 'var(--foreground)'
@@ -182,6 +183,7 @@ export default function ToolsPage() {
           </p>
         </div>
       </div>
+      <AdUnit slot="5151883773" format="auto" className="mt-10" />
     </div>
   )
 }

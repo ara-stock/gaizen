@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useMemo } from 'react'
 import Link from 'next/link'
+import AdUnit from '@/components/ads/AdUnit'
 
 type AssetKey = 'jp_stock' | 'us_stock' | 'reit' | 'crypto' | 'cash'
 
@@ -217,6 +218,7 @@ export default function AllocationSimulator() {
           </div>
         </div>
       </div>
+      <AdUnit slot="5151883773" format="auto" className="mt-10" />
     </div>
   )
 }
