@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
+import AdUnit from '@/components/ads/AdUnit'
 
 function Input({ label, value, onChange, unit, step = '1', min = '0' }: {
   label: string; value: string; onChange: (v: string) => void
@@ -242,6 +243,7 @@ export default function FireSimulator() {
           </p>
         </div>
       </div>
+      <AdUnit slot="5151883773" format="auto" className="mt-10" />
     </div>
   )
 }
