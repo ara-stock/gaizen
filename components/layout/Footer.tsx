@@ -1,6 +1,46 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Footer() {
+  const pathname = usePathname()
+  const isEn = pathname.startsWith('/en')
+  const p = isEn ? '/en' : ''
+
+  const contentLinks: [string, string][] = [
+    ['Blog', `${p}/blog`],
+    ['Portfolio', `${p}/portfolio`],
+    ['Thesis', `${p}/thesis`],
+    ['About', `${p}/about`],
+  ]
+
+  const toolLinks: [string, string][] = isEn
+    ? [
+        ['Allocation Simulator', `${p}/tools/allocation`],
+        ['FIRE Simulator', `${p}/tools/fire`],
+        ['Sharpe Ratio', `${p}/tools/sharpe`],
+        ['Real Estate Yield', `${p}/tools/realestate`],
+        ['Referral', `${p}/referral`],
+      ]
+    : [
+        ['ポートフォリオ配分', '/tools/allocation'],
+        ['FIREシミュレーター', '/tools/fire'],
+        ['シャープレシオ', '/tools/sharpe'],
+        ['不動産利回り', '/tools/realestate'],
+        ['Referral', '/referral'],
+      ]
+
+  const legalLinks: [string, string][] = [
+    ['Disclaimer', `${p}/disclaimer`],
+    ['Privacy Policy', `${p}/privacy`],
+    ['Contact', `${p}/contact`],
+  ]
+
+  const disclaimer = isEn
+    ? 'Content on this site is not investment advice. Invest at your own risk.'
+    : '本サイトの情報は投資助言ではありません。投資は自己責任で。'
+
   return (
     <footer className="border-t mt-24" style={{ borderColor: 'var(--border)' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
@@ -11,8 +51,7 @@ export default function Footer() {
               <span style={{ color: 'var(--accent)' }}> FINANCE</span>
             </p>
             <p className="text-xs leading-relaxed mb-4" style={{ color: 'var(--muted)' }}>
-              Invest grow breathe.<br />
-              資産形成で、ゆとりを。
+              Invest grow breathe.
             </p>
             <div className="flex flex-col gap-2">
               <a
@@ -44,12 +83,7 @@ export default function Footer() {
           <div>
             <p className="text-xs tracking-wider font-semibold mb-4" style={{ color: 'var(--muted)' }}>CONTENT</p>
             <div className="flex flex-col gap-2">
-              {[
-                ['Blog', '/blog'],
-                ['Portfolio', '/portfolio'],
-                ['Thesis', '/thesis'],
-                ['About', '/about'],
-              ].map(([label, href]) => (
+              {contentLinks.map(([label, href]) => (
                 <Link key={href} href={href} className="text-xs" style={{ color: 'var(--muted)' }}>{label}</Link>
               ))}
             </div>
@@ -57,13 +91,7 @@ export default function Footer() {
           <div>
             <p className="text-xs tracking-wider font-semibold mb-4" style={{ color: 'var(--muted)' }}>TOOLS</p>
             <div className="flex flex-col gap-2">
-              {[
-                ['ポートフォリオ配分', '/tools/allocation'],
-                ['FIREシミュレーター', '/tools/fire'],
-                ['シャープレシオ', '/tools/sharpe'],
-                ['不動産利回り', '/tools/realestate'],
-                ['Referral', '/referral'],
-              ].map(([label, href]) => (
+              {toolLinks.map(([label, href]) => (
                 <Link key={href} href={href} className="text-xs" style={{ color: 'var(--muted)' }}>{label}</Link>
               ))}
             </div>
@@ -71,11 +99,7 @@ export default function Footer() {
           <div>
             <p className="text-xs tracking-wider font-semibold mb-4" style={{ color: 'var(--muted)' }}>LEGAL</p>
             <div className="flex flex-col gap-2">
-              {[
-                ['Disclaimer', '/disclaimer'],
-                ['Privacy Policy', '/privacy'],
-                ['Contact', '/contact'],
-              ].map(([label, href]) => (
+              {legalLinks.map(([label, href]) => (
                 <Link key={href} href={href} className="text-xs" style={{ color: 'var(--muted)' }}>{label}</Link>
               ))}
             </div>
@@ -86,7 +110,7 @@ export default function Footer() {
             © {new Date().getFullYear()} GAIZEN FINANCE. All rights reserved.
           </p>
           <p className="text-xs" style={{ color: 'var(--muted)' }}>
-            本サイトの情報は投資助言ではありません。投資は自己責任で。
+            {disclaimer}
           </p>
         </div>
       </div>
