@@ -4,6 +4,7 @@ import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import LanguageDetector from '@/components/layout/LanguageDetector'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             strategy="afterInteractive"
           />
         )}
+        <LanguageDetector />
         <Header />
         <main className="flex-1">
           {children}

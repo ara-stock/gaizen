@@ -5,13 +5,13 @@ import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import LanguageSwitcher from './LanguageSwitcher'
 
-const NAV_LINKS = [
-  { href: '/blog', label: 'Blog' },
-  { href: '/portfolio', label: 'Portfolio' },
-  { href: '/tools', label: 'Tools' },
-  { href: '/referral', label: 'Referral' },
-  { href: '/thesis', label: 'Thesis' },
-  { href: '/about', label: 'About' },
+const NAV_PATHS = [
+  { path: '/blog',      label: 'Blog' },
+  { path: '/portfolio', label: 'Portfolio' },
+  { path: '/tools',     label: 'Tools' },
+  { path: '/referral',  label: 'Referral' },
+  { path: '/thesis',    label: 'Thesis' },
+  { path: '/about',     label: 'About' },
 ]
 
 function ThemeToggle() {
@@ -67,11 +67,15 @@ function ThemeToggle() {
 export default function Header() {
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
+  const isEnglish = pathname.startsWith('/en')
+  const prefix = isEnglish ? '/en' : ''
+  const NAV_LINKS = NAV_PATHS.map(({ path, label }) => ({ href: `${prefix}${path}`, label }))
+  const homeHref = isEnglish ? '/en' : '/'
 
   return (
     <header className="sticky top-0 z-50 border-b" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--header-bg)', backdropFilter: 'blur(12px)' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-1 tracking-widest text-sm font-bold flex-shrink-0">
+        <Link href={homeHref} className="flex items-center gap-1 tracking-widest text-sm font-bold flex-shrink-0">
           <span style={{ color: 'var(--foreground)' }}>GAIZEN</span>
           <span style={{ color: 'var(--accent)' }}> FINANCE</span>
         </Link>
