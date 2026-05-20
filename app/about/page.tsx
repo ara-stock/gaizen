@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About',
-  description: '長期・分散・積立を軸にした投資方針。バフェット流の「理解できるものへの投資」と事業の継続性・拡張性を重視した個別株選定の考え方。',
+  description: '「蓋然性の高い投資」を目指す長期×積立投資サイト。GAIZEN（蓋然）の語源、投資モットー「投資し、育て、心にゆとりを持つ」、コア投資原則を紹介します。',
 }
 
 const principles = [
@@ -118,9 +118,26 @@ const REGION_COLOR: Record<string, string> = {
 export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
+      {/* GAIZEN Philosophy */}
+      <div className="mb-16">
+        <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>GAIZEN</p>
+        <h1 className="text-3xl font-bold mb-6" style={{ color: 'var(--foreground)' }}>投資し、育て、心にゆとりを持つ。</h1>
+        <div className="space-y-4 text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
+          <p>
+            「GAIZEN」は<strong style={{ color: 'var(--foreground)' }}>蓋然（がいぜん）</strong>に由来します。蓋然とは、ある事柄が起こる確からしさ——確率や可能性の高さを表す言葉です。
+          </p>
+          <p>
+            相場を予測しようとするのではなく、<strong style={{ color: 'var(--foreground)' }}>蓋然性の高い選択</strong>を粛々と積み重ねていく。それがここでの一貫したテーマです。
+          </p>
+          <p>
+            インデックスへの<strong style={{ color: 'var(--foreground)' }}>長期×積立投資</strong>をコアに据え、個別銘柄は長期で保有しながら必要に応じて追加投資を行うスタイルです。
+          </p>
+        </div>
+      </div>
+
       <div className="mb-14">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>ABOUT</p>
-        <h1 className="text-3xl font-bold mb-4" style={{ color: 'var(--foreground)' }}>投資方針</h1>
+        <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--foreground)' }}>投資方針</h2>
         <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
           長期・分散・積立を軸に、「理解できるものへの投資」と「事業の継続性・拡張性」を重視した個別株選定を組み合わせています。
         </p>
