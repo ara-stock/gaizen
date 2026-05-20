@@ -22,8 +22,8 @@ export default function HomePage() {
             Invest. Grow. Breathe.
           </h1>
           <p className="text-base sm:text-lg leading-relaxed mb-10" style={{ color: 'var(--muted)' }}>
-            Focused on long-term, diversified growth —<br className="hidden sm:block" />
-            bridging traditional markets and crypto.
+            蓋然（がいぜん）——確からしさを積み重ねる投資。<br className="hidden sm:block" />
+            相場を予測するのではなく、蓋然性の高い選択を続けること。
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="/portfolio"
@@ -123,8 +123,8 @@ export default function HomePage() {
           Invest. Grow. Breathe.
         </p>
         <p className="text-base" style={{ color: 'var(--muted)' }}>
-          Focused on long-term, diversified growth —<br />
-          bridging traditional markets and crypto.
+          蓋然（がいぜん）——確からしさを積み重ねる投資。<br />
+          相場を予測するのではなく、蓋然性の高い選択を続けること。
         </p>
       </section>
     </div>
