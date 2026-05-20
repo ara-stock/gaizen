@@ -9,7 +9,16 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeStringify from 'rehype-stringify'
 import type { Post, PostMeta } from '@/types/post'
 
-const CONTENT_DIR = path.join(process.cwd(), 'content/blog')
+export type Locale = 'ja' | 'en'
+
+const CONTENT_DIRS: Record<Locale, string> = {
+  ja: path.join(process.cwd(), 'content/blog'),
+  en: path.join(process.cwd(), 'content/en/blog'),
+}
+
+function getContentDir(locale: Locale): string {
+  return CONTENT_DIRS[locale]
+}
 
 function calcReadingTime(text: string): number {
   const words = text.replace(/<[^>]*>/g, '').length
@@ -20,22 +29,23 @@ function getExcerpt(content: string, length = 120): string {
   return content.replace(/^#+\s.+$/gm, '').replace(/[#*`>\[\]]/g, '').trim().slice(0, length) + '...'
 }
 
-export function getAllPostSlugs(): string[] {
-  if (!fs.existsSync(CONTENT_DIR)) return []
-  return fs.readdirSync(CONTENT_DIR)
+export function getAllPostSlugs(locale: Locale = 'ja'): string[] {
+  const dir = getContentDir(locale)
+  if (!fs.existsSync(dir)) return []
+  return fs.readdirSync(dir)
     .filter(f => f.endsWith('.md'))
     .map(f => f.replace(/\.md$/, ''))
 }
 
-export function getAllPosts(): PostMeta[] {
-  return getAllPostSlugs()
-    .map(slug => getPostMeta(slug))
+export function getAllPosts(locale: Locale = 'ja'): PostMeta[] {
+  return getAllPostSlugs(locale)
+    .map(slug => getPostMeta(slug, locale))
     .filter((p): p is PostMeta => p !== null && p.frontmatter.published)
     .sort((a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime())
 }
 
-export function getPostMeta(slug: string): PostMeta | null {
-  const filePath = path.join(CONTENT_DIR, `${slug}.md`)
+export function getPostMeta(slug: string, locale: Locale = 'ja'): PostMeta | null {
+  const filePath = path.join(getContentDir(locale), `${slug}.md`)
   if (!fs.existsSync(filePath)) return null
   const raw = fs.readFileSync(filePath, 'utf-8')
   const { data, content } = matter(raw)
@@ -47,8 +57,8 @@ export function getPostMeta(slug: string): PostMeta | null {
   }
 }
 
-export async function getPostBySlug(slug: string): Promise<Post | null> {
-  const filePath = path.join(CONTENT_DIR, `${slug}.md`)
+export async function getPostBySlug(slug: string, locale: Locale = 'ja'): Promise<Post | null> {
+  const filePath = path.join(getContentDir(locale), `${slug}.md`)
   if (!fs.existsSync(filePath)) return null
   const raw = fs.readFileSync(filePath, 'utf-8')
   const { data, content } = matter(raw)
@@ -70,21 +80,21 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
   }
 }
 
-export function getPostsByTag(tag: string): PostMeta[] {
-  return getAllPosts().filter(p => p.frontmatter.tags.includes(tag))
+export function getPostsByTag(tag: string, locale: Locale = 'ja'): PostMeta[] {
+  return getAllPosts(locale).filter(p => p.frontmatter.tags.includes(tag))
 }
 
-export function getPostsByCategory(category: string): PostMeta[] {
-  return getAllPosts().filter(p => p.frontmatter.category === category)
+export function getPostsByCategory(category: string, locale: Locale = 'ja'): PostMeta[] {
+  return getAllPosts(locale).filter(p => p.frontmatter.category === category)
 }
 
-export function getAllTags(): string[] {
-  const tags = getAllPosts().flatMap(p => p.frontmatter.tags)
+export function getAllTags(locale: Locale = 'ja'): string[] {
+  const tags = getAllPosts(locale).flatMap(p => p.frontmatter.tags)
   return [...new Set(tags)].sort()
 }
 
-export function getRelatedPosts(slug: string, tags: string[], limit = 3): PostMeta[] {
-  return getAllPosts()
+export function getRelatedPosts(slug: string, tags: string[], locale: Locale = 'ja', limit = 3): PostMeta[] {
+  return getAllPosts(locale)
     .filter(p => p.slug !== slug && p.frontmatter.tags.some(t => tags.includes(t)))
     .slice(0, limit)
 }
