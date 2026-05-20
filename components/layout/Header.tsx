@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const NAV_LINKS = [
   { href: '/blog', label: 'Blog' },
@@ -89,7 +90,8 @@ export default function Header() {
           })}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          <LanguageSwitcher />
           <ThemeToggle />
           {/* Mobile menu button */}
           <button
@@ -111,6 +113,9 @@ export default function Header() {
               {label}
             </Link>
           ))}
+          <div className="pt-2 border-t" style={{ borderColor: 'var(--border)' }}>
+            <LanguageSwitcher />
+          </div>
         </div>
       )}
     </header>
