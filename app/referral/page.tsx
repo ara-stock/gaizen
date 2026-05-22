@@ -33,6 +33,18 @@ const referrals: ReferralGroup[] = [
     ],
   },
   {
+    category: 'CEX',
+    label: '中央集権型取引所',
+    items: [
+      {
+        name: 'Binance Japan',
+        description: '世界最大手の仮想通貨取引所の日本法人。円建て取引・豊富な銘柄・低手数料が特徴。紹介コードで手数料割引あり。',
+        tags: ['CEX', 'Japan', '円建て'],
+        href: 'https://s.binance.com/CIASvlL5?ref=GRO_55250_T606B',
+      },
+    ],
+  },
+  {
     category: 'DEX',
     label: '分散型取引所',
     items: [
