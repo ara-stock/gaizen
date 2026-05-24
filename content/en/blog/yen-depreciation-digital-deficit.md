@@ -13,6 +13,8 @@ featured: false
 
 When discussing the yen, most people point to the US-Japan interest rate differential. Rate differentials certainly drive short-to-medium-term currency moves. But I believe there is a **more structural cause** of yen weakness: the digital deficit.
 
+![Japan's Digital Deficit — Structural Weakness Behind Yen Depreciation](/images/japan_degital_deficit.png)
+
 ## What Is the Digital Deficit?
 
 Think about the digital services you use every day in Japan.

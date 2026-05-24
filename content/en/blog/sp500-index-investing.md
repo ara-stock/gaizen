@@ -15,6 +15,8 @@ Index investing aims to match the performance of a specific benchmark index rath
 
 Both the All-Country (global equities index) and S&P500 are valid choices for long-term accumulation. I've built around S&P500, but for those who prefer geographic diversification, All-Country is equally rational.
 
+![Why I Build Around S&P500 Index Accumulation](/images/sp500_index_investing.png)
+
 ## The S&P500 Index
 
 The S&P500 covers approximately 500 companies listed on major US exchanges. It's not simply the 500 largest — only companies meeting **strict criteria for market cap, liquidity, and profitability** are included. The current count is around 503 stocks.
