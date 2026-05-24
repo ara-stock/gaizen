@@ -29,11 +29,13 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: SITE_NAME }],
   },
   twitter: {
     card: 'summary_large_image',
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
+    images: [`${SITE_URL}/og-image.png`],
   },
   robots: {
     index: true,
@@ -42,6 +44,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: SITE_URL,
+    languages: { 'ja': SITE_URL, 'en': `${SITE_URL}/en` },
     types: { 'application/rss+xml': `${SITE_URL}/feed.xml` },
   },
 }
@@ -52,6 +55,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       {/* Prevent flash: apply saved theme before paint */}
       <head>
         <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.classList.add('dark');}else if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.classList.add('dark');}}catch(e){}})()` }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: SITE_NAME,
+          url: SITE_URL,
+          description: SITE_DESCRIPTION,
+          inLanguage: ['ja', 'en'],
+          potentialAction: { '@type': 'SearchAction', target: `${SITE_URL}/blog?q={search_term_string}`, 'query-input': 'required name=search_term_string' },
+        }) }} />
       </head>
       <body className="min-h-full flex flex-col" style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)' }}>
         {process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID &&
