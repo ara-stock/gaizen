@@ -1,8 +1,45 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
 import { getAllPosts } from '@/lib/posts'
 import { getPortfolioData } from '@/lib/portfolio'
 import ArticleCard from '@/components/blog/ArticleCard'
-import { CATEGORY_LABELS, CATEGORY_COLORS } from '@/components/portfolio/AllocationChart'
+import { CATEGORY_COLORS } from '@/components/portfolio/AllocationChart'
+
+export const metadata: Metadata = {
+  title: 'GAIZEN FINANCE — 蓋然性の高い長期投資',
+  description: '長期・分散・蓋然性——確からしさを積み重ねる投資メディア。ポートフォリオ公開、投資ツール、インデックス・個別株・BTC・不動産の考え方を発信。',
+  alternates: {
+    canonical: 'https://gaizen.xyz',
+    languages: { 'en': 'https://gaizen.xyz/en' },
+  },
+}
+
+const EXPLORE_LINKS = [
+  {
+    href: '/thesis',
+    label: 'Investment Thesis',
+    desc: '投資方針・考え方',
+    icon: '📐',
+  },
+  {
+    href: '/tools',
+    label: 'Tools',
+    desc: 'FIRE・配分・利回り計算',
+    icon: '🔧',
+  },
+  {
+    href: '/referral',
+    label: 'Referral',
+    desc: 'おすすめ証券・サービス',
+    icon: '🔗',
+  },
+  {
+    href: '/about',
+    label: 'About',
+    desc: 'このサイトについて',
+    icon: '👤',
+  },
+]
 
 export default function HomePage() {
   const allPosts = getAllPosts()
@@ -116,6 +153,27 @@ export default function HomePage() {
           </div>
         </section>
       )}
+
+      {/* Explore */}
+      <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>
+        <div className="mb-8">
+          <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>EXPLORE</p>
+          <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>サイトを探索する</h2>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {EXPLORE_LINKS.map(({ href, label, desc, icon }) => (
+            <Link key={href} href={href}
+              className="group p-5 rounded-xl border flex flex-col gap-3 transition-colors hover:border-green-800"
+              style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+              <span className="text-2xl">{icon}</span>
+              <div>
+                <p className="text-sm font-semibold mb-0.5 group-hover:text-white transition-colors" style={{ color: 'var(--foreground)' }}>{label}</p>
+                <p className="text-xs" style={{ color: 'var(--muted)' }}>{desc}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
 
       {/* Brand closing */}
       <section className="py-24 text-center">
