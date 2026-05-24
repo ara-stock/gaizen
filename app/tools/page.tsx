@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const tools = [
   {
+    href: '/tools/x-copy',
+    category: 'Utility',
+    title: '𝕏 コピーツール',
+    description: 'クリックするだけで 𝕏（Xの数学記号文字）をクリップボードにコピーします。',
+    tags: ['クリップボード', '文字コピー'],
+  },
+  {
     href: '/tools/allocation',
     category: 'Portfolio',
     title: 'ポートフォリオ配分シミュレーター',
