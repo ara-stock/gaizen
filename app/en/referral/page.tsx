@@ -60,8 +60,8 @@ const referrals: ReferralGroup[] = [
       },
       {
         name: 'Nado',
-        description: 'On-chain social trading platform with copy trading functionality.',
-        tags: ['Social', 'Copy Trade'],
+        description: 'On-chain social trading platform. Watching for a potential $INK token airdrop.',
+        tags: ['Social', '$INK Airdrop'],
         href: 'https://app.nado.xyz?join=bseutrt',
       },
     ],
