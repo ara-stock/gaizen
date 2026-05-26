@@ -63,13 +63,20 @@ export async function getPostBySlug(slug: string, locale: Locale = 'ja'): Promis
   const raw = fs.readFileSync(filePath, 'utf-8')
   const { data, content } = matter(raw)
 
+  // Convert :::comment ... ::: blocks to author bubble HTML
+  const processedContent = content.replace(
+    /:::comment\n([\s\S]*?)\n:::/g,
+    (_, text) =>
+      `<div class="author-comment"><img src="/images/avatar.jpg" alt="あら。" /><div class="author-comment-bubble">${text.trim()}</div></div>`
+  )
+
   const processed = await remark()
     .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeSlug)
     .use(rehypeAutolinkHeadings, { behavior: 'wrap' })
     .use(rehypeStringify, { allowDangerousHtml: true })
-    .process(content)
+    .process(processedContent)
 
   return {
     slug,

@@ -110,7 +110,7 @@ export default async function ArticlePage({ params }: Props) {
                 />
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <p className="text-sm font-semibold" style={{ color: 'var(--foreground)' }}>あら / ara</p>
+                    <p className="text-sm font-semibold" style={{ color: 'var(--foreground)' }}>あら。/ ara</p>
                     <span className="text-xs" style={{ color: 'var(--accent)' }}>@ara_stock</span>
                   </div>
                   <p className="text-xs leading-relaxed" style={{ color: 'var(--muted)' }}>
