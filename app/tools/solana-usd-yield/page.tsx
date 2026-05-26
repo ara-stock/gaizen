@@ -3,6 +3,7 @@ import YieldTable, { type YieldToken } from './YieldTable'
 import { fetchJupiterTokens } from './sources/jupiter'
 import { fetchKaminoTokens } from './sources/kamino'
 import { fetchLoopscaleTokens } from './sources/loopscale'
+import AdUnit from '@/components/ads/AdUnit'
 
 export const revalidate = 3600 // 1 hour
 
@@ -101,6 +102,7 @@ export default async function SolanaUsdYieldPage() {
           <YieldTable tokens={tokens} minBorrowRate={minBorrowRate} />
         </div>
       )}
+      <AdUnit slot="5151883773" format="auto" className="mt-10" />
     </div>
   )
 }
