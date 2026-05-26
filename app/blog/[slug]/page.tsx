@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: frontmatter.title,
     description: frontmatter.description,
     keywords: frontmatter.tags,
+    alternates: {
+      canonical: `https://gaizen.xyz/blog/${slug}`,
+    },
     openGraph: {
       title: frontmatter.title,
       description: frontmatter.description,
@@ -107,11 +110,11 @@ export default async function ArticlePage({ params }: Props) {
                 />
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <p className="text-sm font-semibold" style={{ color: 'var(--foreground)' }}>ara</p>
+                    <p className="text-sm font-semibold" style={{ color: 'var(--foreground)' }}>あら / ara</p>
                     <span className="text-xs" style={{ color: 'var(--accent)' }}>@ara_stock</span>
                   </div>
                   <p className="text-xs leading-relaxed" style={{ color: 'var(--muted)' }}>
-                    会社員として働きながら長期・分散投資を実践。インデックス積立をコアに、商社・銀行・AI・Fintechの個別株と仮想通貨を組み合わせたポートフォリオを運用中。
+                    兼業投資家。インデックス積立をコアに、商社・銀行・AI・Fintechの個別株と仮想通貨とゴールドを組み合わせて運用中。
                   </p>
                 </div>
               </Link>

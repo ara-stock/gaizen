@@ -4,6 +4,7 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'About',
   description: '「蓋然性の高い投資」を目指す長期×積立投資サイト。GAIZEN（蓋然）の語源、投資モットー「投資し、育て、心にゆとりを持つ」、コア投資原則を紹介します。',
+  alternates: { canonical: 'https://gaizen.xyz/about' },
 }
 
 const principles = [
@@ -135,7 +136,7 @@ export default function AboutPage() {
           </div>
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-3 mb-2 flex-wrap">
-              <p className="text-base font-bold" style={{ color: 'var(--foreground)' }}>ara</p>
+              <p className="text-base font-bold" style={{ color: 'var(--foreground)' }}>あら / ara</p>
               <a
                 href="https://x.com/ara_stock"
                 target="_blank"
@@ -150,8 +151,7 @@ export default function AboutPage() {
               </a>
             </div>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-              会社員として働きながら、長期・分散投資を実践しています。インデックス積立をコアに、商社・銀行・AI・Fintech分野の個別株と仮想通貨を組み合わせたポートフォリオを運用中。
-              「蓋然性の高い選択を積み重ねる」投資スタイルをX（@ara_stock）でも発信しています。
+              兼業投資家です。現在の事業を分析し、将来の成長を想定した長期投資を実践しています。インデックス積立をコアに、商社・銀行・AI・Fintech分野の個別株と仮想通貨とゴールドを組み合わせて運用中。「蓋然性の高い選択を」積み重ねています。
             </p>
           </div>
         </div>
