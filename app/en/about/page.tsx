@@ -154,9 +154,7 @@ export default function EnAboutPage() {
               </a>
             </div>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-              A full-time professional who practices long-term, diversified investing on the side.
-              Running a portfolio anchored in index accumulation, combined with individual stocks in trading companies, banks, AI, and fintech — plus a crypto allocation.
-              Also shares thoughts on investing via X (@ara_stock).
+              A side investor who analyzes current businesses and invests long-term based on projected growth. Portfolio anchored in index accumulation, combined with individual stocks in trading companies, banks, AI, and fintech — plus crypto and gold. Steadily building up high-probability choices, one at a time.
             </p>
           </div>
         </div>

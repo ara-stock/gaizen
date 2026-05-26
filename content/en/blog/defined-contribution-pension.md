@@ -3,7 +3,7 @@ title: "Is the Defined Contribution Pension (DC / iDeCo) Really Worth It? — Wh
 date: "2026-05-22"
 updatedAt: "2026-05-22"
 description: "iDeCo is not 'tax savings' — it's 'tax deferral.' The lock-in until age 60, the fees, the taxation at withdrawal — here are the facts early retirement seekers should understand before rushing into a Defined Contribution pension."
-tags: ["iDeCo", "定額拠出年金", "企業型DC", "節税", "早期退職", "FIRE", "老後資金"]
+tags: ["iDeCo", "defined-contribution-pension", "corporate-DC", "tax-deferral", "early-retirement", "FIRE", "retirement-funds"]
 category: "jp-stock"
 published: true
 featured: false

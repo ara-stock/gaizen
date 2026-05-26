@@ -1,4 +1,4 @@
-import { getAllPosts, getAllTags } from '@/lib/posts'
+import { getAllPosts, getTopTags } from '@/lib/posts'
 import ArticleCard from '@/components/blog/ArticleCard'
 import Tag from '@/components/ui/Tag'
 import type { Metadata } from 'next'
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function EnBlogPage() {
   const posts = getAllPosts('en')
-  const tags = getAllTags('en')
+  const tags = getTopTags('en', 10)
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">

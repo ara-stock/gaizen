@@ -93,6 +93,17 @@ export function getAllTags(locale: Locale = 'ja'): string[] {
   return [...new Set(tags)].sort()
 }
 
+export function getTopTags(locale: Locale = 'ja', limit = 10): string[] {
+  const counts = new Map<string, number>()
+  getAllPosts(locale).flatMap(p => p.frontmatter.tags).forEach(t => {
+    counts.set(t, (counts.get(t) ?? 0) + 1)
+  })
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, limit)
+    .map(([tag]) => tag)
+}
+
 export function getRelatedPosts(slug: string, tags: string[], locale: Locale = 'ja', limit = 3): PostMeta[] {
   return getAllPosts(locale)
     .filter(p => p.slug !== slug && p.frontmatter.tags.some(t => tags.includes(t)))

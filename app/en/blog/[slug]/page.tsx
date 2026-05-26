@@ -116,7 +116,7 @@ export default async function EnArticlePage({ params }: Props) {
                     <span className="text-xs" style={{ color: 'var(--accent)' }}>@ara_stock</span>
                   </div>
                   <p className="text-xs leading-relaxed" style={{ color: 'var(--muted)' }}>
-                    Full-time professional investing long-term on the side. Portfolio anchored in index accumulation with individual stocks across trading companies, banks, AI, and fintech.
+                    Side investor. Portfolio anchored in index accumulation with individual stocks across trading companies, banks, AI, and fintech — plus crypto and gold.
                   </p>
                 </div>
               </Link>

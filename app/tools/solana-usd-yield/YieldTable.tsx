@@ -14,7 +14,7 @@ export type YieldToken = {
   maxMultiplyAPY: number | null
   multiplyProtocols: string[] | null
   minBorrowRate: number
-  source: 'jupiter' | 'kamino' | 'defillama'
+  source: 'jupiter' | 'kamino' | 'loopscale'
 }
 
 type SortKey = 'apy' | 'tvlUsd' | 'maxMultiplyAPY'
@@ -71,7 +71,10 @@ export default function YieldTable({ tokens, minBorrowRate }: { tokens: YieldTok
                 <span className="block font-normal" style={{ fontSize: '9px', opacity: 0.6 }}>75% LTV 理論値</span>
               </th>
               <th className="text-left py-2 pr-4 font-mono font-normal whitespace-nowrap">Multiplyプロダクト</th>
-              <th className="text-right py-2 font-mono font-normal whitespace-nowrap">流通規模 (TVL)</th>
+              <th className="text-right py-2 font-mono font-normal whitespace-nowrap">
+                トークン流通規模
+                <span className="block font-normal" style={{ fontSize: '9px', opacity: 0.6 }}>プロトコル預入額ベース</span>
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -150,10 +153,10 @@ export default function YieldTable({ tokens, minBorrowRate }: { tokens: YieldTok
 
       <div className="mt-4 space-y-1">
         <p className="text-xs" style={{ color: 'var(--muted)' }}>
-          ※ Max Multiply APY は理論値。計算式: (APY − 借入レート {minBorrowRate.toFixed(1)}%) ÷ (1 − 75% LTV)。実際のAPYはKamino・Loopscale等のプロトコルにより異なります。
+          ※ Max Multiply APY は理論値。計算式: (APY − 75% × 借入レート {minBorrowRate.toFixed(1)}%) ÷ (1 − 75% LTV)。実際のAPYはKamino・Loopscale等のプロトコルにより異なります。
         </p>
         <p className="text-xs" style={{ color: 'var(--muted)' }}>
-          データソース: <a href="https://jup.ag" target="_blank" rel="noopener noreferrer" className="hover:underline">Jupiter</a> / <a href="https://kamino.finance" target="_blank" rel="noopener noreferrer" className="hover:underline">Kamino</a> / <a href="https://defillama.com" target="_blank" rel="noopener noreferrer" className="hover:underline">DeFiLlama</a> / 1時間ごとに更新
+          データソース: <a href="https://jup.ag" target="_blank" rel="noopener noreferrer" className="hover:underline">Jupiter</a> / <a href="https://kamino.finance" target="_blank" rel="noopener noreferrer" className="hover:underline">Kamino</a> / 1時間ごとに更新
         </p>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { getAllPosts, getAllTags } from '@/lib/posts'
+import { getAllPosts, getTopTags } from '@/lib/posts'
 import ArticleCard from '@/components/blog/ArticleCard'
 import Tag from '@/components/ui/Tag'
 import type { Metadata } from 'next'
@@ -6,11 +6,15 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Blog',
   description: '長期投資・仮想通貨・不動産・マクロ経済に関する投資記録と考察。',
+  alternates: {
+    canonical: 'https://gaizen.xyz/blog',
+    languages: { 'en': 'https://gaizen.xyz/en/blog' },
+  },
 }
 
 export default function BlogPage() {
   const posts = getAllPosts()
-  const tags = getAllTags()
+  const tags = getTopTags('ja', 10)
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
