@@ -4,6 +4,8 @@ import TableOfContents from '@/components/blog/TableOfContents'
 import ArticleCard from '@/components/blog/ArticleCard'
 import Tag from '@/components/ui/Tag'
 import AdUnit from '@/components/ads/AdUnit'
+import Image from 'next/image'
+import Link from 'next/link'
 import type { Metadata } from 'next'
 
 interface Props {
@@ -95,6 +97,30 @@ export default async function EnArticlePage({ params }: Props) {
             </div>
 
             <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
+
+            {/* Author bio */}
+            <div className="mt-12 pt-8 border-t" style={{ borderColor: 'var(--border)' }}>
+              <Link href="/en/about" className="flex items-start gap-4 p-4 rounded-xl border transition-colors hover:border-green-800 group"
+                style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+                <Image
+                  src="/images/profile.jpg"
+                  alt="ara"
+                  width={48}
+                  height={48}
+                  className="rounded-full object-cover flex-shrink-0"
+                  style={{ border: '1px solid var(--border)' }}
+                />
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 mb-1">
+                    <p className="text-sm font-semibold" style={{ color: 'var(--foreground)' }}>ara</p>
+                    <span className="text-xs" style={{ color: 'var(--accent)' }}>@ara_stock</span>
+                  </div>
+                  <p className="text-xs leading-relaxed" style={{ color: 'var(--muted)' }}>
+                    Full-time professional investing long-term on the side. Portfolio anchored in index accumulation with individual stocks across trading companies, banks, AI, and fintech.
+                  </p>
+                </div>
+              </Link>
+            </div>
 
             <AdUnit slot="5151883773" format="auto" className="my-10" />
 
