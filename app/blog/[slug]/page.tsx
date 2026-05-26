@@ -4,6 +4,8 @@ import TableOfContents from '@/components/blog/TableOfContents'
 import ArticleCard from '@/components/blog/ArticleCard'
 import Tag from '@/components/ui/Tag'
 import AdUnit from '@/components/ads/AdUnit'
+import Image from 'next/image'
+import Link from 'next/link'
 import type { Metadata } from 'next'
 
 interface Props {
@@ -90,6 +92,30 @@ export default async function ArticlePage({ params }: Props) {
             </div>
 
             <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
+
+            {/* Author bio */}
+            <div className="mt-12 pt-8 border-t" style={{ borderColor: 'var(--border)' }}>
+              <Link href="/about" className="flex items-start gap-4 p-4 rounded-xl border transition-colors hover:border-green-800 group"
+                style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+                <Image
+                  src="/images/profile.jpg"
+                  alt="ara"
+                  width={48}
+                  height={48}
+                  className="rounded-full object-cover flex-shrink-0"
+                  style={{ border: '1px solid var(--border)' }}
+                />
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 mb-1">
+                    <p className="text-sm font-semibold" style={{ color: 'var(--foreground)' }}>ara</p>
+                    <span className="text-xs" style={{ color: 'var(--accent)' }}>@ara_stock</span>
+                  </div>
+                  <p className="text-xs leading-relaxed" style={{ color: 'var(--muted)' }}>
+                    会社員として働きながら長期・分散投資を実践。インデックス積立をコアに、商社・銀行・AI・Fintechの個別株と仮想通貨を組み合わせたポートフォリオを運用中。
+                  </p>
+                </div>
+              </Link>
+            </div>
 
             {/* Ad unit between article and related posts */}
             <AdUnit

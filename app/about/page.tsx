@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -118,6 +119,55 @@ const REGION_COLOR: Record<string, string> = {
 export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
+
+      {/* Author Profile */}
+      <div className="mb-16 p-6 rounded-2xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+        <div className="flex items-start gap-5">
+          <div className="flex-shrink-0">
+            <Image
+              src="/images/profile.jpg"
+              alt="ara / GAIZEN FINANCE 運営者"
+              width={72}
+              height={72}
+              className="rounded-full object-cover"
+              style={{ border: '2px solid var(--border)' }}
+            />
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-3 mb-2 flex-wrap">
+              <p className="text-base font-bold" style={{ color: 'var(--foreground)' }}>ara</p>
+              <a
+                href="https://x.com/ara_stock"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded"
+                style={{ backgroundColor: 'rgba(0,201,122,0.1)', color: 'var(--accent)', border: '1px solid rgba(0,201,122,0.2)' }}
+              >
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.912-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+                @ara_stock
+              </a>
+            </div>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
+              会社員として働きながら、長期・分散投資を実践しています。インデックス積立をコアに、商社・銀行・AI・Fintech分野の個別株と仮想通貨を組み合わせたポートフォリオを運用中。
+              「蓋然性の高い選択を積み重ねる」投資スタイルをX（@ara_stock）でも発信しています。
+            </p>
+          </div>
+        </div>
+        {/* Speech bubble style note */}
+        <div className="mt-4 ml-[88px] relative">
+          <div className="absolute -top-2 left-4 w-0 h-0"
+            style={{ borderLeft: '6px solid transparent', borderRight: '6px solid transparent', borderBottom: '8px solid var(--border)' }} />
+          <div className="absolute -top-1.5 left-4 w-0 h-0"
+            style={{ borderLeft: '6px solid transparent', borderRight: '6px solid transparent', borderBottom: '8px solid var(--surface)' }} />
+          <div className="p-3 rounded-lg text-xs leading-relaxed italic"
+            style={{ backgroundColor: 'var(--surface)', border: '1px solid var(--border)', color: 'var(--muted)' }}>
+            相場を予測するのではなく、蓋然性の高い選択を続けること。——それだけをずっとやっています。
+          </div>
+        </div>
+      </div>
+
       {/* GAIZEN Philosophy */}
       <div className="mb-16">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>GAIZEN</p>
