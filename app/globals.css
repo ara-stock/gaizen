@@ -115,3 +115,50 @@ body {
 .prose td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
 .prose hr { border: none; border-top: 1px solid var(--border); margin: 2.5em 0; }
 .prose img { border-radius: 8px; border: 1px solid var(--border); }
+
+/* Author comment bubble */
+.prose .author-comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 2em 0;
+}
+.prose .author-comment img {
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px;
+  border-radius: 50% !important;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--border) !important;
+}
+.prose .author-comment-bubble {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0 12px 12px 12px;
+  padding: 10px 14px;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--prose-body);
+  font-style: normal;
+}
+/* left-pointing triangle (border = outline, surface = fill) */
+.prose .author-comment-bubble::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -9px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 9px solid var(--border);
+}
+.prose .author-comment-bubble::after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: -7px;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 8px solid var(--surface);
+}

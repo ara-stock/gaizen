@@ -136,7 +136,7 @@ export default function AboutPage() {
           </div>
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-3 mb-2 flex-wrap">
-              <p className="text-base font-bold" style={{ color: 'var(--foreground)' }}>あら / ara</p>
+              <p className="text-base font-bold" style={{ color: 'var(--foreground)' }}>あら。/ ara</p>
               <a
                 href="https://x.com/ara_stock"
                 target="_blank"
