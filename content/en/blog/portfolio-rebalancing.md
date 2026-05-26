@@ -81,9 +81,9 @@ In a taxable account, the practical approach is to rebalance infrequently and on
 
 Selling within a NISA (Japan's tax-free investment account) does not trigger capital gains tax, which makes it look like an ideal venue for rebalancing — but there is an important catch.
 
-**When you sell from a NISA account, that allowance does not come back (the capacity only refreshes the following year).**
+**When you sell from a NISA account, the annual investment limit for the current year does not increase. However, the used lifetime allowance is restored from the following year, allowing you to reinvest that amount in future years.**
 
-The lifetime tax-free allowance is capped at ¥1.8 million. Using up allowance you have built up just to rebalance permanently reduces the tax-free benefit for that portion of your money.
+The annual contribution caps remain fixed at ¥1.2M (tsumitate) + ¥2.4M (growth) = ¥3.6M per year regardless of sales. This means you cannot immediately reinvest in the same year — you must wait until the following year when the lifetime allowance recovers.
 
 > NISA works best when treated as an account designed for holding indefinitely, not for trading.
 
@@ -116,7 +116,7 @@ As your total assets grow and buying alone can no longer close the gap, partial 
 - Rebalancing is not always necessary; it **only makes sense when you hold multiple asset classes**
 - If you hold a single fund like S&P 500 or an all-country index, rebalancing is unnecessary because the index handles it internally
 - Selling in a taxable account triggers a **~20% tax cost**. Limit sell-based rebalancing to cases of large drift
-- Selling from a NISA account means that allowance does not recover. **The best use of NISA is to hold without selling**
+- Selling from a NISA account does not increase the current year's annual limit, but the lifetime allowance recovers from the following year. **The best use of NISA is to hold without frequent selling**
 
 The most important factor in long-term investing is staying in the market. Rather than treating rebalancing as a chore to be done frequently, focusing on keeping costs down and continuing to contribute consistently will do more for your total returns over time.
 

@@ -27,7 +27,7 @@ A Defined Contribution pension (DC) is a retirement savings scheme where you mak
 |---|---|---|
 | Who can join | Employees whose company has adopted the scheme | In principle, National Pension enrollees aged 20–65 |
 | Who contributes | Primarily the company (personal contributions also possible) | The individual |
-| Monthly contribution limit (for company employees) | In principle ¥55,000 (if no other corporate pension) | ¥20,000 (limit varies when combined with Corporate DC) |
+| Monthly contribution limit (for company employees) | In principle ¥55,000 (if no other corporate pension) | ¥23,000 (if no Corporate DC or defined-benefit pension) / ¥20,000 when combined with Corporate DC |
 | Investment decisions | The individual | The individual |
 | When you can withdraw | In principle, from age 60 onward | In principle, from age 60 onward |
 
