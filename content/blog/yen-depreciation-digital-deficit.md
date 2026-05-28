@@ -7,6 +7,7 @@ tags: ["円安", "為替", "日本経済", "デジタル赤字", "長期投資"]
 category: "macro"
 published: true
 featured: false
+coverImage: "/images/japan_degital_deficit.png"
 ---
 
 ## 円安は「一時的」ではないかもしれない

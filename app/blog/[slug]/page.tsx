@@ -35,11 +35,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: frontmatter.date,
       modifiedTime: frontmatter.updatedAt,
       tags: frontmatter.tags,
+      ...(frontmatter.coverImage && { images: [{ url: frontmatter.coverImage, width: 1200, height: 630 }] }),
     },
     twitter: {
       card: 'summary_large_image',
       title: frontmatter.title,
       description: frontmatter.description,
+      ...(frontmatter.coverImage && { images: [frontmatter.coverImage] }),
     },
   }
 }
@@ -63,11 +65,23 @@ export default async function ArticlePage({ params }: Props) {
     author: { '@type': 'Person', name: 'あら。', url: 'https://gaizen.xyz/about' },
     publisher: { '@type': 'Organization', name: 'GAIZEN FINANCE', url: 'https://gaizen.xyz' },
     keywords: frontmatter.tags.join(', '),
+    ...(frontmatter.coverImage && { image: `https://gaizen.xyz${frontmatter.coverImage}` }),
+  }
+
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'ホーム', item: 'https://gaizen.xyz' },
+      { '@type': 'ListItem', position: 2, name: 'ブログ', item: 'https://gaizen.xyz/blog' },
+      { '@type': 'ListItem', position: 3, name: frontmatter.title, item: `https://gaizen.xyz/blog/${slug}` },
+    ],
   }
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <div className="lg:grid lg:grid-cols-[1fr_220px] lg:gap-12">
           <article>

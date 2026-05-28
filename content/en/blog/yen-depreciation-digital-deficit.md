@@ -7,6 +7,7 @@ tags: ["yen depreciation", "forex", "Japan economy", "digital deficit", "long-te
 category: "macro"
 published: true
 featured: false
+coverImage: "/images/japan_degital_deficit.png"
 ---
 
 ## Yen Weakness May Not Be Temporary

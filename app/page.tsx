@@ -44,7 +44,7 @@ const EXPLORE_LINKS = [
 export default function HomePage() {
   const allPosts = getAllPosts()
   const latestPosts = allPosts.slice(0, 3)
-  const featuredPosts = allPosts.filter(p => p.frontmatter.featured).slice(0, 2)
+  const featuredPosts = allPosts.filter(p => p.frontmatter.featured).slice(0, 4)
   const portfolio = getPortfolioData()
 
   return (
@@ -148,7 +148,7 @@ export default function HomePage() {
             <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>FEATURED</p>
             <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>おすすめ記事</h2>
           </div>
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4">
             {featuredPosts.map(post => <ArticleCard key={post.slug} post={post} />)}
           </div>
         </section>

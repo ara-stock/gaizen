@@ -7,6 +7,7 @@ tags: ["米国株", "インデックス投資", "長期投資", "S&P500", "NISA"
 category: "us-stock"
 published: true
 featured: true
+coverImage: "/images/sp500_index_investing.png"
 ---
 
 ## インデックス投資とは

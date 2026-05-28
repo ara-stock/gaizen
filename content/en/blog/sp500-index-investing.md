@@ -7,6 +7,7 @@ tags: ["US stocks", "index investing", "long-term investing", "S&P500", "NISA"]
 category: "us-stock"
 published: true
 featured: true
+coverImage: "/images/sp500_index_investing.png"
 ---
 
 ## What Is Index Investing?
