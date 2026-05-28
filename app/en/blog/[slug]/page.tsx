@@ -110,12 +110,6 @@ export default async function EnArticlePage({ params }: Props) {
               This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.
             </div>
 
-            <AdUnit
-              slot="5151883773"
-              format="auto"
-              className="my-8"
-            />
-
             <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
 
             {/* Author bio */}
