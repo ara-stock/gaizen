@@ -5,7 +5,7 @@ updatedAt: "2026-05-28"
 description: "If you want higher returns than the S&P 500, the NASDAQ 100 is worth understanding. Here's how QQQ works, how it compares to the S&P 500, and how to think about concentration risk."
 tags: ["QQQ", "NASDAQ 100", "index investing", "US stocks", "tech stocks", "S&P500", "growth investing"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 

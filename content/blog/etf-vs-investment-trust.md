@@ -5,7 +5,7 @@ updatedAt: "2026-05-28"
 description: "ETFと投資信託は似ているようで仕組みが違います。手数料・取引方法・税金・利便性の観点から整理し、NISAでどちらを選ぶべきかを解説します。"
 tags: ["ETF", "投資信託", "NISA", "インデックス投資", "eMAXIS Slim", "VTI", "初心者"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 
