@@ -108,12 +108,6 @@ export default async function ArticlePage({ params }: Props) {
               本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。
             </div>
 
-            <AdUnit
-              slot="5151883773"
-              format="auto"
-              className="my-8"
-            />
-
             <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
 
             {/* Author bio */}
