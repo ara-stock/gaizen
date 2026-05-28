@@ -214,6 +214,42 @@ export default function EnAboutPage() {
         </div>
       </section>
 
+      {/* Case Studies */}
+      <section className="mb-16">
+        <p className="text-xs tracking-widest mb-6 font-semibold" style={{ color: 'var(--accent)' }}>CASE STUDY</p>
+        <div className="space-y-4">
+          <div className="p-6 rounded-xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'rgba(0,201,122,0.25)' }}>
+            <p className="text-xs font-semibold mb-4" style={{ color: 'var(--accent)' }}>Alphabet (Google)</p>
+            <div className="space-y-3 text-sm">
+              {[
+                { label: 'Today', text: 'Stable revenue base from advertising (Search + YouTube) and GCP cloud.' },
+                { label: 'Expand', text: 'Integrating AI (Gemini) with GCP improves node utilization. The accumulated AI infrastructure know-how itself becomes a new moat against competitors.' },
+                { label: 'Tailwind', text: 'Data center capacity constraints are driving up infrastructure costs, pushing more workloads to the cloud — which strengthens GCP\'s relative competitive position.' },
+              ].map(({ label, text }) => (
+                <div key={label} className="flex gap-3">
+                  <span className="flex-shrink-0 font-mono text-xs mt-0.5 w-16" style={{ color: 'var(--accent)' }}>{label}</span>
+                  <p className="leading-relaxed" style={{ color: 'var(--muted)' }}>{text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="p-6 rounded-xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'rgba(0,201,122,0.25)' }}>
+            <p className="text-xs font-semibold mb-4" style={{ color: 'var(--accent)' }}>SoftBank HD</p>
+            <div className="space-y-3 text-sm">
+              {[
+                { label: 'Today', text: 'ARM\'s chip designs are widely used in custom CPU/GPU development with strong affinity to AI infrastructure chips. The IP licensing model scales efficiently.' },
+                { label: 'Expand', text: 'Through its OpenAI stake, SoftBank sits at the center of the AI ecosystem. The flywheel: ARM architecture adoption → more AI inference chip demand → stronger OpenAI models → even more ARM chip demand.' },
+              ].map(({ label, text }) => (
+                <div key={label} className="flex gap-3">
+                  <span className="flex-shrink-0 font-mono text-xs mt-0.5 w-16" style={{ color: 'var(--accent)' }}>{label}</span>
+                  <p className="leading-relaxed" style={{ color: 'var(--muted)' }}>{text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Sectors */}
       <section className="mb-16">
         <p className="text-xs tracking-widest mb-6 font-semibold" style={{ color: 'var(--accent)' }}>STOCKS — Key Sectors</p>

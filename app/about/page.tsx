@@ -4,7 +4,7 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'About',
   description: '「蓋然性の高い投資」を目指す長期×積立投資サイト。GAIZEN（蓋然）の語源、投資モットー「投資し、育て、心にゆとりを持つ」、コア投資原則を紹介します。',
-  alternates: { canonical: 'https://gaizen.xyz/about' },
+  alternates: { canonical: 'https://gaizen.xyz/about', languages: { 'en': 'https://gaizen.xyz/en/about' } },
 }
 
 const principles = [
