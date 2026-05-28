@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { getAllPostSlugs, getPostBySlug, getRelatedPosts, extractHeadings } from '@/lib/posts'
 import TableOfContents from '@/components/blog/TableOfContents'
 import ArticleCard from '@/components/blog/ArticleCard'
+import ShareButton from '@/components/blog/ShareButton'
 import Tag from '@/components/ui/Tag'
 import AdUnit from '@/components/ads/AdUnit'
 import Image from 'next/image'
@@ -110,8 +111,12 @@ export default async function ArticlePage({ params }: Props) {
 
             <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
 
+            <div className="mt-10 flex justify-end">
+              <ShareButton title={frontmatter.title} url={`https://gaizen.xyz/blog/${slug}`} />
+            </div>
+
             {/* Author bio */}
-            <div className="mt-12 pt-8 border-t" style={{ borderColor: 'var(--border)' }}>
+            <div className="mt-6 pt-8 border-t" style={{ borderColor: 'var(--border)' }}>
               <Link href="/about" className="flex items-start gap-4 p-4 rounded-xl border transition-colors hover:border-green-800 group"
                 style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
                 <Image
