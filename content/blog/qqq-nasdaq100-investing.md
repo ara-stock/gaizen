@@ -5,7 +5,7 @@ updatedAt: "2026-05-28"
 description: "S&P500より高いリターンを目指すならNASDAQ100が候補になります。QQQの特徴、S&P500との違い、集中リスクと過去パフォーマンスを整理し、どう組み合わせるかを解説します。"
 tags: ["QQQ", "NASDAQ100", "インデックス投資", "米国株", "テック株", "S&P500", "成長投資"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 

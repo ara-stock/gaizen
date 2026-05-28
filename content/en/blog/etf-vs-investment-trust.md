@@ -5,7 +5,7 @@ updatedAt: "2026-05-28"
 description: "ETFs and mutual funds (investment trusts) work differently. Here's a clear comparison of fees, trading mechanics, taxes, and convenience — and which one to use in your NISA account."
 tags: ["ETF", "investment trust", "mutual fund", "NISA", "index investing", "eMAXIS Slim", "beginner"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 
