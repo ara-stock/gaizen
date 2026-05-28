@@ -6,7 +6,7 @@ description: "A real comparison of Rakuten Securities and SBI Securities from so
 tags: ["Rakuten Securities", "SBI Securities", "brokerage account", "NISA", "Japan investing", "beginner"]
 category: "us-stock"
 published: true
-featured: false
+featured: true
 ---
 
 ## Bottom Line: Start with Rakuten, Add SBI Later

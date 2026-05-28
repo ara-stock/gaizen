@@ -6,7 +6,7 @@ description: "Should you pay off your mortgage early or keep investing? The answ
 tags: ["mortgage", "prepayment", "investing", "real estate", "wealth building", "FIRE", "long-term investing"]
 category: "us-stock"
 published: true
-featured: false
+featured: true
 ---
 
 ## My Position: Borrow Long, Keep Investing
