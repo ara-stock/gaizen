@@ -28,6 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: frontmatter.tags,
     alternates: {
       canonical: `https://gaizen.xyz/blog/${slug}`,
+      languages: { 'en': `https://gaizen.xyz/en/blog/${slug}` },
     },
     openGraph: {
       title: frontmatter.title,
