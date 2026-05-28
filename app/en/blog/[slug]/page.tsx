@@ -61,7 +61,7 @@ export default async function EnArticlePage({ params }: Props) {
     description: frontmatter.description,
     datePublished: frontmatter.date,
     dateModified: frontmatter.updatedAt || frontmatter.date,
-    author: { '@type': 'Person', name: 'GAIZEN FINANCE' },
+    author: { '@type': 'Person', name: 'ara', url: 'https://gaizen.xyz/en/about' },
     publisher: { '@type': 'Organization', name: 'GAIZEN FINANCE', url: 'https://gaizen.xyz' },
     keywords: frontmatter.tags.join(', '),
     inLanguage: 'en',
@@ -95,6 +95,12 @@ export default async function EnArticlePage({ params }: Props) {
               style={{ backgroundColor: 'rgba(201,168,76,0.05)', borderColor: 'rgba(201,168,76,0.2)', color: 'var(--muted)' }}>
               This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.
             </div>
+
+            <AdUnit
+              slot="5151883773"
+              format="auto"
+              className="my-8"
+            />
 
             <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
 

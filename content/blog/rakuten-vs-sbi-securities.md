@@ -6,7 +6,7 @@ description: "楽天証券とSBI証券、どちらを選ぶべきか。両口座
 tags: ["楽天証券", "SBI証券", "証券口座", "NISA", "投資信託", "初心者"]
 category: "us-stock"
 published: true
-featured: false
+featured: true
 ---
 
 ## 結論：初心者は楽天証券から、慣れたらSBI証券も開設
@@ -102,3 +102,5 @@ IPOを積極的に狙う場合、SBI証券は外せない選択肢です。
 - 両口座の使い分けは「楽天メイン・SBIサブ」とシンプルに決めておくとブレない
 
 どちらも口座開設・維持費は無料です。まず楽天証券を開設してNISA積立を始め、余裕が出たらSBI証券もセットで使い始めるのが現実的なステップです。
+
+口座を開設したら、次のステップは積立設定です。[新NISAの使い倒し方](/blog/nisa-perfect-strategy)と[S&P500インデックス積立を軸に据える理由](/blog/sp500-index-investing)も合わせてご覧ください。
