@@ -22,12 +22,18 @@ export default function ArticleCard({ post, basePath = '/blog', locale = 'ja' }:
             src={frontmatter.coverImage}
             alt={frontmatter.title}
             fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover hover:scale-105 transition-transform duration-300"
           />
         </Link>
       )}
       <div className="p-6">
         <div className="flex items-center gap-3 mb-3">
+          {frontmatter.featured && (
+            <span className="text-xs font-semibold px-2 py-0.5 rounded" style={{ backgroundColor: 'rgba(201,168,76,0.15)', color: 'var(--accent)' }}>
+              PICK
+            </span>
+          )}
           <span className="text-xs" style={{ color: 'var(--muted)' }}>
             {new Date(frontmatter.date).toLocaleDateString(dateLocale, { year: 'numeric', month: 'long', day: 'numeric' })}
           </span>
