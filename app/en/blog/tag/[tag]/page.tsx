@@ -14,7 +14,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { tag } = await params
   const decoded = decodeURIComponent(tag)
-  return { title: `#${decoded}`, description: `Articles tagged: ${decoded}` }
+  return {
+    title: `#${decoded}`,
+    description: `Articles tagged: ${decoded}`,
+    alternates: { canonical: `https://gaizen.xyz/en/blog/tag/${tag}` },
+  }
 }
 
 export default async function EnTagPage({ params }: Props) {

@@ -14,7 +14,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { tag } = await params
   const decoded = decodeURIComponent(tag)
-  return { title: `#${decoded}`, description: `${decoded} に関する記事一覧` }
+  return {
+    title: `#${decoded}`,
+    description: `${decoded} に関する記事一覧`,
+    alternates: { canonical: `https://gaizen.xyz/blog/tag/${tag}` },
+  }
 }
 
 export default async function TagPage({ params }: Props) {
