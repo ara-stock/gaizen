@@ -7,7 +7,7 @@ tags: ["DeFi", "Solana", "Jupiter", "Crypto", "Yield", "Lending", "JUP"]
 category: "crypto"
 published: true
 featured: false
-coverImage: "/images/jupiter_earn_top.png"
+coverImage: "/images/jupiter_earn_top.webp"
 ---
 
 > **Disclaimer**: This article is for educational and informational purposes only. It does not constitute investment advice or a solicitation to use any protocol. DeFi participation carries significant risks including smart contract vulnerabilities and asset loss. If you are a resident of Japan, please read the regulatory note at the end of this article.
@@ -84,7 +84,7 @@ The mechanics:
 4. Add it back to your collateral position
 5. Repeat — automated via flash loan technology (Flash Loan Fee: Free)
 
-![Jupiter Multiply — JUICED/USDT](/images/jupiter_multiply_juiced.png)
+![Jupiter Multiply — JUICED/USDT](/images/jupiter_multiply_juiced.webp)
 
 #### Real Example: JUICED/USDT (May 2026)
 
