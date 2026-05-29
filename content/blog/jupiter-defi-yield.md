@@ -7,7 +7,7 @@ tags: ["DeFi", "Solana", "Jupiter", "仮想通貨", "利回り", "レンディ�
 category: "crypto"
 published: true
 featured: false
-coverImage: "/images/jupiter_earn_top.png"
+coverImage: "/images/jupiter_earn_top.webp"
 ---
 
 > **注意**: 本記事はDeFiの仕組みを教育・情報目的で解説するものです。特定のプロトコルへの参加を推奨・勧誘するものではありません。DeFiへの参加にはスマートコントラクトリスク・価格変動リスクなどの重大なリスクが伴います。また日本在住者が国内未登録のサービスを利用する場合の規制上の留意点については末尾をご確認ください。
@@ -82,7 +82,7 @@ Jupiter Earnには大きく3つのアプローチがあります。
 4. 購入した資産を再び担保に積み増す
 5. この「ループ」をフラッシュローンで自動化
 
-![Jupiter Multiply — JUICED/USDT](/images/jupiter_multiply_juiced.png)
+![Jupiter Multiply — JUICED/USDT](/images/jupiter_multiply_juiced.webp)
 
 #### 具体例：JUICED/USDT（2026年5月時点）
 

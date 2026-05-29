@@ -78,10 +78,13 @@ export async function getPostBySlug(slug: string, locale: Locale = 'ja'): Promis
     .use(rehypeStringify, { allowDangerousHtml: true })
     .process(processedContent)
 
+  const html = processed.toString()
+    .replace(/<img /g, '<img loading="lazy" ')
+
   return {
     slug,
     frontmatter: data as Post['frontmatter'],
-    content: processed.toString(),
+    content: html,
     readingTime: calcReadingTime(content),
     excerpt: getExcerpt(content),
   }

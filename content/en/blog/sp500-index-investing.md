@@ -7,7 +7,7 @@ tags: ["US stocks", "index investing", "long-term investing", "S&P500", "NISA"]
 category: "us-stock"
 published: true
 featured: true
-coverImage: "/images/sp500_index_investing.png"
+coverImage: "/images/sp500_index_investing.webp"
 ---
 
 ## What Is Index Investing?
@@ -16,7 +16,7 @@ Index investing aims to match the performance of a specific benchmark index rath
 
 Both the All-Country (global equities index) and S&P500 are valid choices for long-term accumulation. I've built around S&P500, but for those who prefer geographic diversification, All-Country is equally rational.
 
-![Why I Build Around S&P500 Index Accumulation](/images/sp500_index_investing.png)
+![Why I Build Around S&P500 Index Accumulation](/images/sp500_index_investing.webp)
 
 ## The S&P500 Index
 

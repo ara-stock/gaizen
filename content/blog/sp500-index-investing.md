@@ -7,7 +7,7 @@ tags: ["米国株", "インデックス投資", "長期投資", "S&P500", "NISA"
 category: "us-stock"
 published: true
 featured: true
-coverImage: "/images/sp500_index_investing.png"
+coverImage: "/images/sp500_index_investing.webp"
 ---
 
 ## インデックス投資とは
@@ -16,7 +16,7 @@ coverImage: "/images/sp500_index_investing.png"
 
 オルカン（全世界株式インデックス）とS&P500のどちらでも長期積立の手段としては有効だと考えています。私はS&P500を中心に据えていますが、地域の集中を嫌う場合はオルカンも合理的な選択肢です。
 
-![S&P500インデックス積立を軸に据える理由](/images/sp500_index_investing.png)
+![S&P500インデックス積立を軸に据える理由](/images/sp500_index_investing.webp)
 
 ## S&P500という指数について
 

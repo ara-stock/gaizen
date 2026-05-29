@@ -7,14 +7,14 @@ tags: ["円安", "為替", "日本経済", "デジタル赤字", "長期投資"]
 category: "macro"
 published: true
 featured: false
-coverImage: "/images/japan_degital_deficit.png"
+coverImage: "/images/japan_degital_deficit.webp"
 ---
 
 ## 円安は「一時的」ではないかもしれない
 
 為替の話になると、多くの人は「日米金利差」を理由に挙げます。確かに金利差は短中期の為替に大きく影響します。しかし私は、円安には**もっと構造的な要因**があると考えています。それが「デジタル赤字」です。
 
-![円安の真犯人？日本のデジタル赤字という構造的弱点](/images/japan_degital_deficit.png)
+![円安の真犯人？日本のデジタル赤字という構造的弱点](/images/japan_degital_deficit.webp)
 
 ## デジタル赤字とは何か
 
