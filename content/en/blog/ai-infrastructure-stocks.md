@@ -47,30 +47,35 @@ That said, there's a structural risk worth naming: **PowerPoint, Excel, Word —
 
 ---
 
-## Alphabet (GOOGL) — The Strongest Frontend + Self-Built AI
+## Alphabet (GOOGL) — Self-Built AI with the World's Strongest Interface
 
-### YouTube: The World's Most Powerful Interface
+### Gemini and Multimodal — Building AI In-House
 
-Among Alphabet's assets, YouTube may be the most underappreciated from a long-term perspective. Over 2.5 billion logged-in monthly users. Whether on TV, smartphone, or PC, YouTube has become the default destination for video.
+Unlike Microsoft, Alphabet doesn't depend on an external partner for its core AI. **Gemini**, developed in-house, spans text, image, audio, and video — a multimodal capability that sets it apart. Delivered via Google Cloud for enterprise use and deeply integrated into Android and Chrome for consumers, Gemini's distribution reach is unmatched.
 
 :::comment
-YouTube is an interface that everyone uses. And as long as that interface exists, advertising demand will never disappear. Even as AI evolves, a frontend is always necessary. Alphabet holds both the frontend (Search, YouTube, Android) and the backend (Google Cloud, TPU). That's a rare and powerful combination.
+The reason I hold Alphabet alongside Microsoft is precisely that **Alphabet builds its own AI**. Microsoft leans on OpenAI; Alphabet has Gemini. If AI models commoditize, owning the capability in-house beats sourcing it externally. Gemini's multimodal strength is a genuine differentiator — not just a brand claim.
 :::
 
-### Self-Designed TPUs: A Technical Moat
+### Self-Designed TPUs — Independence from NVIDIA
 
-Since 2015, Alphabet has designed its own Tensor Processing Units (TPUs), powering AI training and inference internally. The ability to run AI workloads without depending entirely on NVIDIA is a significant cost and competitive advantage.
+Since 2015, Alphabet has designed its own Tensor Processing Units (TPUs) for AI training and inference. Running AI workloads without full dependence on NVIDIA reduces costs and preserves competitive flexibility. As AI infrastructure spend becomes a key battleground, this moat only grows more valuable.
 
-### Gemini and Multimodal AI
+### YouTube — The Interface That Won't Disappear
 
-Gemini is Alphabet's own AI model, with strong multimodal capabilities spanning text, image, audio, and video. Enterprise API access via Google Cloud and deep integration with Android and Chrome give Alphabet unmatched reach to end users.
+Even as AI reshapes how people find information, the human appetite for video content isn't going anywhere. YouTube's 2.5 billion monthly logged-in users make it the world's default video destination — across TV, smartphone, and PC.
+
+:::comment
+Even in an AI-first world, a frontend is always necessary. Alphabet holds both the frontend (Search, YouTube, Android) and the backend (Google Cloud, TPU) — all in-house. This is a structurally rare position. And as long as YouTube exists, advertising demand follows. The interface is the moat.
+:::
 
 | Asset | Strength |
 |-------|---------|
-| Google Search | 90%+ global search share |
-| YouTube | Default destination for video |
+| Gemini | In-house multimodal AI |
 | Google Cloud | TPU + Gemini API infrastructure |
+| Google Search | 90%+ global search share |
 | Android | 72%+ global smartphone OS share |
+| YouTube | 2.5B monthly users, video's default |
 | Advertising | Dominant position in digital ads |
 
 ---
@@ -80,14 +85,18 @@ Gemini is Alphabet's own AI model, with strong multimodal capabilities spanning 
 No matter how advanced AI becomes, users access it through a device. iPhone, Mac, AirPods, and Apple Watch form the most premium "AI frontend" in existence — and that's not changing.
 
 :::comment
-This is a point that's easy to overlook. Even if AI becomes the interface for everything, you still need a physical device to access that AI. Apple controls the most loyal, highest-value device ecosystem in the world. Looking at Apple Intelligence, Apple is clearly building a strategy to capture AI at the device layer — processing on-device, with tight ecosystem lock-in. That level of loyalty is something Android or Windows simply doesn't replicate.
-
-There's another angle here: **Apple acts as a counter to Microsoft**. If PowerPoint and Excel become obsolete, users are no longer locked into Windows. The shift away from Office could translate directly into a shift toward Mac. In practice, Mac is already the platform of choice among developers and engineers working with AI — and the pull of a unified Apple ecosystem (iPhone + AirPods + Mac) goes beyond logic. It's a brand gravitational force that makes the choice feel natural. That kind of ecosystem stickiness only deepens as Apple Intelligence ties the devices closer together.
+Even if AI becomes the interface for everything, you still need a physical device to reach it. Apple holds the most loyal, highest-value device ecosystem in the world. Apple Intelligence is Apple's strategy to capture AI at the device layer — on-device processing, tight lock-in, and the kind of ecosystem loyalty that Android or Windows simply doesn't replicate.
 :::
 
-### Apple Intelligence and Ecosystem Integration
+### Apple Intelligence and Privacy
 
-Launched in 2024, Apple Intelligence runs AI processing using a combination of on-device models and Private Cloud Compute, minimizing the exposure of user data to external servers. This privacy-first approach is a differentiation factor especially in Europe and Japan.
+Launched in 2024, Apple Intelligence uses on-device models combined with Private Cloud Compute — user data stays off external servers by design. This privacy-first architecture is a meaningful differentiator in Europe and Japan, where data regulation is tightening.
+
+### Apple as a Counter to Microsoft
+
+:::comment
+**Apple is also a counter-position to Microsoft.** If PowerPoint and Excel become obsolete through AI, there's no longer a reason to stay on Windows. Leaving Office could translate directly into switching to Mac. AI development already favors Mac — engineers and creators know this. And the gravitational pull of iPhone + AirPods + Mac as a unified lifestyle is a brand force that logic alone can't explain.
+:::
 
 ---
 
