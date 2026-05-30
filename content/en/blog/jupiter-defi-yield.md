@@ -109,9 +109,13 @@ However, **leverage magnifies losses as well as gains** — a sharp drop in the 
 
 ### 3. Strategies (Automated Yield Strategies)
 
-**Pre-built strategies that handle the complexity for you.**
+**Strategies use the same mechanics as Multiply, but with leverage dialed to the maximum that Jupiter's risk parameters allow.**
 
-Instead of manually setting leverage ratios or choosing which vault to deposit in, Strategies offers preset configurations with defined risk-return profiles. Examples include SOL-collateral high-yield strategies and USDC-based stable yield strategies. The goal is to make DeFi yield accessible without requiring deep technical knowledge.
+In Multiply, you set your own leverage ratio anywhere from 1x to the maximum. In Strategies, Jupiter pre-configures that leverage at its upper limit to maximize APY. The trade-off: higher returns come with higher liquidation risk. If you want to manage leverage yourself, use Multiply. If you want a fully automated setup and accept the higher risk, Strategies is the path.
+
+:::comment
+I personally stick to Multiply at 5–6x rather than using Strategies. Having control over the leverage level makes me feel more in command of the risk. JUICED × USDC and JUICED × USDT Strategies are reasonable choices mechanically, but I'd recommend understanding Multiply first before moving to Strategies — the structure is the same, just with the dial turned up.
+:::
 
 ---
 
@@ -147,8 +151,21 @@ DeFi yield is fundamentally different from bank interest. These risks apply:
 
 Multiply positions carry the highest risk — a sudden drop in the collateral asset's price can wipe out your position. Even Earn (simple lending) carries smart contract risk that is non-zero.
 
+### Wallet Security: The Most Critical Risk of All
+
+Beyond protocol risk, **how you manage your wallet is the single most important security decision in DeFi**. Follow these rules without exception:
+
+- **Write your seed phrase by hand in a notebook.** Never store it digitally.
+- **Never enter your private key or seed phrase anywhere** — no legitimate service will ever ask for it.
+- **Never click links sent via DM on any social platform.**
+- **Never interact with links from unofficial or unverified accounts.**
+
+The majority of DeFi losses don't come from smart contract exploits — they come from phishing sites and social engineering. Someone pretending to be support staff asks for your seed phrase. A fake airdrop link drains your wallet. The technical risks are real, but human error is responsible for far more losses.
+
 :::comment
 I use Jupiter Earn myself, and I stay aware of liquidation risk on leveraged positions at all times. For USDC-based simple lending, the risk profile is relatively lower — but "lower" does not mean zero. My personal rule with DeFi is to treat it as money I could afford to lose entirely. If that's not the case for a given position, it's too large.
+
+On wallet security: write the seed phrase in a notebook, keep it somewhere safe, and treat any request for it as a scam — no exceptions. If someone DMs you on X or Discord offering to "help" with a wallet issue, it's a phishing attempt. Always.
 :::
 
 ---
