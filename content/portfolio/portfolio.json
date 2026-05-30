@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05",
+  "updatedAt": "2026-05-31",
   "totalAssets": "非公開",
   "holdingPolicy": [
     "長期・分散・積立を基本方針とする（長期＝5年以上）",
@@ -103,14 +103,17 @@
         { "name": "OKB", "ticker": "OKB", "note": "OKXエコシステムトークン" },
         { "name": "JUP", "ticker": "JUP", "note": "JupiterガバナンストークN" },
         { "name": "EDGE", "ticker": "EDGE", "note": "EdgeX" },
-        { "name": "GRVT", "ticker": "GRVT", "note": "upcoming — ZK Perp DEX" }
+        { "name": "GRVT", "ticker": "GRVT", "note": "upcoming — ZK Perp DEX" },
+        { "name": "NEAR Protocol", "ticker": "NEAR", "note": "L1ブロックチェーン・AI × Web3" },
+        { "name": "Huma Finance", "ticker": "HUMA", "note": "PayFi（決済ファイナンス）プロトコル" }
       ]
     },
     {
       "group": "Stable運用",
       "region": "DeFi",
       "items": [
-        { "name": "JUICED", "ticker": "JUICED", "note": "ステーブルコインイールド" }
+        { "name": "JUICED", "ticker": "JUICED", "note": "ステーブルコインイールド" },
+        { "name": "PST", "ticker": "PST", "note": "Solana USDイールドベアリングトークン" }
       ]
     }
   ],
