@@ -54,6 +54,16 @@ If the full ¥2.4M isn't available in January, I switch to **monthly contributio
 | Capital available | ¥2.4M lump sum in January |
 | Capital spread out | Monthly contribution up to ¥200K/month |
 
+### When You Can't Max Both: Prioritize the Accumulation Allowance
+
+If ¥3.6M per year isn't achievable, **fill the accumulation allowance (¥1.2M) first**.
+
+The accumulation allowance restricts eligible products to FSA-approved long-term funds — lower flexibility than the growth allowance, but this restriction is actually useful. It eliminates the temptation to buy individual stocks or high-cost products, and makes automated monthly accumulation into index funds the natural default.
+
+:::comment
+The growth allowance's flexibility is a double-edged sword — it's easy to drift toward individual stocks or products you don't need. The accumulation allowance removes that choice by design. If you have to prioritize, fill the accumulation side first. The constraint works in your favor.
+:::
+
 ---
 
 ## Individual Stocks in the Growth Allowance
@@ -62,6 +72,18 @@ The growth allowance isn't limited to index funds — individual stocks and ETFs
 
 :::comment
 Individual stocks are occasional and small — trading companies, US tech names, things I find interesting at a given moment. It's less about strong conviction and more about adding a little texture to what is otherwise a straightforward index fund portfolio. The default remains the index fund. Consistently beating the index over a long horizon is hard, and it requires time and judgment I'd rather not spend. For most of the growth allowance, the fund is the right call.
+:::
+
+---
+
+## Which Brokerage for Your NISA Account?
+
+Japan's NISA allows **only one account per person**. Once opened, transferring to a different brokerage requires an annual procedure — so choose your primary brokerage from the start.
+
+I use **Rakuten Securities** for my NISA account. If you already use Rakuten services (Rakuten Card, Rakuten Ichiba), the point integration is a nice bonus. **SBI Securities** is equally strong on features and costs. Either is a sound choice.
+
+:::comment
+For anyone just starting out, Rakuten is a reasonable first pick — the app is accessible and the Rakuten ecosystem integration is convenient. SBI is just as good. The most important thing is to open the account and start, not to agonize over which brokerage is marginally better.
 :::
 
 ---
