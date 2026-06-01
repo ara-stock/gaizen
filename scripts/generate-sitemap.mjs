@@ -29,17 +29,17 @@ const now = new Date().toISOString().split('T')[0]
 
 const staticRoutes = [
   { url: SITE_URL, priority: '1.0', changefreq: 'weekly' },
-  { url: `${SITE_URL}/blog`, priority: '0.9', changefreq: 'daily' },
-  { url: `${SITE_URL}/en/blog`, priority: '0.9', changefreq: 'daily' },
-  { url: `${SITE_URL}/portfolio`, priority: '0.8', changefreq: 'monthly' },
-  { url: `${SITE_URL}/tools`, priority: '0.7', changefreq: 'monthly' },
-  { url: `${SITE_URL}/tools/solana-usd-yield`, priority: '0.7', changefreq: 'daily' },
-  { url: `${SITE_URL}/referral`, priority: '0.6', changefreq: 'monthly' },
-  { url: `${SITE_URL}/about`, priority: '0.5', changefreq: 'yearly' },
-  { url: `${SITE_URL}/thesis`, priority: '0.7', changefreq: 'monthly' },
-  { url: `${SITE_URL}/disclaimer`, priority: '0.3', changefreq: 'yearly' },
-  { url: `${SITE_URL}/privacy`, priority: '0.3', changefreq: 'yearly' },
-  { url: `${SITE_URL}/contact`, priority: '0.4', changefreq: 'yearly' },
+  { url: `${SITE_URL}/blog/`, priority: '0.9', changefreq: 'daily' },
+  { url: `${SITE_URL}/en/blog/`, priority: '0.9', changefreq: 'daily' },
+  { url: `${SITE_URL}/portfolio/`, priority: '0.8', changefreq: 'monthly' },
+  { url: `${SITE_URL}/tools/`, priority: '0.7', changefreq: 'monthly' },
+  { url: `${SITE_URL}/tools/solana-usd-yield/`, priority: '0.7', changefreq: 'daily' },
+  { url: `${SITE_URL}/referral/`, priority: '0.6', changefreq: 'monthly' },
+  { url: `${SITE_URL}/about/`, priority: '0.5', changefreq: 'yearly' },
+  { url: `${SITE_URL}/thesis/`, priority: '0.7', changefreq: 'monthly' },
+  { url: `${SITE_URL}/disclaimer/`, priority: '0.3', changefreq: 'yearly' },
+  { url: `${SITE_URL}/privacy/`, priority: '0.3', changefreq: 'yearly' },
+  { url: `${SITE_URL}/contact/`, priority: '0.4', changefreq: 'yearly' },
 ]
 
 function entry({ url, priority, changefreq, lastmod }) {
@@ -55,13 +55,13 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${staticRoutes.map(r => entry(r)).join('\n')}
 ${jaPosts.map(p => entry({
-  url: `${SITE_URL}/blog/${p.slug}`,
+  url: `${SITE_URL}/blog/${p.slug}/`,
   lastmod: (p.updatedAt || p.date || '').toString().split('T')[0],
   changefreq: 'monthly',
   priority: '0.8',
 })).join('\n')}
 ${enPosts.map(p => entry({
-  url: `${SITE_URL}/en/blog/${p.slug}`,
+  url: `${SITE_URL}/en/blog/${p.slug}/`,
   lastmod: (p.updatedAt || p.date || '').toString().split('T')[0],
   changefreq: 'monthly',
   priority: '0.8',

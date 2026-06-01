@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: frontmatter.description,
     keywords: frontmatter.tags,
     alternates: {
-      canonical: `https://gaizen.xyz/en/blog/${slug}`,
-      languages: { 'ja': `https://gaizen.xyz/blog/${slug}` },
+      canonical: `https://gaizen.xyz/en/blog/${slug}/`,
+      languages: { 'ja': `https://gaizen.xyz/blog/${slug}/` },
     },
     openGraph: {
       title: frontmatter.title,
@@ -64,7 +64,7 @@ export default async function EnArticlePage({ params }: Props) {
     description: frontmatter.description,
     datePublished: frontmatter.date,
     dateModified: frontmatter.updatedAt || frontmatter.date,
-    author: { '@type': 'Person', name: 'ara', url: 'https://gaizen.xyz/en/about' },
+    author: { '@type': 'Person', name: 'ara', url: 'https://gaizen.xyz/en/about/' },
     publisher: { '@type': 'Organization', name: 'GAIZEN FINANCE', url: 'https://gaizen.xyz' },
     keywords: frontmatter.tags.join(', '),
     inLanguage: 'en',
@@ -75,9 +75,9 @@ export default async function EnArticlePage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gaizen.xyz/en' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://gaizen.xyz/en/blog' },
-      { '@type': 'ListItem', position: 3, name: frontmatter.title, item: `https://gaizen.xyz/en/blog/${slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gaizen.xyz/en/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://gaizen.xyz/en/blog/' },
+      { '@type': 'ListItem', position: 3, name: frontmatter.title, item: `https://gaizen.xyz/en/blog/${slug}/` },
     ],
   }
 
@@ -114,7 +114,7 @@ export default async function EnArticlePage({ params }: Props) {
             <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
 
             <div className="mt-10 flex justify-end">
-              <ShareButton title={frontmatter.title} url={`https://gaizen.xyz/en/blog/${slug}`} label="Share on 𝕏" />
+              <ShareButton title={frontmatter.title} url={`https://gaizen.xyz/en/blog/${slug}/`} label="Share on 𝕏" />
             </div>
 
             {/* Author bio */}

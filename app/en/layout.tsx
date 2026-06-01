@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   alternates: {
     languages: {
       'ja': 'https://gaizen.xyz',
-      'en': 'https://gaizen.xyz/en',
+      'en': 'https://gaizen.xyz/en/',
     },
   },
 }

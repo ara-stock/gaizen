@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'GAIZEN FINANCE',
   description: 'High-probability investing through long-term accumulation. Building wealth with index funds and selective individual stocks.',
   alternates: {
-    canonical: 'https://gaizen.xyz/en',
+    canonical: 'https://gaizen.xyz/en/',
     languages: { 'ja': 'https://gaizen.xyz' },
   },
 }

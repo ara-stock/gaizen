@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: '長期・分散・蓋然性——確からしさを積み重ねる投資メディア。ポートフォリオ公開、投資ツール、インデックス・個別株・BTC・不動産の考え方を発信。',
   alternates: {
     canonical: 'https://gaizen.xyz',
-    languages: { 'en': 'https://gaizen.xyz/en' },
+    languages: { 'en': 'https://gaizen.xyz/en/' },
   },
 }
 

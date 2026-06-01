@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   title: 'Blog',
   description: '長期投資・仮想通貨・不動産・マクロ経済に関する投資記録と考察。',
   alternates: {
-    canonical: 'https://gaizen.xyz/blog',
-    languages: { 'en': 'https://gaizen.xyz/en/blog' },
+    canonical: 'https://gaizen.xyz/blog/',
+    languages: { 'en': 'https://gaizen.xyz/en/blog/' },
   },
 }
 

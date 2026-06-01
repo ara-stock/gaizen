@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: frontmatter.description,
     keywords: frontmatter.tags,
     alternates: {
-      canonical: `https://gaizen.xyz/blog/${slug}`,
-      languages: { 'en': `https://gaizen.xyz/en/blog/${slug}` },
+      canonical: `https://gaizen.xyz/blog/${slug}/`,
+      languages: { 'en': `https://gaizen.xyz/en/blog/${slug}/` },
     },
     openGraph: {
       title: frontmatter.title,
@@ -64,7 +64,7 @@ export default async function ArticlePage({ params }: Props) {
     description: frontmatter.description,
     datePublished: frontmatter.date,
     dateModified: frontmatter.updatedAt || frontmatter.date,
-    author: { '@type': 'Person', name: 'あら。', url: 'https://gaizen.xyz/about' },
+    author: { '@type': 'Person', name: 'あら。', url: 'https://gaizen.xyz/about/' },
     publisher: { '@type': 'Organization', name: 'GAIZEN FINANCE', url: 'https://gaizen.xyz' },
     keywords: frontmatter.tags.join(', '),
     ...(frontmatter.coverImage && { image: `https://gaizen.xyz${frontmatter.coverImage}` }),
@@ -75,8 +75,8 @@ export default async function ArticlePage({ params }: Props) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'ホーム', item: 'https://gaizen.xyz' },
-      { '@type': 'ListItem', position: 2, name: 'ブログ', item: 'https://gaizen.xyz/blog' },
-      { '@type': 'ListItem', position: 3, name: frontmatter.title, item: `https://gaizen.xyz/blog/${slug}` },
+      { '@type': 'ListItem', position: 2, name: 'ブログ', item: 'https://gaizen.xyz/blog/' },
+      { '@type': 'ListItem', position: 3, name: frontmatter.title, item: `https://gaizen.xyz/blog/${slug}/` },
     ],
   }
 
@@ -113,7 +113,7 @@ export default async function ArticlePage({ params }: Props) {
             <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
 
             <div className="mt-10 flex justify-end">
-              <ShareButton title={frontmatter.title} url={`https://gaizen.xyz/blog/${slug}`} />
+              <ShareButton title={frontmatter.title} url={`https://gaizen.xyz/blog/${slug}/`} />
             </div>
 
             {/* Author bio */}

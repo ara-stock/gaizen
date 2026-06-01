@@ -3,7 +3,7 @@ title: "AI Will Become Infrastructure — Why I Own Microsoft, Alphabet, Apple, 
 date: "2026-05-29"
 updatedAt: "2026-05-29"
 description: "In a world where AI flows like electricity, who controls the infrastructure wins. Here's why I hold Microsoft, Alphabet, Apple, and Amazon as core long-term positions."
-tags: ["US Stocks", "Microsoft", "Alphabet", "Apple", "Amazon", "AI", "Individual Stocks", "Cloud", "GAFAM"]
+tags: ["US stocks", "Microsoft", "Alphabet", "Apple", "Amazon", "AI", "individual stocks", "Cloud", "GAFAM"]
 category: "us-stock"
 published: true
 featured: true
