@@ -4,8 +4,8 @@ export const metadata: Metadata = {
   title: 'Disclaimer',
   description: 'Disclaimer. Content on this site is not investment advice.',
   alternates: {
-    canonical: 'https://gaizen.xyz/en/disclaimer',
-    languages: { 'ja': 'https://gaizen.xyz/disclaimer' },
+    canonical: 'https://gaizen.xyz/en/disclaimer/',
+    languages: { 'ja': 'https://gaizen.xyz/disclaimer/' },
   },
 }
 

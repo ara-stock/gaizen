@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: 'About',
   description: 'GAIZEN — high-probability investing through long-term accumulation. Investment philosophy, core principles, and portfolio sectors.',
   alternates: {
-    canonical: 'https://gaizen.xyz/en/about',
-    languages: { 'ja': 'https://gaizen.xyz/about' },
+    canonical: 'https://gaizen.xyz/en/about/',
+    languages: { 'ja': 'https://gaizen.xyz/about/' },
   },
 }
 

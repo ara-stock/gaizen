@@ -4,8 +4,8 @@ export const metadata: Metadata = {
   title: 'Referral',
   description: 'Referral links for crypto exchanges, DEXes, and airdrop programs: Jupiter, EdgeX, GRVT, OKX Wallet, and more.',
   alternates: {
-    canonical: 'https://gaizen.xyz/en/referral',
-    languages: { 'ja': 'https://gaizen.xyz/referral' },
+    canonical: 'https://gaizen.xyz/en/referral/',
+    languages: { 'ja': 'https://gaizen.xyz/referral/' },
   },
 }
 

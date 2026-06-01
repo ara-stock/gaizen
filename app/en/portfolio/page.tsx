@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   title: 'Portfolio',
   description: 'Long-term, diversified portfolio — asset allocation across Japanese stocks, US stocks, and crypto.',
   alternates: {
-    canonical: 'https://gaizen.xyz/en/portfolio',
-    languages: { 'ja': 'https://gaizen.xyz/portfolio' },
+    canonical: 'https://gaizen.xyz/en/portfolio/',
+    languages: { 'ja': 'https://gaizen.xyz/portfolio/' },
   },
 }
 

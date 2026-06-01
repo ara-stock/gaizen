@@ -4,8 +4,8 @@ export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'Privacy policy for GAIZEN FINANCE. Covers Google AdSense advertising, cookie usage, analytics, and data handling.',
   alternates: {
-    canonical: 'https://gaizen.xyz/en/privacy',
-    languages: { 'ja': 'https://gaizen.xyz/privacy' },
+    canonical: 'https://gaizen.xyz/en/privacy/',
+    languages: { 'ja': 'https://gaizen.xyz/privacy/' },
   },
 }
 

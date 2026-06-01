@@ -4,8 +4,8 @@ export const metadata: Metadata = {
   title: 'Contact',
   description: 'Contact GAIZEN FINANCE. Social links and how to get in touch.',
   alternates: {
-    canonical: 'https://gaizen.xyz/en/contact',
-    languages: { 'ja': 'https://gaizen.xyz/contact' },
+    canonical: 'https://gaizen.xyz/en/contact/',
+    languages: { 'ja': 'https://gaizen.xyz/contact/' },
   },
 }
 

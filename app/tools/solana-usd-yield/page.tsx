@@ -10,7 +10,7 @@ export const revalidate = 3600 // 1 hour
 export const metadata: Metadata = {
   title: 'Solana USD イールドベアリング一覧',
   description: 'Solanaチェーン上のUSDイールドベアリングトークンの利回り・流通規模を一覧できるツール。Jupiter・Kaminoのデータを1時間ごとに更新。',
-  alternates: { canonical: 'https://gaizen.xyz/tools/solana-usd-yield' },
+  alternates: { canonical: 'https://gaizen.xyz/tools/solana-usd-yield/' },
 }
 
 async function fetchMinBorrowRate(): Promise<number> {

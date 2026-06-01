@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   title: 'Blog',
   description: 'Investment insights on long-term investing, index funds, Japanese stocks, and crypto.',
   alternates: {
-    canonical: 'https://gaizen.xyz/en/blog',
-    languages: { 'ja': 'https://gaizen.xyz/blog' },
+    canonical: 'https://gaizen.xyz/en/blog/',
+    languages: { 'ja': 'https://gaizen.xyz/blog/' },
   },
 }
 

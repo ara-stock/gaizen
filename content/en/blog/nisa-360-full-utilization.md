@@ -3,7 +3,7 @@ title: "Using Japan's New NISA ¥3.6M Annual Limit — How I Allocate Between Lu
 date: "2026-05-30"
 updatedAt: "2026-05-30"
 description: "Maxing out the accumulation allowance and front-loading the growth allowance at the start of the year. My personal approach to Japan's new NISA and what to do when lump-sum isn't possible."
-tags: ["New NISA", "Accumulation Allowance", "Growth Allowance", "Index Investing", "Lump Sum", "Investment Trust"]
+tags: ["New NISA", "accumulation allowance", "growth allowance", "index investing", "lump sum", "investment trust"]
 category: "nisa"
 published: true
 featured: false

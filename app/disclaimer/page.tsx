@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Disclaimer',
   description: '免責事項。本サイトの情報は投資助言ではありません。',
-  alternates: { canonical: 'https://gaizen.xyz/disclaimer' },
+  alternates: { canonical: 'https://gaizen.xyz/disclaimer/' },
 }
 
 export default function DisclaimerPage() {

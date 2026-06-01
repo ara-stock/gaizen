@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `#${decoded}`,
     description: `${decoded} に関する記事一覧`,
-    alternates: { canonical: `https://gaizen.xyz/blog/tag/${tag}` },
+    alternates: { canonical: `https://gaizen.xyz/blog/tag/${tag}/` },
   }
 }
 
