@@ -231,4 +231,13 @@ featured: false
 
 ---
 
+## 参考リファレンス
+
+- [東京証券取引所｜株式投資指標（配当利回り・PBR）](https://www.jpx.co.jp/markets/statistics-equities/misc/01.html)
+- [S&P Global｜S&P 500 Dividend Aristocrats Index](https://www.spglobal.com/spdji/en/indices/dividends-factors/sp-500-dividend-aristocrats/)
+- [国税庁｜配当所得の課税（申告分離課税・総合課税の選択）](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1250.htm)
+- [金融庁｜新しいNISA 制度概要](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+
+---
+
 *本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。*

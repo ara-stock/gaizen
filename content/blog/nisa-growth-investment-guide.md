@@ -128,4 +128,13 @@ eMAXIS Slimのような無分配型投資信託では、配当金がファンド
 
 ---
 
+## 参考リファレンス
+
+- [金融庁｜新しいNISA 成長投資枠の対象商品](https://www.fsa.go.jp/policy/nisa2/about/seichotoushi/index.html)
+- [金融庁｜新しいNISA 制度の概要](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+- [三菱UFJ国際投信｜eMAXIS Slim 米国株式(S&P500)](https://emaxis.jp/fund/252931.html)
+- [国税庁｜NISA口座内の上場株式等の配当等・譲渡所得等の非課税](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1310.htm)
+
+---
+
 *本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。*

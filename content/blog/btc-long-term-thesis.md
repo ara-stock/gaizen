@@ -86,4 +86,13 @@ BTCを株式と同じ枠で考えていたうちは、値動きのたびに判�
 
 ---
 
+## 参考リファレンス
+
+- [Bitcoin Whitepaper – Satoshi Nakamoto (2008)](https://bitcoin.org/bitcoin.pdf)
+- [CoinMarketCap｜Bitcoin 時価総額・供給量データ](https://coinmarketcap.com/currencies/bitcoin/)
+- [Glassnode｜Bitcoin On-Chain Analytics（供給・ウォレット分布）](https://studio.glassnode.com/metrics?a=BTC&m=supply.Current)
+- [金融庁｜暗号資産（仮想通貨）に関する注意喚起](https://www.fsa.go.jp/policy/virtual_currency02/index.html)
+
+---
+
 *本記事は投資助言ではありません。投資は自己責任でお願いします。*

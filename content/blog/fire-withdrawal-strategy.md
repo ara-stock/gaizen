@@ -153,4 +153,13 @@ FIRE後の生活で大切な習慣があるとすれば、**「決まった予�
 
 ---
 
+## 参考リファレンス
+
+- [Cooley, Hubbard, Walz (1998)「Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable」（トリニティ・スタディ）](https://www.aaii.com/files/pdf/6794_retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable.pdf)
+- [楽天証券｜定期売却サービス](https://www.rakuten-sec.co.jp/web/fund/selling/regular/)
+- [SBI証券｜投資信託 定期売却サービス](https://www.sbisec.co.jp/ETGate/WPLETmgR001Control?OutSide=on&getFlg=on&burl=search_fund&cat1=fund&cat2=none&dir=info&file=fund_regular_selling.html)
+- [国税庁｜株式等の譲渡所得（申告分離課税20.315%）](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm)
+
+---
+
 *本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。*

@@ -193,4 +193,13 @@ FIREに必要な金額は、年間支出の25倍。4%ルールを逆算すると
 
 ---
 
+## 参考リファレンス
+
+- [William Bengen (1994)「Determining Withdrawal Rates Using Historical Data」Journal of Financial Planning](https://www.financialplanningassociation.org/article/journal/OCT94-determining-withdrawal-rates-using-historical-data)
+- [Cooley, Hubbard, Walz (1998)「Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable」（トリニティ・スタディ）American Association of Individual Investors Journal](https://www.aaii.com/files/pdf/6794_retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable.pdf)
+- [厚生労働省｜国民健康保険の保険料（税）の賦課（徴収）状況](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/database/index.html)
+- [日本年金機構｜国民年金保険料の額](https://www.nenkin.go.jp/service/kokunen/hokenryo/20150313.html)
+
+---
+
 *本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。*

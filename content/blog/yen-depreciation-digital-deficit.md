@@ -79,4 +79,13 @@ coverImage: "/images/japan_degital_deficit.webp"
 
 ---
 
+## 参考リファレンス
+
+- [財務省｜国際収支統計（サービス収支・デジタル関連）](https://www.mof.go.jp/policy/international_policy/reference/balance_of_payments/index.htm)
+- [日本銀行｜国際収支統計（BOP）](https://www.boj.or.jp/statistics/br/bop/index.htm)
+- [総務省情報通信政策研究所｜情報通信白書（デジタル経済関連）](https://www.soumu.go.jp/johotsusintokei/whitepaper/)
+- [財務省｜外国為替相場（円ドル推移）](https://www.mof.go.jp/policy/international_policy/reference/feio/index.htm)
+
+---
+
 *本記事は筆者個人の見解であり、投資助言ではありません。投資判断はご自身の責任で行ってください。*

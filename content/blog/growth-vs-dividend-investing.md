@@ -108,3 +108,10 @@ NISA口座で運用する場合、配当金・売却益ともに非課税にな�
 :::comment
 成長投資と配当投資は対立するものではなく、組み合わせ方の問題だと捉えています。S&P500のようなインデックスをコアにしつつ、増配実績のある個別株をサテライトに加える。暴落時に配当が入ってくる安心感は数字には表れませんが、長期保有を続けるための「心理的なバッファ」として機能します。
 :::
+
+## 参考リファレンス
+
+- [国税庁｜配当所得（申告分離課税・配当控除）](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1250.htm)
+- [金融庁｜新しいNISA 制度概要](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+- [S&P Global｜S&P 500 Dividend Aristocrats（増配実績のある銘柄指数）](https://www.spglobal.com/spdji/en/indices/dividends-factors/sp-500-dividend-aristocrats/)
+- [三菱UFJ国際投信｜eMAXIS Slim 米国株式(S&P500)](https://emaxis.jp/fund/252931.html)

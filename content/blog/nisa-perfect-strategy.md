@@ -139,3 +139,10 @@ featured: false
 :::comment
 新NISAの最適解は、突き詰めていくとシンプルな結論に行き着きます。積立枠を毎月自動で満額拠出し、余力が出たら成長枠を一括投入する。どちらもS&P500かオルカンの無分配型インデックス一本で埋め切る。判断を減らすことで、長期にわたって続けられる仕組みができます。
 :::
+
+## 参考リファレンス
+
+- [金融庁｜新しいNISA（制度概要・枠の説明）](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+- [金融庁｜つみたて投資枠の対象商品](https://www.fsa.go.jp/policy/nisa2/about/tsumitate/index.html)
+- [三菱UFJ国際投信｜eMAXIS Slim 米国株式(S&P500) 目論見書・運用報告書](https://emaxis.jp/fund/252931.html)
+- [三菱UFJ国際投信｜eMAXIS Slim 全世界株式(オール・カントリー) 目論見書・運用報告書](https://emaxis.jp/fund/253425.html)

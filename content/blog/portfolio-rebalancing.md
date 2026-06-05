@@ -126,4 +126,12 @@ NISA口座のリバランスが許容できるのは、資産配分が大きく�
 
 ---
 
+## 参考リファレンス
+
+- [Vanguard Research｜Best Practices for Portfolio Rebalancing](https://institutional.vanguard.com/content/dam/inst/vanguard-has/insights-pdfs/04_CIR_BestPracticesRebalancing.pdf)
+- [三菱UFJ国際投信｜eMAXIS Slim バランス（8資産均等型）](https://emaxis.jp/fund/253732.html)
+- [国税庁｜株式等の譲渡所得（申告分離課税）](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm)
+
+---
+
 *本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。*

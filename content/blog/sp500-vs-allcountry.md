@@ -188,4 +188,13 @@ S&P500かオルカンか、どちらを選ぶかよりも「いつ始めるか�
 
 ---
 
+## 参考リファレンス
+
+- [S&P Global｜S&P 500 Index – ファクトシート](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
+- [MSCI｜MSCI ACWI Index（オール・カントリーの原指数）](https://www.msci.com/indexes/index/892400)
+- [三菱UFJ国際投信｜eMAXIS Slim 全世界株式(オール・カントリー)](https://emaxis.jp/fund/253425.html)
+- [三菱UFJ国際投信｜eMAXIS Slim 米国株式(S&P500)](https://emaxis.jp/fund/252931.html)
+
+---
+
 *本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。*
