@@ -122,4 +122,12 @@ The most important factor in long-term investing is staying in the market. Rathe
 
 ---
 
+## References
+
+- [Vanguard Research — Best Practices for Portfolio Rebalancing](https://institutional.vanguard.com/content/dam/inst/vanguard-has/insights-pdfs/04_CIR_BestPracticesRebalancing.pdf)
+- [National Tax Agency Japan — Capital Gains Tax on Stock Sales (20.315%)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm)
+- [Mitsubishi UFJ Asset Management — eMAXIS Slim Balanced (8 Assets Equal)](https://emaxis.jp/fund/253732.html)
+
+---
+
 *This article is for informational purposes only and does not constitute investment advice. All investment decisions are your own responsibility.*

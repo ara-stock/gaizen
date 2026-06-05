@@ -92,3 +92,10 @@ Answering these honestly gives you a clearer picture of the exit you're actually
 - Automatic periodic sale removes timing decisions from the withdrawal phase
 - A gradual transition from full-time to part-time to fully asset-funded is often more practical than a hard FIRE date
 - Define what you actually want from life before optimizing for a number
+
+## References
+
+- [William Bengen (1994) "Determining Withdrawal Rates Using Historical Data" — Journal of Financial Planning](https://www.financialplanningassociation.org/article/journal/OCT94-determining-withdrawal-rates-using-historical-data)
+- [Cooley, Hubbard, Walz (1998) "Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable" (Trinity Study)](https://www.aaii.com/files/pdf/6794_retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable.pdf)
+- [Financial Services Agency Japan — NISA Overview](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+- [Rakuten Securities — Periodic Withdrawal Service](https://www.rakuten-sec.co.jp/web/fund/selling/regular/)

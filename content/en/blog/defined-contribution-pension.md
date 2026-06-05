@@ -147,4 +147,13 @@ If you are currently enrolled in a Corporate DC, the first step is to confirm th
 
 ---
 
+## References
+
+- [Ministry of Health, Labour and Welfare Japan — iDeCo (Individual-Type Defined Contribution Pension)](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/nenkin/kyoshutsu/ideco.html)
+- [National Pension Fund Association — iDeCo Official Site (Contribution Limits & Tax Benefits)](https://www.ideco-koushiki.jp/)
+- [National Tax Agency Japan — Small Business Mutual Aid Premium Deduction (iDeCo)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1135.htm)
+- [Financial Services Agency Japan — New NISA Overview](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+
+---
+
 *This article is for informational purposes only and does not constitute investment advice or tax advice. The details of the schemes and their tax treatment vary depending on your individual circumstances. Please make investment and tax decisions at your own responsibility, and consult a professional as needed.*

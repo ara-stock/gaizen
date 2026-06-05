@@ -95,3 +95,11 @@ The fix: use a personal finance aggregator (like Money Forward) to see both acco
 - Keep it simple: Rakuten as primary, SBI as secondary
 
 Both accounts are free to open and maintain. Open Rakuten, set up NISA recurring investments, and once that's running on autopilot, layer in SBI Securities for the extras.
+
+## References
+
+- [Rakuten Securities — NISA Overview](https://www.rakuten-sec.co.jp/web/nisa/)
+- [SBI Securities — NISA Overview](https://site0.sbisec.co.jp/marble/nisa/top.do)
+- [Rakuten Securities — Credit Card Investment (Rakuten Card)](https://www.rakuten-sec.co.jp/web/lp/fund_card_payment/)
+- [SBI Securities — Credit Card Investment (Sumitomo Mitsui Card)](https://go.sbisec.co.jp/lp/lp_smcc_01.html)
+- [Financial Services Agency Japan — NISA Account Statistics](https://www.fsa.go.jp/policy/nisa2/about/statistics/index.html)

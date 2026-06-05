@@ -149,4 +149,13 @@ Accumulation investing was the practice of "decide on an amount and keep going."
 
 ---
 
+## References
+
+- [Cooley, Hubbard, Walz (1998) "Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable" (Trinity Study)](https://www.aaii.com/files/pdf/6794_retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable.pdf)
+- [Rakuten Securities — Periodic Withdrawal Service](https://www.rakuten-sec.co.jp/web/fund/selling/regular/)
+- [SBI Securities — Fund Periodic Withdrawal Service](https://www.sbisec.co.jp/ETGate/WPLETmgR001Control?OutSide=on&getFlg=on&burl=search_fund&cat1=fund&cat2=none&dir=info&file=fund_regular_selling.html)
+- [National Tax Agency Japan — Capital Gains Tax (Separate Taxation at 20.315%)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm)
+
+---
+
 *This article is for informational purposes only and does not constitute investment advice. Please make all investment decisions at your own discretion.*

@@ -113,4 +113,13 @@ Equities account for a combined 90%, while gold and crypto together make up 8%. 
 
 ---
 
+## References
+
+- [Ministry of Finance Japan — Japanese Government Bonds (JGBs) for Individuals](https://www.mof.go.jp/jgbs/individual/kojinmuke/index.html)
+- [World Gold Council — Gold as a Portfolio Diversifier](https://www.gold.org/goldhub/research/gold-investor/gold-strategic-asset)
+- [Bank of Japan — Monetary Policy and Interest Rates](https://www.boj.or.jp/mopo/outline/concept.htm)
+- [Bitcoin Whitepaper — Satoshi Nakamoto (2008)](https://bitcoin.org/bitcoin.pdf)
+
+---
+
 *This article is intended for informational purposes only and does not constitute investment advice. All investment decisions are made at your own risk.*

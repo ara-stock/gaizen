@@ -98,3 +98,10 @@ If you can't keep your leverage to 2–3× your income, stay in rental housing. 
 - Consider prepaying during market downturns when investment returns are uncertain
 - Property flipping introduces complexity and variables that S&P 500 investing doesn't — approach with caution
 - If you lack starting capital, cheap rent or public housing + maximum investment contributions first is the better path
+
+## References
+
+- [Ministry of Land, Infrastructure, Transport and Tourism Japan — Housing Market Survey](https://www.mlit.go.jp/statistics/details/juutaku_list.html)
+- [Japan Housing Finance Agency — Flat 35 Interest Rate Information](https://www.flat35.com/loan/flat35/kinri.html)
+- [National Tax Agency Japan — Home Loan Tax Deduction (Housing Loan Special Credit)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1213.htm)
+- [Statistics Bureau of Japan — Housing and Land Survey](https://www.stat.go.jp/data/jyutaku/index.html)

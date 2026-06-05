@@ -182,4 +182,13 @@ What matters in investing is not picking the perfect fund — it's staying inves
 
 ---
 
+## References
+
+- [S&P Global — S&P 500 Index Factsheet](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
+- [MSCI — MSCI ACWI Index (All Country benchmark)](https://www.msci.com/indexes/index/892400)
+- [Mitsubishi UFJ Asset Management — eMAXIS Slim All Country](https://emaxis.jp/fund/253425.html)
+- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.jp/fund/252931.html)
+
+---
+
 *This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.*

@@ -103,3 +103,10 @@ For dividend-growth stocks, fractional shares (available at most Japanese broker
 - **Holding 30–50% in dividend-growth stocks for psychological stability is a valid strategy**
 - Look for consistent dividend growth and a sustainable payout ratio (40–50%), not just high current yield
 - Keep index funds as the core; accumulate dividend-growth stocks gradually using fractional shares
+
+## References
+
+- [National Tax Agency Japan — Dividend Income Taxation](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1250.htm)
+- [Financial Services Agency Japan — New NISA Overview](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+- [S&P Global — S&P 500 Dividend Aristocrats Index](https://www.spglobal.com/spdji/en/indices/dividends-factors/sp-500-dividend-aristocrats/)
+- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.jp/fund/252931.html)
