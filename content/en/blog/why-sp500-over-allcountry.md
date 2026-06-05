@@ -16,7 +16,9 @@ This article is not a case against all-country index funds (like MSCI ACWI or eM
 And yet I've built my portfolio around S&P500. Here's why.
 
 :::comment
-The オルカン vs S&P500 debate never ends in investing communities. My honest view: either works, and neither will lead you badly wrong. But if I have to choose, it comes down to where I think the engine of the global economy sits.
+The All-Country vs S&P500 debate never ends in investing communities. My honest view: either works, and neither will lead you badly wrong. But if I have to choose, it comes down to two things: US services actually feel superior in daily use, and the US-as-economic-center scenario resonates with me at a gut level.
+
+YouTube, Netflix, AWS, iPhone — most of what I use every day was built in the US. "Buy shares in the countries building things people want" is a simple heuristic, and for me that currently points to the US. That could change. If it does, I'll change too.
 :::
 
 ---

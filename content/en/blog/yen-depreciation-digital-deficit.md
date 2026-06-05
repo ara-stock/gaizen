@@ -76,6 +76,12 @@ If the yen faces structural downward pressure, holding all assets in yen is a ri
 
 Given the structural yen-selling pressure from the digital deficit, **holding foreign-currency assets is not speculative — it is risk management**.
 
+:::comment
+Two things made yen depreciation feel real to me personally. First: eating a light lunch abroad and paying roughly what you'd pay at a premium restaurant in central Tokyo. The same meal, the same calories — dramatically more yen. Second: looking at my subscriptions. Netflix, Spotify, cloud storage — the monthly totals have quietly climbed without me changing anything.
+
+The digital deficit isn't abstract. Every time someone in Japan pays for a US-built service, yen gets converted to dollars. That flow runs 24/7, across millions of users, every day. Understanding this made holding yen-only assets feel like the riskier choice.
+:::
+
 ---
 
 ## References

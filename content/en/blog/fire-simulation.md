@@ -179,6 +179,12 @@ Services designed to be hard to cancel are the ones most likely to stay on your 
 
 ---
 
+:::comment
+My own target: ¥120K/month in expenses (¥100K living costs + ¥20K for national pension and health insurance), which comes to ¥1.44M/year × 25 = ¥36M as a baseline. With an inflation buffer, I'm targeting around ¥33–36M in practice.
+
+The key lesson I had to internalize: once you leave salaried employment, social insurance costs hit in full. National pension alone is roughly ¥17,500/month. Factor this in before your target looks "done." I'm also aiming for side-FIRE — a gradual pivot from full-time employment to freelance/side work — so even modest income post-FIRE meaningfully reduces the required portfolio.
+:::
+
 ## Summary
 
 - **Required assets = Annual expenses × 25 (4% rule)**

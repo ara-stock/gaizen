@@ -98,7 +98,9 @@ There's no single right way to use the new NISA. What matters most is **using it
 Consistent annual investing over many years matters more than optimizing the exact method.
 
 :::comment
-I'd rather someone invest ¥2M simply and consistently than stress over perfectly maximizing ¥3.6M every year. NISA is a tool, not an obligation. The goal is a financial position that lasts — not a perfect annual utilization rate.
+My setup: Rakuten Securities, ¥100K/month into eMAXIS Slim S&P500 via credit card auto-investment. The Rakuten Card points are a small bonus, but the bigger win is that I never have to think about it. Remaining cash goes toward individual stocks.
+
+I don't stress about filling the ¥3.6M ceiling. Hitting the accumulation allowance in full (¥100K × 12 = ¥1.2M) already puts you in a strong position. The growth allowance gets filled when I have surplus — lump sum in January if possible, monthly contributions otherwise. Chasing perfect utilization is less important than showing up every year.
 :::
 
 ---

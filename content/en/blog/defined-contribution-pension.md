@@ -145,6 +145,12 @@ If you are currently enrolled in a Corporate DC, the first step is to confirm th
 - My priority order: **NISA → taxable account → savings → iDeCo**
 - **If you're aiming for FIRE while young, put iDeCo at the bottom of the list. Those in their 50s or older, the self-employed, and those who have maxed out NISA are worth reconsidering**
 
+:::comment
+I don't use iDeCo. My priority order is NISA → taxable account → iDeCo, and iDeCo sits last. The reason is simple: the lock-in until age 60 conflicts directly with early FIRE goals. Tying up capital for decades in exchange for a tax deduction today is a bad trade when your goal is financial freedom before retirement age.
+
+That said, iDeCo is genuinely useful for stabilizing income after 60. It's not that iDeCo is bad — it's that I'm optimizing for FIRE, not for pension income. If you're not targeting early retirement, or you've already maxed NISA, the calculus changes.
+:::
+
 ---
 
 ## References

@@ -88,6 +88,12 @@ Rarely. The only plausible scenario:
 
 Even then, virtually every major Japanese brokerage now offers **automatic periodic sale** (定期売却) on index funds. You can set monthly ¥XX,000 withdrawals from eMAXIS Slim S&P500 — no distribution fund needed. Same cash flow, dramatically lower costs, better tax efficiency.
 
+:::comment
+Full disclosure: I actually hold BLV and TIPS — US bond ETFs that distribute monthly. That might seem contradictory for someone writing this article, but I'd frame it as a difference in use case. I hold them specifically to generate steady cash I can redeploy into equities. The distribution functions as seed capital for the next trade.
+
+That said, there are real costs. Foreign withholding tax is deducted at source, and you only recover it by filing a tax return (外国税額控除). For anyone who doesn't file, that's a permanent drag. And one honest mistake: I once bought Amazon 30-year corporate bonds without fully understanding what I was getting into. They're sitting there in the black thanks to yen depreciation, but 30 years of capital lock-up is a steep price for that result.
+:::
+
 ## Summary
 
 Avoid monthly distribution investment funds.
