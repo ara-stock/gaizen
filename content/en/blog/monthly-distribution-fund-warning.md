@@ -100,3 +100,9 @@ Avoid monthly distribution investment funds.
 The psychological appeal — cash in your account every month — is real but addressable. Use periodic auto-sale from a low-cost index fund instead. You get the cash flow without the structural drag.
 
 Long-term investing works by minimizing cost, maximizing diversification, and letting compounding do the work. Monthly distribution funds are built to do the opposite.
+
+## References
+
+- [Financial Services Agency Japan — Key Points on Investment Trust Distributions](https://www.fsa.go.jp/teach/kou4.html)
+- [National Tax Agency Japan — Special Distribution (Non-taxable Return of Capital)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1250.htm)
+- [Rakuten Securities — Periodic Withdrawal Service (alternative to monthly distribution)](https://www.rakuten-sec.co.jp/web/fund/selling/regular/)

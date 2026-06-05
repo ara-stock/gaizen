@@ -106,3 +106,10 @@ Regardless of yen strength or weakness, holding globally diversified assets (S&P
 - **Commodity ETFs are too expensive** — equity indexes already cover the exposure
 - **Real estate requires leverage discipline (2x cap) and is best considered after ¥60M–¥100M in equities**
 - In an inflationary environment, the shortcut to asset protection is owning things with real demand and pricing power
+
+## References
+
+- [Statistics Bureau of Japan — Consumer Price Index (CPI)](https://www.stat.go.jp/data/cpi/index.htm)
+- [Bank of Japan — Price Stability and Monetary Policy](https://www.boj.or.jp/mopo/outline/concept.htm)
+- [U.S. Bureau of Labor Statistics — Consumer Price Index](https://www.bls.gov/cpi/)
+- [World Gold Council — Gold as a Strategic Asset](https://www.gold.org/goldhub/research/gold-investor/gold-strategic-asset)

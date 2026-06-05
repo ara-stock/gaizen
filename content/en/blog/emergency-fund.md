@@ -114,4 +114,12 @@ Rather than spending time debating the size of your emergency fund, the far more
 
 ---
 
+## References
+
+- [Ministry of Health, Labour and Welfare Japan — Sick Leave Benefit (傷病手当金)](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/iryouhoken15/index.html)
+- [Ministry of Health, Labour and Welfare Japan — Unemployment Insurance (Basic Benefit)](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000136389.html)
+- [Japan Pension Service — Disability Pension Overview](https://www.nenkin.go.jp/service/jukyu/shougainenkin/jukyu-yoken/index.html)
+
+---
+
 *This article is for informational purposes only and does not constitute investment advice. All investment decisions are made at your own risk.*

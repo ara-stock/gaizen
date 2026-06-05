@@ -106,4 +106,13 @@ Each company has distinct specializations with different balances of resource, n
 
 ---
 
+## References
+
+- [Mitsubishi Corporation — Investor Relations](https://www.mitsubishicorp.com/jp/en/ir/)
+- [Itochu Corporation — Investor Relations](https://www.itochu.co.jp/en/ir/)
+- [Mitsui & Co. — Investor Relations](https://www.mitsui.com/jp/en/ir/)
+- [Tokyo Stock Exchange — Equity Investment Indicators (PER, PBR, Dividend Yield)](https://www.jpx.co.jp/markets/statistics-equities/misc/01.html)
+
+---
+
 *This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.*

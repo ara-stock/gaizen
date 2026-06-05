@@ -134,3 +134,10 @@ Yes — but only if you have genuine conviction. The tax-free cap is finite, so 
 - Invest any surplus into the growth allowance whenever you have it; lump-sum in January when possible
 - Don't try to time the market — invest as soon as capital is available
 - Keep index funds as your core. Individual stocks are a supplement, best started small
+
+## References
+
+- [Financial Services Agency Japan — New NISA Overview](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+- [Financial Services Agency Japan — NISA Eligible Funds (Accumulation Allowance)](https://www.fsa.go.jp/policy/nisa2/about/tsumitate/index.html)
+- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.jp/fund/252931.html)
+- [Mitsubishi UFJ Asset Management — eMAXIS Slim All Country](https://emaxis.jp/fund/253425.html)

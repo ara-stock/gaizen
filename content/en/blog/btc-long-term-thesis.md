@@ -82,4 +82,13 @@ My approach: hold long-term, maintain a maximum 5% allocation.
 
 ---
 
+## References
+
+- [Bitcoin Whitepaper — Satoshi Nakamoto (2008)](https://bitcoin.org/bitcoin.pdf)
+- [CoinMarketCap — Bitcoin Market Data & Supply](https://coinmarketcap.com/currencies/bitcoin/)
+- [Glassnode — Bitcoin On-Chain Analytics (Supply, Wallet Distribution)](https://studio.glassnode.com/metrics?a=BTC&m=supply.Current)
+- [Financial Services Agency Japan — Cautionary Notice on Crypto Assets](https://www.fsa.go.jp/policy/virtual_currency02/index.html)
+
+---
+
 *This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.*

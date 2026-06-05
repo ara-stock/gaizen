@@ -223,4 +223,13 @@ For US dividend growth exposure, **VIG (Vanguard Dividend Appreciation ETF)** is
 
 ---
 
+## References
+
+- [Tokyo Stock Exchange — Equity Investment Indicators (Dividend Yield, PBR)](https://www.jpx.co.jp/markets/statistics-equities/misc/01.html)
+- [S&P Global — S&P 500 Dividend Aristocrats Index](https://www.spglobal.com/spdji/en/indices/dividends-factors/sp-500-dividend-aristocrats/)
+- [National Tax Agency Japan — Dividend Income Taxation](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1250.htm)
+- [Financial Services Agency Japan — New NISA Overview](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+
+---
+
 *This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.*

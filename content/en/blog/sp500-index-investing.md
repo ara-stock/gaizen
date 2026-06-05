@@ -96,4 +96,13 @@ I'm aware of the US concentration risk. But given my view that the US-centric ec
 
 ---
 
+## References
+
+- [S&P Global — S&P 500 Index (Eligibility Criteria & Factsheet)](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
+- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.jp/fund/252931.html)
+- [Financial Services Agency Japan — New NISA](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+- [U.S. Bureau of Labor Statistics — Consumer Price Index](https://www.bls.gov/cpi/)
+
+---
+
 *This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.*

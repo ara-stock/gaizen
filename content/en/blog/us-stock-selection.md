@@ -97,3 +97,11 @@ It might seem like large companies have limited room left to grow. But large-cap
 - NVIDIA is worth holding — but understand both the competitive moat and the long-term risks
 - **In sectors where the winner isn't clear yet (e.g., robotics), wait until a leader emerges before committing**
 - Screening baseline: ROE 15%+, earnings growth 10%+, S&P500 inclusion as a quality filter
+
+## References
+
+- [S&P Global — S&P 500 Index Eligibility Criteria](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
+- [Apple Inc. — Investor Relations](https://investor.apple.com/sec-filings/annual-reports/default.aspx)
+- [Microsoft Corporation — Investor Relations](https://www.microsoft.com/en-us/investor)
+- [NVIDIA Corporation — Investor Relations](https://investor.nvidia.com/home/default.aspx)
+- [Alphabet Inc. — Investor Relations](https://abc.xyz/investor/)

@@ -78,4 +78,13 @@ Given the structural yen-selling pressure from the digital deficit, **holding fo
 
 ---
 
+## References
+
+- [Ministry of Finance Japan — Balance of Payments Statistics (Services Account / Digital)](https://www.mof.go.jp/policy/international_policy/reference/balance_of_payments/index.htm)
+- [Bank of Japan — Balance of Payments Statistics (BOP)](https://www.boj.or.jp/statistics/br/bop/index.htm)
+- [Ministry of Internal Affairs and Communications — White Paper on Information and Communications (Digital Economy)](https://www.soumu.go.jp/johotsusintokei/whitepaper/)
+- [Ministry of Finance Japan — Foreign Exchange Rate Data](https://www.mof.go.jp/policy/international_policy/reference/feio/index.htm)
+
+---
+
 *This article reflects the author's personal views and does not constitute investment advice. Please make investment decisions at your own discretion.*
