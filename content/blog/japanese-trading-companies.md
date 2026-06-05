@@ -110,4 +110,13 @@ LNG・鉄鉱石・銅など**資源権益の規模が最大級**。資源の上�
 
 ---
 
+## 参考リファレンス
+
+- [三菱商事｜IR情報・アニュアルレポート](https://www.mitsubishicorp.com/jp/ja/ir/)
+- [伊藤忠商事｜IR情報](https://www.itochu.co.jp/ja/ir/)
+- [三井物産｜IR情報](https://www.mitsui.com/jp/ja/ir/)
+- [東京証券取引所｜株式投資指標（PER・PBR・配当利回り）](https://www.jpx.co.jp/markets/statistics-equities/misc/01.html)
+
+---
+
 *本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。*

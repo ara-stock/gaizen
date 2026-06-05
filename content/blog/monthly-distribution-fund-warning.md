@@ -87,3 +87,9 @@ QYLD（NASDAQ100カバードコール）はNAVが年平均3.72%下落し続け�
 - 成長株を組み込みにくい構造のため、市場平均を下回るリスクが高い
 
 長期投資の基本となるインデックス積立については[S&P500インデックス積立を軸に据える理由](/blog/sp500-index-investing)、取り崩し期の設計については[積立投資の「出口戦略」](/blog/investment-exit-strategy)をご覧ください。
+
+## 参考リファレンス
+
+- [金融庁｜投資信託の分配金に関する注意点（投資信託の見直しポイント）](https://www.fsa.go.jp/teach/kou4.html)
+- [金融庁｜投資信託及び投資法人に関する法律](https://www.fsa.go.jp/common/law/guide/toshi.pdf)
+- [国税庁｜株式等の配当・分配の課税（特別分配金は非課税）](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1250.htm)

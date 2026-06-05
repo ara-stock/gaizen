@@ -111,3 +111,10 @@ featured: false
 :::comment
 インフレに対して現金で対抗しようとすると、確実に目減りします。有効なのは、コストを価格に転嫁できる企業の株式を持つこと。S&P500に含まれるような企業の多くは、インフレ局面でも価格転嫁力を持っています。現金比率を下げて実物資産へ移すことは、投機ではなくリスク管理の一環だと考えています。
 :::
+
+## 参考リファレンス
+
+- [総務省統計局｜消費者物価指数（CPI）](https://www.stat.go.jp/data/cpi/)
+- [日本銀行｜物価の安定と金融政策](https://www.boj.or.jp/mopo/outline/concept.htm)
+- [U.S. Bureau of Labor Statistics｜Consumer Price Index（米国CPI）](https://www.bls.gov/cpi/)
+- [World Gold Council｜Gold as a strategic asset](https://www.gold.org/goldhub/research/gold-investor/gold-strategic-asset)

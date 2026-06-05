@@ -118,4 +118,12 @@ S&P500の年平均リターン（約7〜10%）を当てはめると、その1年
 
 ---
 
+## 参考リファレンス
+
+- [厚生労働省｜傷病手当金（健康保険の給付）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/iryouhoken15/index.html)
+- [日本年金機構｜障害年金の概要](https://www.nenkin.go.jp/service/jukyu/shougainenkin/jukyu-yoken/index.html)
+- [厚生労働省｜雇用保険の給付（基本手当）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000136389.html)
+
+---
+
 *本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。*

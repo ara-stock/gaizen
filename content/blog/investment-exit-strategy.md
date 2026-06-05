@@ -71,6 +71,19 @@ FIRE計画でよく使われる「4%ルール」は、年間生活費の25倍の
 - **どのくらい資産を残したいか？** 使い切るか、子どもや社会に残すか
 - **インフレ・医療費・介護費をどう考えるか？** 老後に必要な費用は生活費だけではない
 
+## 証券会社の定期売却サービスを活用する
+
+感情を排除した取り崩しには、証券会社の「定期売却サービス」が有効です。
+
+**楽天証券**の「定期売却サービス」および**SBI証券**の「定期売却サービス」では、投資信託を毎月一定額または一定口数で自動売却する設定が可能です。
+
+| 証券会社 | サービス名 | 特徴 |
+|---|---|---|
+| 楽天証券 | 定期売却サービス | 毎月・隔月・年1〜2回。定額・定率・定口数から選択可 |
+| SBI証券 | 定期売却サービス | 毎月・隔月対応。投資信託の自動解約設定 |
+
+手動で売却すると「今は下落中だから待とう」という心理的バイアスが働きやすくなります。自動化することで、相場の上下に関係なく計画通りの取り崩しを続けられます。
+
 ## まとめ
 
 - 出口戦略はFIRE志望者だけでなく、すべての投資家に必要な設計
@@ -78,5 +91,12 @@ FIRE計画でよく使われる「4%ルール」は、年間生活費の25倍の
 - 4%ルールは目安として有用。日本の税制を加味すると3〜3.5%が現実的
 - 段階的に働き方を変える「グラデーションFIRE」が現実的なアプローチ
 - 証券会社の定期売却サービスを使えば感情を排除した取り崩しができる
+
+## 参考リファレンス
+
+- [金融庁｜NISA（少額投資非課税制度）](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+- [楽天証券｜定期売却サービス](https://www.rakuten-sec.co.jp/web/fund/selling/regular/)
+- [SBI証券｜投資信託 定期売却サービス](https://www.sbisec.co.jp/ETGate/WPLETmgR001Control?OutSide=on&getFlg=on&burl=search_fund&cat1=fund&cat2=none&dir=info&file=fund_regular_selling.html)
+- [William Bengen (1994)「Determining Withdrawal Rates Using Historical Data」Journal of Financial Planning](https://www.financialplanningassociation.org/article/journal/OCT94-determining-withdrawal-rates-using-historical-data)
 
 4%ルールの計算の前提となる積立シミュレーションは[FIREのための積立シミュレーション](/blog/fire-simulation)で詳しく解説しています。取り崩し期の具体的な方法は[FIRE後の取り崩し戦略](/blog/fire-withdrawal-strategy)もご参照ください。

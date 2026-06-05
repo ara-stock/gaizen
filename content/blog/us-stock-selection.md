@@ -104,3 +104,11 @@ AIの発展に伴い、データセンター・自動運転・スマートフォ
 :::comment
 米国個別株を選ぶ際に意識しているのは、参入障壁・スイッチングコスト・継続的な買い替え需要の3点です。この3つが揃っている企業は、景気の波に関係なく収益を維持しやすい。自分が深く理解できる業界で、業界トップに位置する企業だけに絞ると、自然と候補は限られてきます。
 :::
+
+## 参考リファレンス
+
+- [S&P Global｜S&P 500 Index – 採用基準](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
+- [Apple Inc.｜Investor Relations](https://investor.apple.com/sec-filings/annual-reports/default.aspx)
+- [Microsoft Corporation｜Investor Relations](https://www.microsoft.com/en-us/investor)
+- [NVIDIA Corporation｜Investor Relations](https://investor.nvidia.com/home/default.aspx)
+- [Alphabet Inc.｜Investor Relations](https://abc.xyz/investor/)

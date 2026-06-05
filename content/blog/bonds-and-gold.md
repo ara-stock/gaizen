@@ -117,4 +117,13 @@ S&P500への長期積立は、シンプルで強力な戦略です。ではゴ�
 
 ---
 
+## 参考リファレンス
+
+- [財務省｜個人向け国債（商品説明）](https://www.mof.go.jp/jgbs/individual/kojinmuke/index.html)
+- [World Gold Council｜Gold as a portfolio diversifier](https://www.gold.org/goldhub/research/gold-investor/gold-strategic-asset)
+- [日本銀行｜金利政策と国債価格の関係](https://www.boj.or.jp/mopo/outline/concept.htm)
+- [Bitcoin Whitepaper – Satoshi Nakamoto (2008)](https://bitcoin.org/bitcoin.pdf)
+
+---
+
 *本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。*

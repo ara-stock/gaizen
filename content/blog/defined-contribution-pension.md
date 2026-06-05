@@ -151,4 +151,13 @@ iDeCoは「節税」として語られることが多いですが、正確には
 
 ---
 
+## 参考リファレンス
+
+- [厚生労働省｜iDeCo（個人型確定拠出年金）公式サイト](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/nenkin/kyoshutsu/ideco.html)
+- [国民年金基金連合会｜iDeCo公式サイト（拠出限度額・税制優遇）](https://www.ideco-koushiki.jp/)
+- [国税庁｜小規模企業共済等掛金控除（iDeCoの所得控除）](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1135.htm)
+- [金融庁｜新しいNISA 制度概要](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+
+---
+
 *本記事は情報提供を目的としており、投資助言・税務アドバイスではありません。制度の詳細や税務上の取り扱いは個人の状況によって異なります。投資・税務に関する判断はご自身の責任で、必要に応じて専門家にご相談ください。*

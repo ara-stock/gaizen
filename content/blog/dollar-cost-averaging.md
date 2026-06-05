@@ -135,4 +135,13 @@ S&P500で過去20年間（2002年〜2022年）を検証した結果、収益率�
 
 ---
 
+## 参考リファレンス
+
+- [Vanguard Research (2012)「Dollar-cost averaging just means taking risk later」](https://corporate.vanguard.com/content/dam/corp/research/pdf/Dollar-cost_averaging_just_means_taking_risk_later_TLRIP062012.pdf)
+- [金融庁｜つみたて投資枠の対象商品一覧](https://www.fsa.go.jp/policy/nisa2/about/tsumitate/index.html)
+- [楽天証券｜楽天カードクレジット積立 概要](https://www.rakuten-sec.co.jp/web/lp/fund_card_payment/)
+- [SBI証券｜三井住友カードつみたて投資 概要](https://go.sbisec.co.jp/lp/lp_smcc_01.html)
+
+---
+
 *本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。*

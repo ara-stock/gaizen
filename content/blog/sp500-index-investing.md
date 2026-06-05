@@ -106,4 +106,13 @@ S&P500に採用される銘柄は、一定の基準を満たした企業だけ�
 
 ---
 
+## 参考リファレンス
+
+- [S&P Global｜S&P 500 Index – 組入基準・概要](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
+- [三菱UFJ国際投信｜eMAXIS Slim 米国株式(S&P500) 商品詳細](https://emaxis.jp/fund/252931.html)
+- [金融庁｜新しいNISA](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+- [U.S. Bureau of Labor Statistics｜Consumer Price Index（米国インフレ指標）](https://www.bls.gov/cpi/)
+
+---
+
 *本記事は投資助言ではありません。投資判断はご自身の責任で行ってください。*

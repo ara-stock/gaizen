@@ -87,3 +87,10 @@ featured: true
 :::comment
 レバレッジを2〜3倍に抑えられないうちは、賃貸で住みましょう。人生、一生に一度のことで溢れています。「マイホームは夢」「今が買い時」「家賃は捨て金」——そういう言葉に惑わされずに、数字で判断してください。
 :::
+
+## 参考リファレンス
+
+- [国土交通省｜住宅市場動向調査（毎年更新）](https://www.mlit.go.jp/statistics/details/juutaku_list.html)
+- [住宅金融支援機構｜フラット35 金利情報](https://www.flat35.com/loan/flat35/kinri.html)
+- [国税庁｜住宅ローン控除（住宅借入金等特別控除）](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1213.htm)
+- [総務省｜住宅・土地統計調査](https://www.stat.go.jp/data/jyutaku/index.html)
