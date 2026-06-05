@@ -117,6 +117,12 @@ Take it slowly. There's no rush.
 
 ---
 
+:::comment
+My setup: Rakuten Securities, ¥100K/month into eMAXIS Slim S&P500, auto-debited via credit card. Set it once, leave it alone. I don't look at the balance every week. The strength of DCA isn't in the math — it's in the fact that the decision is already made.
+
+A lump sum often wins statistically, but the psychological cost of watching a large purchase drop immediately is real. Spreading it out removes the "I timed it wrong" regret. For most people, the strategy they can actually stick to will outperform the theoretically optimal one they abandon under pressure.
+:::
+
 ## Summary
 
 - **Dollar-cost averaging = invest a fixed amount on a fixed schedule**

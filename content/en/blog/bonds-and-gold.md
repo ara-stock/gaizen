@@ -111,6 +111,14 @@ Equities account for a combined 90%, while gold and crypto together make up 8%. 
 - **Bitcoin has a hard cap of 21 million coins, and the halving progressively slows the rate of new supply.** Its scarcity is more certain than gold's.
 - The sub-positions (gold + crypto) are kept to roughly 8% of the portfolio; equities remain the primary engine of compound growth.
 
+:::comment
+I started accumulating gold for inflation hedging — commodity prices were rising and the trend was favorable. That entry timing worked out; I'm still in the black.
+
+What I didn't anticipate: Middle East tensions triggered a wave of gold liquidation, not gold buying. The "safe haven" thesis didn't play out the way I expected in that moment. I've since stopped accumulating and moved to a hold-only position. Pure gold savings (純金積立) has no management fees, so it's genuinely low-maintenance to leave in place.
+
+Gold can rise further, I believe — but that depends on inflation persisting. Since business growth is the primary driver of economic value, equities stay first. Gold is a hedge, not a thesis.
+:::
+
 ---
 
 ## References

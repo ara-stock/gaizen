@@ -120,6 +120,12 @@ As your total assets grow and buying alone can no longer close the gap, partial 
 
 The most important factor in long-term investing is staying in the market. Rather than treating rebalancing as a chore to be done frequently, focusing on keeping costs down and continuing to contribute consistently will do more for your total returns over time.
 
+:::comment
+My rebalancing rule: no selling. When allocations drift, I buy more of the underweight positions. Selling triggers a 20% tax event I'd rather avoid.
+
+That said, I'm flexible about what "rebalancing" means in practice. If a position is consistently underperforming and I no longer have conviction in it, I'll exit it entirely rather than just buy more. Rebalancing isn't just mechanical ratio adjustment — it's also a checkpoint to ask: "Do I still want to own this?" Sometimes the answer is no, and that's fine too.
+:::
+
 ---
 
 ## References

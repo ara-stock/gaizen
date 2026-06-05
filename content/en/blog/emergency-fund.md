@@ -104,6 +104,12 @@ Rather than spending time debating the size of your emergency fund, the far more
 
 ---
 
+:::comment
+My cash buffer is roughly one month of expenses — and I sometimes put even that to work. As a salaried employee with steady monthly income, I invest the vast majority of what comes in.
+
+The mental shift that made this feel rational: if I genuinely need a large sum, I can sell a portion of my holdings. My portfolio is liquid. That's a more efficient emergency fund than cash sitting idle losing purchasing power. The key assumption is steady employment — if that changes, so does the calculus.
+:::
+
 ## Summary
 
 - **An emergency fund of 1–1.5 months of obligations is sufficient** — you don't need the full "6-month rule" (e.g., if your obligations are ¥100,000/month, ~¥150,000 is enough)

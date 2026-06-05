@@ -138,6 +138,12 @@ Accumulation investing was the practice of "decide on an amount and keep going."
 
 ---
 
+:::comment
+Watching your balance shrink is genuinely unsettling — I won't pretend otherwise. But I've reframed it: retirees living on pension do exactly this every month, and most manage fine. The key is starting early, before FIRE, so the habit of "spending within a budget" is already ingrained.
+
+My plan is fixed-amount withdrawal. I don't intend to draw more than I need. Automating it through a broker's periodic sale service removes the temptation to delay during downturns or accelerate when markets are up.
+:::
+
 ## Summary
 
 - **After FIRE, social isolation is scarier than money running out — maintaining connections deliberately is essential**

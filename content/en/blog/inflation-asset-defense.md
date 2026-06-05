@@ -98,6 +98,12 @@ In a deflationary environment, cash gains relative value. But the current macro 
 
 Regardless of yen strength or weakness, holding globally diversified assets (S&P500, All-Country) reduces dependence on any single currency. Review your asset allocation periodically and stay aware of how the broader environment is shifting.
 
+:::comment
+I feel inflation most directly in grocery bills. Rice, cooking oil, vegetables — all up. And snacks keep getting smaller without the price dropping. It's the kind of creeping cost increase that's easy to dismiss until you add it up over a year.
+
+The sharpest reminder came abroad: what I expected to be a casual lunch ended up costing roughly the same as a mid-range restaurant in one of Tokyo's pricier neighborhoods. Yen weakness and inflation compounding together — that's when holding cash started to feel genuinely risky rather than "safe."
+:::
+
 ## Summary
 
 - **Stocks (S&P500 / All-Country) are your core asset** — they have real pricing power against inflation

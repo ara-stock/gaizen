@@ -90,6 +90,12 @@ Buying a home is not time-sensitive in the way compound growth is. Getting the i
 If you can't keep your leverage to 2–3× your income, stay in rental housing. Life is full of "once in a lifetime" moments — the perfect property, the right time to buy, the fear that rent is money thrown away. Don't let those narratives make the decision for you. Run the numbers first.
 :::
 
+:::comment
+I currently live in a multi-generational household — my situation changed when I got married, and it's a fairly unusual setup. But my underlying view hasn't shifted: I'm a renter at heart.
+
+Three reasons: you can move when circumstances change, you can scale costs up or down as your household size and needs evolve, and mortgage interest competes directly with investment capital. When monthly repayments are high, the investment budget shrinks — and that drag compounds over years. Absent a specific life event that makes ownership clearly rational, renting and investing the difference tends to win on the numbers.
+:::
+
 ## Summary
 
 - Long-term mortgage + continued investing is the default rational position
