@@ -7,7 +7,7 @@ tags: ["NEAR", "NEAR Protocol", "NEAR Intents", "NEAR Mobile", "仮想通貨", "
 category: "crypto"
 published: true
 featured: false
-coverImage: "/images/near_protocol_top.webp"
+coverImage: ""
 ---
 
 > **注意**: 本記事はNEAR Protocolの仕組みを教育・情報目的で解説するものです。特定のプロトコルへの参加・投資を推奨・勧誘するものではありません。仮想通貨・DeFiへの参加には価格変動リスク・スマートコントラクトリスクなどの重大なリスクが伴います。
