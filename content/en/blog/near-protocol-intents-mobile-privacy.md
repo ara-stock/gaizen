@@ -181,7 +181,7 @@ NEAR Mobile has a tier system where locking NPRO tokens unlocks progressively lo
 | Ambassador | **75 NPRO (locked ≥ 1 month)** | 2.5% | 0.656% |
 | Premium | **250 NPRO (locked ≥ 1 month)** | **0%** | 0.218% |
 
-At Premium tier, staking is completely fee-free, and NEAR staking rewards + NPRO rewards stack on top of each other.
+At Premium tier, staking is completely fee-free, maximizing the NPRO rewards you receive from the NPRO node.
 
 ### A Practical Problem: Gas Fees
 
