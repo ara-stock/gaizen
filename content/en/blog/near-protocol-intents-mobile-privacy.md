@@ -163,7 +163,7 @@ When I first heard about this, my reaction was essentially: "isn't that overkill
 | **Multi-Account** | Multiple accounts under a single seed phrase |
 | **Custom NEAR ID** | Human-readable `name.near` addresses |
 | **NPRO Token** | Native utility token; stake to unlock premium features |
-| **Human Support** | Discord-based ticketing with human agents |
+| **Friend Support** | Discord-based ticketing with human agents |
 
 :::comment
 My actual workflow: swap into NEAR via NEAR Intents → send to NEAR Mobile wallet → stake on the NPRO node (NEAR Mobile's official validator). NEAR's roadmap includes staking directly from the NEAR Intents interface, which would mean swaps and staking in a single screen — a meaningful UX improvement when it lands.
