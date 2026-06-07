@@ -190,7 +190,7 @@ NPROノードにステーキングして気づいた落とし穴がある。NEAR
 
 クレームできるのはNPROだけなので、スワップのたびに必要なNEARのガス代（数円〜数十円）が払えない状況が起きうる。実用上は**1〜2NEARをステークせずウォレットに常備**しておくのが現実的な対処法だ。
 
-「NEARで報酬が欲しい」という場合、リキッドステーキング（stNEAR）という選択肢もある。Meta Pool（metapool.app）でNEARをステークするとstNEARという液体トークンが即座に手に入り、アンボンディング待ちなしにNEAR Intentsで随時NEARに換えられる。ただしNPROは貯まらないため、NEAR Mobileのティア特典を重視するかどうかで判断が分かれる。
+「NEARで報酬が欲しい」という場合、リキッドステーキング（stNEAR）という選択肢もある。Meta Pool（metapool.app）でNEARをステークするとstNEARというLiquid Tokenが即座に手に入り、アンボンディング待ちなしにNEAR Intentsで随時NEARに換えられる。ただしNPROは貯まらないため、NEAR Mobileのティア特典を重視するかどうかで判断が分かれる。
 :::
 
 ---
