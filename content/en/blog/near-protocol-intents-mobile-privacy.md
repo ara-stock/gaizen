@@ -7,7 +7,7 @@ tags: ["NEAR", "NEAR Protocol", "NEAR Intents", "NEAR Mobile", "Crypto", "Chain 
 category: "crypto"
 published: true
 featured: false
-coverImage: "/images/near_protocol_top.webp"
+coverImage: ""
 ---
 
 > **Disclaimer**: This article is for educational and informational purposes only. It does not constitute investment advice or a solicitation to use any protocol. Cryptocurrency and DeFi participation involves significant risks including price volatility and smart contract vulnerabilities.
