@@ -1,7 +1,7 @@
 ---
 title: "AIはインフラになる — Microsoft・Alphabet・Apple・Amazonに投資する論拠"
 date: "2026-05-29"
-updatedAt: "2026-05-29"
+updatedAt: "2026-06-11"
 description: "水や電気のようにAIが普及する世界で、誰がインフラを握るか。Microsoft・Alphabet・Apple・Amazonの4社に投資する理由を、個人投資家の視点で解説します。"
 tags: ["米国株", "Microsoft", "Alphabet", "Apple", "Amazon", "AI", "個別株", "クラウド", "GAFAM"]
 category: "us-stock"
@@ -90,7 +90,7 @@ AIが全てのインターフェースになるとしても、そのAIを使う�
 
 ### Apple Intelligenceとプライバシー戦略
 
-2024年に発表されたApple Intelligenceは、オンデバイス処理とPrivate Cloud Computeの組み合わせで動作します。ユーザーデータを外部サーバーに送らない設計は、欧州・日本などプライバシー規制が厳しい市場での差異化要因です。
+2024年に発表されたApple Intelligenceは、オンデバイス処理とPrivate Cloud Computeを組み合わせ、複雑な処理ではAppleの専用サーバーへ必要なデータを送信します。Appleはデータを保存せず、検証可能なプライバシー設計を掲げており、規制の厳しい市場で差異化要因になり得ます。
 
 ### MicrosoftのカウンターとしてのApple
 

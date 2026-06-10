@@ -1,7 +1,7 @@
 ---
 title: "AI Will Become Infrastructure — Why I Own Microsoft, Alphabet, Apple, and Amazon"
 date: "2026-05-29"
-updatedAt: "2026-05-29"
+updatedAt: "2026-06-11"
 description: "In a world where AI flows like electricity, who controls the infrastructure wins. Here's why I hold Microsoft, Alphabet, Apple, and Amazon as core long-term positions."
 tags: ["US stocks", "Microsoft", "Alphabet", "Apple", "Amazon", "AI", "individual stocks", "Cloud", "GAFAM"]
 category: "us-stock"
@@ -90,7 +90,7 @@ Even if AI becomes the interface for everything, you still need a physical devic
 
 ### Apple Intelligence and Privacy
 
-Launched in 2024, Apple Intelligence uses on-device models combined with Private Cloud Compute — user data stays off external servers by design. This privacy-first architecture is a meaningful differentiator in Europe and Japan, where data regulation is tightening.
+Announced in 2024, Apple Intelligence combines on-device models with Private Cloud Compute. More complex requests can send necessary data to Apple's dedicated servers; Apple says that data is not stored and the privacy design can be independently verified. That approach may differentiate Apple in tightly regulated markets.
 
 ### Apple as a Counter to Microsoft
 

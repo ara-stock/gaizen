@@ -110,7 +110,7 @@ At 65, you'll start receiving benefits. **The full basic pension is ¥70,608/mon
 
 ### National Health Insurance (Kokumin Kenko Hoken)
 
-Leaving company health insurance means **enrolling in national health insurance (kokumin kenko hoken)**. Premiums are calculated based on prior-year income by your municipality. Even with reduced income post-FIRE, expect **¥200,000–400,000/year**.
+After leaving company health insurance, the available options may include voluntary continuation, national health insurance, or dependent coverage through a family member. National health insurance premiums vary widely by prior-year income, municipality, and household, so check a local estimate. The figures below use ¥200,000–400,000 as an illustrative scenario.
 
 ### Combined Post-FIRE Overhead
 
@@ -180,7 +180,7 @@ Services designed to be hard to cancel are the ones most likely to stay on your 
 ---
 
 :::comment
-My own target: ¥120K/month in expenses (¥100K living costs + ¥20K for national pension and health insurance), which comes to ¥1.44M/year × 25 = ¥36M as a baseline. With an inflation buffer, I'm targeting around ¥33–36M in practice.
+My own target starts from ¥120K/month in expenses (¥100K living costs + ¥20K for pension and health insurance), or ¥1.44M/year. Multiplying that by 25 gives a ¥36M baseline, before adding an inflation and contingency buffer.
 
 The key lesson I had to internalize: once you leave salaried employment, social insurance costs hit in full. National pension alone is roughly ¥17,500/month. Factor this in before your target looks "done." I'm also aiming for side-FIRE — a gradual pivot from full-time employment to freelance/side work — so even modest income post-FIRE meaningfully reduces the required portfolio.
 :::
