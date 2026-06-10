@@ -44,7 +44,7 @@ If US companies are the starting point, then emerging market and Japanese stocks
 When US consumption contracts, these markets feel it too. **If they're going to move with the US anyway, why dilute into them instead of concentrating on the source?**
 
 :::comment
-I expected more independent movement from emerging markets, but in practice the correlation is high. If you're not getting meaningful diversification benefit, you're mainly accepting lower upside in exchange for slightly lower volatility. That trade-off didn't appeal to me.
+I expected more independent movement from emerging markets, but correlations can rise during global market stress. For my own portfolio, the additional geographic diversification did not feel compelling enough to outweigh my preference for US companies. That is a personal allocation choice, not a guarantee that All-Country will underperform.
 :::
 
 ---
@@ -53,7 +53,7 @@ I expected more independent movement from emerging markets, but in practice the 
 
 All-Country spreads across roughly 3,800 companies in 47 countries. S&P500 covers ~500 US companies.
 
-More diversification means smoother returns — but also a cap on upside. I want higher exposure to GAFAM and the Magnificent Seven (Apple, Microsoft, NVIDIA, Alphabet, Amazon, Meta, Tesla). S&P500 concentrates more weight in these companies than All-Country does.
+Broader diversification reduces concentration in any one country or company, but it does not automatically make returns smoother or cap upside. I want higher exposure to GAFAM and the Magnificent Seven (Apple, Microsoft, NVIDIA, Alphabet, Amazon, Meta, Tesla). S&P500 concentrates more weight in these companies than All-Country does.
 
 | | S&P500 | All-Country |
 |--|--------|------------|

@@ -30,7 +30,7 @@ Japan's persistent yen depreciation, driven by the US-Japan interest rate differ
 The Bank of Japan ended its zero and negative interest rate policies in 2024 and has since moved to a gradual rate normalization path. For banks, rising rates mean a wider spread between lending rates and deposit rates. MUFG's FY2024 (ended March 2025) consolidated net profit attributable to shareholders reached **¥1.8629 trillion** — a new record. SMFG posted **¥1.1779 trillion**, also a record.
 
 :::comment
-During the zero-rate era, bank stocks were widely written off as "dead." But that's exactly why I saw opportunity. **If rising rates are a given, why wouldn't you own bank stocks?** I view both yen weakness and rate normalization as structural, not cyclical shifts — so my bank positions are long-term holdings, not a trade.
+During the zero-rate era, bank stocks were widely written off as "dead." As rate normalization became more plausible, I thought the mega-banks' earnings structures deserved another look. Higher rates are not guaranteed, however, and rapid rate moves can also create bond valuation losses and higher credit costs. My bank positions are long-term holdings that account for those risks, not a short-term rate trade.
 :::
 
 ### 3. New NISA Boom → Trust Fee Revenue

@@ -172,7 +172,7 @@ On wallet security: write the seed phrase in a notebook, keep it somewhere safe,
 
 ## A Note on Risks for Non-US/International Users
 
-DeFi protocols like Jupiter are deployed as autonomous smart contracts on-chain, without geographic restrictions by design. However, participation may carry legal or tax implications depending on your country of residence.
+DeFi protocols like Jupiter use on-chain smart contracts, but their legal and tax treatment can still depend on the protocol's operation, how access is provided, and the user's country of residence.
 
 Key considerations:
 - Yield earned through DeFi may be taxable as income in your jurisdiction
