@@ -39,7 +39,7 @@ const themes = [
     title: 'Crypto as Commodity',
     status: 'Small Allocation',
     statusColor: '#10b981',
-    description: 'Crypto assets are treated as commodities, not equities — like watches, wine, or art, where core user conviction and effective supply reduction from lost wallets drive price appreciation. Also functions as a geopolitical and inflation hedge alongside gold.',
+    description: 'Crypto assets are treated as commodities rather than equities. I research scarcity and core-user demand, but keep the allocation small because volatility is high and inflation or geopolitical hedge effectiveness is not guaranteed.',
     tickers: ['BTC', 'JLP', 'OKB', 'JUP', 'EDGE', 'GRVT'],
   },
   {

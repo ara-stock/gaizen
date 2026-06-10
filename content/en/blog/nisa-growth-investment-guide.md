@@ -1,7 +1,7 @@
 ---
 title: "How to Use the NISA Growth Investment Allowance"
 date: "2026-05-18"
-updatedAt: "2026-06-10"
+updatedAt: "2026-06-11"
 description: "A complete guide to using the NISA growth investment allowance — how taxation differs for Japanese stocks, US stocks, and index funds; why no-distribution funds maximize NISA efficiency; and why S&P500 or All-Country is still the right answer."
 tags: ["NISA", "growth investment allowance", "index investing", "S&P500", "All-Country", "long-term investing"]
 category: "us-stock"
@@ -11,7 +11,7 @@ featured: false
 
 ## The Verdict: S&P500 or All-Country
 
-If you're not sure what to put in your NISA, **eMAXIS Slim US Equities (S&P500) or eMAXIS Slim All Country is the right answer.**
+If you're not sure what to put in your NISA, **eMAXIS Slim US Equities (S&P500) and eMAXIS Slim All Country are strong options to consider.**
 
 That's the conclusion. The rest of this article explains why.
 

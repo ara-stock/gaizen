@@ -1,7 +1,7 @@
 ---
 title: "FIRE Accumulation Simulation — Working Backwards from the 4% Rule at 7% Returns"
 date: "2026-05-20"
-updatedAt: "2026-05-20"
+updatedAt: "2026-06-11"
 description: "Calculate the assets needed for FIRE using the 4% rule and 7% annual return. Simulations for ¥50K and ¥100K monthly saving, including realistic post-FIRE expenses like national pension and health insurance."
 tags: ["FIRE", "index investing", "4% rule", "wealth building", "long-term investing"]
 category: "us-stock"
@@ -36,7 +36,7 @@ I use **7% annual return** as the baseline for accumulation simulations.
 
 The S&P500's long-term nominal annual return is roughly 10%. Subtract inflation, and the inflation-adjusted real return has historically been around **7%**.
 
-No guarantee on the future, but as a conservative assumption for long-term index investing, 7% is well-grounded.
+Future returns are not guaranteed, and 7% should not automatically be treated as conservative. This article uses it as one scenario informed by historical returns. A real plan should also test lower-return and different-inflation scenarios.
 
 ---
 
@@ -153,7 +153,7 @@ The pension effectively replaces about **¥21M in portfolio assets** once it kic
 
 Adding post-FIRE overhead pushes the timeline from 24 years to about **26 years** — a two-year difference.
 
-> **The pension you receive after 65 is a powerful safety net.** Even if your portfolio comes in short, pension income provides a floor. Rather than assuming "I won't receive a pension," build it into your plan as the reliable income stream it is.
+> **Pension income after 65 can be an important source of support.** However, the starting age and benefit amount depend on contribution history and future policy changes. Check your own projected benefit and include a margin of safety in the plan.
 
 ---
 
