@@ -13,9 +13,9 @@ const themes = [
   {
     id: 'AI',
     title: 'AI Infrastructure',
-    status: 'Strong Buy',
+    status: 'High Conviction',
     statusColor: '#10b981',
-    description: 'Explosive demand for data centers, semiconductors, and power infrastructure as AI adoption accelerates. A diversified position across the AI supply chain — anchored by NVIDIA — is the core thesis.',
+    description: 'I am watching long-term demand for data centers, semiconductors, and power infrastructure as AI adoption grows. This is a personal research theme, not a recommendation to buy specific securities.',
     tickers: ['NVDA', 'AMD', 'MSFT', 'GOOGL'],
   },
   {
@@ -37,7 +37,7 @@ const themes = [
   {
     id: 'Crypto',
     title: 'Crypto as Commodity',
-    status: 'Strong Hold',
+    status: 'Small Allocation',
     statusColor: '#10b981',
     description: 'Crypto assets are treated as commodities, not equities — like watches, wine, or art, where core user conviction and effective supply reduction from lost wallets drive price appreciation. Also functions as a geopolitical and inflation hedge alongside gold.',
     tickers: ['BTC', 'JLP', 'OKB', 'JUP', 'EDGE', 'GRVT'],
@@ -67,7 +67,7 @@ export default function EnThesisPage() {
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>THESIS / NOW</p>
         <h1 className="text-3xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>Current Investment Themes</h1>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>
-          Active themes and current positioning from a long-term perspective.
+          A personal watchlist of long-term themes and positioning. This is not a buy or sell recommendation.
         </p>
       </div>
 

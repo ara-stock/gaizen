@@ -1,7 +1,7 @@
 ---
 title: "All-Country Is Fine. Here's Why I Still Choose S&P500"
 date: "2026-05-30"
-updatedAt: "2026-05-30"
+updatedAt: "2026-06-10"
 description: "I'm not against global index funds. But I invest through S&P500 — here's the investment philosophy behind that choice."
 tags: ["S&P500", "All-Country", "index investing", "NISA", "long-term investing", "US stocks"]
 category: "us-stock"

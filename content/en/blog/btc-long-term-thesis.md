@@ -1,7 +1,7 @@
 ---
 title: "Why I Hold BTC — The Commodity Case"
 date: "2026-05-16"
-updatedAt: "2026-05-16"
+updatedAt: "2026-06-10"
 description: "Framing BTC not as equity but as a commodity — and the case for holding it based on supply reduction, core user conviction, and inflation hedging."
 tags: ["BTC", "crypto", "long-term investing", "diversification", "inflation hedge"]
 category: "crypto"
@@ -15,11 +15,13 @@ I treat BTC not as equity, but as a **commodity** — in the same category as wa
 
 There is no "enterprise value" or "cash flow" in the traditional sense. But as a commodity, **price is determined by the balance of supply and demand**.
 
+> This article focuses on BTC's role and sizing within my portfolio. For the broader investment thesis, including scarcity and network effects, see "[My Bitcoin Investment Thesis](/en/blog/btc-investment-thesis)."
+
 ## Why I Hold It
 
 ### 1. Hard Supply Cap and Natural Supply Reduction
 
-BTC has a hard limit of 21 million coins — a protocol rule that cannot be changed. More importantly, **the amount actually in circulation is less than the cap**.
+BTC's current consensus rules set a 21 million coin limit. Changing those rules would require broad agreement among network participants. More importantly, **the amount actually in circulation is less than the cap**.
 
 - Private keys (wallet passwords) permanently lost
 - Coins sent to wrong addresses
@@ -37,7 +39,7 @@ Even with stable demand, constrained supply drives prices higher — that's the 
 
 Fiat currencies (yen, dollar, etc.) are controlled by central banks. Large-scale monetary easing and fiscal spending dilute currency value. BTC has no issuer, so it is immune to this dilution.
 
-It also functions as a hedge against geopolitical risks: national policy shifts, conflicts, and disruptions to the financial system.
+It is sometimes valued as an asset that does not depend on one government or financial institution. However, BTC can also fall sharply during crises, so its effectiveness as a geopolitical hedge is not guaranteed.
 
 ### 4. Evolution as a Payment Method
 

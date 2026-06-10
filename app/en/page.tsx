@@ -36,7 +36,7 @@ export default function EnHomePage() {
             Not predicting markets — making consistently sound choices.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/portfolio"
+            <Link href="/en/portfolio"
               className="px-5 py-2.5 text-sm font-semibold rounded-md transition-opacity hover:opacity-80"
               style={{ backgroundColor: 'var(--accent)', color: '#080c0a' }}
             >
@@ -76,7 +76,7 @@ export default function EnHomePage() {
             <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>PORTFOLIO</p>
             <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>Asset Allocation</h2>
           </div>
-          <Link href="/portfolio" className="text-xs transition-colors hover:text-white" style={{ color: 'var(--muted)' }}>
+          <Link href="/en/portfolio" className="text-xs transition-colors hover:text-white" style={{ color: 'var(--muted)' }}>
             View details →
           </Link>
         </div>

@@ -1,7 +1,7 @@
 ---
 title: "Rakuten Securities vs SBI Securities: Which Should You Choose?"
 date: "2026-05-28"
-updatedAt: "2026-05-28"
+updatedAt: "2026-06-10"
 description: "A real comparison of Rakuten Securities and SBI Securities from someone who uses both. Start with Rakuten, then add SBI as your investing gets more sophisticated."
 tags: ["Rakuten Securities", "SBI Securities", "brokerage account", "NISA", "Japan investing", "beginner"]
 category: "us-stock"

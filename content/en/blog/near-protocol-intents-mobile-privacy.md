@@ -1,7 +1,7 @@
 ---
 title: "NEAR Protocol Deep Dive — Intents, NEAR Mobile, and the Reality of Privacy Features"
 date: "2026-06-07"
-updatedAt: "2026-06-07"
+updatedAt: "2026-06-10"
 description: "From NEAR's founding story to NEAR Intents and NEAR Mobile — including an honest look at what the privacy features actually do, their limits, and the ZEC vulnerability that hit in June 2026."
 tags: ["NEAR", "NEAR Protocol", "NEAR Intents", "NEAR Mobile", "Crypto", "Chain Abstraction", "ZEC", "Zcash"]
 category: "crypto"
@@ -277,7 +277,9 @@ That said, my expectation is that AI agents operating autonomously across chains
 
 If you want to explore the NEAR ecosystem, you can create an account here:
 
-[Create a NEAR Account](https://near.com/login?ref=dbj2hyym)
+> **Referral disclosure:** The following is a referral link. The site operator may receive a benefit if you use it.
+>
+> [Create a NEAR Account](https://near.com/login?ref=dbj2hyym)
 
 ---
 

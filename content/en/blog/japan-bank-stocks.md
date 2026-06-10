@@ -1,7 +1,7 @@
 ---
 title: "\"When the Banks Fall, Japan Falls\" — Why I Invest in MUFG, SMFG, and Mizuho"
 date: "2026-05-29"
-updatedAt: "2026-05-29"
+updatedAt: "2026-06-10"
 description: "Banks are the foundation of every business. With structural yen weakness, rising rates, and the new NISA boom as tailwinds, here's why Japan's mega-banks deserve a place in a long-term portfolio."
 tags: ["Japanese stocks", "MUFG", "SMFG", "Mizuho", "bank stocks", "individual stocks", "high dividend", "interest rates"]
 category: "japan-stock"

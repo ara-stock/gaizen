@@ -1,7 +1,7 @@
 ---
 title: "FIRE Withdrawal Strategy — It's Just the Reverse of Accumulation, But What's Really Scary Isn't the Money"
 date: "2026-05-22"
-updatedAt: "2026-05-22"
+updatedAt: "2026-06-10"
 description: "After FIRE, what's truly scary isn't running out of money — it's losing your connection to society. From comparing fixed-amount vs. fixed-rate withdrawal strategies to developing a feel for living within a budget, this article walks through the practical realities of life after FIRE."
 tags: ["FIRE", "withdrawal", "asset management", "index investing", "long-term investing", "lifestyle"]
 category: "us-stock"

@@ -1,7 +1,7 @@
 ---
 title: "Using Japan's New NISA ¥3.6M Annual Limit — How I Allocate Between Lump Sum and Accumulation"
 date: "2026-05-30"
-updatedAt: "2026-05-30"
+updatedAt: "2026-06-10"
 description: "Maxing out the accumulation allowance and front-loading the growth allowance at the start of the year. My personal approach to Japan's new NISA and what to do when lump-sum isn't possible."
 tags: ["New NISA", "accumulation allowance", "growth allowance", "index investing", "lump sum", "investment trust"]
 category: "nisa"
@@ -12,6 +12,8 @@ featured: false
 ## Japan's New NISA: The Structure
 
 The new NISA system (launched 2024) allows up to ¥3.6 million per year in tax-free investments.
+
+> This article focuses on how I actually combine recurring contributions, lump-sum investing, and individual stocks. For an index-centered basic framework, see "[How to Maximize Your New NISA](/en/blog/nisa-perfect-strategy)."
 
 | Allowance | Annual Limit | Eligible Products |
 |-----------|-------------|------------------|

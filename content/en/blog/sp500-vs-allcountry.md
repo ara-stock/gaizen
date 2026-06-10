@@ -1,7 +1,7 @@
 ---
 title: "S&P500 vs. All-Country: Which Should You Choose?"
 date: "2026-05-18"
-updatedAt: "2026-05-18"
+updatedAt: "2026-06-10"
 description: "A thorough comparison of S&P500 and All-Country (eMAXIS Slim) across fees, holdings, performance, and Sharpe ratio. Conclusion: the difference is small. Stop deliberating — just start."
 tags: ["S&P500", "All-Country", "index investing", "NISA", "long-term investing"]
 category: "us-stock"

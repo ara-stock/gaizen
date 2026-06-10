@@ -1,7 +1,7 @@
 ---
 title: "Earning Yield on Jupiter DeFi — How Earn, Multiply, and Strategies Work"
 date: "2026-05-29"
-updatedAt: "2026-05-29"
+updatedAt: "2026-06-10"
 description: "A breakdown of how Jupiter Earn, Multiply, and Strategies generate yield on Solana — including the mechanics of how that yield is created, the risks involved, and the protocol's scale."
 tags: ["DeFi", "Solana", "Jupiter", "Crypto", "Yield", "Lending", "JUP"]
 category: "crypto"
@@ -189,7 +189,9 @@ This article does not constitute legal or tax advice. If you are considering usi
 - [Jupiter Lend (Earn)](https://jup.ag/lend)
 - [Jupiter Developer Docs — Earn](https://dev.jup.ag/docs/lend/earn)
 
-You can explore Jupiter Earn via this link: **[Open Jupiter](https://jup.ag/?ref=zmz6ke75ec3p)**
+> **Referral disclosure:** The following is a referral link. The site operator may receive a benefit if you use it.
+>
+> [Open Jupiter](https://jup.ag/?ref=zmz6ke75ec3p)
 
 ---
 
