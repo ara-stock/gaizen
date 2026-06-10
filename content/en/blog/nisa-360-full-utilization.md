@@ -78,7 +78,7 @@ Individual stocks are occasional and small — trading companies, US tech names,
 
 ## Which Brokerage for Your NISA Account?
 
-Japan's NISA allows **only one account per person**. Once opened, transferring to a different brokerage requires an annual procedure — so choose your primary brokerage from the start.
+You may invest through only **one NISA financial institution in a given year**. You can change providers for a future year through the required procedure, but generally cannot do so for a year in which you have already made a NISA purchase. Holdings at the previous provider also cannot be transferred into the new NISA account. Choose a provider you can use comfortably, but the decision is not permanently irreversible.
 
 I use **Rakuten Securities** for my NISA account. If you already use Rakuten services (Rakuten Card, Rakuten Ichiba), the point integration is a nice bonus. **SBI Securities** is equally strong on features and costs. Either is a sound choice.
 
