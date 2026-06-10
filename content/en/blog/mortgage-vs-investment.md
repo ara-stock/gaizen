@@ -9,27 +9,17 @@ published: true
 featured: true
 ---
 
-## My Position: Borrow Long, Keep Investing
+## Bottom Line: Compare Your Household Conditions
 
-My default is to carry the mortgage long-term and continue investing in parallel. The reason comes down to how interest rates and markets move together.
+My default is to keep borrowing modest and continue investing in parallel. Whether prepayment or continued investing is appropriate depends on the loan rate, mortgage tax credit, cash reserves, and household stability.
 
-**High interest rates = inflation is running = the economy and markets are growing**
-
-In this environment, investment returns tend to exceed the cost of carrying the mortgage. Investing wins.
-
-**Low interest rates = the economy may be cooling**
-
-When markets are sluggish, investment returns are harder to achieve. In this case, paying down the mortgage becomes the more reliable "return."
-
-The current environment — high rates, strong markets — supports keeping the mortgage and staying invested.
+Interest savings from prepayment are relatively predictable, while investment returns fluctuate. Rates and equity markets do not always move together, so make the comparison using your own finances rather than recent market direction.
 
 ## The Most Important Variable: How Much You Borrow
 
 Before debating prepayment versus investing, there's a more important question: **how much should you borrow in the first place?**
 
-In Japan, salaried employees can typically borrow 5–8× their annual income depending on the lender, loan type, and individual profile. But "what lenders will approve" and "what you should borrow" are different things.
-
-My view: **keep leverage at 2–3× your annual income.**
+Borrowing capacity varies by lender, income, employment, and property. But "what lenders will approve" and "what you can repay comfortably" are different things. I prefer modest borrowing, but an appropriate amount should be based on repayment burden, household needs, future expenses, and the impact of higher rates rather than one income multiple.
 
 Two reasons:
 
@@ -83,7 +73,7 @@ Buying a home is not time-sensitive in the way compound growth is. Getting the i
 | Risk tolerance | Prioritize reducing debt and uncertainty | Can accept volatility and invest long term |
 
 :::comment
-If you can't keep your leverage to 2–3× your income, stay in rental housing. Life is full of "once in a lifetime" moments — the perfect property, the right time to buy, the fear that rent is money thrown away. Don't let those narratives make the decision for you. Run the numbers first.
+Life is full of "once in a lifetime" narratives — the perfect property, the right time to buy, the fear that rent is money thrown away. Don't let those narratives make the decision for you. Run the household numbers first.
 :::
 
 :::comment
@@ -94,10 +84,9 @@ Three reasons: you can move when circumstances change, you can scale costs up or
 
 ## Summary
 
-- Long-term mortgage + continued investing is the default rational position
-- **Borrowing amount matters most. Keep leverage at 2–3× annual income**
-- Current high-rate, strong-market environment supports staying invested
-- Consider prepaying during market downturns when investment returns are uncertain
+- My default is modest borrowing plus continued investing, but household conditions determine the answer
+- Borrowing amount matters most; assess repayment burden and future expenses, not only income multiples
+- Compare the loan rate, tax credit, cash reserves, and risk tolerance rather than recent market direction
 - Property flipping introduces complexity and variables that S&P 500 investing doesn't — approach with caution
 - If you lack starting capital, cheap rent or public housing + maximum investment contributions first is the better path
 

@@ -1,7 +1,7 @@
 ---
 title: "ETF vs Investment Trust: Which Should You Choose?"
 date: "2026-05-28"
-updatedAt: "2026-05-28"
+updatedAt: "2026-06-11"
 description: "ETFs and mutual funds (investment trusts) work differently. Here's a clear comparison of fees, trading mechanics, taxes, and convenience — and which one to use in your NISA account."
 tags: ["ETF", "investment trust", "mutual fund", "NISA", "index investing", "eMAXIS Slim", "beginner"]
 category: "us-stock"
@@ -61,15 +61,15 @@ This is the key reason US ETFs are less efficient than Japanese mutual funds ins
 
 When a US-listed ETF pays dividends, the US withholds 10% tax at source. In a standard taxable account (特定口座), you can reclaim this via foreign tax credit (外国税額控除) on your tax return. But **inside a NISA account, foreign tax credits don't apply** — that 10% is gone.
 
-Japanese mutual funds like eMAXIS Slim are domiciled in Japan. They handle any internal foreign withholding within the fund structure, and your NISA account sees no taxable dividends at all.
+Japanese mutual funds like eMAXIS Slim may still incur foreign tax on dividends received inside the fund. No-distribution funds simplify reinvestment and avoid investor-level distributions, but they do not eliminate all foreign tax.
 
-**Result: Japanese index funds are more tax-efficient than US ETFs inside NISA.**
+Inside NISA, Japanese no-distribution index funds are often easier to use because of automatic reinvestment and yen-denominated trading. Compare each product's holdings, distribution policy, costs, and foreign-tax treatment.
 
 ## Which to Use: A Practical Framework
 
 **NISA Recurring Investment Quota → Mutual Fund**
 
-eMAXIS Slim S&P500 or eMAXIS Slim All Country. Automatic investment, credit card points, yen-denominated, no currency conversion, maximum tax efficiency in NISA. No reason to complicate this.
+eMAXIS Slim S&P500 or eMAXIS Slim All Country are straightforward candidates to compare: automatic investment, credit card points, yen-denominated trading, and no manual dividend reinvestment.
 
 **NISA Growth Investment Quota or Taxable Account → ETFs as needed**
 

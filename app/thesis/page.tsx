@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Thesis / Now',
   description: '現在注目している投資テーマと考察。AI・Energy・Gold・BTC・Stablecoin。',
-  alternates: { canonical: 'https://gaizen.xyz/thesis/' },
+  alternates: { canonical: 'https://gaizen.xyz/thesis/', languages: { 'en': 'https://gaizen.xyz/en/thesis/' } },
 }
 
 const themes = [

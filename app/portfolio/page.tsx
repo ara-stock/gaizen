@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Portfolio',
   description: '長期・分散投資のポートフォリオ公開。日本株・米国株・仮想通貨の資産配分と保有銘柄。',
-  alternates: { canonical: 'https://gaizen.xyz/portfolio/' },
+  alternates: { canonical: 'https://gaizen.xyz/portfolio/', languages: { 'en': 'https://gaizen.xyz/en/portfolio/' } },
 }
 
 const REGION_STYLE: Record<string, { label: string; color: string }> = {

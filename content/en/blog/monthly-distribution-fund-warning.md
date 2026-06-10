@@ -1,7 +1,7 @@
 ---
 title: "Why You Should Avoid Monthly Distribution Investment Funds"
 date: "2026-05-28"
-updatedAt: "2026-05-28"
+updatedAt: "2026-06-11"
 description: "High yield, monthly cash distributions — monthly distribution funds look attractive. But once you understand the high fees, return-destroying mechanics, and the structural flaws of covered call strategies, they become clear avoids for long-term investors."
 tags: ["monthly distribution", "investment funds", "covered call", "dividend investing", "NISA", "long-term investing"]
 category: "us-stock"
@@ -42,7 +42,7 @@ This is the most common misunderstanding about these products.
 
 This is sometimes called "octopus dividends" in Japan (タコ足配当) — the fund eating its own legs to survive.
 
-Every distribution also triggers a taxable event (~20%). That taxed amount can no longer compound. Over the long term, a fund that reinvests rather than distributing will almost always build more wealth.
+In a taxable account, ordinary distributions paid from gains are generally taxed at about 20% in Japan, while return-of-capital distributions are not taxed because they reduce the investor's cost basis. Either way, cash that is withdrawn and spent no longer compounds inside the fund.
 
 ## Problem 3: Covered Call Strategies Are Structurally Flawed
 

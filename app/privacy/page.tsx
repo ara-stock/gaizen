@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'プライバシーポリシー',
   description: 'GAIZEN FINANCEのプライバシーポリシー。Google AdSenseによる広告配信、Cookieの利用、アクセス解析、個人情報の取り扱いについて説明します。',
-  alternates: { canonical: 'https://gaizen.xyz/privacy/' },
+  alternates: { canonical: 'https://gaizen.xyz/privacy/', languages: { 'en': 'https://gaizen.xyz/en/privacy/' } },
 }
 
 export default function PrivacyPage() {
@@ -12,7 +12,7 @@ export default function PrivacyPage() {
       <div className="mb-12">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>LEGAL</p>
         <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>プライバシーポリシー</h1>
-        <p className="text-xs" style={{ color: 'var(--muted)' }}>最終更新: 2026年5月</p>
+        <p className="text-xs" style={{ color: 'var(--muted)' }}>最終更新: 2026年6月</p>
       </div>
 
       <div className="prose max-w-none space-y-8">

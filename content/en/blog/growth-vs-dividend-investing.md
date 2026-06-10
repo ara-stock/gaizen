@@ -1,7 +1,7 @@
 ---
 title: "Growth Investing vs Dividend Reinvesting: Which Is More Rational?"
 date: "2026-05-23"
-updatedAt: "2026-06-10"
+updatedAt: "2026-06-11"
 description: "Growth stocks vs dividend reinvesting — which builds more wealth? A comparison through the lens of compounding and tax efficiency, and why a hybrid approach with dividend-growth stocks makes practical sense."
 tags: ["growth stocks", "dividend reinvesting", "dividend growth", "index investing", "tax efficiency", "compounding"]
 category: "us-stock"
@@ -58,7 +58,7 @@ However, US stocks and ETFs are generally still subject to **US withholding tax 
 
 ## Why Hold Dividend-Growth Stocks: Psychological Stability
 
-Long-term investing means living through major crashes — once every 5 to 10 years. The Lehman shock. The COVID crash. More will come. The stress of watching your portfolio fall sharply is real, and harder to handle than most people expect before it happens.
+Long-term investors may experience major declines such as the global financial crisis or the COVID crash. Their timing and frequency cannot be predicted. The stress of watching a portfolio fall sharply is real and often harder to handle than expected.
 
 In those moments, **receiving regular dividend payments provides genuine reassurance.**
 

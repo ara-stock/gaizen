@@ -52,7 +52,7 @@ const sectors = [
     sector: 'Insurance',
     region: 'JP',
     reason: 'Essential / quasi-essential services',
-    detail: 'Marine, fire, and auto insurance are mandated or socially expected, creating stable premium income largely independent of economic cycles.',
+    detail: 'Marine, fire, and auto insurance include products required by law, contract, or risk-management needs. Demand can be recurring, while catastrophe losses, investment conditions, and claims volatility remain important risks.',
     examples: ['Tokio Marine HD'],
   },
   {
@@ -108,7 +108,7 @@ const sectors = [
     sector: 'Crypto',
     region: 'Crypto',
     reason: 'Commodity position × Supply scarcity',
-    detail: 'Crypto assets are treated as commodities, not equities. Like watches, wine, or art, price appreciation is driven by core user conviction and effective supply reduction from lost wallets. Also functions as a hedge against geopolitical risk and inflation alongside gold.',
+    detail: 'Crypto assets are treated as commodities rather than equities, with scarcity and demand as research themes. I keep the allocation small because volatility is high and effectiveness as an inflation or geopolitical hedge is not guaranteed.',
     examples: ['BTC', 'JLP', 'OKB', 'JUP', 'EDGE', 'GRVT'],
   },
 ]
