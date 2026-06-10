@@ -23,7 +23,7 @@ That said, **companies with both high dividends and genuine growth deserve inves
 
 Before evaluating any high-dividend stock, hold onto this reference point.
 
-**The S&P500's long-term annualized total return (JPY-denominated, dividends reinvested) is roughly 13–18%.** This reflects the compounding profit growth of globally competitive companies.
+The S&P 500 has grown over long periods, but yen-denominated returns vary widely depending on the measurement period and exchange rate. When comparing it with dividend stocks, use total returns over the same period, in the same currency, with dividends included.
 
 When an individual company's profit margin is below 10%, it is — by definition — less profitable than the average global competitor. Low-margin businesses have less capacity to reinvest for growth and less ability to sustain dividend increases. **The likely outcome: total return that trails the S&P500.**
 

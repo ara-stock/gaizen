@@ -97,7 +97,7 @@ This means **selling a fixed dollar amount** each month or year. For example, yo
 
 ### Fixed-Rate Withdrawal (定率取り崩し)
 
-This means **withdrawing a fixed percentage of your remaining balance** each year. If you're applying the 4% rule directly, that means "sell 4% of your balance each year."
+This means **withdrawing a fixed percentage of your current balance** each year. It is different from the commonly cited 4% rule, which starts with 4% of the initial portfolio and then adjusts that amount for inflation. A percentage-of-balance method reduces depletion risk, but spending must fall after market declines.
 
 **Advantages**
 - When assets shrink, the withdrawal amount automatically shrinks too (lower risk of depleting assets)

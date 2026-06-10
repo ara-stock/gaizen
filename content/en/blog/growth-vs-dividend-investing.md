@@ -54,7 +54,7 @@ Over decades, this difference becomes significant.
 
 Inside a NISA account, dividends and capital gains are both tax-free, which narrows the gap between the two approaches.
 
-However, US stocks and ETFs are still subject to **US withholding tax (10%) on dividends**, even inside NISA. No-distribution index funds avoid this effectively. So even within NISA, index funds hold a tax efficiency edge.
+However, US stocks and ETFs are generally still subject to **US withholding tax (10%) on dividends**, even inside NISA. No-distribution mutual funds do not make all foreign withholding tax disappear; the tax may instead be reflected inside the fund. Check each fund's prospectus and tax treatment rather than assuming one structure is always tax-free.
 
 ## Why Hold Dividend-Growth Stocks: Psychological Stability
 

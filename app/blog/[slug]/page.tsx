@@ -14,7 +14,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return getAllPostSlugs().map(slug => ({ slug }))
+  return getAllPostSlugs('ja', true).map(slug => ({ slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -22,13 +22,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = await getPostBySlug(slug)
   if (!post) return {}
   const { frontmatter } = post
+  const hasEnglishVersion = getAllPostSlugs('en', true).includes(slug)
   return {
     title: frontmatter.title,
     description: frontmatter.description,
     keywords: frontmatter.tags,
     alternates: {
       canonical: `https://gaizen.xyz/blog/${slug}/`,
-      languages: { 'en': `https://gaizen.xyz/en/blog/${slug}/` },
+      ...(hasEnglishVersion && { languages: { 'en': `https://gaizen.xyz/en/blog/${slug}/` } }),
     },
     openGraph: {
       title: frontmatter.title,

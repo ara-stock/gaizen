@@ -29,12 +29,15 @@ function getExcerpt(content: string, length = 120): string {
   return content.replace(/^#+\s.+$/gm, '').replace(/[#*`>\[\]]/g, '').trim().slice(0, length) + '...'
 }
 
-export function getAllPostSlugs(locale: Locale = 'ja'): string[] {
+export function getAllPostSlugs(locale: Locale = 'ja', publishedOnly = false): string[] {
   const dir = getContentDir(locale)
   if (!fs.existsSync(dir)) return []
-  return fs.readdirSync(dir)
+  const slugs = fs.readdirSync(dir)
     .filter(f => f.endsWith('.md'))
     .map(f => f.replace(/\.md$/, ''))
+
+  if (!publishedOnly) return slugs
+  return slugs.filter(slug => getPostMeta(slug, locale)?.frontmatter.published)
 }
 
 export function getAllPosts(locale: Locale = 'ja'): PostMeta[] {
@@ -57,11 +60,12 @@ export function getPostMeta(slug: string, locale: Locale = 'ja'): PostMeta | nul
   }
 }
 
-export async function getPostBySlug(slug: string, locale: Locale = 'ja'): Promise<Post | null> {
+export async function getPostBySlug(slug: string, locale: Locale = 'ja', includeUnpublished = false): Promise<Post | null> {
   const filePath = path.join(getContentDir(locale), `${slug}.md`)
   if (!fs.existsSync(filePath)) return null
   const raw = fs.readFileSync(filePath, 'utf-8')
   const { data, content } = matter(raw)
+  if (!includeUnpublished && !data.published) return null
 
   // Convert :::comment ... ::: blocks to author bubble HTML
   const processedContent = content.replace(
