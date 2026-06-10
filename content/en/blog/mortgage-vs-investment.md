@@ -75,12 +75,12 @@ Buying a home is not time-sensitive in the way compound growth is. Getting the i
 
 ## Interest Rate / Market Decision Matrix
 
-| Rate Environment | Market Environment | Default Action |
+| Factor | Conditions Favoring Prepayment | Conditions Favoring Continued Investing |
 |---|---|---|
-| Low rates | Weak market | Consider prepayment — guaranteed return may beat investment |
-| Low rates | Strong market | Continue investing — cheap debt, compounding wins |
-| High rates | Strong market | Continue investing — returns likely exceed debt cost |
-| High rates | Weak market | Hardest case — evaluate individually |
+| Loan rate | High or difficult to absorb if it rises | Low with comfortable repayment capacity |
+| Mortgage tax credit | Expired or offers little benefit | Still provides meaningful benefit |
+| Cash reserves | Adequate emergency savings remain afterward | Cash reserves are limited |
+| Risk tolerance | Prioritize reducing debt and uncertainty | Can accept volatility and invest long term |
 
 :::comment
 If you can't keep your leverage to 2–3× your income, stay in rental housing. Life is full of "once in a lifetime" moments — the perfect property, the right time to buy, the fear that rent is money thrown away. Don't let those narratives make the decision for you. Run the numbers first.
