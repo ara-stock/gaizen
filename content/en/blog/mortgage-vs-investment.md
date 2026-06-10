@@ -1,7 +1,7 @@
 ---
 title: "Mortgage Prepayment vs. Investing: Which Should You Prioritize?"
 date: "2026-05-28"
-updatedAt: "2026-05-28"
+updatedAt: "2026-06-11"
 description: "Should you pay off your mortgage early or keep investing? The answer depends on interest rate conditions, market environment, and how much you borrowed in the first place. A framework for making the right call."
 tags: ["mortgage", "prepayment", "investing", "real estate", "wealth building", "FIRE", "long-term investing"]
 category: "us-stock"
@@ -40,11 +40,7 @@ Living with most of your income going to mortgage payments is a slow path.
 
 ## When to Consider Prepaying
 
-The case for prepayment is clearest when markets are down.
-
-If investment returns are low or negative and your mortgage rate is fixed, eliminating debt is a guaranteed, risk-free return equal to the interest rate. That beats trying to generate positive returns in a tough market.
-
-When markets are rising, the expected return from staying invested typically exceeds the mortgage rate. The calculus favors investing.
+Consider prepayment based on the loan rate, mortgage tax credit, available cash, and your risk tolerance rather than recent market direction. Reducing interest expense is predictable, but switching to prepayment only after markets fall is still a market-timing decision.
 
 That said: timing this in real time is difficult. Deciding to prepay "because the market is down right now" is the same bet as market timing. I don't actively prepay — I let the recurring investment run regardless.
 
