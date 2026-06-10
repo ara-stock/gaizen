@@ -19,6 +19,27 @@ export type YieldToken = {
 
 type SortKey = 'apy' | 'tvlUsd' | 'maxMultiplyAPY'
 
+function SortButton({ sortKey, activeSort, label, onSort }: {
+  sortKey: SortKey
+  activeSort: SortKey
+  label: string
+  onSort: (key: SortKey) => void
+}) {
+  return (
+    <button
+      onClick={() => onSort(sortKey)}
+      className="px-3 py-1 rounded text-xs font-mono transition-colors"
+      style={{
+        backgroundColor: activeSort === sortKey ? 'rgba(0,201,122,0.15)' : 'var(--surface-2)',
+        color: activeSort === sortKey ? 'var(--accent)' : 'var(--muted)',
+        border: `1px solid ${activeSort === sortKey ? 'rgba(0,201,122,0.4)' : 'var(--border)'}`,
+      }}
+    >
+      {label}
+    </button>
+  )
+}
+
 function fmt(n: number) {
   if (n >= 1_000_000_000) return `$${(n / 1_000_000_000).toFixed(2)}B`
   if (n >= 1_000_000) return `$${(n / 1_000_000).toFixed(2)}M`
@@ -35,27 +56,13 @@ export default function YieldTable({ tokens, minBorrowRate }: { tokens: YieldTok
     return bv - av
   })
 
-  const SortBtn = ({ k, label }: { k: SortKey; label: string }) => (
-    <button
-      onClick={() => setSort(k)}
-      className="px-3 py-1 rounded text-xs font-mono transition-colors"
-      style={{
-        backgroundColor: sort === k ? 'rgba(0,201,122,0.15)' : 'var(--surface-2)',
-        color: sort === k ? 'var(--accent)' : 'var(--muted)',
-        border: `1px solid ${sort === k ? 'rgba(0,201,122,0.4)' : 'var(--border)'}`,
-      }}
-    >
-      {label}
-    </button>
-  )
-
   return (
     <div>
       <div className="flex flex-wrap items-center gap-2 mb-4">
         <span className="text-xs mr-1" style={{ color: 'var(--muted)' }}>並び替え:</span>
-        <SortBtn k="apy" label="APY 高い順" />
-        <SortBtn k="maxMultiplyAPY" label="Multiply APY 高い順" />
-        <SortBtn k="tvlUsd" label="TVL 大きい順" />
+        <SortButton sortKey="apy" activeSort={sort} label="APY 高い順" onSort={setSort} />
+        <SortButton sortKey="maxMultiplyAPY" activeSort={sort} label="Multiply APY 高い順" onSort={setSort} />
+        <SortButton sortKey="tvlUsd" activeSort={sort} label="TVL 大きい順" onSort={setSort} />
       </div>
 
       <div className="overflow-x-auto">

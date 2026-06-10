@@ -58,6 +58,10 @@ export default function PrivacyPage() {
               </li>
             </ul>
           </div>
+          <p className="text-sm leading-relaxed mt-3" style={{ color: 'var(--muted)' }}>
+            広告に関する同意が必要な地域では、Googleが提供する同意管理メッセージが表示される場合があります。
+            同意内容は、表示されるプライバシー設定画面から確認・変更できます。
+          </p>
         </section>
 
         <section>

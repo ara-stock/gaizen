@@ -90,7 +90,7 @@ The fix: use a personal finance aggregator (like Money Forward) to see both acco
 
 ## Summary
 
-- **Beginners → Rakuten Securities first.** Bank integration, yen settlement, and app quality win
+- **For beginners who prioritize ease of use, Rakuten Securities is a strong candidate.** Its bank integration, yen settlement, and app are approachable
 - **Once comfortable → add SBI Securities** for IPO access, higher credit card cashback, and bond variety
 - Keep it simple: Rakuten as primary, SBI as secondary
 

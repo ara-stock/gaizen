@@ -75,7 +75,7 @@ Bottom 10%  ██                    Significantly underperform
 → Index investing means reliably landing on this line, every year
 ```
 
-Investor returns tend to follow a roughly normal distribution. Index investing targets the center of that distribution — steadily capturing the market average over time.
+Investor returns do not necessarily follow a simple normal distribution. Index investing aims to track a market or a specified index before costs. It does not guarantee the average investor outcome, but it can reduce security-selection decisions and expenses.
 
 Consistently beating the market with individual stocks is hard. Even professional fund managers underperform their benchmark index over long periods. **This is why a diversified index fund should be your core holding.**
 

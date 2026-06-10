@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import type { Metadata } from 'next'
 
 const X_CHAR = '𝕏'
 

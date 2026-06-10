@@ -130,7 +130,7 @@ Time is your most powerful investment tool. Starting early maximizes the compoun
 
 Late starters have less time to recover from drawdowns. And without experience with market volatility, a sharp decline can feel devastating, increasing the risk of selling at exactly the wrong moment. Experiencing the ups and downs with small amounts early on builds the resilience needed for larger positions later.
 
-### Crashes Always Come — And Markets Always Recover
+### Crashes Can Happen — And Recovery Time Is Uncertain
 
 When COVID emptied the streets, when tariff policy sent markets sharply lower — both events resolved within months to a few years.
 

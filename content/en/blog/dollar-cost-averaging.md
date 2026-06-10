@@ -71,7 +71,7 @@ If you're investing from monthly income, **monthly DCA is perfectly fine.** If y
 
 For salaried workers and part-timers with regular income:
 
-**Put at least 10% of your take-home pay into investments every month.**
+If you are unsure where to start, **10% of take-home pay can be a useful reference point.** Prioritize emergency savings and near-term expenses, then choose an amount you can sustain.
 
 | Take-home | Investment (10%) |
 |---|---|
@@ -128,7 +128,7 @@ A lump sum often wins statistically, but the psychological cost of watching a la
 - **Dollar-cost averaging = invest a fixed amount on a fixed schedule**
 - **Daily vs. monthly: ~1% difference. Credit card reward points make monthly the better choice**
 - **Lump sum beats DCA 68% of the time. If you have the cash, year-start lump sum is rational**
-- **Invest 10% of take-home pay. ¥20,000/month grows to ~¥24.4M in 30 years**
+- **Use 10% of take-home pay as a starting reference, then adjust it to your circumstances**
 - **Start with ¥1,000. Getting comfortable is the first goal**
 
 ---
