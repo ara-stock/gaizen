@@ -1,7 +1,7 @@
 ---
 title: "How to Maximize Your New NISA: The Optimal Strategy for Accumulation and Growth Allowances"
 date: "2026-05-23"
-updatedAt: "2026-05-23"
+updatedAt: "2026-06-10"
 description: "How to split your new NISA between the accumulation and growth allowances. Why filling the accumulation allowance first and lump-summing the growth allowance is the most rational approach — with eMAXIS Slim S&P500 or All-Country as the core holding."
 tags: ["NISA", "accumulation allowance", "growth allowance", "eMAXIS Slim", "S&P500", "All-Country", "index investing"]
 category: "us-stock"
@@ -18,6 +18,8 @@ Here is the simple answer to getting the most out of your new NISA:
 3. **Buy S&P500 or All-Country index funds — that's enough**
 
 Here's why.
+
+> This article explains an index-centered framework for using the new NISA. For my actual mix of recurring contributions, lump-sum investing, and individual stocks, see "[Using Japan's New NISA ¥3.6M Annual Limit](/en/blog/nisa-360-full-utilization)."
 
 ## A Quick Recap of the New NISA Structure
 

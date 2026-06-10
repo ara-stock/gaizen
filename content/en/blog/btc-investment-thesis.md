@@ -1,7 +1,7 @@
 ---
 title: "Why I Hold BTC — Treating It as a Commodity, Not a Currency"
 date: "2026-05-30"
-updatedAt: "2026-05-30"
+updatedAt: "2026-06-10"
 description: "BTC as a digital commodity. The halving mechanism, a maturing market cap, GOX-driven supply reduction, and why I hold it without expecting too much from it."
 tags: ["BTC", "Bitcoin", "Crypto", "Halving", "Commodity", "Inflation Hedge"]
 category: "crypto"

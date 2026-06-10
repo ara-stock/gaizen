@@ -1,7 +1,7 @@
 ---
 title: "Why I Add Gold and Crypto to Equities — Choosing 'Scarcity' Over Bonds"
 date: "2026-05-22"
-updatedAt: "2026-05-22"
+updatedAt: "2026-06-10"
 description: "My case for skepticism toward bonds, and the rationale for including gold and crypto in a portfolio. Why I hold roughly 90% equities, 3% gold, and 5% crypto."
 tags: ["diversification", "gold", "crypto", "BTC", "bonds", "portfolio", "long-term investing", "inflation hedge"]
 category: "us-stock"

@@ -1,7 +1,7 @@
 ---
 title: "NEAR Protocol 入門 — Intents・NEAR Mobileとプライバシー機能の現実"
 date: "2026-06-07"
-updatedAt: "2026-06-07"
+updatedAt: "2026-06-10"
 description: "NEARの成り立ちからNEAR Intents・NEAR Mobileまでを解説。プライバシー機能の期待と現実的な限界も包み隠さずまとめました。クリプト投資家向け。"
 tags: ["NEAR", "NEAR Protocol", "NEAR Intents", "NEAR Mobile", "仮想通貨", "チェーン抽象化", "ZEC", "Zcash"]
 category: "crypto"
@@ -261,7 +261,9 @@ ZECをプライバシー目的で使うなら、見過ごせないニュース�
 
 NEARのエコシステムを触ってみたい方はこちらからアカウントを作れます。
 
-[NEAR アカウントを作成する](https://near.com/login?ref=dbj2hyym)
+> **リファラル開示:** 以下は紹介リンクです。リンク経由の利用により、運営者に紹介特典が付与される場合があります。
+>
+> [NEAR アカウントを作成する](https://near.com/login?ref=dbj2hyym)
 
 ---
 

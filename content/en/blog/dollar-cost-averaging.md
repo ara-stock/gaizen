@@ -1,7 +1,7 @@
 ---
 title: "Dollar-Cost Averaging — Daily, Monthly, or Lump Sum: What Works Best"
 date: "2026-05-20"
-updatedAt: "2026-05-20"
+updatedAt: "2026-06-10"
 description: "A clear explanation of dollar-cost averaging with data comparing daily, monthly, and lump-sum strategies. Why lump sum wins 68% of the time, the 10% take-home rule, and why starting with ¥1,000 is perfectly fine."
 tags: ["dollar-cost averaging", "index investing", "NISA", "long-term investing", "wealth building"]
 category: "us-stock"

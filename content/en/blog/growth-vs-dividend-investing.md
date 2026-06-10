@@ -1,7 +1,7 @@
 ---
 title: "Growth Investing vs Dividend Reinvesting: Which Is More Rational?"
 date: "2026-05-23"
-updatedAt: "2026-05-23"
+updatedAt: "2026-06-10"
 description: "Growth stocks vs dividend reinvesting — which builds more wealth? A comparison through the lens of compounding and tax efficiency, and why a hybrid approach with dividend-growth stocks makes practical sense."
 tags: ["growth stocks", "dividend reinvesting", "dividend growth", "index investing", "tax efficiency", "compounding"]
 category: "us-stock"

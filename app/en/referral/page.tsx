@@ -106,13 +106,13 @@ export default function EnReferralPage() {
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>REFERRAL</p>
         <h1 className="text-3xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>Referral Links</h1>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>
-          Services I personally use. Sign up through these links to receive referral bonuses.
+          Services listed based on personal use or research. Links on this page may be referral links.
         </p>
       </div>
 
       <div className="mb-8 p-4 rounded-lg border text-xs leading-relaxed"
         style={{ backgroundColor: 'rgba(0,201,122,0.05)', borderColor: 'rgba(0,201,122,0.15)', color: 'var(--muted)' }}>
-        This page contains referral links. Signing up through these links may result in referral bonuses for both parties.
+        This page contains referral links. Registration or use through these links may result in benefits or compensation for the reader or site operator.
         Please do your own research before using any listed service. All investment decisions are your own responsibility.
       </div>
 
@@ -154,7 +154,7 @@ export default function EnReferralPage() {
                           </span>
                         ))}
                       </div>
-                      <a href={item.href} target="_blank" rel="noopener noreferrer"
+                      <a href={item.href} target="_blank" rel="noopener noreferrer sponsored"
                         className="text-xs font-semibold flex-shrink-0 transition-opacity hover:opacity-70"
                         style={{ color: 'var(--accent)' }}>
                         Sign up →

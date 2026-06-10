@@ -1,7 +1,7 @@
 ---
 title: "JupiterのDeFiで利回りを得る仕組み — Earn・Multiply・Strategiesを解説"
 date: "2026-05-29"
-updatedAt: "2026-05-29"
+updatedAt: "2026-06-10"
 description: "SolanaのDeFiスーパーアプリJupiterが提供するEarn・Multiply・Strategiesの仕組みを解説します。利回りの源泉・リスク・規制上の留意点も含めて整理します。"
 tags: ["DeFi", "Solana", "Jupiter", "仮想通貨", "利回り", "レンディング", "JUP"]
 category: "crypto"
@@ -199,7 +199,9 @@ Jupiter Earnの詳細は公式ドキュメントで確認できます。
 - [Jupiter Lend（Earn）](https://jup.ag/lend)
 - [Jupiter 開発者向けドキュメント（Earn）](https://dev.jup.ag/docs/lend/earn)
 
-当ブログ経由でJupiterにアクセスする場合は、こちらのリンクからどうぞ：**[Jupiter を使ってみる](https://jup.ag/?ref=zmz6ke75ec3p)**
+> **リファラル開示:** 以下は紹介リンクです。リンク経由の利用により、運営者に紹介特典が付与される場合があります。
+>
+> [Jupiterを開く](https://jup.ag/?ref=zmz6ke75ec3p)
 
 ---
 

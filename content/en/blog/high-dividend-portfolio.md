@@ -1,7 +1,7 @@
 ---
 title: "Building a High-Dividend Portfolio — Selecting for Dividend Growth and Business Quality"
 date: "2026-05-19"
-updatedAt: "2026-05-19"
+updatedAt: "2026-06-10"
 description: "High-dividend portfolios aren't always necessary — but stocks with growing dividends and genuine business quality are worth owning. Six criteria to check in IR filings, patterns to avoid, and real examples from my own portfolio."
 tags: ["high-dividend stocks", "dividend growth", "Japanese stocks", "NISA", "dividend investing", "long-term investing"]
 category: "jp-stock"

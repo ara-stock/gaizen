@@ -1,7 +1,7 @@
 ---
 title: "How to Use the NISA Growth Investment Allowance"
 date: "2026-05-18"
-updatedAt: "2026-05-18"
+updatedAt: "2026-06-10"
 description: "A complete guide to using the NISA growth investment allowance — how taxation differs for Japanese stocks, US stocks, and index funds; why no-distribution funds maximize NISA efficiency; and why S&P500 or All-Country is still the right answer."
 tags: ["NISA", "growth investment allowance", "index investing", "S&P500", "All-Country", "long-term investing"]
 category: "us-stock"
@@ -34,7 +34,7 @@ Gains inside a NISA account are tax-free in Japan, but **foreign taxation may st
 |---|---|---|
 | Japanese stocks (dividends) | Tax-free ✅ | None |
 | US stocks / ETFs (dividends) | Tax-free ✅ | US 10% withholding remains ⚠️ |
-| No-distribution index funds (eMAXIS Slim, etc.) | Tax-free ✅ | Effectively none (handled internally) |
+| No-distribution index funds (eMAXIS Slim, etc.) | Tax-free ✅ | Foreign taxes may still arise inside the fund |
 
 ### Japanese Stock Dividends
 

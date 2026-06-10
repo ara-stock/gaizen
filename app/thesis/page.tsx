@@ -10,9 +10,9 @@ const themes = [
   {
     id: 'AI',
     title: 'AI Infrastructure',
-    status: 'Strong Buy',
+    status: 'High Conviction',
     statusColor: '#10b981',
-    description: 'AIの普及に伴いデータセンター・半導体・電力インフラへの需要が爆発的に増加。NVIDIAを中心としたAIサプライチェーンへの分散投資が有効。',
+    description: 'AIの普及に伴うデータセンター・半導体・電力インフラ需要を長期テーマとして注視しています。特定銘柄の売買推奨ではなく、個人的な調査対象です。',
     tickers: ['NVDA', 'AMD', 'MSFT', 'GOOGL'],
   },
   {
@@ -34,7 +34,7 @@ const themes = [
   {
     id: 'Crypto',
     title: 'Crypto as Commodity',
-    status: 'Strong Hold',
+    status: 'Small Allocation',
     statusColor: '#10b981',
     description: '暗号資産を株式ではなく「商品（コモディティ）」として位置付けています。腕時計・ワイン・絵画のように、コアなユーザーの熱狂やウォレット紛失などによる実質的な供給減少が価格を押し上げると考えています。金と同様に地政学リスク・インフレヘッジとしても機能します。',
     tickers: ['BTC', 'JLP', 'OKB', 'JUP', 'EDGE', 'GRVT'],
@@ -64,7 +64,7 @@ export default function ThesisPage() {
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>THESIS / NOW</p>
         <h1 className="text-3xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>現在注目しているテーマ</h1>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>
-          長期的な視点で注目している投資テーマと現在のスタンス。
+          長期的な視点で注目しているテーマの個人的な観測リスト。売買推奨ではありません。
         </p>
       </div>
 
