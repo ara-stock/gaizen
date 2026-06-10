@@ -19,16 +19,16 @@ const RISK_FREE_RATE = 0.005
 function DonutChart({ allocs, total }: { allocs: Record<AssetKey, number>; total: number }) {
   const cx = 80, cy = 80, r = 58, strokeW = 18
   const circumference = 2 * Math.PI * r
-  let dashOffset = circumference * 0.25
 
   const segments = ASSETS
     .filter(a => allocs[a.key] > 0 && total > 0)
-    .map(a => {
+    .map((a, index, visibleAssets) => {
       const pct = allocs[a.key] / total
       const dash = pct * circumference
-      const seg = { key: a.key, color: a.color, label: a.label, pct, dash, offset: dashOffset }
-      dashOffset -= dash
-      return seg
+      const previousPct = visibleAssets
+        .slice(0, index)
+        .reduce((sum, previous) => sum + allocs[previous.key] / total, 0)
+      return { key: a.key, color: a.color, label: a.label, pct, dash, offset: circumference * (0.25 - previousPct) }
     })
 
   return (

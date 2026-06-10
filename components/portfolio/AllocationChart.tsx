@@ -1,6 +1,6 @@
 'use client'
 
-import type { Asset, AssetCategory } from '@/types/portfolio'
+import type { Asset } from '@/types/portfolio'
 
 export const CATEGORY_LABELS: Record<string, string> = {
   'jp-stock': '日本株',
@@ -28,26 +28,27 @@ export default function AllocationChart({ assets }: { assets: Asset[] }) {
   const total = assets.reduce((sum, a) => sum + a.allocation, 0)
   const radius = 48
   const circumference = 2 * Math.PI * radius
-  let offset = 0
+  const segments = assets.map((asset, index) => ({
+    asset,
+    dashLength: (asset.allocation / total) * circumference,
+    offset: assets.slice(0, index).reduce((sum, previous) => (
+      sum + (previous.allocation / total) * circumference
+    ), 0),
+  }))
 
   return (
     <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
       <div className="relative flex-shrink-0">
         <svg width="120" height="120" viewBox="0 0 120 120">
           <circle cx="60" cy="60" r={radius} fill="none" stroke="var(--surface-2)" strokeWidth="16" />
-          {assets.map((asset, i) => {
-            const dashLength = (asset.allocation / total) * circumference
-            const currentOffset = offset
-            offset += dashLength
-            return (
-              <circle key={i} cx="60" cy="60" r={radius} fill="none"
+          {segments.map(({ asset, dashLength, offset }) => (
+              <circle key={asset.name} cx="60" cy="60" r={radius} fill="none"
                 stroke={CATEGORY_COLORS[asset.category] ?? '#00c97a'}
                 strokeWidth="16"
                 strokeDasharray={`${dashLength - 1.5} ${circumference - dashLength + 1.5}`}
-                strokeDashoffset={-currentOffset + circumference * 0.25}
+                strokeDashoffset={-offset + circumference * 0.25}
               />
-            )
-          })}
+          ))}
         </svg>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <span className="text-xs font-bold tabular-nums" style={{ color: 'var(--foreground)' }}>{total}%</span>

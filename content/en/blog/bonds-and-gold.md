@@ -55,7 +55,7 @@ The same "scarcity" logic applies to crypto, but Bitcoin takes it further: **the
 
 Furthermore, through the mechanism of the "halving" — which cuts the rate of new Bitcoin issuance roughly in half every four years — **the pace at which new supply enters circulation slows over time.** Even if demand stays constant, suppressed supply growth creates upward price pressure.
 
-Gold leaves open some possibility that advances in mining technology could increase supply; Bitcoin's cap is written into a protocol that no one can change. In terms of the certainty of scarcity, Bitcoin surpasses gold (see my [BTC article](/en/blog/btc-long-term-thesis) for more detail).
+Gold leaves open some possibility that advances in mining technology could increase supply. Bitcoin, by contrast, currently has a 21 million issuance cap under its network consensus rules. Changing that rule would require broad agreement among network participants, making its supply policy difficult to alter (see my [BTC article](/en/blog/btc-long-term-thesis) for more detail).
 
 | Asset | Supply Scarcity | Income | Price Volatility |
 |---|---|---|---|
@@ -108,7 +108,7 @@ Equities account for a combined 90%, while gold and crypto together make up 8%. 
 - Equities represent investment in the cash flows that businesses generate. Their long-term returns outpace every other asset class.
 - **Bond issuance fuels inflation and depresses real yields. During the accumulation phase, bonds are a low priority.**
 - **Gold has finite reserves in the ground.** I hold 3% as a store of value during inflationary periods and as a scarcity play while waiting for price appreciation.
-- **Bitcoin has a hard cap of 21 million coins, and the halving progressively slows the rate of new supply.** Its scarcity is more certain than gold's.
+- **Bitcoin currently has a 21 million issuance cap under its consensus rules, and halvings slow new supply.** Its supply policy is difficult to change.
 - The sub-positions (gold + crypto) are kept to roughly 8% of the portfolio; equities remain the primary engine of compound growth.
 
 :::comment

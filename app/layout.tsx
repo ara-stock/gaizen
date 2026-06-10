@@ -62,7 +62,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           url: SITE_URL,
           description: SITE_DESCRIPTION,
           inLanguage: ['ja', 'en'],
-          potentialAction: { '@type': 'SearchAction', target: `${SITE_URL}/blog?q={search_term_string}`, 'query-input': 'required name=search_term_string' },
         }) }} />
       </head>
       <body className="min-h-full flex flex-col" style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)' }}>

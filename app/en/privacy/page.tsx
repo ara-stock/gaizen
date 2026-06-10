@@ -57,6 +57,10 @@ export default function EnPrivacyPage() {
               </li>
             </ul>
           </div>
+          <p className="text-sm leading-relaxed mt-3" style={{ color: 'var(--muted)' }}>
+            In regions where advertising consent is required, a Google-provided consent message may be displayed.
+            You can review or change your choices through the privacy settings shown with that message.
+          </p>
         </section>
 
         <section>

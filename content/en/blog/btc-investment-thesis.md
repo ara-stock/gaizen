@@ -54,7 +54,7 @@ BTC's market cap has reached a level comparable to **Alphabet (Google)** — bot
 This is meaningful. BTC is no longer a fringe asset in a corner of the internet. It's one of the largest stores of value in the world. But it also means the era of 10x–50x returns is likely behind us.
 
 :::comment
-Knowing that BTC's market cap is close to Alphabet's reframes what's reasonable to expect. I don't see it going to $1M per coin from here. My personal estimate for the next halving cycle (2028) peaks around $150,000. That's not nothing — but it also means large, leveraged positions don't make sense for the risk involved. The risk-to-reward has shifted.
+Knowing that BTC's market cap is close to Alphabet's reframes what's reasonable to expect. Investors should not assume the explosive returns of its early years will repeat. Because future prices cannot be predicted reliably, I manage the risk through position size rather than a price target.
 :::
 
 ---
@@ -88,7 +88,7 @@ Let me be honest about where BTC sits in my portfolio.
 - Portfolio diversification element
 
 :::comment
-The return-to-risk ratio for BTC doesn't justify a large position anymore. If it goes to $150,000, that's meaningful — but not enough to concentrate significant capital. I hold it because not holding it feels like leaving optionality on the table. But I'm not counting on it. Equities come first. Business ownership creates real value; BTC is a bet that enough people keep believing in it.
+The return-to-risk ratio for BTC does not justify a large position for me. I hold it because not holding it feels like leaving optionality on the table, but I am not counting on a particular price outcome. Equities come first. Business ownership creates real value; BTC remains dependent on continued market demand.
 :::
 
 ---
@@ -114,7 +114,7 @@ I think BTC probably survives — but I won't claim certainty. The emergence of 
 | Mental model | Digital commodity, not currency |
 | Value source | Scarcity design + market consensus |
 | Next halving | 2028 (reward: 1.5625 BTC) |
-| Personal price ceiling | ~$150,000 |
+| Price outlook | No target; risk managed through position size |
 | Portfolio role | Inflation hedge, optionality |
 | Primary asset class | Equities (business ownership) |
 

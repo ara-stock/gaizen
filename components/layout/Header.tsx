@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import LanguageSwitcher from './LanguageSwitcher'
 
 const NAV_PATHS = [
@@ -15,11 +15,9 @@ const NAV_PATHS = [
 ]
 
 function ThemeToggle() {
-  const [isLight, setIsLight] = useState(false)
-
-  useEffect(() => {
-    setIsLight(!document.documentElement.classList.contains('dark'))
-  }, [])
+  const [isLight, setIsLight] = useState(() => (
+    typeof document !== 'undefined' && !document.documentElement.classList.contains('dark')
+  ))
 
   const toggle = () => {
     const next = !isLight

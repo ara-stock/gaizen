@@ -1,5 +1,5 @@
 import { getPortfolioData } from '@/lib/portfolio'
-import AllocationChart, { CATEGORY_COLORS } from '@/components/portfolio/AllocationChart'
+import AllocationChart from '@/components/portfolio/AllocationChart'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
