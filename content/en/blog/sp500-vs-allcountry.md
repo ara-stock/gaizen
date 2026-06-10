@@ -1,8 +1,8 @@
 ---
 title: "S&P500 vs. All-Country: Which Should You Choose?"
 date: "2026-05-18"
-updatedAt: "2026-06-10"
-description: "A thorough comparison of S&P500 and All-Country (eMAXIS Slim) across fees, holdings, performance, and Sharpe ratio. Conclusion: the difference is small. Stop deliberating — just start."
+updatedAt: "2026-06-11"
+description: "A comparison of S&P500 and All-Country funds across fees, holdings, performance, and Sharpe ratio, with a framework for choosing and sustaining contributions."
 tags: ["S&P500", "All-Country", "index investing", "NISA", "long-term investing"]
 category: "us-stock"
 published: true
@@ -138,7 +138,7 @@ When COVID emptied the streets, when tariff policy sent markets sharply lower �
 
 Even if you sell successfully during a crash, identifying the bottom is nearly impossible — fear prevents re-entry. And the counterpart: buying when "it should keep going up" often means catching the top. Trying to time the market is the single greatest destroyer of long-term returns.
 
-**Mechanical, consistent accumulation is the superior strategy.**
+**For me, the priority is a system that makes consistent accumulation easy to sustain.**
 
 ## Strategy After You Start: Keep Buying
 
@@ -150,7 +150,7 @@ The moment you start adjusting — "let me buy more this month" or "I'll sit thi
 
 ### Down Markets Are Cheap Markets
 
-Monthly DCA buys more units when prices are low and fewer when prices are high. **Average cost naturally smooths out.** There's no good reason to stop contributions during a decline — it's the best buying opportunity the market offers you.
+Monthly DCA buys more units when prices are low and fewer when prices are high, which can smooth the average purchase cost. If income and emergency savings remain secure, continuing a pre-planned contribution through a decline is one option. If household finances worsen, adjust the contribution first.
 
 ### Stop Checking So Often
 

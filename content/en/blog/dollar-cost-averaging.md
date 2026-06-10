@@ -1,7 +1,7 @@
 ---
 title: "Dollar-Cost Averaging — Daily, Monthly, or Lump Sum: What Works Best"
 date: "2026-05-20"
-updatedAt: "2026-06-10"
+updatedAt: "2026-06-11"
 description: "A clear explanation of dollar-cost averaging with data comparing daily, monthly, and lump-sum strategies. Why lump sum wins 68% of the time, the 10% take-home rule, and why starting with ¥1,000 is perfectly fine."
 tags: ["dollar-cost averaging", "index investing", "NISA", "long-term investing", "wealth building"]
 category: "us-stock"
@@ -47,7 +47,7 @@ A Vanguard study (1976–2022) found that **investing a full year's budget at th
 | Monthly DCA | Invest ¥200K × 12 months | — |
 | Daily DCA | Invest ~¥6,600 × 365 days | ~1% difference from monthly (negligible) |
 
-**The reason is simple.** Markets trend upward over the long term. The sooner you're invested, the longer your money benefits from compounding. Lump sum is the strategy of "get fully invested as early as possible" — and that logic plays out in the data.
+**The reason is simple.** If equities continue growing over the long term, investing earlier increases time in the market. Lump sum implements that approach, but it also carries the risk of a decline immediately after investing.
 
 ---
 
@@ -55,7 +55,7 @@ A Vanguard study (1976–2022) found that **investing a full year's budget at th
 
 The NISA growth investment allowance is capped at ¥2.4M per year. Using this entire budget at the start of January is called a **year-start lump sum**.
 
-"I don't know when it'll go up or down" — that's precisely the point. **The most rational response to uncertainty is to spend less time thinking and invest as early as possible.**
+"I don't know when it'll go up or down" — that's precisely the point. **My approach is to invest available long-term capital early and reduce the number of timing decisions.**
 
 Time spent staring at charts wondering "should I wait a little longer?" contributes nothing to investment returns. That time is better spent with family, on your work, or on things you enjoy.
 

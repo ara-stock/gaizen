@@ -1,7 +1,7 @@
 ---
 title: "J-REIT Primer — Real Estate's Edge Is in the Downturn"
 date: "2026-06-02"
-updatedAt: "2026-06-02"
+updatedAt: "2026-06-11"
 description: "What J-REITs are and how to use them alongside equities. Based on first-hand experience buying J-REITs after the COVID crash and rotating into stocks when the bull market began."
 tags: ["J-REIT", "real estate", "dividend investing", "dividends", "Japanese stocks", "portfolio", "long-term investing"]
 category: "japan-stock"
@@ -88,12 +88,12 @@ The reason I sold J-REITs when the market turned up: **businesses grow; land doe
 
 Real estate value is constrained by supply and demand for physical space. Growth is possible, but gradual. Businesses, by contrast, can grow through innovation, new markets, and acquisition — sometimes exponentially. When the economy is expanding and businesses are compounding value, **equities capture more of that upside than land does.**
 
-| Phase | Favored Asset | Reasoning |
+| Environment | What to Check | Interpretation |
 |---|---|---|
-| Market crash / high uncertainty | J-REIT (residential, logistics) | Real-world demand provides a floor; prices can become compelling |
-| Bull market / economic expansion | Equities | Business growth drives returns far above land appreciation |
-| Rising interest rates | J-REITs face headwinds | Higher borrowing costs reduce profitability; yield comparison shifts |
-| Rate cuts / monetary easing | Tailwind for J-REITs | Lower funding costs; yield attractiveness increases |
+| Market decline / high uncertainty | Occupancy, rents, and financial capacity | A lower price alone does not establish value |
+| Economic expansion | Rent revisions, acquisitions, and financing | Both equities and J-REITs may benefit |
+| Rising rates | Debt maturities and fixed-rate ratio | Watch refinancing costs and relative yields |
+| Falling rates | Funding costs and property prices | Financing may improve while acquisition prices can rise |
 
 There is also a specific short-term angle I occasionally revisit: **major new property developments**. When a large building or logistics center is announced and scheduled for completion, the expected boost to rental income can be a catalyst worth monitoring.
 

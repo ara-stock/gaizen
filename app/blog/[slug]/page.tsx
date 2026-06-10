@@ -68,6 +68,7 @@ export default async function ArticlePage({ params }: Props) {
     author: { '@type': 'Person', name: 'あら。', url: 'https://gaizen.xyz/about/' },
     publisher: { '@type': 'Organization', name: 'GAIZEN FINANCE', url: 'https://gaizen.xyz' },
     keywords: frontmatter.tags.join(', '),
+    inLanguage: 'ja',
     ...(frontmatter.coverImage && { image: `https://gaizen.xyz${frontmatter.coverImage}` }),
   }
 

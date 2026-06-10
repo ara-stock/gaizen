@@ -30,16 +30,25 @@ const now = new Date().toISOString().split('T')[0]
 const staticRoutes = [
   { url: SITE_URL, priority: '1.0', changefreq: 'weekly' },
   { url: `${SITE_URL}/blog/`, priority: '0.9', changefreq: 'daily' },
+  { url: `${SITE_URL}/en/`, priority: '1.0', changefreq: 'weekly' },
   { url: `${SITE_URL}/en/blog/`, priority: '0.9', changefreq: 'daily' },
   { url: `${SITE_URL}/portfolio/`, priority: '0.8', changefreq: 'monthly' },
+  { url: `${SITE_URL}/en/portfolio/`, priority: '0.8', changefreq: 'monthly' },
   { url: `${SITE_URL}/tools/`, priority: '0.7', changefreq: 'monthly' },
+  { url: `${SITE_URL}/en/tools/`, priority: '0.7', changefreq: 'monthly' },
   { url: `${SITE_URL}/tools/solana-usd-yield/`, priority: '0.7', changefreq: 'daily' },
   { url: `${SITE_URL}/referral/`, priority: '0.6', changefreq: 'monthly' },
+  { url: `${SITE_URL}/en/referral/`, priority: '0.6', changefreq: 'monthly' },
   { url: `${SITE_URL}/about/`, priority: '0.5', changefreq: 'yearly' },
+  { url: `${SITE_URL}/en/about/`, priority: '0.5', changefreq: 'yearly' },
   { url: `${SITE_URL}/thesis/`, priority: '0.7', changefreq: 'monthly' },
+  { url: `${SITE_URL}/en/thesis/`, priority: '0.7', changefreq: 'monthly' },
   { url: `${SITE_URL}/disclaimer/`, priority: '0.3', changefreq: 'yearly' },
+  { url: `${SITE_URL}/en/disclaimer/`, priority: '0.3', changefreq: 'yearly' },
   { url: `${SITE_URL}/privacy/`, priority: '0.3', changefreq: 'yearly' },
+  { url: `${SITE_URL}/en/privacy/`, priority: '0.3', changefreq: 'yearly' },
   { url: `${SITE_URL}/contact/`, priority: '0.4', changefreq: 'yearly' },
+  { url: `${SITE_URL}/en/contact/`, priority: '0.4', changefreq: 'yearly' },
 ]
 
 function entry({ url, priority, changefreq, lastmod }) {

@@ -80,12 +80,12 @@ Even in an AI-first world, a frontend is always necessary. Alphabet holds both t
 
 ---
 
-## Apple (AAPL) — Physical Devices Are Non-Negotiable
+## Apple (AAPL) — A Major Access Point for AI
 
 No matter how advanced AI becomes, users access it through a device. iPhone, Mac, AirPods, and Apple Watch form the most premium "AI frontend" in existence — and that's not changing.
 
 :::comment
-Even if AI becomes the interface for everything, you still need a physical device to reach it. Apple holds the most loyal, highest-value device ecosystem in the world. Apple Intelligence is Apple's strategy to capture AI at the device layer — on-device processing, tight lock-in, and the kind of ecosystem loyalty that Android or Windows simply doesn't replicate.
+Even as AI interfaces evolve, smartphones and computers remain important access points. Apple connects iPhone, Mac, AirPods, and Apple Intelligence within its own ecosystem. I view that installed base and integration as competitive strengths worth monitoring.
 :::
 
 ### Apple Intelligence and Privacy

@@ -80,12 +80,12 @@ AIが全てのインターフェースになるとしても、そこに至るま
 
 ---
 
-## Apple（AAPL）— 物理デバイスは絶対に必要
+## Apple（AAPL）— AIへの重要なアクセス経路
 
 AIがどれほど進化しても、ユーザーはデバイスを通じてアクセスします。iPhone・Mac・AirPods・Apple Watchは、最もプレミアムな「AIのフロントエンド」として機能し続けます。
 
 :::comment
-AIが全てのインターフェースになるとしても、そのAIを使うための物理デバイスは必ず必要です。AppleはiPhone・Mac・AirPodsで最もリッチな出口を持ち、Apple Intelligenceでそれを自社エコシステムに囲い込んでいます。AndroidやWindowsとは異なる強固なロイヤリティが、Appleの最大の堀です。
+AIの利用形態が変化しても、スマートフォンやPCなどのデバイスは重要なアクセス経路の一つです。AppleはiPhone・Mac・AirPodsとApple Intelligenceを自社エコシステム内で連携させています。この顧客基盤と連携性を、Appleの競争力として注視しています。
 :::
 
 ### Apple Intelligenceとプライバシー戦略

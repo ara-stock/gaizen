@@ -1,7 +1,7 @@
 ---
 title: "Using Japan's New NISA ¥3.6M Annual Limit — How I Allocate Between Lump Sum and Accumulation"
 date: "2026-05-30"
-updatedAt: "2026-06-10"
+updatedAt: "2026-06-11"
 description: "Maxing out the accumulation allowance and front-loading the growth allowance at the start of the year. My personal approach to Japan's new NISA and what to do when lump-sum isn't possible."
 tags: ["New NISA", "accumulation allowance", "growth allowance", "index investing", "lump sum", "investment trust"]
 category: "nisa"
@@ -44,7 +44,7 @@ For the ¥2.4M growth allowance, I invest the full amount as a **lump sum in Jan
 The logic is simple: investing at the earliest possible point in the year maximizes time in the market. Dollar-cost averaging smooths price risk, but over the long term, earlier deployment tends to outperform. January lump-sum is the most aggressive implementation of that principle.
 
 :::comment
-Front-loading in January is also a way of eliminating the temptation to time the market. Once the money is in, I stop looking for a better entry point. There will always be moments in the year where it looks like I should have waited — but over a 10-year horizon, that timing difference becomes noise.
+Front-loading in January is also a way of eliminating the temptation to time the market. Once the money is in, I stop looking for a better entry point. There will be years when waiting would have produced a better result, but that cannot be known in advance. I prioritize following a repeatable policy over judging it by one year's outcome.
 :::
 
 ### When Lump Sum Isn't Possible

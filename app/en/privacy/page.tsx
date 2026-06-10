@@ -15,7 +15,7 @@ export default function EnPrivacyPage() {
       <div className="mb-12">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>LEGAL</p>
         <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>Privacy Policy</h1>
-        <p className="text-xs" style={{ color: 'var(--muted)' }}>Last updated: May 2026</p>
+        <p className="text-xs" style={{ color: 'var(--muted)' }}>Last updated: June 2026</p>
       </div>
 
       <div className="space-y-8">
