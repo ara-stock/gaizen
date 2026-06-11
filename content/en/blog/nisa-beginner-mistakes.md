@@ -54,6 +54,16 @@ Social posts may omit:
 - The author's exit conditions
 - Advertising, referral compensation, or existing positions
 
+Another concern is that the author's interests may not align with the reader's. Someone who already owns a stock may benefit if more people buy it. In the opposite direction, someone positioned for a decline may benefit from spreading a strongly negative view.
+
+This does not mean every social-media post is intentionally manipulative. It means readers often cannot verify the author's position or incentives, so popularity itself cannot support an investment decision.
+
+:::comment
+When someone strongly recommends a stock, I ask whether they already own it and may want other people to buy. When someone strongly attacks a stock, I also consider whether they could benefit from a decline.
+
+The accuracy of the argument and the author's financial position need to be evaluated separately. I do not buy simply because a stock is trending on social media.
+:::
+
 A popular stock can be a starting point for research. Popularity itself should not be the purchase reason.
 
 Before buying, confirm that you can explain how the company earns money, what advantage it has over competitors, and under what conditions you would sell.
@@ -178,4 +188,3 @@ Beginners should first experience price movement and recurring contributions thr
 - [Financial Services Agency Japan — Eligible Products for the NISA Accumulation Allowance](https://www.fsa.go.jp/policy/nisa2/about/tsumitate/index.html)
 - [Japan Exchange Group — Risks of Leveraged and Inverse Products](https://www.jpx.co.jp/equities/products/etfs/risk/04.html)
 - [Japan Securities Dealers Association — Time Diversification](https://www.jsda.or.jp/jikan/)
-
