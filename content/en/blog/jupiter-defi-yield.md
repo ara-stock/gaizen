@@ -3,7 +3,7 @@ title: "Earning Yield on Jupiter DeFi — How Earn, Multiply, and Strategies Wor
 date: "2026-05-29"
 updatedAt: "2026-06-10"
 description: "A breakdown of how Jupiter Earn, Multiply, and Strategies generate yield on Solana — including the mechanics of how that yield is created, the risks involved, and the protocol's scale."
-tags: ["DeFi", "Solana", "Jupiter", "Crypto", "Yield", "Lending", "JUP"]
+tags: ["DeFi", "Solana", "Jupiter", "crypto", "Yield", "Lending", "JUP"]
 category: "crypto"
 published: true
 featured: false

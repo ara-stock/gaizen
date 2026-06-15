@@ -1,7 +1,7 @@
 ---
 title: "Why I Add Gold and Crypto to Equities — Choosing 'Scarcity' Over Bonds"
 date: "2026-05-22"
-updatedAt: "2026-06-10"
+updatedAt: "2026-06-15"
 description: "My case for skepticism toward bonds, and the rationale for including gold and crypto in a portfolio. Why I hold roughly 90% equities, 3% gold, and 5% crypto."
 tags: ["diversification", "gold", "crypto", "BTC", "bonds", "portfolio", "long-term investing", "inflation hedge"]
 category: "us-stock"
@@ -72,19 +72,19 @@ There are several ways to invest in gold. The main options are gold ETFs (such a
 
 I use the gold accumulation plan because of **a favorable treatment under Japanese tax law.**
 
-Gains from selling through a 純金積立 are classified as **譲渡所得 (transfer income / capital gains)**. Transfer income benefits from a ¥500,000 annual special deduction, meaning gains up to ¥500,000 in a given year are not subject to tax.
+Gains from selling physical gold are generally classified as **譲渡所得 (transfer income / capital gains)** in Japan. The calculation deducts acquisition and selling costs, combines the result with other qualifying transfer income, and then applies an annual special deduction of up to ¥500,000. If the gold was held for more than five years, one half of the amount remaining after the deduction is generally taxable.
 
 By contrast, gains from selling a gold ETF are subject to **申告分離課税 (separate self-assessed taxation) at roughly 20.315%** — unless the ETF is held inside a NISA (Nippon Individual Savings Account), in which case it is tax-free.
 
 | Method | Tax Category | Tax-Free Allowance |
 |---|---|---|
-| 純金積立 (gold accumulation plan) | Transfer income (譲渡所得) | Tax-free up to ¥500,000/year (special deduction) |
+| 純金積立 (gold accumulation plan) | Generally transfer income (譲渡所得) | Up to ¥500,000 annual special deduction, aggregated with other qualifying transfer income |
 | Gold ETF (standard taxable account) | Separate self-assessed taxation | ~20.315% tax on gains |
 | Gold ETF (NISA account) | Tax-free | Tax-free within NISA contribution limits |
 
 If your gold allocation is relatively modest and annual gains are unlikely to exceed ¥500,000, the 純金積立 offers better tax efficiency. I also prefer to save my NISA allowance for equities and investment trusts, which is another reason I hold gold through the accumulation plan.
 
-> The ¥500,000 transfer income deduction is aggregated with other transfer gains (e.g., from real estate). If you have other sources of 譲渡所得, you need to assess the total combined amount.
+> Tax treatment can vary based on trading frequency, holding period, and other transfer income. Check the National Tax Agency guidance or consult a tax professional when filing.
 
 ---
 

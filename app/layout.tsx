@@ -1,12 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import LanguageDetector from '@/components/layout/LanguageDetector'
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 const SITE_URL = 'https://gaizen.xyz'
 const SITE_NAME = 'GAIZEN FINANCE'
@@ -51,7 +48,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ja" className={`${inter.variable} h-full`} suppressHydrationWarning>
+    <html lang="ja" className="h-full" suppressHydrationWarning>
       {/* Prevent flash: apply saved theme before paint */}
       <head>
         <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.classList.add('dark');}else if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.classList.add('dark');}}catch(e){}})()` }} />
