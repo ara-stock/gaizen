@@ -3,7 +3,7 @@ title: "Where to Keep Your Emergency Fund and How Much You Really Need — Quest
 date: "2026-05-22"
 updatedAt: "2026-05-22"
 description: "Do you really need 6 months of expenses as an emergency fund? I explain my own approach of keeping '1 month plus a buffer,' walk through illness and injury scenarios, and explore whether you need a separate account — a framework for young investors to avoid costly opportunity loss."
-tags: ["emergency-fund", "wealth-building", "investing", "sick-leave", "household-finance"]
+tags: ["emergency-fund", "wealth building", "investing", "sick-leave", "household-finance"]
 category: "us-stock"
 published: true
 featured: false

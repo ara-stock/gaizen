@@ -3,7 +3,7 @@ title: "NEAR Protocol Deep Dive — Intents, NEAR Mobile, and the Reality of Pri
 date: "2026-06-07"
 updatedAt: "2026-06-10"
 description: "From NEAR's founding story to NEAR Intents and NEAR Mobile — including an honest look at what the privacy features actually do, their limits, and the ZEC vulnerability that hit in June 2026."
-tags: ["NEAR", "NEAR Protocol", "NEAR Intents", "NEAR Mobile", "Crypto", "Chain Abstraction", "ZEC", "Zcash"]
+tags: ["NEAR", "NEAR Protocol", "NEAR Intents", "NEAR Mobile", "crypto", "Chain Abstraction", "ZEC", "Zcash"]
 category: "crypto"
 published: true
 featured: false
