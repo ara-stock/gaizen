@@ -1,4 +1,4 @@
-import { getAllTags, getPostsByTag } from '@/lib/posts'
+import { getAllTags, getPostsByTag, normalizeRouteParam } from '@/lib/posts'
 import ArticleCard from '@/components/blog/ArticleCard'
 import Link from 'next/link'
 import type { Metadata } from 'next'
@@ -8,23 +8,23 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return getAllTags().map(tag => ({ tag: encodeURIComponent(tag) }))
+  return getAllTags().map(tag => ({ tag }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { tag } = await params
-  const decoded = decodeURIComponent(tag)
+  const normalizedTag = normalizeRouteParam(tag)
   return {
-    title: `#${decoded}`,
-    description: `${decoded} に関する記事一覧`,
-    alternates: { canonical: `https://gaizen.xyz/blog/tag/${tag}/` },
+    title: `#${normalizedTag}`,
+    description: `${normalizedTag} に関する記事一覧`,
+    alternates: { canonical: `https://gaizen.xyz/blog/tag/${encodeURIComponent(normalizedTag)}/` },
   }
 }
 
 export default async function TagPage({ params }: Props) {
   const { tag } = await params
-  const decoded = decodeURIComponent(tag)
-  const posts = getPostsByTag(decoded)
+  const normalizedTag = normalizeRouteParam(tag)
+  const posts = getPostsByTag(normalizedTag)
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
@@ -33,7 +33,7 @@ export default async function TagPage({ params }: Props) {
           ← Blog に戻る
         </Link>
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>TAG</p>
-        <h1 className="text-3xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>#{decoded}</h1>
+        <h1 className="text-3xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>#{normalizedTag}</h1>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>{posts.length} 件の記事</p>
       </div>
 
