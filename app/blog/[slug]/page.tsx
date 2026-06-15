@@ -87,6 +87,13 @@ export default async function ArticlePage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+        <nav aria-label="パンくず" className="mb-8 flex items-center gap-2 text-xs" style={{ color: 'var(--muted)' }}>
+          <Link href="/">ホーム</Link>
+          <span aria-hidden="true">/</span>
+          <Link href="/blog">ブログ</Link>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page" className="truncate">{frontmatter.title}</span>
+        </nav>
         <div className="lg:grid lg:grid-cols-[1fr_220px] lg:gap-12">
           <article>
             <header className="mb-10 pb-8 border-b" style={{ borderColor: 'var(--border)' }}>

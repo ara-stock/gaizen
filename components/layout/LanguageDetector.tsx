@@ -8,6 +8,10 @@ export default function LanguageDetector() {
   const router = useRouter()
 
   useEffect(() => {
+    document.documentElement.lang = pathname.startsWith('/en') ? 'en' : 'ja'
+  }, [pathname])
+
+  useEffect(() => {
     try {
       const stored = localStorage.getItem('gaizen-lang')
       if (stored !== null) return // respect stored preference, no auto-redirect

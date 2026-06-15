@@ -1,11 +1,18 @@
 import { getAllPosts, getTopTags } from '@/lib/posts'
 import ArticleCard from '@/components/blog/ArticleCard'
 import Tag from '@/components/ui/Tag'
+import ReadingGuide from '@/components/blog/ReadingGuide'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog',
   description: '長期投資・仮想通貨・不動産・マクロ経済に関する投資記録と考察。',
+  openGraph: {
+    title: '投資ブログ | GAIZEN FINANCE',
+    description: '長期投資・仮想通貨・不動産・マクロ経済に関する投資記録と考察。',
+    url: 'https://gaizen.xyz/blog/',
+    locale: 'ja_JP',
+  },
   alternates: {
     canonical: 'https://gaizen.xyz/blog/',
     languages: { 'en': 'https://gaizen.xyz/en/blog/' },
@@ -26,9 +33,14 @@ export default function BlogPage() {
         </p>
       </div>
 
+      <ReadingGuide />
+
       {tags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-10 pb-10 border-b" style={{ borderColor: 'var(--border)' }}>
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold mb-4" style={{ color: 'var(--foreground)' }}>すべての記事</h2>
+          <div className="flex flex-wrap gap-2">
           {tags.map(tag => <Tag key={tag} tag={tag} />)}
+          </div>
         </div>
       )}
 
