@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `#${normalizedTag}`,
     description: `Articles tagged: ${normalizedTag}`,
     alternates: { canonical: `https://gaizen.xyz/en/blog/tag/${encodeURIComponent(normalizedTag)}/` },
+    robots: { index: false, follow: true },
   }
 }
 
