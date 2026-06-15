@@ -11,6 +11,14 @@ import type { Post, PostMeta } from '@/types/post'
 
 export type Locale = 'ja' | 'en'
 
+export function normalizeRouteParam(value: string): string {
+  try {
+    return decodeURIComponent(value.replace(/%(?![0-9A-Fa-f]{2})/g, '%25'))
+  } catch {
+    return value
+  }
+}
+
 const CONTENT_DIRS: Record<Locale, string> = {
   ja: path.join(process.cwd(), 'content/blog'),
   en: path.join(process.cwd(), 'content/en/blog'),
