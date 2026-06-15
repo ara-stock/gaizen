@@ -4,10 +4,17 @@ import { getPortfolioData } from '@/lib/portfolio'
 import ArticleCard from '@/components/blog/ArticleCard'
 import { CATEGORY_COLORS } from '@/components/portfolio/AllocationChart'
 import type { Metadata } from 'next'
+import ReadingGuide from '@/components/blog/ReadingGuide'
 
 export const metadata: Metadata = {
   title: 'GAIZEN FINANCE',
   description: 'High-probability investing through long-term accumulation. Building wealth with index funds and selective individual stocks.',
+  openGraph: {
+    title: 'GAIZEN FINANCE',
+    description: 'High-probability investing through long-term accumulation. Building wealth with index funds and selective individual stocks.',
+    url: 'https://gaizen.xyz/en/',
+    locale: 'en_US',
+  },
   alternates: {
     canonical: 'https://gaizen.xyz/en/',
     languages: { 'ja': 'https://gaizen.xyz' },
@@ -68,6 +75,8 @@ export default function EnHomePage() {
           ))}
         </div>
       </section>
+
+      <ReadingGuide locale="en" compact />
 
       {/* Portfolio overview */}
       <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>

@@ -4,6 +4,7 @@ import { getAllPosts } from '@/lib/posts'
 import { getPortfolioData } from '@/lib/portfolio'
 import ArticleCard from '@/components/blog/ArticleCard'
 import { CATEGORY_COLORS } from '@/components/portfolio/AllocationChart'
+import ReadingGuide from '@/components/blog/ReadingGuide'
 
 export const metadata: Metadata = {
   title: 'GAIZEN FINANCE — 蓋然性の高い長期投資',
@@ -95,6 +96,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <ReadingGuide compact />
 
       {/* Portfolio overview */}
       <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>

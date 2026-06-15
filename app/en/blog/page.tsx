@@ -1,11 +1,18 @@
 import { getAllPosts, getTopTags } from '@/lib/posts'
 import ArticleCard from '@/components/blog/ArticleCard'
 import Tag from '@/components/ui/Tag'
+import ReadingGuide from '@/components/blog/ReadingGuide'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog',
   description: 'Investment insights on long-term investing, index funds, Japanese stocks, and crypto.',
+  openGraph: {
+    title: 'Investment Blog | GAIZEN FINANCE',
+    description: 'Investment insights on long-term investing, index funds, Japanese stocks, and crypto.',
+    url: 'https://gaizen.xyz/en/blog/',
+    locale: 'en_US',
+  },
   alternates: {
     canonical: 'https://gaizen.xyz/en/blog/',
     languages: { 'ja': 'https://gaizen.xyz/blog/' },
@@ -26,9 +33,14 @@ export default function EnBlogPage() {
         </p>
       </div>
 
+      <ReadingGuide locale="en" />
+
       {tags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-10 pb-10 border-b" style={{ borderColor: 'var(--border)' }}>
-          {tags.map(tag => <Tag key={tag} tag={tag} basePath="/en/blog" />)}
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold mb-4" style={{ color: 'var(--foreground)' }}>All Articles</h2>
+          <div className="flex flex-wrap gap-2">
+            {tags.map(tag => <Tag key={tag} tag={tag} basePath="/en/blog" />)}
+          </div>
         </div>
       )}
 
