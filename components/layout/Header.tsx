@@ -9,7 +9,6 @@ const NAV_PATHS = [
   { path: '/blog',      label: 'Blog' },
   { path: '/portfolio', label: 'Portfolio' },
   { path: '/tools',     label: 'Tools' },
-  { path: '/referral',  label: 'Referral' },
   { path: '/thesis',    label: 'Thesis' },
   { path: '/about',     label: 'About' },
 ]

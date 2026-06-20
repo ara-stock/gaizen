@@ -9,20 +9,6 @@ export const metadata: Metadata = {
 
 const tools = [
   {
-    href: '/tools/solana-usd-yield',
-    category: 'DeFi',
-    title: 'Solana USD イールドベアリング一覧',
-    description: 'Solanaチェーン上のUSDイールドベアリングトークン（PST・eUSX・JUICEDなど）の利回り・流通規模をAPY順・TVL順で一覧。',
-    tags: ['Solana', 'DeFi', 'APY', 'ステーブルコイン'],
-  },
-  {
-    href: '/tools/x-copy',
-    category: 'Utility',
-    title: '𝕏 コピーツール',
-    description: 'クリックするだけで 𝕏（Xの数学記号文字）をクリップボードにコピーします。',
-    tags: ['クリップボード', '文字コピー'],
-  },
-  {
     href: '/tools/allocation',
     category: 'Portfolio',
     title: 'ポートフォリオ配分シミュレーター',

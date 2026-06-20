@@ -21,14 +21,12 @@ export default function Footer() {
         ['FIRE Simulator', `${p}/tools/fire`],
         ['Sharpe Ratio', `${p}/tools/sharpe`],
         ['Real Estate Yield', `${p}/tools/realestate`],
-        ['Referral', `${p}/referral`],
       ]
     : [
         ['ポートフォリオ配分', '/tools/allocation'],
         ['FIREシミュレーター', '/tools/fire'],
         ['シャープレシオ', '/tools/sharpe'],
         ['不動産利回り', '/tools/realestate'],
-        ['Referral', '/referral'],
       ]
 
   const legalLinks: [string, string][] = [

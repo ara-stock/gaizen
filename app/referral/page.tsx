@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'Referral',
   description: '仮想通貨取引所・DEX・エアドロップのリファラルリンクまとめ。Binance Japan, Jupiter, EdgeX, GRVT など。',
   alternates: { canonical: 'https://gaizen.xyz/referral/', languages: { 'en': 'https://gaizen.xyz/en/referral/' } },
+  robots: { index: false, follow: true },
 }
 
 type ReferralItem = {
