@@ -88,6 +88,15 @@ ${enPosts.map(p => entry({
 })).join('\n')}
 </urlset>`
 
+const sitemapIndexXml = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>${xmlEscape(`${SITE_URL}/sitemap.xml`)}</loc>
+    <lastmod>${xmlEscape(now)}</lastmod>
+  </sitemap>
+</sitemapindex>`
+
 if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true })
 fs.writeFileSync(path.join(OUT_DIR, 'sitemap.xml'), xml, 'utf-8')
+fs.writeFileSync(path.join(OUT_DIR, 'sitemap-index.xml'), sitemapIndexXml, 'utf-8')
 console.log(`[sitemap] Generated with ${staticRoutes.length + jaPosts.length + enPosts.length} URLs`)
