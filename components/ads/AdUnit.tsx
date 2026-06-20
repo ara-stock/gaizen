@@ -17,16 +17,18 @@ interface AdUnitProps {
 
 export default function AdUnit({ slot, format = 'auto', responsive = true, className }: AdUnitProps) {
   const publisherId = process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID
+  const adUnitsEnabled = process.env.NEXT_PUBLIC_ADSENSE_AD_UNITS_ENABLED === 'true'
 
   useEffect(() => {
+    if (!adUnitsEnabled) return
     try {
       ;(window.adsbygoogle = window.adsbygoogle || []).push({})
     } catch {
       // ignore if adsbygoogle is not yet loaded
     }
-  }, [])
+  }, [adUnitsEnabled])
 
-  if (!publisherId || publisherId === 'ca-pub-XXXXXXXXXXXXXXXX') return null
+  if (!adUnitsEnabled || !publisherId || publisherId === 'ca-pub-XXXXXXXXXXXXXXXX') return null
 
   return (
     <div className={className}>

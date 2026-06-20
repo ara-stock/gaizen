@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     canonical: 'https://gaizen.xyz/en/referral/',
     languages: { 'ja': 'https://gaizen.xyz/referral/' },
   },
+  robots: { index: false, follow: true },
 }
 
 type ReferralItem = {

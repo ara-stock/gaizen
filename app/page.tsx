@@ -29,12 +29,6 @@ const EXPLORE_LINKS = [
     icon: '🔧',
   },
   {
-    href: '/referral',
-    label: 'Referral',
-    desc: 'おすすめ証券・サービス',
-    icon: '🔗',
-  },
-  {
     href: '/about',
     label: 'About',
     desc: 'このサイトについて',
