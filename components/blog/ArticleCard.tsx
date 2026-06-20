@@ -12,12 +12,13 @@ interface ArticleCardProps {
 export default function ArticleCard({ post, basePath = '/blog', locale = 'ja' }: ArticleCardProps) {
   const { slug, frontmatter, readingTime, excerpt } = post
   const dateLocale = locale === 'en' ? 'en-US' : 'ja-JP'
+  const articleHref = `${basePath}/${slug}/`
 
   return (
     <article className="rounded-lg border overflow-hidden transition-colors hover:border-yellow-700"
       style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
       {frontmatter.coverImage && (
-        <Link href={`${basePath}/${slug}`} className="block relative w-full h-40 overflow-hidden">
+        <Link href={articleHref} className="block relative w-full h-40 overflow-hidden">
           <Image
             src={frontmatter.coverImage}
             alt={frontmatter.title}
@@ -41,7 +42,7 @@ export default function ArticleCard({ post, basePath = '/blog', locale = 'ja' }:
           <span className="text-xs" style={{ color: 'var(--muted)' }}>{readingTime} min read</span>
         </div>
 
-        <Link href={`${basePath}/${slug}`}>
+        <Link href={articleHref}>
           <h2 className="text-base font-semibold mb-2 leading-snug hover:text-yellow-400 transition-colors" style={{ color: 'var(--foreground)' }}>
             {frontmatter.title}
           </h2>

@@ -9,30 +9,30 @@ export default function Footer() {
   const p = isEn ? '/en' : ''
 
   const contentLinks: [string, string][] = [
-    ['Blog', `${p}/blog`],
-    ['Portfolio', `${p}/portfolio`],
-    ['Thesis', `${p}/thesis`],
-    ['About', `${p}/about`],
+    ['Blog', `${p}/blog/`],
+    ['Portfolio', `${p}/portfolio/`],
+    ['Thesis', `${p}/thesis/`],
+    ['About', `${p}/about/`],
   ]
 
   const toolLinks: [string, string][] = isEn
     ? [
-        ['Allocation Simulator', `${p}/tools/allocation`],
-        ['FIRE Simulator', `${p}/tools/fire`],
-        ['Sharpe Ratio', `${p}/tools/sharpe`],
-        ['Real Estate Yield', `${p}/tools/realestate`],
+        ['Allocation Simulator', `${p}/tools/allocation/`],
+        ['FIRE Simulator', `${p}/tools/fire/`],
+        ['Sharpe Ratio', `${p}/tools/sharpe/`],
+        ['Real Estate Yield', `${p}/tools/realestate/`],
       ]
     : [
-        ['ポートフォリオ配分', '/tools/allocation'],
-        ['FIREシミュレーター', '/tools/fire'],
-        ['シャープレシオ', '/tools/sharpe'],
-        ['不動産利回り', '/tools/realestate'],
+        ['ポートフォリオ配分', '/tools/allocation/'],
+        ['FIREシミュレーター', '/tools/fire/'],
+        ['シャープレシオ', '/tools/sharpe/'],
+        ['不動産利回り', '/tools/realestate/'],
       ]
 
   const legalLinks: [string, string][] = [
-    ['Disclaimer', `${p}/disclaimer`],
-    ['Privacy Policy', `${p}/privacy`],
-    ['Contact', `${p}/contact`],
+    ['Disclaimer', `${p}/disclaimer/`],
+    ['Privacy Policy', `${p}/privacy/`],
+    ['Contact', `${p}/contact/`],
   ]
 
   const disclaimer = isEn

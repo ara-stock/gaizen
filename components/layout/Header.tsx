@@ -6,11 +6,11 @@ import { useState } from 'react'
 import LanguageSwitcher from './LanguageSwitcher'
 
 const NAV_PATHS = [
-  { path: '/blog',      label: 'Blog' },
-  { path: '/portfolio', label: 'Portfolio' },
-  { path: '/tools',     label: 'Tools' },
-  { path: '/thesis',    label: 'Thesis' },
-  { path: '/about',     label: 'About' },
+  { path: '/blog/',      label: 'Blog' },
+  { path: '/portfolio/', label: 'Portfolio' },
+  { path: '/tools/',     label: 'Tools' },
+  { path: '/thesis/',    label: 'Thesis' },
+  { path: '/about/',     label: 'About' },
 ]
 
 function ThemeToggle() {
@@ -67,7 +67,7 @@ export default function Header() {
   const isEnglish = pathname.startsWith('/en')
   const prefix = isEnglish ? '/en' : ''
   const NAV_LINKS = NAV_PATHS.map(({ path, label }) => ({ href: `${prefix}${path}`, label }))
-  const homeHref = isEnglish ? '/en' : '/'
+  const homeHref = isEnglish ? '/en/' : '/'
 
   return (
     <header className="sticky top-0 z-50 border-b" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--header-bg)', backdropFilter: 'blur(12px)' }}>
@@ -80,7 +80,7 @@ export default function Header() {
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6 flex-1 justify-center">
           {NAV_LINKS.map(({ href, label }) => {
-            const active = pathname === href || pathname.startsWith(href + '/')
+            const active = pathname === href || pathname.startsWith(href)
             return (
               <Link key={href} href={href}
                 className="text-xs tracking-wider transition-colors duration-150"

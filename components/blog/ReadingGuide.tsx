@@ -71,7 +71,7 @@ export default function ReadingGuide({ locale = 'ja', compact = false }: Reading
                 if (!post?.frontmatter.published) return null
                 return (
                   <li key={slug}>
-                    <Link href={`${basePath}/${slug}`} className="flex gap-2 text-xs leading-relaxed transition-colors hover:text-green-500">
+                    <Link href={`${basePath}/${slug}/`} className="flex gap-2 text-xs leading-relaxed transition-colors hover:text-green-500">
                       <span className="font-mono flex-shrink-0" style={{ color: 'var(--accent)' }}>{articleIndex + 1}.</span>
                       <span style={{ color: 'var(--foreground)' }}>{post.frontmatter.title}</span>
                     </Link>
