@@ -17,7 +17,7 @@ export default function Tag({ tag, linked = true, basePath = '/blog' }: TagProps
   if (!linked) return <span className={className} style={style}>{tag}</span>
 
   return (
-    <Link href={`${basePath}/tag/${encodeURIComponent(tag)}`} className={className} style={style}>
+    <Link href={`${basePath}/tag/${encodeURIComponent(tag)}/`} className={className} style={style}>
       {tag}
     </Link>
   )

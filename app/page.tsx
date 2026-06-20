@@ -7,10 +7,12 @@ import { CATEGORY_COLORS } from '@/components/portfolio/AllocationChart'
 import ReadingGuide from '@/components/blog/ReadingGuide'
 
 export const metadata: Metadata = {
-  title: 'GAIZEN FINANCE — 蓋然性の高い長期投資',
+  title: {
+    absolute: 'GAIZEN FINANCE — 蓋然性の高い長期投資',
+  },
   description: '長期・分散・蓋然性——確からしさを積み重ねる投資メディア。ポートフォリオ公開、投資ツール、インデックス・個別株・BTC・不動産の考え方を発信。',
   alternates: {
-    canonical: 'https://gaizen.xyz',
+    canonical: 'https://gaizen.xyz/',
     languages: { 'en': 'https://gaizen.xyz/en/' },
   },
 }

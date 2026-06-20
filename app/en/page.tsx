@@ -7,7 +7,9 @@ import type { Metadata } from 'next'
 import ReadingGuide from '@/components/blog/ReadingGuide'
 
 export const metadata: Metadata = {
-  title: 'GAIZEN FINANCE',
+  title: {
+    absolute: 'GAIZEN FINANCE',
+  },
   description: 'High-probability investing through long-term accumulation. Building wealth with index funds and selective individual stocks.',
   openGraph: {
     title: 'GAIZEN FINANCE',
@@ -17,7 +19,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://gaizen.xyz/en/',
-    languages: { 'ja': 'https://gaizen.xyz' },
+    languages: { 'ja': 'https://gaizen.xyz/' },
   },
 }
 
