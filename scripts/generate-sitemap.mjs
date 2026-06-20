@@ -11,6 +11,15 @@ const OUT_DIR = path.join(ROOT, 'out')
 
 const SITE_URL = 'https://gaizen.xyz'
 
+function xmlEscape(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;')
+}
+
 function getPosts(dir) {
   if (!fs.existsSync(dir)) return []
   return fs.readdirSync(dir)
@@ -28,7 +37,7 @@ const enPosts = getPosts(EN_BLOG_DIR)
 const now = new Date().toISOString().split('T')[0]
 
 const staticRoutes = [
-  { url: SITE_URL, priority: '1.0', changefreq: 'weekly' },
+  { url: `${SITE_URL}/`, priority: '1.0', changefreq: 'weekly' },
   { url: `${SITE_URL}/blog/`, priority: '0.9', changefreq: 'daily' },
   { url: `${SITE_URL}/en/`, priority: '1.0', changefreq: 'weekly' },
   { url: `${SITE_URL}/en/blog/`, priority: '0.9', changefreq: 'daily' },
@@ -49,11 +58,16 @@ const staticRoutes = [
 ]
 
 function entry({ url, priority, changefreq, lastmod }) {
+  const safeUrl = xmlEscape(url)
+  const safeLastmod = xmlEscape(lastmod ?? now)
+  const safeChangefreq = xmlEscape(changefreq)
+  const safePriority = xmlEscape(priority)
+
   return `  <url>
-    <loc>${url}</loc>
-    <lastmod>${lastmod ?? now}</lastmod>
-    <changefreq>${changefreq}</changefreq>
-    <priority>${priority}</priority>
+    <loc>${safeUrl}</loc>
+    <lastmod>${safeLastmod}</lastmod>
+    <changefreq>${safeChangefreq}</changefreq>
+    <priority>${safePriority}</priority>
   </url>`
 }
 
