@@ -8,12 +8,12 @@ import ReadingGuide from '@/components/blog/ReadingGuide'
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'GAIZEN FINANCE',
+    absolute: 'GAIZEN FINANCE — Invest steadily. Stay the course.',
   },
-  description: 'High-probability investing through long-term accumulation. Building wealth with index funds and selective individual stocks.',
+  description: 'A practical investing media site focused on NISA, index funds, asset tracking, and long-term wealth building for beginners.',
   openGraph: {
     title: 'GAIZEN FINANCE',
-    description: 'High-probability investing through long-term accumulation. Building wealth with index funds and selective individual stocks.',
+    description: 'A practical investing media site focused on NISA, index funds, asset tracking, and long-term wealth building for beginners.',
     url: 'https://gaizen.xyz/en/',
     locale: 'en_US',
   },
@@ -23,52 +23,96 @@ export const metadata: Metadata = {
   },
 }
 
+const PILLARS = [
+  {
+    label: '01',
+    title: 'Start small and avoid avoidable mistakes',
+    description: 'Practical steps for opening accounts, setting aside emergency cash, and starting with a small recurring NISA investment.',
+  },
+  {
+    label: '02',
+    title: 'Understand funds before choosing them',
+    description: 'How to read prospectuses, monthly reports, expense ratios, actual costs, and fund scale before investing.',
+  },
+  {
+    label: '03',
+    title: 'Build a system you can keep following',
+    description: 'Monthly asset tracking, contribution rules, and a long-term policy that reduces emotional decisions.',
+  },
+]
+
+const TRUST_POINTS = [
+  'This site is educational commentary, not personalized investment advice.',
+  'Figures, fees, rules, and product details are reviewed against official sources when relevant.',
+  'Editorial judgment is kept separate from advertising, affiliate, or referral compensation.',
+]
+
+const EXPLORE_LINKS = [
+  { href: '/en/blog/', label: 'Blog', desc: 'Read by topic and goal' },
+  { href: '/en/tools/', label: 'Tools', desc: 'Simulators and calculators' },
+  { href: '/en/about/', label: 'About', desc: 'Philosophy and policy' },
+  { href: '/en/disclaimer/', label: 'Policy', desc: 'Disclaimer and risk notes' },
+]
+
 export default function EnHomePage() {
   const allPosts = getAllPosts('en')
   const latestPosts = allPosts.slice(0, 3)
-  const featuredPosts = allPosts.filter(p => p.frontmatter.featured).slice(0, 2)
+  const featuredPosts = allPosts.filter(p => p.frontmatter.featured).slice(0, 3)
   const portfolio = getPortfolioData()
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
-      {/* Hero */}
-      <section className="py-24 sm:py-32 border-b" style={{ borderColor: 'var(--border)' }}>
-        <div className="max-w-2xl">
+      <section className="py-20 sm:py-28 border-b" style={{ borderColor: 'var(--border)' }}>
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
+          <div>
           <p className="text-xs tracking-widest mb-6 font-semibold" style={{ color: 'var(--accent)' }}>
-            GAIZEN FINANCE
+            LONG-TERM INVESTING GUIDE
           </p>
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6 leading-tight" style={{ color: 'var(--foreground)' }}>
-            Invest. Grow. Breathe.
+          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mb-6 leading-tight" style={{ color: 'var(--foreground)' }}>
+            Invest steadily. Stay the course.
           </h1>
           <p className="text-base sm:text-lg leading-relaxed mb-10" style={{ color: 'var(--muted)' }}>
-            High-probability investing through long-term accumulation.<br className="hidden sm:block" />
-            Not predicting markets — making consistently sound choices.
+            Practical guidance on NISA, index funds, and asset tracking for beginners who want to keep investing without getting lost.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/en/portfolio"
+            <Link href="/en/blog/investing-first-30-days/"
               className="px-5 py-2.5 text-sm font-semibold rounded-md transition-opacity hover:opacity-80"
               style={{ backgroundColor: 'var(--accent)', color: '#080c0a' }}
             >
-              View Portfolio
+              Start with 30 days
             </Link>
-            <Link href="/en/blog"
+            <Link href="/en/blog/"
               className="px-5 py-2.5 text-sm font-medium rounded-md border transition-colors"
               style={{ borderColor: 'var(--border)', color: 'var(--foreground)' }}
             >
-              Read Blog
+              Browse articles
             </Link>
+          </div>
+          </div>
+          <div className="rounded-3xl border p-6 sm:p-8" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+            <p className="text-xs tracking-widest mb-5 font-semibold" style={{ color: 'var(--accent)' }}>EDITORIAL FOCUS</p>
+            <div className="space-y-5">
+              {PILLARS.map(({ label, title, description }) => (
+                <div key={label} className="flex gap-4">
+                  <span className="text-xs font-mono mt-1" style={{ color: 'var(--accent)' }}>{label}</span>
+                  <div>
+                    <h2 className="text-sm font-semibold mb-1" style={{ color: 'var(--foreground)' }}>{title}</h2>
+                    <p className="text-xs leading-relaxed" style={{ color: 'var(--muted)' }}>{description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Stats */}
       <section className="py-12 border-b" style={{ borderColor: 'var(--border)' }}>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {[
-            { label: 'Core Asset', value: 'Equities' },
-            { label: 'Time Horizon', value: '5+ Years' },
-            { label: 'Strategy', value: 'Index + Individual' },
-            { label: 'Goal', value: 'Compounding Wealth' },
+            { label: 'Published Articles', value: `${allPosts.length}` },
+            { label: 'Core Topics', value: 'NISA & Funds' },
+            { label: 'Time Horizon', value: 'Long Term' },
+            { label: 'Editorial Basis', value: 'Experience + Sources' },
           ].map(({ label, value }) => (
             <div key={label} className="p-4 rounded-lg border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
               <p className="text-xs mb-1.5" style={{ color: 'var(--muted)' }}>{label}</p>
@@ -80,39 +124,28 @@ export default function EnHomePage() {
 
       <ReadingGuide locale="en" compact />
 
-      {/* Portfolio overview */}
       <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>
         <div className="flex items-center justify-between mb-8">
           <div>
-            <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>PORTFOLIO</p>
-            <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>Asset Allocation</h2>
+            <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>FEATURED</p>
+            <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>Start Here</h2>
           </div>
-          <Link href="/en/portfolio" className="text-xs transition-colors hover:text-white" style={{ color: 'var(--muted)' }}>
-            View details →
+          <Link href="/en/blog/" className="text-xs hover:text-white transition-colors" style={{ color: 'var(--muted)' }}>
+            View all →
           </Link>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-          {portfolio.assets.map(asset => (
-            <div key={asset.name} className="p-4 rounded-lg border text-center" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-              <div className="text-2xl font-bold mb-1 tabular-nums" style={{ color: CATEGORY_COLORS[asset.category] ?? 'var(--accent)' }}>
-                {asset.allocation}%
-              </div>
-              <div className="text-xs font-medium mb-0.5 leading-snug" style={{ color: 'var(--foreground)' }}>{asset.name}</div>
-              <div className="text-xs" style={{ color: 'var(--muted)' }}>{asset.note}</div>
-            </div>
-          ))}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {featuredPosts.map(post => <ArticleCard key={post.slug} post={post} basePath="/en/blog" locale="en" />)}
         </div>
-        <p className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>Updated: {portfolio.updatedAt}</p>
       </section>
 
-      {/* Latest articles */}
       <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>
         <div className="flex items-center justify-between mb-8">
           <div>
             <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>BLOG</p>
             <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>Latest Articles</h2>
           </div>
-          <Link href="/en/blog" className="text-xs hover:text-white transition-colors" style={{ color: 'var(--muted)' }}>
+          <Link href="/en/blog/" className="text-xs hover:text-white transition-colors" style={{ color: 'var(--muted)' }}>
             View all →
           </Link>
         </div>
@@ -125,20 +158,70 @@ export default function EnHomePage() {
         )}
       </section>
 
-      {/* Featured */}
-      {featuredPosts.length > 0 && (
-        <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>
-          <div className="mb-8">
-            <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>FEATURED</p>
-            <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>Recommended</h2>
+      <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>
+        <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-8 items-start">
+          <div>
+            <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>TRUST</p>
+            <h2 className="text-xl font-semibold mb-3" style={{ color: 'var(--foreground)' }}>Editorial Policy</h2>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
+              The goal is not to tell readers what to buy, but to organize the information needed to make their own decisions.
+            </p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {featuredPosts.map(post => <ArticleCard key={post.slug} post={post} basePath="/en/blog" locale="en" />)}
+          <div className="grid gap-3">
+            {TRUST_POINTS.map((point, index) => (
+              <div key={point} className="p-4 rounded-xl border flex gap-3" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+                <span className="text-xs font-mono" style={{ color: 'var(--accent)' }}>{index + 1}</span>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>{point}</p>
+              </div>
+            ))}
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
-      {/* Brand closing */}
+      <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>
+        <div className="flex items-center justify-between mb-8">
+          <div>
+            <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>PORTFOLIO</p>
+            <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>Asset Allocation</h2>
+          </div>
+          <Link href="/en/portfolio/" className="text-xs transition-colors hover:text-white" style={{ color: 'var(--muted)' }}>
+            View details →
+          </Link>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          {portfolio.assets.map(asset => (
+            <div key={asset.name} className="p-4 rounded-xl border text-center" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+              <div className="text-2xl font-bold mb-1 tabular-nums" style={{ color: CATEGORY_COLORS[asset.category] ?? 'var(--accent)' }}>
+                {asset.allocation}%
+              </div>
+              <div className="text-xs font-medium mb-0.5 leading-snug" style={{ color: 'var(--foreground)' }}>{asset.name}</div>
+              <div className="text-xs" style={{ color: 'var(--muted)' }}>{asset.note}</div>
+            </div>
+          ))}
+        </div>
+        <p className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>Updated: {portfolio.updatedAt}</p>
+      </section>
+
+      <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>
+        <div className="mb-8">
+          <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>EXPLORE</p>
+          <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>Explore the site</h2>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {EXPLORE_LINKS.map(({ href, label, desc }, index) => (
+            <Link key={href} href={href}
+              className="group p-5 rounded-xl border flex flex-col gap-3 transition-colors hover:border-green-800"
+              style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+              <span className="text-xs font-mono" style={{ color: 'var(--accent)' }}>0{index + 1}</span>
+              <div>
+                <p className="text-sm font-semibold mb-0.5 group-hover:text-white transition-colors" style={{ color: 'var(--foreground)' }}>{label}</p>
+                <p className="text-xs" style={{ color: 'var(--muted)' }}>{desc}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section className="py-24 text-center">
         <p className="text-3xl font-bold tracking-widest mb-4" style={{ color: 'var(--foreground)' }}>
           Invest. Grow. Breathe.
