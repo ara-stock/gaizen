@@ -48,7 +48,7 @@ export default function ReadingGuide({ locale = 'ja', compact = false }: Reading
 
   return (
     <section className={compact ? 'py-16 border-b' : 'mb-16'}>
-      <div className="mb-8">
+      <div className="mb-8 max-w-2xl">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>START HERE</p>
         <h2 className="text-xl font-semibold mb-2" style={{ color: 'var(--foreground)' }}>
           {locale === 'en' ? 'Choose a Reading Path' : '目的から読む'}
@@ -61,8 +61,8 @@ export default function ReadingGuide({ locale = 'ja', compact = false }: Reading
       </div>
       <div className="grid md:grid-cols-3 gap-4">
         {GUIDES[locale].map((guide, guideIndex) => (
-          <div key={guide.title} className="p-5 rounded-xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-            <p className="text-xs font-mono mb-3" style={{ color: 'var(--accent)' }}>0{guideIndex + 1}</p>
+          <div key={guide.title} className="p-5 rounded-2xl border transition-all hover:-translate-y-0.5 hover:shadow-lg" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+            <p className="text-xs font-mono mb-3" style={{ color: 'var(--accent)' }}>PATH 0{guideIndex + 1}</p>
             <h3 className="text-base font-semibold mb-2" style={{ color: 'var(--foreground)' }}>{guide.title}</h3>
             <p className="text-xs leading-relaxed mb-5" style={{ color: 'var(--muted)' }}>{guide.description}</p>
             <ol className="space-y-3">

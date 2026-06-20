@@ -8,9 +8,9 @@ import ReadingGuide from '@/components/blog/ReadingGuide'
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'GAIZEN FINANCE — 蓋然性の高い長期投資',
+    absolute: 'GAIZEN FINANCE — 長期投資を、迷わず続けるために',
   },
-  description: '長期・分散・蓋然性——確からしさを積み重ねる投資メディア。ポートフォリオ公開、投資ツール、インデックス・個別株・BTC・不動産の考え方を発信。',
+  description: 'NISA・投資信託・資産管理・長期投資を中心に、初心者が自分で判断できるようになるための実践的な投資メディア。',
   alternates: {
     canonical: 'https://gaizen.xyz/',
     languages: { 'en': 'https://gaizen.xyz/en/' },
@@ -19,71 +19,111 @@ export const metadata: Metadata = {
 
 const EXPLORE_LINKS = [
   {
-    href: '/thesis',
-    label: 'Investment Thesis',
-    desc: '投資方針・考え方',
-    icon: '📐',
+    href: '/blog/',
+    label: 'Blog',
+    desc: '投資を体系的に読む',
   },
   {
-    href: '/tools',
+    href: '/tools/',
     label: 'Tools',
     desc: 'FIRE・配分・利回り計算',
-    icon: '🔧',
   },
   {
-    href: '/about',
+    href: '/about/',
     label: 'About',
     desc: 'このサイトについて',
-    icon: '👤',
   },
+  {
+    href: '/disclaimer/',
+    label: 'Policy',
+    desc: '免責事項・運営方針',
+  },
+]
+
+const PILLARS = [
+  {
+    label: '01',
+    title: 'まずは小さく始める',
+    description: 'NISA口座、生活防衛資金、月1,000円の積立など、投資初心者が迷いやすい最初の手順を具体化します。',
+  },
+  {
+    label: '02',
+    title: '商品を理解して選ぶ',
+    description: '投資信託の目論見書・月報・信託報酬・実質コストを確認し、SNSの流行ではなく自分で判断する力を重視します。',
+  },
+  {
+    label: '03',
+    title: '長期で続ける仕組みを作る',
+    description: '毎月の資産記録、入金ルール、リバランス方針を整理し、短期の値動きに振り回されにくい運用を目指します。',
+  },
+]
+
+const TRUST_POINTS = [
+  '投資助言ではなく、個人投資家の経験と調査に基づく教育コンテンツです。',
+  '制度・手数料・リスクは公式情報を確認し、必要に応じて記事を更新します。',
+  '広告・紹介リンクの有無にかかわらず、長期投資に不要な商品は推奨しません。',
 ]
 
 export default function HomePage() {
   const allPosts = getAllPosts()
   const latestPosts = allPosts.slice(0, 3)
-  const featuredPosts = allPosts.filter(p => p.frontmatter.featured).slice(0, 4)
+  const featuredPosts = allPosts.filter(p => p.frontmatter.featured).slice(0, 3)
   const portfolio = getPortfolioData()
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
-      {/* Hero */}
-      <section className="py-24 sm:py-32 border-b" style={{ borderColor: 'var(--border)' }}>
-        <div className="max-w-2xl">
+      <section className="py-20 sm:py-28 border-b" style={{ borderColor: 'var(--border)' }}>
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
+          <div>
           <p className="text-xs tracking-widest mb-6 font-semibold" style={{ color: 'var(--accent)' }}>
-            GAIZEN FINANCE
+            LONG-TERM INVESTING GUIDE
           </p>
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6 leading-tight" style={{ color: 'var(--foreground)' }}>
-            Invest. Grow. Breathe.
+          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mb-6 leading-tight" style={{ color: 'var(--foreground)' }}>
+            長期投資を、迷わず続けるために。
           </h1>
           <p className="text-base sm:text-lg leading-relaxed mb-10" style={{ color: 'var(--muted)' }}>
-            蓋然（がいぜん）——確からしさを積み重ねる投資。<br className="hidden sm:block" />
-            相場を予測するのではなく、蓋然性の高い選択を続けること。
+            NISA・投資信託・資産管理を中心に、投資初心者が遠回りしないための考え方と手順を整理します。
+            相場予測よりも、続けられる仕組みを重視します。
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/portfolio"
+            <Link href="/blog/investing-first-30-days/"
               className="px-5 py-2.5 text-sm font-semibold rounded-md transition-opacity hover:opacity-80"
               style={{ backgroundColor: 'var(--accent)', color: '#080c0a' }}
             >
-              Portfolio を見る
+              最初の30日を読む
             </Link>
-            <Link href="/blog"
+            <Link href="/blog/"
               className="px-5 py-2.5 text-sm font-medium rounded-md border transition-colors"
               style={{ borderColor: 'var(--border)', color: 'var(--foreground)' }}
             >
-              Blog を読む
+              記事一覧へ
             </Link>
+          </div>
+          </div>
+          <div className="rounded-3xl border p-6 sm:p-8" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+            <p className="text-xs tracking-widest mb-5 font-semibold" style={{ color: 'var(--accent)' }}>EDITORIAL FOCUS</p>
+            <div className="space-y-5">
+              {PILLARS.map(({ label, title, description }) => (
+                <div key={label} className="flex gap-4">
+                  <span className="text-xs font-mono mt-1" style={{ color: 'var(--accent)' }}>{label}</span>
+                  <div>
+                    <h2 className="text-sm font-semibold mb-1" style={{ color: 'var(--foreground)' }}>{title}</h2>
+                    <p className="text-xs leading-relaxed" style={{ color: 'var(--muted)' }}>{description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Stats — シンプルな投資方針サマリー */}
       <section className="py-12 border-b" style={{ borderColor: 'var(--border)' }}>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {[
-            { label: 'コア資産', value: '株式' },
-            { label: '投資期間', value: '5年以上' },
-            { label: '運用方法', value: 'インデックス + 個別株' },
-            { label: '目標', value: '継続的な資産形成' },
+            { label: '公開記事', value: `${allPosts.length}本` },
+            { label: '主テーマ', value: 'NISA・投資信託' },
+            { label: '投資期間', value: '長期前提' },
+            { label: '運営方針', value: '経験 + 一次情報' },
           ].map(({ label, value }) => (
             <div key={label} className="p-4 rounded-lg border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
               <p className="text-xs mb-1.5" style={{ color: 'var(--muted)' }}>{label}</p>
@@ -95,39 +135,28 @@ export default function HomePage() {
 
       <ReadingGuide compact />
 
-      {/* Portfolio overview */}
       <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>
         <div className="flex items-center justify-between mb-8">
           <div>
-            <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>PORTFOLIO</p>
-            <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>Asset Allocation</h2>
+            <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>FEATURED</p>
+            <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>まず読んでほしい記事</h2>
           </div>
-          <Link href="/portfolio" className="text-xs transition-colors hover:text-white" style={{ color: 'var(--muted)' }}>
-            詳細を見る →
+          <Link href="/blog/" className="text-xs hover:text-white transition-colors" style={{ color: 'var(--muted)' }}>
+            すべて見る →
           </Link>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-          {portfolio.assets.map(asset => (
-            <div key={asset.name} className="p-4 rounded-lg border text-center" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-              <div className="text-2xl font-bold mb-1 tabular-nums" style={{ color: CATEGORY_COLORS[asset.category] ?? 'var(--accent)' }}>
-                {asset.allocation}%
-              </div>
-              <div className="text-xs font-medium mb-0.5 leading-snug" style={{ color: 'var(--foreground)' }}>{asset.name}</div>
-              <div className="text-xs" style={{ color: 'var(--muted)' }}>{asset.note}</div>
-            </div>
-          ))}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {featuredPosts.map(post => <ArticleCard key={post.slug} post={post} />)}
         </div>
-        <p className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>更新: {portfolio.updatedAt}</p>
       </section>
 
-      {/* Latest articles */}
       <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>
         <div className="flex items-center justify-between mb-8">
           <div>
             <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>BLOG</p>
             <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>最新記事</h2>
           </div>
-          <Link href="/blog" className="text-xs hover:text-white transition-colors" style={{ color: 'var(--muted)' }}>
+          <Link href="/blog/" className="text-xs hover:text-white transition-colors" style={{ color: 'var(--muted)' }}>
             すべて見る →
           </Link>
         </div>
@@ -140,31 +169,61 @@ export default function HomePage() {
         )}
       </section>
 
-      {/* Featured */}
-      {featuredPosts.length > 0 && (
-        <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>
-          <div className="mb-8">
-            <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>FEATURED</p>
-            <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>おすすめ記事</h2>
+      <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>
+        <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-8 items-start">
+          <div>
+            <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>TRUST</p>
+            <h2 className="text-xl font-semibold mb-3" style={{ color: 'var(--foreground)' }}>運営方針</h2>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
+              投資判断の代行ではなく、判断材料の整理を目的にしています。読者が自分で調べ、納得して選べる状態を重視します。
+            </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4">
-            {featuredPosts.map(post => <ArticleCard key={post.slug} post={post} />)}
+          <div className="grid gap-3">
+            {TRUST_POINTS.map((point, index) => (
+              <div key={point} className="p-4 rounded-xl border flex gap-3" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+                <span className="text-xs font-mono" style={{ color: 'var(--accent)' }}>{index + 1}</span>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>{point}</p>
+              </div>
+            ))}
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
-      {/* Explore */}
+      <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>
+        <div className="flex items-center justify-between mb-8">
+          <div>
+            <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>PORTFOLIO</p>
+            <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>Asset Allocation</h2>
+          </div>
+          <Link href="/portfolio/" className="text-xs transition-colors hover:text-white" style={{ color: 'var(--muted)' }}>
+            詳細を見る →
+          </Link>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          {portfolio.assets.map(asset => (
+            <div key={asset.name} className="p-4 rounded-xl border text-center" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+              <div className="text-2xl font-bold mb-1 tabular-nums" style={{ color: CATEGORY_COLORS[asset.category] ?? 'var(--accent)' }}>
+                {asset.allocation}%
+              </div>
+              <div className="text-xs font-medium mb-0.5 leading-snug" style={{ color: 'var(--foreground)' }}>{asset.name}</div>
+              <div className="text-xs" style={{ color: 'var(--muted)' }}>{asset.note}</div>
+            </div>
+          ))}
+        </div>
+        <p className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>更新: {portfolio.updatedAt}</p>
+      </section>
+
       <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>
         <div className="mb-8">
           <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>EXPLORE</p>
           <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>サイトを探索する</h2>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          {EXPLORE_LINKS.map(({ href, label, desc, icon }) => (
+          {EXPLORE_LINKS.map(({ href, label, desc }, index) => (
             <Link key={href} href={href}
               className="group p-5 rounded-xl border flex flex-col gap-3 transition-colors hover:border-green-800"
               style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-              <span className="text-2xl">{icon}</span>
+              <span className="text-xs font-mono" style={{ color: 'var(--accent)' }}>0{index + 1}</span>
               <div>
                 <p className="text-sm font-semibold mb-0.5 group-hover:text-white transition-colors" style={{ color: 'var(--foreground)' }}>{label}</p>
                 <p className="text-xs" style={{ color: 'var(--muted)' }}>{desc}</p>
@@ -174,7 +233,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Brand closing */}
       <section className="py-24 text-center">
         <p className="text-3xl font-bold tracking-widest mb-4" style={{ color: 'var(--foreground)' }}>
           Invest. Grow. Breathe.
