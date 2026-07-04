@@ -88,15 +88,10 @@ ${enPosts.map(p => entry({
 })).join('\n')}
 </urlset>`
 
-const sitemapIndexXml = `<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>${xmlEscape(`${SITE_URL}/sitemap.xml`)}</loc>
-    <lastmod>${xmlEscape(now)}</lastmod>
-  </sitemap>
-</sitemapindex>`
-
 if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true })
 fs.writeFileSync(path.join(OUT_DIR, 'sitemap.xml'), xml, 'utf-8')
-fs.writeFileSync(path.join(OUT_DIR, 'sitemap-index.xml'), sitemapIndexXml, 'utf-8')
+// Keep this filename for Search Console submissions that already use it.
+// It intentionally contains the URL set directly instead of a sitemap index,
+// so Search Console can discover pages even if it does not fetch child sitemaps.
+fs.writeFileSync(path.join(OUT_DIR, 'sitemap-index.xml'), xml, 'utf-8')
 console.log(`[sitemap] Generated with ${staticRoutes.length + jaPosts.length + enPosts.length} URLs`)
