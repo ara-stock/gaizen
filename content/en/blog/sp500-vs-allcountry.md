@@ -190,5 +190,3 @@ What matters in investing is not picking the perfect fund — it's staying inves
 - [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.jp/fund/252931.html)
 
 ---
-
-*This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.*

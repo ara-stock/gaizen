@@ -130,5 +130,3 @@ Putting the entire growth allowance into a single index fund is also a highly ra
 - [National Tax Agency Japan — Non-Taxation of Dividends and Capital Gains under NISA](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1310.htm)
 
 ---
-
-*This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.*

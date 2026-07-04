@@ -92,5 +92,3 @@ The digital deficit isn't abstract. Every time someone in Japan pays for a US-bu
 - [Ministry of Finance Japan — Foreign Exchange Rate Data](https://www.mof.go.jp/policy/international_policy/reference/feio/index.htm)
 
 ---
-
-*This article reflects the author's personal views and does not constitute investment advice. Please make investment decisions at your own discretion.*

@@ -104,5 +104,3 @@ I'm aware of the US concentration risk. But given my view that the US-centric ec
 - [U.S. Bureau of Labor Statistics — Consumer Price Index](https://www.bls.gov/cpi/)
 
 ---
-
-*This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.*

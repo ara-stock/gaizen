@@ -141,5 +141,3 @@ A lump sum often wins statistically, but the psychological cost of watching a la
 - [SBI Securities — SBI × Sumitomo Mitsui Card Investment](https://go.sbisec.co.jp/lp/lp_smcc_01.html)
 
 ---
-
-*This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.*

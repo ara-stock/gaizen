@@ -231,5 +231,3 @@ For US dividend growth exposure, **VIG (Vanguard Dividend Appreciation ETF)** is
 - [Financial Services Agency Japan — New NISA Overview](https://www.fsa.go.jp/policy/nisa2/about/index.html)
 
 ---
-
-*This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.*
