@@ -135,5 +135,3 @@ That said, I'm flexible about what "rebalancing" means in practice. If a positio
 - [Mitsubishi UFJ Asset Management — eMAXIS Slim Balanced (8 Assets Equal)](https://emaxis.jp/fund/253732.html)
 
 ---
-
-*This article is for informational purposes only and does not constitute investment advice. All investment decisions are your own responsibility.*

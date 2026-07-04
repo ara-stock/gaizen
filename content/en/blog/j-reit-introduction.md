@@ -189,5 +189,3 @@ Even after reaching FIRE, checking stock prices every day can become a psycholog
 - [Nippon Building Fund (8951) IR | Distribution Information](https://www.nbf-m.com/nbf/ir/distribution.html)
 
 ---
-
-*This article is intended for informational purposes only and does not constitute investment advice. All investment decisions are made at your own risk.*

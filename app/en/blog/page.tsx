@@ -57,7 +57,7 @@ export default function EnBlogPage() {
             <h2 className="text-lg font-semibold" style={{ color: 'var(--foreground)' }}>Popular Topics</h2>
           </div>
           <div className="flex flex-wrap gap-2">
-            {tags.map(tag => <Tag key={tag} tag={tag} basePath="/en/blog" />)}
+            {tags.map(tag => <Tag key={tag} tag={tag} basePath="/en/blog" linked={false} />)}
           </div>
         </section>
       )}

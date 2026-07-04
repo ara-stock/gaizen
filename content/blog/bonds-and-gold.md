@@ -127,5 +127,3 @@ S&P500への長期積立は、シンプルで強力な戦略です。ではゴ�
 - [Bitcoin Whitepaper – Satoshi Nakamoto (2008)](https://bitcoin.org/bitcoin.pdf)
 
 ---
-
-*本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。*

@@ -89,5 +89,3 @@ coverImage: "/images/japan_degital_deficit.webp"
 - [財務省｜外国為替相場（円ドル推移）](https://www.mof.go.jp/policy/international_policy/reference/feio/index.htm)
 
 ---
-
-*本記事は筆者個人の見解であり、投資助言ではありません。投資判断はご自身の責任で行ってください。*

@@ -136,5 +136,3 @@ eMAXIS Slimのような無分配型投資信託では、配当金がファンド
 - [国税庁｜NISA口座内の上場株式等の配当等・譲渡所得等の非課税](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1310.htm)
 
 ---
-
-*本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。*

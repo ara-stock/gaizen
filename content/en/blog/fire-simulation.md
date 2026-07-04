@@ -203,5 +203,3 @@ The key lesson I had to internalize: once you leave salaried employment, social 
 - [Ministry of Health, Labour and Welfare — National Health Insurance Overview](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/database/index.html)
 
 ---
-
-*This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.*

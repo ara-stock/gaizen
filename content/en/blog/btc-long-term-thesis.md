@@ -92,5 +92,3 @@ My approach: hold long-term, maintain a maximum 5% allocation.
 - [Financial Services Agency Japan — Cautionary Notice on Crypto Assets](https://www.fsa.go.jp/policy/virtual_currency02/index.html)
 
 ---
-
-*This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.*

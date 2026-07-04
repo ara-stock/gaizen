@@ -94,5 +94,3 @@ The investment landscape in Japan is also different from most English-language f
 - [William Bengen (1994) "Determining Withdrawal Rates Using Historical Data"](https://www.financialplanningassociation.org/article/journal/OCT94-determining-withdrawal-rates-using-historical-data)
 
 ---
-
-*This blog is for informational purposes only and does not constitute investment advice. All investment decisions are made at your own discretion.*

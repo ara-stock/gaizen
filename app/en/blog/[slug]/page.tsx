@@ -98,7 +98,7 @@ export default async function EnArticlePage({ params }: Props) {
           <article>
             <header className="mb-10 pb-8 border-b" style={{ borderColor: 'var(--border)' }}>
               <div className="flex flex-wrap gap-2 mb-4">
-                {frontmatter.tags.map(tag => <Tag key={tag} tag={tag} basePath="/en/blog" />)}
+                {frontmatter.tags.map(tag => <Tag key={tag} tag={tag} basePath="/en/blog" linked={false} />)}
               </div>
               <h1 className="text-2xl sm:text-3xl font-bold leading-tight mb-6" style={{ color: 'var(--foreground)' }}>
                 {frontmatter.title}

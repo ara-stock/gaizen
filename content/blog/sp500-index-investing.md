@@ -116,5 +116,3 @@ S&P500に採用されるのは、一定の基準を満たした企業です。�
 - [U.S. Bureau of Labor Statistics｜Consumer Price Index（米国インフレ指標）](https://www.bls.gov/cpi/)
 
 ---
-
-*本記事は投資助言ではありません。投資判断はご自身の責任で行ってください。*

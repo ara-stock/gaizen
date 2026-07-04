@@ -76,7 +76,7 @@ export default function ArticleCard({ post, basePath = '/blog', locale = 'ja' }:
         </p>
 
         <div className="flex flex-wrap gap-2">
-          {frontmatter.tags.slice(0, 3).map(tag => <Tag key={tag} tag={tag} basePath={basePath} />)}
+          {frontmatter.tags.slice(0, 3).map(tag => <Tag key={tag} tag={tag} basePath={basePath} linked={false} />)}
         </div>
       </div>
     </article>

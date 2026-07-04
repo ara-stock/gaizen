@@ -57,7 +57,7 @@ export default function BlogPage() {
             <h2 className="text-lg font-semibold" style={{ color: 'var(--foreground)' }}>よく読まれるテーマ</h2>
           </div>
           <div className="flex flex-wrap gap-2">
-            {tags.map(tag => <Tag key={tag} tag={tag} />)}
+            {tags.map(tag => <Tag key={tag} tag={tag} linked={false} />)}
           </div>
         </section>
       )}

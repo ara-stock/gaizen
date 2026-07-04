@@ -129,5 +129,3 @@ Gold can rise further, I believe — but that depends on inflation persisting. S
 - [Bitcoin Whitepaper — Satoshi Nakamoto (2008)](https://bitcoin.org/bitcoin.pdf)
 
 ---
-
-*This article is intended for informational purposes only and does not constitute investment advice. All investment decisions are made at your own risk.*
