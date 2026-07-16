@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'GAIZEN — high-probability investing through long-term accumulation. Investment philosophy, core principles, and portfolio sectors.',
+  description: 'Profile, investing experience, and decision framework of ara, a long-term investor focused on business growth and durability.',
   alternates: {
     canonical: 'https://gaizen.xyz/en/about/',
     languages: { 'ja': 'https://gaizen.xyz/about/' },
@@ -28,8 +28,8 @@ const principles = [
   },
   {
     number: '04',
-    title: 'Core-satellite structure, held for the long term',
-    body: 'Monthly automatic accumulation in S&P500 index funds via the NISA accumulation allowance (core), combined with individual stocks targeting alpha via the growth allowance and taxable accounts (satellite). Both held with a 5+ year horizon, diversified by asset class and geography.',
+    title: 'Test the thesis and hold for the long term',
+    body: 'Focus on earnings power, competitive durability, and room for growth rather than short-term price movement. Hold with a five-year or longer horizon while the original investment thesis remains intact.',
   },
 ]
 
@@ -109,7 +109,7 @@ const sectors = [
     region: 'Crypto',
     reason: 'Commodity position × Supply scarcity',
     detail: 'Crypto assets are treated as commodities rather than equities, with scarcity and demand as research themes. I keep the allocation small because volatility is high and effectiveness as an inflation or geopolitical hedge is not guaranteed.',
-    examples: ['BTC', 'JLP', 'OKB', 'JUP', 'EDGE', 'GRVT'],
+    examples: ['BTC', 'OKB', 'JUP', 'EDGE', 'GRVT', 'MET'],
   },
 ]
 
@@ -154,7 +154,7 @@ export default function EnAboutPage() {
               </a>
             </div>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-              A side investor who analyzes current businesses and invests long-term based on projected growth. Portfolio anchored in index accumulation, combined with individual stocks in trading companies, banks, AI, and fintech — plus crypto and gold. Steadily building up high-probability choices, one at a time.
+              An individual investor focused on business growth and durability. I invest for the long term in businesses whose current earnings power and future growth potential I can explain in my own words, particularly across trading companies, banks, AI, and fintech.
             </p>
           </div>
         </div>
@@ -179,7 +179,7 @@ export default function EnAboutPage() {
             I first invested during my first year of graduate school. I had little interest in investing, did not read the book a friend recommended, and bought an individual stock mainly for its shareholder benefit and apparent dividend yield. A few years later, I sold it after the price had fallen by half.
           </p>
           <p>
-            I restarted in my first year of full-time work after setting aside emergency cash. Today, recurring index investments through NISA form the base of my portfolio. I document missed gains from frequent trading and a leveraged position I could not tolerate, not just decisions that worked out.
+            I restarted in my first year of full-time work after setting aside emergency cash, beginning with recurring index investments through NISA. I later shifted my focus toward long-term ownership of businesses I understand. I document missed gains from frequent trading and a leveraged position I could not tolerate, not just decisions that worked out.
           </p>
           <p>
             Rules and figures are checked against primary sources, and personal experience is separated from general information. See the <a href="/en/editorial-policy/" style={{ color: 'var(--accent)' }}>editorial policy</a> for the full process.
@@ -199,7 +199,7 @@ export default function EnAboutPage() {
             Rather than trying to predict markets, the goal is to make <strong style={{ color: 'var(--foreground)' }}>high-probability choices</strong> consistently and patiently.
           </p>
           <p>
-            The core strategy is <strong style={{ color: 'var(--foreground)' }}>long-term index accumulation</strong>. Individual stocks are held long-term with additional investments made as warranted — not mechanically accumulated.
+            Today, <strong style={{ color: 'var(--foreground)' }}>business growth and durability</strong> are the center of my investment decisions. I hold for the long term while the thesis remains intact and add selectively as the business and valuation develop.
           </p>
         </div>
       </div>
@@ -208,7 +208,7 @@ export default function EnAboutPage() {
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>ABOUT</p>
         <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--foreground)' }}>Investment Philosophy</h2>
         <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-          Built on long-term, diversified accumulation — combining index investing with selective individual stock picks focused on business continuity and scalability.
+          I invest only in what I can understand, focusing on current earnings power, business durability, and future growth.
         </p>
       </div>
 
@@ -307,8 +307,8 @@ export default function EnAboutPage() {
         <p className="text-xs tracking-widest mb-6 font-semibold" style={{ color: 'var(--accent)' }}>SUMMARY</p>
         <div className="grid grid-cols-2 gap-3">
           {[
-            { label: 'Core (Accumulation)', value: 'Index Funds' },
-            { label: 'Satellite (Alpha)', value: 'Individual Stocks & Crypto' },
+            { label: 'Decision Focus', value: 'Growth & Durability' },
+            { label: 'Primary Targets', value: 'Businesses I Understand' },
             { label: 'Time Horizon', value: '5+ Years' },
             { label: 'Key Sectors', value: 'Trading Co · AI · Finance · Infra' },
           ].map(({ label, value }) => (

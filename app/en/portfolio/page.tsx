@@ -52,12 +52,14 @@ const ITEM_NOTES: Record<string, string> = {
   'PLTR': 'AI data analytics for government & defense',
   'CRCL': 'USDC issuer & stablecoin infrastructure',
   'BTC': 'Digital gold, long-term hold',
-  'JLP': 'Jupiter liquidity pool',
   'OKB': 'OKX ecosystem token',
   'JUP': 'Jupiter governance token',
   'EDGE': 'EdgeX',
-  'GRVT': 'upcoming — ZK Perp DEX',
-  'JUICED': 'Stablecoin yield',
+  'GRVT': 'Derivatives trading infrastructure using ZK technology',
+  'MET': 'Meteora liquidity protocol on Solana',
+  'JUICED': 'Stable-yield position',
+  'PST': 'Stable-yield position on Huma Finance',
+  'thUSD': 'Stable-yield position on Theo Network',
 }
 
 const ASSET_NAMES: Record<string, string> = {
@@ -70,9 +72,9 @@ const ASSET_NAMES: Record<string, string> = {
 
 const ASSET_NOTES: Record<string, string> = {
   '商社・銀行・保険・金融・不動産・AI（個別株）': 'Trading cos, banks, insurance, financials, real estate, AI',
-  'eMAXIS Slim S&P500（月次積立）': 'eMAXIS Slim S&P500 (monthly DCA)',
+  'eMAXIS Slim S&P500（長期保有）': 'eMAXIS Slim S&P500 (long-term holding)',
   '個別株': 'Individual stocks',
-  'BTC・DeFi': 'BTC · DeFi',
+  'BTC・暗号資産・Stable運用': 'BTC, crypto assets & stable yield',
   '純金積立': 'Gold accumulation plan',
   '待機資金・生活防衛資金': 'Emergency fund & standby cash',
 }
@@ -130,12 +132,7 @@ export default function EnPortfolioPage() {
                   {group.items.map(item => (
                     <div key={item.ticker} className="flex items-start justify-between gap-2">
                       <div>
-                        <div className="flex items-center gap-2">
-                          <span className="text-sm font-medium" style={{ color: 'var(--foreground)' }}>{item.name}</span>
-                          {item.ticker.includes('upcoming') || item.name === 'GRVT' ? (
-                            <span className="text-xs px-1.5 py-0.5 rounded" style={{ backgroundColor: 'rgba(107,114,128,0.2)', color: 'var(--muted)', fontSize: '10px' }}>upcoming</span>
-                          ) : null}
-                        </div>
+                        <span className="text-sm font-medium" style={{ color: 'var(--foreground)' }}>{item.name}</span>
                         {item.note && (
                           <p className="text-xs mt-0.5" style={{ color: 'var(--muted)' }}>
                             {ITEM_NOTES[item.ticker] ?? item.note}
