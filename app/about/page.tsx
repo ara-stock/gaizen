@@ -168,6 +168,22 @@ export default function AboutPage() {
         </div>
       </div>
 
+      <section className="mb-16">
+        <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>EXPERIENCE</p>
+        <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--foreground)' }}>失敗から始まった投資経験</h2>
+        <div className="space-y-4 text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
+          <p>
+            初めて投資したのは大学院1年生の頃です。当時は投資への関心が薄く、勧められた本も読まないまま、株主優待と配当利回りだけを見て個別株を買いました。その結果、数年後に株価が半分になり損切りしました。
+          </p>
+          <p>
+            社会人1年目に生活防衛資金を用意して投資を再開し、現在はNISAでのインデックス積立を土台にしています。売買を繰り返して利益を逃した経験や、レバレッジ商品の値動きに耐えられず損切りした経験も含め、成功例だけではなく判断を誤った過程を記事に残します。
+          </p>
+          <p>
+            制度や数値は一次情報で確認し、個人の経験と一般的な情報を分けて記載します。詳しい作成方法は<a href="/editorial-policy/" style={{ color: 'var(--accent)' }}>編集・検証方針</a>で公開しています。
+          </p>
+        </div>
+      </section>
+
       {/* GAIZEN Philosophy */}
       <div className="mb-16">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>GAIZEN</p>

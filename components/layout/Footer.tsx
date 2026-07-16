@@ -30,6 +30,7 @@ export default function Footer() {
       ]
 
   const legalLinks: [string, string][] = [
+    [isEn ? 'Editorial Policy' : '編集・検証方針', `${p}/editorial-policy/`],
     ['Disclaimer', `${p}/disclaimer/`],
     ['Privacy Policy', `${p}/privacy/`],
     ['Contact', `${p}/contact/`],

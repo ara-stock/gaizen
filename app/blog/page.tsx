@@ -1,7 +1,7 @@
-import { getAllPosts, getTopTags } from '@/lib/posts'
-import ArticleCard from '@/components/blog/ArticleCard'
-import Tag from '@/components/ui/Tag'
+import { getAllPosts } from '@/lib/posts'
+import EditorialLibrary from '@/components/blog/EditorialLibrary'
 import ReadingGuide from '@/components/blog/ReadingGuide'
+import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -21,8 +21,6 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const posts = getAllPosts()
-  const tags = getTopTags('ja', 10)
-  const featuredPosts = posts.filter(post => post.frontmatter.featured).slice(0, 3)
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
@@ -32,47 +30,16 @@ export default function BlogPage() {
           長期投資を、順番に理解する。
         </h1>
         <p className="text-sm sm:text-base leading-relaxed" style={{ color: 'var(--muted)' }}>
-          NISA、投資信託、資産管理、ポートフォリオ設計を中心に、投資初心者が自分で判断できるようになるための記事を整理しています。全 {posts.length} 記事。
+          NISA、投資信託、資産管理を中心に、実際の失敗と運用経験を交えながら、自分で判断できるようになるための記事を整理しています。
         </p>
+        <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs" style={{ color: 'var(--muted)' }}>
+          <span>執筆: 個人投資家 ara</span>
+          <Link href="/editorial-policy/" className="transition-colors hover:text-green-500">編集・検証方針を読む →</Link>
+        </div>
       </div>
 
       <ReadingGuide />
-
-      {featuredPosts.length > 0 && (
-        <section className="mb-16">
-          <div className="mb-6">
-            <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>EDITOR&apos;S PICKS</p>
-            <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>最初に読む記事</h2>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {featuredPosts.map(post => <ArticleCard key={post.slug} post={post} />)}
-          </div>
-        </section>
-      )}
-
-      {tags.length > 0 && (
-        <section className="mb-12 p-5 rounded-2xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-          <div className="mb-4">
-            <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>TOPICS</p>
-            <h2 className="text-lg font-semibold" style={{ color: 'var(--foreground)' }}>よく読まれるテーマ</h2>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {tags.map(tag => <Tag key={tag} tag={tag} linked={false} />)}
-          </div>
-        </section>
-      )}
-
-      {posts.length > 0 ? (
-        <section>
-          <div className="mb-6">
-            <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>ALL ARTICLES</p>
-            <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>最新記事</h2>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {posts.map(post => <ArticleCard key={post.slug} post={post} />)}
-          </div>
-        </section>
-      ) : (
+      {posts.length > 0 ? <EditorialLibrary posts={posts} /> : (
         <div className="py-24 text-center">
           <p className="text-sm" style={{ color: 'var(--muted)' }}>記事はまだありません。</p>
         </div>

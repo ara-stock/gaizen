@@ -5,7 +5,7 @@ updatedAt: "2026-06-11"
 description: "A complete guide to using the NISA growth investment allowance — how taxation differs for Japanese stocks, US stocks, and index funds; why no-distribution funds maximize NISA efficiency; and why S&P500 or All-Country is still the right answer."
 tags: ["NISA", "growth investment allowance", "index investing", "S&P500", "All-Country", "long-term investing"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 

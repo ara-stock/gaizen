@@ -171,6 +171,22 @@ export default function EnAboutPage() {
         </div>
       </div>
 
+      <section className="mb-16">
+        <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>EXPERIENCE</p>
+        <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--foreground)' }}>An investing record that started with a loss</h2>
+        <div className="space-y-4 text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
+          <p>
+            I first invested during my first year of graduate school. I had little interest in investing, did not read the book a friend recommended, and bought an individual stock mainly for its shareholder benefit and apparent dividend yield. A few years later, I sold it after the price had fallen by half.
+          </p>
+          <p>
+            I restarted in my first year of full-time work after setting aside emergency cash. Today, recurring index investments through NISA form the base of my portfolio. I document missed gains from frequent trading and a leveraged position I could not tolerate, not just decisions that worked out.
+          </p>
+          <p>
+            Rules and figures are checked against primary sources, and personal experience is separated from general information. See the <a href="/en/editorial-policy/" style={{ color: 'var(--accent)' }}>editorial policy</a> for the full process.
+          </p>
+        </div>
+      </section>
+
       {/* GAIZEN Philosophy */}
       <div className="mb-16">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>GAIZEN</p>

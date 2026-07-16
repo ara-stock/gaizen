@@ -120,7 +120,7 @@ export default function HomePage() {
       <section className="py-12 border-b" style={{ borderColor: 'var(--border)' }}>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {[
-            { label: '公開記事', value: `${allPosts.length}本` },
+            { label: '対象読者', value: '投資初心者から' },
             { label: '主テーマ', value: 'NISA・投資信託' },
             { label: '投資期間', value: '長期前提' },
             { label: '運営方針', value: '経験 + 一次情報' },
@@ -177,6 +177,9 @@ export default function HomePage() {
             <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
               投資判断の代行ではなく、判断材料の整理を目的にしています。読者が自分で調べ、納得して選べる状態を重視します。
             </p>
+            <Link href="/editorial-policy/" className="inline-block mt-4 text-xs transition-colors hover:text-green-500" style={{ color: 'var(--accent)' }}>
+              編集・検証方針を読む →
+            </Link>
           </div>
           <div className="grid gap-3">
             {TRUST_POINTS.map((point, index) => (

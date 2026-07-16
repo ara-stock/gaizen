@@ -5,7 +5,7 @@ updatedAt: "2026-06-11"
 description: "NISA成長投資枠の使い方を徹底解説。日本株・米国株・投資信託の課税の違い、NISA枠を最も効率よく使う方法、S&P500・オルカンが結論になる理由を整理します。"
 tags: ["NISA", "成長投資枠", "積立投資", "S&P500", "オルカン", "インデックス投資"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 
