@@ -5,6 +5,7 @@ import ArticleCard from '@/components/blog/ArticleCard'
 import ShareButton from '@/components/blog/ShareButton'
 import Tag from '@/components/ui/Tag'
 import AdUnit from '@/components/ads/AdUnit'
+import ArticleIntro from '@/components/blog/ArticleIntro'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
@@ -114,10 +115,7 @@ export default async function ArticlePage({ params }: Props) {
               </div>
             </header>
 
-            <div className="mb-8 p-4 rounded-lg border text-xs leading-relaxed"
-              style={{ backgroundColor: 'rgba(201,168,76,0.05)', borderColor: 'rgba(201,168,76,0.2)', color: 'var(--muted)' }}>
-              本記事は情報提供を目的としており、投資助言ではありません。投資判断はご自身の責任で行ってください。
-            </div>
+            <ArticleIntro description={frontmatter.description} />
 
             <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
 
@@ -144,6 +142,9 @@ export default async function ArticlePage({ params }: Props) {
                   </div>
                   <p className="text-xs leading-relaxed" style={{ color: 'var(--muted)' }}>
                     兼業投資家。インデックス積立をコアに、商社・銀行・AI・Fintechの個別株と仮想通貨とゴールドを組み合わせて運用中。
+                  </p>
+                  <p className="text-xs leading-relaxed mt-2" style={{ color: 'var(--muted)' }}>
+                    本記事は情報提供を目的としており、個別の投資助言ではありません。
                   </p>
                 </div>
               </Link>

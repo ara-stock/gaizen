@@ -7,7 +7,7 @@ import LanguageDetector from '@/components/layout/LanguageDetector'
 
 const SITE_URL = 'https://gaizen.xyz'
 const SITE_NAME = 'GAIZEN FINANCE'
-const SITE_DESCRIPTION = 'Focused on long-term, diversified growth — bridging traditional markets and crypto.'
+const SITE_DESCRIPTION = 'NISA・投資信託・資産管理を、個人投資家の実体験と一次情報から学ぶ長期投資メディア。'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   keywords: ['長期投資', '分散投資', 'BTC', 'S&P500', 'インデックス投資', '資産運用', '仮想通貨', '不動産投資'],
-  authors: [{ name: 'GAIZEN FINANCE' }],
-  creator: 'GAIZEN FINANCE',
+  authors: [{ name: 'ara', url: `${SITE_URL}/about/` }],
+  creator: 'ara',
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
@@ -59,6 +59,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           url: SITE_URL,
           description: SITE_DESCRIPTION,
           inLanguage: ['ja', 'en'],
+          publisher: {
+            '@type': 'Person',
+            name: 'ara',
+            url: `${SITE_URL}/about/`,
+            sameAs: ['https://x.com/ara_stock'],
+          },
         }) }} />
       </head>
       <body className="min-h-full flex flex-col" style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)' }}>

@@ -130,7 +130,7 @@ The goal of the first month is not profit. It is confirming that the correct acc
 
 I cannot disclose the first stock I bought, but the mistake was buying without understanding the company. Shareholder benefits and a high dividend yield are not enough.
 
-Before selecting individual stocks, read "[How to Select US Stocks](/en/blog/us-stock-selection)" and "[How to Read ROE, PER, and PBR](/en/blog/stock-valuation-metrics)," then start small.
+Before selecting individual stocks, read "[How to Select US Stocks](/en/blog/us-stock-selection)" for a decision framework, then start small.
 
 ### Do Not Force a Large Contribution
 
@@ -191,4 +191,3 @@ A ¥1,000 contribution will not create large short-term profits. But it takes yo
 - [Rakuten Securities — Rakuten Card Fund Contributions](https://www.rakuten-sec.co.jp/web/lp/fund_card_payment/)
 - [Rakuten Bank — Money Bridge](https://www.rakuten-bank.co.jp/assets/intermediation/moneybridge/)
 - [Mitsubishi UFJ Asset Management — eMAXIS Slim US Equities (S&P500)](https://emaxis.am.mufg.jp/fund/253266.html)
-

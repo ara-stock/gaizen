@@ -47,6 +47,8 @@ const staticRoutes = [
   { url: `${SITE_URL}/en/tools/`, priority: '0.7', changefreq: 'monthly' },
   { url: `${SITE_URL}/about/`, priority: '0.5', changefreq: 'yearly' },
   { url: `${SITE_URL}/en/about/`, priority: '0.5', changefreq: 'yearly' },
+  { url: `${SITE_URL}/editorial-policy/`, priority: '0.5', changefreq: 'yearly' },
+  { url: `${SITE_URL}/en/editorial-policy/`, priority: '0.5', changefreq: 'yearly' },
   { url: `${SITE_URL}/thesis/`, priority: '0.7', changefreq: 'monthly' },
   { url: `${SITE_URL}/en/thesis/`, priority: '0.7', changefreq: 'monthly' },
   { url: `${SITE_URL}/disclaimer/`, priority: '0.3', changefreq: 'yearly' },

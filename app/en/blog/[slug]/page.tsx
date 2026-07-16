@@ -5,6 +5,7 @@ import ArticleCard from '@/components/blog/ArticleCard'
 import ShareButton from '@/components/blog/ShareButton'
 import Tag from '@/components/ui/Tag'
 import AdUnit from '@/components/ads/AdUnit'
+import ArticleIntro from '@/components/blog/ArticleIntro'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
@@ -114,10 +115,7 @@ export default async function EnArticlePage({ params }: Props) {
               </div>
             </header>
 
-            <div className="mb-8 p-4 rounded-lg border text-xs leading-relaxed"
-              style={{ backgroundColor: 'rgba(201,168,76,0.05)', borderColor: 'rgba(201,168,76,0.2)', color: 'var(--muted)' }}>
-              This article is for informational purposes only and does not constitute investment advice. Please make investment decisions at your own discretion.
-            </div>
+            <ArticleIntro description={frontmatter.description} locale="en" />
 
             <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
 
@@ -144,6 +142,9 @@ export default async function EnArticlePage({ params }: Props) {
                   </div>
                   <p className="text-xs leading-relaxed" style={{ color: 'var(--muted)' }}>
                     Side investor. Portfolio anchored in index accumulation with individual stocks across trading companies, banks, AI, and fintech — plus crypto and gold.
+                  </p>
+                  <p className="text-xs leading-relaxed mt-2" style={{ color: 'var(--muted)' }}>
+                    Articles are educational records and do not constitute personalized investment advice.
                   </p>
                 </div>
               </Link>

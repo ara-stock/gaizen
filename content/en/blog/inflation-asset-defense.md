@@ -1,7 +1,7 @@
 ---
 title: "Defending Your Wealth Against Inflation: The Role of Cash, Stocks, Real Estate, and Commodities"
 date: "2026-05-23"
-updatedAt: "2026-05-23"
+updatedAt: "2026-07-16"
 description: "What should you hold in an inflationary environment? The case for stocks as your core asset, why cash erodes, and a realistic assessment of real estate, gold, and commodity ETFs."
 tags: ["inflation", "asset defense", "cash", "stocks", "real estate", "gold accumulation", "commodities"]
 category: "us-stock"
@@ -9,11 +9,11 @@ published: true
 featured: false
 ---
 
-## The Bottom Line: Stocks Are Your Core Asset. Minimize Cash.
+## The Bottom Line: Use Stocks for Long-Term Capital and Cash for Resilience
 
 The answer to protecting wealth in an inflationary environment is simple.
 
-**Hold assets with real demand and pricing power.** Stocks are the prime example. Cash loses purchasing power over time — keep it to the minimum you actually need.
+**Hold assets with real demand and pricing power.** Stocks are a prime example. Cash, however, protects living expenses and known near-term spending. Do not reduce cash solely because inflation exists; separate money by when it will be used.
 
 ## Why Cash Erodes
 
@@ -21,11 +21,11 @@ Inflation means prices rise over time. The flip side: cash buys less and less.
 
 The money supply has grown gradually alongside credit cycles — and continued gradual expansion is considered healthy economic functioning. Holding large amounts of cash means swimming against that current.
 
-**Your cash holdings should cover roughly 1 to 1.5 months of living expenses** — enough for an emergency fund and nothing more. (See [Emergency Fund: One Month Is Enough](/en/blog/emergency-fund) for the full reasoning.)
+Set cash from essential spending, income stability, dependents, and known future expenses. I started my first working year with ¥500,000. See [How Much Emergency Cash Do You Need?](/en/blog/emergency-fund) for the full framework.
 
 ## Why Stocks Should Be Your Core Asset
 
-Companies can pass on inflation to their customers. When input costs rise — materials, labor, energy — businesses raise prices. That flows through to profits, and profits flow through to stock prices.
+Companies with pricing power can pass higher input costs to customers. Not every business can do this, and stocks can still decline when inflation or interest rates rise abruptly.
 
 Stocks are, in essence, a claim on businesses with real pricing power. They are a natural inflation hedge.
 
@@ -38,9 +38,9 @@ Concretely, holding an index fund tracking the [S&P500](/en/blog/sp500-index-inv
 | Factor | Assessment |
 |---|---|
 | Inflation resistance | ✕ Purchasing power erodes gradually |
-| Recommended holding | 1–1.5 months of living expenses only |
+| Holding framework | Emergency cash plus known spending within the next few years |
 
-Cash is essential for liquidity and emergencies. Beyond that, there is no rational case for holding more.
+Cash is stable and immediately available. Even with a low expected return, it can prevent forced selling during a market decline.
 
 ### Stocks (Index Funds)
 
@@ -80,21 +80,21 @@ Commodity ETFs carry high fees and are poorly suited to long-term holding. Since
 
 Real estate is an interesting asset class, but **understanding leverage and liquidity risk is a prerequisite.**
 
-#### The Non-Negotiable Rule for Real Estate
+#### Decide the downside before buying
 
-**Leverage should not exceed 2x your own capital.**
+I prefer conservative borrowing, but an appropriate loan depends on income, vacancy, interest rates, maintenance costs, and collateral value.
 
-If you have ¥10M in liquid assets, cap your mortgage at ¥10M. Exceed that, and a drop in rental income could force you to cover mortgage payments from your salary — creating significant financial stress. Always plan for the worst case.
+More debt can increase the return on your equity, but it also increases the amount that must be covered from salary when vacancy rises or rates reset. Model whether repayments and repairs remain affordable after rental income falls.
 
 Real estate is also **illiquid** — you often cannot sell when you want to, or at the price you want. The risk profile is fundamentally different from equities.
 
-A practical sequencing: **wait until your stock portfolio exceeds ¥60M–¥100M before seriously considering real estate.** Even if you're experienced with equity investing, real estate is a separate discipline that requires dedicated study before committing capital.
+My own sequence is to build substantial liquid financial assets first. The decision should not rest on a single portfolio threshold: model vacancy, rising rates, repairs, taxes, and management before committing capital.
 
 ## The Deeper Point: Read the Macro Environment
 
 The cash vs. stocks question ultimately comes down to one judgment: will inflation persist, or will deflation take hold?
 
-In a deflationary environment, cash gains relative value. But the current macro picture points toward continued inflation. Money supply growth shows no signs of reversing.
+In a deflationary environment, cash gains relative value. Future inflation cannot be forecast precisely, which is why a portfolio should not depend on only cash or only stocks.
 
 Regardless of yen strength or weakness, holding globally diversified assets (S&P500, All-Country) reduces dependence on any single currency. Review your asset allocation periodically and stay aware of how the broader environment is shifting.
 
@@ -107,10 +107,10 @@ The sharpest reminder came abroad: what I expected to be a casual lunch ended up
 ## Summary
 
 - **Stocks (S&P500 / All-Country) are your core asset** — they have real pricing power against inflation
-- **Keep cash to 1–1.5 months of living expenses** — no rational case for holding more
+- **Use cash for emergencies and planned spending** — the amount depends on the household
 - **A small gold allocation via credit card accumulation** offers a good cost-to-benefit ratio
 - **Commodity ETFs are too expensive** — equity indexes already cover the exposure
-- **Real estate requires leverage discipline (2x cap) and is best considered after ¥60M–¥100M in equities**
+- **Real estate requires a full cash-flow model**, including vacancy, rates, repairs, and taxes
 - In an inflationary environment, the shortcut to asset protection is owning things with real demand and pricing power
 
 ## References
