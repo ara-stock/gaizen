@@ -1,5 +1,6 @@
 {
   "updatedAt": "2026-07-16",
+  "allocationAsOf": "2026-05-31",
   "totalAssets": "非公開",
   "holdingPolicy": [
     "事業の成長性と持続性を軸に、5年以上の長期保有を前提として判断する",
@@ -35,8 +36,8 @@
       "group": "銀行",
       "region": "JP",
       "items": [
-        { "name": "三菱UFJ FG", "ticker": "8306", "note": "信託報酬・金利上昇メリット" },
-        { "name": "三井住友 FG", "ticker": "8316", "note": "信託報酬・金利上昇メリット" }
+        { "name": "三菱UFJ FG", "ticker": "8306", "note": "金利上昇局面での収益改善余地" },
+        { "name": "三井住友 FG", "ticker": "8316", "note": "金利上昇局面での収益改善余地" }
       ]
     },
     {

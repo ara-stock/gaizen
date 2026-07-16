@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Portfolio',
-  description: 'Long-term, diversified portfolio — asset allocation across Japanese stocks, US stocks, and crypto.',
+  description: 'A long-term portfolio focused on business growth and durability, with allocations and holdings across Japanese stocks, US stocks, crypto assets, and stable-yield strategies.',
   alternates: {
     canonical: 'https://gaizen.xyz/en/portfolio/',
     languages: { 'ja': 'https://gaizen.xyz/portfolio/' },
@@ -35,8 +35,8 @@ const ITEM_NOTES: Record<string, string> = {
   '8053': 'Business hub & equity stakes',
   '8002': 'Power, grain & infrastructure',
   '8020': 'ICT, food & materials',
-  '8306': 'Trust banking, benefits from rate hikes',
-  '8316': 'Trust banking, benefits from rate hikes',
+  '8306': 'Potential earnings improvement in a rising-rate environment',
+  '8316': 'Potential earnings improvement in a rising-rate environment',
   '8766': 'Marine, fire & auto insurance',
   '8473': 'Securities, banking & fintech',
   '8591': 'Leasing, financial & real estate diversification',
@@ -79,6 +79,16 @@ const ASSET_NOTES: Record<string, string> = {
   '待機資金・生活防衛資金': 'Emergency fund & standby cash',
 }
 
+const HOLDING_POLICY = [
+  'Invest with a five-year or longer horizon, focusing on business growth and durability.',
+  'Select Japanese companies in understandable sectors such as trading, banking, insurance, finance, and real estate.',
+  'Hold the S&P 500 as one component of the long-term portfolio.',
+  'Select individual US stocks after assessing the business and its room for growth.',
+  'Separate crypto token holdings from stable-yield strategies and limit exposure to risks I understand.',
+  'Accumulate gold through a brokerage plan.',
+  'Maintain cash for emergencies and future investment opportunities.',
+]
+
 const MONTHLY_NOTES: Record<string, string> = {
   '2026-05': 'Japanese stocks trending well. TOPIX near highs amid continued yen weakness. S&P 500 also showing resilience. Overall portfolio stable — no rebalancing needed.',
   '2026-04': 'Yen strengthened following Bank of Japan policy changes, temporarily lowering the yen-denominated value of US holdings. Impact was limited given high domestic stock allocation. No change from a long-term perspective.',
@@ -98,13 +108,30 @@ export default function EnPortfolioPage() {
       <div className="mb-12">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>PORTFOLIO</p>
         <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>Asset Portfolio</h1>
-        <p className="text-xs" style={{ color: 'var(--muted)' }}>Updated: {portfolio.updatedAt}</p>
+        <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs" style={{ color: 'var(--muted)' }}>
+          <span>Holdings updated: {portfolio.updatedAt}</span>
+          <span>Allocation as of: {portfolio.allocationAsOf}</span>
+        </div>
       </div>
 
       {/* Allocation Chart */}
       <section className="mb-16 p-6 sm:p-8 rounded-xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
         <h2 className="text-sm font-semibold mb-8" style={{ color: 'var(--foreground)' }}>Asset Allocation</h2>
         <AllocationChart assets={enAssets} />
+      </section>
+
+      <section className="mb-16">
+        <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>POLICY</p>
+        <h2 className="text-xl font-bold mb-6" style={{ color: 'var(--foreground)' }}>Investment Policy</h2>
+        <ul className="grid sm:grid-cols-2 gap-3">
+          {HOLDING_POLICY.map(policy => (
+            <li key={policy} className="flex gap-3 p-4 rounded-lg border text-sm leading-relaxed"
+              style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', color: 'var(--muted)' }}>
+              <span className="mt-2 h-1.5 w-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: 'var(--accent)' }} />
+              <span>{policy}</span>
+            </li>
+          ))}
+        </ul>
       </section>
 
       {/* Holdings */}
