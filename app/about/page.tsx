@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'About',
-  description: '「蓋然性の高い投資」を目指す長期×積立投資サイト。GAIZEN（蓋然）の語源、投資モットー「投資し、育て、心にゆとりを持つ」、コア投資原則を紹介します。',
+  description: '事業の成長性と持続性を軸に長期投資を行う個人投資家araのプロフィール、投資経験、判断基準を紹介します。',
   alternates: { canonical: 'https://gaizen.xyz/about/', languages: { 'en': 'https://gaizen.xyz/en/about/' } },
 }
 
@@ -25,8 +25,8 @@ const principles = [
   },
   {
     number: '04',
-    title: 'コア・サテライト構造で長期保有する',
-    body: 'NISA積立枠でS&P500インデックスを毎月積立（コア）し、NISA成長投資枠・特定口座で個別株のαを狙う（サテライト）。どちらも5年以上の長期視点で保有し、資産クラスと地域の両軸で分散する。',
+    title: '投資仮説を検証しながら長期保有する',
+    body: '短期の株価ではなく、事業の利益創出力・競争優位・成長余地が維持されているかを確認する。投資した理由が崩れていない限り、5年以上の長期視点で保有する。',
   },
 ]
 
@@ -106,7 +106,7 @@ const sectors = [
     region: 'Crypto',
     reason: '商品ポジション × 供給不足期待',
     detail: '暗号資産を株式ではなく「商品（コモディティ）」として位置付け、希少性と需要を調査しています。価格変動が大きく、インフレ・地政学リスクへのヘッジ効果も保証されないため、小さな配分に限定しています。',
-    examples: ['BTC', 'JLP', 'OKB', 'JUP', 'EDGE', 'GRVT'],
+    examples: ['BTC', 'OKB', 'JUP', 'EDGE', 'GRVT', 'MET'],
   },
 ]
 
@@ -151,7 +151,7 @@ export default function AboutPage() {
               </a>
             </div>
             <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-              兼業投資家です。現在の事業を分析し、将来の成長を想定した長期投資を実践しています。インデックス積立をコアに、商社・銀行・AI・Fintech分野の個別株と仮想通貨とゴールドを組み合わせて運用中。「蓋然性の高い選択を」積み重ねています。
+              事業の成長性と持続性を軸に、長期投資を行う個人投資家です。商社・銀行・AI・Fintech分野を中心に、現在の利益創出力と将来の成長余地を自分の言葉で説明できる投資先を選んでいます。
             </p>
           </div>
         </div>
@@ -176,7 +176,7 @@ export default function AboutPage() {
             初めて投資したのは大学院1年生の頃です。当時は投資への関心が薄く、勧められた本も読まないまま、株主優待と配当利回りだけを見て個別株を買いました。その結果、数年後に株価が半分になり損切りしました。
           </p>
           <p>
-            社会人1年目に生活防衛資金を用意して投資を再開し、現在はNISAでのインデックス積立を土台にしています。売買を繰り返して利益を逃した経験や、レバレッジ商品の値動きに耐えられず損切りした経験も含め、成功例だけではなく判断を誤った過程を記事に残します。
+            社会人1年目に生活防衛資金を用意し、NISAでのインデックス積立から投資を再開しました。その後、事業を理解できる企業への長期投資へ軸足を移しています。売買を繰り返して利益を逃した経験や、レバレッジ商品の値動きに耐えられず損切りした経験も含め、成功例だけではなく判断を誤った過程を記事に残します。
           </p>
           <p>
             制度や数値は一次情報で確認し、個人の経験と一般的な情報を分けて記載します。詳しい作成方法は<a href="/editorial-policy/" style={{ color: 'var(--accent)' }}>編集・検証方針</a>で公開しています。
@@ -196,7 +196,7 @@ export default function AboutPage() {
             相場を予測しようとするのではなく、<strong style={{ color: 'var(--foreground)' }}>蓋然性の高い選択</strong>を粛々と積み重ねていく。それがここでの一貫したテーマです。
           </p>
           <p>
-            インデックスへの<strong style={{ color: 'var(--foreground)' }}>長期×積立投資</strong>をコアに据え、個別銘柄は長期で保有しながら必要に応じて追加投資を行うスタイルです。
+            現在は、事業の<strong style={{ color: 'var(--foreground)' }}>成長性と持続性</strong>を投資判断の軸に据えています。投資仮説が崩れていない限り長期で保有し、価格と事業の状況を見ながら追加投資を行います。
           </p>
         </div>
       </div>
@@ -205,7 +205,7 @@ export default function AboutPage() {
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>ABOUT</p>
         <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--foreground)' }}>投資方針</h2>
         <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-          長期・分散・積立を軸に、「理解できるものへの投資」と「事業の継続性・拡張性」を重視した個別株選定を組み合わせています。
+          「理解できるものへの投資」を前提に、現在の利益創出力、事業の持続性、将来の成長性を重視して投資先を選びます。
         </p>
       </div>
 
@@ -304,8 +304,8 @@ export default function AboutPage() {
         <p className="text-xs tracking-widest mb-6 font-semibold" style={{ color: 'var(--accent)' }}>SUMMARY</p>
         <div className="grid grid-cols-2 gap-3">
           {[
-            { label: 'コア（積立）', value: 'インデックス積立' },
-            { label: 'サテライト（α）', value: '個別株・仮想通貨' },
+            { label: '投資判断の軸', value: '成長性・持続性' },
+            { label: '主な投資対象', value: '理解できる事業' },
             { label: '長期投資', value: '5年以上' },
             { label: '重点セクター', value: '商社・AI・金融・Infra' },
           ].map(({ label, value }) => (

@@ -141,7 +141,7 @@ export default async function EnArticlePage({ params }: Props) {
                     <span className="text-xs" style={{ color: 'var(--accent)' }}>@ara_stock</span>
                   </div>
                   <p className="text-xs leading-relaxed" style={{ color: 'var(--muted)' }}>
-                    Side investor. Portfolio anchored in index accumulation with individual stocks across trading companies, banks, AI, and fintech — plus crypto and gold.
+                    Individual investor focused on long-term holdings in businesses with durable growth, including trading companies, banks, AI, and fintech.
                   </p>
                   <p className="text-xs leading-relaxed mt-2" style={{ color: 'var(--muted)' }}>
                     Articles are educational records and do not constitute personalized investment advice.

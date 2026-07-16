@@ -56,12 +56,7 @@ export default function PortfolioPage() {
                   {group.items.map(item => (
                     <div key={item.ticker} className="flex items-start justify-between gap-2">
                       <div>
-                        <div className="flex items-center gap-2">
-                          <span className="text-sm font-medium" style={{ color: 'var(--foreground)' }}>{item.name}</span>
-                          {item.ticker.includes('upcoming') || item.name === 'GRVT' ? (
-                            <span className="text-xs px-1.5 py-0.5 rounded" style={{ backgroundColor: 'rgba(107,114,128,0.2)', color: 'var(--muted)', fontSize: '10px' }}>upcoming</span>
-                          ) : null}
-                        </div>
+                        <span className="text-sm font-medium" style={{ color: 'var(--foreground)' }}>{item.name}</span>
                         {item.note && (
                           <p className="text-xs mt-0.5" style={{ color: 'var(--muted)' }}>{item.note}</p>
                         )}

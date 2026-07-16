@@ -34,7 +34,9 @@ export default function ArticleIntro({ description, locale = 'ja' }: ArticleIntr
               {isEnglish ? 'Written and fact-checked by ara' : '執筆・事実確認: ara'}
             </p>
             <p className="text-xs mt-0.5" style={{ color: 'var(--muted)' }}>
-              {isEnglish ? 'Individual investor documenting real decisions' : '実際の判断と失敗を記録する個人投資家'}
+              {isEnglish
+                ? 'Long-term investor focused on business growth and durability'
+                : '事業の成長性と持続性を軸に、長期投資を行う個人投資家'}
             </p>
           </div>
         </Link>

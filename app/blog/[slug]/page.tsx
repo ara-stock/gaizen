@@ -141,7 +141,7 @@ export default async function ArticlePage({ params }: Props) {
                     <span className="text-xs" style={{ color: 'var(--accent)' }}>@ara_stock</span>
                   </div>
                   <p className="text-xs leading-relaxed" style={{ color: 'var(--muted)' }}>
-                    兼業投資家。インデックス積立をコアに、商社・銀行・AI・Fintechの個別株と仮想通貨とゴールドを組み合わせて運用中。
+                    事業の成長性と持続性を軸に、商社・銀行・AI・Fintech分野を中心とした長期投資を行う個人投資家。
                   </p>
                   <p className="text-xs leading-relaxed mt-2" style={{ color: 'var(--muted)' }}>
                     本記事は情報提供を目的としており、個別の投資助言ではありません。

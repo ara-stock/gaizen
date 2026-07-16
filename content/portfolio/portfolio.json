@@ -1,19 +1,20 @@
 {
-  "updatedAt": "2026-05-31",
+  "updatedAt": "2026-07-16",
   "totalAssets": "非公開",
   "holdingPolicy": [
-    "長期・分散・積立を基本方針とする（長期＝5年以上）",
-    "国内株はセクター分散（商社・銀行・保険・金融・不動産・AI）を意識した個別株選定",
-    "S&P500はeMAXIS Slim S&P500で毎月積立",
-    "米国株は個別株で厳選保有",
-    "金は証券会社の純金積立、仮想通貨は少量のヘッジポジション",
+    "事業の成長性と持続性を軸に、5年以上の長期保有を前提として判断する",
+    "国内株は商社・銀行・保険・金融・不動産など、理解できる事業を中心に選定する",
+    "S&P500は長期保有資産の一つとして保有する",
+    "米国株は事業内容と成長余地を確認して個別株を選定する",
+    "暗号資産はトークン保有とStable運用を分け、リスクを理解できる範囲に限定する",
+    "金は証券会社の純金積立で保有する",
     "現金は待機資金・生活防衛資金として一定割合を確保"
   ],
   "assets": [
     { "name": "日本株", "category": "jp-stock", "allocation": 57, "note": "商社・銀行・保険・金融・不動産・AI（個別株）" },
-    { "name": "S&P500", "category": "us-stock", "allocation": 24, "note": "eMAXIS Slim S&P500（月次積立）" },
+    { "name": "S&P500", "category": "us-stock", "allocation": 24, "note": "eMAXIS Slim S&P500（長期保有）" },
     { "name": "米国株", "category": "us-stock-2", "allocation": 9, "note": "個別株" },
-    { "name": "仮想通貨", "category": "crypto", "allocation": 5, "note": "BTC・DeFi" },
+    { "name": "仮想通貨", "category": "crypto", "allocation": 5, "note": "BTC・暗号資産・Stable運用" },
     { "name": "金", "category": "gold", "allocation": 3, "note": "純金積立" },
     { "name": "現金", "category": "cash", "allocation": 2, "note": "待機資金・生活防衛資金" }
   ],
@@ -99,21 +100,20 @@
       "region": "Crypto",
       "items": [
         { "name": "Bitcoin", "ticker": "BTC", "note": "デジタルゴールド・長期保有" },
-        { "name": "JLP", "ticker": "JLP", "note": "Jupiter流動性プール" },
         { "name": "OKB", "ticker": "OKB", "note": "OKXエコシステムトークン" },
-        { "name": "JUP", "ticker": "JUP", "note": "JupiterガバナンストークN" },
+        { "name": "JUP", "ticker": "JUP", "note": "Jupiterガバナンストークン" },
         { "name": "EDGE", "ticker": "EDGE", "note": "EdgeX" },
-        { "name": "GRVT", "ticker": "GRVT", "note": "upcoming — ZK Perp DEX" },
-        { "name": "NEAR Protocol", "ticker": "NEAR", "note": "L1ブロックチェーン・AI × Web3" },
-        { "name": "Huma Finance", "ticker": "HUMA", "note": "PayFi（決済ファイナンス）プロトコル" }
+        { "name": "GRVT", "ticker": "GRVT", "note": "ZK技術を活用するデリバティブ取引基盤" },
+        { "name": "Meteora", "ticker": "MET", "note": "Solanaの流動性プロトコル" }
       ]
     },
     {
       "group": "Stable運用",
       "region": "DeFi",
       "items": [
-        { "name": "JUICED", "ticker": "JUICED", "note": "ステーブルコインイールド" },
-        { "name": "PST", "ticker": "PST", "note": "Solana USDイールドベアリングトークン" }
+        { "name": "JUICED", "ticker": "JUICED", "note": "Stable運用" },
+        { "name": "PST", "ticker": "PST", "note": "Huma FinanceでのStable運用" },
+        { "name": "thUSD", "ticker": "thUSD", "note": "Theo NetworkでのStable運用" }
       ]
     }
   ],
