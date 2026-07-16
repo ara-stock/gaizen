@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Portfolio',
-  description: '長期・分散投資のポートフォリオ公開。日本株・米国株・仮想通貨の資産配分と保有銘柄。',
+  description: '事業の成長性と持続性を軸にした長期投資ポートフォリオ。日本株・米国株・暗号資産・Stable運用の配分と保有銘柄を公開します。',
   alternates: { canonical: 'https://gaizen.xyz/portfolio/', languages: { 'en': 'https://gaizen.xyz/en/portfolio/' } },
 }
 
@@ -23,13 +23,30 @@ export default function PortfolioPage() {
       <div className="mb-12">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>PORTFOLIO</p>
         <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>資産ポートフォリオ</h1>
-        <p className="text-xs" style={{ color: 'var(--muted)' }}>更新: {portfolio.updatedAt}</p>
+        <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs" style={{ color: 'var(--muted)' }}>
+          <span>保有銘柄更新: {portfolio.updatedAt}</span>
+          <span>資産配分基準日: {portfolio.allocationAsOf}</span>
+        </div>
       </div>
 
       {/* Allocation Chart */}
       <section className="mb-16 p-6 sm:p-8 rounded-xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
         <h2 className="text-sm font-semibold mb-8" style={{ color: 'var(--foreground)' }}>Asset Allocation</h2>
         <AllocationChart assets={portfolio.assets} />
+      </section>
+
+      <section className="mb-16">
+        <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>POLICY</p>
+        <h2 className="text-xl font-bold mb-6" style={{ color: 'var(--foreground)' }}>運用方針</h2>
+        <ul className="grid sm:grid-cols-2 gap-3">
+          {portfolio.holdingPolicy.map(policy => (
+            <li key={policy} className="flex gap-3 p-4 rounded-lg border text-sm leading-relaxed"
+              style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', color: 'var(--muted)' }}>
+              <span className="mt-2 h-1.5 w-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: 'var(--accent)' }} />
+              <span>{policy}</span>
+            </li>
+          ))}
+        </ul>
       </section>
 
       {/* Holdings */}

@@ -34,6 +34,7 @@ export interface MonthlyNote {
 
 export interface PortfolioData {
   updatedAt: string
+  allocationAsOf: string
   totalAssets?: string
   holdingPolicy: string[]
   assets: Asset[]
