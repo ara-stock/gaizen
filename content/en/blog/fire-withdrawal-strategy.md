@@ -33,7 +33,7 @@ Short of an illness or disability that prevents work entirely, Japan has jobs. E
 
 Even if the 4% rule is designed around the assumption that your assets last 30 years, if a prolonged market crash causes your portfolio to shrink faster than expected, you can simply work a little to make up the difference. Even reducing your withdrawals in a single bad year can meaningfully extend the life of your assets over the long run.
 
-The accumulation simulations and explanation of the 4% rule that underpin this discussion are covered in detail in my previous article, "[Accumulation Simulation for FIRE](/en/blog/fire-simulation)."
+The accumulation simulations and explanation of the 4% rule that underpin this discussion are covered in detail in my previous article, "[Accumulation Simulation for FIRE](/en/blog/fire-simulation/)."
 
 ---
 

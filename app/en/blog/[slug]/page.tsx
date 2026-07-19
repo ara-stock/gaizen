@@ -89,9 +89,9 @@ export default async function EnArticlePage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <nav aria-label="Breadcrumb" className="mb-8 flex items-center gap-2 text-xs" style={{ color: 'var(--muted)' }}>
-          <Link href="/en">Home</Link>
+          <Link href="/en/">Home</Link>
           <span aria-hidden="true">/</span>
-          <Link href="/en/blog">Blog</Link>
+          <Link href="/en/blog/">Blog</Link>
           <span aria-hidden="true">/</span>
           <span aria-current="page" className="truncate">{frontmatter.title}</span>
         </nav>
@@ -125,7 +125,7 @@ export default async function EnArticlePage({ params }: Props) {
 
             {/* Author bio */}
             <div className="mt-6 pt-8 border-t" style={{ borderColor: 'var(--border)' }}>
-              <Link href="/en/about" className="flex items-start gap-4 p-4 rounded-xl border transition-colors hover:border-green-800 group"
+              <Link href="/en/about/" className="flex items-start gap-4 p-4 rounded-xl border transition-colors hover:border-green-800 group"
                 style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
                 <Image
                   src="/images/profile.jpg"

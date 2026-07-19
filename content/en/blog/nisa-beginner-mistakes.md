@@ -19,7 +19,7 @@ If I could give a beginner only one warning, it would be: **do not make an indiv
 
 The reason is not that individual stocks always lose money. It is that beginners usually do not yet have the **comparison framework** needed to judge whether a decision is good or bad.
 
-> If you have not yet created a brokerage account and recurring contribution, start with "[Your First 30 Days of Investing in Japan](/en/blog/investing-first-30-days)." This article is the mistake-prevention guide for after automation begins.
+> If you have not yet created a brokerage account and recurring contribution, start with "[Your First 30 Days of Investing in Japan](/en/blog/investing-first-30-days/)." This article is the mistake-prevention guide for after automation begins.
 
 ## Individual Stock Decisions Require Comparisons
 
@@ -81,7 +81,7 @@ Look at the business behind the payout:
 - Is the company funding dividends through borrowing or asset sales?
 - Would you still own the company without the shareholder benefit?
 
-See "[How to Build a High-Dividend Portfolio](/en/blog/high-dividend-portfolio)" for a fuller checklist.
+See "[How to Build a High-Dividend Portfolio](/en/blog/high-dividend-portfolio/)" for a fuller checklist.
 
 ## Mistake 3: Putting a Large Amount Into a Product You Do Not Understand
 

@@ -71,8 +71,8 @@ export default function EnDisclaimerPage() {
       </div>
 
       <div className="mt-12 p-4 rounded-lg border text-xs leading-relaxed" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', color: 'var(--muted)' }}>
-        Please also review the <a href="/en/privacy" style={{ color: 'var(--accent)' }}>Privacy Policy</a>.
-        For inquiries, please use the <a href="/en/contact" style={{ color: 'var(--accent)' }}>Contact page</a>.
+        Please also review the <a href="/en/privacy/" style={{ color: 'var(--accent)' }}>Privacy Policy</a>.
+        For inquiries, please use the <a href="/en/contact/" style={{ color: 'var(--accent)' }}>Contact page</a>.
       </div>
     </div>
   )

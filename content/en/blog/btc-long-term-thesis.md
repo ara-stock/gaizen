@@ -15,7 +15,7 @@ I treat BTC not as equity, but as a **commodity** — in the same category as wa
 
 There is no "enterprise value" or "cash flow" in the traditional sense. But as a commodity, **price is determined by the balance of supply and demand**.
 
-> This article focuses on BTC's role and sizing within my portfolio. For the broader investment thesis, including scarcity and network effects, see "[My Bitcoin Investment Thesis](/en/blog/btc-investment-thesis)."
+> This article focuses on BTC's role and sizing within my portfolio. For the broader investment thesis, including scarcity and network effects, see "[My Bitcoin Investment Thesis](/en/blog/btc-investment-thesis/)."
 
 ## Why I Hold It
 

@@ -62,7 +62,7 @@ Review this month's expenses, upcoming payments, and available cash. Decide how 
 
 When I restarted investing seriously in my first year of full-time work, I had approximately ¥500,000 in emergency savings. The appropriate cash reserve varies by employment, household, and monthly expenses. Do not invest money you expect to need soon.
 
-See "[Where to Keep Your Emergency Fund and How Much You Really Need](/en/blog/emergency-fund)" for a detailed framework.
+See "[Where to Keep Your Emergency Fund and How Much You Really Need](/en/blog/emergency-fund/)" for a detailed framework.
 
 ## Week 2: Apply for Rakuten Securities, Rakuten Bank, and NISA
 
@@ -72,7 +72,7 @@ SBI Securities was the first brokerage account I opened because my classmate rec
 
 For a beginner setting up a first recurring investment, I recommend comparing Rakuten Securities first. Its app and account screens are approachable, and Rakuten Bank and Rakuten Card can be connected through one ecosystem.
 
-See "[Rakuten Securities vs SBI Securities](/en/blog/rakuten-vs-sbi-securities)" for the full comparison.
+See "[Rakuten Securities vs SBI Securities](/en/blog/rakuten-vs-sbi-securities/)" for the full comparison.
 
 ### Accounts and Settings to Prepare
 
@@ -95,7 +95,7 @@ Once your NISA account is available, select one fund through the accumulation al
 
 I invest in **eMAXIS Slim US Equities (S&P500)**. It aims to track the S&P500 and provides exposure to major US companies in one fund.
 
-S&P500 is not the only valid option. eMAXIS Slim All Country, which spreads investments across global markets, is another candidate. See "[S&P500 vs All-Country](/en/blog/sp500-vs-allcountry)" for the differences.
+S&P500 is not the only valid option. eMAXIS Slim All Country, which spreads investments across global markets, is another candidate. See "[S&P500 vs All-Country](/en/blog/sp500-vs-allcountry/)" for the differences.
 
 A simple first setup looks like this:
 
@@ -130,7 +130,7 @@ The goal of the first month is not profit. It is confirming that the correct acc
 
 I cannot disclose the first stock I bought, but the mistake was buying without understanding the company. Shareholder benefits and a high dividend yield are not enough.
 
-Before selecting individual stocks, read "[How to Select US Stocks](/en/blog/us-stock-selection)" for a decision framework, then start small.
+Before selecting individual stocks, read "[How to Select US Stocks](/en/blog/us-stock-selection/)" for a decision framework, then start small.
 
 ### Do Not Force a Large Contribution
 

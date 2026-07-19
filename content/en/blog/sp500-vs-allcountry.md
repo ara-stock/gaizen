@@ -105,7 +105,7 @@ The Sharpe ratio measures return per unit of risk (price volatility). Higher mea
 | S&P500 | ~0.9 |
 | All-Country | ~0.8 |
 
-S&P500 has a slightly higher Sharpe ratio in recent history — but this also varies by period. See the [Sharpe ratio chart on this site](/tools/sharpe) for current data.
+S&P500 has a slightly higher Sharpe ratio in recent history — but this also varies by period. See the [Sharpe ratio chart on this site](/tools/sharpe/) for current data.
 
 ## Using Both in NISA
 

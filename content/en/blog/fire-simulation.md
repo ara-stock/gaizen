@@ -94,7 +94,7 @@ At ¥100,000/month, you **reach ¥75M in about 24 years**.
 
 **Notice the ratio of principal to gains.** In Pattern B at year 30, ¥36M in principal becomes ¥122M total — over ¥86M in investment returns alone. Compounding accelerates in the back half. The earlier you start, the more dramatic this effect.
 
-> The [FIRE simulator tool](/tools/fire) on this site lets you adjust monthly contribution, annual return, and target to run your own calculations.
+> The [FIRE simulator tool](/tools/fire/) on this site lets you adjust monthly contribution, annual return, and target to run your own calculations.
 
 ---
 

@@ -145,7 +145,7 @@ export default function SharpePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
       <div className="mb-10">
-        <Link href="/tools" className="text-xs mb-4 block" style={{ color: 'var(--muted)' }}>← Tools に戻る</Link>
+        <Link href="/tools/" className="text-xs mb-4 block" style={{ color: 'var(--muted)' }}>← Tools に戻る</Link>
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>TOOLS</p>
         <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>ローリング・シャープレシオ</h1>
         <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>

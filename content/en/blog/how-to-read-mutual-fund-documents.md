@@ -153,7 +153,7 @@ When considering a fund beyond S&P500, I check whether its total return and Shar
 
 The Sharpe ratio changes with the measurement period. Do not compare values calculated over different dates or using different assumptions. A high historical Sharpe ratio also does not guarantee future returns or downside protection.
 
-You can use this site's "[Sharpe Ratio Comparison Tool](/en/tools/sharpe)" to compare price movements over a common period.
+You can use this site's "[Sharpe Ratio Comparison Tool](/en/tools/sharpe/)" to compare price movements over a common period.
 
 ## How Much Benchmark Difference Matters?
 
@@ -169,7 +169,7 @@ I do not focus on small differences when a fund has low cost, large AUM, and bro
 
 Monthly distribution funds can look highly profitable because cash arrives every month. However, distributions may include returned investor capital. Review NAV and total return together.
 
-See "[Why You Should Avoid Monthly Distribution Investment Funds](/en/blog/monthly-distribution-fund-warning)" for details.
+See "[Why You Should Avoid Monthly Distribution Investment Funds](/en/blog/monthly-distribution-fund-warning/)" for details.
 
 ### Funds With High Purchase Fees
 

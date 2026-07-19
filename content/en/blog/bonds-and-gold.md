@@ -55,7 +55,7 @@ The same "scarcity" logic applies to crypto, but Bitcoin takes it further: **the
 
 Furthermore, through the mechanism of the "halving" — which cuts the rate of new Bitcoin issuance roughly in half every four years — **the pace at which new supply enters circulation slows over time.** Even if demand stays constant, suppressed supply growth creates upward price pressure.
 
-Gold leaves open some possibility that advances in mining technology could increase supply. Bitcoin, by contrast, currently has a 21 million issuance cap under its network consensus rules. Changing that rule would require broad agreement among network participants, making its supply policy difficult to alter (see my [BTC article](/en/blog/btc-long-term-thesis) for more detail).
+Gold leaves open some possibility that advances in mining technology could increase supply. Bitcoin, by contrast, currently has a 21 million issuance cap under its network consensus rules. Changing that rule would require broad agreement among network participants, making its supply policy difficult to alter (see my [BTC article](/en/blog/btc-long-term-thesis/) for more detail).
 
 | Asset | Supply Scarcity | Income | Price Volatility |
 |---|---|---|---|

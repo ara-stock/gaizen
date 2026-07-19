@@ -21,7 +21,7 @@ Inflation means prices rise over time. The flip side: cash buys less and less.
 
 The money supply has grown gradually alongside credit cycles — and continued gradual expansion is considered healthy economic functioning. Holding large amounts of cash means swimming against that current.
 
-Set cash from essential spending, income stability, dependents, and known future expenses. I started my first working year with ¥500,000. See [How Much Emergency Cash Do You Need?](/en/blog/emergency-fund) for the full framework.
+Set cash from essential spending, income stability, dependents, and known future expenses. I started my first working year with ¥500,000. See [How Much Emergency Cash Do You Need?](/en/blog/emergency-fund/) for the full framework.
 
 ## Why Stocks Should Be Your Core Asset
 
@@ -29,7 +29,7 @@ Companies with pricing power can pass higher input costs to customers. Not every
 
 Stocks are, in essence, a claim on businesses with real pricing power. They are a natural inflation hedge.
 
-Concretely, holding an index fund tracking the [S&P500](/en/blog/sp500-index-investing) or [All-Country](/en/blog/sp500-vs-allcountry) is the rational foundation. These indexes include resource, energy, and materials companies — so when commodity prices rise, their profits rise too, and you benefit indirectly without holding commodities separately.
+Concretely, holding an index fund tracking the [S&P500](/en/blog/sp500-index-investing/) or [All-Country](/en/blog/sp500-vs-allcountry/) is the rational foundation. These indexes include resource, energy, and materials companies — so when commodity prices rise, their profits rise too, and you benefit indirectly without holding commodities separately.
 
 ## Evaluating Each Asset Class
 

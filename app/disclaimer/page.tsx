@@ -68,8 +68,8 @@ export default function DisclaimerPage() {
       </div>
 
       <div className="mt-12 p-4 rounded-lg border text-xs leading-relaxed" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', color: 'var(--muted)' }}>
-        本サイトのプライバシーポリシーは<a href="/privacy" style={{ color: 'var(--accent)' }}>こちら</a>をご覧ください。
-        お問い合わせは<a href="/contact" style={{ color: 'var(--accent)' }}>Contactページ</a>よりどうぞ。
+        本サイトのプライバシーポリシーは<a href="/privacy/" style={{ color: 'var(--accent)' }}>こちら</a>をご覧ください。
+        お問い合わせは<a href="/contact/" style={{ color: 'var(--accent)' }}>Contactページ</a>よりどうぞ。
       </div>
     </div>
   )
