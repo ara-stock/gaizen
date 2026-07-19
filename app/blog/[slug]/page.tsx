@@ -9,6 +9,7 @@ import ArticleIntro from '@/components/blog/ArticleIntro'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { serializeJsonLd } from '@/lib/json-ld'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -30,12 +31,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: frontmatter.tags,
     alternates: {
       canonical: `https://gaizen.xyz/blog/${slug}/`,
-      ...(hasEnglishVersion && { languages: { 'en': `https://gaizen.xyz/en/blog/${slug}/` } }),
+      languages: {
+        ja: `https://gaizen.xyz/blog/${slug}/`,
+        ...(hasEnglishVersion && { en: `https://gaizen.xyz/en/blog/${slug}/` }),
+      },
     },
     openGraph: {
       title: frontmatter.title,
       description: frontmatter.description,
       type: 'article',
+      url: `https://gaizen.xyz/blog/${slug}/`,
       publishedTime: frontmatter.date,
       modifiedTime: frontmatter.updatedAt,
       tags: frontmatter.tags,
@@ -70,6 +75,8 @@ export default async function ArticlePage({ params }: Props) {
     publisher: { '@type': 'Organization', name: 'GAIZEN FINANCE', url: 'https://gaizen.xyz' },
     keywords: frontmatter.tags.join(', '),
     inLanguage: 'ja',
+    url: `https://gaizen.xyz/blog/${slug}/`,
+    mainEntityOfPage: `https://gaizen.xyz/blog/${slug}/`,
     ...(frontmatter.coverImage && { image: `https://gaizen.xyz${frontmatter.coverImage}` }),
   }
 
@@ -85,8 +92,8 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbLd) }} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <nav aria-label="パンくず" className="mb-8 flex items-center gap-2 text-xs" style={{ color: 'var(--muted)' }}>
           <Link href="/">ホーム</Link>

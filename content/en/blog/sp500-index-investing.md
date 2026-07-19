@@ -1,8 +1,8 @@
 ---
-title: "Why I Build Around S&P500 Index Accumulation"
+title: "Why I Still Accumulate the S&P 500 — Its Role and Risks Today"
 date: "2026-05-16"
-updatedAt: "2026-05-16"
-description: "Why eMAXIS Slim US Equities (S&P500) is my core holding. How market-cap weighting aligns with my investment principles, why I treat it as an inflation hedge, and an honest accounting of the risks."
+updatedAt: "2026-07-19"
+description: "Why I initially built around the S&P 500, why I still hold it alongside a stock-heavy portfolio today, and how I assess concentration and valuation risks."
 tags: ["US stocks", "index investing", "long-term investing", "S&P500", "NISA"]
 category: "us-stock"
 published: true
@@ -14,9 +14,9 @@ coverImage: "/images/sp500_index_investing.webp"
 
 Index investing aims to match the performance of a specific benchmark index rather than selecting individual companies. Instead of researching and picking stocks, you buy the index — i.e., the market itself.
 
-Both the All-Country (global equities index) and S&P500 are valid choices for long-term accumulation. I've built around S&P500, but for those who prefer geographic diversification, All-Country is equally rational.
+Both the All-Country global equity index and the S&P 500 can work for long-term accumulation. I initially built my portfolio around the S&P 500. Today, individual stocks carry more weight and I judge them primarily on business growth and durability, but I still treat the S&P 500 as one long-term holding. All-Country remains a rational alternative for investors who prefer broader geographic diversification.
 
-![Why I Build Around S&P500 Index Accumulation](/images/sp500_index_investing.webp)
+![The current role of S&P 500 index accumulation](/images/sp500_index_investing.webp)
 
 ## The S&P500 Index
 
@@ -37,7 +37,7 @@ Market-cap weighting aggregates the collective judgment of all market participan
 US ETFs like VOO are an option, but I use **eMAXIS Slim US Equities (S&P500)**. Three reasons:
 
 1. **Credit card reward points** — Many Japanese brokerages award points on auto-invest subscriptions. The points act as an effective yield supplement.
-2. **No double-taxation concern** — US ETFs generate a double-taxation issue (US withholding + Japanese tax) that requires a foreign tax credit claim at year-end. eMAXIS Slim handles this internally, keeping the operation simple.
+2. **Less tax paperwork for the holder** — With a US ETF in a taxable account, claiming Japan's foreign tax credit generally requires filing a tax return. A Japanese public investment trust applies the double-tax adjustment within the fund structure, which simplifies the holder's process. Foreign withholding tax does not disappear entirely.
 3. **Fits entirely within NISA** — As a Japanese investment trust, it works seamlessly with NISA's monthly auto-invest feature.
 
 ## The Goal: Inflation Hedge and Long-Term Growth
@@ -90,16 +90,16 @@ S&P500 outperforms while US dominance continues — but if geopolitical rebalanc
 
 ## Summary
 
-Accumulating eMAXIS Slim S&P500 satisfies three goals simultaneously — inflation protection, long-term growth, and simple operation — while its market-cap weighting aligns naturally with my investment principle of favoring established, large-cap companies.
+Accumulating eMAXIS Slim S&P 500 provides broad exposure to major US companies while keeping the process simple. It can support long-term growth and offer some protection against inflation, but neither outcome is guaranteed.
 
-I'm aware of the US concentration risk. But given my view that the US-centric economic structure continues for now, S&P500 remains the core of my accumulation strategy.
+The S&P 500 is no longer the foundation of my investment decisions. I hold it alongside individual companies that I research directly. Its role is to provide a long-term, low-maintenance allocation while I accept and monitor the concentration risk in US equities.
 
 ---
 
 ## References
 
 - [S&P Global — S&P 500 Index (Eligibility Criteria & Factsheet)](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
-- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.jp/fund/252931.html)
+- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.am.mufg.jp/fund/253266.html)
 - [Financial Services Agency Japan — New NISA](https://www.fsa.go.jp/policy/nisa2/about/index.html)
 - [U.S. Bureau of Labor Statistics — Consumer Price Index](https://www.bls.gov/cpi/)
 

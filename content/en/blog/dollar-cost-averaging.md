@@ -1,7 +1,7 @@
 ---
 title: "Dollar-Cost Averaging — Daily, Monthly, or Lump Sum: What Works Best"
 date: "2026-05-20"
-updatedAt: "2026-06-11"
+updatedAt: "2026-07-19"
 description: "A clear explanation of dollar-cost averaging with data comparing daily, monthly, and lump-sum strategies. Why lump sum wins 68% of the time, the 10% take-home rule, and why starting with ¥1,000 is perfectly fine."
 tags: ["dollar-cost averaging", "index investing", "NISA", "long-term investing", "wealth building"]
 category: "us-stock"
@@ -118,7 +118,7 @@ Take it slowly. There's no rush.
 ---
 
 :::comment
-My setup: Rakuten Securities, ¥100K/month into eMAXIS Slim S&P500, auto-debited via credit card. Set it once, leave it alone. I don't look at the balance every week. The strength of DCA isn't in the math — it's in the fact that the decision is already made.
+My setup uses Rakuten Securities and credit-card auto-investing into eMAXIS Slim US Equities (S&P 500). I set the amount around my household cash flow and do not stop it because the market falls. The practical strength of DCA is that the recurring decision has already been made.
 
 A lump sum often wins statistically, but the psychological cost of watching a large purchase drop immediately is real. Spreading it out removes the "I timed it wrong" regret. For most people, the strategy they can actually stick to will outperform the theoretically optimal one they abandon under pressure.
 :::
@@ -135,9 +135,9 @@ A lump sum often wins statistically, but the psychological cost of watching a la
 
 ## References
 
-- [Vanguard Research (2012) "Dollar-cost averaging just means taking risk later"](https://corporate.vanguard.com/content/dam/corp/research/pdf/Dollar-cost_averaging_just_means_taking_risk_later_TLRIP062012.pdf)
+- [Vanguard Research — Cost averaging: Invest now or temporarily hold your cash?](https://corporate.vanguard.com/content/dam/corp/research/pdf/cost_averaging_invest_now_or_temporarily_hold_your_cash.pdf)
 - [Financial Services Agency Japan — NISA Eligible Funds (Accumulation Allowance)](https://www.fsa.go.jp/policy/nisa2/about/tsumitate/index.html)
-- [Rakuten Securities — Credit Card Accumulation Investment](https://www.rakuten-sec.co.jp/web/lp/fund_card_payment/)
-- [SBI Securities — SBI × Sumitomo Mitsui Card Investment](https://go.sbisec.co.jp/lp/lp_smcc_01.html)
+- [Rakuten Securities — Rakuten Card Fund Contributions](https://www.rakuten-sec.co.jp/web/rfund/guide/creditcard.html)
+- [SBI Securities — Sumitomo Mitsui Card Fund Contributions](https://go.sbisec.co.jp/lp/sbixsmcc_card_01.html)
 
 ---

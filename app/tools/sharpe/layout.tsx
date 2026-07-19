@@ -4,6 +4,13 @@ export const metadata: Metadata = {
   title: 'シャープレシオ チャート',
   description: 'S&P500・日本株・米国株・Bitcoin など主要資産のシャープレシオ推移をチャートで比較。リスク調整後リターンで資産クラスを評価できる無料分析ツール。',
   keywords: ['シャープレシオ', 'リスク調整後リターン', 'S&P500', 'Bitcoin', '資産比較', '投資分析'],
+  alternates: {
+    canonical: 'https://gaizen.xyz/tools/sharpe/',
+    languages: {
+      ja: 'https://gaizen.xyz/tools/sharpe/',
+      en: 'https://gaizen.xyz/en/tools/sharpe/',
+    },
+  },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

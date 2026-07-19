@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://gaizen.xyz/en/',
-    languages: { 'ja': 'https://gaizen.xyz/' },
+    languages: { ja: 'https://gaizen.xyz/', en: 'https://gaizen.xyz/en/' },
   },
 }
 
@@ -53,6 +53,15 @@ const EXPLORE_LINKS = [
   { href: '/en/about/', label: 'About', desc: 'Philosophy and policy' },
   { href: '/en/disclaimer/', label: 'Policy', desc: 'Disclaimer and risk notes' },
 ]
+
+const ASSET_TRANSLATIONS: Record<string, { name: string; note: string }> = {
+  '日本株': { name: 'Japan Stocks', note: 'Trading companies, banks, insurance, finance, real estate, and AI' },
+  'S&P500': { name: 'S&P 500', note: 'eMAXIS Slim S&P 500 (long-term holding)' },
+  '米国株': { name: 'US Stocks', note: 'Individual stocks' },
+  '仮想通貨': { name: 'Crypto', note: 'BTC, crypto assets, and stable yield strategies' },
+  '金': { name: 'Gold', note: 'Gold accumulation plan' },
+  '現金': { name: 'Cash', note: 'Standby cash and emergency fund' },
+}
 
 export default function EnHomePage() {
   const allPosts = getAllPosts('en')
@@ -189,17 +198,18 @@ export default function EnHomePage() {
           </Link>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-          {portfolio.assets.map(asset => (
-            <div key={asset.name} className="p-4 rounded-xl border text-center" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+          {portfolio.assets.map(asset => {
+            const translated = ASSET_TRANSLATIONS[asset.name] ?? { name: asset.name, note: asset.note }
+            return <div key={asset.name} className="p-4 rounded-xl border text-center" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
               <div className="text-2xl font-bold mb-1 tabular-nums" style={{ color: CATEGORY_COLORS[asset.category] ?? 'var(--accent)' }}>
                 {asset.allocation}%
               </div>
-              <div className="text-xs font-medium mb-0.5 leading-snug" style={{ color: 'var(--foreground)' }}>{asset.name}</div>
-              <div className="text-xs" style={{ color: 'var(--muted)' }}>{asset.note}</div>
+              <div className="text-xs font-medium mb-0.5 leading-snug" style={{ color: 'var(--foreground)' }}>{translated.name}</div>
+              <div className="text-xs" style={{ color: 'var(--muted)' }}>{translated.note}</div>
             </div>
-          ))}
+          })}
         </div>
-        <p className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>Updated: {portfolio.updatedAt}</p>
+        <p className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>Allocation as of: {portfolio.allocationAsOf}</p>
       </section>
 
       <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>

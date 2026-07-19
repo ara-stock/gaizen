@@ -1,6 +1,7 @@
 import json
 import os
 import time
+from datetime import date
 
 import yfinance as yf
 import pandas as pd
@@ -10,6 +11,7 @@ import pandas as pd
 # =====================================
 
 TICKERS = {
+    "^GSPC": "S&P500",
     "8058.T": "三菱商事",
     "8001.T": "伊藤忠商事",
     "8031.T": "三井物産",
@@ -35,7 +37,8 @@ TICKERS = {
 }
 
 START = "2020-01-01"
-END = "2026-01-01"
+# Exclude the current partial month from rolling comparisons.
+END = date.today().replace(day=1).isoformat()
 
 OUTPUT_JSON = "public/data/sharpe-prices.json"
 
@@ -81,8 +84,9 @@ def main():
 
         time.sleep(0.3)
 
+    latest_month = max(item["dates"][-1][:7] for item in series.values())
     output = {
-        "updatedAt": END[:7],
+        "updatedAt": latest_month,
         "start": START[:7],
         "series": series,
     }

@@ -218,6 +218,6 @@ SNSで「NISAを満額使うべき」という情報を見ても、月10万円�
 - [金融庁｜新しいNISA](https://www.fsa.go.jp/policy/nisa2/about/index.html)
 - [金融庁｜つみたて投資枠の対象商品](https://www.fsa.go.jp/policy/nisa2/about/tsumitate/index.html)
 - [楽天証券｜NISA](https://www.rakuten-sec.co.jp/web/nisa/)
-- [楽天証券｜楽天カードクレジット決済](https://www.rakuten-sec.co.jp/web/lp/fund_card_payment/)
+- [楽天証券｜クレカ積立（楽天カードクレジット決済）](https://www.rakuten-sec.co.jp/web/rfund/guide/creditcard.html)
 - [楽天銀行｜マネーブリッジ](https://www.rakuten-bank.co.jp/assets/intermediation/moneybridge/)
 - [三菱UFJアセットマネジメント｜eMAXIS Slim 米国株式（S&P500）](https://emaxis.am.mufg.jp/fund/253266.html)

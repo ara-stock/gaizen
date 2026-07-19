@@ -213,4 +213,4 @@ Jupiter Earnの詳細は公式ドキュメントで確認できます。
 - [DeFiLlama — Aave TVL](https://defillama.com/protocol/aave)
 - [Jupiter Lend パブリックベータ発表（PR Newswire）](https://www.prnewswire.com/news-releases/the-most-advanced-money-market-on-solana-is-here-jupiter-lend-public-beta-is-live-302541430.html)
 - [Jupiter 開発者ドキュメント](https://dev.jup.ag/docs/lend/earn)
-- [金融庁 — 無登録の海外業者に関する注意喚起](https://www.fsa.go.jp/ordinary/kanyu/20171205.html)
+- [金融庁 — 詐欺的な投資勧誘・無登録業者に関する注意喚起](https://www.fsa.go.jp/ordinary/chuui/attention.html)

@@ -92,7 +92,7 @@ featured: false
 
 ## 参考リファレンス
 
-- [金融庁｜投資信託の分配金に関する注意点（投資信託の見直しポイント）](https://www.fsa.go.jp/teach/kou4.html)
-- [金融庁｜投資信託及び投資法人に関する法律](https://www.fsa.go.jp/common/law/guide/toshi.pdf)
+- [金融庁｜投資入門（毎月分配型と元本払戻金の説明）](https://www.fsa.go.jp/singi/singi_kinyu/disclose_wg/siryou/20160219/04.pdf)
+- [e-Gov法令検索｜投資信託及び投資法人に関する法律](https://laws.e-gov.go.jp/law/326AC0000000198)
 - [国税庁｜株式等の配当・分配の課税（特別分配金は非課税）](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1250.htm)
 - [Global X｜QYLD 公式ページ（分配率・トータルリターン）](https://www.globalxetfs.com/funds/qyld/)

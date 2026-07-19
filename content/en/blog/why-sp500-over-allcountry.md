@@ -1,8 +1,8 @@
 ---
-title: "All-Country Is Fine. Here's Why I Still Choose S&P500"
+title: "All-Country or S&P 500? Why I Initially Chose the S&P 500"
 date: "2026-05-30"
-updatedAt: "2026-06-10"
-description: "I'm not against global index funds. But I invest through S&P500 — here's the investment philosophy behind that choice."
+updatedAt: "2026-07-19"
+description: "A comparison of All-Country and S&P 500 concentration risks, why I initially chose the S&P 500, and the role it plays in my portfolio today."
 tags: ["S&P500", "All-Country", "index investing", "NISA", "long-term investing", "US stocks"]
 category: "us-stock"
 published: true
@@ -13,7 +13,7 @@ featured: false
 
 This article is not a case against all-country index funds (like MSCI ACWI or eMAXIS Slim All Country). Accumulating in a global index fund over the long term is a perfectly rational strategy.
 
-And yet I've built my portfolio around S&P500. Here's why.
+I initially chose the S&P 500 when I began recurring investments. Today I still hold it as one long-term asset, but my main decision framework has shifted toward the growth and durability of individual businesses. This article records the reasoning behind that earlier choice.
 
 :::comment
 The All-Country vs S&P500 debate never ends in investing communities. My honest view: either works, and neither will lead you badly wrong. But if I have to choose, it comes down to two things: US services actually feel superior in daily use, and the US-as-economic-center scenario resonates with me at a gut level.
@@ -23,13 +23,13 @@ YouTube, Netflix, AWS, iPhone — most of what I use every day was built in the 
 
 ---
 
-## The Global Economy Starts in the US
+## Why US Companies Appealed to Me at the Time
 
 Think about the iPhone.
 
 iPhone sells globally → Apple expands manufacturing in China and India → Supply chains develop, local employment grows, economies activate → More consumption follows, more iPhones sell.
 
-The **starting point of this chain is Apple — a US company**. China's and India's economic expansion is partly a downstream consequence of demand that a US company created. The same pattern repeats across Google Search, AWS, Microsoft Office, Tesla, Amazon logistics. The platforms that run the world are overwhelmingly headquartered in the United States.
+Apple is one starting point in that chain. China and India's growth cannot be explained by US companies alone, but demand and investment from large US businesses can flow through employment and supply chains elsewhere. The number of US services I used daily, including Google Search, AWS, Microsoft Office, and Amazon, influenced my decision at the time.
 
 :::comment
 The mental model I use: the US creates the wave, and the rest of the world rides it. If that's true, then concentrating on the wave's origin — rather than spreading across the countries it reaches — is the more efficient bet.
@@ -37,11 +37,11 @@ The mental model I use: the US creates the wave, and the rest of the world rides
 
 ---
 
-## Emerging Markets and Japan Are Already US-Correlated
+## How I Thought About Diversification and Correlation
 
 If US companies are the starting point, then emerging market and Japanese stocks are largely downstream. Japan's automakers depend on US consumer demand. Korea's semiconductor giants supply Apple and NVIDIA. Chinese manufacturers build iPhone components.
 
-When US consumption contracts, these markets feel it too. **If they're going to move with the US anyway, why dilute into them instead of concentrating on the source?**
+When US consumption contracts, other markets can feel it too, and correlations may rise during global stress. That does not eliminate international diversification: currencies, industry weights, and normal-period returns still differ. At the time, I chose greater exposure to major US companies over the broader country mix.
 
 :::comment
 I expected more independent movement from emerging markets, but correlations can rise during global market stress. For my own portfolio, the additional geographic diversification did not feel compelling enough to outweigh my preference for US companies. That is a personal allocation choice, not a guarantee that All-Country will underperform.
@@ -49,19 +49,19 @@ I expected more independent movement from emerging markets, but correlations can
 
 ---
 
-## ~3,800 Stocks vs ~500
+## Thousands of Stocks vs About 500
 
-All-Country spreads across roughly 3,800 companies in 47 countries. S&P500 covers ~500 US companies.
+All-Country spans thousands of companies across developed and emerging markets, while the S&P 500 covers about 500 major US companies. Holdings and country weights change with index reviews and market prices, so current fund reports matter more than fixed counts.
 
 Broader diversification reduces concentration in any one country or company, but it does not automatically make returns smoother or cap upside. I want higher exposure to GAFAM and the Magnificent Seven (Apple, Microsoft, NVIDIA, Alphabet, Amazon, Meta, Tesla). S&P500 concentrates more weight in these companies than All-Country does.
 
 | | S&P500 | All-Country |
 |--|--------|------------|
-| Number of holdings | ~500 | ~3,800 |
-| Countries | US only | 47 |
-| Top holdings | GAFAM / Mag7 | Nearly identical (US ≈ 63%) |
-| Volatility | Slightly higher | Slightly lower |
-| Expected return | Slightly higher | Slightly lower |
+| Number of holdings | About 500 | Thousands |
+| Countries | US only | Developed and emerging markets |
+| Top holdings | High weight in US large caps | Includes US large caps with broader regional exposure |
+| Main concentration | US and large-cap stocks | Still carries a high US weight under market-cap weighting |
+| Return exposure | More concentrated in the US | Reflects shifts across countries and regions |
 
 :::comment
 One honest reason: I like GAFAM and the Magnificent Seven, and I want more of them. S&P500 gives me slightly more concentration in those names than All-Country. That's not a sophisticated argument — but it's a real one, and I think that's fine.
@@ -73,7 +73,7 @@ One honest reason: I like GAFAM and the Magnificent Seven, and I want more of th
 
 I'll be honest about what I'm giving up.
 
-All-Country includes companies that Japanese investors can't easily buy directly. The reinsurance sector is a good example — **Swiss Re** (Switzerland) and **Munich Re** (Germany) are the world's largest reinsurers, but neither trades on the Tokyo Stock Exchange. Swiss Re recently claimed the top spot in AM Best's 2024 global reinsurer ranking after adopting IFRS-17; Munich Re remains a close second. These are businesses with low correlation to the economic cycle and stable long-term earnings. All-Country gives indirect access to them; S&P500 doesn't.
+All-Country includes companies that Japanese investors cannot easily buy directly. The reinsurance sector is one example: **Swiss Re** and **Munich Re** are not listed on the Tokyo Stock Exchange. Reinsurers collect premiums but remain exposed to catastrophe losses, underwriting cycles, reserves, and investment markets. Their earnings drivers differ from US mega-cap technology, which illustrates the additional business mix available through a global index.
 
 :::comment
 Reinsurance is genuinely interesting to me. It's a sector that most Japanese investors can't access directly. The fact that owning All-Country means indirectly owning Swiss Re and Munich Re is a real and underappreciated advantage of the global fund.
@@ -83,14 +83,14 @@ Reinsurance is genuinely interesting to me. It's a sector that most Japanese inv
 
 ## Conclusion: Neither Is Wrong. That's Exactly Why You Need a Clear Reason
 
-For long-term accumulation, S&P500 and All-Country **will not lead you to dramatically different outcomes**.
+No one can know in advance which fund will deliver the higher long-term return. The useful comparison is which concentration risk you are prepared to accept.
 
 - Want to concentrate on where the economic engine sits → S&P500
 - Want exposure including Europe, Asia-Pacific, emerging markets → All-Country
 - Want higher Mag7 weight → S&P500
 - Want indirect access to reinsurance and other sectors unavailable in Japan → All-Country
 
-I choose S&P500 — not because it beats All-Country, but because it fits **my view of how the global economy works and where value concentrates**.
+I chose the S&P 500 when I started and continue to hold it. That was not a claim that it would beat All-Country; it reflected a US concentration I understood and accepted at the time.
 
 :::comment
 Ultimately, which fund you pick matters less than whether you can hold it through a 30–40% drawdown without selling. The fund you chose for a reason you actually believe in is the one you're most likely to hold. That's the real argument for having a clear investment thesis behind your choice — whichever side you land on.
@@ -100,8 +100,8 @@ Ultimately, which fund you pick matters less than whether you can hold it throug
 
 ## Sources
 
-- [eMAXIS Slim All Country Fund Documentation (Mitsubishi UFJ Asset Management)](https://emaxis.jp/fund/253425.html)
+- [eMAXIS Slim All Country Fund Documentation (Mitsubishi UFJ Asset Management)](https://emaxis.am.mufg.jp/fund/253425.html)
 - [S&P 500 Official Page (S&P Global)](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
 - [Swiss Re Investor Relations](https://www.swissre.com/investors/)
-- [Munich Re Investor Relations](https://www.munichre.com/en/investors.html)
+- [Munich Re Investor Relations](https://www.munichre.com/en/company/investors.item-738a133628e04cb9ff6114486f1d9964.html)
 - [AM Best Top 50 Global Reinsurers 2024](https://www.carriermanagement.com/news/2024/08/30/266007.htm)

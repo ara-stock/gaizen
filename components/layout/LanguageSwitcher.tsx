@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
+import { getLocalePaths } from '@/lib/locale-path'
 
 export default function LanguageSwitcher() {
   const [open, setOpen] = useState(false)
@@ -10,8 +11,7 @@ export default function LanguageSwitcher() {
   const router = useRouter()
   const isEnglish = pathname.startsWith('/en')
 
-  const jaPath = isEnglish ? pathname.slice(3) || '/' : pathname
-  const enPath = isEnglish ? pathname : `/en${pathname === '/' ? '' : pathname}`
+  const { jaPath, enPath } = getLocalePaths(pathname)
 
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {

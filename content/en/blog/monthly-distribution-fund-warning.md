@@ -103,7 +103,7 @@ For long-term accumulation, the main question is whether regular payouts help yo
 
 ## References
 
-- [Financial Services Agency Japan — Key Points on Investment Trust Distributions](https://www.fsa.go.jp/teach/kou4.html)
+- [Financial Services Agency Japan — Investment Basics: Monthly Distributions and Return of Capital](https://www.fsa.go.jp/singi/singi_kinyu/disclose_wg/siryou/20160219/04.pdf)
 - [National Tax Agency Japan — Special Distribution (Non-taxable Return of Capital)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1250.htm)
-- [Rakuten Securities — Periodic Withdrawal Service (alternative to monthly distribution)](https://www.rakuten-sec.co.jp/web/fund/selling/regular/)
+- [Rakuten Securities — Periodic Withdrawal Service (alternative to monthly distribution)](https://www.rakuten-sec.co.jp/web/rfund/guide/teikibaikyaku.html)
 - [Global X — QYLD Official Fund Page](https://www.globalxetfs.com/funds/qyld/)

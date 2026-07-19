@@ -1,67 +1,63 @@
 ---
-title: "How to Maximize Your New NISA: The Optimal Strategy for Accumulation and Growth Allowances"
+title: "A Practical New NISA Framework: Accumulation and Growth Allowances"
 date: "2026-05-23"
-updatedAt: "2026-06-10"
-description: "How to split your new NISA between the accumulation and growth allowances. Why filling the accumulation allowance first and lump-summing the growth allowance is the most rational approach — with eMAXIS Slim S&P500 or All-Country as the core holding."
+updatedAt: "2026-07-19"
+description: "How beginners can separate Japan's NISA allowances, automate a sustainable contribution, compare low-cost funds, and decide when individual stocks belong in the plan."
 tags: ["NISA", "accumulation allowance", "growth allowance", "eMAXIS Slim", "S&P500", "All-Country", "index investing"]
-category: "us-stock"
+category: "nisa"
 published: true
 featured: false
 ---
 
-## The Bottom Line: Fill the Accumulation Allowance First, Lump-Sum the Rest
+## The Bottom Line: Automate Accumulation, Then Use the Growth Allowance With Surplus
 
 Here is the simple answer to getting the most out of your new NISA:
 
-1. **Fill the accumulation allowance first (¥100K/month)**
-2. **If you have money left over, lump-sum invest into the growth allowance**
-3. **Buy S&P500 or All-Country index funds — that's enough**
+1. **Automate a sustainable amount in the accumulation allowance**
+2. **Use the growth allowance when you have surplus capital**
+3. **For a first product, consider a diversified, low-cost investment trust**
 
 Here's why.
 
-> This article explains an index-centered framework for using the new NISA. For my actual mix of recurring contributions, lump-sum investing, and individual stocks, see "[Using Japan's New NISA ¥3.6M Annual Limit](/en/blog/nisa-360-full-utilization/)."
+> This article presents a beginner-oriented NISA framework that keeps the first decisions manageable. For my own mix of recurring contributions, lump-sum investing, and individual stocks, see "[Using Japan's New NISA ¥3.6M Annual Limit](/en/blog/nisa-360-full-utilization/)."
 
 ## A Quick Recap of the New NISA Structure
 
 | Allowance | Annual limit | Lifetime cap | Eligible products |
 |---|---|---|---|
-| Accumulation allowance | ¥1.2M (¥100K/month) | Shared within ¥18M | Index funds (auto-invest only) |
+| Accumulation allowance | ¥1.2M (¥100K/month) | Shared within ¥18M | Eligible investment trusts (recurring purchases) |
 | Growth allowance | ¥2.4M | Up to ¥12M | Stocks, ETFs, investment trusts |
 
 Combined, you can invest up to ¥3.6M per year, with all gains tax-free up to a ¥18M lifetime total.
 
-## Step 1: Fill the Accumulation Allowance at ¥100K/Month
+## Step 1: Automate a Sustainable Amount in the Accumulation Allowance
 
-Start with the accumulation allowance — ¥100K per month (¥1.2M/year).
+The accumulation allowance has an annual ceiling of ¥1.2 million, or ¥100,000 per month if divided evenly. Using the ceiling is less important than setting an amount you can continue without interrupting your household finances.
 
 There are three reasons to start here:
 
 - **It can be automated**: Set it once in your brokerage account and it invests every month without further action
 - **The amount is flexible**: You can adjust the monthly contribution up or down as your income and expenses change
-- **You can't skip it anyway**: To use the full ¥18M lifetime NISA cap, the accumulation allowance is a required part of the equation
+- **The product list is easier to screen**: Eligible products are limited to investment trusts that meet specified long-term, recurring, and diversified investment criteria
 
-And the underlying investment — an S&P500 or All-Country index fund — is rational. There's no good reason not to do it.
+An S&P 500 or All-Country index fund can be a practical option for beginners who do not want security selection to dominate the process. The contribution still needs to fit your cash flow and tolerance for losses.
 
 ### What to Buy
 
 **eMAXIS Slim US Equities (S&P500)** or **eMAXIS Slim All Country** — either is fine.
 
-The proprietary S&P500 and All-Country funds offered by Rakuten Securities and SBI Securities have comparable expense ratios, so the choice between them won't make a meaningful difference.
+Rakuten Securities and SBI Securities both offer multiple funds tracking similar indexes. Compare the latest prospectus and report rather than choosing by product name alone.
 
-#### Expense Ratio Comparison: Major Funds
+#### Four Items to Compare Before Buying
 
-*Data as of 2025. Expense ratios are subject to change — verify the latest figures on each fund company's website before investing.*
+| Item | Why it matters |
+|---|---|
+| Management fee | Deducted continuously while you hold the fund |
+| Total actual cost | Captures trading, custody, and other expenses beyond the headline fee |
+| Net assets and fund flows | Helps assess operating scale and early-redemption risk |
+| Tracking difference | Shows how closely the fund followed its benchmark |
 
-| Fund | Index tracked | Annual expense ratio (incl. tax) |
-|---|---|---|
-| eMAXIS Slim US Equities (S&P500) | S&P500 | 0.09372% |
-| eMAXIS Slim All Country | MSCI ACWI | 0.05775% |
-| Rakuten S&P500 Index Fund | S&P500 | 0.077% |
-| Rakuten All Country Equity Index Fund | MSCI ACWI | 0.0561% |
-| SBI・V S&P500 Index Fund | S&P500 | 0.0938% |
-| SBI Global Equity Index Fund | FTSE Global All Cap | 0.1022% |
-
-All of these come in under 0.1% per year. On a ¥1M portfolio, that's under ¥1,000/year in fees — the differences between funds are essentially negligible.
+Fees can change, so the current official documents are more reliable than a fixed comparison table. See "[How to Read an Investment Trust Prospectus and Monthly Report](/en/blog/how-to-read-mutual-fund-documents/)" for the review process.
 
 ### Why Index Funds Capture the "Average" Return
 
@@ -74,14 +70,14 @@ Top 30%     ████████              Slightly above market average
 Bottom 30%  ████████              Slightly below market average
 Bottom 10%  ██                    Significantly underperform
 
-→ Index investing means reliably landing on this line, every year
+→ Index investing aims to track the selected market benchmark before costs
 ```
 
 Investor returns do not necessarily follow a simple normal distribution. Index investing aims to track a market or a specified index before costs. It does not guarantee the average investor outcome, but it can reduce security-selection decisions and expenses.
 
-Consistently beating the market with individual stocks is hard. Even professional fund managers underperform their benchmark index over long periods. **This is why a diversified index fund should be your core holding.**
+Consistently beating the market with individual stocks is difficult. For a beginner without a comparison framework, a diversified investment trust reduces the chance that one poorly understood company determines the result.
 
-Diversification limits your downside, but also limits your upside. To beat the market, you'd need to concentrate in stocks that outperform — which is genuinely difficult to do repeatedly. If you enjoy analysis and want to try individual stocks, starting small is fine. But the index should stay at the core.
+Diversification does not prevent losses when the broader market falls. Before moving into individual stocks, learn to compare the business, earnings, competitors, market capitalization, and drawdowns, then start with an amount small enough to review calmly.
 
 ## Step 2: For the Growth Allowance, Lump-Sum Invest When You Have the Capital
 
@@ -100,7 +96,7 @@ The rational move is to invest whenever you have the capital. In years when I ha
 
 The growth allowance allows individual stocks and ETFs, but **filling it with the same S&P500 or All-Country fund is the simplest and most efficient approach.**
 
-If you want to use the growth allowance for individual stocks, narrow it down to names where you have high conviction in long-term upside — or use it for Japanese dividend stocks where the tax benefit of NISA is most tangible.
+If you use the growth allowance for individual stocks, ask whether you would still hold the company for years in a taxable account and whether you can explain its business growth and durability. NISA losses cannot be offset against taxable gains, so it is not an ideal allowance for short-term trades.
 
 ## The Full Picture
 
@@ -131,15 +127,15 @@ Yes — but only if you have genuine conviction. The tax-free cap is finite, so 
 
 ## Summary
 
-- Set up the accumulation allowance (¥100K/month) as an automated investment — top priority
-- S&P500 or All-Country index funds are all you need
+- Automate a sustainable contribution in the accumulation allowance
+- Beginners can start by comparing diversified, low-cost investment trusts
 - Invest any surplus into the growth allowance whenever you have it; lump-sum in January when possible
 - Don't try to time the market — invest as soon as capital is available
-- Keep index funds as your core. Individual stocks are a supplement, best started small
+- Add individual stocks only after developing comparison criteria and a long-term holding thesis
 
 ## References
 
 - [Financial Services Agency Japan — New NISA Overview](https://www.fsa.go.jp/policy/nisa2/about/index.html)
 - [Financial Services Agency Japan — NISA Eligible Funds (Accumulation Allowance)](https://www.fsa.go.jp/policy/nisa2/about/tsumitate/index.html)
-- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.jp/fund/252931.html)
+- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.am.mufg.jp/fund/253266.html)
 - [Mitsubishi UFJ Asset Management — eMAXIS Slim All Country](https://emaxis.jp/fund/253425.html)

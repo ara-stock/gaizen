@@ -108,7 +108,7 @@ AIの発展に伴い、データセンター・自動運転・スマートフォ
 ## 参考リファレンス
 
 - [S&P Global｜S&P 500 Index – 採用基準](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
-- [Apple Inc.｜Investor Relations](https://investor.apple.com/sec-filings/annual-reports/default.aspx)
+- [Apple Inc.｜SEC Filings](https://investor.apple.com/sec-filings/default.aspx)
 - [Microsoft Corporation｜Investor Relations](https://www.microsoft.com/en-us/investor)
 - [NVIDIA Corporation｜Investor Relations](https://investor.nvidia.com/home/default.aspx)
 - [Alphabet Inc.｜Investor Relations](https://abc.xyz/investor/)

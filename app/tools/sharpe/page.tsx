@@ -138,6 +138,7 @@ export default function SharpePage() {
 
   if (!raw) return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+      <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>ローリング・シャープレシオ</h1>
       <p className="text-sm" style={{ color: 'var(--muted)' }}>読み込み中...</p>
     </div>
   )
@@ -155,7 +156,7 @@ export default function SharpePage() {
       </div>
 
       <div className="mb-6 p-3 rounded-lg text-xs" style={{ backgroundColor: 'var(--accent-subtle)', border: '1px solid var(--accent-border)', color: 'var(--muted)' }}>
-        シャープレシオ = (月次平均リターン ÷ 月次標準偏差) × √12　※無リスク金利 = 0、ウィンドウ = 12ヶ月
+        シャープレシオ = (月次平均リターン ÷ 月次標準偏差) × √12　※無リスク金利 = 0、ウィンドウ = 12ヶ月。Yahoo Financeの調整後月次価格（取得: yfinance）を使用し、税・手数料は含みません。指数のトータルリターンや実際の運用成績とは異なる場合があります。
       </div>
 
       {/* Sector tabs + stock selector */}
@@ -246,7 +247,7 @@ export default function SharpePage() {
 
       {/* Ranking */}
       <div className="p-5 rounded-xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-        <h2 className="text-sm font-semibold mb-4" style={{ color: 'var(--foreground)' }}>平均シャープレシオ ランキング（全期間）</h2>
+        <h2 className="text-sm font-semibold mb-4" style={{ color: 'var(--foreground)' }}>12ヶ月ローリング値の期間平均ランキング</h2>
         <div>
           {Object.entries(sharpeMap)
             .map(([name, pts]) => ({

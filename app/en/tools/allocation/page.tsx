@@ -128,7 +128,7 @@ export default function EnAllocationSimulator() {
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>TOOLS</p>
         <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>Portfolio Allocation Simulator</h1>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>
-          Adjust allocation sliders to see expected return, risk, and Sharpe ratio in real time.
+          Adjust allocation sliders to compare hypothetical return, risk, and Sharpe ratio scenarios.
         </p>
       </div>
 
@@ -158,8 +158,8 @@ export default function EnAllocationSimulator() {
 
         <div className="flex flex-col gap-4">
           <div className="grid grid-cols-3 gap-3">
-            <Metric label="Expected Return (annual)" value={`${(expectedReturn * 100).toFixed(1)}%`} accent />
-            <Metric label="Risk (std. dev.)" value={`${(volatility * 100).toFixed(1)}%`} />
+            <Metric label="Scenario Return (annual)" value={`${(expectedReturn * 100).toFixed(1)}%`} accent />
+            <Metric label="Simplified Risk Estimate" value={`${(volatility * 100).toFixed(1)}%`} />
             <Metric label="Sharpe Ratio" value={sharpe.toFixed(2)} sub="Higher = more efficient" accent={sharpe > 0.5} />
           </div>
 
@@ -206,7 +206,7 @@ export default function EnAllocationSimulator() {
               ))}
             </div>
             <p className="text-xs mt-3" style={{ color: 'var(--muted)' }}>
-              * Reference values. Not a guarantee of future performance.
+              * Simplified estimate assuming zero correlation among assets. Inputs are scenarios, not forecasts, and may understate actual risk.
             </p>
           </div>
         </div>

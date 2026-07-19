@@ -56,7 +56,7 @@ Historically, equities have outpaced inflation over the long run. This is the as
 | Factor | Assessment |
 |---|---|
 | Inflation resistance | ○ Functions as a store of value and currency hedge |
-| Recommendation | Small allocation via credit card accumulation plan (good cost/return balance) |
+| My holding method | A small allocation through a brokerage gold accumulation plan |
 
 Gold hedges against inflation and currency weakness. Among commodities, holding gold in a small allocation is sufficient — there is no need to diversify broadly across all commodity types.
 
@@ -67,9 +67,9 @@ When commodities broadly rally, the companies that extract and process them (res
 | Factor | Assessment |
 |---|---|
 | Inflation resistance | △ Theoretically useful, but… |
-| Recommendation | ✕ Expense ratios are too high. Covered by stock indexes |
+| Decision factors | Expense ratio, futures roll costs, and the tracked exposure |
 
-Commodity ETFs carry high fees and are poorly suited to long-term holding. Since their benefit is largely replicated by holding a diversified equity index, there is little reason to hold them separately.
+Commodity ETFs do not always match spot prices. Depending on the product, management fees and futures roll costs can materially affect returns. Their risks also differ from shares of resource producers. I do not currently hold them, but any comparison should be made product by product.
 
 ### Physical Real Estate
 
@@ -106,16 +106,16 @@ The sharpest reminder came abroad: what I expected to be a casual lunch ended up
 
 ## Summary
 
-- **Stocks (S&P500 / All-Country) are your core asset** — they have real pricing power against inflation
+- Stocks can provide inflation resilience when businesses can pass through costs, but they still carry drawdown risk
 - **Use cash for emergencies and planned spending** — the amount depends on the household
-- **A small gold allocation via credit card accumulation** offers a good cost-to-benefit ratio
-- **Commodity ETFs are too expensive** — equity indexes already cover the exposure
+- I hold a small gold allocation for currency diversification through a brokerage accumulation plan
+- Commodity ETFs require product-level review of exposure and holding costs
 - **Real estate requires a full cash-flow model**, including vacancy, rates, repairs, and taxes
-- In an inflationary environment, the shortcut to asset protection is owning things with real demand and pricing power
+- Separate assets by time horizon and acceptable volatility rather than relying on one inflation hedge
 
 ## References
 
 - [Statistics Bureau of Japan — Consumer Price Index (CPI)](https://www.stat.go.jp/data/cpi/index.htm)
-- [Bank of Japan — Price Stability and Monetary Policy](https://www.boj.or.jp/mopo/outline/concept.htm)
+- [Bank of Japan — Monetary Policy Overview](https://www.boj.or.jp/mopo/outline/)
 - [U.S. Bureau of Labor Statistics — Consumer Price Index](https://www.bls.gov/cpi/)
-- [World Gold Council — Gold as a Strategic Asset](https://www.gold.org/goldhub/research/gold-investor/gold-strategic-asset)
+- [World Gold Council — Gold as a Strategic Asset](https://www.gold.org/goldhub/research/relevance-of-gold-as-a-strategic-asset)

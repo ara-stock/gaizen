@@ -124,8 +124,8 @@ Gold can rise further, I believe — but that depends on inflation persisting. S
 ## References
 
 - [Ministry of Finance Japan — Japanese Government Bonds (JGBs) for Individuals](https://www.mof.go.jp/jgbs/individual/kojinmuke/index.html)
-- [World Gold Council — Gold as a Portfolio Diversifier](https://www.gold.org/goldhub/research/gold-investor/gold-strategic-asset)
-- [Bank of Japan — Monetary Policy and Interest Rates](https://www.boj.or.jp/mopo/outline/concept.htm)
+- [World Gold Council — Gold as a Strategic Asset](https://www.gold.org/goldhub/research/relevance-of-gold-as-a-strategic-asset)
+- [Bank of Japan — Monetary Policy Overview](https://www.boj.or.jp/mopo/outline/)
 - [Bitcoin Whitepaper — Satoshi Nakamoto (2008)](https://bitcoin.org/bitcoin.pdf)
 
 ---

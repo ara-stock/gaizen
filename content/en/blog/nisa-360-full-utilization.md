@@ -1,8 +1,8 @@
 ---
 title: "Using Japan's New NISA ¥3.6M Annual Limit — How I Allocate Between Lump Sum and Accumulation"
 date: "2026-05-30"
-updatedAt: "2026-06-11"
-description: "Maxing out the accumulation allowance and front-loading the growth allowance at the start of the year. My personal approach to Japan's new NISA and what to do when lump-sum isn't possible."
+updatedAt: "2026-07-19"
+description: "How I separate recurring investments, lump-sum decisions, and individual stocks under Japan's new NISA without treating the annual limit as a target."
 tags: ["New NISA", "accumulation allowance", "growth allowance", "index investing", "lump sum", "investment trust"]
 category: "nisa"
 published: true
@@ -13,7 +13,7 @@ featured: false
 
 The new NISA system (launched 2024) allows up to ¥3.6 million per year in tax-free investments.
 
-> This article focuses on how I actually combine recurring contributions, lump-sum investing, and individual stocks. For an index-centered basic framework, see "[How to Maximize Your New NISA](/en/blog/nisa-perfect-strategy/)."
+> This article focuses on how I combine recurring contributions, lump-sum investing, and individual stocks. For a beginner-oriented framework, see "[A Practical Framework for the New NISA](/en/blog/nisa-perfect-strategy/)."
 
 | Allowance | Annual Limit | Eligible Products |
 |-----------|-------------|------------------|
@@ -25,14 +25,14 @@ The lifetime tax-free limit is ¥18M (¥12M cap for the growth allowance). Using
 
 ---
 
-## Accumulation Allowance: ¥100K/Month, Set and Forget
+## Accumulation Allowance: Automate an Amount You Can Sustain
 
-The ¥1.2M annual accumulation allowance works out to exactly ¥100,000 per month. I max it out via automatic monthly investment into an index fund.
+The ¥1.2M annual accumulation allowance works out to ¥100,000 per month if fully used. It is a ceiling, not a required contribution.
 
 The eligible products are screened by Japan's FSA — long-term accumulation funds like eMAXIS Slim S&P500 and eMAXIS Slim All Country dominate.
 
 :::comment
-I set the accumulation allowance to max and forget about it. ¥100,000 per month goes into an index fund automatically. The power of the accumulation allowance is precisely that there's nothing to think about. Automation removes the emotional component entirely.
+I use Rakuten Securities to automate credit-card contributions into eMAXIS Slim US Equities (S&P 500). Reducing repeat decisions matters more to me than the card rewards. The amount should remain sustainable after living expenses and emergency cash are secured.
 :::
 
 ---
@@ -68,12 +68,12 @@ The growth allowance's flexibility is a double-edged sword — it's easy to drif
 
 ---
 
-## Individual Stocks in the Growth Allowance
+## How I Use Individual Stocks in the Growth Allowance
 
-The growth allowance isn't limited to index funds — individual stocks and ETFs are eligible too. Occasionally I put a small amount into individual stocks that catch my attention — not out of high conviction, but more as an accent to the portfolio.
+The growth allowance is not limited to investment trusts; eligible individual stocks and ETFs can also be purchased. I currently use part of it for individual stocks, but only when I would be willing to hold the same company for at least five years in a taxable account.
 
 :::comment
-Individual stocks are occasional and small — trading companies, US tech names, things I find interesting at a given moment. It's less about strong conviction and more about adding a little texture to what is otherwise a straightforward index fund portfolio. The default remains the index fund. Consistently beating the index over a long horizon is hard, and it requires time and judgment I'd rather not spend. For most of the growth allowance, the fund is the right call.
+I look at business growth, durability, competitive advantage, earnings, and whether I can keep monitoring the thesis. I do not buy solely because a stock is popular or has a high dividend yield. NISA losses cannot be offset against gains in taxable accounts, so the allowance is a poor place for short-term trades or weakly researched ideas.
 :::
 
 ---
@@ -94,15 +94,13 @@ For anyone just starting out, Rakuten is a reasonable first pick — the app is 
 
 There's no single right way to use the new NISA. What matters most is **using it without overcomplicating it**.
 
-- **Accumulation allowance**: ¥100K/month automatic, index fund
-- **Growth allowance**: January lump sum; monthly contributions if lump sum isn't possible
+- **Accumulation allowance**: automate a sustainable amount in a low-cost investment trust
+- **Growth allowance**: invest surplus early when appropriate; require a long-term thesis for individual stocks
 
 Consistent annual investing over many years matters more than optimizing the exact method.
 
 :::comment
-My setup: Rakuten Securities, ¥100K/month into eMAXIS Slim S&P500 via credit card auto-investment. The Rakuten Card points are a small bonus, but the bigger win is that I never have to think about it. Remaining cash goes toward individual stocks.
-
-I don't stress about filling the ¥3.6M ceiling. Hitting the accumulation allowance in full (¥100K × 12 = ¥1.2M) already puts you in a strong position. The growth allowance gets filled when I have surplus — lump sum in January if possible, monthly contributions otherwise. Chasing perfect utilization is less important than showing up every year.
+I do not treat the ¥3.6M ceiling as a quota. The accumulation allowance runs automatically, while the growth allowance is used only when I have surplus and an investment I can explain. Chasing full utilization matters less than preserving a process I can continue each year.
 :::
 
 ---

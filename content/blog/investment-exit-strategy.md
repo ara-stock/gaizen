@@ -97,8 +97,8 @@ FIRE計画でよく使われる「4%ルール」は、年間生活費の25倍の
 ## 参考リファレンス
 
 - [金融庁｜NISA（少額投資非課税制度）](https://www.fsa.go.jp/policy/nisa2/about/index.html)
-- [楽天証券｜定期売却サービス](https://www.rakuten-sec.co.jp/web/fund/selling/regular/)
+- [楽天証券｜定期売却サービス](https://www.rakuten-sec.co.jp/web/rfund/guide/teikibaikyaku.html)
 - [SBI証券｜投資信託 定期売却サービス](https://www.sbisec.co.jp/ETGate/WPLETmgR001Control?OutSide=on&getFlg=on&burl=search_fund&cat1=fund&cat2=none&dir=info&file=fund_regular_selling.html)
-- [William Bengen (1994)「Determining Withdrawal Rates Using Historical Data」Journal of Financial Planning](https://www.financialplanningassociation.org/article/journal/OCT94-determining-withdrawal-rates-using-historical-data)
+- [William Bengen (1994)「Determining Withdrawal Rates Using Historical Data」Journal of Financial Planning](https://www.financialplanningassociation.org/learning/publications/journal/OCT94-determining-withdrawal-rates-using-historical-data)
 
 4%ルールの計算の前提となる積立シミュレーションは[FIREのための積立シミュレーション](/blog/fire-simulation/)で詳しく解説しています。取り崩し期の具体的な方法は[FIRE後の取り崩し戦略](/blog/fire-withdrawal-strategy/)もご参照ください。

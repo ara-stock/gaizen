@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   description: 'NISA・投資信託・資産管理・長期投資を中心に、初心者が自分で判断できるようになるための実践的な投資メディア。',
   alternates: {
     canonical: 'https://gaizen.xyz/',
-    languages: { 'en': 'https://gaizen.xyz/en/' },
+    languages: { ja: 'https://gaizen.xyz/', en: 'https://gaizen.xyz/en/' },
+    types: { 'application/rss+xml': 'https://gaizen.xyz/feed.xml' },
   },
 }
 
@@ -213,7 +214,7 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-        <p className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>更新: {portfolio.updatedAt}</p>
+        <p className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>資産配分基準日: {portfolio.allocationAsOf}</p>
       </section>
 
       <section className="py-16 border-b" style={{ borderColor: 'var(--border)' }}>

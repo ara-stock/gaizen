@@ -78,12 +78,12 @@ A company with a payout ratio of 80–90% has little buffer — a modest earning
 
 **Japanese trading companies, leasing firms, banks, and insurers** have strong track records of consistent dividend growth and hold up reasonably well through economic cycles. These form the core of my dividend-growth holdings.
 
-## In Practice: S&P500 + Dividend-Growth Hybrid
+## A Model for Comparing Allocations
 
-My own portfolio is a hybrid of growth (index) and dividend-growth stocks.
+For someone combining an index fund with dividend-growth stocks, the following is one way to make the trade-off visible. It is not my current portfolio allocation.
 
 ```
-Portfolio allocation (conceptual)
+Beginner allocation example
 
 [Core]
  S&P500 or All-Country (index fund)
@@ -98,15 +98,17 @@ For dividend-growth stocks, fractional shares (available at most Japanese broker
 
 ## Summary
 
-- **For wealth maximization, growth-oriented index investing is the rational choice** — no compounding leakage, better tax efficiency
+- Funds that limit distributions can reduce tax drag and reinvestment work during the holding period
 - Dividends reflect a mature business returning capital because high-return reinvestment opportunities are scarce
-- **Holding 30–50% in dividend-growth stocks for psychological stability is a valid strategy**
+- Set the dividend-stock allocation from business quality and concentration risk, not income comfort alone
 - Look for consistent dividend growth and a sustainable payout ratio (40–50%), not just high current yield
-- Keep index funds as the core; accumulate dividend-growth stocks gradually using fractional shares
+- Do not select an individual stock for yield alone; verify earnings growth and dividend durability
+
+My current approach does not treat growth and dividends as opposing styles. I start with the growth and durability of the business, then consider dividends as one part of shareholder returns. Income can make drawdowns easier to tolerate, but it should not hide deteriorating operations or an unsustainable payout.
 
 ## References
 
 - [National Tax Agency Japan — Dividend Income Taxation](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1250.htm)
 - [Financial Services Agency Japan — New NISA Overview](https://www.fsa.go.jp/policy/nisa2/about/index.html)
 - [S&P Global — S&P 500 Dividend Aristocrats Index](https://www.spglobal.com/spdji/en/indices/dividends-factors/sp-500-dividend-aristocrats/)
-- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.jp/fund/252931.html)
+- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.am.mufg.jp/fund/253266.html)
