@@ -96,7 +96,7 @@ I invest soon after salary arrives, so I do not change my contribution just beca
 
 That assumes living expenses and an emergency buffer are already covered.
 
-The important point is not to change contributions based on market emotion. Decide contribution amounts based on household conditions. I cover this mindset in "[What Not to Do After Starting NISA](/en/blog/nisa-beginner-mistakes)."
+The important point is not to change contributions based on market emotion. Decide contribution amounts based on household conditions. I cover this mindset in "[What Not to Do After Starting NISA](/en/blog/nisa-beginner-mistakes/)."
 
 One-month moves are not worth overthinking. What matters is whether assets are growing over years and whether the investing habit continues.
 

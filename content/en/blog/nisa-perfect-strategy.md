@@ -19,7 +19,7 @@ Here is the simple answer to getting the most out of your new NISA:
 
 Here's why.
 
-> This article explains an index-centered framework for using the new NISA. For my actual mix of recurring contributions, lump-sum investing, and individual stocks, see "[Using Japan's New NISA ¥3.6M Annual Limit](/en/blog/nisa-360-full-utilization)."
+> This article explains an index-centered framework for using the new NISA. For my actual mix of recurring contributions, lump-sum investing, and individual stocks, see "[Using Japan's New NISA ¥3.6M Annual Limit](/en/blog/nisa-360-full-utilization/)."
 
 ## A Quick Recap of the New NISA Structure
 

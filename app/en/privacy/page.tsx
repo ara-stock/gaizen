@@ -115,7 +115,7 @@ export default function EnPrivacyPage() {
           <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>Contact</h2>
           <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
             For privacy-related questions, please reach out via the{' '}
-            <a href="/en/contact" style={{ color: 'var(--accent)' }}>Contact page</a>.
+            <a href="/en/contact/" style={{ color: 'var(--accent)' }}>Contact page</a>.
           </p>
         </section>
 

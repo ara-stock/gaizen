@@ -91,7 +91,7 @@ export default async function ArticlePage({ params }: Props) {
         <nav aria-label="パンくず" className="mb-8 flex items-center gap-2 text-xs" style={{ color: 'var(--muted)' }}>
           <Link href="/">ホーム</Link>
           <span aria-hidden="true">/</span>
-          <Link href="/blog">ブログ</Link>
+          <Link href="/blog/">ブログ</Link>
           <span aria-hidden="true">/</span>
           <span aria-current="page" className="truncate">{frontmatter.title}</span>
         </nav>
@@ -125,7 +125,7 @@ export default async function ArticlePage({ params }: Props) {
 
             {/* Author bio */}
             <div className="mt-6 pt-8 border-t" style={{ borderColor: 'var(--border)' }}>
-              <Link href="/about" className="flex items-start gap-4 p-4 rounded-xl border transition-colors hover:border-green-800 group"
+              <Link href="/about/" className="flex items-start gap-4 p-4 rounded-xl border transition-colors hover:border-green-800 group"
                 style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
                 <Image
                   src="/images/profile.jpg"

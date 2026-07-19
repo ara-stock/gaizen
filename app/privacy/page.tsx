@@ -118,7 +118,7 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>お問い合わせ</h2>
           <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
             本ポリシーに関するご質問・ご意見は、
-            <a href="/contact" style={{ color: 'var(--accent)' }}>Contactページ</a>
+            <a href="/contact/" style={{ color: 'var(--accent)' }}>Contactページ</a>
             よりX（旧Twitter）のDMにてご連絡ください。
           </p>
         </section>
