@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'プライバシーポリシー',
   description: 'GAIZEN FINANCEのプライバシーポリシー。Google AdSenseによる広告配信、Cookieの利用、アクセス解析、個人情報の取り扱いについて説明します。',
-  alternates: { canonical: 'https://gaizen.xyz/privacy/', languages: { 'en': 'https://gaizen.xyz/en/privacy/' } },
+  alternates: { canonical: 'https://gaizen.xyz/privacy/', languages: { ja: 'https://gaizen.xyz/privacy/', en: 'https://gaizen.xyz/en/privacy/' } },
 }
 
 export default function PrivacyPage() {
@@ -12,7 +12,7 @@ export default function PrivacyPage() {
       <div className="mb-12">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>LEGAL</p>
         <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>プライバシーポリシー</h1>
-        <p className="text-xs" style={{ color: 'var(--muted)' }}>最終更新: 2026年6月</p>
+        <p className="text-xs" style={{ color: 'var(--muted)' }}>最終更新: 2026年7月</p>
       </div>
 
       <div className="prose max-w-none space-y-8">
@@ -20,7 +20,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>サイト概要</h2>
           <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-            GAIZEN FINANCE（以下「本サイト」、URL: https://gaizen.xyz）は、長期・分散投資に関する情報を発信する個人運営のウェブサイトです。
+            GAIZEN FINANCE（以下「本サイト」、URL: https://gaizen.xyz）は、長期投資に関する情報を発信する個人運営のウェブサイトです。
             本サイトでは、ユーザーの皆様の情報を適切に管理・保護することを最優先に考えています。
             このプライバシーポリシーは、本サイトにおける個人情報の取り扱いについて説明するものです。
           </p>
@@ -30,13 +30,13 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>広告配信について（Google AdSense）</h2>
           <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--muted)' }}>
             本サイトでは、<strong style={{ color: 'var(--foreground)' }}>Google AdSense</strong>（Google LLC、米国）を利用して広告を配信しています。
-            Google AdSenseは、ユーザーがこのサイトや他のサイトを訪問した際の情報（Cookieを含む）を使用して、
-            ユーザーの興味・関心に基づいた広告（インタレストベース広告）を表示することがあります。
+            広告配信に伴い、Googleおよび第三者事業者がCookieをブラウザに保存・読み取りしたり、Webビーコン、IPアドレス、
+            その他の識別子を使用して情報を収集したりする場合があります。収集された情報は、広告配信、測定、パーソナライズなどに利用されます。
           </p>
           <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--muted)' }}>
-            Google によるCookieの使用については、
-            <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
-              Googleの広告に関するポリシー
+            Googleによるデータの利用については、
+            <a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
+              Googleサービスを使用するサイトやアプリから収集した情報の利用方法
             </a>
             をご参照ください。
           </p>
@@ -65,15 +65,14 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>Cookieについて</h2>
+          <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>Cookie・ローカルストレージについて</h2>
           <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--muted)' }}>
-            Cookieとは、ウェブサイトがブラウザに保存する小さなデータファイルです。
-            本サイトでは、以下の目的でCookieを使用しています。
+            Cookieやローカルストレージは、ウェブサイトがブラウザに情報を保存する仕組みです。
+            本サイトでは、以下の目的で利用される場合があります。
           </p>
           <ul className="list-disc list-inside space-y-1 text-sm" style={{ color: 'var(--muted)' }}>
-            <li>テーマ設定（ダークモード/ライトモード）の保存</li>
-            <li>Google AdSenseによる広告のパーソナライズ</li>
-            <li>アクセス解析（詳細は下記参照）</li>
+            <li>ローカルストレージによるテーマ設定（ダークモード/ライトモード）の保存</li>
+            <li>Google AdSenseによる広告配信・測定・パーソナライズ</li>
           </ul>
           <p className="text-sm leading-relaxed mt-3" style={{ color: 'var(--muted)' }}>
             ブラウザの設定でCookieを無効にすることも可能ですが、その場合、テーマ設定の保存など一部機能が正常に動作しない場合があります。
@@ -84,8 +83,8 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>アクセス解析について</h2>
           <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
             本サイトでは、<strong style={{ color: 'var(--foreground)' }}>Cloudflare Web Analytics</strong> を使用してアクセス解析を行っています。
-            このツールはCookieを使用せず、IPアドレスなど個人を特定する情報を収集しません。
-            収集されるのは、ページビュー数・滞在時間・参照元などの統計情報のみです。
+            Cloudflareの説明では、このツールはCookieを使用せず、訪問者の個人データを収集・利用したり、サイトをまたいで個人を追跡したりしません。
+            ページビューや参照元、ページ表示性能などの集計情報を確認するために利用しています。
           </p>
         </section>
 

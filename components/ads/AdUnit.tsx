@@ -31,15 +31,16 @@ export default function AdUnit({ slot, format = 'auto', responsive = true, class
   if (!adUnitsEnabled || !publisherId || publisherId === 'ca-pub-XXXXXXXXXXXXXXXX') return null
 
   return (
-    <div className={className}>
+    <aside className={className} aria-label="Advertisement">
+      <p className="mb-2 text-center text-[10px] tracking-[0.2em]" style={{ color: 'var(--muted)' }}>広告 / ADVERTISEMENT</p>
       <ins
         className="adsbygoogle"
-        style={{ display: 'block' }}
+        style={{ display: 'block', minHeight: '120px' }}
         data-ad-client={publisherId}
         data-ad-slot={slot}
         data-ad-format={format}
         data-full-width-responsive={responsive ? 'true' : 'false'}
       />
-    </div>
+    </aside>
   )
 }

@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   title: {
     absolute: 'GAIZEN FINANCE — Invest steadily. Stay the course.',
   },
-  description: 'A practical investing media site focused on NISA, index funds, asset tracking, and long-term wealth building for beginners.',
+  description: 'A long-term investing publication covering first steps, NISA, asset tracking, and business analysis through first-hand experience and primary sources.',
   openGraph: {
     title: 'GAIZEN FINANCE',
-    description: 'A practical investing media site focused on NISA, index funds, asset tracking, and long-term wealth building for beginners.',
+    description: 'A long-term investing publication covering first steps, NISA, asset tracking, and business analysis through first-hand experience and primary sources.',
     url: 'https://gaizen.xyz/en/',
     locale: 'en_US',
   },
@@ -36,6 +36,11 @@ const PILLARS = [
   },
   {
     label: '03',
+    title: 'Understand the business you own',
+    description: 'Evaluate current earnings power, business durability, and room for growth until you can explain the investment in your own words.',
+  },
+  {
+    label: '04',
     title: 'Build a system you can keep following',
     description: 'Monthly asset tracking, contribution rules, and a long-term policy that reduces emotional decisions.',
   },
@@ -65,7 +70,7 @@ const ASSET_TRANSLATIONS: Record<string, { name: string; note: string }> = {
 
 export default function EnHomePage() {
   const allPosts = getAllPosts('en')
-  const latestPosts = allPosts.slice(0, 3)
+  const latestPosts = allPosts.filter(post => !post.frontmatter.featured).slice(0, 3)
   const featuredPosts = allPosts.filter(p => p.frontmatter.featured).slice(0, 3)
   const portfolio = getPortfolioData()
 
@@ -81,12 +86,12 @@ export default function EnHomePage() {
             Invest steadily. Stay the course.
           </h1>
           <p className="text-base sm:text-lg leading-relaxed mb-10" style={{ color: 'var(--muted)' }}>
-            Practical guidance on NISA, index funds, and asset tracking for beginners who want to keep investing without getting lost.
+            From first steps and NISA to asset tracking and business analysis, this site turns real decisions and mistakes into a framework for staying invested with conviction.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="/en/blog/investing-first-30-days/"
               className="px-5 py-2.5 text-sm font-semibold rounded-md transition-opacity hover:opacity-80"
-              style={{ backgroundColor: 'var(--accent)', color: '#080c0a' }}
+              style={{ backgroundColor: 'var(--accent)', color: '#ffffff' }}
             >
               Start with 30 days
             </Link>
@@ -119,7 +124,7 @@ export default function EnHomePage() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {[
             { label: 'Published Articles', value: `${allPosts.length}` },
-            { label: 'Core Topics', value: 'NISA & Funds' },
+            { label: 'Core Topics', value: 'Systems & Businesses' },
             { label: 'Time Horizon', value: 'Long Term' },
             { label: 'Editorial Basis', value: 'Experience + Sources' },
           ].map(({ label, value }) => (

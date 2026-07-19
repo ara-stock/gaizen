@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Tools',
   description: '投資シミュレーターツール集。ポートフォリオ配分・FIRE試算・不動産利回り・シャープレシオ分析。',
-  alternates: { canonical: 'https://gaizen.xyz/tools/', languages: { 'en': 'https://gaizen.xyz/en/tools/' } },
+  alternates: { canonical: 'https://gaizen.xyz/tools/', languages: { ja: 'https://gaizen.xyz/tools/', en: 'https://gaizen.xyz/en/tools/' } },
 }
 
 const tools = [

@@ -4,7 +4,7 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'About',
   description: '事業の成長性と持続性を軸に長期投資を行う個人投資家araのプロフィール、投資経験、判断基準を紹介します。',
-  alternates: { canonical: 'https://gaizen.xyz/about/', languages: { 'en': 'https://gaizen.xyz/en/about/' } },
+  alternates: { canonical: 'https://gaizen.xyz/about/', languages: { ja: 'https://gaizen.xyz/about/', en: 'https://gaizen.xyz/en/about/' } },
 }
 
 const principles = [
@@ -121,9 +121,18 @@ export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
 
+      <header className="mb-10 max-w-2xl">
+        <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>ABOUT</p>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-4 tracking-tight" style={{ color: 'var(--foreground)' }}>GAIZEN FINANCEについて</h1>
+        <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
+          個人投資家araが、実際の投資判断と失敗、企業や制度を調べた過程を記録する長期投資メディアです。
+          読者が自分で調べ、納得して判断するための材料を公開します。
+        </p>
+      </header>
+
       {/* Author Profile */}
       <div className="mb-16 p-6 rounded-2xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-        <div className="flex items-start gap-5">
+        <div className="flex flex-col sm:flex-row items-start gap-5">
           <div className="flex-shrink-0">
             <Image
               src="/images/profile.jpg"
@@ -156,7 +165,7 @@ export default function AboutPage() {
           </div>
         </div>
         {/* Speech bubble style note */}
-        <div className="mt-4 ml-[88px] relative">
+        <div className="mt-4 sm:ml-[88px] relative">
           <div className="absolute -top-2 left-4 w-0 h-0"
             style={{ borderLeft: '6px solid transparent', borderRight: '6px solid transparent', borderBottom: '8px solid var(--border)' }} />
           <div className="absolute -top-1.5 left-4 w-0 h-0"
@@ -187,7 +196,7 @@ export default function AboutPage() {
       {/* GAIZEN Philosophy */}
       <div className="mb-16">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>GAIZEN</p>
-        <h1 className="text-3xl font-bold mb-6" style={{ color: 'var(--foreground)' }}>投資し、育て、心にゆとりを持つ。</h1>
+        <h2 className="text-3xl font-bold mb-6" style={{ color: 'var(--foreground)' }}>投資し、育て、心にゆとりを持つ。</h2>
         <div className="space-y-4 text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
           <p>
             「GAIZEN」は<strong style={{ color: 'var(--foreground)' }}>蓋然（がいぜん）</strong>に由来します。蓋然とは、ある事柄が起こる確からしさ——確率や可能性の高さを表す言葉です。
@@ -229,7 +238,10 @@ export default function AboutPage() {
 
       {/* Case studies */}
       <section className="mb-16">
-        <p className="text-xs tracking-widest mb-6 font-semibold" style={{ color: 'var(--accent)' }}>CASE STUDY</p>
+        <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>PERSONAL INVESTMENT THESIS</p>
+        <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--muted)' }}>
+          以下は筆者が投資判断に使っている仮説の例です。企業の将来を保証する事実ではなく、決算や事業環境の変化に応じて見直します。
+        </p>
         <div className="space-y-4">
           <div className="p-6 rounded-xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'rgba(0,201,122,0.25)' }}>
             <p className="text-xs font-semibold mb-4" style={{ color: 'var(--accent)' }}>Alphabet（Google）</p>
@@ -265,7 +277,10 @@ export default function AboutPage() {
 
       {/* Sectors */}
       <section className="mb-16">
-        <p className="text-xs tracking-widest mb-6 font-semibold" style={{ color: 'var(--accent)' }}>STOCKS — 重点セクター</p>
+        <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>RESEARCH AREAS</p>
+        <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--muted)' }}>
+          現在調査している分野と保有例です。最新の保有状況は<a href="/portfolio/" style={{ color: 'var(--accent)' }}>Portfolio</a>、現在のテーマは<a href="/thesis/" style={{ color: 'var(--accent)' }}>Thesis</a>に分けて掲載しています。
+        </p>
         <div className="space-y-4">
           {sectors.map(s => {
             const regionColor = REGION_COLOR[s.region] ?? 'var(--accent)'

@@ -14,14 +14,14 @@ export const CATEGORY_LABELS: Record<string, string> = {
 }
 
 export const CATEGORY_COLORS: Record<string, string> = {
-  'jp-stock': '#00c97a',
-  'us-stock': '#00a862',
-  'us-stock-2': '#009955',
-  'mutual-fund': '#33d994',
-  'crypto': '#4ade80',
-  'gold': '#86efac',
-  'cash': '#3d5e4a',
-  'real-estate': '#6ee7b7',
+  'jp-stock': 'var(--chart-jp)',
+  'us-stock': 'var(--chart-us)',
+  'us-stock-2': 'var(--chart-us-2)',
+  'mutual-fund': 'var(--chart-fund)',
+  'crypto': 'var(--chart-crypto)',
+  'gold': 'var(--chart-gold)',
+  'cash': 'var(--chart-cash)',
+  'real-estate': 'var(--chart-real-estate)',
 }
 
 export default function AllocationChart({ assets }: { assets: Asset[] }) {

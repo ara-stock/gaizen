@@ -8,7 +8,7 @@ import { serializeJsonLd } from '@/lib/json-ld'
 
 const SITE_URL = 'https://gaizen.xyz'
 const SITE_NAME = 'GAIZEN FINANCE'
-const SITE_DESCRIPTION = 'NISA・投資信託・資産管理を、個人投資家の実体験と一次情報から学ぶ長期投資メディア。'
+const SITE_DESCRIPTION = '投資の始め方から企業分析まで、個人投資家の実体験と一次情報から学ぶ長期投資メディア。'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
-  keywords: ['長期投資', '分散投資', 'BTC', 'S&P500', 'インデックス投資', '資産運用', '仮想通貨', '不動産投資'],
+  keywords: ['長期投資', '企業分析', 'NISA', '投資信託', '個別株', '資産管理', '暗号資産'],
   authors: [{ name: 'ara', url: `${SITE_URL}/about/` }],
   creator: 'ara',
   openGraph: {

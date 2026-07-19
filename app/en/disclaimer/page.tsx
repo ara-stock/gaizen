@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Disclaimer for GAIZEN FINANCE. Content is not investment advice. Covers information accuracy, investment risks, external links, advertising, affiliate and referral disclosures.',
   alternates: {
     canonical: 'https://gaizen.xyz/en/disclaimer/',
-    languages: { 'ja': 'https://gaizen.xyz/disclaimer/' },
+    languages: { ja: 'https://gaizen.xyz/disclaimer/', en: 'https://gaizen.xyz/en/disclaimer/' },
   },
 }
 

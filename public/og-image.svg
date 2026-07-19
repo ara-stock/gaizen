@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#07120c"/>
+  <path d="M0 0h1200v630H0z" fill="none" stroke="#173326" stroke-width="2"/>
+  <path d="M700 0 1200 0 1200 500Z" fill="#0b2016"/>
+  <g transform="translate(76 76)" fill="none" stroke="#00c97a" stroke-width="7">
+    <path d="M0 0h150v150H0z"/>
+    <path d="m93 7-86 50 50 86 86-50Z"/>
+    <path d="m66 29-35 60 60 35 35-60Z"/>
+  </g>
+  <text x="76" y="290" fill="#00c97a" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="700" letter-spacing="5">GAIZEN FINANCE</text>
+  <text x="76" y="375" fill="#edf7f1" font-family="DejaVu Sans, sans-serif" font-size="50" font-weight="700">Long-term investing,</text>
+  <text x="76" y="438" fill="#edf7f1" font-family="DejaVu Sans, sans-serif" font-size="50" font-weight="700">with conviction.</text>
+  <text x="79" y="500" fill="#91ab9c" font-family="DejaVu Sans, sans-serif" font-size="22">Business growth. Durability. Primary sources.</text>
+  <text x="975" y="566" fill="#91ab9c" font-family="DejaVu Sans, sans-serif" font-size="18">gaizen.xyz</text>
+</svg>

@@ -103,7 +103,7 @@ export default async function ArticlePage({ params }: Props) {
           <span aria-current="page" className="truncate">{frontmatter.title}</span>
         </nav>
         <div className="lg:grid lg:grid-cols-[1fr_220px] lg:gap-12">
-          <article>
+          <article className="min-w-0">
             <header className="mb-10 pb-8 border-b" style={{ borderColor: 'var(--border)' }}>
               <div className="flex flex-wrap gap-2 mb-4">
                 {frontmatter.tags.map(tag => <Tag key={tag} tag={tag} linked={false} />)}
@@ -124,7 +124,9 @@ export default async function ArticlePage({ params }: Props) {
 
             <ArticleIntro description={frontmatter.description} />
 
-            <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
+            <TableOfContents headings={headings} mobile />
+
+            <div className="prose max-w-[720px]" dangerouslySetInnerHTML={{ __html: content }} />
 
             <div className="mt-10 flex justify-end">
               <ShareButton title={frontmatter.title} url={`https://gaizen.xyz/blog/${slug}/`} />

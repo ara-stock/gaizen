@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: '免責事項',
   description: 'GAIZEN FINANCEの免責事項。投資助言ではない旨、情報の正確性、リスク、著作権、リンク先、広告・アフィリエイトに関する注意事項を記載しています。',
-  alternates: { canonical: 'https://gaizen.xyz/disclaimer/', languages: { 'en': 'https://gaizen.xyz/en/disclaimer/' } },
+  alternates: { canonical: 'https://gaizen.xyz/disclaimer/', languages: { ja: 'https://gaizen.xyz/disclaimer/', en: 'https://gaizen.xyz/en/disclaimer/' } },
 }
 
 const sections = [

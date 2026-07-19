@@ -5,7 +5,7 @@ updatedAt: "2026-06-10"
 description: "NEARの成り立ちからNEAR Intents・NEAR Mobileまでを解説。プライバシー機能の期待と現実的な限界も包み隠さずまとめました。クリプト投資家向け。"
 tags: ["NEAR", "NEAR Protocol", "NEAR Intents", "NEAR Mobile", "仮想通貨", "チェーン抽象化", "ZEC", "Zcash"]
 category: "crypto"
-published: true
+published: false
 featured: false
 coverImage: ""
 ---

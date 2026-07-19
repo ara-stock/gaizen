@@ -6,16 +6,16 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog',
-  description: 'Practical articles on NISA, index funds, asset tracking, and portfolio design for long-term investors.',
+  description: 'Long-term investing articles on first steps, NISA, asset tracking, and business analysis, grounded in first-hand experience and primary sources.',
   openGraph: {
     title: 'Investment Blog | GAIZEN FINANCE',
-    description: 'Practical articles on NISA, index funds, asset tracking, and portfolio design for long-term investors.',
+    description: 'Long-term investing articles on first steps, NISA, asset tracking, and business analysis, grounded in first-hand experience and primary sources.',
     url: 'https://gaizen.xyz/en/blog/',
     locale: 'en_US',
   },
   alternates: {
     canonical: 'https://gaizen.xyz/en/blog/',
-    languages: { 'ja': 'https://gaizen.xyz/blog/' },
+    languages: { ja: 'https://gaizen.xyz/blog/', en: 'https://gaizen.xyz/en/blog/' },
   },
 }
 
@@ -30,7 +30,8 @@ export default function EnBlogPage() {
           Learn long-term investing in order.
         </h1>
         <p className="text-sm sm:text-base leading-relaxed" style={{ color: 'var(--muted)' }}>
-          Practical articles on NISA, index funds, and asset tracking, grounded in the author&apos;s mistakes and ongoing investing routine.
+          Practical guidance on first steps, NISA, and asset tracking sits alongside research notes on businesses and investment decisions.
+          Both are grounded in the author&apos;s mistakes, ongoing practice, and primary sources.
         </p>
         <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs" style={{ color: 'var(--muted)' }}>
           <span>Written by individual investor ara</span>

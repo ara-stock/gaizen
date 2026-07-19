@@ -49,7 +49,7 @@ export default function ArticleCard({ post, basePath = '/blog', locale = 'ja' }:
         </Link>
       )}
       <div className="p-6">
-        <div className="flex items-center gap-3 mb-3">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-3">
           {frontmatter.featured && (
             <span className="text-xs font-semibold px-2 py-0.5 rounded" style={{ backgroundColor: 'rgba(201,168,76,0.15)', color: 'var(--accent)' }}>
               PICK

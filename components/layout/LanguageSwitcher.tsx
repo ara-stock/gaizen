@@ -33,7 +33,7 @@ export default function LanguageSwitcher() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 text-xs px-2.5 py-1.5 rounded-md border transition-colors"
+        className="h-11 min-w-11 flex items-center justify-center gap-1.5 text-xs px-2.5 rounded-md border transition-colors"
         style={{ color: 'var(--foreground)', borderColor: 'var(--border)', backgroundColor: 'transparent' }}
         aria-expanded={open}
         aria-haspopup="listbox"

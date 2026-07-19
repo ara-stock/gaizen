@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Current investment themes and positioning. AI infrastructure, energy transition, gold, crypto, stablecoins.',
   alternates: {
     canonical: 'https://gaizen.xyz/en/thesis/',
-    languages: { 'ja': 'https://gaizen.xyz/thesis/' },
+    languages: { ja: 'https://gaizen.xyz/thesis/', en: 'https://gaizen.xyz/en/thesis/' },
   },
 }
 
