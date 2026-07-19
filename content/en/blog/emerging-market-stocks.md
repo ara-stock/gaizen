@@ -83,7 +83,7 @@ If a company from an emerging market genuinely starts displacing established pla
 
 Similarly, if emerging market currencies begin to show a sustained trend of outperforming the USD, that would reflect a fundamental shift in global economic gravity — another trigger to reassess.
 
-For now, I keep it simple: **S&P 500 as the core, and only hold what I fully understand.**
+For now, I do not hold an emerging-markets index. Rather than choosing a country or index first, I limit new investments to businesses whose growth and durability I can evaluate directly.
 
 ---
 

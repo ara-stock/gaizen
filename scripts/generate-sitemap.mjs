@@ -34,8 +34,6 @@ function getPosts(dir) {
 
 const jaPosts = getPosts(BLOG_DIR)
 const enPosts = getPosts(EN_BLOG_DIR)
-const now = new Date().toISOString().split('T')[0]
-
 const staticRoutes = [
   { url: `${SITE_URL}/`, priority: '1.0', changefreq: 'weekly' },
   { url: `${SITE_URL}/blog/`, priority: '0.9', changefreq: 'daily' },
@@ -45,6 +43,14 @@ const staticRoutes = [
   { url: `${SITE_URL}/en/portfolio/`, priority: '0.8', changefreq: 'monthly' },
   { url: `${SITE_URL}/tools/`, priority: '0.7', changefreq: 'monthly' },
   { url: `${SITE_URL}/en/tools/`, priority: '0.7', changefreq: 'monthly' },
+  { url: `${SITE_URL}/tools/allocation/`, priority: '0.6', changefreq: 'monthly' },
+  { url: `${SITE_URL}/en/tools/allocation/`, priority: '0.6', changefreq: 'monthly' },
+  { url: `${SITE_URL}/tools/fire/`, priority: '0.6', changefreq: 'monthly' },
+  { url: `${SITE_URL}/en/tools/fire/`, priority: '0.6', changefreq: 'monthly' },
+  { url: `${SITE_URL}/tools/realestate/`, priority: '0.6', changefreq: 'monthly' },
+  { url: `${SITE_URL}/en/tools/realestate/`, priority: '0.6', changefreq: 'monthly' },
+  { url: `${SITE_URL}/tools/sharpe/`, priority: '0.6', changefreq: 'monthly' },
+  { url: `${SITE_URL}/en/tools/sharpe/`, priority: '0.6', changefreq: 'monthly' },
   { url: `${SITE_URL}/about/`, priority: '0.5', changefreq: 'yearly' },
   { url: `${SITE_URL}/en/about/`, priority: '0.5', changefreq: 'yearly' },
   { url: `${SITE_URL}/editorial-policy/`, priority: '0.5', changefreq: 'yearly' },
@@ -61,13 +67,12 @@ const staticRoutes = [
 
 function entry({ url, priority, changefreq, lastmod }) {
   const safeUrl = xmlEscape(url)
-  const safeLastmod = xmlEscape(lastmod ?? now)
   const safeChangefreq = xmlEscape(changefreq)
   const safePriority = xmlEscape(priority)
+  const lastmodLine = lastmod ? `\n    <lastmod>${xmlEscape(lastmod)}</lastmod>` : ''
 
   return `  <url>
-    <loc>${safeUrl}</loc>
-    <lastmod>${safeLastmod}</lastmod>
+    <loc>${safeUrl}</loc>${lastmodLine}
     <changefreq>${safeChangefreq}</changefreq>
     <priority>${safePriority}</priority>
   </url>`

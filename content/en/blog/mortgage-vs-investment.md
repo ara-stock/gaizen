@@ -92,7 +92,7 @@ Three reasons: you can move when circumstances change, you can scale costs up or
 
 ## References
 
-- [Ministry of Land, Infrastructure, Transport and Tourism Japan — Housing Market Survey](https://www.mlit.go.jp/statistics/details/juutaku_list.html)
+- [Ministry of Land, Infrastructure, Transport and Tourism Japan — Housing Market Survey](https://www.mlit.go.jp/statistics/details/t-other-2_tk_000283.html)
 - [Japan Housing Finance Agency — Flat 35 Interest Rate Information](https://www.flat35.com/loan/flat35/kinri.html)
 - [National Tax Agency Japan — Home Loan Tax Deduction (Housing Loan Special Credit)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1213.htm)
 - [Statistics Bureau of Japan — Housing and Land Survey](https://www.stat.go.jp/data/jyutaku/index.html)

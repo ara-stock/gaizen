@@ -130,7 +130,7 @@ export default function AllocationSimulator() {
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>TOOLS</p>
         <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>ポートフォリオ配分シミュレーター</h1>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>
-          スライダーで配分を調整し、期待リターン・リスク・シャープレシオを確認できます。
+          スライダーで配分を調整し、仮定したリターン・リスク・シャープレシオを比較できます。
         </p>
       </div>
 
@@ -163,8 +163,8 @@ export default function AllocationSimulator() {
         {/* Right: Results */}
         <div className="flex flex-col gap-4">
           <div className="grid grid-cols-3 gap-3">
-            <Metric label="期待リターン（年）" value={`${(expectedReturn * 100).toFixed(1)}%`} accent />
-            <Metric label="リスク（標準偏差）" value={`${(volatility * 100).toFixed(1)}%`} />
+            <Metric label="試算リターン（年）" value={`${(expectedReturn * 100).toFixed(1)}%`} accent />
+            <Metric label="簡易リスク試算" value={`${(volatility * 100).toFixed(1)}%`} />
             <Metric label="シャープレシオ" value={sharpe.toFixed(2)} sub="高いほど効率的" accent={sharpe > 0.5} />
           </div>
 
@@ -213,7 +213,7 @@ export default function AllocationSimulator() {
               ))}
             </div>
             <p className="text-xs mt-3" style={{ color: 'var(--muted)' }}>
-              ※ 参考値です。将来を保証するものではありません。
+              ※ 各資産の相関を0と仮定した簡易試算です。前提値は将来予測ではなく、実際のリスクを過小評価する場合があります。
             </p>
           </div>
         </div>

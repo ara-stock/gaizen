@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
+import { getLocalePaths } from '@/lib/locale-path'
 
 export default function LanguageDetector() {
   const pathname = usePathname()
@@ -18,7 +19,7 @@ export default function LanguageDetector() {
 
       const lang = navigator.language || navigator.languages?.[0] || 'ja'
       if (!lang.startsWith('ja') && !pathname.startsWith('/en')) {
-        const enPath = pathname === '/' ? '/en' : `/en${pathname}`
+        const { enPath } = getLocalePaths(pathname)
         router.replace(enPath)
       }
     } catch {

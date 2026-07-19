@@ -95,7 +95,7 @@ Answering these honestly gives you a clearer picture of the exit you're actually
 
 ## References
 
-- [William Bengen (1994) "Determining Withdrawal Rates Using Historical Data" — Journal of Financial Planning](https://www.financialplanningassociation.org/article/journal/OCT94-determining-withdrawal-rates-using-historical-data)
+- [William Bengen (1994) "Determining Withdrawal Rates Using Historical Data" — Journal of Financial Planning](https://www.financialplanningassociation.org/learning/publications/journal/OCT94-determining-withdrawal-rates-using-historical-data)
 - [Cooley, Hubbard, Walz (1998) "Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable" (Trinity Study)](https://www.aaii.com/files/pdf/6794_retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable.pdf)
 - [Financial Services Agency Japan — NISA Overview](https://www.fsa.go.jp/policy/nisa2/about/index.html)
-- [Rakuten Securities — Periodic Withdrawal Service](https://www.rakuten-sec.co.jp/web/fund/selling/regular/)
+- [Rakuten Securities — Periodic Withdrawal Service](https://www.rakuten-sec.co.jp/web/rfund/guide/teikibaikyaku.html)

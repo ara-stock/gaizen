@@ -132,6 +132,6 @@ That said, I'm flexible about what "rebalancing" means in practice. If a positio
 
 - [Vanguard Research — Best Practices for Portfolio Rebalancing](https://institutional.vanguard.com/content/dam/inst/vanguard-has/insights-pdfs/04_CIR_BestPracticesRebalancing.pdf)
 - [National Tax Agency Japan — Capital Gains Tax on Stock Sales (20.315%)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm)
-- [Mitsubishi UFJ Asset Management — eMAXIS Slim Balanced (8 Assets Equal)](https://emaxis.jp/fund/253732.html)
+- [Mitsubishi UFJ Asset Management — eMAXIS Slim Balanced (8 Assets Equal)](https://emaxis.am.mufg.jp/fund/252760.html)
 
 ---

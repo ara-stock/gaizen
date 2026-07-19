@@ -89,6 +89,6 @@ The digital deficit isn't abstract. Every time someone in Japan pays for a US-bu
 - [Ministry of Finance Japan — Balance of Payments Statistics (Services Account / Digital)](https://www.mof.go.jp/policy/international_policy/reference/balance_of_payments/index.htm)
 - [Bank of Japan — Balance of Payments Statistics (BOP)](https://www.boj.or.jp/statistics/br/bop/index.htm)
 - [Ministry of Internal Affairs and Communications — White Paper on Information and Communications (Digital Economy)](https://www.soumu.go.jp/johotsusintokei/whitepaper/)
-- [Ministry of Finance Japan — Foreign Exchange Rate Data](https://www.mof.go.jp/policy/international_policy/reference/feio/index.htm)
+- [Bank of Japan — Time-Series Data Search](https://www.stat-search.boj.or.jp/index_en.html)
 
 ---

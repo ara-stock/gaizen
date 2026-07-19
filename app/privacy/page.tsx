@@ -52,7 +52,7 @@ export default function PrivacyPage() {
                 </a>
               </li>
               <li>
-                <a href="http://www.networkadvertising.org/managing/opt_out.asp" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
+                <a href="https://www.networkadvertising.org/choices/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
                   NAI（Network Advertising Initiative）オプトアウトページ
                 </a>
               </li>

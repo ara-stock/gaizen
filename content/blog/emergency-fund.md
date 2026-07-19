@@ -96,7 +96,7 @@ featured: false
 
 ## 参考リファレンス
 
-- [全国健康保険協会｜病気やケガで会社を休んだとき（傷病手当金）](https://www.kyoukaikenpo.or.jp/g3/sb3040/r139/)
-- [厚生労働省｜雇用保険制度](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_hoken.html)
-- [日本年金機構｜障害年金](https://www.nenkin.go.jp/service/jukyu/shougainenkin/jukyu-yoken/index.html)
+- [全国健康保険協会｜病気やケガで会社を休んだとき（傷病手当金）](https://www.kyoukaikenpo.or.jp/faq/benefit/002/index.html)
+- [厚生労働省｜雇用保険制度](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/koyouhoken/index_00003.html)
+- [日本年金機構｜障害厚生年金の受給要件・請求時期・年金額](https://www.nenkin.go.jp/service/jukyu/seido/shougainenkin/jukyu-yoken/20150401-02.html)
 - [金融庁｜資産形成の基本](https://www.fsa.go.jp/policy/nisa2/knowledge/basic/index.html)

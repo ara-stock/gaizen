@@ -85,7 +85,7 @@ That decision reflects my employment, expenses, family situation, and tolerance 
 
 ## References
 
-- [Japan Health Insurance Association — Sickness Allowance](https://www.kyoukaikenpo.or.jp/g3/sb3040/r139/)
-- [Ministry of Health, Labour and Welfare — Employment Insurance](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_hoken.html)
-- [Japan Pension Service — Disability Pension](https://www.nenkin.go.jp/service/jukyu/shougainenkin/jukyu-yoken/index.html)
+- [Japan Health Insurance Association — Sickness Allowance](https://www.kyoukaikenpo.or.jp/faq/benefit/002/index.html)
+- [Ministry of Health, Labour and Welfare — Employment Insurance](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/koyouhoken/index_00003.html)
+- [Japan Pension Service — Employees' Disability Pension Eligibility](https://www.nenkin.go.jp/service/jukyu/seido/shougainenkin/jukyu-yoken/20150401-02.html)
 - [Financial Services Agency — Basics of Asset Building](https://www.fsa.go.jp/policy/nisa2/knowledge/basic/index.html)

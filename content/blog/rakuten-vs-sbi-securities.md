@@ -117,6 +117,6 @@ NISAと投信積立は楽天に集約し、SBIはIPO申込と債券確認に使�
 
 - [楽天証券｜NISA・つみたてNISA 概要](https://www.rakuten-sec.co.jp/web/nisa/)
 - [SBI証券｜NISA・つみたてNISA 概要](https://site0.sbisec.co.jp/marble/nisa/top.do)
-- [楽天証券｜楽天カードクレジット積立 概要](https://www.rakuten-sec.co.jp/web/lp/fund_card_payment/)
-- [SBI証券｜三井住友カードつみたて投資 概要](https://go.sbisec.co.jp/lp/lp_smcc_01.html)
-- [金融庁｜NISAの口座数・買付額の推移（最新統計）](https://www.fsa.go.jp/policy/nisa2/about/statistics/index.html)
+- [楽天証券｜クレカ積立（楽天カードクレジット決済）](https://www.rakuten-sec.co.jp/web/rfund/guide/creditcard.html)
+- [SBI証券｜三井住友カードつみたて投資](https://go.sbisec.co.jp/lp/sbixsmcc_card_01.html)
+- [金融庁｜NISA利用状況調査](https://www.fsa.go.jp/policy/nisa2/survey/index.html)

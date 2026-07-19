@@ -197,9 +197,9 @@ The key lesson I had to internalize: once you leave salaried employment, social 
 
 ## References
 
-- [William Bengen (1994) "Determining Withdrawal Rates Using Historical Data" — Journal of Financial Planning](https://www.financialplanningassociation.org/article/journal/OCT94-determining-withdrawal-rates-using-historical-data)
+- [William Bengen (1994) "Determining Withdrawal Rates Using Historical Data" — Journal of Financial Planning](https://www.financialplanningassociation.org/learning/publications/journal/OCT94-determining-withdrawal-rates-using-historical-data)
 - [Cooley, Hubbard, Walz (1998) "Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable" (Trinity Study)](https://www.aaii.com/files/pdf/6794_retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable.pdf)
-- [Japan Pension Service — National Pension Premium (2025)](https://www.nenkin.go.jp/service/kokunen/hokenryo/20150313.html)
+- [Japan Pension Service — National Pension Premium](https://www.nenkin.go.jp/service/kokunen/hokenryo/hokenryo.html)
 - [Ministry of Health, Labour and Welfare — National Health Insurance Overview](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/database/index.html)
 
 ---

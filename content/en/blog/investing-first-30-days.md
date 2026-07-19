@@ -188,6 +188,6 @@ A ¥1,000 contribution will not create large short-term profits. But it takes yo
 - [Financial Services Agency Japan — New NISA](https://www.fsa.go.jp/policy/nisa2/about/index.html)
 - [Financial Services Agency Japan — Eligible Products for the NISA Accumulation Allowance](https://www.fsa.go.jp/policy/nisa2/about/tsumitate/index.html)
 - [Rakuten Securities — NISA](https://www.rakuten-sec.co.jp/web/nisa/)
-- [Rakuten Securities — Rakuten Card Fund Contributions](https://www.rakuten-sec.co.jp/web/lp/fund_card_payment/)
+- [Rakuten Securities — Rakuten Card Fund Contributions](https://www.rakuten-sec.co.jp/web/rfund/guide/creditcard.html)
 - [Rakuten Bank — Money Bridge](https://www.rakuten-bank.co.jp/assets/intermediation/moneybridge/)
 - [Mitsubishi UFJ Asset Management — eMAXIS Slim US Equities (S&P500)](https://emaxis.am.mufg.jp/fund/253266.html)

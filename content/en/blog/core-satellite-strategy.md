@@ -1,8 +1,8 @@
 ---
 title: "Core-Satellite Strategy — How I Grew From Index Funds Into Individual Stocks"
 date: "2026-06-06"
-updatedAt: "2026-06-06"
-description: "Start with index funds as your core, then expand into individual stocks as you build confidence. Here's how my portfolio evolved into a core-satellite structure, and how I choose what goes where."
+updatedAt: "2026-07-19"
+description: "A retrospective on how I moved from index funds toward individual stocks, and how the core-satellite framework helped before my investment criteria evolved."
 tags: ["core-satellite strategy", "index funds", "individual stocks", "portfolio", "Japan stocks", "S&P500", "NISA", "long-term investing"]
 category: "us-stock"
 published: true
@@ -11,12 +11,14 @@ featured: false
 
 ## What Is the Core-Satellite Strategy?
 
+> **July 2026 update:** This article records how I expanded from investment trusts into individual stocks. I no longer use the core-satellite split as the foundation of my decisions. Today I evaluate long-term holdings primarily through business growth and durability. The ratios below describe the portfolio when this article was written.
+
 The core-satellite approach splits a portfolio into two distinct layers:
 
 - **Core**: The stable foundation. Primarily index funds and investment trusts targeting market-average returns.
 - **Satellite**: The high-upside layer. Individual stocks and thematic bets aimed at outperforming the market.
 
-Conventional wisdom suggests a 70–80% core and 20–30% satellite split. My portfolio today sits at roughly 40% core — individual stocks carry more weight. That ratio wasn't planned from the start; it evolved over time.
+General explanations often use a 70–80% core and 20–30% satellite split as an example. When this article was written, my portfolio sat at roughly 40% core and individual stocks carried more weight. That ratio was not planned from the start; it evolved over time.
 
 ---
 

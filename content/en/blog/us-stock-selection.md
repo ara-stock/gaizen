@@ -101,7 +101,7 @@ It might seem like large companies have limited room left to grow. But large-cap
 ## References
 
 - [S&P Global — S&P 500 Index Eligibility Criteria](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
-- [Apple Inc. — Investor Relations](https://investor.apple.com/sec-filings/annual-reports/default.aspx)
+- [Apple Inc. — SEC Filings](https://investor.apple.com/sec-filings/default.aspx)
 - [Microsoft Corporation — Investor Relations](https://www.microsoft.com/en-us/investor)
 - [NVIDIA Corporation — Investor Relations](https://investor.nvidia.com/home/default.aspx)
 - [Alphabet Inc. — Investor Relations](https://abc.xyz/investor/)

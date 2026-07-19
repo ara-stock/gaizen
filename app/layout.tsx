@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import LanguageDetector from '@/components/layout/LanguageDetector'
+import { serializeJsonLd } from '@/lib/json-ld'
 
 const SITE_URL = 'https://gaizen.xyz'
 const SITE_NAME = 'GAIZEN FINANCE'
@@ -22,7 +23,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
-    url: SITE_URL,
     siteName: SITE_NAME,
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
@@ -34,14 +34,7 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: [`${SITE_URL}/og-image.png`],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true },
-  },
   alternates: {
-    canonical: SITE_URL,
-    languages: { 'ja': SITE_URL, 'en': `${SITE_URL}/en` },
     types: { 'application/rss+xml': `${SITE_URL}/feed.xml` },
   },
 }
@@ -52,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       {/* Prevent flash: apply saved theme before paint */}
       <head>
         <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.classList.add('dark');}else if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.classList.add('dark');}}catch(e){}})()` }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd({
           '@context': 'https://schema.org',
           '@type': 'WebSite',
           name: SITE_NAME,

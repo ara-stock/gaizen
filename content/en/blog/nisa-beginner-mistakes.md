@@ -187,4 +187,4 @@ Beginners should first experience price movement and recurring contributions thr
 - [Financial Services Agency Japan — New NISA](https://www.fsa.go.jp/policy/nisa2/about/index.html)
 - [Financial Services Agency Japan — Eligible Products for the NISA Accumulation Allowance](https://www.fsa.go.jp/policy/nisa2/about/tsumitate/index.html)
 - [Japan Exchange Group — Risks of Leveraged and Inverse Products](https://www.jpx.co.jp/equities/products/etfs/risk/04.html)
-- [Japan Securities Dealers Association — Time Diversification](https://www.jsda.or.jp/jikan/)
+- [Japan Securities Dealers Association — Long-Term, Recurring, and Diversified Investing](https://www.jsda.or.jp/nisa/investment/)

@@ -124,9 +124,9 @@ Putting the entire growth allowance into a single index fund is also a highly ra
 
 ## References
 
-- [Financial Services Agency Japan — NISA Growth Allowance Eligible Securities](https://www.fsa.go.jp/policy/nisa2/about/seichotoushi/index.html)
+- [Financial Services Agency Japan — New NISA Materials and Growth Allowance Eligibility](https://www.fsa.go.jp/policy/nisa2/about/nisa2024/slide_202406.pdf)
 - [Financial Services Agency Japan — New NISA Overview](https://www.fsa.go.jp/policy/nisa2/about/index.html)
-- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.jp/fund/252931.html)
+- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.am.mufg.jp/fund/253266.html)
 - [National Tax Agency Japan — Non-Taxation of Dividends and Capital Gains under NISA](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1310.htm)
 
 ---

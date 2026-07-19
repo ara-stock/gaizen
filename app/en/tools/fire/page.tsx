@@ -109,11 +109,11 @@ export default function EnFireSimulator() {
       ? (parseFloat(manualTarget) || 0) * 10000
       : (parseFloat(monthlyExpense) || 0) * 10000 * 12 / ((parseFloat(withdrawalRate) || 4) / 100)
 
-    const chartData: { year: number; value: number }[] = []
+    const chartData: { year: number; value: number }[] = [{ year: 0, value: ca }]
     let balance = ca
-    let fireYear = -1
+    let fireYear = balance >= fireTarget ? 0 : -1
 
-    for (let m = 0; m <= maxYears * 12; m++) {
+    for (let m = 1; m <= maxYears * 12; m++) {
       balance = balance * (1 + monthlyRate) + ms
       if (m % 12 === 0) {
         const yr = m / 12
@@ -190,10 +190,10 @@ export default function EnFireSimulator() {
                 <p className="text-xs mt-0.5" style={{ color: 'var(--muted)' }}>{withdrawalRate}% rule</p>
               )}
             </div>
-            <div className="p-4 rounded-xl border text-center" style={{ backgroundColor: 'var(--surface)', borderColor: fireYear > 0 ? 'rgba(0,201,122,0.3)' : 'var(--border)' }}>
+            <div className="p-4 rounded-xl border text-center" style={{ backgroundColor: 'var(--surface)', borderColor: fireYear >= 0 ? 'rgba(0,201,122,0.3)' : 'var(--border)' }}>
               <p className="text-xs mb-1" style={{ color: 'var(--muted)' }}>FIRE achieved</p>
-              {fireYear > 0
-                ? <p className="text-lg font-bold" style={{ color: 'var(--accent)' }}>yr {fireYear}</p>
+              {fireYear >= 0
+                ? <p className="text-lg font-bold" style={{ color: 'var(--accent)' }}>{fireYear === 0 ? 'Already reached' : `yr ${fireYear}`}</p>
                 : <p className="text-base font-bold" style={{ color: 'var(--muted)' }}>Not reached</p>
               }
             </div>

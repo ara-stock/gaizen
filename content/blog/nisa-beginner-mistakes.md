@@ -187,4 +187,4 @@ NISAで個別株を買うなら、短期的な値動きではなく、長期保�
 - [金融庁｜新しいNISA](https://www.fsa.go.jp/policy/nisa2/about/index.html)
 - [金融庁｜つみたて投資枠の対象商品](https://www.fsa.go.jp/policy/nisa2/about/tsumitate/index.html)
 - [日本取引所グループ｜レバレッジ型・インバース型商品について](https://www.jpx.co.jp/equities/products/etfs/risk/04.html)
-- [日本証券業協会｜投資の時間分散](https://www.jsda.or.jp/jikan/)
+- [日本証券業協会｜NISAで長期・積立・分散投資](https://www.jsda.or.jp/nisa/investment/)

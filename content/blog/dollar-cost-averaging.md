@@ -1,7 +1,7 @@
 ---
 title: "ドルコスト平均法とは — 毎日・毎月・年初一括、どれが最も効果的か"
 date: "2026-05-20"
-updatedAt: "2026-06-11"
+updatedAt: "2026-07-19"
 description: "ドルコスト平均法をわかりやすく解説。毎日・毎月・年初一括の3パターンをデータで比較。新NISA年初一括投資のすすめ、手取り10%積立ルール、1,000円からはじめる話まで。"
 tags: ["ドルコスト平均法", "積立投資", "NISA", "インデックス投資", "資産形成", "長期投資"]
 category: "us-stock"
@@ -130,7 +130,7 @@ S&P500で過去20年間（2002年〜2022年）を検証した結果、収益率�
 - **まずは1,000円から。慣れることが最初の目標**
 
 :::comment
-私は楽天証券でeMAXIS Slim 米国株(S&P500)に毎月10万円、楽天カードのクレカ積立で自動設定しています。設定したら基本的に触りません。相場が下がっても、上がっても、何もしない。「何もしない」が最善という設計を作るのが、長く続けるコツだと思っています。
+私は楽天証券でeMAXIS Slim 米国株(S&P500)を楽天カードのクレカ積立に設定しています。金額は家計と投資余力に合わせ、設定した後は相場の上下を理由に止めません。毎月「買うか、待つか」を考えなくてよい設計にすることが、長く続ける助けになっています。
 
 一括投資が統計的に有利なケースは多いですが、大きな金額を一度に入れたあと急落したときの精神的ダメージは相当なものです。分割で買い続けることで「タイミングを外した」という後悔がなくなる——それだけで投資を続けやすくなります。
 :::
@@ -139,9 +139,9 @@ S&P500で過去20年間（2002年〜2022年）を検証した結果、収益率�
 
 ## 参考リファレンス
 
-- [Vanguard Research (2012)「Dollar-cost averaging just means taking risk later」](https://corporate.vanguard.com/content/dam/corp/research/pdf/Dollar-cost_averaging_just_means_taking_risk_later_TLRIP062012.pdf)
+- [Vanguard Research｜Cost averaging: Invest now or temporarily hold your cash?](https://corporate.vanguard.com/content/dam/corp/research/pdf/cost_averaging_invest_now_or_temporarily_hold_your_cash.pdf)
 - [金融庁｜つみたて投資枠の対象商品一覧](https://www.fsa.go.jp/policy/nisa2/about/tsumitate/index.html)
-- [楽天証券｜楽天カードクレジット積立 概要](https://www.rakuten-sec.co.jp/web/lp/fund_card_payment/)
-- [SBI証券｜三井住友カードつみたて投資 概要](https://go.sbisec.co.jp/lp/lp_smcc_01.html)
+- [楽天証券｜クレカ積立（楽天カードクレジット決済）](https://www.rakuten-sec.co.jp/web/rfund/guide/creditcard.html)
+- [SBI証券｜三井住友カードつみたて投資](https://go.sbisec.co.jp/lp/sbixsmcc_card_01.html)
 
 ---

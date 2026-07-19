@@ -100,6 +100,6 @@ Both accounts are free to open and maintain. Open Rakuten, set up NISA recurring
 
 - [Rakuten Securities — NISA Overview](https://www.rakuten-sec.co.jp/web/nisa/)
 - [SBI Securities — NISA Overview](https://site0.sbisec.co.jp/marble/nisa/top.do)
-- [Rakuten Securities — Credit Card Investment (Rakuten Card)](https://www.rakuten-sec.co.jp/web/lp/fund_card_payment/)
-- [SBI Securities — Credit Card Investment (Sumitomo Mitsui Card)](https://go.sbisec.co.jp/lp/lp_smcc_01.html)
-- [Financial Services Agency Japan — NISA Account Statistics](https://www.fsa.go.jp/policy/nisa2/about/statistics/index.html)
+- [Rakuten Securities — Rakuten Card Fund Contributions](https://www.rakuten-sec.co.jp/web/rfund/guide/creditcard.html)
+- [SBI Securities — Sumitomo Mitsui Card Fund Contributions](https://go.sbisec.co.jp/lp/sbixsmcc_card_01.html)
+- [Financial Services Agency Japan — NISA Usage Statistics](https://www.fsa.go.jp/policy/nisa2/survey/index.html)

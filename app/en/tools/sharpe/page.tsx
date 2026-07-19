@@ -138,6 +138,7 @@ export default function EnSharpePage() {
 
   if (!raw) return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+      <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>Rolling Sharpe Ratio Chart</h1>
       <p className="text-sm" style={{ color: 'var(--muted)' }}>Loading...</p>
     </div>
   )
@@ -156,7 +157,7 @@ export default function EnSharpePage() {
       </div>
 
       <div className="mb-6 p-3 rounded-lg text-xs" style={{ backgroundColor: 'var(--accent-subtle)', border: '1px solid var(--accent-border)', color: 'var(--muted)' }}>
-        Sharpe = (mean monthly return ÷ monthly std. deviation) × √12　&nbsp;·&nbsp; Risk-free rate = 0, Window = 12 months
+        Sharpe = (mean monthly return ÷ monthly std. deviation) × √12　&nbsp;·&nbsp; Risk-free rate = 0, Window = 12 months. Uses adjusted monthly prices from Yahoo Finance via yfinance; taxes and fees are excluded. Results may differ from total-return indexes and actual portfolio performance.
       </div>
 
       <div className="rounded-xl border mb-6 overflow-hidden" style={{ borderColor: 'var(--border)' }}>
@@ -242,7 +243,7 @@ export default function EnSharpePage() {
       </div>
 
       <div className="p-5 rounded-xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-        <h2 className="text-sm font-semibold mb-4" style={{ color: 'var(--foreground)' }}>Average Sharpe Ratio Ranking (full period)</h2>
+        <h2 className="text-sm font-semibold mb-4" style={{ color: 'var(--foreground)' }}>Average of Rolling 12-Month Sharpe Ratios</h2>
         <div>
           {Object.entries(sharpeMap)
             .map(([name, pts]) => ({

@@ -5,7 +5,7 @@ updatedAt: "2026-06-05"
 description: "GAIZEN FINANCE is a personal investment blog built around one idea: high-probability choices, compounded over time. Here's the philosophy behind it, what I actually invest in, and why I write."
 tags: ["index investing", "long-term investing", "NISA", "S&P500", "FIRE", "investment philosophy"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 
@@ -90,7 +90,7 @@ The investment landscape in Japan is also different from most English-language f
 
 - [Financial Services Agency Japan — New NISA Overview](https://www.fsa.go.jp/policy/nisa2/about/index.html)
 - [S&P Global — S&P 500 Index](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
-- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.jp/fund/252931.html)
-- [William Bengen (1994) "Determining Withdrawal Rates Using Historical Data"](https://www.financialplanningassociation.org/article/journal/OCT94-determining-withdrawal-rates-using-historical-data)
+- [Mitsubishi UFJ Asset Management — eMAXIS Slim S&P500](https://emaxis.am.mufg.jp/fund/253266.html)
+- [William Bengen (1994) "Determining Withdrawal Rates Using Historical Data"](https://www.financialplanningassociation.org/learning/publications/journal/OCT94-determining-withdrawal-rates-using-historical-data)
 
 ---
