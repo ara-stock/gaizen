@@ -1,10 +1,10 @@
 ---
 title: "Rakuten Securities vs SBI Securities: Which Should You Choose?"
 date: "2026-05-28"
-updatedAt: "2026-06-10"
-description: "A real comparison of Rakuten Securities and SBI Securities from someone who uses both. Start with Rakuten, then add SBI as your investing gets more sophisticated."
+updatedAt: "2026-07-19"
+description: "A first-hand comparison of Rakuten Securities and SBI Securities across usability, bank integration, IPO allocation, and recurring investments."
 tags: ["Rakuten Securities", "SBI Securities", "brokerage account", "NISA", "Japan investing", "beginner"]
-category: "us-stock"
+category: "nisa"
 published: true
 featured: true
 ---
@@ -19,13 +19,13 @@ Once you're comfortable, add SBI Securities for specific purposes like IPOs and 
 
 ### Seamless Rakuten Bank Integration
 
-Linking Rakuten Securities with Rakuten Bank via "Money Bridge" boosts your ordinary savings rate to 0.1% per year (as of May 2026). Transferring funds between accounts is instant within the same app ecosystem.
+Linking Rakuten Securities with Rakuten Bank through Money Bridge qualifies the deposit account for a preferential rate. [Rakuten Bank's product page](https://www.rakuten-bank.co.jp/assets/fixeddep/savings/moneyblidge.html) lists 0.38% before tax on the portion up to JPY 10 million and 0.32% above that amount as of July 19, 2026. A further revision has already been announced for August 3, so check the current rate before relying on it.
 
 Managing your brokerage and bank together in one platform makes it much easier to see your total net worth at a glance.
 
 ### Buy US Stocks in Japanese Yen
 
-Rakuten Securities allows **yen-denominated settlement** for US stocks and ETFs. You don't need to manually convert yen to dollars before placing an order — the platform handles it. For investors who want to buy consistently without timing the FX rate, this is genuinely convenient.
+Rakuten Securities allows **yen-denominated settlement** for US stocks and ETFs. This removes a manual currency-conversion step, but the exchange rate used for the trade includes an FX spread. Compare convenience and currency cost separately.
 
 ### Clean, Intuitive App (iSPEED)
 
@@ -41,7 +41,7 @@ Use this feature carefully. If the market drops, the collateral value falls with
 
 ### Clean IPO Lottery Process
 
-SBI Securities handles IPO applications clearly, and the lottery process is fully equal — one vote per applicant regardless of application amount. This means even small investors have a fair shot.
+SBI Securities handles IPO applications online, but the lottery is **not** a one-person, one-vote drawing. [SBI Securities' allocation policy](https://faq.sbisec.co.jp/answer/5edf369650df500012206e0a/) states that 60% of the planned allocation is drawn according to valid shares applied for, while 30% is allocated through IPO Challenge Points.
 
 If you're interested in IPO investing, SBI Securities is essentially required.
 
@@ -58,10 +58,10 @@ SBI Securities tends to offer a broader range of bonds: foreign government bonds
 | Feature | Rakuten Securities | SBI Securities |
 |---|---|---|
 | Domestic stock trading fees | Free (Zero Course) | Free (Zero Revolution) |
-| Credit card investment cashback | Up to 1.0% (Rakuten Card) | Up to 5.0% first year (Sumitomo Card) |
+| Credit card investment rewards | Varies by card and fund | Varies by card and annual spending conditions |
 | Points | Rakuten Points | V-Points, Ponta, etc. |
 | Bank integration | Rakuten Bank (Money Bridge) | SBI Sumishin Net Bank |
-| IPO track record | Moderate | Among highest in industry |
+| IPO allocation | Check each offering | Standard lottery plus IPO Challenge Points |
 | USD stock in JPY | Yes | Yes |
 | Bond lineup | Standard | Extensive |
 
@@ -76,7 +76,7 @@ No brokerage account yet?
 Already using Rakuten and want more?
   → Add SBI Securities for IPOs and bonds
 
-Maximizing credit card cashback on recurring investments?
+Using a credit card for recurring investments?
   → Rakuten Card × Rakuten Securities
   → Or Mitsui Sumitomo Card Gold NL × SBI Securities
   → Pick based on which card fits your spending
@@ -86,12 +86,12 @@ Maximizing credit card cashback on recurring investments?
 
 Your assets get split across two places, which makes it harder to see your full picture.
 
-The fix: use a personal finance aggregator (like Money Forward) to see both accounts in one view, or draw a clear line — NISA and recurring investments at Rakuten, IPOs and bond research at SBI. That division removes the confusion.
+I keep the roles separate — NISA and recurring investments at Rakuten, IPOs and bond research at SBI — and record both balances in a Google spreadsheet at month-end. The method matters less than using one consistent view of the total.
 
 ## Summary
 
 - **For beginners who prioritize ease of use, Rakuten Securities is a strong candidate.** Its bank integration, yen settlement, and app are approachable
-- **Once comfortable → add SBI Securities** for IPO access, higher credit card cashback, and bond variety
+- **Once comfortable → add SBI Securities** for a defined purpose such as IPO applications or bond research
 - Keep it simple: Rakuten as primary, SBI as secondary
 
 Both accounts are free to open and maintain. Open Rakuten, set up NISA recurring investments, and once that's running on autopilot, layer in SBI Securities for the extras.
@@ -102,4 +102,6 @@ Both accounts are free to open and maintain. Open Rakuten, set up NISA recurring
 - [SBI Securities — NISA Overview](https://site0.sbisec.co.jp/marble/nisa/top.do)
 - [Rakuten Securities — Rakuten Card Fund Contributions](https://www.rakuten-sec.co.jp/web/rfund/guide/creditcard.html)
 - [SBI Securities — Sumitomo Mitsui Card Fund Contributions](https://go.sbisec.co.jp/lp/sbixsmcc_card_01.html)
+- [Rakuten Bank — Money Bridge Deposit Terms](https://www.rakuten-bank.co.jp/assets/fixeddep/savings/moneyblidge.html)
+- [SBI Securities — IPO Allocation Policy](https://faq.sbisec.co.jp/answer/5edf369650df500012206e0a/)
 - [Financial Services Agency Japan — NISA Usage Statistics](https://www.fsa.go.jp/policy/nisa2/survey/index.html)

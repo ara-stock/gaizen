@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'How GAIZEN FINANCE creates and verifies articles, uses first-hand experience and AI assistance, handles advertising, and corrects errors.',
   alternates: {
     canonical: 'https://gaizen.xyz/en/editorial-policy/',
-    languages: { ja: 'https://gaizen.xyz/editorial-policy/' },
+    languages: { ja: 'https://gaizen.xyz/editorial-policy/', en: 'https://gaizen.xyz/en/editorial-policy/' },
   },
 }
 

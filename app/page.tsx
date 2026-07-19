@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: {
     absolute: 'GAIZEN FINANCE — 長期投資を、迷わず続けるために',
   },
-  description: 'NISA・投資信託・資産管理・長期投資を中心に、初心者が自分で判断できるようになるための実践的な投資メディア。',
+  description: '投資の始め方、NISA、資産管理、企業分析を、個人投資家の経験と一次情報から学ぶ長期投資メディア。',
   alternates: {
     canonical: 'https://gaizen.xyz/',
     languages: { ja: 'https://gaizen.xyz/', en: 'https://gaizen.xyz/en/' },
@@ -54,6 +54,11 @@ const PILLARS = [
   },
   {
     label: '03',
+    title: '事業を理解して投資する',
+    description: '現在の利益創出力、事業の持続性、将来の成長余地を確認し、自分の言葉で投資理由を説明できる企業を選びます。',
+  },
+  {
+    label: '04',
     title: '長期で続ける仕組みを作る',
     description: '毎月の資産記録、入金ルール、リバランス方針を整理し、短期の値動きに振り回されにくい運用を目指します。',
   },
@@ -67,7 +72,7 @@ const TRUST_POINTS = [
 
 export default function HomePage() {
   const allPosts = getAllPosts()
-  const latestPosts = allPosts.slice(0, 3)
+  const latestPosts = allPosts.filter(post => !post.frontmatter.featured).slice(0, 3)
   const featuredPosts = allPosts.filter(p => p.frontmatter.featured).slice(0, 3)
   const portfolio = getPortfolioData()
 
@@ -83,13 +88,13 @@ export default function HomePage() {
             長期投資を、迷わず続けるために。
           </h1>
           <p className="text-base sm:text-lg leading-relaxed mb-10" style={{ color: 'var(--muted)' }}>
-            NISA・投資信託・資産管理を中心に、投資初心者が遠回りしないための考え方と手順を整理します。
-            相場予測よりも、続けられる仕組みを重視します。
+            投資の始め方から、NISA・資産管理・企業分析まで。実際の判断と失敗をもとに、
+            自分で納得して長期投資を続けるための考え方を整理します。
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="/blog/investing-first-30-days/"
               className="px-5 py-2.5 text-sm font-semibold rounded-md transition-opacity hover:opacity-80"
-              style={{ backgroundColor: 'var(--accent)', color: '#080c0a' }}
+              style={{ backgroundColor: 'var(--accent)', color: '#ffffff' }}
             >
               最初の30日を読む
             </Link>
@@ -121,8 +126,8 @@ export default function HomePage() {
       <section className="py-12 border-b" style={{ borderColor: 'var(--border)' }}>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {[
-            { label: '対象読者', value: '投資初心者から' },
-            { label: '主テーマ', value: 'NISA・投資信託' },
+            { label: '対象読者', value: '投資初心者・長期投資家' },
+            { label: '主テーマ', value: '制度・企業・資産管理' },
             { label: '投資期間', value: '長期前提' },
             { label: '運営方針', value: '経験 + 一次情報' },
           ].map(({ label, value }) => (

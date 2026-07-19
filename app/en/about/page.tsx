@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'Profile, investing experience, and decision framework of ara, a long-term investor focused on business growth and durability.',
   alternates: {
     canonical: 'https://gaizen.xyz/en/about/',
-    languages: { 'ja': 'https://gaizen.xyz/about/' },
+    languages: { ja: 'https://gaizen.xyz/about/', en: 'https://gaizen.xyz/en/about/' },
   },
 }
 
@@ -124,9 +124,18 @@ export default function EnAboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
 
+      <header className="mb-10 max-w-2xl">
+        <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>ABOUT</p>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-4 tracking-tight" style={{ color: 'var(--foreground)' }}>About GAIZEN FINANCE</h1>
+        <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
+          A long-term investing publication where individual investor ara documents real decisions, mistakes, and the research behind them.
+          The goal is to give readers clearer inputs for making their own informed decisions.
+        </p>
+      </header>
+
       {/* Author Profile */}
       <div className="mb-16 p-6 rounded-2xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-        <div className="flex items-start gap-5">
+        <div className="flex flex-col sm:flex-row items-start gap-5">
           <div className="flex-shrink-0">
             <Image
               src="/images/profile.jpg"
@@ -159,7 +168,7 @@ export default function EnAboutPage() {
           </div>
         </div>
         {/* Speech bubble */}
-        <div className="mt-4 ml-[88px] relative">
+        <div className="mt-4 sm:ml-[88px] relative">
           <div className="absolute -top-2 left-4 w-0 h-0"
             style={{ borderLeft: '6px solid transparent', borderRight: '6px solid transparent', borderBottom: '8px solid var(--border)' }} />
           <div className="absolute -top-1.5 left-4 w-0 h-0"
@@ -190,7 +199,7 @@ export default function EnAboutPage() {
       {/* GAIZEN Philosophy */}
       <div className="mb-16">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>GAIZEN</p>
-        <h1 className="text-3xl font-bold mb-6" style={{ color: 'var(--foreground)' }}>Invest. Grow. Breathe.</h1>
+        <h2 className="text-3xl font-bold mb-6" style={{ color: 'var(--foreground)' }}>Invest. Grow. Breathe.</h2>
         <div className="space-y-4 text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
           <p>
             <strong style={{ color: 'var(--foreground)' }}>GAIZEN</strong> comes from the Japanese word <strong style={{ color: 'var(--foreground)' }}>蓋然 (gaizen)</strong>, meaning probability or likelihood — the degree to which something is expected to occur.
@@ -232,7 +241,10 @@ export default function EnAboutPage() {
 
       {/* Case Studies */}
       <section className="mb-16">
-        <p className="text-xs tracking-widest mb-6 font-semibold" style={{ color: 'var(--accent)' }}>CASE STUDY</p>
+        <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>PERSONAL INVESTMENT THESIS</p>
+        <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--muted)' }}>
+          These are examples of hypotheses used in the author&apos;s own decisions, not guaranteed facts about future company performance. They are reviewed as results and business conditions change.
+        </p>
         <div className="space-y-4">
           <div className="p-6 rounded-xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'rgba(0,201,122,0.25)' }}>
             <p className="text-xs font-semibold mb-4" style={{ color: 'var(--accent)' }}>Alphabet (Google)</p>
@@ -268,7 +280,10 @@ export default function EnAboutPage() {
 
       {/* Sectors */}
       <section className="mb-16">
-        <p className="text-xs tracking-widest mb-6 font-semibold" style={{ color: 'var(--accent)' }}>STOCKS — Key Sectors</p>
+        <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>RESEARCH AREAS</p>
+        <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--muted)' }}>
+          These are current research areas and examples of holdings. See <a href="/en/portfolio/" style={{ color: 'var(--accent)' }}>Portfolio</a> for current positions and <a href="/en/thesis/" style={{ color: 'var(--accent)' }}>Thesis</a> for active themes.
+        </p>
         <div className="space-y-4">
           {sectors.map(s => {
             const regionColor = REGION_COLOR[s.region] ?? 'var(--accent)'

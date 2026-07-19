@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Privacy policy for GAIZEN FINANCE. Covers Google AdSense advertising, cookie usage, analytics, and data handling.',
   alternates: {
     canonical: 'https://gaizen.xyz/en/privacy/',
-    languages: { 'ja': 'https://gaizen.xyz/privacy/' },
+    languages: { ja: 'https://gaizen.xyz/privacy/', en: 'https://gaizen.xyz/en/privacy/' },
   },
 }
 
@@ -15,7 +15,7 @@ export default function EnPrivacyPage() {
       <div className="mb-12">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>LEGAL</p>
         <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>Privacy Policy</h1>
-        <p className="text-xs" style={{ color: 'var(--muted)' }}>Last updated: June 2026</p>
+        <p className="text-xs" style={{ color: 'var(--muted)' }}>Last updated: July 2026</p>
       </div>
 
       <div className="space-y-8">
@@ -23,7 +23,7 @@ export default function EnPrivacyPage() {
         <section>
           <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>About This Site</h2>
           <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-            GAIZEN FINANCE (URL: https://gaizen.xyz) is an independently operated website focused on long-term, diversified investing.
+            GAIZEN FINANCE (URL: https://gaizen.xyz) is an independently operated website focused on long-term investing.
             This Privacy Policy explains how user information is handled on this site.
           </p>
         </section>
@@ -32,13 +32,13 @@ export default function EnPrivacyPage() {
           <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>Advertising (Google AdSense)</h2>
           <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--muted)' }}>
             This site uses <strong style={{ color: 'var(--foreground)' }}>Google AdSense</strong> (Google LLC, USA) to display advertisements.
-            Google AdSense uses cookies and similar technologies to serve interest-based (personalized) ads based on your visits
-            to this and other websites.
+            As part of ad serving, Google and third-party vendors may place or read cookies in your browser or use web beacons,
+            IP addresses, and other identifiers to collect information for ad delivery, measurement, and personalization.
           </p>
           <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--muted)' }}>
-            For more information on how Google uses data, please visit{' '}
-            <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
-              Google&apos;s Advertising Policies
+            For more information, see{' '}
+            <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
+              How Google uses information from sites or apps that use its services
             </a>.
           </p>
           <div className="p-4 rounded-lg border text-sm" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', color: 'var(--muted)' }}>
@@ -64,14 +64,13 @@ export default function EnPrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>Cookies</h2>
+          <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>Cookies and Local Storage</h2>
           <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--muted)' }}>
-            Cookies are small data files stored in your browser. This site uses cookies for the following purposes:
+            Cookies and local storage allow websites to retain information in your browser. They may be used on this site for the following purposes:
           </p>
           <ul className="list-disc list-inside space-y-1 text-sm" style={{ color: 'var(--muted)' }}>
-            <li>Saving theme preferences (dark/light mode)</li>
-            <li>Ad personalization via Google AdSense</li>
-            <li>Traffic analytics (see below)</li>
+            <li>Saving theme preferences in local storage (dark/light mode)</li>
+            <li>Ad delivery, measurement, and personalization through Google AdSense</li>
           </ul>
           <p className="text-sm leading-relaxed mt-3" style={{ color: 'var(--muted)' }}>
             You can disable cookies in your browser settings, though some features (such as theme saving) may not function correctly.
@@ -82,8 +81,8 @@ export default function EnPrivacyPage() {
           <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>Analytics</h2>
           <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
             This site uses <strong style={{ color: 'var(--foreground)' }}>Cloudflare Web Analytics</strong> for traffic analysis.
-            This tool does not use cookies and does not collect personally identifiable information such as IP addresses.
-            Only aggregated statistics (page views, session duration, referrers) are collected.
+            According to Cloudflare, this tool does not use cookies, collect or use visitors&apos; personal data, or track individuals across websites.
+            It is used to review aggregate page views, referrers, and page-performance metrics.
           </p>
         </section>
 

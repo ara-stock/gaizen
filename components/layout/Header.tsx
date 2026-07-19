@@ -34,7 +34,7 @@ function ThemeToggle() {
     <button
       onClick={toggle}
       aria-label="Toggle theme"
-      className="w-8 h-8 flex items-center justify-center rounded-md transition-colors"
+      className="w-11 h-11 flex items-center justify-center rounded-md transition-colors"
       style={{ color: 'var(--muted)', border: '1px solid var(--border)' }}
       title={isLight ? 'ダークモードへ' : 'ライトモードへ'}
     >
@@ -71,10 +71,12 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--header-bg)', backdropFilter: 'blur(12px)' }}>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
-        <Link href={homeHref} className="flex items-center gap-1 tracking-widest text-sm font-bold flex-shrink-0">
-          <span style={{ color: 'var(--foreground)' }}>GAIZEN</span>
-          <span style={{ color: 'var(--accent)' }}> FINANCE</span>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+        <Link href={homeHref} className="flex items-center gap-2 tracking-widest text-sm font-bold flex-shrink-0" aria-label="GAIZEN FINANCE home">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 32 32" fill="none" style={{ color: 'var(--accent)' }}>
+            <path d="M2 2h28v28H2zM19.4 3.4 3.4 12.6l9.2 16 16-9.2-9.2-16ZM13.7 7.3l-6.4 11 11 6.4 6.4-11-11-6.4Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="miter" />
+          </svg>
+          <span><span style={{ color: 'var(--foreground)' }}>GAIZEN</span><span style={{ color: 'var(--accent)' }}> FINANCE</span></span>
         </Link>
 
         {/* Desktop nav */}
@@ -84,6 +86,7 @@ export default function Header() {
             return (
               <Link key={href} href={href}
                 className="text-xs tracking-wider transition-colors duration-150"
+                aria-current={active ? 'page' : undefined}
                 style={{ color: active ? 'var(--accent)' : 'var(--muted)' }}>
                 {label}
               </Link>
@@ -96,10 +99,11 @@ export default function Header() {
           <ThemeToggle />
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 text-sm"
+            className="md:hidden w-11 h-11 flex items-center justify-center text-sm"
             style={{ color: 'var(--muted)' }}
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
+            aria-expanded={menuOpen}
           >
             {menuOpen ? '✕' : '☰'}
           </button>
@@ -114,9 +118,6 @@ export default function Header() {
               {label}
             </Link>
           ))}
-          <div className="pt-2 border-t" style={{ borderColor: 'var(--border)' }}>
-            <LanguageSwitcher />
-          </div>
         </div>
       )}
     </header>

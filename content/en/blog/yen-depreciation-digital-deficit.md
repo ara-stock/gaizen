@@ -1,8 +1,8 @@
 ---
-title: "Why the Yen May Stay Weak — The Digital Deficit Argument"
+title: "Is Japan's Digital Deficit One Source of Yen Pressure?"
 date: "2026-05-16"
-updatedAt: "2026-05-16"
-description: "Why Japan's yen faces structural downward pressure beyond interest rate differentials. The digital deficit — ¥4–5 trillion per year flowing out to App Store, YouTube, Netflix, and Microsoft — and what it means for investors."
+updatedAt: "2026-07-19"
+description: "How overseas digital-service payments relate to the yen, considered alongside rate differentials, trade, primary income, and capital flows."
 tags: ["yen depreciation", "forex", "Japan economy", "digital deficit", "long-term investing"]
 category: "macro"
 published: true
@@ -26,9 +26,9 @@ Think about the digital services you use every day in Japan.
 - **App distribution**: App Store (Apple), Google Play
 - **Business tools**: Microsoft 365, Google Workspace, Zoom, Slack
 
-Almost all of these are **foreign (primarily US) services**. Every time Japanese users pay for these services, **yen is sold and converted to dollars**.
+Many of these services are provided by overseas companies. Payments from Japan are recorded as service imports and may contribute to demand for foreign currency during settlement. That does not mean every user payment creates an immediate, equal-sized yen sale in the foreign-exchange market.
 
-The scale is not small. Japan's digital deficit (trade deficit in digital services) has reached approximately **¥4–5 trillion per year** in recent years and is growing. That's roughly 1% of Japan's GDP (~¥600 trillion) — accumulating automatically, continuously, every year.
+The scale is material. Depending on which cloud, advertising, content, and licensing categories are included, Japanese government materials show a digital-related deficit measured in **several trillion yen per year**. Comparisons need to use the same definition and reference period.
 
 ## Why It's "Structural"
 
@@ -38,7 +38,7 @@ A trade deficit in goods can improve if imports fall. The digital services defic
 - **Cannot stop**: Even if individuals cancel YouTube or Netflix, Japan as a whole cannot
 - **Auto-billed**: Most are monthly subscriptions — yen flows out every month without users noticing
 
-Unless these services are replaced by Japanese alternatives, **the pressure to sell yen and buy dollars continues automatically**. Monetary policy can temporarily counteract it, but the underlying structure doesn't change.
+As long as overseas companies continue to supply these services, this source of service-account deficit remains. The yen is also influenced by rate differentials, trade, primary-income receipts, and portfolio and direct-investment flows. The digital deficit is one structural input, not a standalone forecast of direction or fair value.
 
 ## The Difficulty of Solutions
 
@@ -50,7 +50,7 @@ The fundamental solution, but extraordinarily difficult in practice. Building a 
 
 ### 2. Raising Interest Rates
 
-Higher rates strengthen the yen, but they also raise borrowing costs — mortgage payments, auto loans, business loans — creating real economic pain for households and businesses. This is a primary reason the Bank of Japan has been cautious about rate hikes.
+Higher rates can affect the yen, but they also influence inflation, wages, economic activity, financial stability, mortgages, and corporate funding costs. Monetary policy is not set for the exchange rate alone.
 
 ### 3. Digital Services Taxation
 
@@ -62,24 +62,24 @@ The realistic outcome is **incremental adjustments and continued management of t
 
 Interest rate differentials are often cited as the primary driver of exchange rates. As US-Japan spreads narrow, the yen should strengthen; as they widen, it should weaken.
 
-But the question "what is the fair value of the yen right now?" doesn't have a clean answer. Purchasing power parity (PPP) suggests something around ¥100 per dollar, but actual markets price in capital flows, policy expectations, sentiment, and structural factors simultaneously.
+But the question "what is the fair value of the yen right now?" does not have a clean answer. Purchasing-power-parity estimates vary with the price index and base period used, while markets price rates, policy expectations, trade and income balances, and capital flows simultaneously.
 
 **This is an area I continue to study — not one I feel I've fully resolved.**
 
 ## Investment Implications
 
-If the yen faces structural downward pressure, holding all assets in yen is a risk in itself.
+If future spending or investment goals involve foreign currencies, concentrating every asset in yen also creates risk.
 
-- **Holding dollar-denominated assets (S&P500 index, etc.) is a natural yen-depreciation hedge**
-- As yen weakens, the JPY-denominated value of foreign-currency assets rises
-- Japanese export-oriented stocks also tend to benefit from yen weakness
+- Foreign-currency assets tend to rise in yen terms when the yen weakens, but fall in yen terms when it strengthens
+- Equities carry market risk in addition to currency risk, so foreign assets do not guarantee protection from loss
+- The effect on Japanese companies depends on export exposure, import costs, and currency hedging
 
-Given the structural yen-selling pressure from the digital deficit, **holding foreign-currency assets is not speculative — it is risk management**.
+Rather than buying foreign assets solely because of the digital deficit, consider currency diversification in the context of future spending needs and the concentration of the overall portfolio.
 
 :::comment
 Two things made yen depreciation feel real to me personally. First: eating a light lunch abroad and paying roughly what you'd pay at a premium restaurant in central Tokyo. The same meal, the same calories — dramatically more yen. Second: looking at my subscriptions. Netflix, Spotify, cloud storage — the monthly totals have quietly climbed without me changing anything.
 
-The digital deficit isn't abstract. Every time someone in Japan pays for a US-built service, yen gets converted to dollars. That flow runs 24/7, across millions of users, every day. Understanding this made holding yen-only assets feel like the riskier choice.
+The digital deficit is not abstract, but neither is it a mechanical one-for-one currency trade. Seeing my own overseas spending and subscription costs rise made me reconsider the risk of keeping every asset and future spending plan concentrated in yen.
 :::
 
 ---

@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'GAIZEN FINANCEへのお問い合わせ。SNSリンクと連絡先。',
-  alternates: { canonical: 'https://gaizen.xyz/contact/', languages: { 'en': 'https://gaizen.xyz/en/contact/' } },
+  alternates: { canonical: 'https://gaizen.xyz/contact/', languages: { ja: 'https://gaizen.xyz/contact/', en: 'https://gaizen.xyz/en/contact/' } },
 }
 
 export default function ContactPage() {

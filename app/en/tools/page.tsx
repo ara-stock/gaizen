@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'Investment simulation tools — portfolio allocation, FIRE calculator, real estate yield, and Sharpe ratio analysis.',
   alternates: {
     canonical: 'https://gaizen.xyz/en/tools/',
-    languages: { 'ja': 'https://gaizen.xyz/tools/' },
+    languages: { ja: 'https://gaizen.xyz/tools/', en: 'https://gaizen.xyz/en/tools/' },
   },
 }
 

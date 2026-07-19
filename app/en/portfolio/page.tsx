@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'A long-term portfolio focused on business growth and durability, with allocations and holdings across Japanese stocks, US stocks, crypto assets, and stable-yield strategies.',
   alternates: {
     canonical: 'https://gaizen.xyz/en/portfolio/',
-    languages: { 'ja': 'https://gaizen.xyz/portfolio/' },
+    languages: { ja: 'https://gaizen.xyz/portfolio/', en: 'https://gaizen.xyz/en/portfolio/' },
   },
 }
 
