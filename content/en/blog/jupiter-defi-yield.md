@@ -1,7 +1,7 @@
 ---
 title: "Earning Yield on Jupiter DeFi — How Earn, Multiply, and Strategies Work"
 date: "2026-05-29"
-updatedAt: "2026-07-19"
+updatedAt: "2026-07-29"
 description: "A breakdown of how Jupiter Earn, Multiply, and Strategies generate yield on Solana — including the mechanics of how that yield is created, the risks involved, and the protocol's scale."
 tags: ["DeFi", "Solana", "Jupiter", "crypto", "Yield", "Lending", "JUP"]
 category: "crypto"
@@ -101,7 +101,7 @@ The mechanics:
 | Max Multiplier | 8.90x |
 | LTV | 89% |
 | Liquidation Threshold | 91% |
-| Liquidation Penalty | 1% (industry-low) |
+| Liquidation Penalty | 1% on the interface reviewed in May 2026 |
 
 The **spread between Supply APY and Borrow APY is what Multiply amplifies**. The higher that spread, the more effective a leveraged position becomes.
 
@@ -109,7 +109,7 @@ The **spread between Supply APY and Borrow APY is what Multiply amplifies**. The
 Choosing the right pair for Multiply is really about finding where the Supply APY - Borrow APY spread is widest. When USDC borrow rates spike, JUICED/USDC Multiply becomes unattractive — the borrowing cost eats into the yield. That's why this screenshot shows JUICED/USDT instead: at that moment, USDT's borrow rate left a better net spread. DeFi yields move in real time — what looks good today can look very different tomorrow.
 :::
 
-However, **leverage magnifies losses as well as gains** — a sharp drop in the collateral asset's price can trigger liquidation. Jupiter's 1% liquidation penalty is notably lower than the industry norm of 5–10%, which reduces the damage from forced liquidations.
+However, **leverage magnifies losses as well as gains** — a sharp drop in the collateral asset's price can trigger liquidation. The interface reviewed in May 2026 displayed a 1% liquidation penalty; verify the current figure and complete terms before opening a position.
 
 ### 3. Strategies (Automated Yield Strategies)
 
@@ -164,7 +164,7 @@ Beyond protocol risk, **how you manage your wallet is the single most important 
 - **Never click links sent via DM on any social platform.**
 - **Never interact with links from unofficial or unverified accounts.**
 
-The majority of DeFi losses don't come from smart contract exploits — they come from phishing sites and social engineering. Someone pretending to be support staff asks for your seed phrase. A fake airdrop link drains your wallet. The technical risks are real, but human error is responsible for far more losses.
+Phishing and social engineering are major risks alongside smart contract exploits. Their relative frequency cannot be generalized reliably across protocols and periods, so manage both protocol-level and user-level security risks.
 
 :::comment
 I use Jupiter Earn myself, and I stay aware of liquidation risk on leveraged positions at all times. For USDC-based simple lending, the risk profile is relatively lower — but "lower" does not mean zero. My personal rule with DeFi is to treat it as money I could afford to lose entirely. If that's not the case for a given position, it's too large.

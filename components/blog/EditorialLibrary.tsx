@@ -1,4 +1,5 @@
 import ArticleCard from '@/components/blog/ArticleCard'
+import Link from 'next/link'
 import type { PostMeta } from '@/types/post'
 
 type Locale = 'ja' | 'en'
@@ -55,6 +56,8 @@ export default function EditorialLibrary({ posts, locale = 'ja' }: EditorialLibr
   const basePath = locale === 'en' ? '/en/blog' : '/blog'
   const curatedSlugs = new Set(SECTIONS[locale].flatMap(section => section.slugs))
   const researchPosts = posts.filter(post => !curatedSlugs.has(post.slug))
+  const featuredResearch = researchPosts.slice(0, 12)
+  const archiveResearch = researchPosts.slice(12)
 
   return (
     <div className="space-y-20">
@@ -97,10 +100,31 @@ export default function EditorialLibrary({ posts, locale = 'ja' }: EditorialLibr
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {researchPosts.map(post => (
+            {featuredResearch.map(post => (
               <ArticleCard key={post.slug} post={post} basePath={basePath} locale={locale} />
             ))}
           </div>
+          {archiveResearch.length > 0 && (
+            <details className="mt-8 rounded-2xl border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+              <summary className="cursor-pointer px-5 py-4 text-sm font-semibold">
+                {locale === 'en'
+                  ? `Browse ${archiveResearch.length} more research notes`
+                  : `その他の調査ノート ${archiveResearch.length}件を見る`}
+              </summary>
+              <div className="grid sm:grid-cols-2 gap-x-8 gap-y-3 px-5 pb-5 pt-2 border-t" style={{ borderColor: 'var(--border)' }}>
+                {archiveResearch.map(post => (
+                  <Link
+                    key={post.slug}
+                    href={`${basePath}/${post.slug}/`}
+                    className="text-sm leading-relaxed transition-colors hover:text-green-500"
+                    style={{ color: 'var(--foreground)' }}
+                  >
+                    {post.frontmatter.title}
+                  </Link>
+                ))}
+              </div>
+            </details>
+          )}
         </section>
       )}
     </div>

@@ -90,18 +90,6 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* Monthly Notes */}
-      <section>
-        <h2 className="text-sm font-semibold mb-6" style={{ color: 'var(--foreground)' }}>Monthly Notes</h2>
-        <div className="space-y-4">
-          {portfolio.monthlyNotes.map((note, i) => (
-            <div key={i} className="p-5 rounded-lg border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-              <p className="text-xs font-semibold mb-2 font-mono" style={{ color: 'var(--accent)' }}>{note.month}</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>{note.note}</p>
-            </div>
-          ))}
-        </div>
-      </section>
     </div>
   )
 }

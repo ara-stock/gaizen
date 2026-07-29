@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import LanguageDetector from '@/components/layout/LanguageDetector'
+import AdSenseScript from '@/components/ads/AdSenseScript'
 import { serializeJsonLd } from '@/lib/json-ld'
 
 const SITE_URL = 'https://gaizen.xyz'
@@ -53,23 +53,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           description: SITE_DESCRIPTION,
           inLanguage: ['ja', 'en'],
           publisher: {
-            '@type': 'Person',
-            name: 'ara',
-            url: `${SITE_URL}/about/`,
-            sameAs: ['https://x.com/ara_stock'],
+            '@type': 'Organization',
+            name: SITE_NAME,
+            url: SITE_URL,
+            logo: {
+              '@type': 'ImageObject',
+              url: `${SITE_URL}/icon.svg`,
+            },
+            founder: {
+              '@type': 'Person',
+              name: 'ara',
+              url: `${SITE_URL}/about/`,
+              sameAs: ['https://x.com/ara_stock'],
+            },
           },
         }) }} />
       </head>
       <body className="min-h-full flex flex-col" style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)' }}>
-        {process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID &&
-          process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID !== 'ca-pub-XXXXXXXXXXXXXXXX' && (
-          <Script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID}`}
-            crossOrigin="anonymous"
-            strategy="afterInteractive"
-          />
-        )}
+        <AdSenseScript />
         <LanguageDetector />
         <Header />
         <main className="flex-1">

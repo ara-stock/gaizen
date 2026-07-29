@@ -76,7 +76,10 @@ export default function Header() {
           <svg aria-hidden="true" width="24" height="24" viewBox="0 0 32 32" fill="none" style={{ color: 'var(--accent)' }}>
             <path d="M2 2h28v28H2zM19.4 3.4 3.4 12.6l9.2 16 16-9.2-9.2-16ZM13.7 7.3l-6.4 11 11 6.4 6.4-11-11-6.4Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="miter" />
           </svg>
-          <span><span style={{ color: 'var(--foreground)' }}>GAIZEN</span><span style={{ color: 'var(--accent)' }}> FINANCE</span></span>
+          <span>
+            <span style={{ color: 'var(--foreground)' }}>GAIZEN</span>
+            <span className="hidden sm:inline" style={{ color: 'var(--accent)' }}> FINANCE</span>
+          </span>
         </Link>
 
         {/* Desktop nav */}
@@ -94,7 +97,7 @@ export default function Header() {
           })}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-1.5 sm:gap-3">
           <LanguageSwitcher />
           <ThemeToggle />
           {/* Mobile menu button */}

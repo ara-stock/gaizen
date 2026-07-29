@@ -5,7 +5,7 @@ updatedAt: "2026-05-22"
 description: "iDeCo is not 'tax savings' — it's 'tax deferral.' The lock-in until age 60, the fees, the taxation at withdrawal — here are the facts early retirement seekers should understand before rushing into a Defined Contribution pension."
 tags: ["iDeCo", "defined-contribution-pension", "corporate-DC", "tax-deferral", "early-retirement", "FIRE", "retirement-funds"]
 category: "jp-stock"
-published: true
+published: false
 featured: false
 ---
 

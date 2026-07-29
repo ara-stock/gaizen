@@ -5,7 +5,7 @@ updatedAt: "2026-06-10"
 description: "Framing BTC not as equity but as a commodity — and the case for holding it based on supply reduction, core user conviction, and inflation hedging."
 tags: ["BTC", "crypto", "long-term investing", "diversification", "inflation hedge"]
 category: "crypto"
-published: true
+published: false
 featured: true
 ---
 

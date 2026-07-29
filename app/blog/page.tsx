@@ -1,6 +1,5 @@
 import { getAllPosts } from '@/lib/posts'
 import EditorialLibrary from '@/components/blog/EditorialLibrary'
-import ReadingGuide from '@/components/blog/ReadingGuide'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
@@ -39,7 +38,6 @@ export default function BlogPage() {
         </div>
       </div>
 
-      <ReadingGuide />
       {posts.length > 0 ? <EditorialLibrary posts={posts} /> : (
         <div className="py-24 text-center">
           <p className="text-sm" style={{ color: 'var(--muted)' }}>記事はまだありません。</p>
