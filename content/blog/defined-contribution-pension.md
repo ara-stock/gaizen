@@ -5,7 +5,7 @@ updatedAt: "2026-05-22"
 description: "iDeCoは「節税」ではなく「課税の繰り延べ」です。60歳まで引き出せない縛り、手数料、受取時の課税——早期退職を目指す人が確定拠出年金に飛びつく前に知っておくべき事実を整理します。"
 tags: ["iDeCo", "確定拠出年金", "企業型DC", "節税", "早期退職", "FIRE", "老後資金"]
 category: "jp-stock"
-published: true
+published: false
 featured: false
 ---
 

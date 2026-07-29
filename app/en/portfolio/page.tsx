@@ -89,11 +89,6 @@ const HOLDING_POLICY = [
   'Maintain cash for emergencies and future investment opportunities.',
 ]
 
-const MONTHLY_NOTES: Record<string, string> = {
-  '2026-05': 'Japanese stocks trending well. TOPIX near highs amid continued yen weakness. S&P 500 also showing resilience. Overall portfolio stable — no rebalancing needed.',
-  '2026-04': 'Yen strengthened following Bank of Japan policy changes, temporarily lowering the yen-denominated value of US holdings. Impact was limited given high domestic stock allocation. No change from a long-term perspective.',
-}
-
 export default function EnPortfolioPage() {
   const portfolio = getPortfolioData()
 
@@ -178,20 +173,6 @@ export default function EnPortfolioPage() {
         </div>
       </section>
 
-      {/* Monthly Notes */}
-      <section>
-        <h2 className="text-sm font-semibold mb-6" style={{ color: 'var(--foreground)' }}>Monthly Notes</h2>
-        <div className="space-y-4">
-          {portfolio.monthlyNotes.map((note, i) => (
-            <div key={i} className="p-5 rounded-lg border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-              <p className="text-xs font-semibold mb-2 font-mono" style={{ color: 'var(--accent)' }}>{note.month}</p>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-                {MONTHLY_NOTES[note.month] ?? note.note}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
     </div>
   )
 }

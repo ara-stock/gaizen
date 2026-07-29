@@ -5,7 +5,7 @@ updatedAt: "2026-06-11"
 description: "成長株集中投資と配当再投資、どちらが資産を増やすか。複利効果・税効率の観点から比較し、増配株を一部組み合わせるハイブリッド戦略を解説します。"
 tags: ["成長株", "配当再投資", "増配株", "インデックス投資", "税効率", "複利"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 
 ---

@@ -133,7 +133,7 @@ export default function EnFireSimulator() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
       <div className="mb-10">
-        <Link href="/en/tools/" className="text-xs mb-4 block hover:text-white transition-colors" style={{ color: 'var(--muted)' }}>
+        <Link href="/en/tools/" className="text-xs mb-4 block hover:text-green-600 transition-colors" style={{ color: 'var(--muted)' }}>
           ← Back to Tools
         </Link>
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>TOOLS</p>

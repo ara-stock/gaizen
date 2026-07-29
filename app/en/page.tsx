@@ -144,7 +144,7 @@ export default function EnHomePage() {
             <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>FEATURED</p>
             <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>Start Here</h2>
           </div>
-          <Link href="/en/blog/" className="text-xs hover:text-white transition-colors" style={{ color: 'var(--muted)' }}>
+          <Link href="/en/blog/" className="text-xs hover:text-green-600 transition-colors" style={{ color: 'var(--muted)' }}>
             View all →
           </Link>
         </div>
@@ -159,7 +159,7 @@ export default function EnHomePage() {
             <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>BLOG</p>
             <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>Latest Articles</h2>
           </div>
-          <Link href="/en/blog/" className="text-xs hover:text-white transition-colors" style={{ color: 'var(--muted)' }}>
+          <Link href="/en/blog/" className="text-xs hover:text-green-600 transition-colors" style={{ color: 'var(--muted)' }}>
             View all →
           </Link>
         </div>
@@ -198,7 +198,7 @@ export default function EnHomePage() {
             <p className="text-xs tracking-widest mb-1 font-semibold" style={{ color: 'var(--accent)' }}>PORTFOLIO</p>
             <h2 className="text-xl font-semibold" style={{ color: 'var(--foreground)' }}>Asset Allocation</h2>
           </div>
-          <Link href="/en/portfolio/" className="text-xs transition-colors hover:text-white" style={{ color: 'var(--muted)' }}>
+          <Link href="/en/portfolio/" className="text-xs transition-colors hover:text-green-600" style={{ color: 'var(--muted)' }}>
             View details →
           </Link>
         </div>
@@ -229,7 +229,7 @@ export default function EnHomePage() {
               style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
               <span className="text-xs font-mono" style={{ color: 'var(--accent)' }}>0{index + 1}</span>
               <div>
-                <p className="text-sm font-semibold mb-0.5 group-hover:text-white transition-colors" style={{ color: 'var(--foreground)' }}>{label}</p>
+                <p className="text-sm font-semibold mb-0.5 group-hover:text-green-600 transition-colors" style={{ color: 'var(--foreground)' }}>{label}</p>
                 <p className="text-xs" style={{ color: 'var(--muted)' }}>{desc}</p>
               </div>
             </Link>

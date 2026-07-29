@@ -63,6 +63,7 @@ export default async function EnArticlePage({ params }: Props) {
   const { frontmatter, content, readingTime } = post
   const headings = extractHeadings(content)
   const related = getRelatedPosts(slug, frontmatter.tags, 'en')
+  const [nextPost, ...moreRelated] = related
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -71,8 +72,18 @@ export default async function EnArticlePage({ params }: Props) {
     description: frontmatter.description,
     datePublished: frontmatter.date,
     dateModified: frontmatter.updatedAt || frontmatter.date,
-    author: { '@type': 'Person', name: 'ara', url: 'https://gaizen.xyz/en/about/' },
-    publisher: { '@type': 'Organization', name: 'GAIZEN FINANCE', url: 'https://gaizen.xyz' },
+    author: {
+      '@type': 'Person',
+      name: 'ara',
+      url: 'https://gaizen.xyz/en/about/',
+      sameAs: ['https://x.com/ara_stock'],
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'GAIZEN FINANCE',
+      url: 'https://gaizen.xyz',
+      logo: { '@type': 'ImageObject', url: 'https://gaizen.xyz/icon.svg' },
+    },
     keywords: frontmatter.tags.join(', '),
     inLanguage: 'en',
     url: `https://gaizen.xyz/en/blog/${slug}/`,
@@ -106,12 +117,13 @@ export default async function EnArticlePage({ params }: Props) {
           <article className="min-w-0">
             <header className="mb-10 pb-8 border-b" style={{ borderColor: 'var(--border)' }}>
               <div className="flex flex-wrap gap-2 mb-4">
-                {frontmatter.tags.map(tag => <Tag key={tag} tag={tag} basePath="/en/blog" linked={false} />)}
+                {frontmatter.tags.slice(0, 3).map(tag => <Tag key={tag} tag={tag} basePath="/en/blog" linked={false} />)}
               </div>
               <h1 className="text-2xl sm:text-3xl font-bold leading-tight mb-6" style={{ color: 'var(--foreground)' }}>
                 {frontmatter.title}
               </h1>
               <div className="flex flex-wrap items-center gap-4 text-xs" style={{ color: 'var(--muted)' }}>
+                <Link href="/en/about/" className="transition-colors hover:text-green-500">By ara</Link>
                 <span>
                   {new Date(frontmatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                 </span>
@@ -131,6 +143,22 @@ export default async function EnArticlePage({ params }: Props) {
             <div className="mt-10 flex justify-end">
               <ShareButton title={frontmatter.title} url={`https://gaizen.xyz/en/blog/${slug}/`} label="Share on 𝕏" />
             </div>
+
+            {nextPost && (
+              <Link
+                href={`/en/blog/${nextPost.slug}/`}
+                className="mt-8 block rounded-2xl border p-5 transition-colors hover:border-green-700"
+                style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+              >
+                <span className="text-xs tracking-widest font-semibold" style={{ color: 'var(--accent)' }}>READ NEXT</span>
+                <p className="mt-2 text-base font-semibold leading-snug" style={{ color: 'var(--foreground)' }}>
+                  {nextPost.frontmatter.title}
+                </p>
+                <p className="mt-2 text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
+                  {nextPost.frontmatter.description}
+                </p>
+              </Link>
+            )}
 
             {/* Author bio */}
             <div className="mt-6 pt-8 border-t" style={{ borderColor: 'var(--border)' }}>
@@ -161,11 +189,11 @@ export default async function EnArticlePage({ params }: Props) {
 
             <AdUnit slot="5151883773" format="auto" className="my-10" />
 
-            {related.length > 0 && (
+            {moreRelated.length > 0 && (
               <section className="mt-16 pt-10 border-t" style={{ borderColor: 'var(--border)' }}>
                 <h2 className="text-base font-semibold mb-6" style={{ color: 'var(--foreground)' }}>Related Articles</h2>
                 <div className="grid sm:grid-cols-2 gap-4">
-                  {related.map(p => <ArticleCard key={p.slug} post={p} basePath="/en/blog" locale="en" />)}
+                  {moreRelated.map(p => <ArticleCard key={p.slug} post={p} basePath="/en/blog" locale="en" />)}
                 </div>
               </section>
             )}

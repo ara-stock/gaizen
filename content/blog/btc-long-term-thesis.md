@@ -5,7 +5,7 @@ updatedAt: "2026-06-10"
 description: "BTCを株式ではなく「商品」として捉え、インフレヘッジ・供給減少・コアユーザーの熱狂という視点からポートフォリオにおける役割を整理します。"
 tags: ["BTC", "仮想通貨", "長期投資", "分散投資", "インフレヘッジ"]
 category: "crypto"
-published: true
+published: false
 featured: true
 ---
 

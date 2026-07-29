@@ -1,7 +1,7 @@
 ---
 title: "Why I Hold BTC — Treating It as a Commodity, Not a Currency"
 date: "2026-05-30"
-updatedAt: "2026-06-10"
+updatedAt: "2026-07-29"
 description: "BTC as a digital commodity. The halving mechanism, a maturing market cap, GOX-driven supply reduction, and why I hold it without expecting too much from it."
 tags: ["BTC", "Bitcoin", "crypto", "Halving", "Commodity", "inflation hedge"]
 category: "crypto"
@@ -47,32 +47,28 @@ The halving is elegant because it's automatic. No human decides when to tighten 
 
 ---
 
-## Market Cap Near Alphabet's — A Maturing Asset
+## How I View BTC at Its Current Scale
 
-BTC's market cap has reached a level comparable to **Alphabet (Google)** — both sitting in the $2–3 trillion range as of 2026.
-
-This is meaningful. BTC is no longer a fringe asset in a corner of the internet. It's one of the largest stores of value in the world. But it also means the era of 10x–50x returns is likely behind us.
+BTC's market capitalization changes with its price every day, but it is already large enough to be compared with major listed companies. I do not assume that an asset at this scale will repeat the percentage gains of its earliest years. Position size needs to reflect both upside and drawdown risk.
 
 :::comment
-Knowing that BTC's market cap is close to Alphabet's reframes what's reasonable to expect. Investors should not assume the explosive returns of its early years will repeat. Because future prices cannot be predicted reliably, I manage the risk through position size rather than a price target.
+BTC is no longer a small corner of the crypto market. As market capitalization grows, repeating the same percentage gain requires progressively more capital. Because future prices cannot be predicted reliably, I manage the risk through position size rather than a price target.
 :::
 
 ---
 
-## GOX: Lost BTC Increases Scarcity Over Time
+## Lost Keys Are a Custody Risk, Not an Investment Benefit
 
-BTC has an unusual property: **it's easy to lose permanently**.
+BTC can become inaccessible when the owner loses access to the private key.
 
 - A wallet's private key is forgotten or destroyed
 - BTC is sent to the wrong address (called "GOX" in the crypto community — derived from the infamous Mt. Gox exchange collapse)
 - An exchange is hacked
 
-Unlike gold, which can be melted and recovered, **lost BTC is gone forever**. The crypto community estimates that millions of BTC have already been permanently removed from circulation this way.
-
-This creates a quiet, ongoing reduction in actual supply — separate from the halving mechanism — that incrementally raises the relative scarcity of remaining BTC.
+Inaccessible coins may stop moving on-chain, but their exact amount cannot be verified. I do not count accidental loss as part of the investment case. It is a custody risk that needs to be managed through exchange selection, wallet practices, and backups.
 
 :::comment
-The "GOX" phenomenon is one of the more counterintuitive things about BTC. Assets that can be permanently destroyed or lost reduce circulating supply over time, which supports long-term scarcity. It's not a designed feature — it's an emergent one. But it functions like an additional deflationary pressure on top of the halving schedule.
+Bitcoin's issuance cap and an owner losing a private key are separate issues. I treat the latter as a risk of self-custody and third-party custody, not as evidence that the asset should become more valuable.
 :::
 
 ---

@@ -31,11 +31,11 @@ export default function AdUnit({ slot, format = 'auto', responsive = true, class
   if (!adUnitsEnabled || !publisherId || publisherId === 'ca-pub-XXXXXXXXXXXXXXXX') return null
 
   return (
-    <aside className={className} aria-label="Advertisement">
+    <aside className={`ad-slot ${className ?? ''}`} aria-label="Advertisement">
       <p className="mb-2 text-center text-[10px] tracking-[0.2em]" style={{ color: 'var(--muted)' }}>広告 / ADVERTISEMENT</p>
       <ins
         className="adsbygoogle"
-        style={{ display: 'block', minHeight: '120px' }}
+        style={{ display: 'block', minHeight: '250px' }}
         data-ad-client={publisherId}
         data-ad-slot={slot}
         data-ad-format={format}

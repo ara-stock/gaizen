@@ -141,6 +141,10 @@ h1[id], h2[id], h3[id], h4[id] { scroll-margin-top: 5rem; }
 .prose hr { border: none; border-top: 1px solid var(--border); margin: 2.5em 0; }
 .prose img { border-radius: 8px; border: 1px solid var(--border); }
 
+.ad-slot {
+  min-height: 278px;
+}
+
 /* Author comment bubble */
 .prose .author-comment {
   display: flex;
