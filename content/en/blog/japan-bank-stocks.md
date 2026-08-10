@@ -1,8 +1,8 @@
 ---
-title: "\"When the Banks Fall, Japan Falls\" — Why I Invest in MUFG, SMFG, and Mizuho"
+title: "Why I Hold Japanese Mega-Bank Stocks — Earnings Drivers and Risks"
 date: "2026-05-29"
-updatedAt: "2026-06-10"
-description: "Banks are the foundation of every business. With structural yen weakness, rising rates, and the new NISA boom as tailwinds, here's why Japan's mega-banks deserve a place in a long-term portfolio."
+updatedAt: "2026-08-10"
+description: "A primary-source comparison of MUFG, SMFG, and Mizuho, covering interest rates, overseas operations, credit costs, and the factors I monitor as a long-term shareholder."
 tags: ["Japanese stocks", "MUFG", "SMFG", "Mizuho", "bank stocks", "individual stocks", "high dividend", "interest rates"]
 category: "japan-stock"
 published: true
@@ -11,31 +11,31 @@ featured: false
 
 ## Why Banks?
 
-When evaluating individual stocks, I ask one question: can the company survive even if its industry changes dramatically? Banking has an answer almost no other sector can give.
+When evaluating an individual stock, I ask whether demand for its business can persist over the long term. Banks provide lending, payments, and asset-management infrastructure, but they also carry sector-specific risks such as regulation, credit costs, and losses on securities. This article covers both the earnings drivers and the conditions I monitor while holding these stocks.
 
 :::comment
-My core reason for investing in banks is that **banks are the origin of all business activity**. Lending, payments, asset management — every economic transaction flows through a bank. And when MUFG or SMFG goes under, that means Japan's economy itself has stopped functioning. In that scenario, no asset class survives. Investing in mega-banks is, in a sense, an act of faith that Japan will continue to work.
+My core reason for investing in banks is that **demand for financial infrastructure should persist as long as households and businesses remain active**. But being essential to society does not automatically make a company a good investment. I continue to check earnings power, capital efficiency, shareholder returns, and credit costs rather than treating systemic importance as a guarantee.
 :::
 
 ---
 
-## Three Structural Tailwinds
+## Three Earnings Drivers I Monitor
 
-### 1. Structural Yen Weakness → Asset Appreciation
+### 1. Overseas Operations and Currency Effects
 
-Japan's persistent yen depreciation, driven by the US-Japan interest rate differential, has been a tailwind for banks with large overseas operations. MUFG's Asian subsidiaries (Krungsri in Thailand, Bank Danamon in Indonesia) and SMFG's SMBC Aviation Capital have seen overseas earnings rise significantly in yen terms.
+Japan's mega-banks own overseas assets and subsidiaries, so exchange rates affect the yen value of foreign earnings. MUFG's Asian subsidiaries, including Krungsri in Thailand and Bank Danamon in Indonesia, and SMFG's SMBC Aviation Capital are examples. I separate growth in the underlying overseas businesses from currency translation: a weaker yen may lift reported yen earnings, but it is not automatically positive in every period.
 
 ### 2. Rising Interest Rates → Expanded Net Interest Margin
 
-The Bank of Japan ended its zero and negative interest rate policies in 2024 and has since moved to a gradual rate normalization path. For banks, rising rates mean a wider spread between lending rates and deposit rates. MUFG's FY2024 (ended March 2025) consolidated net profit attributable to shareholders reached **¥1.8629 trillion** — a new record. SMFG posted **¥1.1779 trillion**, also a record.
+The Bank of Japan ended its zero and negative interest rate policies in 2024 and has since moved toward rate normalization. Higher rates can improve lending spreads. For the year ended March 2026, net profit attributable to owners of the parent was **¥2.4272 trillion** at MUFG and **¥1.5829 trillion** at SMFG. Deposit costs and credit costs also move with the rate environment, so I do not attribute the increase in profit to rates alone.
 
 :::comment
 During the zero-rate era, bank stocks were widely written off as "dead." As rate normalization became more plausible, I thought the mega-banks' earnings structures deserved another look. Higher rates are not guaranteed, however, and rapid rate moves can also create bond valuation losses and higher credit costs. My bank positions are long-term holdings that account for those risks, not a short-term rate trade.
 :::
 
-### 3. New NISA Boom → Trust Fee Revenue
+### 3. Asset-Management and Fiduciary Revenue
 
-Japan's new NISA program (launched 2024) has driven massive inflows into index funds like eMAXIS Slim US Equity (S&P500) and eMAXIS Slim All Country. As more individuals invest through these funds, the trust banking divisions that manage them collect stable, recurring fee income. MUFG's Fiduciary Services division (anchored by Mitsubishi UFJ Trust and Banking) benefits directly.
+The adoption of the new NISA can expand customer relationships across brokerage, asset management, fiduciary services, and wealth management. Fund inflows do not translate directly into mega-bank profit, however. I look at each group's assets under management, fee income, and segment profit to determine whether broader participation is producing a meaningful earnings contribution.
 
 ---
 
@@ -64,7 +64,7 @@ Corporate Banking (¥483.3B) and Global CIB (¥340.2B) form the two pillars — 
 - Dividend yield: approximately 3–4% (as of 2025)
 - Ongoing share buybacks
 - Progressive dividend policy (payout ratio increasing over time)
-- FY2025 target: ¥2 trillion net profit (another record high)
+- FY2025 net profit attributable to owners of the parent: ¥2.4272 trillion
 
 ---
 
@@ -72,7 +72,7 @@ Corporate Banking (¥483.3B) and Global CIB (¥340.2B) form the two pillars — 
 
 ### Wholesale Strength and International Scale
 
-SMFG's SMBC Nikko Securities and Sumitomo Mitsui Trust handle defined contribution (DC) pension plan management for Japanese corporations, providing a recurring fee stream — though this is a supplementary factor rather than the central investment thesis.
+SMFG also reaches customers through securities and asset-management businesses such as SMBC Nikko Securities. Despite the similar name, Sumitomo Mitsui Trust Bank belongs to Sumitomo Mitsui Trust Group and is not part of SMFG.
 
 The more defining characteristics are **wholesale banking strength and international operations**. SMBC Aviation Capital's global aircraft leasing portfolio and the breadth of the international division are SMFG's clearest structural differentiators.
 
@@ -89,7 +89,7 @@ I chose SMFG alongside MUFG primarily because of its strong positioning in the s
 | Markets | Trading and ALM | ¥474.5B |
 | Retail | Individuals and SMEs | ¥273.8B |
 
-Consolidated net profit: **¥1.1779 trillion** (22% YoY increase, all-time record). Wholesale and international together account for over 60% of earnings.
+The segment table above covers the year ended March 2025. For the year ended March 2026, net profit attributable to owners of the parent was **¥1.5829 trillion**.
 
 ---
 
@@ -103,7 +103,7 @@ What distinguishes Mizuho is its **broad corporate lending network spanning a wi
 
 As a comprehensive financial group encompassing banking, securities, and trust, Mizuho has a strong presence in large corporate lending and relationships with government agencies and public institutions — areas where its two larger rivals are comparatively less focused.
 
-Consolidated net profit: **¥885.4 billion** (30% YoY increase, all-time record).
+For the year ended March 2026, net profit attributable to owners of the parent was **¥1.2486 trillion**.
 
 ---
 
@@ -111,7 +111,7 @@ Consolidated net profit: **¥885.4 billion** (30% YoY increase, all-time record)
 
 | Metric | MUFG | SMFG | Mizuho |
 |--------|------|------|--------|
-| Net Profit FY2024 | ¥1.8629T | ¥1.1779T | ¥885.4B |
+| Net profit attributable to owners of the parent (FY2025) | ¥2.4272T | ¥1.5829T | ¥1.2486T |
 | Core Strength | Corporate banking + Global CIB | Wholesale + International | Broad corporate/policy lending |
 | Dividend Yield | ~3–4% | ~3–4% | ~3–4% |
 | My Conviction | ◎ | ◎ | △ (small) |
@@ -122,24 +122,33 @@ Consolidated net profit: **¥885.4 billion** (30% YoY increase, all-time record)
 
 ## Summary
 
-Investing in mega-banks is a bet that Japan's economy continues to function. Three structural tailwinds — rate normalization, yen-driven asset appreciation, and NISA-fueled trust fee growth — are aligned simultaneously, which is rare.
+For mega-bank investors, interest rates are only one part of the picture. Overseas operations, fee businesses, credit costs, and capital efficiency also need to be monitored.
+
+- **Rate normalization:** may improve lending spreads, but can also increase bond losses and credit costs
+- **Asset management:** evaluate whether a broader customer base produces measurable segment earnings
+- **Overseas operations:** separate underlying business growth from currency translation
+
+Taken together, these factors make Japanese mega-banks reasonable long-term candidates for my portfolio. Their social importance is not, by itself, an investment case, so I revisit the thesis after each set of results.
 
 :::comment
-Bank stocks have a boring reputation. But right now, all the classic textbook tailwinds for banks are stacking up in Japan at the same time. "Rising rates = bank profits" is finally playing out here after decades of suppression. Among my holdings, this is one of the segments where I expect the strongest performance over the next several years.
+Bank stocks are often reduced to the idea that rising rates automatically produce higher profits. In practice, deposit rates, loan demand, securities gains and losses, and credit costs move at the same time. I hold MUFG and SMFG as my main positions, but I review these conditions after each earnings release rather than relying on the rate narrative alone.
 :::
 
 ---
 
 ## Sources
 
-All segment profit and consolidated net income figures in this article are drawn from official disclosures by each company.
+The segment tables use results for the year ended March 2025, while the comparison table uses net profit for the year ended March 2026. The periods are labeled separately to avoid treating them as directly comparable data sets.
 
 - **Mitsubishi UFJ Financial Group**
+  - [FY2025 Financial Results (Japanese GAAP, Consolidated)](https://www.mufg.jp/dam/ir/fs/2025/pdf/summary2603_ja.pdf)
   - [FY2024 Financial Results (Japanese GAAP, Consolidated)](https://www.mufg.jp/dam/ir/fs/2024/pdf/summary2503_ja.pdf)
   - [IR Information](https://www.mufg.jp/ir/index.html)
 - **Sumitomo Mitsui Financial Group**
+  - [FY2025 Financial Results (Japanese GAAP, Consolidated)](https://www.smfg.co.jp/investor/financial/latest_statement/2026_3/2026_fy_01.pdf)
   - [FY2024 Financial Results (Japanese GAAP, Consolidated)](https://www.smfg.co.jp/investor/financial/latest_statement/2025_3/2025_fy_01.pdf)
   - [IR Information](https://www.smfg.co.jp/investor/financial/latest_statement.html)
 - **Mizuho Financial Group**
+  - [FY2025 Financial Results (Japanese GAAP, Consolidated)](https://www.mizuho-fg.co.jp/investors/financial/tanshin/pdf/data2603_fy.pdf)
   - [FY2024 Financial Results (Japanese GAAP, Consolidated)](https://www.mizuho-fg.co.jp/investors/financial/tanshin/pdf/data2503_fy.pdf)
   - [IR Information](https://www.mizuho-fg.co.jp/investors/financial/tanshin/index.html)

@@ -13,7 +13,7 @@ featured: false
 
 The new NISA system (launched 2024) allows up to ¥3.6 million per year in tax-free investments.
 
-> This article focuses on how I combine recurring contributions, lump-sum investing, and individual stocks. For a beginner-oriented framework, see "[A Practical Framework for the New NISA](/en/blog/nisa-perfect-strategy/)."
+> This article brings the framework into one place: how the NISA allowances work and how I combine recurring contributions, lump-sum investing, and individual stocks in practice.
 
 | Allowance | Annual Limit | Eligible Products |
 |-----------|-------------|------------------|

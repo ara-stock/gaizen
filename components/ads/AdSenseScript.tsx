@@ -6,12 +6,6 @@ import { usePathname } from 'next/navigation'
 const CONTENT_ROUTES = [
   '/blog',
   '/en/blog',
-  '/about',
-  '/en/about',
-  '/portfolio',
-  '/en/portfolio',
-  '/thesis',
-  '/en/thesis',
 ]
 
 function isContentRoute(pathname: string) {

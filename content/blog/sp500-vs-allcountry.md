@@ -5,7 +5,7 @@ updatedAt: "2026-06-11"
 description: "S&P500とオルカン（全世界株式）の違いを信託報酬・構成銘柄・パフォーマンス・シャープレシオで比較。選び方と積立を継続する際の考え方を整理します。"
 tags: ["S&P500", "オルカン", "インデックス投資", "NISA", "積立投資", "長期投資"]
 category: "us-stock"
-published: true
+published: false
 featured: true
 ---
 

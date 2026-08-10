@@ -5,7 +5,7 @@ updatedAt: "2026-06-11"
 description: "A comparison of S&P500 and All-Country funds across fees, holdings, performance, and Sharpe ratio, with a framework for choosing and sustaining contributions."
 tags: ["S&P500", "All-Country", "index investing", "NISA", "long-term investing"]
 category: "us-stock"
-published: true
+published: false
 featured: true
 ---
 

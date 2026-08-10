@@ -5,7 +5,7 @@ updatedAt: "2026-07-19"
 description: "新NISAの積立投資枠と成長投資枠をどう使い分けるか。投資初心者が無理なく始めるための積立額、商品選び、一括投資と個別株の判断基準を整理します。"
 tags: ["NISA", "積立投資枠", "成長投資枠", "eMAXIS Slim", "S&P500", "オルカン", "インデックス投資"]
 category: "nisa"
-published: true
+published: false
 featured: false
 
 ---

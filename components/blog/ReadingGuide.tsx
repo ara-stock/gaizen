@@ -11,7 +11,7 @@ const GUIDES = {
     {
       title: 'NISA・投資信託を理解する',
       description: '制度と商品の仕組みを理解し、自分で選べる状態を目指します。',
-      slugs: ['nisa-perfect-strategy', 'how-to-read-mutual-fund-documents', 'sp500-vs-allcountry'],
+      slugs: ['nisa-360-full-utilization', 'how-to-read-mutual-fund-documents', 'why-sp500-over-allcountry'],
     },
     {
       title: '投資方針を組み立てる',
@@ -28,7 +28,7 @@ const GUIDES = {
     {
       title: 'Understand NISA and Funds',
       description: 'Learn how the system and products work before choosing what to buy.',
-      slugs: ['nisa-perfect-strategy', 'how-to-read-mutual-fund-documents', 'sp500-vs-allcountry'],
+      slugs: ['nisa-360-full-utilization', 'how-to-read-mutual-fund-documents', 'why-sp500-over-allcountry'],
     },
     {
       title: 'Build an Investment Policy',
