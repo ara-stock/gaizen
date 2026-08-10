@@ -5,7 +5,7 @@ updatedAt: "2026-07-29"
 description: "SolanaのDeFiスーパーアプリJupiterが提供するEarn・Multiply・Strategiesの仕組みを解説します。利回りの源泉・リスク・規制上の留意点も含めて整理します。"
 tags: ["DeFi", "Solana", "Jupiter", "仮想通貨", "利回り", "レンディング", "JUP"]
 category: "crypto"
-published: true
+published: false
 featured: false
 coverImage: "/images/jupiter_earn_top.webp"
 ---

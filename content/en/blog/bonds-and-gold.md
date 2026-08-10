@@ -1,7 +1,7 @@
 ---
 title: "Why I Add Gold and Crypto to Equities — Choosing 'Scarcity' Over Bonds"
 date: "2026-05-22"
-updatedAt: "2026-06-15"
+updatedAt: "2026-08-10"
 description: "My case for skepticism toward bonds, and the rationale for including gold and crypto in a portfolio. Why I hold roughly 90% equities, 3% gold, and 5% crypto."
 tags: ["diversification", "gold", "crypto", "BTC", "bonds", "portfolio", "long-term investing", "inflation hedge"]
 category: "us-stock"
@@ -27,9 +27,9 @@ Bonds are commonly presented as "defensive assets." But there are reasons I don'
 
 Companies issue bonds to raise capital for growth. They use that capital to expand operations and generate profit — and the beneficiaries of that profit are **shareholders**. When investing in the same company, the shareholder (who receives the profits) has a higher expected return than the bondholder (who receives only interest).
 
-**Bond issuance induces inflation and depresses real yields.**
+**Unexpected inflation reduces the real return of a fixed-rate bond.**
 
-When more money flows into the market, prices rise. In particular, quantitative easing (QE) — where central banks purchase government bonds — noticeably drives inflation. When inflation occurs, the nominal yield stays the same, but the **real yield (inflation-adjusted) falls.**
+When inflation exceeds the bond's nominal yield, the purchasing power of its interest and principal declines. Bond issuance or central-bank asset purchases alone do not determine inflation; demand, supply constraints, wages, fiscal policy, and monetary policy all matter. I therefore evaluate bonds as assets whose **real return depends on inflation**, not as assets that mechanically cause it.
 
 Over the long run, the real return on equities has significantly outpaced bonds. For an investor with sufficient time in the accumulation phase, sacrificing return in the name of defense is simply not worth it.
 
@@ -105,8 +105,8 @@ Equities account for a combined 90%, while gold and crypto together make up 8%. 
 
 ## Summary
 
-- Equities represent investment in the cash flows that businesses generate. Their long-term returns outpace every other asset class.
-- **Bond issuance fuels inflation and depresses real yields. During the accumulation phase, bonds are a low priority.**
+- Equities represent ownership in the cash flows that businesses generate and have historically offered higher expected returns than high-quality bonds, with greater risk.
+- **Unexpected inflation reduces the real return of fixed-rate bonds. In my accumulation phase, bonds are a low priority.**
 - **Gold has finite reserves in the ground.** I hold 3% as a store of value during inflationary periods and as a scarcity play while waiting for price appreciation.
 - **Bitcoin currently has a 21 million issuance cap under its consensus rules, and halvings slow new supply.** Its supply policy is difficult to change.
 - The sub-positions (gold + crypto) are kept to roughly 8% of the portfolio; equities remain the primary engine of compound growth.
@@ -114,7 +114,7 @@ Equities account for a combined 90%, while gold and crypto together make up 8%. 
 :::comment
 I started accumulating gold for inflation hedging — commodity prices were rising and the trend was favorable. That entry timing worked out; I'm still in the black.
 
-What I didn't anticipate: Middle East tensions triggered a wave of gold liquidation, not gold buying. The "safe haven" thesis didn't play out the way I expected in that moment. I've since stopped accumulating and moved to a hold-only position. Pure gold savings (純金積立) has no management fees, so it's genuinely low-maintenance to leave in place.
+What I didn't anticipate: Middle East tensions triggered a wave of gold liquidation, not gold buying. The "safe haven" thesis didn't play out the way I expected in that moment. I've since stopped accumulating and moved to a hold-only position. My current plan does not charge a custody fee while I hold it, but purchase fees, sale or withdrawal terms, and future changes depend on the provider and product.
 
 Gold can rise further, I believe — but that depends on inflation persisting. Since business growth is the primary driver of economic value, equities stay first. Gold is a hedge, not a thesis.
 :::
@@ -124,6 +124,7 @@ Gold can rise further, I believe — but that depends on inflation persisting. S
 ## References
 
 - [Ministry of Finance Japan — Japanese Government Bonds (JGBs) for Individuals](https://www.mof.go.jp/jgbs/individual/kojinmuke/index.html)
+- [National Tax Agency Japan — Capital Gains on Assets Including Gold](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1460.htm)
 - [World Gold Council — Gold as a Strategic Asset](https://www.gold.org/goldhub/research/relevance-of-gold-as-a-strategic-asset)
 - [Bank of Japan — Monetary Policy Overview](https://www.boj.or.jp/mopo/outline/)
 - [Bitcoin Whitepaper — Satoshi Nakamoto (2008)](https://bitcoin.org/bitcoin.pdf)

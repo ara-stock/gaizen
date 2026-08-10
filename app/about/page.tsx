@@ -4,7 +4,7 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'About',
   description: '事業の成長性と持続性を軸に長期投資を行う個人投資家araのプロフィール、投資経験、判断基準を紹介します。',
-  alternates: { canonical: 'https://gaizen.xyz/about/', languages: { ja: 'https://gaizen.xyz/about/', en: 'https://gaizen.xyz/en/about/' } },
+  alternates: { canonical: 'https://gaizen.xyz/about/' },
 }
 
 const principles = [
@@ -279,7 +279,7 @@ export default function AboutPage() {
       <section className="mb-16">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>RESEARCH AREAS</p>
         <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--muted)' }}>
-          現在調査している分野と保有例です。最新の保有状況は<a href="/portfolio/" style={{ color: 'var(--accent)' }}>Portfolio</a>、現在のテーマは<a href="/thesis/" style={{ color: 'var(--accent)' }}>Thesis</a>に分けて掲載しています。
+          現在調査している分野と保有例です。最新の保有状況と資産配分は<a href="/portfolio/" style={{ color: 'var(--accent)' }}>Portfolio</a>に掲載しています。
         </p>
         <div className="space-y-4">
           {sectors.map(s => {

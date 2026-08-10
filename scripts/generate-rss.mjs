@@ -10,7 +10,7 @@ const OUT_DIR = path.join(ROOT, 'out')
 
 const SITE_URL = 'https://gaizen.xyz'
 const SITE_NAME = 'GAIZEN FINANCE'
-const SITE_DESCRIPTION = 'Focused on long-term, diversified growth — bridging traditional markets and crypto.'
+const SITE_DESCRIPTION = '個人投資家の実体験と一次情報から、長期投資の判断基準を整理するメディア。'
 
 function getPosts() {
   if (!fs.existsSync(CONTENT_DIR)) return []

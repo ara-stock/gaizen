@@ -5,7 +5,7 @@ updatedAt: "2026-07-29"
 description: "A breakdown of how Jupiter Earn, Multiply, and Strategies generate yield on Solana — including the mechanics of how that yield is created, the risks involved, and the protocol's scale."
 tags: ["DeFi", "Solana", "Jupiter", "crypto", "Yield", "Lending", "JUP"]
 category: "crypto"
-published: true
+published: false
 featured: false
 coverImage: "/images/jupiter_earn_top.webp"
 ---

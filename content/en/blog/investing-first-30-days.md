@@ -130,7 +130,7 @@ The goal of the first month is not profit. It is confirming that the correct acc
 
 I cannot disclose the first stock I bought, but the mistake was buying without understanding the company. Shareholder benefits and a high dividend yield are not enough.
 
-Before selecting individual stocks, read "[How to Select US Stocks](/en/blog/us-stock-selection/)" for a decision framework, then start small.
+Before selecting individual stocks, review the decision framework in [GAIZEN FINANCE's investment policy](/en/about/), then start small.
 
 ### Do Not Force a Large Contribution
 

@@ -5,7 +5,7 @@ updatedAt: "2026-06-20"
 description: "NISAで投資信託を選ぶ前に確認したいチェックリスト。S&P500とオルカンの考え方、信託報酬・純資産総額・トータルリターン・避けたい投資信託を整理します。"
 tags: ["NISA", "投資信託", "S&P500", "オルカン", "信託報酬", "純資産総額", "投資初心者"]
 category: "nisa"
-published: true
+published: false
 featured: true
 ---
 

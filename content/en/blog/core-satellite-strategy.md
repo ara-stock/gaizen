@@ -5,7 +5,7 @@ updatedAt: "2026-07-19"
 description: "A retrospective on how I moved from index funds toward individual stocks, and how the core-satellite framework helped before my investment criteria evolved."
 tags: ["core-satellite strategy", "index funds", "individual stocks", "portfolio", "Japan stocks", "S&P500", "NISA", "long-term investing"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 

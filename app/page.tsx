@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   description: '投資の始め方、NISA、資産管理、企業分析を、個人投資家の経験と一次情報から学ぶ長期投資メディア。',
   alternates: {
     canonical: 'https://gaizen.xyz/',
-    languages: { ja: 'https://gaizen.xyz/', en: 'https://gaizen.xyz/en/' },
     types: { 'application/rss+xml': 'https://gaizen.xyz/feed.xml' },
   },
 }
@@ -25,9 +24,9 @@ const EXPLORE_LINKS = [
     desc: '投資を体系的に読む',
   },
   {
-    href: '/tools/',
-    label: 'Tools',
-    desc: 'FIRE・配分・利回り計算',
+    href: '/portfolio/',
+    label: 'Portfolio',
+    desc: '実際の保有方針と資産配分',
   },
   {
     href: '/about/',
@@ -35,9 +34,9 @@ const EXPLORE_LINKS = [
     desc: 'このサイトについて',
   },
   {
-    href: '/disclaimer/',
-    label: 'Policy',
-    desc: '免責事項・運営方針',
+    href: '/editorial-policy/',
+    label: 'Editorial Policy',
+    desc: '記事の作成・検証方法',
   },
 ]
 

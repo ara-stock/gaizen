@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'Thesis / Now',
   description: '現在注目している投資テーマと考察。AI・Energy・Gold・BTC・Stablecoin。',
   alternates: { canonical: 'https://gaizen.xyz/thesis/', languages: { ja: 'https://gaizen.xyz/thesis/', en: 'https://gaizen.xyz/en/thesis/' } },
+  robots: { index: false, follow: true },
 }
 
 const themes = [

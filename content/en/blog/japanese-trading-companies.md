@@ -5,7 +5,7 @@ updatedAt: "2026-05-18"
 description: "Why I hold all six major Japanese trading companies: Mitsubishi, Itochu, Mitsui, Sumitomo, Marubeni, and Kanematsu. Concession-backed cash flows, irreplaceable hubs in global trade networks, and the asset-light structure that enables adaptation."
 tags: ["trading companies", "Japanese stocks", "long-term investing", "dividends", "Mitsubishi Corp", "Itochu"]
 category: "jp-stock"
-published: true
+published: false
 featured: false
 ---
 

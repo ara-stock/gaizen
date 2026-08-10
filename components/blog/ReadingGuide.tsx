@@ -16,7 +16,7 @@ const GUIDES = {
     {
       title: '投資方針を組み立てる',
       description: '長期投資の軸と、個別株や他資産を組み合わせる考え方を整理します。',
-      slugs: ['core-satellite-strategy', 'portfolio-rebalancing', 'bonds-and-gold'],
+      slugs: ['mortgage-vs-investment', 'portfolio-rebalancing', 'bonds-and-gold'],
     },
   ],
   en: [
@@ -33,7 +33,7 @@ const GUIDES = {
     {
       title: 'Build an Investment Policy',
       description: 'Develop a long-term framework for combining index funds, stocks, and other assets.',
-      slugs: ['core-satellite-strategy', 'portfolio-rebalancing', 'bonds-and-gold'],
+      slugs: ['mortgage-vs-investment', 'portfolio-rebalancing', 'bonds-and-gold'],
     },
   ],
 } satisfies Record<Locale, { title: string; description: string; slugs: string[] }[]>

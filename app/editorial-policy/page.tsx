@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   description: 'GAIZEN FINANCEの記事作成、一次情報の確認、実体験の扱い、AI利用、広告との分離、訂正対応について説明します。',
   alternates: {
     canonical: 'https://gaizen.xyz/editorial-policy/',
-    languages: { ja: 'https://gaizen.xyz/editorial-policy/', en: 'https://gaizen.xyz/en/editorial-policy/' },
   },
 }
 

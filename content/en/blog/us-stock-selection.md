@@ -5,7 +5,7 @@ updatedAt: "2026-05-23"
 description: "How to select US individual stocks. A framework built around three criteria — barriers to entry, switching costs, and recurring demand — with practical commentary on GAFAM and semiconductors."
 tags: ["US stocks", "individual stocks", "GAFAM", "semiconductors", "NVIDIA", "stock selection", "ROE"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "楽天証券 vs SBI証券：どちらで口座開設すべきか"
 date: "2026-05-28"
-updatedAt: "2026-07-19"
+updatedAt: "2026-08-10"
 description: "楽天証券とSBI証券を両方使う筆者が、操作性・銀行連携・IPO・積立を比較。どちらが自分の用途に合うかを判断する基準を整理します。"
 tags: ["楽天証券", "SBI証券", "証券口座", "NISA", "投資信託", "初心者"]
 category: "nisa"
@@ -21,7 +21,7 @@ featured: true
 
 ### 楽天銀行との連携が圧倒的に便利
 
-楽天証券と楽天銀行を「マネーブリッジ」で連携すると、普通預金に優遇金利が適用されます。[楽天銀行の商品説明](https://www.rakuten-bank.co.jp/assets/fixeddep/savings/moneyblidge.html)では、2026年7月19日時点で1,000万円以下の部分が年0.38%、1,000万円を超える部分が年0.32%（いずれも税引前）です。2026年8月3日からの金利改定も発表されているため、利用前に最新金利を確認してください。
+楽天証券と楽天銀行を「マネーブリッジ」で連携すると、普通預金に優遇金利が適用されます。楽天銀行が2026年8月3日に改定した金利は、普通預金残高1,000万円以下の部分が年0.48%、1,000万円を超える部分が年0.42%（いずれも税引前）です。金利は今後も変わり得るため、利用前に最新の商品説明を確認してください。
 
 証券と銀行を同一グループで管理できると、総資産の把握がしやすくなります。
 
@@ -111,7 +111,7 @@ NISAと投信積立は楽天に集約し、SBIはIPO申込と債券確認に使�
 
 どちらも口座開設・維持費は無料です。まず楽天証券を開設してNISA積立を始め、余裕が出たらSBI証券もセットで使い始めるのが現実的なステップです。
 
-口座を開設したら、次のステップは積立設定です。[新NISAで年間360万円をどう使うか](/blog/nisa-360-full-utilization/)と[S&P500インデックス積立を軸に据える理由](/blog/sp500-index-investing/)も合わせてご覧ください。
+口座を開設したら、次のステップは積立設定です。[新NISAで年間360万円をどう使うか](/blog/nisa-360-full-utilization/)と[投資信託の目論見書・月報の読み方](/blog/how-to-read-mutual-fund-documents/)も合わせてご覧ください。
 
 ## 参考リファレンス
 
@@ -120,5 +120,6 @@ NISAと投信積立は楽天に集約し、SBIはIPO申込と債券確認に使�
 - [楽天証券｜クレカ積立（楽天カードクレジット決済）](https://www.rakuten-sec.co.jp/web/rfund/guide/creditcard.html)
 - [SBI証券｜三井住友カードつみたて投資](https://go.sbisec.co.jp/lp/sbixsmcc_card_01.html)
 - [楽天銀行｜マネーブリッジ利用者の普通預金](https://www.rakuten-bank.co.jp/assets/fixeddep/savings/moneyblidge.html)
+- [楽天銀行｜円預金金利の改定について（2026年6月17日）](https://www.rakuten-bank.co.jp/info/2026/260617.html)
 - [SBI証券｜IPOの抽選・配分方針](https://faq.sbisec.co.jp/answer/5edf369650df500012206e0a/)
 - [金融庁｜NISA利用状況調査](https://www.fsa.go.jp/policy/nisa2/survey/index.html)

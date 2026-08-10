@@ -9,6 +9,7 @@ import { serializeJsonLd } from '@/lib/json-ld'
 const SITE_URL = 'https://gaizen.xyz'
 const SITE_NAME = 'GAIZEN FINANCE'
 const SITE_DESCRIPTION = '投資の始め方から企業分析まで、個人投資家の実体験と一次情報から学ぶ長期投資メディア。'
+const ADSENSE_ACCOUNT = process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -37,6 +38,9 @@ export const metadata: Metadata = {
   alternates: {
     types: { 'application/rss+xml': `${SITE_URL}/feed.xml` },
   },
+  ...(ADSENSE_ACCOUNT && ADSENSE_ACCOUNT !== 'ca-pub-XXXXXXXXXXXXXXXX' && {
+    other: { 'google-adsense-account': ADSENSE_ACCOUNT },
+  }),
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

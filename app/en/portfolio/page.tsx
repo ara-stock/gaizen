@@ -107,6 +107,9 @@ export default function EnPortfolioPage() {
           <span>Holdings updated: {portfolio.updatedAt}</span>
           <span>Allocation as of: {portfolio.allocationAsOf}</span>
         </div>
+        <p className="mt-3 text-xs leading-relaxed" style={{ color: 'var(--muted)' }}>
+          The allocation is a month-end snapshot and does not reflect daily market movements.
+        </p>
       </div>
 
       {/* Allocation Chart */}

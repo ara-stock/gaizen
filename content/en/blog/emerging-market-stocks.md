@@ -5,7 +5,7 @@ updatedAt: "2026-06-06"
 description: "I acknowledge that India and Vietnam are growing economies. Yet I hold zero emerging market stocks. Here's why — currency risk, information asymmetry, and competitive dynamics all work against it."
 tags: ["emerging markets", "India stocks", "MSCI Emerging Markets", "currency risk", "S&P500", "index investing", "portfolio"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 

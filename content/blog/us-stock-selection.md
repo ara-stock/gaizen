@@ -5,7 +5,7 @@ updatedAt: "2026-05-23"
 description: "米国個別株をどう選ぶか。参入障壁・スイッチングコスト・継続的な買い替え需要という3つの軸で銘柄を絞り込む方法と、GAFAM・半導体を好む理由を解説します。"
 tags: ["米国株", "個別株", "GAFAM", "半導体", "NVIDIA", "銘柄選び", "ROE"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "AI Will Become Infrastructure — Why I Own Microsoft, Alphabet, Apple, and Amazon"
 date: "2026-05-29"
-updatedAt: "2026-06-11"
+updatedAt: "2026-08-10"
 description: "In a world where AI flows like electricity, who controls the infrastructure wins. Here's why I hold Microsoft, Alphabet, Apple, and Amazon as core long-term positions."
 tags: ["US stocks", "Microsoft", "Alphabet", "Apple", "Amazon", "AI", "individual stocks", "Cloud", "GAFAM"]
 category: "us-stock"
@@ -104,7 +104,7 @@ Announced in 2024, Apple Intelligence combines on-device models with Private Clo
 
 ### AWS + Anthropic: The Other AI Alliance
 
-Amazon has committed up to $4 billion to Anthropic, making Claude models available as first-class options within Amazon Bedrock on AWS. This positions Amazon-Anthropic as the direct counterpart to the Microsoft-OpenAI alliance.
+In 2026, Amazon announced an additional $5 billion investment in Anthropic and plans for up to $20 billion more if specified commercial milestones are met. Claude is available through Amazon Bedrock and Claude Platform on AWS, deepening the relationship across both models and compute infrastructure.
 
 :::comment
 Amazon holding an Anthropic stake matters to me personally — and I'll note that this very site is built with Anthropic's Claude as its AI backbone. AWS already leads in cloud infrastructure. Adding Anthropic's AI capability on top creates a compelling enterprise AI platform. And Amazon also holds EC as a massive interface — one of the largest consumer touchpoints in the world. Amazon is one of the rare companies that simultaneously controls multiple interfaces *and* the infrastructure beneath them.
@@ -172,4 +172,5 @@ All financial figures in this article are drawn from official company disclosure
   - [Investor Relations](https://investor.apple.com/)
 - **Amazon**
   - [Amazon 2025 Annual Report](https://s2.q4cdn.com/299287126/files/doc_financials/2026/ar/Amazon-2025-Annual-Report.pdf)
+  - [Amazon and Anthropic expand strategic collaboration](https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai)
   - [SEC Filing (Form 8-K)](https://www.sec.gov/Archives/edgar/data/0001018724/000101872425000002/amzn-20241231xex991.htm)

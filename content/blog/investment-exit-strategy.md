@@ -1,7 +1,7 @@
 ---
 title: "積立投資の「出口戦略」：いつ、どう売るか"
 date: "2026-05-28"
-updatedAt: "2026-05-28"
+updatedAt: "2026-08-10"
 description: "積立投資の出口戦略を考えておくことは、FIREを目指す人だけの話ではありません。いつ・どう売るかを整理し、働き方の変化も含めた人生設計と連動させる方法を解説します。"
 tags: ["出口戦略", "取り崩し", "FIRE", "4%ルール", "資産形成", "長期投資", "定年"]
 category: "us-stock"
@@ -41,7 +41,7 @@ FIRE計画でよく使われる「4%ルール」は、年間生活費の25倍の
 - 30年という期間を想定
 - 実際の税金・手数料は計算に含まれていない
 
-日本の税制（売却益20.315%）を加味すると、3〜3.5%程度の取り崩し率の方が安全域が広いという見方もあります。
+課税口座では、売却額全体ではなく取得費を上回る**利益部分**に原則20.315%が課税されます。NISA口座内の売却益は非課税です。税負担は取得単価、口座区分、売却する資産によって変わるため、「税金があるから取り崩し率を一律に何%下げる」とは決められません。生活費は税引後の手取り額で試算します。
 
 ### 定率売却 vs 定額売却
 
@@ -90,15 +90,16 @@ FIRE計画でよく使われる「4%ルール」は、年間生活費の25倍の
 
 - 出口戦略はFIRE志望者だけでなく、すべての投資家に必要な設計
 - 「投資の出口」と「働き方の出口」をセットで考える
-- 4%ルールは目安として有用。日本の税制を加味すると3〜3.5%が現実的
+- 4%ルールは過去データに基づく目安。期間、資産配分、手数料、利益部分への税金を自分の条件で試算する
 - 段階的に働き方を変える「グラデーションFIRE」が現実的なアプローチ
 - 証券会社の定期売却サービスを使えば感情を排除した取り崩しができる
 
 ## 参考リファレンス
 
 - [金融庁｜NISA（少額投資非課税制度）](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+- [国税庁｜株式等を譲渡したときの課税](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm)
 - [楽天証券｜定期売却サービス](https://www.rakuten-sec.co.jp/web/rfund/guide/teikibaikyaku.html)
 - [SBI証券｜投資信託 定期売却サービス](https://www.sbisec.co.jp/ETGate/WPLETmgR001Control?OutSide=on&getFlg=on&burl=search_fund&cat1=fund&cat2=none&dir=info&file=fund_regular_selling.html)
 - [William Bengen (1994)「Determining Withdrawal Rates Using Historical Data」Journal of Financial Planning](https://www.financialplanningassociation.org/learning/publications/journal/OCT94-determining-withdrawal-rates-using-historical-data)
 
-4%ルールの計算の前提となる積立シミュレーションは[FIREのための積立シミュレーション](/blog/fire-simulation/)で詳しく解説しています。取り崩し期の具体的な方法は[FIRE後の取り崩し戦略](/blog/fire-withdrawal-strategy/)もご参照ください。
+4%ルールを含む必要資産額の試算は、複数の前提を置いて[FIREシミュレーター](/tools/fire/)で確認できます。

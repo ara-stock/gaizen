@@ -4,6 +4,7 @@ const DESCRIPTION = 'Long-term investing guidance and research grounded in first
 
 export const metadata: Metadata = {
   description: DESCRIPTION,
+  robots: { index: false, follow: true },
   openGraph: {
     type: 'website',
     locale: 'en_US',
