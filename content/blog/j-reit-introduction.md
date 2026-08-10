@@ -5,7 +5,7 @@ updatedAt: "2026-06-11"
 description: "J-REITとは何か、株式とどう使い分けるか。コロナ直後にJ-REITを買い、上昇相場で株式に乗り換えた実体験をもとに、不動産投資信託の本質的な使い方を解説します。"
 tags: ["J-REIT", "不動産投資", "分配金", "配当投資", "長期投資", "日本株", "ポートフォリオ"]
 category: "japan-stock"
-published: true
+published: false
 featured: false
 ---
 

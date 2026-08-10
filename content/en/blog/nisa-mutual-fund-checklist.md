@@ -82,7 +82,7 @@ If you are unsure, ask:
 
 You do not have to treat this as an all-or-nothing decision. Holding both is also possible. Just understand that it increases overlap in US stocks.
 
-For more detail, see "[S&P500 vs. All-Country: Which Should You Choose?](/en/blog/sp500-vs-allcountry/)".
+For more detail, see "[Why I Hold Both S&P500 and All-Country Funds](/en/blog/why-sp500-over-allcountry/)".
 
 ## Funds Beginners Should Avoid
 

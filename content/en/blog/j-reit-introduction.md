@@ -5,7 +5,7 @@ updatedAt: "2026-06-11"
 description: "What J-REITs are and how to use them alongside equities. Based on first-hand experience buying J-REITs after the COVID crash and rotating into stocks when the bull market began."
 tags: ["J-REIT", "real estate", "dividend investing", "dividends", "Japanese stocks", "portfolio", "long-term investing"]
 category: "japan-stock"
-published: true
+published: false
 featured: false
 ---
 

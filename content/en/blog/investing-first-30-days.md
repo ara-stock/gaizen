@@ -95,7 +95,7 @@ Once your NISA account is available, select one fund through the accumulation al
 
 I invest in **eMAXIS Slim US Equities (S&P500)**. It aims to track the S&P500 and provides exposure to major US companies in one fund.
 
-S&P500 is not the only valid option. eMAXIS Slim All Country, which spreads investments across global markets, is another candidate. See "[S&P500 vs All-Country](/en/blog/sp500-vs-allcountry/)" for the differences.
+S&P500 is not the only valid option. eMAXIS Slim All Country, which spreads investments across global markets, is another candidate. See "[Why I Hold Both S&P500 and All-Country Funds](/en/blog/why-sp500-over-allcountry/)" for the differences and my own decision process.
 
 A simple first setup looks like this:
 

@@ -16,7 +16,7 @@ const SECTIONS = {
       label: 'STEP 02',
       title: 'NISAと投資信託を選ぶ',
       description: '制度の説明だけで終わらず、目論見書・コスト・純資産総額をどう判断に使うかまで扱います。',
-      slugs: ['nisa-mutual-fund-checklist', 'how-to-read-mutual-fund-documents', 'sp500-vs-allcountry', 'monthly-distribution-fund-warning'],
+      slugs: ['nisa-mutual-fund-checklist', 'how-to-read-mutual-fund-documents', 'why-sp500-over-allcountry', 'monthly-distribution-fund-warning'],
     },
     {
       label: 'STEP 03',
@@ -36,7 +36,7 @@ const SECTIONS = {
       label: 'STEP 02',
       title: 'Choose a NISA Fund',
       description: 'Go beyond the rules and learn how to use prospectuses, costs, and fund size in an actual decision.',
-      slugs: ['nisa-mutual-fund-checklist', 'how-to-read-mutual-fund-documents', 'sp500-vs-allcountry', 'monthly-distribution-fund-warning'],
+      slugs: ['nisa-mutual-fund-checklist', 'how-to-read-mutual-fund-documents', 'why-sp500-over-allcountry', 'monthly-distribution-fund-warning'],
     },
     {
       label: 'STEP 03',

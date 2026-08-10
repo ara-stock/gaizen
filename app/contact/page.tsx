@@ -21,6 +21,7 @@ export default function ContactPage() {
         {[
           { platform: 'X (Twitter)', handle: '@ara_stock', url: 'https://x.com/ara_stock', description: '投資関連の考察・更新情報を発信しています。' },
           { platform: 'GitHub', handle: 'ara-stock/gaizen', url: 'https://github.com/ara-stock/gaizen', description: 'サイトのソースコードを公開しています。' },
+          { platform: '記事の訂正依頼', handle: 'GitHub Issues', url: 'https://github.com/ara-stock/gaizen/issues/new?title=%E8%A8%98%E4%BA%8B%E3%81%AE%E8%A8%82%E6%AD%A3%E4%BE%9D%E9%A0%BC', description: '該当URLと訂正が必要な箇所をお知らせください。確認後、必要に応じて記事を更新します。' },
         ].map(item => (
           <a key={item.platform} href={item.url} target="_blank" rel="noopener noreferrer"
             className="flex items-center justify-between p-5 rounded-lg border transition-colors hover:border-gray-600"
@@ -37,8 +38,8 @@ export default function ContactPage() {
 
       <div className="mt-10 p-5 rounded-lg border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
         <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-          業務連絡・コラボレーションのご相談は、X（旧Twitter）のDMにてお受けしています。
-          投資に関する個別相談・アドバイスはお断りしております。
+          記事の事実関係に誤りがある場合は、訂正依頼から該当URLと根拠資料をお知らせください。
+          業務連絡・コラボレーションはX（旧Twitter）のDMで受け付けています。投資に関する個別相談・アドバイスはお断りしております。
         </p>
       </div>
     </div>

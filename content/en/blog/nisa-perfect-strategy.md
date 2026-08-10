@@ -5,7 +5,7 @@ updatedAt: "2026-07-19"
 description: "How beginners can separate Japan's NISA allowances, automate a sustainable contribution, compare low-cost funds, and decide when individual stocks belong in the plan."
 tags: ["NISA", "accumulation allowance", "growth allowance", "eMAXIS Slim", "S&P500", "All-Country", "index investing"]
 category: "nisa"
-published: true
+published: false
 featured: false
 ---
 

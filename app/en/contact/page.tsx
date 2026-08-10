@@ -24,6 +24,7 @@ export default function EnContactPage() {
         {[
           { platform: 'X (Twitter)', handle: '@ara_stock', url: 'https://x.com/ara_stock', description: 'Investment thoughts and site updates.' },
           { platform: 'GitHub', handle: 'ara-stock/gaizen', url: 'https://github.com/ara-stock/gaizen', description: 'Source code for this site is open.' },
+          { platform: 'Request a correction', handle: 'GitHub Issues', url: 'https://github.com/ara-stock/gaizen/issues/new?title=Article%20correction%20request', description: 'Include the article URL and the passage that needs correction. The article will be reviewed and updated when appropriate.' },
         ].map(item => (
           <a key={item.platform} href={item.url} target="_blank" rel="noopener noreferrer"
             className="flex items-center justify-between p-5 rounded-lg border transition-colors hover:border-gray-600"
@@ -40,8 +41,8 @@ export default function EnContactPage() {
 
       <div className="mt-10 p-5 rounded-lg border" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
         <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-          For business inquiries or collaboration, please reach out via X (Twitter) DM.
-          Individual investment advice is not offered.
+          To report a factual error, use the correction link above and include the article URL and supporting source.
+          For business inquiries or collaboration, use X (Twitter) DM. Individual investment advice is not offered.
         </p>
       </div>
     </div>
