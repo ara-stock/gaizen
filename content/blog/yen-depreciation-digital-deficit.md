@@ -5,7 +5,7 @@ updatedAt: "2026-07-19"
 description: "海外デジタルサービスへの支払いは円相場にどう関係するのか。デジタル赤字を、金利差・貿易収支・所得収支・資本フローと切り分けて考えます。"
 tags: ["円安", "為替", "日本経済", "デジタル赤字", "長期投資"]
 category: "macro"
-published: true
+published: false
 featured: false
 coverImage: "/images/japan_degital_deficit.webp"
 ---

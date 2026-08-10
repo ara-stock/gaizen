@@ -1,7 +1,7 @@
 ---
 title: "Exit Strategy for Long-Term Investors: When and How to Sell"
 date: "2026-05-28"
-updatedAt: "2026-05-28"
+updatedAt: "2026-08-10"
 description: "Exit strategy isn't just for FIRE seekers. Every investor eventually needs to convert assets into income. Here's how to think about the withdrawal phase — and how it connects to your work and life decisions."
 tags: ["exit strategy", "withdrawal", "FIRE", "4% rule", "wealth building", "long-term investing", "retirement"]
 category: "us-stock"
@@ -40,7 +40,7 @@ The 4% rule has assumptions:
 - 30-year time horizon
 - Pre-tax figures — transaction costs and taxes aren't factored in
 
-For Japanese investors, accounting for 20.315% capital gains tax on withdrawals and the possibility of a longer time horizon than 30 years, a 3–3.5% withdrawal rate may be more conservative and sustainable.
+In a Japanese taxable account, the 20.315% capital-gains tax generally applies to the **gain above acquisition cost**, not to the entire sale amount. Gains inside a NISA account are tax-free. Because the tax burden depends on cost basis, account type, and which asset is sold, there is no universal percentage-point reduction to apply to the withdrawal rate. Model spending from after-tax proceeds under your own assumptions.
 
 ## Fixed Amount vs. Fixed Percentage Withdrawals
 
@@ -88,7 +88,7 @@ Answering these honestly gives you a clearer picture of the exit you're actually
 
 - Exit strategy applies to every investor, not just FIRE seekers
 - Think about investment exit (asset drawdown) and work exit (career transitions) together
-- The 4% rule is a useful benchmark; adjust to 3–3.5% for Japanese tax context and longer time horizons
+- The 4% rule is a historical reference point; test your own horizon, allocation, costs, and tax on realized gains
 - Automatic periodic sale removes timing decisions from the withdrawal phase
 - A gradual transition from full-time to part-time to fully asset-funded is often more practical than a hard FIRE date
 - Define what you actually want from life before optimizing for a number
@@ -98,4 +98,5 @@ Answering these honestly gives you a clearer picture of the exit you're actually
 - [William Bengen (1994) "Determining Withdrawal Rates Using Historical Data" — Journal of Financial Planning](https://www.financialplanningassociation.org/learning/publications/journal/OCT94-determining-withdrawal-rates-using-historical-data)
 - [Cooley, Hubbard, Walz (1998) "Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable" (Trinity Study)](https://www.aaii.com/files/pdf/6794_retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable.pdf)
 - [Financial Services Agency Japan — NISA Overview](https://www.fsa.go.jp/policy/nisa2/about/index.html)
+- [National Tax Agency Japan — Taxation When Selling Shares](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm)
 - [Rakuten Securities — Periodic Withdrawal Service](https://www.rakuten-sec.co.jp/web/rfund/guide/teikibaikyaku.html)

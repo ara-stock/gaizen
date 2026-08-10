@@ -1,7 +1,7 @@
 ---
 title: "Four Checks Before Choosing a Monthly Distribution Fund"
 date: "2026-05-28"
-updatedAt: "2026-07-16"
+updatedAt: "2026-08-10"
 description: "A monthly distribution rate is not the same as investment return. Review fees, return of capital, covered calls, and total return before choosing an income fund."
 tags: ["monthly distribution", "investment funds", "covered call", "dividend investing", "NISA", "long-term investing"]
 category: "us-stock"
@@ -80,12 +80,12 @@ Rarely. The only plausible scenario:
 
 - You are in retirement, need regular cash flow, and find managing withdrawals complex
 
-Even then, virtually every major Japanese brokerage now offers **automatic periodic sale** (定期売却) on index funds. You can set monthly ¥XX,000 withdrawals from eMAXIS Slim S&P500 — no distribution fund needed. Same cash flow, dramatically lower costs, better tax efficiency.
+Even then, major Japanese brokerages offer **automatic periodic sales** (定期売却) for eligible funds. Availability and minimum amounts vary, so compare the actual service terms with a distribution fund rather than assuming the cash-flow method is identical everywhere.
 
 :::comment
 Full disclosure: I actually hold BLV and TIPS — US bond ETFs that distribute monthly. That might seem contradictory for someone writing this article, but I'd frame it as a difference in use case. I hold them specifically to generate steady cash I can redeploy into equities. The distribution functions as seed capital for the next trade.
 
-That said, there are real costs. Foreign withholding tax is deducted at source, and you only recover it by filing a tax return (外国税額控除). For anyone who doesn't file, that's a permanent drag. And one honest mistake: I once bought Amazon 30-year corporate bonds without fully understanding what I was getting into. They're sitting there in the black thanks to yen depreciation, but 30 years of capital lock-up is a steep price for that result.
+That said, there are real costs. Foreign withholding tax is deducted at source, and a foreign tax credit may require filing a tax return. One honest mistake was buying Amazon 30-year corporate bonds without fully understanding the risk. A corporate bond can be sold before maturity, but its market price moves with interest rates and credit conditions, and liquidity and bid-ask spreads matter. Yen depreciation has left the position positive in yen terms, but it is not cash that can always be exited at the price I want.
 :::
 
 ## Summary

@@ -81,7 +81,7 @@ Look at the business behind the payout:
 - Is the company funding dividends through borrowing or asset sales?
 - Would you still own the company without the shareholder benefit?
 
-See "[How to Build a High-Dividend Portfolio](/en/blog/high-dividend-portfolio/)" for a fuller checklist.
+Before moving into individual stocks, review the decision framework in [GAIZEN FINANCE's investment policy](/en/about/).
 
 ## Mistake 3: Putting a Large Amount Into a Product You Do Not Understand
 

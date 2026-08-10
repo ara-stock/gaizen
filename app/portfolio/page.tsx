@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Portfolio',
   description: '事業の成長性と持続性を軸にした長期投資ポートフォリオ。日本株・米国株・暗号資産・Stable運用の配分と保有銘柄を公開します。',
-  alternates: { canonical: 'https://gaizen.xyz/portfolio/', languages: { ja: 'https://gaizen.xyz/portfolio/', en: 'https://gaizen.xyz/en/portfolio/' } },
+  alternates: { canonical: 'https://gaizen.xyz/portfolio/' },
 }
 
 const REGION_STYLE: Record<string, { label: string; color: string }> = {
@@ -27,6 +27,9 @@ export default function PortfolioPage() {
           <span>保有銘柄更新: {portfolio.updatedAt}</span>
           <span>資産配分基準日: {portfolio.allocationAsOf}</span>
         </div>
+        <p className="mt-3 text-xs leading-relaxed" style={{ color: 'var(--muted)' }}>
+          資産配分は月末時点のスナップショットです。日々の値動きによる変化は反映していません。
+        </p>
       </div>
 
       {/* Allocation Chart */}

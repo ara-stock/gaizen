@@ -31,7 +31,7 @@ export default function ArticleIntro({ description, locale = 'ja' }: ArticleIntr
           />
           <div>
             <p className="text-xs font-semibold group-hover:text-green-500 transition-colors" style={{ color: 'var(--foreground)' }}>
-              {isEnglish ? 'Written and fact-checked by ara' : '執筆・事実確認: ara'}
+              {isEnglish ? 'Written and researched by ara' : '執筆・調査: ara'}
             </p>
             <p className="text-xs mt-0.5" style={{ color: 'var(--muted)' }}>
               {isEnglish

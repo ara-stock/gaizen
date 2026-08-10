@@ -1,7 +1,7 @@
 ---
 title: "Portfolio Rebalancing: How Far Should Index Investors Go?"
 date: "2026-05-22"
-updatedAt: "2026-05-22"
+updatedAt: "2026-08-10"
 description: "A clear-eyed look at how rebalancing works and the risk of overdoing it. Selling in a taxable brokerage account triggers capital gains tax, meaning frequent rebalancing becomes a cost. Here I walk through a practical approach centered on adjusting contribution allocations instead."
 tags: ["rebalancing", "index investing", "S&P500", "NISA", "long-term investing", "portfolio management"]
 category: "us-stock"
@@ -47,7 +47,7 @@ If you are accumulating in a single fund such as S&P 500 or an all-country (glob
 
 **There are two reasons for this.**
 
-First, **index funds rebalance internally**. The S&P 500 reconstitutes its holdings and adjusts weightings every six months, so investors automatically stay in line with market changes without doing anything.
+First, **index funds implement changes made to their benchmark**. S&P Dow Jones Indices says S&P 500 weights are adjusted quarterly for current share counts and float, while constituent changes may occur at any time in response to company and market developments. An index-fund investor does not need to replace the individual companies manually.
 
 Second, **cross-asset-class rebalancing only matters when you hold multiple asset classes**. If you are invested in a single equity index, the concept of "restoring a drifted allocation" does not even apply.
 
@@ -71,7 +71,7 @@ When you sell assets held in a 特定口座 (taxable brokerage account), any cap
 | Tax (20.315%) | ~¥60,000 |
 | Net proceeds | ~¥1,240,000 |
 
-When rebalancing costs ¥60,000, you need to ask whether the improvement in returns actually justifies it. The theoretical "buy low, sell high" benefit is typically estimated at around 0.1–0.5% per year, which means **frequent sell-based rebalancing can easily cost more than it gains**.
+Before realizing roughly ¥60,000 of tax to rebalance, ask whether restoring the allocation is important enough to justify it. **With frequent sell-based rebalancing, taxes and trading costs may exceed the intended benefit.**
 
 In a taxable account, the practical approach is to rebalance infrequently and only when the drift has become genuinely large.
 
@@ -115,13 +115,13 @@ As your total assets grow and buying alone can no longer close the gap, partial 
 - Adjust by **buying the underweight side**, not by selling to reset — this avoids both tax costs and allowance consumption
 - Rebalancing is not always necessary; it **only makes sense when you hold multiple asset classes**
 - If you hold a single fund like S&P 500 or an all-country index, rebalancing is unnecessary because the index handles it internally
-- Selling in a taxable account triggers a **~20% tax cost**. Limit sell-based rebalancing to cases of large drift
+- In a taxable account, **20.315% tax applies to realized gains**. Limit sell-based rebalancing to cases of large drift
 - Selling from a NISA account does not increase the current year's annual limit, but the lifetime allowance recovers from the following year. **The best use of NISA is to hold without frequent selling**
 
 The most important factor in long-term investing is staying in the market. Rather than treating rebalancing as a chore to be done frequently, focusing on keeping costs down and continuing to contribute consistently will do more for your total returns over time.
 
 :::comment
-My rebalancing rule: no selling. When allocations drift, I buy more of the underweight positions. Selling triggers a 20% tax event I'd rather avoid.
+My rebalancing rule is no selling by default. When allocations drift, I buy more of the underweight positions. Selling a profitable position in a taxable account realizes a taxable capital gain, which I prefer to avoid when new contributions can restore the allocation.
 
 That said, I'm flexible about what "rebalancing" means in practice. If a position is consistently underperforming and I no longer have conviction in it, I'll exit it entirely rather than just buy more. Rebalancing isn't just mechanical ratio adjustment — it's also a checkpoint to ask: "Do I still want to own this?" Sometimes the answer is no, and that's fine too.
 :::
@@ -131,6 +131,7 @@ That said, I'm flexible about what "rebalancing" means in practice. If a positio
 ## References
 
 - [Vanguard Research — Best Practices for Portfolio Rebalancing](https://institutional.vanguard.com/content/dam/inst/vanguard-has/insights-pdfs/04_CIR_BestPracticesRebalancing.pdf)
+- [S&P Dow Jones Indices — Is the S&P 500 Doing Its Job?](https://www.spglobal.com/en/research-insights/market-insights/is-the-sp-500-doing-its-job)
 - [National Tax Agency Japan — Capital Gains Tax on Stock Sales (20.315%)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm)
 - [Mitsubishi UFJ Asset Management — eMAXIS Slim Balanced (8 Assets Equal)](https://emaxis.am.mufg.jp/fund/252760.html)
 

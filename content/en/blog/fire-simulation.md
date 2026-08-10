@@ -5,7 +5,7 @@ updatedAt: "2026-06-11"
 description: "Calculate the assets needed for FIRE using the 4% rule and 7% annual return. Simulations for ¥50K and ¥100K monthly saving, including realistic post-FIRE expenses like national pension and health insurance."
 tags: ["FIRE", "index investing", "4% rule", "wealth building", "long-term investing"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 

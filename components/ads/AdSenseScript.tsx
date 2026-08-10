@@ -3,17 +3,9 @@
 import Script from 'next/script'
 import { usePathname } from 'next/navigation'
 
-const CONTENT_ROUTES = [
-  '/blog',
-  '/en/blog',
-]
-
 function isContentRoute(pathname: string) {
-  if (pathname === '/' || pathname === '/en') return true
-
-  return CONTENT_ROUTES.some(route => (
-    pathname === route || pathname.startsWith(`${route}/`)
-  ))
+  const segments = pathname.split('/').filter(Boolean)
+  return segments.length === 2 && segments[0] === 'blog'
 }
 
 export default function AdSenseScript() {

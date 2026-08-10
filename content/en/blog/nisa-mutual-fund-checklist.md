@@ -5,7 +5,7 @@ updatedAt: "2026-06-20"
 description: "A practical checklist for choosing mutual funds in Japan's NISA account: S&P500 vs All-Country, expense ratios, fund size, total return, and funds beginners should avoid."
 tags: ["NISA", "mutual funds", "S&P500", "All-Country", "expense ratio", "assets under management", "beginner investing"]
 category: "nisa"
-published: true
+published: false
 featured: true
 ---
 

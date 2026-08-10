@@ -1,7 +1,7 @@
 ---
 title: "AIはインフラになる — Microsoft・Alphabet・Apple・Amazonに投資する論拠"
 date: "2026-05-29"
-updatedAt: "2026-06-11"
+updatedAt: "2026-08-10"
 description: "水や電気のようにAIが普及する世界で、誰がインフラを握るか。Microsoft・Alphabet・Apple・Amazonの4社に投資する理由を、個人投資家の視点で解説します。"
 tags: ["米国株", "Microsoft", "Alphabet", "Apple", "Amazon", "AI", "個別株", "クラウド", "GAFAM"]
 category: "us-stock"
@@ -47,7 +47,7 @@ Microsoftを選ぶ理由はシンプルです。OpenAIとの関係があり、Ch
 - 売上高：2,817億ドル（FY2025実績、前年比15%増）
 - Azure売上高：750億ドル超（前年比34%増）
 - Microsoft 365 Copilotの企業導入が急拡大中
-- 自社株買いと増配を継続（配当貴族の水準）
+- 自社株買いと増配を継続
 
 ---
 
@@ -116,7 +116,7 @@ Officeからの解放は、Macへの移行を後押しする可能性があり�
 
 ### AWSとAnthropicの連合
 
-AmazonはAnthropicへの大規模出資（総額40億ドル）を通じて、Claude APIをAWS（Amazon Bedrock）経由で優先展開しています。Microsoft-OpenAI連合に対するAmazon-Anthropic連合の構図です。
+Amazonは2026年、Anthropicへ50億ドルを追加投資し、一定の事業条件に応じてさらに最大200億ドルを投資する計画を発表しました。ClaudeはAmazon BedrockやClaude Platform on AWSで提供され、両社はAIモデルと計算基盤の両面で連携を深めています。
 
 :::comment
 AmazonがAnthropicと深く組んでいる点は、かなり重要だと見ています。AWSはすでにクラウドの主要プレイヤーです。そこにClaudeを含むAIサービスが乗れば、企業向けAIインフラとしての立場が強くなります。
@@ -190,4 +190,5 @@ GroqやCursorのような企業も、次の波を作る可能性があります�
   - [Investor Relations](https://investor.apple.com/)
 - **Amazon**
   - [Amazon 2025 Annual Report](https://s2.q4cdn.com/299287126/files/doc_financials/2026/ar/Amazon-2025-Annual-Report.pdf)
+  - [Amazon and Anthropic expand strategic collaboration](https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai)
   - [SEC Filing (Form 8-K)](https://www.sec.gov/Archives/edgar/data/0001018724/000101872425000002/amzn-20241231xex991.htm)

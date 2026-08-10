@@ -6,7 +6,6 @@ import { fileURLToPath } from 'url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.join(__dirname, '..')
 const BLOG_DIR = path.join(ROOT, 'content/blog')
-const EN_BLOG_DIR = path.join(ROOT, 'content/en/blog')
 const OUT_DIR = path.join(ROOT, 'out')
 
 const SITE_URL = 'https://gaizen.xyz'
@@ -33,26 +32,15 @@ function getPosts(dir) {
 }
 
 const jaPosts = getPosts(BLOG_DIR)
-const enPosts = getPosts(EN_BLOG_DIR)
 const staticRoutes = [
   { url: `${SITE_URL}/`, priority: '1.0', changefreq: 'weekly' },
   { url: `${SITE_URL}/blog/`, priority: '0.9', changefreq: 'daily' },
-  { url: `${SITE_URL}/en/`, priority: '1.0', changefreq: 'weekly' },
-  { url: `${SITE_URL}/en/blog/`, priority: '0.9', changefreq: 'daily' },
   { url: `${SITE_URL}/portfolio/`, priority: '0.8', changefreq: 'monthly' },
-  { url: `${SITE_URL}/en/portfolio/`, priority: '0.8', changefreq: 'monthly' },
   { url: `${SITE_URL}/about/`, priority: '0.5', changefreq: 'yearly' },
-  { url: `${SITE_URL}/en/about/`, priority: '0.5', changefreq: 'yearly' },
   { url: `${SITE_URL}/editorial-policy/`, priority: '0.5', changefreq: 'yearly' },
-  { url: `${SITE_URL}/en/editorial-policy/`, priority: '0.5', changefreq: 'yearly' },
-  { url: `${SITE_URL}/thesis/`, priority: '0.7', changefreq: 'monthly' },
-  { url: `${SITE_URL}/en/thesis/`, priority: '0.7', changefreq: 'monthly' },
   { url: `${SITE_URL}/disclaimer/`, priority: '0.3', changefreq: 'yearly' },
-  { url: `${SITE_URL}/en/disclaimer/`, priority: '0.3', changefreq: 'yearly' },
   { url: `${SITE_URL}/privacy/`, priority: '0.3', changefreq: 'yearly' },
-  { url: `${SITE_URL}/en/privacy/`, priority: '0.3', changefreq: 'yearly' },
   { url: `${SITE_URL}/contact/`, priority: '0.4', changefreq: 'yearly' },
-  { url: `${SITE_URL}/en/contact/`, priority: '0.4', changefreq: 'yearly' },
 ]
 
 function entry({ url, priority, changefreq, lastmod }) {
@@ -77,12 +65,6 @@ ${jaPosts.map(p => entry({
   changefreq: 'monthly',
   priority: '0.8',
 })).join('\n')}
-${enPosts.map(p => entry({
-  url: `${SITE_URL}/en/blog/${p.slug}/`,
-  lastmod: (p.updatedAt || p.date || '').toString().split('T')[0],
-  changefreq: 'monthly',
-  priority: '0.8',
-})).join('\n')}
 </urlset>`
 
 if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true })
@@ -91,4 +73,4 @@ fs.writeFileSync(path.join(OUT_DIR, 'sitemap.xml'), xml, 'utf-8')
 // It intentionally contains the URL set directly instead of a sitemap index,
 // so Search Console can discover pages even if it does not fetch child sitemaps.
 fs.writeFileSync(path.join(OUT_DIR, 'sitemap-index.xml'), xml, 'utf-8')
-console.log(`[sitemap] Generated with ${staticRoutes.length + jaPosts.length + enPosts.length} URLs`)
+console.log(`[sitemap] Generated with ${staticRoutes.length + jaPosts.length} URLs`)

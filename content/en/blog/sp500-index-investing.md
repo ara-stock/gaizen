@@ -5,7 +5,7 @@ updatedAt: "2026-07-19"
 description: "Why I initially built around the S&P 500, why I still hold it alongside a stock-heavy portfolio today, and how I assess concentration and valuation risks."
 tags: ["US stocks", "index investing", "long-term investing", "S&P500", "NISA"]
 category: "us-stock"
-published: true
+published: false
 featured: true
 coverImage: "/images/sp500_index_investing.webp"
 ---

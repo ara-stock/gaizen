@@ -8,9 +8,8 @@ import LanguageSwitcher from './LanguageSwitcher'
 const NAV_PATHS = [
   { path: '/blog/',      label: 'Blog' },
   { path: '/portfolio/', label: 'Portfolio' },
-  { path: '/tools/',     label: 'Tools' },
-  { path: '/thesis/',    label: 'Thesis' },
   { path: '/about/',     label: 'About' },
+  { path: '/editorial-policy/', label: 'Policy' },
 ]
 
 function ThemeToggle() {

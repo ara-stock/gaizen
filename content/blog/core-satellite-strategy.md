@@ -5,7 +5,7 @@ updatedAt: "2026-07-19"
 description: "投資信託から始め、個別株へ比重を移してきた過程を振り返ります。現在の運用方針ではなく、判断軸が変化した記録としてコア・サテライト戦略を整理します。"
 tags: ["コア・サテライト戦略", "投資信託", "個別株", "ポートフォリオ", "日本株", "S&P500", "NISA", "長期投資"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 

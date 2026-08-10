@@ -11,23 +11,8 @@ export default function Footer() {
   const contentLinks: [string, string][] = [
     ['Blog', `${p}/blog/`],
     ['Portfolio', `${p}/portfolio/`],
-    ['Thesis', `${p}/thesis/`],
     ['About', `${p}/about/`],
   ]
-
-  const toolLinks: [string, string][] = isEn
-    ? [
-        ['Allocation Simulator', `${p}/tools/allocation/`],
-        ['FIRE Simulator', `${p}/tools/fire/`],
-        ['Sharpe Ratio', `${p}/tools/sharpe/`],
-        ['Real Estate Yield', `${p}/tools/realestate/`],
-      ]
-    : [
-        ['ポートフォリオ配分', '/tools/allocation/'],
-        ['FIREシミュレーター', '/tools/fire/'],
-        ['シャープレシオ', '/tools/sharpe/'],
-        ['不動産利回り', '/tools/realestate/'],
-      ]
 
   const legalLinks: [string, string][] = [
     [isEn ? 'Editorial Policy' : '編集・検証方針', `${p}/editorial-policy/`],
@@ -43,7 +28,7 @@ export default function Footer() {
   return (
     <footer className="border-t mt-24" style={{ borderColor: 'var(--border)' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-12">
           <div>
             <p className="text-xs tracking-widest font-bold mb-4">
               <span style={{ color: 'var(--foreground)' }}>GAIZEN</span>
@@ -83,14 +68,6 @@ export default function Footer() {
             <p className="text-xs tracking-wider font-semibold mb-4" style={{ color: 'var(--muted)' }}>CONTENT</p>
             <div className="flex flex-col gap-2">
               {contentLinks.map(([label, href]) => (
-                <Link key={href} href={href} className="text-xs" style={{ color: 'var(--muted)' }}>{label}</Link>
-              ))}
-            </div>
-          </div>
-          <div>
-            <p className="text-xs tracking-wider font-semibold mb-4" style={{ color: 'var(--muted)' }}>TOOLS</p>
-            <div className="flex flex-col gap-2">
-              {toolLinks.map(([label, href]) => (
                 <Link key={href} href={href} className="text-xs" style={{ color: 'var(--muted)' }}>{label}</Link>
               ))}
             </div>

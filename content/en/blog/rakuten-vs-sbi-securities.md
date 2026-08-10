@@ -1,7 +1,7 @@
 ---
 title: "Rakuten Securities vs SBI Securities: Which Should You Choose?"
 date: "2026-05-28"
-updatedAt: "2026-07-19"
+updatedAt: "2026-08-10"
 description: "A first-hand comparison of Rakuten Securities and SBI Securities across usability, bank integration, IPO allocation, and recurring investments."
 tags: ["Rakuten Securities", "SBI Securities", "brokerage account", "NISA", "Japan investing", "beginner"]
 category: "nisa"
@@ -19,7 +19,7 @@ Once you're comfortable, add SBI Securities for specific purposes like IPOs and 
 
 ### Seamless Rakuten Bank Integration
 
-Linking Rakuten Securities with Rakuten Bank through Money Bridge qualifies the deposit account for a preferential rate. [Rakuten Bank's product page](https://www.rakuten-bank.co.jp/assets/fixeddep/savings/moneyblidge.html) lists 0.38% before tax on the portion up to JPY 10 million and 0.32% above that amount as of July 19, 2026. A further revision has already been announced for August 3, so check the current rate before relying on it.
+Linking Rakuten Securities with Rakuten Bank through Money Bridge qualifies the deposit account for a preferential rate. Effective August 3, 2026, Rakuten Bank lists 0.48% before tax on the portion up to JPY 10 million and 0.42% on the portion above that amount. Rates can change, so check the current product page before relying on them.
 
 Managing your brokerage and bank together in one platform makes it much easier to see your total net worth at a glance.
 
@@ -103,5 +103,6 @@ Both accounts are free to open and maintain. Open Rakuten, set up NISA recurring
 - [Rakuten Securities — Rakuten Card Fund Contributions](https://www.rakuten-sec.co.jp/web/rfund/guide/creditcard.html)
 - [SBI Securities — Sumitomo Mitsui Card Fund Contributions](https://go.sbisec.co.jp/lp/sbixsmcc_card_01.html)
 - [Rakuten Bank — Money Bridge Deposit Terms](https://www.rakuten-bank.co.jp/assets/fixeddep/savings/moneyblidge.html)
+- [Rakuten Bank — Yen Deposit Rate Revision (June 17, 2026)](https://www.rakuten-bank.co.jp/info/2026/260617.html)
 - [SBI Securities — IPO Allocation Policy](https://faq.sbisec.co.jp/answer/5edf369650df500012206e0a/)
 - [Financial Services Agency Japan — NISA Usage Statistics](https://www.fsa.go.jp/policy/nisa2/survey/index.html)

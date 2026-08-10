@@ -5,7 +5,7 @@ updatedAt: "2026-06-10"
 description: "After FIRE, what's truly scary isn't running out of money — it's losing your connection to society. From comparing fixed-amount vs. fixed-rate withdrawal strategies to developing a feel for living within a budget, this article walks through the practical realities of life after FIRE."
 tags: ["FIRE", "withdrawal", "asset management", "index investing", "long-term investing", "lifestyle"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 
@@ -33,7 +33,7 @@ Short of an illness or disability that prevents work entirely, Japan has jobs. E
 
 Even if the 4% rule is designed around the assumption that your assets last 30 years, if a prolonged market crash causes your portfolio to shrink faster than expected, you can simply work a little to make up the difference. Even reducing your withdrawals in a single bad year can meaningfully extend the life of your assets over the long run.
 
-The accumulation simulations and explanation of the 4% rule that underpin this discussion are covered in detail in my previous article, "[Accumulation Simulation for FIRE](/en/blog/fire-simulation/)."
+You can test the required portfolio and accumulation period under multiple assumptions with the [FIRE simulator](/en/tools/fire/), rather than treating a single return rate as a forecast.
 
 ---
 

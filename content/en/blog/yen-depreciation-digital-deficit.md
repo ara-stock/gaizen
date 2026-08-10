@@ -5,7 +5,7 @@ updatedAt: "2026-07-19"
 description: "How overseas digital-service payments relate to the yen, considered alongside rate differentials, trade, primary income, and capital flows."
 tags: ["yen depreciation", "forex", "Japan economy", "digital deficit", "long-term investing"]
 category: "macro"
-published: true
+published: false
 featured: false
 coverImage: "/images/japan_degital_deficit.webp"
 ---

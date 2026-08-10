@@ -54,9 +54,9 @@ const TRUST_POINTS = [
 
 const EXPLORE_LINKS = [
   { href: '/en/blog/', label: 'Blog', desc: 'Read by topic and goal' },
-  { href: '/en/tools/', label: 'Tools', desc: 'Simulators and calculators' },
+  { href: '/en/portfolio/', label: 'Portfolio', desc: 'Holdings and allocation policy' },
   { href: '/en/about/', label: 'About', desc: 'Philosophy and policy' },
-  { href: '/en/disclaimer/', label: 'Policy', desc: 'Disclaimer and risk notes' },
+  { href: '/en/editorial-policy/', label: 'Editorial Policy', desc: 'How articles are researched and reviewed' },
 ]
 
 const ASSET_TRANSLATIONS: Record<string, { name: string; note: string }> = {

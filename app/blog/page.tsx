@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://gaizen.xyz/blog/',
-    languages: { ja: 'https://gaizen.xyz/blog/', en: 'https://gaizen.xyz/en/blog/' },
   },
 }
 

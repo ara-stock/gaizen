@@ -5,7 +5,7 @@ updatedAt: "2026-06-11"
 description: "FIRE達成に必要な資産額を4%ルールと年利7%で逆算。月5万・月10万の積立シミュレーション、国民年金・国保の追加支出まで含めた現実的な試算を解説します。"
 tags: ["FIRE", "積立投資", "4%ルール", "インデックス投資", "資産形成", "長期投資"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 

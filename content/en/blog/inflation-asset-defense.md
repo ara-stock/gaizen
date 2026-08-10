@@ -1,7 +1,7 @@
 ---
 title: "Defending Your Wealth Against Inflation: The Role of Cash, Stocks, Real Estate, and Commodities"
 date: "2026-05-23"
-updatedAt: "2026-07-16"
+updatedAt: "2026-08-10"
 description: "What should you hold in an inflationary environment? The case for stocks as your core asset, why cash erodes, and a realistic assessment of real estate, gold, and commodity ETFs."
 tags: ["inflation", "asset defense", "cash", "stocks", "real estate", "gold accumulation", "commodities"]
 category: "us-stock"
@@ -19,7 +19,7 @@ The answer to protecting wealth in an inflationary environment is simple.
 
 Inflation means prices rise over time. The flip side: cash buys less and less.
 
-The money supply has grown gradually alongside credit cycles — and continued gradual expansion is considered healthy economic functioning. Holding large amounts of cash means swimming against that current.
+When deposit rates remain below inflation, cash loses purchasing power in real terms. Cash also has no market-price volatility and protects living expenses and known near-term spending, so it should not be judged by expected return alone.
 
 Set cash from essential spending, income stability, dependents, and known future expenses. I started my first working year with ¥500,000. See [How Much Emergency Cash Do You Need?](/en/blog/emergency-fund/) for the full framework.
 
@@ -27,9 +27,9 @@ Set cash from essential spending, income stability, dependents, and known future
 
 Companies with pricing power can pass higher input costs to customers. Not every business can do this, and stocks can still decline when inflation or interest rates rise abruptly.
 
-Stocks are, in essence, a claim on businesses with real pricing power. They are a natural inflation hedge.
+Stocks may respond to inflation over long periods through pricing power and earnings growth. They are not a guaranteed hedge: higher input costs and interest rates can reduce both profits and valuations in the short term.
 
-Concretely, holding an index fund tracking the [S&P500](/en/blog/sp500-index-investing/) or [All-Country](/en/blog/why-sp500-over-allcountry/) is the rational foundation. These indexes include resource, energy, and materials companies — so when commodity prices rise, their profits rise too, and you benefit indirectly without holding commodities separately.
+Concretely, holding a broadly diversified index fund tracking the S&P 500 or [All-Country](/en/blog/why-sp500-over-allcountry/) is a rational foundation. These indexes include resource, energy, and materials companies — so when commodity prices rise, their profits rise too, and you benefit indirectly without holding commodities separately.
 
 ## Evaluating Each Asset Class
 
@@ -46,7 +46,7 @@ Cash is stable and immediately available. Even with a low expected return, it ca
 
 | Factor | Assessment |
 |---|---|
-| Inflation resistance | ◎ Pricing power tracks inflation over time |
+| Inflation resistance | ○ Companies with pricing power may adapt over time, but there is no short-term guarantee |
 | Recommendation | Core asset. S&P500 or All-Country as the foundation |
 
 Historically, equities have outpaced inflation over the long run. This is the asset class to build around.

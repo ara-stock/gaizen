@@ -282,7 +282,7 @@ export default function EnAboutPage() {
       <section className="mb-16">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>RESEARCH AREAS</p>
         <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--muted)' }}>
-          These are current research areas and examples of holdings. See <a href="/en/portfolio/" style={{ color: 'var(--accent)' }}>Portfolio</a> for current positions and <a href="/en/thesis/" style={{ color: 'var(--accent)' }}>Thesis</a> for active themes.
+          These are current research areas and examples of holdings. See <a href="/en/portfolio/" style={{ color: 'var(--accent)' }}>Portfolio</a> for current positions and asset allocation.
         </p>
         <div className="space-y-4">
           {sectors.map(s => {

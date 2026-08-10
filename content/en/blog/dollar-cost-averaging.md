@@ -1,8 +1,8 @@
 ---
 title: "Dollar-Cost Averaging — Daily, Monthly, or Lump Sum: What Works Best"
 date: "2026-05-20"
-updatedAt: "2026-07-19"
-description: "A clear explanation of dollar-cost averaging with data comparing daily, monthly, and lump-sum strategies. Why lump sum wins 68% of the time, the 10% take-home rule, and why starting with ¥1,000 is perfectly fine."
+updatedAt: "2026-08-10"
+description: "A practical guide to daily and monthly investing, how to evaluate an immediately available lump sum, a 10% take-home reference point, and starting with ¥1,000."
 tags: ["dollar-cost averaging", "index investing", "NISA", "long-term investing", "wealth building"]
 category: "us-stock"
 published: true
@@ -25,29 +25,29 @@ By investing the same amount each month, you automatically buy fewer shares when
 
 ---
 
-## Daily, Monthly, or Lump Sum — What the Data Says
+## How to Use Daily, Monthly, and Lump-Sum Investing
 
-Most brokerages let you choose your investment frequency. Here's what the data shows.
+Most brokerages let you choose a daily or monthly schedule. You may also have a lump sum already available to invest. Those are different decisions and should not be treated as the same comparison.
 
-### Daily vs. Monthly: The Difference Is Negligible
+### Daily vs. Monthly: Choose What You Can Maintain
 
-A 20-year S&P500 backtest (2002–2022) showed only about **1% difference** in returns between daily and monthly investing (daily slightly ahead).
+When the amount and fund are the same, no investment frequency is guaranteed to win. The result depends on the market path, while fees, rewards, and ease of administration vary by brokerage.
 
-This is well within the margin of error. The time spent deliberating between daily and monthly investing would be far better spent simply starting one day earlier.
+I invest monthly because I manage household cash flow by month and use credit-card auto-investing. In practice, an automated schedule you can keep is more useful than trying to optimize small timing differences.
 
-**If you're using a credit card auto-invest feature (which earns reward points), monthly is the better choice** — the points more than offset the ~1% daily advantage.
+### Lump Sum vs. Staged Investing: A Decision About Cash Already Available
 
-### Lump Sum vs. DCA: Lump Sum Wins About 70% of the Time
+A Vanguard study using 1976–2022 data compares **a lump sum that is already available** with investing the same money in three monthly installments. Using the MSCI World Index, the immediate lump-sum approach produced greater wealth after one year in 68% of the periods tested.
 
-A Vanguard study (1976–2022) found that **investing a full year's budget at the start of the year beat monthly DCA 68% of the time**, with an average outperformance of about 2.3%.
+That does not mean investors should fund an entire year of contributions in January instead of investing from each paycheck. Future salary is not available to invest today, and that is outside the study's main comparison.
 
-| Method | Description | Win Rate (vs. DCA) |
+| Method | Starting Point | What the Study Shows |
 |---|---|---|
-| Lump sum | Invest ¥2.4M at start of year | **Beats DCA 68% of the time** |
-| Monthly DCA | Invest ¥200K × 12 months | — |
-| Daily DCA | Invest ~¥6,600 × 365 days | ~1% difference from monthly (negligible) |
+| Immediate lump sum | All investable cash is available now | Beat a three-month split in 68% of periods |
+| Three-month split | The same cash is divided into three investments | Reduces the timing impact of an immediate decline |
+| Monthly contributions | Money becomes available from each paycheck | A household cash-flow decision, not the same test |
 
-**The reason is simple.** If equities continue growing over the long term, investing earlier increases time in the market. Lump sum implements that approach, but it also carries the risk of a decline immediately after investing.
+If equities are expected to return more than cash, investing earlier increases time in the market. A lump sum also carries the risk of a decline immediately after investing, so the decision must reflect both expected return and the investor's ability to stay with the plan.
 
 ---
 
@@ -126,8 +126,8 @@ A lump sum often wins statistically, but the psychological cost of watching a la
 ## Summary
 
 - **Dollar-cost averaging = invest a fixed amount on a fixed schedule**
-- **Daily vs. monthly: ~1% difference. Credit card reward points make monthly the better choice**
-- **Lump sum beats DCA 68% of the time. If you have the cash, year-start lump sum is rational**
+- **Choose daily or monthly investing based on costs, rewards, and the schedule you can maintain**
+- **Vanguard's 68% result compares immediately investing available cash with a three-month split, not monthly contributions from future paychecks**
 - **Use 10% of take-home pay as a starting reference, then adjust it to your circumstances**
 - **Start with ¥1,000. Getting comfortable is the first goal**
 

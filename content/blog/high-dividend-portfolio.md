@@ -5,7 +5,7 @@ updatedAt: "2026-06-10"
 description: "高配当株ポートフォリオは原則不要だが、増配×成長力のある企業には投資価値がある。IR資料で確認すべき6つの基準、避けるべき銘柄のパターン、実際の成功例を解説します。"
 tags: ["高配当株", "増配", "日本株", "NISA", "配当投資", "長期投資"]
 category: "jp-stock"
-published: true
+published: false
 featured: false
 ---
 

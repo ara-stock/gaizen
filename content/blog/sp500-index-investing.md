@@ -5,7 +5,7 @@ updatedAt: "2026-07-19"
 description: "投資を再開した当初にS&P500を中心に選んだ理由と、個別株の比重が高まった現在も長期保有を続ける理由、米国集中などのリスクを整理します。"
 tags: ["米国株", "インデックス投資", "長期投資", "S&P500", "NISA"]
 category: "us-stock"
-published: true
+published: false
 featured: true
 coverImage: "/images/sp500_index_investing.webp"
 ---

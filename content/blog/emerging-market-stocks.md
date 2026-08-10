@@ -5,7 +5,7 @@ updatedAt: "2026-06-06"
 description: "インドやベトナムの経済成長を認めながらも、なぜ新興国株を保有しないのか。為替リスク・情報の非対称性・競争構造の3つの観点から整理します。"
 tags: ["新興国株", "インド株", "MSCI新興国", "為替リスク", "S&P500", "インデックス投資", "ポートフォリオ"]
 category: "us-stock"
-published: true
+published: false
 featured: false
 ---
 

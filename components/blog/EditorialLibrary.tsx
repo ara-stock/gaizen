@@ -16,13 +16,13 @@ const SECTIONS = {
       label: 'STEP 02',
       title: 'NISAと投資信託を選ぶ',
       description: '制度の説明だけで終わらず、目論見書・コスト・純資産総額をどう判断に使うかまで扱います。',
-      slugs: ['nisa-mutual-fund-checklist', 'how-to-read-mutual-fund-documents', 'why-sp500-over-allcountry', 'monthly-distribution-fund-warning'],
+      slugs: ['nisa-360-full-utilization', 'how-to-read-mutual-fund-documents', 'why-sp500-over-allcountry', 'monthly-distribution-fund-warning'],
     },
     {
       label: 'STEP 03',
       title: '長く続ける仕組みを作る',
       description: '積立額、資産配分、リバランス、出口まで、相場に振り回されにくい運用ルールを考えます。',
-      slugs: ['dollar-cost-averaging', 'core-satellite-strategy', 'portfolio-rebalancing', 'investment-exit-strategy'],
+      slugs: ['dollar-cost-averaging', 'bonds-and-gold', 'portfolio-rebalancing', 'investment-exit-strategy'],
     },
   ],
   en: [
@@ -36,13 +36,13 @@ const SECTIONS = {
       label: 'STEP 02',
       title: 'Choose a NISA Fund',
       description: 'Go beyond the rules and learn how to use prospectuses, costs, and fund size in an actual decision.',
-      slugs: ['nisa-mutual-fund-checklist', 'how-to-read-mutual-fund-documents', 'why-sp500-over-allcountry', 'monthly-distribution-fund-warning'],
+      slugs: ['nisa-360-full-utilization', 'how-to-read-mutual-fund-documents', 'why-sp500-over-allcountry', 'monthly-distribution-fund-warning'],
     },
     {
       label: 'STEP 03',
       title: 'Build a Repeatable System',
       description: 'Set rules for contributions, allocation, rebalancing, and withdrawals without chasing the market.',
-      slugs: ['dollar-cost-averaging', 'core-satellite-strategy', 'portfolio-rebalancing', 'investment-exit-strategy'],
+      slugs: ['dollar-cost-averaging', 'bonds-and-gold', 'portfolio-rebalancing', 'investment-exit-strategy'],
     },
   ],
 } satisfies Record<Locale, { label: string; title: string; description: string; slugs: string[] }[]>
