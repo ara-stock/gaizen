@@ -82,7 +82,7 @@ GAFAMやMag7が好きで、それらの比重を少しでも高めたいとい�
 再保険は保険料収入を得る一方、巨大災害、保険引受サイクル、準備金、運用環境の影響を受けます。米国大型テックとは異なる収益要因を持つ企業へ間接的に投資できる点は、オルカンの特徴です。
 
 :::comment
-再保険はおもしろいセクターだと思っています。Swiss Reは2024年の会計基準変更（IFRS-17）によって再保険ランキング世界1位になりましたが、Munich Reも長年トップを争ってきた欧州の巨人です。こうした企業を含んでいる点では、オルカンはS&P500にない多様性を持っています。
+再保険はおもしろいセクターだと思っています。Swiss ReとMunich Reはいずれも世界有数の再保険会社で、日本の証券口座から個別株として買うにはハードルがあります。こうした企業を間接的に含む点では、オルカンはS&P500にない多様性を持っています。
 :::
 
 ---
@@ -110,4 +110,4 @@ GAFAMやMag7が好きで、それらの比重を少しでも高めたいとい�
 - [S&P 500 公式ページ（S&P Global）](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
 - [Swiss Re Group 公式IR](https://www.swissre.com/investors/)
 - [Munich Re 公式IR](https://www.munichre.com/en/company/investors.item-738a133628e04cb9ff6114486f1d9964.html)
-- [AM Best Top 50 Global Reinsurers 2024](https://www.carriermanagement.com/news/2024/08/30/266007.htm)
+- [Munich Re｜Group in facts and figures](https://www.munichre.com/en/company/about-munich-re/facts-figures.item-df873f6119f0560589587db3dcd8e798.html)

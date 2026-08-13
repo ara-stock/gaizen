@@ -90,6 +90,8 @@ If your gold allocation is relatively modest and annual gains are unlikely to ex
 
 ## My Actual Allocation
 
+The allocation below is the same **May 31, 2026 snapshot** shown on the [Portfolio page](/en/portfolio/). It does not reflect subsequent daily market movements.
+
 | Asset | Allocation | Details |
 |---|---|---|
 | Japanese equities | 57% | Trading companies, banks, insurance, financials, real estate, AI (individual stocks) |

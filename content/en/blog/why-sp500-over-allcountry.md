@@ -104,4 +104,4 @@ Ultimately, which fund you pick matters less than whether you can hold it throug
 - [S&P 500 Official Page (S&P Global)](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
 - [Swiss Re Investor Relations](https://www.swissre.com/investors/)
 - [Munich Re Investor Relations](https://www.munichre.com/en/company/investors.item-738a133628e04cb9ff6114486f1d9964.html)
-- [AM Best Top 50 Global Reinsurers 2024](https://www.carriermanagement.com/news/2024/08/30/266007.htm)
+- [Munich Re | Group in facts and figures](https://www.munichre.com/en/company/about-munich-re/facts-figures.item-df873f6119f0560589587db3dcd8e798.html)
