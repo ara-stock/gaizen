@@ -119,11 +119,11 @@ export default async function ArticlePage({ params }: Props) {
               </h1>
               <div className="flex flex-wrap items-center gap-4 text-xs" style={{ color: 'var(--muted)' }}>
                 <Link href="/about/" className="transition-colors hover:text-green-500">執筆: ara</Link>
-                <span>
+                <time dateTime={frontmatter.date}>
                   {new Date(frontmatter.date).toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })}
-                </span>
+                </time>
                 {frontmatter.updatedAt && frontmatter.updatedAt !== frontmatter.date && (
-                  <span>更新: {new Date(frontmatter.updatedAt).toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                  <span>更新: <time dateTime={frontmatter.updatedAt}>{new Date(frontmatter.updatedAt).toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })}</time></span>
                 )}
                 <span>{readingTime} min read</span>
               </div>

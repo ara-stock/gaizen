@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useMemo } from 'react'
 import Link from 'next/link'
-import AdUnit from '@/components/ads/AdUnit'
 
 type SeriesItem = { ticker: string; dates: string[]; prices: number[] }
 type RawData = { updatedAt: string; start: string; series: Record<string, SeriesItem> }
@@ -270,7 +269,6 @@ export default function EnSharpePage() {
             ))}
         </div>
       </div>
-      <AdUnit slot="5904640354" format="auto" className="mt-10" />
     </div>
   )
 }

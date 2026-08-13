@@ -4,7 +4,6 @@ import TableOfContents from '@/components/blog/TableOfContents'
 import ArticleCard from '@/components/blog/ArticleCard'
 import ShareButton from '@/components/blog/ShareButton'
 import Tag from '@/components/ui/Tag'
-import AdUnit from '@/components/ads/AdUnit'
 import ArticleIntro from '@/components/blog/ArticleIntro'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -124,11 +123,11 @@ export default async function EnArticlePage({ params }: Props) {
               </h1>
               <div className="flex flex-wrap items-center gap-4 text-xs" style={{ color: 'var(--muted)' }}>
                 <Link href="/en/about/" className="transition-colors hover:text-green-500">By ara</Link>
-                <span>
+                <time dateTime={frontmatter.date}>
                   {new Date(frontmatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-                </span>
+                </time>
                 {frontmatter.updatedAt && frontmatter.updatedAt !== frontmatter.date && (
-                  <span>Updated: {new Date(frontmatter.updatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                  <span>Updated: <time dateTime={frontmatter.updatedAt}>{new Date(frontmatter.updatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time></span>
                 )}
                 <span>{readingTime} min read</span>
               </div>
@@ -187,7 +186,6 @@ export default async function EnArticlePage({ params }: Props) {
               </Link>
             </div>
 
-            <AdUnit slot="5151883773" format="auto" className="my-10" />
 
             {moreRelated.length > 0 && (
               <section className="mt-16 pt-10 border-t" style={{ borderColor: 'var(--border)' }}>
