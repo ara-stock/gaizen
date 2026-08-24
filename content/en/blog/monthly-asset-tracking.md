@@ -1,7 +1,7 @@
 ---
 title: "How to Track Your Net Worth Monthly — Focus on Balances, Not Perfect Returns"
 date: "2026-06-20"
-updatedAt: "2026-06-20"
+updatedAt: "2026-08-24"
 description: "A simple monthly net worth tracking method for beginner investors: record bank and brokerage balances in a spreadsheet, focus on long-term accumulation, and avoid overreacting to one-month changes."
 tags: ["asset tracking", "household finance", "investment journal", "spreadsheet", "long-term investing", "recurring investment"]
 category: "us-stock"
@@ -66,6 +66,22 @@ The structure looks like this:
 Include cash. If you only look at brokerage accounts, you miss the full household picture.
 
 At the same time, you do not need to track cash ratios, equity ratios, regional allocation, or sector allocation from the beginning. Add those later if they become useful.
+
+## Download the Monthly Asset Tracking Template
+
+I created a downloadable Excel workbook based on the system I use, with no personal account information or real asset balances included.
+
+- Tracks banks, brokerages, pensions, points, gift cards, cash, and crypto
+- Calculates category subtotals, total assets, monthly change, and year-to-date change
+- Displays total assets and category balances as column charts
+- Highlights cells that require manual input
+- Can be imported into Google Sheets
+
+[Download the monthly asset tracking template (Excel, Japanese labels)](/downloads/gaizen-asset-tracking-template.xlsx)
+
+The workbook identifies its author as GAIZEN FINANCE and contains no personal Google account or email information. After downloading it, upload it to your own Google Drive and open it as a Google Sheet.
+
+Changes shown in the charts include both investment performance and household cash flows such as salary contributions and spending. Use the workbook to monitor total asset balances, not to calculate a precise investment return.
 
 ## Why You Do Not Need Perfect Performance Calculations
 
@@ -178,4 +194,3 @@ Once a month, check your bank and brokerage accounts and record the total. That 
 - [Google Sheets](https://www.google.com/sheets/about/)
 - [Financial Services Agency｜New NISA](https://www.fsa.go.jp/policy/nisa2/about/index.html)
 - [Financial Services Agency｜Investment Basics](https://www.fsa.go.jp/policy/nisa2/knowledge/basic/index.html)
-
