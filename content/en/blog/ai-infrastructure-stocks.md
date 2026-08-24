@@ -78,6 +78,8 @@ Even in an AI-first world, a frontend is always necessary. Alphabet holds both t
 | YouTube | 2.5B monthly users, video's default |
 | Advertising | Dominant position in digital ads |
 
+My purchase rationale, add-on-buy process, and thesis invalidation conditions are set out in detail in [Why I Hold Alphabet Long Term](/en/blog/alphabet-investment-thesis/), alongside the latest reported figures.
+
 ---
 
 ## Apple (AAPL) — A Major Access Point for AI
