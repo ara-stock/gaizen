@@ -66,6 +66,8 @@ Corporate Banking (¥483.3B) and Global CIB (¥340.2B) form the two pillars — 
 - Progressive dividend policy (payout ratio increasing over time)
 - FY2025 net profit attributable to owners of the parent: ¥2.4272 trillion
 
+My original purchase rationale, add-on-buy criteria, and response to falling rates are covered in detail in [Why I Hold MUFG Long Term](/en/blog/mufg-investment-thesis/), alongside the latest reported figures.
+
 ---
 
 ## Sumitomo Mitsui Financial Group (8316)
