@@ -2,8 +2,8 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getProjectBySlug, getProjectsData } from '@/lib/projects'
-import { ACTIVITY_COLOR, ACTIVITY_LABEL, STATUS_COLOR, STATUS_LABEL, countryFlag, formatFollowers, formatFunding, scoreColor, scoreProject } from '@/components/tracker/labels'
-import { PhaseBadge, ProjectLogo, TgeCell } from '@/components/tracker/cells'
+import { ACTIVITY_COLOR, ACTIVITY_LABEL, STATUS_COLOR, STATUS_LABEL, countryFlag, formatFollowers, formatFunding } from '@/components/tracker/labels'
+import { PhaseMeter, ProjectLogo, TgeCell } from '@/components/tracker/cells'
 import AirdropEstimate from '@/components/tracker/AirdropEstimate'
 import InviteCodes from '@/components/tracker/InviteCodes'
 import MyStatus from '@/components/tracker/MyStatus'
@@ -50,7 +50,6 @@ export default async function ProjectPage({ params }: Props) {
   const p = getProjectBySlug(slug)
   if (!p) notFound()
   const note = { color: 'var(--prose-body)' }
-  const score = scoreProject(p)
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
@@ -64,17 +63,13 @@ export default async function ProjectPage({ params }: Props) {
         <div className="flex items-center gap-4 mb-4">
           <ProjectLogo project={p} size={56} />
           <h1 className="text-3xl font-bold flex-1" style={{ color: 'var(--foreground)' }}>{p.name}</h1>
-          <p className="text-right">
-            <span className="block text-4xl font-bold font-mono leading-none" style={{ color: scoreColor(score.total) }}>{score.total}</span>
-            <span className="text-xs font-mono" style={{ color: 'var(--muted)' }}>質 {score.quality} · 酬 {score.reward}</span>
-          </p>
         </div>
         <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
           <span className="inline-flex items-center gap-1.5">
             <span aria-hidden="true" className="w-2 h-2 rounded-full" style={{ backgroundColor: STATUS_COLOR[p.status] }} />
             araの状況: {STATUS_LABEL[p.status]}
           </span>
-          <PhaseBadge phase={p.phase} />
+          <PhaseMeter phase={p.phase} />
           <span className="text-xs" style={{ color: 'var(--muted)' }}>最終更新: {p.updatedAt}</span>
         </p>
         <p className="mt-3"><MyStatus project={p} /></p>
@@ -84,7 +79,7 @@ export default async function ProjectPage({ params }: Props) {
       <Section title="TGE・ポイント">
         <dl>
           <Row label="フェーズ">
-            <PhaseBadge phase={p.phase} />
+            <PhaseMeter phase={p.phase} />
             {p.phaseNote && <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>{p.phaseNote}</span>}
           </Row>
           <Row label="TGE"><TgeCell project={p} /></Row>

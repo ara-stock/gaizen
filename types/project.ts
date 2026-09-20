@@ -89,8 +89,6 @@ export interface Project {
     inviteCodes?: string[]
     inviteNote?: string
   }
-  /** Author's own scores (0–50 each). When set, they replace the computed ones. */
-  scoreOverride?: { quality?: number; reward?: number }
   sources: ProjectSource[]
   updatedAt: string
 }

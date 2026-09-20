@@ -1,13 +1,18 @@
 import type { Phase, Project } from '@/types/project'
-import { PHASE_BADGE, PHASE_LABEL, TGE_SOURCE_LABEL } from './labels'
+import { PHASE_LABEL, PHASE_STEP, TGE_SOURCE_LABEL } from './labels'
 
-export function PhaseBadge({ phase }: { phase: Phase }) {
-  const { mark, color } = PHASE_BADGE[phase]
+/** Three-segment progress meter: the further along, the less room is left to join. */
+export function PhaseMeter({ phase }: { phase: Phase }) {
+  const closed = phase === 'ended'
   return (
-    <span className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full whitespace-nowrap"
-      style={{ color, backgroundColor: `color-mix(in srgb, ${color} 14%, transparent)` }}>
-      <span aria-hidden="true">{mark}</span>
-      {PHASE_LABEL[phase]}
+    <span className="inline-flex items-center gap-2 whitespace-nowrap">
+      <span aria-hidden="true" className="inline-flex gap-0.5">
+        {[1, 2, 3].map(n => (
+          <span key={n} className="w-3.5 h-1.5 rounded-sm"
+            style={{ backgroundColor: n <= PHASE_STEP[phase] ? (closed ? 'var(--muted)' : 'var(--accent)') : 'var(--border)' }} />
+        ))}
+      </span>
+      <span className="text-xs" style={{ color: closed || phase === 'none' ? 'var(--muted)' : 'var(--foreground)' }}>{PHASE_LABEL[phase]}</span>
     </span>
   )
 }
@@ -16,7 +21,7 @@ export function ProjectLogo({ project, size = 40 }: { project: Project; size?: n
   const style = { width: size, height: size, backgroundColor: 'var(--surface-2)', borderColor: 'var(--border)' }
   if (!project.logo) {
     return (
-      <span aria-hidden="true" className="rounded-full border flex items-center justify-center font-bold flex-shrink-0" style={style}>
+      <span aria-hidden="true" className="rounded-lg border flex items-center justify-center font-bold flex-shrink-0" style={style}>
         {project.name[0]}
       </span>
     )
@@ -24,7 +29,7 @@ export function ProjectLogo({ project, size = 40 }: { project: Project; size?: n
   return (
     // eslint-disable-next-line @next/next/no-img-element -- static export, tiny local icons
     <img src={project.logo} alt="" width={size} height={size} loading="lazy"
-      className="rounded-full border object-cover flex-shrink-0" style={style} />
+      className="rounded-lg border object-cover flex-shrink-0" style={style} />
   )
 }
 
