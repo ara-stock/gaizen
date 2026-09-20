@@ -2,14 +2,11 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import LanguageDetector from '@/components/layout/LanguageDetector'
-import AdSenseScript from '@/components/ads/AdSenseScript'
 import { serializeJsonLd } from '@/lib/json-ld'
 
 const SITE_URL = 'https://gaizen.xyz'
 const SITE_NAME = 'GAIZEN FINANCE'
-const SITE_DESCRIPTION = '投資の始め方から企業分析まで、個人投資家の実体験と一次情報から学ぶ長期投資メディア。'
-const ADSENSE_ACCOUNT = process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID
+const SITE_DESCRIPTION = '実際に触っている仮想通貨プロジェクトを、TGE時期・エアドロップ見込み・調達額・チームで一覧比較するトラッカー。'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -18,7 +15,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
-  keywords: ['長期投資', '企業分析', 'NISA', '投資信託', '個別株', '資産管理', '暗号資産'],
+  keywords: ['仮想通貨', 'エアドロップ', 'TGE', 'Perp DEX', 'ポイント', 'DeFi', '資産形成'],
   authors: [{ name: 'ara', url: `${SITE_URL}/about/` }],
   creator: 'ara',
   openGraph: {
@@ -35,12 +32,6 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: [`${SITE_URL}/og-image.png`],
   },
-  alternates: {
-    types: { 'application/rss+xml': `${SITE_URL}/feed.xml` },
-  },
-  ...(ADSENSE_ACCOUNT && ADSENSE_ACCOUNT !== 'ca-pub-XXXXXXXXXXXXXXXX' && {
-    other: { 'google-adsense-account': ADSENSE_ACCOUNT },
-  }),
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -55,7 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           name: SITE_NAME,
           url: SITE_URL,
           description: SITE_DESCRIPTION,
-          inLanguage: ['ja', 'en'],
+          inLanguage: 'ja',
           publisher: {
             '@type': 'Organization',
             name: SITE_NAME,
@@ -74,8 +65,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         }) }} />
       </head>
       <body className="min-h-full flex flex-col" style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)' }}>
-        <AdSenseScript />
-        <LanguageDetector />
         <Header />
         <main id="main-content" className="flex-1">
           {children}

@@ -3,14 +3,12 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useSyncExternalStore } from 'react'
-import LanguageSwitcher from './LanguageSwitcher'
 
-const NAV_PATHS = [
-  { path: '/tracker/', label: 'トラッカー', en: 'Tracker', jaOnly: true },
-  { path: '/blog/', label: '記事一覧', en: 'Articles' },
-  { path: '/blog/monthly-asset-tracking/', label: '資産管理Excel', en: 'Asset Workbook' },
-  { path: '/portfolio/', label: '保有方針', en: 'Portfolio' },
-  { path: '/about/', label: '筆者について', en: 'About' },
+const NAV_LINKS = [
+  { href: '/', label: 'トラッカー' },
+  { href: '/portfolio/', label: '保有方針' },
+  { href: '/tools/', label: '計算ツール' },
+  { href: '/about/', label: '筆者について' },
 ]
 
 function subscribeToTheme(onChange: () => void) {
@@ -70,16 +68,12 @@ function ThemeToggle() {
 export default function Header() {
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
-  const isEnglish = pathname.startsWith('/en')
-  const prefix = isEnglish ? '/en' : ''
-  const NAV_LINKS = NAV_PATHS.map(({ path, label, en, jaOnly }) => ({ href: `${jaOnly ? '' : prefix}${path}`, label: isEnglish ? en : label }))
-  const homeHref = isEnglish ? '/en/' : '/'
 
   return (
     <header className="sticky top-0 z-50 border-b" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--header-bg)', backdropFilter: 'blur(12px)' }}>
-      <a className="skip-link" href="#main-content">{isEnglish ? 'Skip to content' : '本文へ移動'}</a>
+      <a className="skip-link" href="#main-content">本文へ移動</a>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-        <Link href={homeHref} className="flex items-center gap-2 tracking-widest text-sm font-bold flex-shrink-0" aria-label="GAIZEN FINANCE home">
+        <Link href="/" className="flex items-center gap-2 tracking-widest text-sm font-bold flex-shrink-0" aria-label="GAIZEN FINANCE home">
           <svg aria-hidden="true" width="24" height="24" viewBox="0 0 32 32" fill="none" style={{ color: 'var(--accent)' }}>
             <path d="M2 2h28v28H2zM19.4 3.4 3.4 12.6l9.2 16 16-9.2-9.2-16ZM13.7 7.3l-6.4 11 11 6.4 6.4-11-11-6.4Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="miter" />
           </svg>
@@ -90,7 +84,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav aria-label={isEnglish ? 'Main navigation' : 'メインメニュー'} className="hidden md:flex items-center gap-6 flex-1 justify-center">
+        <nav aria-label="メインメニュー" className="hidden md:flex items-center gap-6 flex-1 justify-center">
           {NAV_LINKS.map(({ href, label }) => {
             const active = pathname === href
             return (
@@ -105,14 +99,13 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-1.5 sm:gap-3">
-          <LanguageSwitcher />
           <ThemeToggle />
           {/* Mobile menu button */}
           <button
             className="md:hidden w-11 h-11 flex items-center justify-center text-sm"
             style={{ color: 'var(--muted)' }}
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label={isEnglish ? 'Menu' : 'メニュー'}
+            aria-label="メニュー"
             aria-controls="mobile-navigation"
             aria-expanded={menuOpen}
           >
@@ -123,7 +116,7 @@ export default function Header() {
 
       {/* Mobile nav */}
       {menuOpen && (
-        <nav id="mobile-navigation" aria-label={isEnglish ? 'Mobile navigation' : 'モバイルメニュー'} className="md:hidden border-t px-4 py-4 flex flex-col gap-2" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--background)' }}>
+        <nav id="mobile-navigation" aria-label="モバイルメニュー" className="md:hidden border-t px-4 py-4 flex flex-col gap-2" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--background)' }}>
           {NAV_LINKS.map(({ href, label }) => (
             <Link key={href} href={href} className="text-sm min-h-11 flex items-center" style={{ color: 'var(--muted)' }} onClick={() => setMenuOpen(false)}>
               {label}

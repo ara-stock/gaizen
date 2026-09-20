@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'プライバシーポリシー',
-  description: 'GAIZEN FINANCEのプライバシーポリシー。Google AdSenseによる広告配信、Cookieの利用、アクセス解析、個人情報の取り扱いについて説明します。',
+  description: 'GAIZEN FINANCEのプライバシーポリシー。ローカルストレージの利用、アクセス解析、個人情報の取り扱いについて説明します。',
   alternates: { canonical: 'https://gaizen.xyz/privacy/' },
 }
 
@@ -20,47 +20,9 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>サイト概要</h2>
           <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-            GAIZEN FINANCE（以下「本サイト」、URL: https://gaizen.xyz）は、長期投資に関する情報を発信する個人運営のウェブサイトです。
+            GAIZEN FINANCE（以下「本サイト」、URL: https://gaizen.xyz）は、仮想通貨プロジェクトと資産形成に関する情報を発信する個人運営のウェブサイトです。
             本サイトでは、ユーザーの皆様の情報を適切に管理・保護することを最優先に考えています。
             このプライバシーポリシーは、本サイトにおける個人情報の取り扱いについて説明するものです。
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold mb-3" style={{ color: 'var(--foreground)' }}>広告配信について（Google AdSense）</h2>
-          <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--muted)' }}>
-            本サイトでは、<strong style={{ color: 'var(--foreground)' }}>Google AdSense</strong>（Google LLC、米国）を利用して広告を配信しています。
-            広告配信に伴い、Googleおよび第三者事業者がCookieをブラウザに保存・読み取りしたり、Webビーコン、IPアドレス、
-            その他の識別子を使用して情報を収集したりする場合があります。収集された情報は、広告配信、測定、パーソナライズなどに利用されます。
-          </p>
-          <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--muted)' }}>
-            Googleによるデータの利用については、
-            <a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
-              Googleサービスを使用するサイトやアプリから収集した情報の利用方法
-            </a>
-            をご参照ください。
-          </p>
-          <div className="p-4 rounded-lg border text-sm" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', color: 'var(--muted)' }}>
-            <p className="font-semibold mb-2" style={{ color: 'var(--foreground)' }}>パーソナライズ広告の無効化</p>
-            <p className="leading-relaxed">
-              パーソナライズ広告を無効にしたい場合は、以下のリンクからオプトアウトできます。
-            </p>
-            <ul className="mt-2 space-y-1">
-              <li>
-                <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
-                  Google 広告設定ページ
-                </a>
-              </li>
-              <li>
-                <a href="https://www.networkadvertising.org/choices/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
-                  NAI（Network Advertising Initiative）オプトアウトページ
-                </a>
-              </li>
-            </ul>
-          </div>
-          <p className="text-sm leading-relaxed mt-3" style={{ color: 'var(--muted)' }}>
-            広告に関する同意が必要な地域では、Googleが提供する同意管理メッセージが表示される場合があります。
-            同意内容は、表示されるプライバシー設定画面から確認・変更できます。
           </p>
         </section>
 
@@ -72,10 +34,10 @@ export default function PrivacyPage() {
           </p>
           <ul className="list-disc list-inside space-y-1 text-sm" style={{ color: 'var(--muted)' }}>
             <li>ローカルストレージによるテーマ設定（ダークモード/ライトモード）の保存</li>
-            <li>Google AdSenseによる広告配信・測定・パーソナライズ</li>
+            <li>トラッカーで自分用に変更したステータスと、試算用に入力した保有ポイントの保存（外部には送信されません）</li>
           </ul>
           <p className="text-sm leading-relaxed mt-3" style={{ color: 'var(--muted)' }}>
-            ブラウザの設定でCookieを無効にすることも可能ですが、その場合、テーマ設定の保存など一部機能が正常に動作しない場合があります。
+            ブラウザの設定で無効にすることも可能ですが、その場合、テーマ設定やステータスの保存など一部機能が正常に動作しない場合があります。
           </p>
         </section>
 

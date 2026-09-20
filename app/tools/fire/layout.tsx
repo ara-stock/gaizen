@@ -6,10 +6,6 @@ export const metadata: Metadata = {
   keywords: ['FIRE', '経済的自立', '早期退職', '資産推移', '積立投資', '複利', 'シミュレーター'],
   alternates: {
     canonical: 'https://gaizen.xyz/tools/fire/',
-    languages: {
-      ja: 'https://gaizen.xyz/tools/fire/',
-      en: 'https://gaizen.xyz/en/tools/fire/',
-    },
   },
 }
 

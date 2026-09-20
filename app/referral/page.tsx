@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Referral',
-  description: '仮想通貨取引所・DEX・エアドロップのリファラルリンクまとめ。Binance Japan, Jupiter, EdgeX, GRVT など。',
-  alternates: { canonical: 'https://gaizen.xyz/referral/', languages: { ja: 'https://gaizen.xyz/referral/', en: 'https://gaizen.xyz/en/referral/' } },
+  description: '仮想通貨取引所・DEX・ポイントプログラムのリファラルリンクまとめ。Binance Japan, Jupiter, edgeX, GRVT など。',
+  alternates: { canonical: 'https://gaizen.xyz/referral/' },
   robots: { index: false, follow: true },
 }
 
@@ -57,9 +57,9 @@ const referrals: ReferralGroup[] = [
         href: 'https://jup.ag/?ref=zmz6ke75ec3p',
       },
       {
-        name: 'EdgeX',
-        description: 'Solanaベースの高速Perp DEX。低レイテンシで本格的なトレードが可能。',
-        tags: ['Solana', 'Perp', '低レイテンシ'],
+        name: 'edgeX',
+        description: 'StarkEx（EthereumのZKロールアップ）上のPerp DEX。2026年3月に$EDGEをローンチ済み。',
+        tags: ['StarkEx', 'Perp', '$EDGE'],
         href: 'https://pro.edgex.exchange/en-US/referral/MOMIJI',
       },
       {
@@ -70,8 +70,8 @@ const referrals: ReferralGroup[] = [
       },
       {
         name: 'Nado',
-        description: 'オンチェーンのソーシャルトレーディングプラットフォーム。$INK トークンのエアドロップに期待。',
-        tags: ['Social', '$INK Airdrop'],
+        description: 'Kraken系L2「Ink」上の板取引型Perp・現物DEX。旧Vertexチームが開発。ポイントは$INKに変換される想定（INKのTGE時期は未発表）。',
+        tags: ['Ink', 'Perp', 'Points'],
         href: 'https://app.nado.xyz?join=bseutrt',
       },
     ],
@@ -82,19 +82,19 @@ const referrals: ReferralGroup[] = [
     items: [
       {
         name: 'xStocks',
-        description: 'オンチェーンで株式トークンを取引できるDeFiプロトコル。ポイントプログラム参加でエアドロップ権利を獲得。',
+        description: 'Backed（Krakenグループ）が発行するトークン化株式。オンチェーンの取引・LPでポイントが貯まる。トークンは未発表。Kraken上のxStocksは日本では提供されていない。',
         tags: ['Points', 'Airdrop', 'Stock Token'],
         href: 'https://defi.xstocks.fi/points?ref=ARACRYPT',
       },
       {
         name: 'Solstice.fi',
-        description: 'Solanaエコシステムのイールド最適化プロトコル。流動性提供でポイント獲得。招待コード: rvhjBfkF5q',
-        tags: ['Solana', 'Yield', 'DeFi'],
+        description: 'Solana上のステーブルコインUSXと利回り運用のプロトコル。ポイント「Flares」がシーズン終了時に$SLXへ変換される。招待コード: rvhjBfkF5q',
+        tags: ['Solana', 'Stablecoin', 'Flares'],
         href: 'https://app.solstice.finance/dashboard',
       },
       {
         name: 'Huma Finance',
-        description: 'リアルワールドアセット（RWA）ベースのPayFiプロトコル。安定したイールドを提供。',
+        description: '決済向け融資（PayFi）を裏付けとする利回りプロトコル。$HUMAはローンチ済みで、ポイント「Feathers」によるシーズン制の配布が続いている。',
         tags: ['RWA', 'PayFi', 'Yield'],
         href: 'https://app.huma.finance?ref=7hiETI',
       },

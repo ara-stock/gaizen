@@ -1,11 +1,9 @@
 import fs from 'fs'
 import path from 'path'
-import matter from 'gray-matter'
 import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.join(__dirname, '..')
-const BLOG_DIR = path.join(ROOT, 'content/blog')
 const OUT_DIR = path.join(ROOT, 'out')
 
 const SITE_URL = 'https://gaizen.xyz'
@@ -19,27 +17,16 @@ function xmlEscape(value) {
     .replace(/'/g, '&apos;')
 }
 
-function getPosts(dir) {
-  if (!fs.existsSync(dir)) return []
-  return fs.readdirSync(dir)
-    .filter(f => f.endsWith('.md'))
-    .map(f => {
-      const raw = fs.readFileSync(path.join(dir, f), 'utf-8')
-      const { data } = matter(raw)
-      return { slug: f.replace(/\.md$/, ''), ...data }
-    })
-    .filter(p => p.published === true)
-}
-
-const jaPosts = getPosts(BLOG_DIR)
 const projectsData = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/projects/projects.json'), 'utf-8'))
 const staticRoutes = [
-  { url: `${SITE_URL}/`, priority: '1.0', changefreq: 'weekly' },
-  { url: `${SITE_URL}/blog/`, priority: '0.9', changefreq: 'daily' },
-  { url: `${SITE_URL}/tracker/`, priority: '0.9', changefreq: 'weekly', lastmod: projectsData.updatedAt },
-  { url: `${SITE_URL}/portfolio/`, priority: '0.8', changefreq: 'monthly' },
+  { url: `${SITE_URL}/`, priority: '1.0', changefreq: 'weekly', lastmod: projectsData.updatedAt },
+  { url: `${SITE_URL}/portfolio/`, priority: '0.6', changefreq: 'monthly' },
+  { url: `${SITE_URL}/tools/`, priority: '0.6', changefreq: 'monthly' },
+  { url: `${SITE_URL}/tools/allocation/`, priority: '0.5', changefreq: 'yearly' },
+  { url: `${SITE_URL}/tools/fire/`, priority: '0.5', changefreq: 'yearly' },
+  { url: `${SITE_URL}/tools/sharpe/`, priority: '0.5', changefreq: 'yearly' },
+  { url: `${SITE_URL}/tools/realestate/`, priority: '0.5', changefreq: 'yearly' },
   { url: `${SITE_URL}/about/`, priority: '0.5', changefreq: 'yearly' },
-  { url: `${SITE_URL}/editorial-policy/`, priority: '0.5', changefreq: 'yearly' },
   { url: `${SITE_URL}/disclaimer/`, priority: '0.3', changefreq: 'yearly' },
   { url: `${SITE_URL}/privacy/`, priority: '0.3', changefreq: 'yearly' },
   { url: `${SITE_URL}/contact/`, priority: '0.4', changefreq: 'yearly' },
@@ -61,12 +48,6 @@ function entry({ url, priority, changefreq, lastmod }) {
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${staticRoutes.map(r => entry(r)).join('\n')}
-${jaPosts.map(p => entry({
-  url: `${SITE_URL}/blog/${p.slug}/`,
-  lastmod: (p.updatedAt || p.date || '').toString().split('T')[0],
-  changefreq: 'monthly',
-  priority: '0.8',
-})).join('\n')}
 ${projectsData.projects.map(p => entry({
   url: `${SITE_URL}/tracker/${p.slug}/`,
   lastmod: p.updatedAt,
@@ -81,4 +62,4 @@ fs.writeFileSync(path.join(OUT_DIR, 'sitemap.xml'), xml, 'utf-8')
 // It intentionally contains the URL set directly instead of a sitemap index,
 // so Search Console can discover pages even if it does not fetch child sitemaps.
 fs.writeFileSync(path.join(OUT_DIR, 'sitemap-index.xml'), xml, 'utf-8')
-console.log(`[sitemap] Generated with ${staticRoutes.length + jaPosts.length + projectsData.projects.length} URLs`)
+console.log(`[sitemap] Generated with ${staticRoutes.length + projectsData.projects.length} URLs`)
