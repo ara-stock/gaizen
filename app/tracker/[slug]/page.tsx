@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getProjectBySlug, getProjectsData } from '@/lib/projects'
-import { ACTIVITY_COLOR, ACTIVITY_LABEL, STATUS_COLOR, STATUS_LABEL, formatFollowers, formatFunding } from '@/components/tracker/labels'
+import { ACTIVITY_COLOR, ACTIVITY_LABEL, CHEAP_MULTIPLE, STATUS_COLOR, STATUS_LABEL, fdvMultiples, formatFollowers, formatFunding, formatMultiple, formatUsdM } from '@/components/tracker/labels'
 import { PhaseMeter, ProjectLogo, TgeCell } from '@/components/tracker/cells'
 import AirdropEstimate from '@/components/tracker/AirdropEstimate'
 import InviteCodes from '@/components/tracker/InviteCodes'
@@ -50,6 +50,8 @@ export default async function ProjectPage({ params }: Props) {
   const p = getProjectBySlug(slug)
   if (!p) notFound()
   const note = { color: 'var(--prose-body)' }
+  const multiples = fdvMultiples(p)
+  const v = p.valuation
   const phased = p.activity === 'perps' || p.activity === 'points'
 
   return (
@@ -85,6 +87,31 @@ export default async function ProjectPage({ params }: Props) {
             <Row label="報酬">{p.staking.reward}</Row>
             {p.staking.note && <Row label="補足">{p.staking.note}</Row>}
           </dl>
+        </Section>
+      )}
+
+      {v && multiples && (
+        <Section title="バリュエーション">
+          <dl>
+            <Row label="FDV（希薄化後）">
+              <span className="font-mono">{formatUsdM(v.fdvUsdM!)}</span>
+              <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>時価総額 {formatUsdM(v.marketCapUsdM!)}</span>
+            </Row>
+            <Row label="FDV ÷ 収益">
+              <span className="font-mono font-semibold" style={{ color: multiples.trailing !== null && multiples.trailing <= CHEAP_MULTIPLE ? 'var(--accent)' : undefined }}>{formatMultiple(multiples.trailing)}</span>
+              <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>過去365日の収益 {v.revenue365UsdM ? formatUsdM(v.revenue365UsdM) : '—'}</span>
+              <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>直近90日×4では {formatMultiple(multiples.runRate)}（年換算 {v.revenue90UsdM ? formatUsdM(v.revenue90UsdM * 4) : '—'}）</span>
+            </Row>
+            <Row label="FDV ÷ 保有者還元">
+              <span className="font-mono">{formatMultiple(multiples.holdersRunRate)}</span>
+              <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>直近90日の買い戻し・バーン・分配 {v.holders90UsdM ? formatUsdM(v.holders90UsdM) : 'なし'}（×4で年換算）</span>
+            </Row>
+            {v.note && <Row label="補足">{v.note}</Row>}
+          </dl>
+          <p className="text-xs leading-relaxed mt-3" style={{ color: 'var(--muted)' }}>
+            {v.asOf}時点。FDVはCoinGecko、収益と保有者還元はDefiLlamaの数値です。分母は利益ではなく収益なので、株式のPERより売上倍率（PSR）に近い指標です。
+            筆者は「FDV÷収益が{CHEAP_MULTIPLE}倍以下」を割安の目安にしていますが、収益の変動やアンロックで大きく変わります。
+          </p>
         </Section>
       )}
 

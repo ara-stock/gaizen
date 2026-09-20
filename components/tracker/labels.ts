@@ -107,3 +107,31 @@ export function writeStored<T>(key: string, value: Record<string, T>) {
     // The page keeps working for this visit when browser storage is unavailable.
   }
 }
+
+/** The author treats FDV ÷ annual revenue at or below this as cheap. */
+export const CHEAP_MULTIPLE = 5
+
+export interface Multiples {
+  /** FDV ÷ trailing 365-day revenue. */
+  trailing: number | null
+  /** FDV ÷ (last 90 days × 4). */
+  runRate: number | null
+  /** FDV ÷ (holders' revenue, last 90 days × 4). */
+  holdersRunRate: number | null
+}
+
+export function fdvMultiples(p: Project): Multiples | null {
+  const v = p.valuation
+  if (!v?.fdvUsdM) return null
+  const ratio = (annual?: number | null) => (annual && annual > 0 ? v.fdvUsdM! / annual : null)
+  return {
+    trailing: ratio(v.revenue365UsdM),
+    runRate: ratio((v.revenue90UsdM ?? 0) * 4),
+    holdersRunRate: ratio((v.holders90UsdM ?? 0) * 4),
+  }
+}
+
+export function formatMultiple(value: number | null): string {
+  if (value === null) return '—'
+  return `${value >= 100 ? Math.round(value) : value.toFixed(1)}倍`
+}
