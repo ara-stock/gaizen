@@ -78,9 +78,9 @@ export default async function ProjectPage({ params }: Props) {
       </header>
 
       {p.staking && (
-        <Section title="ステーキング">
+        <Section title={p.activity === 'defi' ? 'レンディング・利回り' : 'ステーキング'}>
           <dl>
-            <Row label="トークン"><span className="font-mono">${p.staking.token}</span></Row>
+            <Row label={p.activity === 'defi' ? '預ける資産' : 'トークン'}><span className="font-mono">{p.activity === 'defi' ? '' : '$'}{p.staking.token}</span></Row>
             {p.staking.apy && <Row label="APYの目安">{p.staking.apy}</Row>}
             <Row label="報酬">{p.staking.reward}</Row>
             {p.staking.note && <Row label="補足">{p.staking.note}</Row>}

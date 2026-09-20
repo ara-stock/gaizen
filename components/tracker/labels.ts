@@ -16,10 +16,11 @@ export const STATUS_COLOR: Record<ProjectStatus, string> = {
   done: 'var(--chart-cash)',
 }
 
-export const ACTIVITY_ORDER: Activity[] = ['perps', 'staking', 'points', 'hold']
+export const ACTIVITY_ORDER: Activity[] = ['perps', 'defi', 'staking', 'points', 'hold']
 
 export const ACTIVITY_LABEL: Record<Activity, string> = {
   perps: 'Perp取引',
+  defi: 'DeFi（レンディング）',
   staking: 'Staking',
   points: 'ポイント活動',
   hold: 'ホールド',
@@ -27,6 +28,7 @@ export const ACTIVITY_LABEL: Record<Activity, string> = {
 
 export const ACTIVITY_COLOR: Record<Activity, string> = {
   perps: 'var(--chart-us)',
+  defi: 'var(--chart-jp)',
   staking: 'var(--chart-crypto)',
   points: 'var(--chart-us-2)',
   hold: 'var(--chart-gold)',

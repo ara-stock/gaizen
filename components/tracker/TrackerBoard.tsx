@@ -144,7 +144,10 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
     </span>
   )
 
-  const tokenCell = (p: Project) => <span className="font-mono">{p.token.ticker ? `$${p.token.ticker}` : '—'}</span>
+  const tokenCell = (p: Project) => {
+    const token = p.staking?.token ?? p.token.ticker
+    return <span className="font-mono">{token ? (p.activity === 'defi' ? token : `$${token}`) : '—'}</span>
+  }
 
   const groupHeading = (activity: typeof ACTIVITY_ORDER[number], count: number) => (
     <span className="inline-flex items-center gap-2 text-sm font-semibold" style={{ color: 'var(--foreground)' }}>
@@ -201,9 +204,9 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
                     <tr className="text-xs" style={{ ...muted, backgroundColor: 'var(--surface-2)' }}>
                       {COLUMNS.map((c, i) => {
                         // Staking and hold rows have no campaign: those three columns become token + reward.
-                        if (!phased && i === 2) return <th key={i} scope="col" colSpan={2} className="px-3 py-2.5 font-medium text-left whitespace-nowrap">{activity === 'staking' ? '報酬・APY' : 'メモ'}</th>
+                        if (!phased && i === 2) return <th key={i} scope="col" colSpan={2} className="px-3 py-2.5 font-medium text-left whitespace-nowrap">{activity === 'hold' ? 'メモ' : '利回り・報酬'}</th>
                         if (!phased && i === 3) return null
-                        const label = !phased && i === 1 ? 'トークン' : c.label
+                        const label = !phased && i === 1 ? (activity === 'defi' ? '預ける資産' : 'トークン') : c.label
                         const sortable = c.key && (phased || i > 3)
                         return (
                           <th key={i} scope="col" className={`px-3 py-2.5 font-medium whitespace-nowrap ${c.align === 'right' ? 'text-right' : 'text-left'}`}
@@ -275,8 +278,8 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
                         ['TGE', <TgeCell key="tge" project={p} />],
                         ['エアドロ規模', airdropCell(p)],
                       ] as const : [
-                        ['トークン', tokenCell(p)],
-                        [p.activity === 'staking' ? '報酬・APY' : 'メモ', stakingCell(p)],
+                        [p.activity === 'defi' ? '預ける資産' : 'トークン', tokenCell(p)],
+                        [p.activity === 'hold' ? 'メモ' : '利回り・報酬', stakingCell(p)],
                       ] as const),
                       ['VC調達額', <span key="f" className="font-mono tabular-nums">{formatFunding(p.funding.totalUsdM)}</span>],
                       ['Xフォロワー', <span key="x" className="font-mono tabular-nums">{p.audience?.xFollowers ? formatFollowers(p.audience.xFollowers) : '—'}</span>],
