@@ -1,7 +1,7 @@
 ---
 title: "Why I Hold MUFG Long Term | Rates, Overseas Earnings, and NISA"
 date: "2026-08-24"
-updatedAt: "2026-08-24"
+updatedAt: "2026-09-11"
 description: "A MUFG shareholder's decision record covering interest rates, overseas operations, asset management, add-on-buy criteria, and the conditions that would invalidate the thesis."
 tags: ["Japanese stocks", "MUFG", "bank stocks", "interest rates", "NISA", "individual stocks", "long-term investing"]
 category: "japan-stock"
@@ -24,6 +24,8 @@ Bank stocks are often reduced to the claim that higher rates mean higher profits
 | Thesis review condition | Combined deterioration in spreads, credit costs, and capital, not merely one rate cut |
 
 This table describes my personal process. It is not a forecast or guarantee of dividends or returns.
+
+This article combines my interview answers with supporting primary-source research. It is not a transaction diary. My research sequence and a suggested recording template are set out in [How I Build an Individual-Stock Thesis](/en/blog/individual-stock-investment-thesis/).
 
 ---
 
@@ -104,7 +106,7 @@ For example, I have considered adding when capital rotated sharply into memory-r
 
 I originally viewed a turn from stable rates to rate cuts as the main invalidation condition. In a falling-rate environment, growth companies that benefit from cheaper financing can become relatively more attractive.
 
-But one rate cut does not erase MUFG's value. Overseas earnings, fee businesses, and loan-volume growth can offset narrower domestic spreads. I now look for a combination of conditions:
+One rate cut does not erase MUFG's value. Overseas earnings, fee businesses, and loan-volume growth can offset narrower domestic spreads. The following supplementary review questions are not verified rules from my trading history:
 
 - the BOJ enters a sustained easing cycle and domestic lending spreads contract;
 - loan balances and fee income stall while operating profit declines over several quarters;
@@ -148,7 +150,7 @@ My MUFG thesis is broader than rising interest rates:
 
 Q1 FY2026 supported that thesis with substantial growth in net interest income and net profit. Lower rates, rising credit costs, and weakening overseas operations remain important risks. I will keep testing the position with multiple financial indicators rather than relying on the idea that a mega-bank is automatically safe.
 
-This article is not a recommendation to buy or sell any security. Individual stocks can lose value or reduce dividends, and the criteria above are a record of my personal decision process.
+This article is not a recommendation to buy or sell any security. Individual stocks can lose value or reduce dividends. The interview-based reasons and supplementary review questions are not a record of executed trades or investment performance.
 
 ---
 

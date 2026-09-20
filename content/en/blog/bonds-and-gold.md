@@ -1,7 +1,7 @@
 ---
 title: "Why I Add Gold and Crypto to Equities — Choosing 'Scarcity' Over Bonds"
 date: "2026-05-22"
-updatedAt: "2026-08-10"
+updatedAt: "2026-09-11"
 description: "My case for skepticism toward bonds, and the rationale for including gold and crypto in a portfolio. Why I hold roughly 90% equities, 3% gold, and 5% crypto."
 tags: ["diversification", "gold", "crypto", "BTC", "bonds", "portfolio", "long-term investing", "inflation hedge"]
 category: "us-stock"
@@ -13,9 +13,9 @@ featured: false
 
 Dollar-cost averaging into the S&P500 is a simple and powerful strategy. So what is the reason for holding some gold and crypto alongside it? And are bonds necessary at all?
 
-To cut to the chase, **my portfolio is roughly 90% equities, 3% gold, 5% crypto, and 2% cash — with zero bonds.**
+**The May 31, 2026 allocation snapshot was roughly 90% equities, 3% gold, 5% crypto, and 2% cash.** This is a historical record. See [Portfolio](/en/portfolio/) for the latest disclosed policy.
 
-For an investor still in the accumulation phase, equities — which represent ownership of the cash flows businesses generate — are the most rational asset class available. I have no intention of changing that view. That said, I hold a small allocation to gold and crypto for reasons distinct from why I hold equities.
+I prioritize equities to participate in business growth. But cash needs and tolerance for losses differ. A long accumulation period alone does not make an equity-heavy allocation suitable for everyone.
 
 ---
 
@@ -23,15 +23,15 @@ For an investor still in the accumulation phase, equities — which represent ow
 
 Bonds are commonly presented as "defensive assets." But there are reasons I don't actively choose them.
 
-**If you want to invest in a business, equities are the more rational choice.**
+**I prioritize equities because I want to participate in business growth.**
 
-Companies issue bonds to raise capital for growth. They use that capital to expand operations and generate profit — and the beneficiaries of that profit are **shareholders**. When investing in the same company, the shareholder (who receives the profits) has a higher expected return than the bondholder (who receives only interest).
+Shareholders seek price appreciation and dividends, while bondholders have contractual claims to interest and repayment. Creditors generally rank ahead of shareholders in bankruptcy. These different rights cannot be compared on upside alone. [The SEC's bond guide](https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds) distinguishes credit, interest-rate, and liquidity risks.
 
 **Unexpected inflation reduces the real return of a fixed-rate bond.**
 
 When inflation exceeds the bond's nominal yield, the purchasing power of its interest and principal declines. Bond issuance or central-bank asset purchases alone do not determine inflation; demand, supply constraints, wages, fiscal policy, and monetary policy all matter. I therefore evaluate bonds as assets whose **real return depends on inflation**, not as assets that mechanically cause it.
 
-Over the long run, the real return on equities has significantly outpaced bonds. For an investor with sufficient time in the accumulation phase, sacrificing return in the name of defense is simply not worth it.
+Bond risk depends on duration, issuer, and currency. I favor growth participation, but bonds can still deserve consideration for planned spending or money intended to experience smaller price fluctuations.
 
 > There are situations where bonds make sense — buying long-term government bonds when interest rates are high to target capital gains, or as a drawdown buffer in the decumulation phase after FIRE (Financial Independence, Retire Early). For those still in the active accumulation phase, however, I consider bonds a low priority.
 
@@ -66,11 +66,11 @@ Gold leaves open some possibility that advances in mining technology could incre
 
 ---
 
-## Why I Use 純金積立 (Gold Accumulation Plan) — Tax-Free Up to ¥500,000 per Year
+## Check the Contract Before Assuming a Gold Tax Deduction
 
 There are several ways to invest in gold. The main options are gold ETFs (such as the Tokyo Stock Exchange-listed 1540 Pure Gold ETF) or a **純金積立 (gold accumulation plan)** offered by securities firms or dealers like Tanaka Kikinzoku.
 
-I use the gold accumulation plan because of **a favorable treatment under Japanese tax law.**
+The label “gold accumulation plan” does not determine tax treatment. **Selling physical gold and earning a return from a gold investment account treated as a financial product are different categories.** See the [National Tax Agency's guidance](https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3161.htm), checked September 11, 2026.
 
 Gains from selling physical gold are generally classified as **譲渡所得 (transfer income / capital gains)** in Japan. The calculation deducts acquisition and selling costs, combines the result with other qualifying transfer income, and then applies an annual special deduction of up to ¥500,000. If the gold was held for more than five years, one half of the amount remaining after the deduction is generally taxable.
 
@@ -78,11 +78,12 @@ By contrast, gains from selling a gold ETF are subject to **申告分離課税 (
 
 | Method | Tax Category | Tax-Free Allowance |
 |---|---|---|
-| 純金積立 (gold accumulation plan) | Generally transfer income (譲渡所得) | Up to ¥500,000 annual special deduction, aggregated with other qualifying transfer income |
+| Physical gold disposal | Generally comprehensive transfer-income taxation | Up to JPY 500,000 special deduction shared with other eligible transfer income |
+| Gold investment/savings accounts treated as financial products | Separate withholding taxation | 20.315%; the physical-gold deduction does not apply |
 | Gold ETF (standard taxable account) | Separate self-assessed taxation | ~20.315% tax on gains |
 | Gold ETF (NISA account) | Tax-free | Tax-free within NISA contribution limits |
 
-If your gold allocation is relatively modest and annual gains are unlikely to exceed ¥500,000, the 純金積立 offers better tax efficiency. I also prefer to save my NISA allowance for equities and investment trusts, which is another reason I hold gold through the accumulation plan.
+My use of a gold accumulation plan does not mean the same deduction is available to every reader. Check the contract, transaction records, and provider's tax guidance, together with purchase, sale, and custody costs.
 
 > Tax treatment can vary based on trading frequency, holding period, and other transfer income. Check the National Tax Agency guidance or consult a tax professional when filing.
 
@@ -126,7 +127,7 @@ Gold can rise further, I believe — but that depends on inflation persisting. S
 ## References
 
 - [Ministry of Finance Japan — Japanese Government Bonds (JGBs) for Individuals](https://www.mof.go.jp/jgbs/individual/kojinmuke/index.html)
-- [National Tax Agency Japan — Capital Gains on Assets Including Gold](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1460.htm)
+- [National Tax Agency Japan: Physical Gold and Gold Investment Accounts](https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3161.htm)
 - [World Gold Council — Gold as a Strategic Asset](https://www.gold.org/goldhub/research/relevance-of-gold-as-a-strategic-asset)
 - [Bank of Japan — Monetary Policy Overview](https://www.boj.or.jp/mopo/outline/)
 - [Bitcoin Whitepaper — Satoshi Nakamoto (2008)](https://bitcoin.org/bitcoin.pdf)

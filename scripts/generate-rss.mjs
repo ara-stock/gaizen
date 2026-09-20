@@ -21,21 +21,25 @@ function getPosts() {
       const { data } = matter(raw)
       return { slug: f.replace(/\.md$/, ''), ...data }
     })
-    .filter(p => p.published)
+    .filter(p => p.published === true)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 20)
 }
 
 const posts = getPosts()
 
+function xmlEscape(value) {
+  return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+}
+
 const items = posts.map(post => `
   <item>
-    <title><![CDATA[${post.title}]]></title>
-    <link>${SITE_URL}/blog/${post.slug}/</link>
-    <guid>${SITE_URL}/blog/${post.slug}/</guid>
+    <title>${xmlEscape(post.title)}</title>
+    <link>${xmlEscape(`${SITE_URL}/blog/${post.slug}/`)}</link>
+    <guid>${xmlEscape(`${SITE_URL}/blog/${post.slug}/`)}</guid>
     <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-    <description><![CDATA[${post.description || ''}]]></description>
-    ${(post.tags || []).map(t => `<category>${t}</category>`).join('')}
+    <description>${xmlEscape(post.description || '')}</description>
+    ${(post.tags || []).map(t => `<category>${xmlEscape(t)}</category>`).join('')}
   </item>
 `).join('')
 

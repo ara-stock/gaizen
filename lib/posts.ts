@@ -7,6 +7,7 @@ import remarkRehype from 'remark-rehype'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeStringify from 'rehype-stringify'
+import type { RootContent } from 'mdast'
 import type { Post, PostMeta } from '@/types/post'
 
 export type Locale = 'ja' | 'en'
@@ -45,13 +46,13 @@ export function getAllPostSlugs(locale: Locale = 'ja', publishedOnly = false): s
     .map(f => f.replace(/\.md$/, ''))
 
   if (!publishedOnly) return slugs
-  return slugs.filter(slug => getPostMeta(slug, locale)?.frontmatter.published)
+  return slugs.filter(slug => getPostMeta(slug, locale)?.frontmatter.published === true)
 }
 
 export function getAllPosts(locale: Locale = 'ja'): PostMeta[] {
   return getAllPostSlugs(locale)
     .map(slug => getPostMeta(slug, locale))
-    .filter((p): p is PostMeta => p !== null && p.frontmatter.published)
+    .filter((p): p is PostMeta => p !== null && p.frontmatter.published === true)
     .sort((a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime())
 }
 
@@ -73,13 +74,29 @@ export async function getPostBySlug(slug: string, locale: Locale = 'ja', include
   if (!fs.existsSync(filePath)) return null
   const raw = fs.readFileSync(filePath, 'utf-8')
   const { data, content } = matter(raw)
-  if (!includeUnpublished && !data.published) return null
+  if (!includeUnpublished && data.published !== true) return null
 
-  // Convert :::comment ... ::: blocks to author bubble HTML
+  const parser = remark().use(remarkGfm)
+  const codeRanges: [number, number][] = []
+  function collectCode(nodes: RootContent[]) {
+    for (const node of nodes) {
+      if (node.type === 'code' && node.position) {
+        codeRanges.push([node.position.start.offset!, node.position.end.offset!])
+      } else if ('children' in node) {
+        collectCode(node.children as RootContent[])
+      }
+    }
+  }
+  collectCode(parser.parse(content).children)
+
+  // Blank lines keep the body in Markdown mode and close paragraphs before the divs.
+  // Leave directive examples inside fenced/indented code untouched.
   const processedContent = content.replace(
-    /:::comment\n([\s\S]*?)\n:::/g,
-    (_, text) =>
-      `<div class="author-comment"><img src="/images/avatar.jpg" alt="あら。" /><div class="author-comment-bubble">${text.trim()}</div></div>`
+    /^:::comment[^\S\r\n]*\r?\n([\s\S]*?)\r?\n:::[^\S\r\n]*$/gm,
+    (match, text: string, offset: number) => {
+      if (codeRanges.some(([start, end]) => offset >= start && offset < end)) return match
+      return `\n\n<div class="author-comment"><img src="/images/avatar.jpg" alt="あら。" /><div class="author-comment-bubble">\n\n${text.trim()}\n\n</div></div>\n\n`
+    }
   )
 
   const processed = await remark()

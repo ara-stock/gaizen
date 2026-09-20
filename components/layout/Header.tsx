@@ -2,30 +2,37 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import { useState, useSyncExternalStore } from 'react'
 import LanguageSwitcher from './LanguageSwitcher'
 
 const NAV_PATHS = [
-  { path: '/blog/',      label: 'Blog' },
-  { path: '/portfolio/', label: 'Portfolio' },
-  { path: '/about/',     label: 'About' },
-  { path: '/editorial-policy/', label: 'Policy' },
+  { path: '/tracker/', label: 'トラッカー', en: 'Tracker', jaOnly: true },
+  { path: '/blog/', label: '記事一覧', en: 'Articles' },
+  { path: '/blog/monthly-asset-tracking/', label: '資産管理Excel', en: 'Asset Workbook' },
+  { path: '/portfolio/', label: '保有方針', en: 'Portfolio' },
+  { path: '/about/', label: '筆者について', en: 'About' },
 ]
 
+function subscribeToTheme(onChange: () => void) {
+  const observer = new MutationObserver(onChange)
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+  return () => observer.disconnect()
+}
+
 function ThemeToggle() {
-  const [isLight, setIsLight] = useState(() => (
-    typeof document !== 'undefined' && !document.documentElement.classList.contains('dark')
-  ))
+  const isLight = useSyncExternalStore(
+    subscribeToTheme,
+    () => !document.documentElement.classList.contains('dark'),
+    () => true,
+  )
 
   const toggle = () => {
     const next = !isLight
-    setIsLight(next)
-    if (next) {
-      document.documentElement.classList.remove('dark')
-      localStorage.setItem('theme', 'light')
-    } else {
-      document.documentElement.classList.add('dark')
-      localStorage.setItem('theme', 'dark')
+    document.documentElement.classList.toggle('dark', !next)
+    try {
+      localStorage.setItem('theme', next ? 'light' : 'dark')
+    } catch {
+      // The toggle still works when browser storage is unavailable.
     }
   }
 
@@ -65,11 +72,12 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const isEnglish = pathname.startsWith('/en')
   const prefix = isEnglish ? '/en' : ''
-  const NAV_LINKS = NAV_PATHS.map(({ path, label }) => ({ href: `${prefix}${path}`, label }))
+  const NAV_LINKS = NAV_PATHS.map(({ path, label, en, jaOnly }) => ({ href: `${jaOnly ? '' : prefix}${path}`, label: isEnglish ? en : label }))
   const homeHref = isEnglish ? '/en/' : '/'
 
   return (
     <header className="sticky top-0 z-50 border-b" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--header-bg)', backdropFilter: 'blur(12px)' }}>
+      <a className="skip-link" href="#main-content">{isEnglish ? 'Skip to content' : '本文へ移動'}</a>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
         <Link href={homeHref} className="flex items-center gap-2 tracking-widest text-sm font-bold flex-shrink-0" aria-label="GAIZEN FINANCE home">
           <svg aria-hidden="true" width="24" height="24" viewBox="0 0 32 32" fill="none" style={{ color: 'var(--accent)' }}>
@@ -82,12 +90,12 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-6 flex-1 justify-center">
+        <nav aria-label={isEnglish ? 'Main navigation' : 'メインメニュー'} className="hidden md:flex items-center gap-6 flex-1 justify-center">
           {NAV_LINKS.map(({ href, label }) => {
-            const active = pathname === href || pathname.startsWith(href)
+            const active = pathname === href
             return (
               <Link key={href} href={href}
-                className="text-xs tracking-wider transition-colors duration-150"
+                className="text-sm min-h-11 inline-flex items-center transition-colors duration-150"
                 aria-current={active ? 'page' : undefined}
                 style={{ color: active ? 'var(--accent)' : 'var(--muted)' }}>
                 {label}
@@ -104,7 +112,8 @@ export default function Header() {
             className="md:hidden w-11 h-11 flex items-center justify-center text-sm"
             style={{ color: 'var(--muted)' }}
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
+            aria-label={isEnglish ? 'Menu' : 'メニュー'}
+            aria-controls="mobile-navigation"
             aria-expanded={menuOpen}
           >
             {menuOpen ? '✕' : '☰'}
@@ -114,13 +123,13 @@ export default function Header() {
 
       {/* Mobile nav */}
       {menuOpen && (
-        <div className="md:hidden border-t px-4 py-4 flex flex-col gap-4" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--background)' }}>
+        <nav id="mobile-navigation" aria-label={isEnglish ? 'Mobile navigation' : 'モバイルメニュー'} className="md:hidden border-t px-4 py-4 flex flex-col gap-2" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--background)' }}>
           {NAV_LINKS.map(({ href, label }) => (
-            <Link key={href} href={href} className="text-sm" style={{ color: 'var(--muted)' }} onClick={() => setMenuOpen(false)}>
+            <Link key={href} href={href} className="text-sm min-h-11 flex items-center" style={{ color: 'var(--muted)' }} onClick={() => setMenuOpen(false)}>
               {label}
             </Link>
           ))}
-        </div>
+        </nav>
       )}
     </header>
   )

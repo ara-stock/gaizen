@@ -1,8 +1,8 @@
 ---
 title: "Why I Hold BTC — Treating It as a Commodity, Not a Currency"
 date: "2026-05-30"
-updatedAt: "2026-07-29"
-description: "BTC as a digital commodity. The halving mechanism, a maturing market cap, GOX-driven supply reduction, and why I hold it without expecting too much from it."
+updatedAt: "2026-09-11"
+description: "A personal BTC investment thesis that separates issuance rules, halvings, and custody risk, and explains why limited supply does not guarantee appreciation."
 tags: ["BTC", "Bitcoin", "crypto", "Halving", "Commodity", "inflation hedge"]
 category: "crypto"
 published: true
@@ -13,7 +13,7 @@ featured: false
 
 The word "cryptocurrency" implies currency. But I think of BTC as closer to a **commodity** — alongside gold, silver, crude oil, corn, art, and wine.
 
-What connects these assets? Their value doesn't derive from a clear, measurable utility. It exists because a sufficient number of people agree it exists. Gold doesn't pay dividends. A painting doesn't generate cash flow. BTC doesn't power anything. Yet all of them hold value because markets of believers sustain that value.
+Oil and corn have fuel and food uses, and gold has industrial and jewelry demand. BTC cannot be assigned the same sources of value. I focus on its issuance rules and demand for holding and transferring it. “Digital commodity” here describes my investment framing, not a legal or tax classification.
 
 BTC is a digital commodity. That framing matters for how I hold it.
 
@@ -23,23 +23,25 @@ Debating whether BTC works as a "currency" misses the point, in my view. Gold ha
 
 ---
 
-## How BTC Is Designed to Hold Value
+## Issuance Rules Do Not Guarantee Value
 
-### Mining: Reward for Solving Cryptography
+### Mining Searches for a Hash That Meets a Target
 
-BTC is issued through mining. Computers on the network compete to solve complex cryptographic puzzles. The first to solve it receives BTC as a reward. This is the origin of every BTC in existence.
+Miners repeatedly change inputs to find a block-header hash that meets the difficulty target. They are not decrypting private keys. A valid block's reward consists of newly issued bitcoin, called the block subsidy, plus transaction fees. See the [Bitcoin Developer Guide](https://developer.bitcoin.org/devguide/block_chain.html) for proof of work and rewards.
 
 ### The Supply Cap and the Halving
 
-BTC has a **hard cap of 21 million coins**. And roughly every four years, a "halving" event cuts the mining reward in half.
+Current consensus rules limit issuance to approximately 21 million BTC. The block subsidy halves every 210,000 blocks. Roughly four years is an estimate, not a fixed calendar schedule, and transaction fees do not halve under this rule.
 
-| Halving | Year | Block Reward |
+| Halving | Year | Block Subsidy (excluding fees) |
 |---------|------|-------------|
 | 1st | 2012 | 25 BTC |
 | 2nd | 2016 | 12.5 BTC |
 | 3rd | 2020 | 6.25 BTC |
 | 4th | 2024 | 3.125 BTC |
-| 5th (next) | **2028** | 1.5625 BTC |
+| 5th (expected) | Around 2028 | 1.5625 BTC |
+
+Lower new issuance does not prevent prices from falling when demand declines or existing holders sell. Evaluate demand, price, and position size separately from the halving schedule.
 
 :::comment
 The halving is elegant because it's automatic. No human decides when to tighten supply. The protocol does it mechanically, on a schedule that everyone can see. Each cycle, scarcity increases by design. That systematic quality is one of BTC's genuine strengths — and one of the reasons it's still standing when most early crypto projects have collapsed.
@@ -109,7 +111,7 @@ I think BTC probably survives — but I won't claim certainty. The emergence of 
 |--------|--------|
 | Mental model | Digital commodity, not currency |
 | Value source | Scarcity design + market consensus |
-| Next halving | 2028 (reward: 1.5625 BTC) |
+| Next halving | Expected around 2028 (block subsidy: 1.5625 BTC) |
 | Price outlook | No target; risk managed through position size |
 | Portfolio role | Inflation hedge, optionality |
 | Primary asset class | Equities (business ownership) |
@@ -121,5 +123,4 @@ BTC is genuinely interesting. But it isn't the foundation of a wealth-building s
 ## Sources
 
 - [Bitcoin Whitepaper (Satoshi Nakamoto, 2008)](https://bitcoin.org/bitcoin.pdf)
-- [CoinMarketCap — Bitcoin](https://coinmarketcap.com/currencies/bitcoin/)
-- [Bitcoin Halving History (Investopedia)](https://www.investopedia.com/bitcoin-halving-4843769)
+- [Bitcoin Developer Guide: Proof of Work and Block Rewards](https://developer.bitcoin.org/devguide/block_chain.html)

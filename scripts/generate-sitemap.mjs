@@ -28,13 +28,15 @@ function getPosts(dir) {
       const { data } = matter(raw)
       return { slug: f.replace(/\.md$/, ''), ...data }
     })
-    .filter(p => p.published)
+    .filter(p => p.published === true)
 }
 
 const jaPosts = getPosts(BLOG_DIR)
+const projectsData = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/projects/projects.json'), 'utf-8'))
 const staticRoutes = [
   { url: `${SITE_URL}/`, priority: '1.0', changefreq: 'weekly' },
   { url: `${SITE_URL}/blog/`, priority: '0.9', changefreq: 'daily' },
+  { url: `${SITE_URL}/tracker/`, priority: '0.9', changefreq: 'weekly', lastmod: projectsData.updatedAt },
   { url: `${SITE_URL}/portfolio/`, priority: '0.8', changefreq: 'monthly' },
   { url: `${SITE_URL}/about/`, priority: '0.5', changefreq: 'yearly' },
   { url: `${SITE_URL}/editorial-policy/`, priority: '0.5', changefreq: 'yearly' },
@@ -65,6 +67,12 @@ ${jaPosts.map(p => entry({
   changefreq: 'monthly',
   priority: '0.8',
 })).join('\n')}
+${projectsData.projects.map(p => entry({
+  url: `${SITE_URL}/tracker/${p.slug}/`,
+  lastmod: p.updatedAt,
+  changefreq: 'weekly',
+  priority: '0.7',
+})).join('\n')}
 </urlset>`
 
 if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true })
@@ -73,4 +81,4 @@ fs.writeFileSync(path.join(OUT_DIR, 'sitemap.xml'), xml, 'utf-8')
 // It intentionally contains the URL set directly instead of a sitemap index,
 // so Search Console can discover pages even if it does not fetch child sitemaps.
 fs.writeFileSync(path.join(OUT_DIR, 'sitemap-index.xml'), xml, 'utf-8')
-console.log(`[sitemap] Generated with ${staticRoutes.length + jaPosts.length} URLs`)
+console.log(`[sitemap] Generated with ${staticRoutes.length + jaPosts.length + projectsData.projects.length} URLs`)

@@ -4,36 +4,36 @@ import { getPostMeta, type Locale } from '@/lib/posts'
 const GUIDES = {
   ja: [
     {
-      title: '投資をこれから始める',
-      description: '口座開設から最初の積立まで、失敗を避けながら進めるための順番です。',
-      slugs: ['investing-first-30-days', 'nisa-beginner-mistakes', 'emergency-fund'],
+      title: '企業を調べ、判断する',
+      description: '調べる順序をつかみ、Alphabet・MUFGの具体例で確認します。',
+      slugs: ['individual-stock-investment-thesis', 'alphabet-investment-thesis', 'mufg-investment-thesis'],
     },
     {
-      title: 'NISA・投資信託を理解する',
-      description: '制度と商品の仕組みを理解し、自分で選べる状態を目指します。',
-      slugs: ['nisa-360-full-utilization', 'how-to-read-mutual-fund-documents', 'why-sp500-over-allcountry'],
+      title: '資産を記録し、見直す',
+      description: 'Excelの記入例から、現金の備えと資産配分の見直しへ。',
+      slugs: ['monthly-asset-tracking', 'emergency-fund', 'portfolio-rebalancing'],
     },
     {
-      title: '投資方針を組み立てる',
-      description: '長期投資の軸と、個別株や他資産を組み合わせる考え方を整理します。',
-      slugs: ['mortgage-vs-investment', 'portfolio-rebalancing', 'bonds-and-gold'],
+      title: '少額から投資を始める',
+      description: '口座開設、商品の資料、買った後の注意点を順に確認します。',
+      slugs: ['investing-first-30-days', 'how-to-read-mutual-fund-documents', 'nisa-beginner-mistakes'],
     },
   ],
   en: [
     {
-      title: 'Start Investing',
-      description: 'A practical sequence from opening an account to making your first recurring investment.',
-      slugs: ['investing-first-30-days', 'nisa-beginner-mistakes', 'emergency-fund'],
+      title: 'Research a Business',
+      description: 'Start with the research process, then work through Alphabet and MUFG.',
+      slugs: ['individual-stock-investment-thesis', 'alphabet-investment-thesis', 'mufg-investment-thesis'],
     },
     {
-      title: 'Understand NISA and Funds',
-      description: 'Learn how the system and products work before choosing what to buy.',
-      slugs: ['nisa-360-full-utilization', 'how-to-read-mutual-fund-documents', 'why-sp500-over-allcountry'],
+      title: 'Record and Review Assets',
+      description: 'Use the workbook example, then consider emergency cash and allocation.',
+      slugs: ['monthly-asset-tracking', 'emergency-fund', 'portfolio-rebalancing'],
     },
     {
-      title: 'Build an Investment Policy',
-      description: 'Develop a long-term framework for combining index funds, stocks, and other assets.',
-      slugs: ['mortgage-vs-investment', 'portfolio-rebalancing', 'bonds-and-gold'],
+      title: 'Start with a Small Investment',
+      description: 'Open an account, read fund documents, and understand common mistakes.',
+      slugs: ['investing-first-30-days', 'how-to-read-mutual-fund-documents', 'nisa-beginner-mistakes'],
     },
   ],
 } satisfies Record<Locale, { title: string; description: string; slugs: string[] }[]>
@@ -47,7 +47,7 @@ export default function ReadingGuide({ locale = 'ja', compact = false }: Reading
   const basePath = locale === 'en' ? '/en/blog' : '/blog'
 
   return (
-    <section className={compact ? 'py-16 border-b' : 'mb-16'}>
+    <section className={compact ? 'publication-section' : 'mb-16'}>
       <div className="mb-8 max-w-2xl">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>START HERE</p>
         <h2 className="text-xl font-semibold mb-2" style={{ color: 'var(--foreground)' }}>
@@ -64,14 +64,14 @@ export default function ReadingGuide({ locale = 'ja', compact = false }: Reading
           <div key={guide.title} className="p-5 rounded-2xl border transition-all hover:-translate-y-0.5 hover:shadow-lg" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
             <p className="text-xs font-mono mb-3" style={{ color: 'var(--accent)' }}>PATH 0{guideIndex + 1}</p>
             <h3 className="text-base font-semibold mb-2" style={{ color: 'var(--foreground)' }}>{guide.title}</h3>
-            <p className="text-xs leading-relaxed mb-5" style={{ color: 'var(--muted)' }}>{guide.description}</p>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--muted)' }}>{guide.description}</p>
             <ol className="space-y-3">
               {guide.slugs.map((slug, articleIndex) => {
                 const post = getPostMeta(slug, locale)
                 if (!post?.frontmatter.published) return null
                 return (
                   <li key={slug}>
-                    <Link href={`${basePath}/${slug}/`} className="flex gap-2 text-xs leading-relaxed transition-colors hover:text-green-500">
+                    <Link href={`${basePath}/${slug}/`} className="flex gap-2 text-sm leading-relaxed min-h-11 items-start transition-colors hover:text-green-500">
                       <span className="font-mono flex-shrink-0" style={{ color: 'var(--accent)' }}>{articleIndex + 1}.</span>
                       <span style={{ color: 'var(--foreground)' }}>{post.frontmatter.title}</span>
                     </Link>

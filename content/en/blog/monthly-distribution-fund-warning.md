@@ -1,7 +1,7 @@
 ---
 title: "Four Checks Before Choosing a Monthly Distribution Fund"
 date: "2026-05-28"
-updatedAt: "2026-08-10"
+updatedAt: "2026-09-11"
 description: "A monthly distribution rate is not the same as investment return. Review fees, return of capital, covered calls, and total return before choosing an income fund."
 tags: ["monthly distribution", "investment funds", "covered call", "dividend investing", "NISA", "long-term investing"]
 category: "us-stock"
@@ -23,22 +23,22 @@ If you've ever considered one of these funds, you understand the appeal. But it'
 
 Monthly distribution funds carry expense ratios that are often 10–20× higher than index funds.
 
-A typical example: Invesco World Select Equity Open (Monthly Settlement Type, No Currency Hedge) charges approximately 1.6% annually. eMAXIS Slim US Stock (S&P500) charges 0.09372%. That's roughly a 17× difference.
+To isolate cost, compare fictional annual charges of 0.1% and 1.6%. These are not quotes for named funds or forecasts. Actual funds with different investments and strategies cannot be ranked on cost alone.
 
 **How that gap compounds over 10 years (¥10 million initial investment, 7% gross return assumed):**
 
 | Expense Ratio | Net Return | After 10 Years |
 |---|---|---|
-| 0.09% | 6.91% | ~¥19.36M |
-| 1.60% | 5.40% | ~¥16.94M |
+| 0.10% | 6.90% | ~¥19.49M |
+| 1.60% | 5.40% | ~¥16.92M |
 
-The cost difference alone produces a gap of ~¥2.4 million over 10 years — before considering the additional load fees (2–3% upfront) that bank-sold monthly distribution funds often charge.
+The simplified calculation `¥10M × (1 + 7% - annual cost)^10` gives a gap of about ¥2.57M. It assumes reinvestment and excludes taxes and purchase fees. Actual expenses accrue against changing balances; check the prospectus and distributor's terms.
 
 ## Problem 2: Distribution ≠ Profit
 
 This is the most common misunderstanding about these products.
 
-**A portion — sometimes all — of monthly distributions is "return of capital," meaning your own money is being handed back to you.** You're not receiving investment gains. You're receiving your original investment in monthly installments.
+**Some or all of a distribution may be return of capital; it is not inevitable.** For Japanese publicly offered equity funds, the classification depends on the investor's individual cost basis and the ex-distribution NAV. The same payment can have different ordinary/special portions for different investors.
 
 This is sometimes called "octopus dividends" in Japan (タコ足配当) — the fund eating its own legs to survive.
 
@@ -64,7 +64,9 @@ The structural problems:
 - **The premium reinvestment cycle adds friction.** Option sale → distribution payment → investor receipt → reinvestment. The lag reduces compounding efficiency
 - **Downside is not protected.** Premiums cover only a fraction of large drawdowns. You absorb the full decline, minus a small premium buffer
 
-**Distribution rate and investment return are different figures.** QYLD's official page showed a 12.04% trailing 12-month distribution as of July 14, 2026, while its annualized NAV total return was 8.89% since inception and 10.10% over ten years through June 2026. The provider also stated that the distribution was estimated to include return of capital. A high payout must not be read as the portfolio's return.
+**Distribution rate and investment return are different figures.** [QYLD's provider](https://www.globalxetfs.com/funds/qyld/) explicitly distinguishes distribution rate from total return and notes potential return of capital. US ETF tax classifications and Japanese special distributions are not the same system.
+
+For a fictional ¥1M investment ending at ¥900,000 after paying ¥100,000 in cash, the result before taxes, costs, and reinvestment is `¥900,000 + ¥100,000 - ¥1M = ¥0`. Receiving 10% in cash does not mean earning 10%.
 
 A covered-call strategy will not underperform in every period. It tends to give up upside in a strong rally, while option premiums may help in a flat market. Compare **total return including distributions**, not the cash payout alone.
 

@@ -1,196 +1,119 @@
 ---
-title: "How to Track Your Net Worth Monthly — Focus on Balances, Not Perfect Returns"
+title: "Monthly Asset Tracking Workbook | Record Balances and Understand Changes"
 date: "2026-06-20"
-updatedAt: "2026-08-24"
-description: "A simple monthly net worth tracking method for beginner investors: record bank and brokerage balances in a spreadsheet, focus on long-term accumulation, and avoid overreacting to one-month changes."
+updatedAt: "2026-09-11"
+description: "Download a free Excel workbook and follow a fictional example. Learn to distinguish transfers, cash flows, and investment gains, and to handle missing months without treating them as zero."
 tags: ["asset tracking", "household finance", "investment journal", "spreadsheet", "long-term investing", "recurring investment"]
 category: "us-stock"
 published: true
 featured: true
 ---
 
-## After You Start Investing, Build a Tracking Habit
+## Record Account Balances at Month-End
 
-When you start investing, it is natural to focus on products, returns, and market prices.
+I record my total assets monthly in Google Sheets. Bank and brokerage accounts are rows; months are columns. The bottom rows calculate the total and the change from the previous month. I include physical cash, but do not currently record allocation percentages.
 
-But to keep investing, what matters more than most people expect is the feeling that your assets are gradually building up.
-
-You do not need to check prices every day. You do not need to calculate your exact investment return from day one. Start by recording your bank and brokerage balances once a month.
+I usually record after salary arrives and credit card payments clear at month-end. I focus more on changes over a year than on a single month.
 
 :::comment
-I mainly check my total asset balance once a month. I do not obsess over precise performance calculations because they become surprisingly complicated. When salary and bonuses are being invested regularly, you need to separate new deposits from actual investment gains.
+I do not track investment performance very closely. With salary and bonuses continually going into investments, an increase in assets is not the same as an investment gain.
 
-Instead of trying to calculate a perfect return from the beginning, I think it is more sustainable to simply record how much you have at the end of each month.
+My starting point is simply to check bank and brokerage accounts each month. Being a little late is less important to me than keeping the record going.
 :::
 
-## Month-End Is Good Enough
+The downloadable workbook is based on this routine. The figures below are **fictional examples, not my actual balances**.
 
-I record my asset balance at the end of each month.
+## Download the Workbook
 
-More precisely, I do it after salary has come in and credit card payments have cleared. Once the major monthly cash flows are done, the numbers are easier to compare across months.
+[Download the monthly asset tracking workbook (.xlsx, Japanese labels)](/downloads/gaizen-asset-tracking-template.xlsx)
 
-That said, the exact date does not matter much.
+No registration is required. The distributed file contains no personal Google account, email address, or actual author balances.
 
-What matters is recording at roughly the same point each month.
-
-| Timing | Why it works |
+| Sheet | Purpose |
 |---|---|
-| Month-end | Easy to compare month by month |
-| After payday | Easy to see investable cash |
-| After credit card payment | Shows the cash that actually remains |
+| 資産記録 / Asset record | Enter bank, brokerage, pension, points, gift card, cash, and crypto balances in yellow cells |
+| ダッシュボード / Dashboard | Latest recorded month, totals, monthly change, change since January-end, and column charts |
+| 使い方 / Instructions | Input and interpretation notes |
+| 記入例（架空） / Fictional example | Three months of example balances, separate from your own records |
 
-Being off by a day or two does not matter for long-term tracking. A method you can continue is more important than perfect timing.
+The total covers the financial assets and other balances you enter. **It is not net worth after deducting debt, and it does not calculate investment returns or taxable gains.** Points and gift cards are not as freely spendable as cash. Check bank and cash subtotals separately when planning living expenses.
 
-## Track Only Bank and Brokerage Accounts at First
+## Enter the First Month
 
-For beginners, the first version should be simple.
+1. Identify the accounts you use in the asset record. Account names can be changed; keep subtotal and total rows intact.
+2. Enter balances in yen for the relevant month, using a consistent valuation date. Headers initially cover January through December 2026; rename them for a different year.
+3. Include both securities and uninvested brokerage cash. If the account total already includes cash, do not add it again.
+4. Do not count pensions such as iDeCo in both a brokerage total and their dedicated rows.
+5. Check the total, then open the dashboard. Investigate missing entries before interpreting a surprising monthly change.
 
-Track two things:
+The physical cash row is for notes and coins, not bank balances or brokerage cash already recorded elsewhere. Convert foreign currency and crypto to yen using a consistent method at the recording date.
 
-1. Bank account balances
-2. Brokerage account values
+## Example: JPY 1.90 Million Becomes JPY 1.97 Million
 
-I use Google Sheets. The large categories are "banks" and "brokerages." Under each, I list the specific account names. Each month gets a new column, and the bottom rows automatically calculate total assets and month-over-month change.
+This fictional example is simplified to four accounts. All figures are yen.
 
-The structure looks like this:
+| Account | January-end | February-end | March-end |
+|---|---:|---:|---:|
+| Rakuten Bank | 300,000 | 250,000 | 280,000 |
+| SMBC | 100,000 | 120,000 | 110,000 |
+| Rakuten Securities | 1,000,000 | 1,080,000 | 1,050,000 |
+| SBI Securities | 500,000 | 520,000 | 540,000 |
+| Total | 1,900,000 | 1,970,000 | 1,980,000 |
+| Monthly change | No comparison | +70,000 | +10,000 |
 
-| Category | Account | Jan 2026 | Feb 2026 | Mar 2026 |
-|---|---|---:|---:|---:|
-| Bank | Rakuten Bank | 300,000 | 250,000 | 280,000 |
-| Bank | SMBC | 100,000 | 120,000 | 110,000 |
-| Brokerage | Rakuten Securities | 1,000,000 | 1,080,000 | 1,050,000 |
-| Brokerage | SBI Securities | 500,000 | 520,000 | 540,000 |
-| Total |  | 1,900,000 | 1,970,000 | 1,980,000 |
-| MoM change |  |  | +70,000 | +10,000 |
+February's assets increased by JPY 70,000. **That is not necessarily an investment gain.** Suppose salary and other non-investment income were JPY 300,000, while living expenses and other non-investment spending were JPY 240,000:
 
-Include cash. If you only look at brokerage accounts, you miss the full household picture.
+```text
+Increase in assets                         JPY 70,000
+Non-investment income less spending        JPY 60,000
+Remaining difference                       JPY 10,000
+```
 
-At the same time, you do not need to track cash ratios, equity ratios, regional allocation, or sector allocation from the beginning. Add those later if they become useful.
+With a consistent set of accounts, aligned valuation dates, and no omitted cash flows, the difference is a starting point for investigating investment results. Dividends, taxes, fees, and currency changes can all contribute. It is not necessarily realized trading profit.
 
-## Download the Monthly Asset Tracking Template
+A proper investment return requires a defined portfolio boundary and dated contributions and withdrawals. This workbook does not perform that calculation.
 
-I created a downloadable Excel workbook based on the system I use, with no personal account information or real asset balances included.
+### Moving JPY 100,000 to a Brokerage Does Not Increase Assets
 
-- Tracks banks, brokerages, pensions, points, gift cards, cash, and crypto
-- Calculates category subtotals, total assets, monthly change, and year-to-date change
-- Displays total assets and category balances as column charts
-- Highlights cells that require manual input
-- Can be imported into Google Sheets
+Assume no fees or market changes. A bank balance of JPY 300,000 plus a brokerage balance of JPY 1,000,000 totals JPY 1,300,000. Transfer JPY 100,000 to the brokerage: balances become JPY 200,000 and JPY 1,100,000. The total remains JPY 1,300,000.
 
-[Download the monthly asset tracking template (Excel, Japanese labels)](/downloads/gaizen-asset-tracking-template.xlsx)
+Because this workbook includes both accounts, the transfer is internal. Adding it again as new assets would inflate the total. For a performance calculation covering only the brokerage, however, the transfer would count as an external contribution. Define what you are measuring first.
 
-The workbook identifies its author as GAIZEN FINANCE and contains no personal Google account or email information. After downloading it, upload it to your own Google Drive and open it as a Google Sheet.
+## Blank, Zero, and Missing Entries
 
-Changes shown in the charts include both investment performance and household cash flows such as salary contributions and spending. Use the workbook to monitor total asset balances, not to calculate a precise investment return.
-
-## Why You Do Not Need Perfect Performance Calculations
-
-One common trap is trying to calculate your exact return percentage too early.
-
-This is harder than it looks.
-
-Suppose your assets were ¥1,000,000 in January, ¥1,200,000 in February, and ¥1,300,000 in March. If all of that increase came from investment gains, return calculation would be simple. But in reality, you probably added salary or bonus money during the period.
-
-| Reason assets increased | What it means |
+| Situation | Treatment |
 |---|---|
-| New deposits | Salary or bonus money invested |
-| Investment gains | Stocks or funds rose in value |
-| Dividends / distributions | Cash income received |
-| FX movement | Yen value of foreign assets changed |
+| A month has not been recorded | Leave the entire month blank; totals and changes remain blank |
+| A checked account has a zero balance | Enter numeric 0, which counts as an entry |
+| The previous month is missing | Current total is available, but monthly change cannot be compared |
+| Only some accounts are entered | The workbook totals entered balances; check completeness yourself |
+| January has no record | Change since January-end is unavailable; recording can still start later |
 
-To separate those accurately, you need to track deposits, trades, dividends, taxes, and foreign exchange effects.
+A pending transfer may also be absent from one account before appearing in another. Align records after the transfer clears instead of treating that temporary gap as a loss.
 
-At a larger asset size, understanding performance becomes more useful. But at the beginning, continuing the monthly record matters more than producing a precise return figure.
+“Change since January-end” compares with the January month-end balance. It is not a calendar-year change starting from the previous December-end. Keep the previous year-end record if you want that comparison.
 
-## Do Not Worry About One Bad Month
+## Using Google Sheets
 
-Once you start recording balances, some months will be negative.
+Upload the Excel file to Google Drive and open it in Google Sheets. See [Google's official Excel and Sheets instructions](https://support.google.com/docs/answer/9331167).
 
-That does not mean you need to stop investing.
+After importing, check that the fictional example totals are JPY 1,900,000, JPY 1,970,000, and JPY 1,980,000, and that charts appear. Formula handling and chart appearance can differ by application. Behavior inside your Google account needs verification in your own environment.
 
-I invest soon after salary arrives, so I do not change my contribution just because the previous month was negative. If anything, when the market is down, I would rather invest more.
+Check sharing settings after entering your own data. An anonymous template does not make the balances and account names you add anonymous.
 
-That assumes living expenses and an emergency buffer are already covered.
+## What to Check in a Negative Month
 
-The important point is not to change contributions based on market emotion. Decide contribution amounts based on household conditions. I cover this mindset in "[What Not to Do After Starting NISA](/en/blog/nisa-beginner-mistakes/)."
+I invest after salary arrives and do not stop solely because the previous month's total fell. When markets decline, I tend to want to invest more. But a balance change first deserves a practical check:
 
-One-month moves are not worth overthinking. What matters is whether assets are growing over years and whether the investing habit continues.
+1. Are any accounts missing or counted twice?
+2. Was there a large purchase, tax payment, bonus, or unusual cash flow?
+3. Is enough cash left for living expenses, card payments, and planned spending?
+4. After those checks, how much of the change reflects investment prices?
 
-## The Goal Is Continuity, Not Trading Signals
+Assets can fall over a full year as well. The record cannot guarantee progress; it helps plan contributions and cash reserves. Continue with [emergency cash planning](/en/blog/emergency-fund/) and [portfolio rebalancing](/en/blog/portfolio-rebalancing/).
 
-The purpose of monthly asset tracking is not to predict what to buy next.
+## Changes and References
 
-The purpose is to:
-
-1. Know your bank and brokerage balances
-2. Confirm that deposits and contributions are continuing
-3. Feel the gradual build-up of assets
-
-That feeling matters.
-
-Investing often does not feel rewarding in the short term. Account values move up and down, and over a few months it may look like new deposits are doing all the work.
-
-But when you review a full year, you can see whether your assets are higher than last year and whether your investable cash flow improved. That confirmation supports the next contribution.
-
-:::comment
-Just checking bank and brokerage balances at month-end gives me a clear sense that I am building something.
-
-I do not care much if one month is negative. What matters more is whether I am positive over the year and whether I kept investing. Keeping records also makes it easier to decide where the next deposit should go and how much cash to leave untouched.
-:::
-
-## A Minimal Template for Beginners
-
-This is enough for a first template:
-
-| Item | What to record |
-|---|---|
-| Date | Month-end, or after salary and card payments |
-| Bank accounts | Cash for living expenses and idle funds |
-| Brokerage accounts | Market value of funds and stocks |
-| Total | Sum of all accounts |
-| MoM change | Difference from previous month |
-| Notes | Large deposits, withdrawals, bonuses, travel, etc. |
-
-You do not need a complex portfolio app at first. Google Sheets or Excel is enough.
-
-In fact, too many fields make the habit harder to continue.
-
-For a beginner, the best asset tracker is not the most sophisticated one. It is the one you can update in five minutes every month.
-
-## Review Once a Year
-
-Monthly tracking becomes more useful when reviewed at year-end.
-
-Check three things:
-
-- Did total assets increase from the beginning to the end of the year?
-- Did you keep contributing?
-- Is cash too high or too low?
-
-Looking at a full year reduces the noise of monthly market moves.
-
-If cash has grown too much, you might increase next year's NISA contributions. If living expenses feel tight, you might lower contributions slightly.
-
-Use the record to adjust your investing pace, not to force unnecessary trades.
-
-## Summary
-
-- Record your asset balance once a month after you start investing
-- Month-end, after payday, or after credit card payments is good enough
-- Enter bank and brokerage balances in a spreadsheet
-- Include cash so you can see the full picture
-- Do not try to calculate perfect performance from day one
-- Focus on yearly progress, not one-month losses
-- The point is to confirm continuity, not generate trading signals
-
-Asset tracking can become endlessly complicated.
-
-But beginner investors do not need perfect analytics.
-
-Once a month, check your bank and brokerage accounts and record the total. That is enough to see that you are moving forward.
-
-## References
-
-- [Google Sheets](https://www.google.com/sheets/about/)
-- [Financial Services Agency｜New NISA](https://www.fsa.go.jp/policy/nisa2/about/index.html)
-- [Financial Services Agency｜Investment Basics](https://www.fsa.go.jp/policy/nisa2/knowledge/basic/index.html)
+- September 11, 2026: Added a fictional example, corrected comparisons with missing months, renamed year-start comparisons to January-end comparisons, and clarified transfers and cash flows.
+- [Google Docs Editors Help: Use both Excel & Sheets](https://support.google.com/docs/answer/9331167)
+- [Financial Services Agency: Investment Basics](https://www.fsa.go.jp/policy/nisa2/knowledge/basic/index.html)

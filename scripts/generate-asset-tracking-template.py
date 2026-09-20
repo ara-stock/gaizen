@@ -257,8 +257,9 @@ def create_workbook() -> None:
         record.write(row, 1, f"{category} 小計", subtotal_label_format)
         for col in range(2, 14):
             col_name = xlsxwriter.utility.xl_col_to_name(col)
-            formula = f"=SUM({col_name}{excel_row(start_row)}:{col_name}{excel_row(row - 1)})"
-            record.write_formula(row, col, formula, subtotal_value_format, 0)
+            cells = f"{col_name}{excel_row(start_row)}:{col_name}{excel_row(row - 1)}"
+            formula = f'=IF(COUNT({cells})=0,"",SUM({cells}))'
+            record.write_formula(row, col, formula, subtotal_value_format, "")
         row += 1
 
     total_row = row
@@ -266,8 +267,10 @@ def create_workbook() -> None:
     subtotal_excel_rows = [excel_row(value) for value in subtotal_rows.values()]
     for col in range(2, 14):
         col_name = xlsxwriter.utility.xl_col_to_name(col)
-        formula = "=" + "+".join(f"{col_name}{subtotal_row}" for subtotal_row in subtotal_excel_rows)
-        record.write_formula(total_row, col, formula, total_value_format, 0)
+        inputs = ",".join(f"{col_name}{excel_row(item_row)}" for item_row in item_rows)
+        subtotals = ",".join(f"{col_name}{subtotal_row}" for subtotal_row in subtotal_excel_rows)
+        formula = f'=IF(COUNT({inputs})=0,"",SUM({subtotals}))'
+        record.write_formula(total_row, col, formula, total_value_format, "")
     record.set_row(total_row, 24)
 
     previous_row = row + 1
@@ -279,9 +282,9 @@ def create_workbook() -> None:
         record.write_formula(
             previous_row,
             col,
-            f"={current}{excel_row(total_row)}-{previous}{excel_row(total_row)}",
+            f'=IF(COUNT({current}{excel_row(total_row)},{previous}{excel_row(total_row)})<2,"",{current}{excel_row(total_row)}-{previous}{excel_row(total_row)})',
             metric_value_format,
-            0,
+            "",
         )
 
     previous_percent_row = row + 2
@@ -290,20 +293,20 @@ def create_workbook() -> None:
     for col in range(3, 14):
         current = xlsxwriter.utility.xl_col_to_name(col)
         previous = xlsxwriter.utility.xl_col_to_name(col - 1)
-        formula = f'=IFERROR({current}{excel_row(total_row)}/{previous}{excel_row(total_row)}-1,"")'
+        formula = f'=IF(COUNT({current}{excel_row(total_row)},{previous}{excel_row(total_row)})<2,"",IFERROR({current}{excel_row(total_row)}/{previous}{excel_row(total_row)}-1,""))'
         record.write_formula(previous_percent_row, col, formula, percent_format, "")
 
     year_start_row = row + 3
-    record.merge_range(year_start_row, 0, year_start_row, 1, "年初比（金額）", metric_label_format)
-    record.write_formula(year_start_row, 2, "=0", metric_value_format, 0)
+    record.merge_range(year_start_row, 0, year_start_row, 1, "1月末比（金額）", metric_label_format)
+    record.write_formula(year_start_row, 2, f'=IF(ISNUMBER(C{excel_row(total_row)}),0,"")', metric_value_format, "")
     for col in range(3, 14):
         current = xlsxwriter.utility.xl_col_to_name(col)
         record.write_formula(
             year_start_row,
             col,
-            f"={current}{excel_row(total_row)}-$C${excel_row(total_row)}",
+            f'=IF(COUNT({current}{excel_row(total_row)},$C${excel_row(total_row)})<2,"",{current}{excel_row(total_row)}-$C${excel_row(total_row)})',
             metric_value_format,
-            0,
+            "",
         )
 
     input_count_row = row + 4
@@ -409,8 +412,8 @@ def create_workbook() -> None:
 
     cards = [
         ("B4:E4", "B5:E6", "最新入力月", f'=IFERROR(LOOKUP(2,1/({count_range}>0),{month_range}),"未入力")', card_text_value, "未入力"),
-        ("F4:I4", "F5:I6", "最新の総資産", f"=IFERROR(LOOKUP(2,1/({count_range}>0),{total_range}),0)", card_value, 0),
-        ("J4:M4", "J5:M6", "直近の前月比", f"=IFERROR(LOOKUP(2,1/({count_range}>0),{previous_range}),0)", card_value, 0),
+        ("F4:I4", "F5:I6", "最新の総資産", f'=IFERROR(LOOKUP(2,1/({count_range}>0),{total_range}),"")', card_value, ""),
+        ("J4:M4", "J5:M6", "直近の前月比", f'=IFERROR(LOOKUP(2,1/({count_range}>0),IF(ISNUMBER({previous_range}),{previous_range},"比較不可")),"未入力")', card_value, "未入力"),
     ]
     for label_range, value_range, label, formula, value_format, cached in cards:
         dashboard.merge_range(label_range, label, card_label)
@@ -418,13 +421,13 @@ def create_workbook() -> None:
         first_cell = value_range.split(":")[0]
         dashboard.write_formula(first_cell, formula, value_format, cached)
 
-    dashboard.merge_range("B8:E8", "年初からの増減", card_label)
+    dashboard.merge_range("B8:E8", "1月末からの増減", card_label)
     dashboard.merge_range("B9:E10", "", card_value)
     dashboard.write_formula(
         "B9",
-        f"=IFERROR(LOOKUP(2,1/({count_range}>0),{year_start_range}),0)",
+        f'=IFERROR(LOOKUP(2,1/({count_range}>0),IF(ISNUMBER({year_start_range}),{year_start_range},"比較不可")),"未入力")',
         card_value,
-        0,
+        "未入力",
     )
     dashboard.merge_range("F8:M10", "入力は月1回、同じタイミングで。短期の上下より、年単位で積み上がっているかを確認します。", subtitle_format)
 
@@ -546,10 +549,48 @@ def create_workbook() -> None:
     )
     guide.merge_range(
         "B28:H31",
-        "本テンプレートは家計と資産残高を把握するための記録用です。特定の金融商品への投資を推奨するものではなく、正確な運用利回りや税務上の損益を計算するものでもありません。",
+        "未記録の月は全欄を空欄にし、確認済みの残高ゼロには0を入力します。一部の口座だけ入力した月も集計されるため、全口座を確認してから比較してください。借入残高を差し引く純資産や、運用利回り・税務上の損益を計算する表ではありません。1月末比は1月末の残高との比較で、暦年の年間損益ではありません。",
         note_format,
     )
     guide.write_url("B33", "https://gaizen.xyz/blog/monthly-asset-tracking/", string="GAIZEN FINANCE｜資産額を毎月記録する方法")
+
+    sample = workbook.add_worksheet("記入例（架空）")
+    sample.hide_gridlines(2)
+    sample.set_column("A:A", 22)
+    sample.set_column("B:D", 18)
+    sample.merge_range("A1:D1", "記入例（架空の金額・単位：円）", title_format)
+    sample.set_row(0, 34)
+    sample.merge_range("A2:D3", "筆者の実績ではありません。入力用シートやダッシュボードとは連動していない、計算の説明用シートです。", note_format)
+    sample.write_row("A5", ["口座", "2026年1月", "2026年2月", "2026年3月"], header_format)
+    examples = [
+        ["楽天銀行", 300000, 250000, 280000],
+        ["三井住友銀行", 100000, 120000, 110000],
+        ["楽天証券", 1000000, 1080000, 1050000],
+        ["SBI証券", 500000, 520000, 540000],
+    ]
+    for index, values in enumerate(examples, start=5):
+        sample.write(index, 0, values[0], item_format)
+        sample.write_row(index, 1, values[1:], input_format)
+    sample.write("A10", "合計", total_label_format)
+    sample.write("A11", "前月比（金額）", metric_label_format)
+    for col, total in enumerate([1900000, 1970000, 1980000], start=1):
+        letter = xlsxwriter.utility.xl_col_to_name(col)
+        sample.write_formula(9, col, f"=SUM({letter}6:{letter}9)", total_value_format, total)
+        if col > 1:
+            previous = xlsxwriter.utility.xl_col_to_name(col - 1)
+            sample.write_formula(10, col, f"={letter}10-{previous}10", metric_value_format, [70000, 10000][col - 2])
+    sample.merge_range("A13:D16", "2月の増加7万円は運用益とは限りません。仮に給与等の収入30万円、生活費等の支出24万円なら、差し引き入金は6万円。残る1万円も、入出金・記録漏れを照合して初めて運用損益等と判断できます。銀行から証券への振替は合計を増やしません。", note_format)
+    example_chart = workbook.add_chart({"type": "column"})
+    example_chart.add_series({
+        "name": "総資産（架空）",
+        "categories": ["記入例（架空）", 4, 1, 4, 3],
+        "values": ["記入例（架空）", 9, 1, 9, 3],
+        "fill": {"color": colors["green"]},
+    })
+    example_chart.set_title({"name": "架空の記入例：総資産の推移"})
+    example_chart.set_y_axis({"name": "円", "min": 0})
+    example_chart.set_legend({"none": True})
+    sample.insert_chart("A18", example_chart)
 
     workbook.close()
 

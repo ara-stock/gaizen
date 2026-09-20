@@ -1,7 +1,7 @@
 ---
 title: "How to Read Japanese Mutual Fund Documents — 7 Checks Before Investing"
 date: "2026-06-11"
-updatedAt: "2026-06-11"
+updatedAt: "2026-09-11"
 description: "How to review a Japanese mutual fund prospectus, monthly report, and investment report. Check holdings, assets under management, purchase fees, expense ratio, actual costs, total return, and Sharpe ratio before investing."
 tags: ["mutual funds", "investment trust", "prospectus", "monthly report", "expense ratio", "actual cost", "NISA"]
 category: "us-stock"
@@ -88,6 +88,8 @@ Use monthly reports to inspect the trend:
 
 A fund can remain large while experiencing persistent outflows. The direction matters alongside the current size.
 
+An increase in AUM can come from market gains, not just subscriptions. Check subscriptions/redemptions or units outstanding separately. If flows are not disclosed in the monthly report, do not infer an exact inflow from AUM alone.
+
 ## 3. Purchase Fee
 
 The purchase fee is deducted when buying a mutual fund.
@@ -126,6 +128,21 @@ Actual cost includes the expense ratio plus costs incurred during operations, su
 - Whether overseas custody or transaction expenses are unusually large
 
 New funds may not have an investment report showing actual cost yet. In that case, review similar products from the same manager or wait until operating results are available.
+
+### A Worked Document-Comparison Example
+
+These are fictional funds tracking the same index, with the same 12-month period and annualized, tax-inclusive expense figures. They are not real product quotes.
+
+| Field to copy | Fund A | Fund B | Document |
+|---|---:|---:|---|
+| Management fee (shintaku hoshu) | 0.10% | 0.08% | Prospectus |
+| Total expense ratio | 0.13% | 0.15% | Investment report |
+| Purchase fee | 0% | 0% | Prospectus and distributor |
+| Period | Same 12 months | Same 12 months | Table footnotes |
+
+B has the lower stated management fee, but A has the lower reported total expense ratio in this example. **Do not add management fee to total expense ratio: it is already included.** Total expense ratio generally excludes trading commissions and securities transaction taxes, so also read the per-unit expense breakdown. The [FSA's cost-disclosure paper](https://www.fsa.go.jp/singi/singi_kinyu/market-system/siryou/20211206/01.pdf) explains this distinction.
+
+If a report covers six months, first check whether the figure is period-based or already annualized. Historical expenses are not fixed future costs. Record unresolved questions, such as mismatched periods or redemption conditions, alongside the numbers.
 
 ## 6. Total Return
 
@@ -219,4 +236,3 @@ Always check actual cost. A low advertised expense ratio can still differ from t
 - [Investment Trusts Association Japan — Investment Reports](https://www.toushin.or.jp/investmenttrust/learn/knowledge/report/)
 - [Mitsubishi UFJ Asset Management — eMAXIS Slim US Equities (S&P500)](https://emaxis.am.mufg.jp/fund/253266.html)
 - [Mitsubishi UFJ Asset Management — eMAXIS Slim All Country](https://emaxis.am.mufg.jp/fund/253425.html)
-

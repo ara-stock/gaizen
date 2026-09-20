@@ -1,7 +1,7 @@
 ---
 title: "Rakuten Securities vs SBI Securities: Which Should You Choose?"
 date: "2026-05-28"
-updatedAt: "2026-08-10"
+updatedAt: "2026-09-11"
 description: "A first-hand comparison of Rakuten Securities and SBI Securities across usability, bank integration, IPO allocation, and recurring investments."
 tags: ["Rakuten Securities", "SBI Securities", "brokerage account", "NISA", "Japan investing", "beginner"]
 category: "nisa"
@@ -9,7 +9,9 @@ published: true
 featured: true
 ---
 
-## Bottom Line: Start with Rakuten, Add SBI Later
+## Bottom Line: Compare Usability and the Features You Actually Need
+
+If your existing broker already supports the funds and features you need, changing providers or opening a second account is optional. My preferences below do not mean everyone needs two accounts or a paid credit card.
 
 I use both Rakuten Securities and SBI Securities. My clear recommendation: **if you don't have a brokerage account yet, open Rakuten Securities first.** It's more intuitive, integrates well with daily banking, and lets you build investing habits without friction.
 
@@ -29,7 +31,7 @@ Rakuten Securities allows **yen-denominated settlement** for US stocks and ETFs.
 
 ### Clean, Intuitive App (iSPEED)
 
-The iSPEED app is well-designed: charts, portfolio balance, recurring investment settings, and order placement are all accessible without digging through menus. This matters more than it sounds — a good UI removes a subtle barrier that stops people from checking in and staying engaged with their portfolio.
+I find Rakuten's interfaces approachable. However, [iSPEED's stock-trading interface](https://ispeed.jp/smartphone/) is separate from mutual-fund contribution setup. Do not expect to configure NISA fund contributions entirely inside iSPEED; check the fund, account type, and payment method in the brokerage's fund setup screens.
 
 ### Securities-Backed Loans Are Easy to Set Up
 
@@ -43,11 +45,11 @@ Use this feature carefully. If the market drops, the collateral value falls with
 
 SBI Securities handles IPO applications online, but the lottery is **not** a one-person, one-vote drawing. [SBI Securities' allocation policy](https://faq.sbisec.co.jp/answer/5edf369650df500012206e0a/) states that 60% of the planned allocation is drawn according to valid shares applied for, while 30% is allocated through IPO Challenge Points.
 
-If you're interested in IPO investing, SBI Securities is essentially required.
+SBI is one candidate for IPO applications. Compare offerings and allocation rules; neither allocation nor a profit is guaranteed.
 
 ### V-Point Accumulation
 
-You earn V-Points based on your mutual fund balance, especially when combined with certain credit cards (like Mitsui Sumitomo Card Gold NL). Having two point systems running — Rakuten Points from one account, V-Points from the other — compounds over time.
+Fund-balance rewards and credit-card contribution rewards are separate programs. Card type and annual spending conditions can affect contribution rewards; holding a gold card does not automatically improve fund-balance rewards. Account for annual fees and avoid unnecessary spending just to earn points.
 
 ### Wider Bond Selection
 
@@ -57,13 +59,13 @@ SBI Securities tends to offer a broader range of bonds: foreign government bonds
 
 | Feature | Rakuten Securities | SBI Securities |
 |---|---|---|
-| Domestic stock trading fees | Free (Zero Course) | Free (Zero Revolution) |
+| Domestic stock trading fees | Check Zero Course eligibility | Check Zero Revolution eligibility |
 | Credit card investment rewards | Varies by card and fund | Varies by card and annual spending conditions |
 | Points | Rakuten Points | V-Points, Ponta, etc. |
 | Bank integration | Rakuten Bank (Money Bridge) | SBI Sumishin Net Bank |
 | IPO allocation | Check each offering | Standard lottery plus IPO Challenge Points |
 | USD stock in JPY | Yes | Yes |
-| Bond lineup | Standard | Extensive |
+| Bond lineup | Compare currency, maturity, and issuer | Compare currency, maturity, and issuer |
 
 *Fees and cashback rates change. Always verify current terms on each platform's official website.*
 

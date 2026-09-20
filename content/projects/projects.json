@@ -1,0 +1,724 @@
+{
+  "updatedAt": "2026-09-20",
+  "projects": [
+    {
+      "slug": "edgex",
+      "name": "edgeX",
+      "category": "Perp DEX",
+      "chain": "StarkEx（Ethereum ZKロールアップ）",
+      "status": "active",
+      "statusNote": "funding carry botのメイン取引所として稼働中。TGE後も取引を継続している。",
+      "token": {
+        "launched": true,
+        "ticker": "EDGE",
+        "tgeDate": "2026-03-31",
+        "tgeSourceType": "official"
+      },
+      "points": {
+        "exists": false,
+        "name": "Open Season / Pre-TGE Season（終了）",
+        "status": "ポイントプログラムはTGE（2026-03-31）で終了。",
+        "communityAllocation": "総供給10億枚のうち25%をTGE時にエアドロップ、最大5%をPre-TGE Season向け、35%をエコシステム・コミュニティ枠（報道ベース）"
+      },
+      "funding": {
+        "totalUsdM": null,
+        "rounds": "2024年12月 プレシード（Amber Group主導、金額非開示）。2026年2月 Circle Venturesが戦略投資（金額非開示）",
+        "investors": [
+          "Amber Group",
+          "Circle Ventures"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Kevin Wang（共同創業者・The Block報道）"
+        ],
+        "doxxed": false,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "Amber Groupがインキュベート。チームの公開は一部のみ。"
+      },
+      "flags": [
+        "調達額が一度も開示されていない。",
+        "TGE時にXの告知投稿のコメント欄を閉じ、ベスティングと配分の透明性について批判を受けた（crypto.news 2026-03-31）。",
+        "米国と制裁対象地域は利用制限あり。日本からの利用条件は未確認。"
+      ],
+      "links": {
+        "site": "https://www.edgex.exchange/",
+        "referral": "https://pro.edgex.exchange/en-US/referral/MOMIJI"
+      },
+      "sources": [
+        {
+          "title": "The Block - Circle Ventures invests in edgeX ahead of token launch",
+          "url": "https://www.theblock.co/post/389202/circle-ventures-edgex-token-launch-usdc-edge-chain",
+          "date": "2026-02-10"
+        },
+        {
+          "title": "The Defiant - Amber Group-backed edgeX to launch token March 31",
+          "url": "https://thedefiant.io/news/defi/amber-group-backed-perp-dex-edgex-to-launch-token-on-march-31",
+          "date": "2026-03"
+        },
+        {
+          "title": "crypto.news - edgeX set to launch $EDGE amid transparency concerns",
+          "url": "https://crypto.news/edgex-set-to-launch-edge-token-amid-transparency-concerns/",
+          "date": "2026-03-31"
+        }
+      ],
+      "updatedAt": "2026-09-20"
+    },
+    {
+      "slug": "extended",
+      "name": "Extended",
+      "category": "Perp DEX",
+      "chain": "Starknet",
+      "status": "active",
+      "statusNote": "funding carry botの取引所のひとつ。TGE前のためポイント獲得も兼ねている。",
+      "token": {
+        "launched": false,
+        "tgeExpectation": "時期未定（創業者の「2026年上期」見通しは未達）",
+        "tgeSourceType": "media"
+      },
+      "points": {
+        "exists": true,
+        "name": "Extended Points",
+        "status": "稼働中。毎週配布で上限60万ポイント/週。2026-09-15時点の累計配布は67,733,148ポイント（公式ドキュメント）。",
+        "communityAllocation": "公式ドキュメントは配分・配布日とも未確定と明記。「約30%をコミュニティへ」は報道ベース。"
+      },
+      "funding": {
+        "totalUsdM": 6.5,
+        "rounds": "2024年に$6.5Mを調達（開示済みはこの1回）",
+        "investors": [
+          "Tioga Capital",
+          "Semantic Ventures",
+          "Prelude",
+          "StarkWare",
+          "Cyber Fund"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Ruslan Fakhrutdinov（CEO）"
+        ],
+        "doxxed": true,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "元Revolutの暗号資産オペレーション責任者が率いるチーム。"
+      },
+      "flags": [
+        "公式の利用制限国リスト（米国・英国・カナダ・中国など）に日本は含まれていない（2026-09確認）。",
+        "創業者が示した2026年上期のTGE見通しは実現しなかった。"
+      ],
+      "links": {
+        "site": "https://extended.exchange/"
+      },
+      "sources": [
+        {
+          "title": "The Block - Ex-Revolut team's perp DEX Extended goes live on Starknet",
+          "url": "https://www.theblock.co/post/366529/ex-revolut-team-perp-dex-extended-live-on-starknet",
+          "date": "2025-08-12"
+        },
+        {
+          "title": "Extended docs - Points program",
+          "url": "https://docs.extended.exchange/extended-resources/points-program.md",
+          "date": "2026-09-20閲覧"
+        },
+        {
+          "title": "Extended docs - Restricted countries",
+          "url": "https://docs.extended.exchange/extended-resources/legal/restricted-countries.md",
+          "date": "2026-09-20閲覧"
+        },
+        {
+          "title": "FinanceFeeds - Extended token stirs fierce speculation",
+          "url": "https://financefeeds.com/extended-token-stirs-fierce-speculation/",
+          "date": "2026-06-17"
+        }
+      ],
+      "updatedAt": "2026-09-20"
+    },
+    {
+      "slug": "lighter",
+      "name": "Lighter",
+      "category": "Perp DEX",
+      "chain": "独自ZKロールアップ（Ethereum）",
+      "status": "active",
+      "statusNote": "funding carry botのヘッジ用取引所として稼働中。",
+      "token": {
+        "launched": true,
+        "ticker": "LIT",
+        "tgeDate": "2025-12-30",
+        "tgeSourceType": "official"
+      },
+      "points": {
+        "exists": true,
+        "name": "Lighter Points",
+        "status": "シーズン1・2はTGE時のエアドロップに変換済み。TGE後のプログラムの現状は未確認。",
+        "communityAllocation": "総供給10億枚の50%をエコシステム・コミュニティへ。うち25%をTGE時にロックなしで配布。チーム26%、投資家24%。"
+      },
+      "funding": {
+        "totalUsdM": 68,
+        "rounds": "2025年11月に$68M（評価額約$1.5B、Founders FundとRibbit Capitalが主導）。これ以前のラウンドは一次情報で未確認。",
+        "investors": [
+          "Founders Fund",
+          "Ribbit Capital",
+          "Haun Ventures",
+          "Robinhood"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Vladimir Novakovski（創業者・CEO）"
+        ],
+        "doxxed": true,
+        "countryCode": "US",
+        "base": "米国",
+        "baseKind": "founder base",
+        "background": "元Citadel。Lighterは2022年創業。"
+      },
+      "flags": [
+        "2025年10月に障害が発生し、影響を受けたトレーダーにはポイントで補償（The Defiant）。",
+        "2025年12月のエアドロップでシビル判定をめぐる論争があり、異議申し立ての手続きが設けられた。",
+        "日本からの利用条件は未確認。"
+      ],
+      "links": {
+        "site": "https://lighter.xyz/"
+      },
+      "sources": [
+        {
+          "title": "Fortune - Lighter raises $68M",
+          "url": "https://fortune.com/2025/11/11/lighter-fundraise-founders-fund-ribbit-capital-haun-ventures-robinhood-vladimir-novakovski/",
+          "date": "2025-11-11"
+        },
+        {
+          "title": "The Defiant - Lighter tops perp DEX volume, reveals $68M raise",
+          "url": "https://thedefiant.io/news/defi/lighter-becomes-top-perp-dex-by-volume-reveals-usd68-million-raise",
+          "date": "2025-11"
+        },
+        {
+          "title": "CoinMarketCap Academy - Lighter launches LIT",
+          "url": "https://coinmarketcap.com/academy/article/lighter-launches-lit-token-allocates-ecosystem-airdrop",
+          "date": "2025-12-30"
+        }
+      ],
+      "updatedAt": "2026-09-20"
+    },
+    {
+      "slug": "hyperliquid",
+      "name": "Hyperliquid",
+      "category": "Perp DEX / L1",
+      "chain": "独自L1（HyperCore + HyperEVM）",
+      "status": "active",
+      "statusNote": "funding carry botのテイカー側の取引所として稼働中。",
+      "token": {
+        "launched": true,
+        "ticker": "HYPE",
+        "tgeDate": "2024-11-29",
+        "tgeSourceType": "official"
+      },
+      "points": {
+        "exists": false,
+        "name": "ポイント（ジェネシス前に終了）",
+        "status": "公式に発表された稼働中のポイントプログラムはない。「シーズン2」は憶測。",
+        "communityAllocation": "31%をジェネシスエアドロップで配布。38.888%を将来の報酬・コミュニティ向けに確保。投資家への配分なし。"
+      },
+      "funding": {
+        "totalUsdM": 0,
+        "rounds": "VC調達なし（自己資金）",
+        "investors": []
+      },
+      "team": {
+        "founders": [
+          "Jeff Yan"
+        ],
+        "doxxed": true,
+        "countryCode": "SG",
+        "base": "シンガポール",
+        "baseKind": "company HQ",
+        "background": "Jeff Yanは元Hudson River Tradingのクオンツ。共同創業者の1人は匿名。"
+      },
+      "flags": [
+        "2025年3月のJELLY相場操縦事件で、バリデーターが上場廃止と強制決済を実施。",
+        "2026年5月、CMEとICEが米規制当局に調査を促したと報道（CoinDesk / Bloomberg）。",
+        "2026年6月、英FCAが警告リストに追加（CryptoSlate）。",
+        "KYCなし。米国・オンタリオ州・制裁対象地域は利用制限あり。"
+      ],
+      "links": {
+        "site": "https://hyperfoundation.org/"
+      },
+      "sources": [
+        {
+          "title": "Colossus - Hyperliquid: In Singapore with Jeffrey Yan",
+          "url": "https://colossus.com/article/beyond-the-sky-jeffrey-yan-hyperliquid/",
+          "date": "2025"
+        },
+        {
+          "title": "CoinDesk - CME, ICE push US regulators to scrutinize Hyperliquid",
+          "url": "https://www.coindesk.com/markets/2026/05/15/cme-ice-push-u-s-regulators-to-scrutinize-hyperliquid-over-manipulation-risks-bloomberg",
+          "date": "2026-05-15"
+        },
+        {
+          "title": "CryptoSlate - Hyperliquid's UK warning",
+          "url": "https://cryptoslate.com/hyperliquids-uk-warning-reveals-the-regulatory-test-behind-its-wall-street-push/",
+          "date": "2026-06"
+        }
+      ],
+      "updatedAt": "2026-09-20"
+    },
+    {
+      "slug": "grvt",
+      "name": "GRVT",
+      "category": "Perp DEX（ハイブリッド・要KYC）",
+      "chain": "ZKsync Validium（Ethereum）",
+      "status": "watching",
+      "statusNote": "KYC必須のため、botへの組み込みは条件確認待ち。",
+      "token": {
+        "launched": true,
+        "ticker": "GRVT",
+        "tgeDate": "2026-07-30",
+        "tgeSourceType": "official"
+      },
+      "points": {
+        "exists": true,
+        "name": "Grvt Rewards",
+        "status": "シーズン1・2はエアドロップに変換済み（計2.8億GRVT、TGEから12か月かけて段階解放）。TGE後のシーズンは未確認。",
+        "communityAllocation": "総供給10億枚の28%をコミュニティ・エアドロップへ（公式ヘルプセンター）。"
+      },
+      "funding": {
+        "totalUsdM": 34,
+        "rounds": "2025-09-18に$19MのシリーズA。累計$34M（CEOのX投稿）。",
+        "investors": [
+          "ZKsync（Matter Labs）",
+          "Further Ventures",
+          "EigenCloud",
+          "500 Global"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Hong Yea（共同創業者・CEO）"
+        ],
+        "doxxed": true,
+        "countryCode": "SG",
+        "base": "シンガポール",
+        "baseKind": "company HQ",
+        "background": "バミューダ金融庁のライセンスを取得した事業体で運営。"
+      },
+      "flags": [
+        "KYCが必須。",
+        "エアドロップは一括ではなく12か月の段階解放。",
+        "TGEは当初の6月下旬から7月30日に延期された。",
+        "日本からの利用条件は未確認。"
+      ],
+      "links": {
+        "site": "https://grvt.io/",
+        "referral": "https://grvt.io/?ref=arastock"
+      },
+      "sources": [
+        {
+          "title": "Grvt Help Center - Everything about TGE",
+          "url": "https://help.grvt.io/en/articles/16106859-everything-about-tge",
+          "date": "2026-07"
+        },
+        {
+          "title": "The Block - GRVT raises $19M Series A",
+          "url": "https://www.theblock.co/post/371347/zksync-based-hybrid-dex-grvt-raises-19-million-series-a",
+          "date": "2025-09-18"
+        },
+        {
+          "title": "Hong Yea on X - total funding $34M",
+          "url": "https://x.com/hong_grvt/status/1968835697529471255",
+          "date": "2025-09-19"
+        },
+        {
+          "title": "Grvt blog - Bermuda licence",
+          "url": "https://grvt.io/blog/grvt-secures-bermuda-license-world-first-regulated-dex/",
+          "date": "2024-12"
+        }
+      ],
+      "updatedAt": "2026-09-20"
+    },
+    {
+      "slug": "variational",
+      "name": "Variational (Omni)",
+      "category": "Perp DEX（RFQ型）",
+      "chain": "Arbitrum",
+      "status": "watching",
+      "statusNote": "KYC・日本からの利用可否・APIキーの仕様を確認してから判断する。",
+      "token": {
+        "launched": false,
+        "ticker": "VAR",
+        "tgeExpectation": "2026年Q3〜Q4",
+        "tgeTarget": "2026-12",
+        "tgeSourceType": "media"
+      },
+      "points": {
+        "exists": true,
+        "name": "Omni Points",
+        "status": "2025-12-17開始、毎週配布。「遅くとも2026年Q3末まで」に終了予定とされている。",
+        "communityAllocation": "VAR供給の約50%をコミュニティへ（プロジェクト発表・報道ベース）"
+      },
+      "funding": {
+        "totalUsdM": 61.8,
+        "rounds": "2024年10月 シード$10.3M（Bain Capital Crypto・Peak XV共同主導）、戦略ラウンド$1.5M、2026-05-20 シリーズA $50M（Dragonfly主導）",
+        "investors": [
+          "Dragonfly",
+          "Bain Capital Crypto",
+          "Peak XV Partners",
+          "Coinbase Ventures",
+          "Hack VC"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Lucas Schuermann（CEO）",
+          "Edward Yu"
+        ],
+        "doxxed": true,
+        "countryCode": "KY",
+        "base": "ケイマン諸島（法人所在地）",
+        "baseKind": "company HQ",
+        "background": "創業者個人の拠点は未確認。"
+      },
+      "flags": [
+        "Omniが全取引の唯一のカウンターパーティになる構造（OLPモデル）で、構造上のカウンターパーティリスクがある。",
+        "日本からの利用条件は未確認。"
+      ],
+      "links": {
+        "site": "https://variational.io/"
+      },
+      "sources": [
+        {
+          "title": "The Block - Variational raises $50M Series A led by Dragonfly",
+          "url": "https://www.theblock.co/news/defi/2026-05-20-arbitrum-derivatives-variational-50-million-series-a-dragonfly-402066",
+          "date": "2026-05-20"
+        },
+        {
+          "title": "CoinDesk - Variational raises $50M",
+          "url": "https://www.coindesk.com/business/2026/05/21/peer-to-peer-trading-startup-variational-raises-usd50-million-for-real-world-perps-in-funding-round-led-by-dragonfly",
+          "date": "2026-05-21"
+        },
+        {
+          "title": "CryptoSlate PR - $10.3M seed",
+          "url": "https://cryptoslate.com/press-releases/variational-secures-10-3-million-in-seed-funding-to-expand-peer-to-peer-trading-protocol-led-by-bain-capital-crypto-and-peak-xv-partners-fka-sequoia-india/",
+          "date": "2024-10"
+        }
+      ],
+      "updatedAt": "2026-09-20"
+    },
+    {
+      "slug": "nado",
+      "name": "Nado",
+      "category": "Perp + 現物 DEX",
+      "chain": "Ink（Kraken系 OP Stack L2）",
+      "status": "watching",
+      "token": {
+        "launched": false,
+        "ticker": "INK",
+        "tgeExpectation": "INKのTGE時期は公式未発表",
+        "tgeSourceType": "rumor"
+      },
+      "points": {
+        "exists": true,
+        "name": "Nado Points",
+        "status": "シーズン2が稼働中（取引・NLPボールト・紹介）。INKへの変換式は未公表。",
+        "communityAllocation": "未公表。独自トークンはなく、ポイントはINKに変換される想定。"
+      },
+      "funding": {
+        "totalUsdM": null,
+        "rounds": "非開示。旧Vertex ProtocolチームがInk Foundationに合流して開発（2025年7月、条件非開示）。",
+        "investors": [
+          "Ink Foundation / Kraken"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Darius Tabai（旧Vertex共同創業者）"
+        ],
+        "doxxed": true,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "Arbitrumのperp DEXだったVertex Protocolの元チーム。"
+      },
+      "flags": [
+        "前身のVertexはInk移行時にVRTXトークンを廃止し、一部保有者から批判を受けた。",
+        "「2026年7〜9月TGE」説はアドバイザーの発言が出所で、Ink・Krakenの公式発表ではない。",
+        "日本からの利用条件は未確認。"
+      ],
+      "links": {
+        "site": "https://nado.xyz/",
+        "referral": "https://app.nado.xyz?join=bseutrt"
+      },
+      "sources": [
+        {
+          "title": "The Block - Vertex to sunset VRTX, migrate to Ink",
+          "url": "https://www.theblock.co/post/361570/vertex-to-sunset-vrtx-token-move-perp-dex-onto-kraken-backed-ink-layer-2",
+          "date": "2025-07-08"
+        },
+        {
+          "title": "PR Newswire - Vertex team to join Ink Foundation",
+          "url": "https://www.prnewswire.com/news-releases/vertex-protocol-team-to-join-ink-foundation-build-new-defi-primitives-on-ink-layer-2-302499517.html",
+          "date": "2025-07-08"
+        },
+        {
+          "title": "airdrops.io - Nado",
+          "url": "https://airdrops.io/nado/",
+          "date": "2026-09"
+        }
+      ],
+      "updatedAt": "2026-09-20"
+    },
+    {
+      "slug": "jupiter",
+      "name": "Jupiter",
+      "category": "DEXアグリゲーター / Perp / レンディング",
+      "chain": "Solana",
+      "status": "active",
+      "statusNote": "Solana上のスワップとステーブルコイン運用で日常的に利用している。",
+      "token": {
+        "launched": true,
+        "ticker": "JUP",
+        "tgeDate": "2024-01-31",
+        "tgeSourceType": "official"
+      },
+      "points": {
+        "exists": false,
+        "name": "Jupuary（年次エアドロップ）",
+        "status": "2026年のJupuaryはDAO投票（2026-02-22）で無期限延期。稼働中のポイントプログラムはない。"
+      },
+      "funding": {
+        "totalUsdM": 35,
+        "rounds": "自己資金で運営後、2026-02-02にParaFi Capitalが$35Mの戦略トークン投資。",
+        "investors": [
+          "ParaFi Capital"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Meow（ハンドルネーム）",
+          "Siong Ong"
+        ],
+        "doxxed": true,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "MeowはMeteoraの共同創業者でもある。"
+      },
+      "flags": [
+        "2025年2月のLIBRA / MELANIAミームコイン問題で、関連するMeteoraの幹部が辞任。米国で集団訴訟が提起されている（The Block）。Meowは不正への関与を否定。",
+        "2026年のエアドロップはDAO投票で中止。"
+      ],
+      "links": {
+        "site": "https://jup.ag/",
+        "referral": "https://jup.ag/?ref=zmz6ke75ec3p",
+        "article": "/blog/jupiter-defi-yield/"
+      },
+      "sources": [
+        {
+          "title": "CoinDesk - Jupiter announces $35M ParaFi investment",
+          "url": "https://finance.yahoo.com/news/jupiter-announces-35m-parafi-investment-084502586.html",
+          "date": "2026-02-02"
+        },
+        {
+          "title": "CoinMarketCap - Jupiter drops as DAO cancels Jupuary",
+          "url": "https://coinmarketcap.com/top-stories/699b6195302cb822e7265462/",
+          "date": "2026-02-22"
+        },
+        {
+          "title": "The Block - Class action over Melania, LIBRA",
+          "url": "https://www.theblock.co/post/375832/ben-chow-melania-libra-memecoin",
+          "date": "2025-10"
+        }
+      ],
+      "updatedAt": "2026-09-20"
+    },
+    {
+      "slug": "xstocks",
+      "name": "xStocks",
+      "category": "RWA（トークン化株式）",
+      "chain": "Solanaほかマルチチェーン",
+      "status": "watching",
+      "token": {
+        "launched": false,
+        "tgeSourceType": "none"
+      },
+      "points": {
+        "exists": true,
+        "name": "xStocks Points",
+        "status": "2026年3月開始。オンチェーンの活動（取引・LP・DeFi）のみが対象で、Kraken内での保有・取引は対象外。",
+        "communityAllocation": "未発表（トークン自体が未発表）"
+      },
+      "funding": {
+        "totalUsdM": 9.5,
+        "rounds": "発行元Backed Financeが2024年に$9.5MのシリーズA（Gnosis主導）。2025-12-02にKrakenが買収を発表（金額非開示）。",
+        "investors": [
+          "Gnosis",
+          "Exor Seeds",
+          "Cyber Fund",
+          "Kraken（買収）"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Adam Levi（Backed共同創業者）"
+        ],
+        "doxxed": true,
+        "countryCode": "CH",
+        "base": "スイス",
+        "baseKind": "company HQ",
+        "background": "Backed Finance AG。現在はKrakenグループ。"
+      },
+      "flags": [
+        "Krakenの公式サポートによると、xStocksは日本では提供されていない（地域制限）。米国居住者も対象外。",
+        "トークン保有者に株主権はない。"
+      ],
+      "links": {
+        "site": "https://xstocks.fi/"
+      },
+      "sources": [
+        {
+          "title": "CoinDesk - xStocks starts points program",
+          "url": "https://www.coindesk.com/business/2026/03/10/kraken-s-tokenized-stock-venue-starts-points-program-hinting-at-possible-ecosystem-token",
+          "date": "2026-03-10"
+        },
+        {
+          "title": "Kraken Support - xStocks Points Program FAQ",
+          "url": "https://support.kraken.com/articles/xstocks-points-program-faq",
+          "date": "2026"
+        },
+        {
+          "title": "Kraken blog - Kraken to acquire Backed",
+          "url": "https://blog.kraken.com/news/backed-acquisition",
+          "date": "2025-12-02"
+        }
+      ],
+      "updatedAt": "2026-09-20"
+    },
+    {
+      "slug": "solstice",
+      "name": "Solstice Finance",
+      "category": "ステーブルコイン / 利回り",
+      "chain": "Solana",
+      "status": "watching",
+      "token": {
+        "launched": true,
+        "ticker": "SLX",
+        "tgeDate": "2026-05-25",
+        "tgeSourceType": "media"
+      },
+      "points": {
+        "exists": true,
+        "name": "Flares",
+        "status": "シーズン3が2026-08-01〜2026-12-01で稼働中（公式ドキュメント）。シーズン終了時にFlaresの比率でSLXに変換。",
+        "communityAllocation": "総供給10億枚のうちFlares経由のエアドロップ10%、コミュニティ37.71%（公式トークノミクス）"
+      },
+      "funding": {
+        "totalUsdM": null,
+        "rounds": "Deus X Capitalが全額出資・インキュベート（金額非開示）。2025年12月にLegionでパブリックセール。",
+        "investors": [
+          "Deus X Capital"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Ben Nadareski（CEO）",
+          "Tim Grant",
+          "Stuart Connolly"
+        ],
+        "doxxed": true,
+        "countryCode": "CH",
+        "base": "スイス（ツーク）",
+        "baseKind": "company HQ",
+        "background": "Solstice Labs AG。Deus X Capital傘下。"
+      },
+      "flags": [
+        "2025-12-26、SolanaのDEX上でUSXが一時約$0.10まで下落。運営は担保率100%超・1:1償還は影響なしと説明し、価格は回復した。",
+        "日本からの利用条件は未確認。"
+      ],
+      "links": {
+        "site": "https://solstice.finance/"
+      },
+      "sources": [
+        {
+          "title": "Solstice docs - SLX tokenomics",
+          "url": "https://docs.solstice.finance/solstice-for-users/slx/tokenomics",
+          "date": "2026-09-20閲覧"
+        },
+        {
+          "title": "Solstice docs - Flares",
+          "url": "https://docs.solstice.finance/solstice-for-users/flares",
+          "date": "2026-09-20閲覧"
+        },
+        {
+          "title": "Cryptopolitan - Solstice blames USX depeg on liquidity",
+          "url": "https://www.cryptopolitan.com/solstice-blames-usx-depeg-liquidity-issue/",
+          "date": "2025-12-26"
+        }
+      ],
+      "updatedAt": "2026-09-20"
+    },
+    {
+      "slug": "huma",
+      "name": "Huma Finance",
+      "category": "PayFi / RWAクレジット",
+      "chain": "Solanaほか",
+      "status": "watching",
+      "token": {
+        "launched": true,
+        "ticker": "HUMA",
+        "tgeDate": "2025-05-26",
+        "tgeSourceType": "official"
+      },
+      "points": {
+        "exists": true,
+        "name": "Feathers",
+        "status": "TGE後もシーズン制のエアドロップを継続。シーズン3は2025年11月に開始（公式X）。以降のシーズンは二次情報のみ。",
+        "communityAllocation": "TGE時に総供給100億枚の5%を初回エアドロップ、約3か月後に2.1%を追加配布（公式ブログ）"
+      },
+      "funding": {
+        "totalUsdM": 38,
+        "rounds": "2024年9月 シリーズA $38M（うち株式は$10M、$28Mは利回り付きRWAへの投資。Distributed Global主導）。シードの金額は一次情報で未確認。",
+        "investors": [
+          "Distributed Global",
+          "HashKey Capital",
+          "Folius Ventures",
+          "Stellar Development Foundation",
+          "TIBAS Ventures"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Richard Liu",
+          "Erbil Karaman"
+        ],
+        "doxxed": true,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "2024年に決済企業Arfと統合。"
+      },
+      "flags": [
+        "「$38M調達」のうち株式での調達は$10Mのみ。",
+        "機関投資家向けプロダクトはKYCが必要。",
+        "日本からの利用条件は未確認。"
+      ],
+      "links": {
+        "site": "https://huma.finance/",
+        "referral": "https://app.huma.finance?ref=7hiETI"
+      },
+      "sources": [
+        {
+          "title": "Huma blog - $HUMA airdrop",
+          "url": "https://blog.huma.finance/huma-airdrop-payfi-decentralized",
+          "date": "2025-05-22"
+        },
+        {
+          "title": "Huma blog - Huma raises $38M",
+          "url": "https://blog.huma.finance/huma-raises-38m-to-hyper-scale-its-payfi-network",
+          "date": "2024-09-11"
+        },
+        {
+          "title": "Huma on X - Season 3 live",
+          "url": "https://x.com/humafinance/status/1993666176858361880",
+          "date": "2025-11"
+        }
+      ],
+      "updatedAt": "2026-09-20"
+    }
+  ]
+}
