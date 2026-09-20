@@ -18,7 +18,7 @@ export default function Footer() {
   const disclaimer = '本サイトの情報は投資助言ではありません。投資は自己責任で。'
 
   return (
-    <footer className="border-t mt-24" style={{ borderColor: 'var(--border)' }}>
+    <footer className="border-t mt-24 pb-16 lg:pb-0" style={{ borderColor: 'var(--border)' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-12">
           <div>
