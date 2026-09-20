@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import type { Phase, Project, ProjectStatus } from '@/types/project'
 import {
   ACTIVITY_COLOR, ACTIVITY_LABEL, ACTIVITY_ORDER, POINTS_STORAGE_KEY, STATUS_LABEL, STATUS_ORDER, STATUS_STORAGE_KEY,
-  airdropPoolUsdM, countryFlag, formatFollowers, formatFunding, formatUsd, formatUsdM,
+  airdropPoolUsdM, formatFollowers, formatFunding, formatUsd, formatUsdM,
   readStored, usdPerPoint,
 } from './labels'
 import { PhaseMeter, ProjectLogo, TgeCell } from './cells'
@@ -17,15 +17,15 @@ const TABS: Tab[] = [...STATUS_ORDER, 'all']
 const PHASE_RANK: Record<Phase, number> = { early: 0, mid: 1, late: 2, none: 3, ended: 4 }
 
 /** Column widths are fixed so every value lines up vertically across all groups. */
-const COLUMNS: { key?: SortKey; label: string; width: string; align?: 'right' }[] = [
-  { label: 'プロジェクト', width: '24%' },
-  { key: 'phase', label: 'フェーズ', width: '11%' },
-  { key: 'tge', label: 'TGE', width: '16%' },
-  { key: 'pool', label: 'エアドロ規模', width: '13%', align: 'right' },
-  { key: 'funding', label: 'VC調達額', width: '9%', align: 'right' },
-  { key: 'followers', label: 'Xフォロワー', width: '9%', align: 'right' },
-  { label: '拠点', width: '11%' },
-  { label: '', width: '7%' },
+const COLUMNS: { key?: SortKey; label: string; width?: number; align?: 'right' }[] = [
+  { label: 'プロジェクト' },
+  { key: 'phase', label: 'フェーズ', width: 124 },
+  { key: 'tge', label: 'TGE', width: 150 },
+  { key: 'pool', label: 'エアドロ規模', width: 132, align: 'right' },
+  { key: 'funding', label: 'VC調達額', width: 108, align: 'right' },
+  { key: 'followers', label: 'Xフォロワー', width: 116, align: 'right' },
+  { label: '拠点', width: 140 },
+  { label: '', width: 84 },
 ]
 
 function tgeSortValue(p: Project): string {
@@ -92,11 +92,9 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
     )
   }
 
-  const baseText = (p: Project) => `${countryFlag(p.team.countryCode)} ${p.team.base}`.trim()
-
   const referral = (p: Project) => p.links.referral ? (
     <a href={p.links.referral} target="_blank" rel="sponsored nofollow noopener"
-      className="inline-block text-xs font-semibold px-2.5 py-1.5 rounded-md border"
+      className="inline-block whitespace-nowrap text-xs font-semibold px-2.5 py-1 rounded-md border"
       style={{ borderColor: 'var(--accent)', color: 'var(--accent)' }}>
       始める
     </a>
@@ -129,9 +127,9 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
         </div>
         <input type="search" value={query} onChange={e => setQuery(e.target.value)}
           placeholder="プロジェクト名・VC・国で検索" aria-label="プロジェクト名・VC・国で検索"
-          className="flex-1 text-sm rounded-lg border px-3 py-2" style={controlStyle} />
+          className="flex-1 text-base sm:text-sm rounded-lg border px-3 py-2" style={controlStyle} />
         <select value={sortKey} onChange={e => setSortKey(e.target.value as SortKey)} aria-label="並び替え"
-          className="lg:hidden text-sm rounded-lg border px-3 py-2" style={controlStyle}>
+          className="xl:hidden text-base sm:text-sm rounded-lg border px-3 py-2" style={controlStyle}>
           <option value="phase">フェーズが早い順</option>
           <option value="tge">TGEが近い順</option>
           <option value="pool">エアドロ規模が大きい順</option>
@@ -144,13 +142,13 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
 
       {/* Desktop: one fixed-layout table, grouped by how the author takes part. */}
       {groups.length > 0 && (
-        <div className="hidden lg:block rounded-xl border overflow-hidden" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}>
+        <div className="hidden xl:block rounded-xl border overflow-hidden" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}>
           <table className="w-full text-sm table-fixed">
-            <colgroup>{COLUMNS.map((c, i) => <col key={i} style={{ width: c.width }} />)}</colgroup>
+            <colgroup>{COLUMNS.map((c, i) => <col key={i} style={c.width ? { width: c.width } : undefined} />)}</colgroup>
             <thead>
               <tr className="text-xs" style={{ ...muted, backgroundColor: 'var(--surface-2)' }}>
                 {COLUMNS.map((c, i) => (
-                  <th key={i} scope="col" className={`px-4 py-2.5 font-medium ${c.align === 'right' ? 'text-right' : 'text-left'}`}
+                  <th key={i} scope="col" className={`px-3 py-2.5 font-medium whitespace-nowrap ${c.align === 'right' ? 'text-right' : 'text-left'}`}
                     aria-sort={c.key && sortKey === c.key ? 'ascending' : undefined}>
                     {c.key ? (
                       <button type="button" onClick={() => setSortKey(c.key!)} className="inline-flex items-center gap-1"
@@ -166,26 +164,26 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
             {groups.map(({ activity, items }) => (
               <tbody key={activity}>
                 <tr className="border-t" style={{ borderColor: 'var(--border)' }}>
-                  <th scope="colgroup" colSpan={COLUMNS.length} className="px-4 pt-5 pb-2 text-left">{groupHeading(activity, items.length)}</th>
+                  <th scope="colgroup" colSpan={COLUMNS.length} className="px-3 pt-5 pb-2 text-left">{groupHeading(activity, items.length)}</th>
                 </tr>
                 {items.map(p => (
                   <tr key={p.slug} className="border-t align-middle" style={{ borderColor: 'var(--border)' }}>
-                    <th scope="row" className="px-4 py-3 text-left font-normal">
+                    <th scope="row" className="px-3 py-2.5 text-left font-normal">
                       <Link href={`/tracker/${p.slug}/`} className="flex items-center gap-3 min-w-0">
-                        <ProjectLogo project={p} size={32} />
+                        <ProjectLogo project={p} size={28} />
                         <span className="min-w-0">
-                          <span className="block font-semibold truncate" style={{ color: 'var(--foreground)' }}>{p.name}</span>
+                          <span className="block text-sm font-semibold truncate" style={{ color: 'var(--foreground)' }}>{p.name}</span>
                           <span className="block text-xs truncate" style={muted}>{p.chain}</span>
                         </span>
                       </Link>
                     </th>
-                    <td className="px-4 py-3"><PhaseMeter phase={p.phase} /></td>
-                    <td className="px-4 py-3"><TgeCell project={p} /></td>
-                    <td className="px-4 py-3 text-right">{airdropCell(p)}</td>
-                    <td className="px-4 py-3 text-right font-mono tabular-nums">{formatFunding(p.funding.totalUsdM)}</td>
-                    <td className="px-4 py-3 text-right font-mono tabular-nums">{p.audience?.xFollowers ? formatFollowers(p.audience.xFollowers) : '—'}</td>
-                    <td className="px-4 py-3 truncate">{baseText(p)}</td>
-                    <td className="px-4 py-3 text-right">{referral(p)}</td>
+                    <td className="px-3 py-2.5"><PhaseMeter phase={p.phase} /></td>
+                    <td className="px-3 py-2.5"><TgeCell project={p} /></td>
+                    <td className="px-3 py-2.5 text-right">{airdropCell(p)}</td>
+                    <td className="px-3 py-2.5 text-right font-mono tabular-nums">{formatFunding(p.funding.totalUsdM)}</td>
+                    <td className="px-3 py-2.5 text-right font-mono tabular-nums">{p.audience?.xFollowers ? formatFollowers(p.audience.xFollowers) : '—'}</td>
+                    <td className="px-3 py-2.5 text-xs leading-snug">{p.team.base}</td>
+                    <td className="px-3 py-2.5 text-right">{referral(p)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -195,17 +193,17 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
       )}
 
       {/* Phone / tablet: the same fields as label–value rows, so labels line up card to card. */}
-      <div className="lg:hidden flex flex-col gap-8">
+      <div className="xl:hidden flex flex-col gap-8">
         {groups.map(({ activity, items }) => (
           <section key={activity}>
             <h2 className="mb-3">{groupHeading(activity, items.length)}</h2>
-            <ul className="grid sm:grid-cols-2 gap-3">
+            <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {items.map(p => (
                 <li key={p.slug} className="rounded-xl border p-4" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}>
                   <div className="flex items-center gap-3 mb-3">
-                    <ProjectLogo project={p} size={36} />
+                    <ProjectLogo project={p} size={28} />
                     <Link href={`/tracker/${p.slug}/`} className="min-w-0 flex-1">
-                      <span className="block font-semibold truncate" style={{ color: 'var(--foreground)' }}>{p.name}</span>
+                      <span className="block text-sm font-semibold truncate" style={{ color: 'var(--foreground)' }}>{p.name}</span>
                       <span className="block text-xs truncate" style={muted}>{p.chain}</span>
                     </Link>
                     {referral(p)}
@@ -217,7 +215,7 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
                       ['エアドロ規模', airdropCell(p)],
                       ['VC調達額', <span key="f" className="font-mono tabular-nums">{formatFunding(p.funding.totalUsdM)}</span>],
                       ['Xフォロワー', <span key="x" className="font-mono tabular-nums">{p.audience?.xFollowers ? formatFollowers(p.audience.xFollowers) : '—'}</span>],
-                      ['拠点', baseText(p)],
+                      ['拠点', p.team.base],
                     ] as const).map(([label, value]) => (
                       <div key={label} className="contents">
                         <dt className="text-xs pt-0.5" style={muted}>{label}</dt>

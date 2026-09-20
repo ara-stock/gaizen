@@ -59,12 +59,12 @@ export default function AirdropEstimate({ project }: { project: Project }) {
           <label className="flex flex-col gap-1 text-xs" style={muted}>
             自分の保有ポイント
             <input type="number" min="0" inputMode="decimal" value={points} onChange={e => update(e.target.value)}
-              className="text-sm rounded-md border px-3 py-2 w-40 font-mono"
+              className="text-base sm:text-sm rounded-md border px-3 py-2 w-40 font-mono"
               style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', color: 'var(--foreground)' }} />
           </label>
           <p>
             <span className="block text-xs" style={muted}>受取見込み</span>
-            <span className="text-2xl font-bold font-mono" style={{ color: 'var(--accent)' }}>{mine === null ? '—' : formatUsd(mine)}</span>
+            <span className="text-xl font-bold font-mono" style={{ color: 'var(--accent)' }}>{mine === null ? '—' : formatUsd(mine)}</span>
           </p>
         </div>
       )}

@@ -13,10 +13,10 @@ export default function HomePage() {
   const { projects, updatedAt } = getProjectsData()
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-      <div className="mb-10">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+      <div className="mb-6">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>PROJECT TRACKER</p>
-        <h1 className="text-3xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>仮想通貨プロジェクト トラッカー</h1>
+        <h1 className="text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>仮想通貨プロジェクト トラッカー</h1>
         <p className="text-sm leading-relaxed max-w-3xl" style={{ color: 'var(--muted)' }}>
           筆者が実際に触っている、または参加を検討しているプロジェクトの一覧です。調達額・チーム・TGE時期は公式発表と報道で確認し、
           出典を各プロジェクトのページに載せています。受取見込みは「FDVの想定 × エアドロ配分」による機械的な試算です。
