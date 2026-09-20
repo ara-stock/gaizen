@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getProjectBySlug, getProjectsData } from '@/lib/projects'
-import { ACTIVITY_COLOR, ACTIVITY_LABEL, STATUS_COLOR, STATUS_LABEL, countryFlag, formatFollowers, formatFunding } from '@/components/tracker/labels'
+import { ACTIVITY_COLOR, ACTIVITY_LABEL, STATUS_COLOR, STATUS_LABEL, formatFollowers, formatFunding } from '@/components/tracker/labels'
 import { PhaseMeter, ProjectLogo, TgeCell } from '@/components/tracker/cells'
 import AirdropEstimate from '@/components/tracker/AirdropEstimate'
 import InviteCodes from '@/components/tracker/InviteCodes'
@@ -52,7 +52,7 @@ export default async function ProjectPage({ params }: Props) {
   const note = { color: 'var(--prose-body)' }
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
       <Link href="/" className="text-xs underline" style={{ color: 'var(--accent)' }}>← トラッカー一覧</Link>
 
       <header className="mt-4 mb-8">
@@ -61,8 +61,8 @@ export default async function ProjectPage({ params }: Props) {
           {p.category} · {p.chain}
         </p>
         <div className="flex items-center gap-4 mb-4">
-          <ProjectLogo project={p} size={56} />
-          <h1 className="text-3xl font-bold flex-1" style={{ color: 'var(--foreground)' }}>{p.name}</h1>
+          <ProjectLogo project={p} size={36} />
+          <h1 className="text-2xl font-bold flex-1" style={{ color: 'var(--foreground)' }}>{p.name}</h1>
         </div>
         <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
           <span className="inline-flex items-center gap-1.5">
@@ -102,7 +102,7 @@ export default async function ProjectPage({ params }: Props) {
       <Section title="チーム・資金調達・利用者規模">
         <dl>
           <Row label="拠点">
-            {countryFlag(p.team.countryCode)} {p.team.base}
+            {p.team.base}
             {p.team.baseKind !== 'unverified' && (
               <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>（{p.team.baseKind === 'company HQ' ? '会社所在地' : '創業者の拠点'}）</span>
             )}

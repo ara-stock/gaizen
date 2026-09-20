@@ -89,11 +89,6 @@ export function usdPerPoint(p: Project): number | null {
   return (pool * 1_000_000) / total
 }
 
-export function countryFlag(code?: string): string {
-  if (!code || code.length !== 2) return ''
-  return String.fromCodePoint(...[...code.toUpperCase()].map(c => 0x1f1e6 + c.charCodeAt(0) - 65))
-}
-
 export function readStored<T>(key: string): Record<string, T> {
   try {
     return JSON.parse(localStorage.getItem(key) ?? '{}') as Record<string, T>
