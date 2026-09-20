@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getProjectBySlug, getProjectsData } from '@/lib/projects'
-import { STATUS_COLOR, STATUS_LABEL, countryFlag, formatFollowers, formatFunding, scoreColor, scoreProject } from '@/components/tracker/labels'
+import { ACTIVITY_COLOR, ACTIVITY_LABEL, STATUS_COLOR, STATUS_LABEL, countryFlag, formatFollowers, formatFunding, scoreColor, scoreProject } from '@/components/tracker/labels'
 import { PhaseBadge, ProjectLogo, TgeCell } from '@/components/tracker/cells'
 import AirdropEstimate from '@/components/tracker/AirdropEstimate'
 import InviteCodes from '@/components/tracker/InviteCodes'
@@ -57,7 +57,10 @@ export default async function ProjectPage({ params }: Props) {
       <Link href="/" className="text-xs underline" style={{ color: 'var(--accent)' }}>← トラッカー一覧</Link>
 
       <header className="mt-4 mb-8">
-        <p className="text-xs mb-2" style={{ color: 'var(--muted)' }}>{p.category} · {p.chain}</p>
+        <p className="text-xs mb-2" style={{ color: 'var(--muted)' }}>
+          <span className="font-semibold mr-1.5" style={{ color: ACTIVITY_COLOR[p.activity] }}>{ACTIVITY_LABEL[p.activity]}</span>
+          {p.category} · {p.chain}
+        </p>
         <div className="flex items-center gap-4 mb-4">
           <ProjectLogo project={p} size={56} />
           <h1 className="text-3xl font-bold flex-1" style={{ color: 'var(--foreground)' }}>{p.name}</h1>

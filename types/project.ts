@@ -1,5 +1,8 @@
 export type ProjectStatus = 'active' | 'waiting' | 'watching' | 'done'
 
+/** How the author takes part: trading perps, staking the token, farming points, or just holding. */
+export type Activity = 'perps' | 'staking' | 'points' | 'hold'
+
 /** Where the points / airdrop campaign stands. */
 export type Phase = 'early' | 'mid' | 'late' | 'ended' | 'none'
 
@@ -17,6 +20,7 @@ export interface Project {
   /** Path under /public, e.g. "/logos/extended.svg". */
   logo?: string
   category: string
+  activity: Activity
   chain: string
   /** Author's own engagement status. Visitors can override it locally in the browser. */
   status: ProjectStatus
@@ -45,6 +49,10 @@ export interface Project {
     sharePct?: number
     /** Fully diluted valuation scenario in USD millions. */
     fdvUsdM?: number
+    /** Pool size in USD millions when it is known directly; takes precedence over sharePct × fdvUsdM. */
+    poolUsdM?: number
+    /** True when any input is the author's placeholder rather than a published figure. */
+    estimated?: boolean
     /** Total points issued so far, used for the per-point value. */
     totalPoints?: number
     totalPointsAsOf?: string

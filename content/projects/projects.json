@@ -71,7 +71,8 @@
         "users": "累計ユーザー約117万（2026-03-25）",
         "usersSource": "Datawallet（Hyperliquidの統計ダッシュボードを引用した二次情報）"
       },
-      "logo": "/logos/hyperliquid.png"
+      "logo": "/logos/hyperliquid.png",
+      "activity": "perps"
     },
     {
       "slug": "trade-xyz",
@@ -140,7 +141,14 @@
         }
       ],
       "updatedAt": "2026-09-20",
-      "logo": "/logos/trade-xyz.png"
+      "logo": "/logos/trade-xyz.png",
+      "activity": "perps",
+      "airdrop": {
+        "sharePct": 10,
+        "fdvUsdM": 1500,
+        "estimated": true,
+        "basis": "トークンは未発表。FDV $1.5Bは2026年8月の調達の噂にあった評価額、配分10%は仮置き。ポイントがないため個人の受取額は試算できない。"
+      }
     },
     {
       "slug": "entropy",
@@ -215,7 +223,14 @@
         }
       ],
       "updatedAt": "2026-09-20",
-      "logo": "/logos/entropy.png"
+      "logo": "/logos/entropy.png",
+      "activity": "perps",
+      "airdrop": {
+        "sharePct": 10,
+        "fdvUsdM": 100,
+        "estimated": true,
+        "basis": "トークンは未発表。FDV $100Mはシード$14Mからの仮置き（評価額は非開示）、配分10%も仮置き。"
+      }
     },
     {
       "slug": "lighter",
@@ -295,7 +310,9 @@
       "phase": "early",
       "phaseNote": "LITはTGE済み。Robinhood Chain版のポイントは2026-08-10開始、毎週配布で、LITの専用プールから変換される。",
       "airdrop": {
-        "basis": "配布プールの規模が一次情報と報道で食い違っている（Robinhood公式は「1,100万LIT」、The Blockなどは「$11M相当のLIT」）。確定するまで試算しない。"
+        "poolUsdM": 11,
+        "estimated": true,
+        "basis": "Robinhoodコミュニティ向けプールは、Robinhood公式が「1,100万LIT」、The Blockなどが「$11M相当のLIT」と報じており食い違っている。保守的な$11Mを仮置き（1,100万LITなら約$51M）。総ポイント数は未公表。"
       },
       "audience": {
         "xHandle": "Lighter_xyz",
@@ -304,7 +321,8 @@
         "users": "ユニークアカウント18.8万超（2025年10月、公式X）",
         "usersSource": "Lighter公式Xの発表。2026年の数値は未確認。"
       },
-      "logo": "/logos/lighter.png"
+      "logo": "/logos/lighter.png",
+      "activity": "perps"
     },
     {
       "slug": "extended",
@@ -388,14 +406,16 @@
         "fdvUsdM": 300,
         "totalPoints": 67733148,
         "totalPointsAsOf": "2026-09-15",
-        "basis": "配分30%は報道ベース（公式ドキュメントは未確定と明記）。FDV $300Mは「$300M超のFDVでの追加調達を断った」という報道（FinanceFeeds 2026-06-17）を下限の目安として使用。"
+        "basis": "配分30%は報道ベース（公式ドキュメントは未確定と明記）。FDV $300Mは「$300M超のFDVでの追加調達を断った」という報道（FinanceFeeds 2026-06-17）を下限の目安として使用。",
+        "estimated": true
       },
       "audience": {
         "xHandle": "extendedapp",
         "xFollowers": 30409,
         "asOf": "2026-09-20"
       },
-      "logo": "/logos/extended.svg"
+      "logo": "/logos/extended.svg",
+      "activity": "perps"
     },
     {
       "slug": "qfex",
@@ -481,7 +501,14 @@
         }
       ],
       "updatedAt": "2026-09-20",
-      "logo": "/logos/qfex.svg"
+      "logo": "/logos/qfex.svg",
+      "activity": "perps",
+      "airdrop": {
+        "sharePct": 10,
+        "fdvUsdM": 95,
+        "estimated": true,
+        "basis": "トークンは未発表。FDV $95Mはシード時の評価額（報道）、配分10%は仮置き。"
+      }
     },
     {
       "slug": "grvt",
@@ -566,12 +593,7 @@
       ],
       "updatedAt": "2026-09-20",
       "phase": "late",
-      "phaseNote": "2026-07-30にTGE。2.8億GRVTを12か月で段階解放。解放されたバッチは30日以内に請求しないと失効する。次回以降の日程は未公表で、個人のスケジュールはReward Portalでのみ確認できる。",
-      "airdrop": {
-        "sharePct": 28,
-        "fdvUsdM": 185.8,
-        "basis": "配分28%は公式ヘルプセンター。FDVはCoinGeckoの2026-09-20時点（$0.1858）。シーズン別の総ポイント数は未公表のため、1ポイントあたりの価値は出せない。"
-      },
+      "phaseNote": "2026-07-30にTGE済み。配布数量は各ユーザーに告知済みで、12か月かけて段階的に解放される。",
       "audience": {
         "xHandle": "grvt_io",
         "xFollowers": 515057,
@@ -579,15 +601,16 @@
         "users": "アクティブトレーダー1万人超（2026年1月）",
         "usersSource": "FinanceFeedsなどの二次情報。フォロワー数に対して利用者が少ない点に注意。"
       },
-      "logo": "/logos/grvt.ico"
+      "logo": "/logos/grvt.ico",
+      "activity": "perps"
     },
     {
       "slug": "edgex",
       "name": "edgeX",
       "category": "Perp DEX",
-      "chain": "StarkEx（Ethereum ZKロールアップ）",
+      "chain": "StarkEx / Arc（Circle）",
       "status": "active",
-      "statusNote": "取引所のひとつとして利用を継続。TGE済みのため、エアドロップ目的ではない。",
+      "statusNote": "EDGEはTGE済みでエアドロップは終了。2026-09-16に始まったArc版での取引プログラムを継続している。",
       "token": {
         "launched": true,
         "ticker": "EDGE",
@@ -595,9 +618,9 @@
         "tgeSourceType": "official"
       },
       "points": {
-        "exists": false,
-        "name": "Open Season / Pre-TGE Season（終了）",
-        "status": "ポイントプログラムはTGE（2026-03-31）で終了。",
+        "exists": true,
+        "name": "Arc版の取引プログラム",
+        "status": "2026-09-16のArcメインネット公開と同時に開始。報酬の内容・配分は未確認。旧ポイントプログラムは2026-03-31のTGEで終了。",
         "communityAllocation": "総供給10億枚のうち25%をTGE時にエアドロップ、最大5%をPre-TGE Season向け、35%をエコシステム・コミュニティ枠（報道ベース）"
       },
       "funding": {
@@ -641,11 +664,21 @@
           "title": "crypto.news - edgeX set to launch $EDGE amid transparency concerns",
           "url": "https://crypto.news/edgex-set-to-launch-edge-token-amid-transparency-concerns/",
           "date": "2026-03-31"
+        },
+        {
+          "title": "Circle - Circle Launches Arc Mainnet",
+          "url": "https://www.circle.com/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+          "date": "2026-09-16"
+        },
+        {
+          "title": "edgeX News - Arc mainnet launch",
+          "url": "https://pro.edgex.exchange/en-US/news/article/circle-arc-blockchain-mainnet-launch",
+          "date": "2026-09"
         }
       ],
       "updatedAt": "2026-09-20",
-      "phase": "ended",
-      "phaseNote": "ポイントプログラムは2026-03-31のTGEで終了。",
+      "phase": "early",
+      "phaseNote": "Arcメインネットは2026-09-16に公開。edgeXはArc上でFX（USD/JPYから）を含む150超の市場を開始した。Arc関連の報酬内容は一次情報で確認できていない。",
       "audience": {
         "xHandle": "edgeX_exchange",
         "xFollowers": 52492,
@@ -653,7 +686,8 @@
         "users": "ユーザー14.9万（2025-11-26）",
         "usersSource": "The Block掲載のスポンサー記事。2026年の数値は一次情報で未確認。"
       },
-      "logo": "/logos/edgex.ico"
+      "logo": "/logos/edgex.ico",
+      "activity": "perps"
     },
     {
       "slug": "variational",
@@ -732,14 +766,18 @@
       "airdrop": {
         "sharePct": 50,
         "fdvUsdM": 610,
-        "basis": "配分50%はチーム発言として報じられたもの（公式ドキュメントでは未確認）。FDV $610Mは2026年5月のプレマーケット価格の報道値。総ポイント数は未公表（コミュニティ推定で約900万〜1,000万）のため、1ポイントあたりの価値は出せない。"
+        "basis": "配分50%はチーム発言として報じられたもの。FDV $610Mは2026年5月のプレマーケット価格の報道値。総ポイント数は未公表のため、コミュニティ推定（約900万〜1,000万）の中間値950万を仮置き。",
+        "totalPoints": 9500000,
+        "totalPointsAsOf": "2026-09末の終了時見込み",
+        "estimated": true
       },
       "audience": {
         "xHandle": "variational_io",
         "xFollowers": 67200,
         "asOf": "2026-09-20"
       },
-      "logo": "/logos/variational.png"
+      "logo": "/logos/variational.png",
+      "activity": "perps"
     },
     {
       "slug": "nado",
@@ -814,7 +852,16 @@
         "xFollowers": 31799,
         "asOf": "2026-09-20"
       },
-      "logo": "/logos/nado.png"
+      "logo": "/logos/nado.png",
+      "activity": "perps",
+      "airdrop": {
+        "sharePct": 5,
+        "fdvUsdM": 500,
+        "totalPoints": 33600000,
+        "totalPointsAsOf": "2026-09-18（公式の週次配布量からの計算値）",
+        "estimated": true,
+        "basis": "INKのFDVもNadoへの配分も未発表。FDV $500M・配分5%は根拠のない仮置きで、情報が出たら差し替える。総ポイントは公式の週95万ポイント×経過週数＋移行期200万の計算値。"
+      }
     },
     {
       "slug": "jupiter",
@@ -884,7 +931,8 @@
         "xFollowers": 617677,
         "asOf": "2026-09-20"
       },
-      "logo": "/logos/jupiter.svg"
+      "logo": "/logos/jupiter.svg",
+      "activity": "staking"
     },
     {
       "slug": "meteora",
@@ -966,7 +1014,8 @@
         }
       ],
       "updatedAt": "2026-09-20",
-      "logo": "/logos/meteora.svg"
+      "logo": "/logos/meteora.svg",
+      "activity": "staking"
     },
     {
       "slug": "stonk",
@@ -1027,7 +1076,8 @@
         }
       ],
       "updatedAt": "2026-09-20",
-      "logo": "/logos/stonk.png"
+      "logo": "/logos/stonk.png",
+      "activity": "hold"
     },
     {
       "slug": "xstocks",
@@ -1100,7 +1150,8 @@
         "users": "オンチェーン保有者8.5万超、累計取引高$25B超",
         "usersSource": "Kraken公式ブログ（2026年）"
       },
-      "logo": "/logos/xstocks.svg"
+      "logo": "/logos/xstocks.svg",
+      "activity": "points"
     },
     {
       "slug": "solstice",
@@ -1174,14 +1225,15 @@
         "usersSource": "Solstice公式サイト / SLXローンチ時のプレスリリース"
       },
       "logo": "/logos/solstice.svg",
-      "statusNote": "参加を終了した。"
+      "statusNote": "参加を終了した。",
+      "activity": "points"
     },
     {
       "slug": "huma",
       "name": "Huma Finance",
       "category": "DeFi",
       "chain": "Solanaほか",
-      "status": "watching",
+      "status": "active",
       "token": {
         "launched": true,
         "ticker": "HUMA",
@@ -1239,11 +1291,15 @@
           "title": "Huma on X - Season 3 live",
           "url": "https://x.com/humafinance/status/1993666176858361880",
           "date": "2025-11"
+        },
+        {
+          "title": "Huma blog - $HUMA Staking Rewards",
+          "url": "https://blog.huma.finance/huma-staking-rewards"
         }
       ],
       "updatedAt": "2026-09-20",
       "phase": "late",
-      "phaseNote": "HUMAはTGE済み。シーズン制の追加配布が続いているが、直近シーズンは二次情報のみ。",
+      "phaseNote": "ステーキング報酬はポイント「Feathers」で付与され、シーズンごとのエアドロップ配分に合算される（公式ブログ）。",
       "audience": {
         "xHandle": "humafinance",
         "xFollowers": 117681,
@@ -1251,7 +1307,9 @@
         "users": "預入者10万人超",
         "usersSource": "Messari「State of Huma Finance Q4 2025」"
       },
-      "logo": "/logos/huma.svg"
+      "logo": "/logos/huma.svg",
+      "activity": "staking",
+      "statusNote": "HUMAはTGE済み。現在はHUMAをステーキングしている。"
     }
   ]
 }

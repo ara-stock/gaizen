@@ -34,10 +34,16 @@ export default function AirdropEstimate({ project }: { project: Project }) {
 
   return (
     <div className="text-sm">
+      {airdrop.estimated && (
+        <p className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full mb-4"
+          style={{ color: 'var(--chart-gold)', backgroundColor: 'color-mix(in srgb, var(--chart-gold) 14%, transparent)' }}>
+          推定・仮置きの数値を含みます
+        </p>
+      )}
       <dl className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-5">
         {([
-          ['FDVの想定', formatUsdM(airdrop.fdvUsdM!)],
-          ['エアドロ配分', `${airdrop.sharePct}%`],
+          ['FDVの想定', airdrop.fdvUsdM ? formatUsdM(airdrop.fdvUsdM) : '—'],
+          ['エアドロ配分', airdrop.sharePct ? `${airdrop.sharePct}%` : '—'],
           ['配布総額の見込み', formatUsdM(pool)],
           ['1ポイントあたり', perPoint === null ? '—' : `$${perPoint < 1 ? perPoint.toPrecision(3) : perPoint.toFixed(2)}`],
         ] as const).map(([label, value]) => (

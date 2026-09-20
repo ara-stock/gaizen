@@ -2,9 +2,9 @@
 
 import Link from 'next/link'
 import { useEffect, useMemo, useState } from 'react'
-import type { Project, ProjectStatus } from '@/types/project'
+import type { Activity, Project, ProjectStatus } from '@/types/project'
 import {
-  POINTS_STORAGE_KEY, STATUS_LABEL, STATUS_ORDER, STATUS_STORAGE_KEY,
+  ACTIVITY_COLOR, ACTIVITY_LABEL, ACTIVITY_ORDER, POINTS_STORAGE_KEY, STATUS_LABEL, STATUS_ORDER, STATUS_STORAGE_KEY,
   airdropPoolUsdM, countryFlag, formatFollowers, formatFunding, formatUsd, formatUsdM,
   readStored, scoreColor, scoreProject, usdPerPoint,
 } from './labels'
@@ -29,7 +29,7 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
   const [overrides, setOverrides] = useState<Record<string, ProjectStatus>>({})
   const [myPoints, setMyPoints] = useState<Record<string, number>>({})
   const [tab, setTab] = useState<Tab>('active')
-  const [category, setCategory] = useState('all')
+  const [activity, setActivity] = useState<Activity | 'all'>('all')
   const [query, setQuery] = useState('')
   const [sortKey, setSortKey] = useState<SortKey>('score')
 
@@ -41,18 +41,17 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
   }, [])
 
   const scores = useMemo(() => new Map(projects.map(p => [p.slug, scoreProject(p)])), [projects])
-  const categories = useMemo(() => [...new Set(projects.map(p => p.category))].sort(), [projects])
   // A stored status from an older version of the page may no longer exist.
   const statusOf = (p: Project) => (STATUS_ORDER.includes(overrides[p.slug]) ? overrides[p.slug] : p.status)
   const countOf = (t: Tab) => (t === 'all' ? projects.length : projects.filter(p => statusOf(p) === t).length)
 
   const visible = projects
     .filter(p => tab === 'all' || statusOf(p) === tab)
-    .filter(p => category === 'all' || p.category === category)
+    .filter(p => activity === 'all' || p.activity === activity)
     .filter(p => {
       const q = query.trim().toLowerCase()
       if (!q) return true
-      return [p.name, p.category, p.chain, p.team.base, ...p.team.founders, ...p.funding.investors]
+      return [p.name, p.category, ACTIVITY_LABEL[p.activity], p.chain, p.team.base, ...p.team.founders, ...p.funding.investors]
         .some(v => v.toLowerCase().includes(q))
     })
     .sort((a, b) => {
@@ -73,8 +72,9 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
     if (pool === null) return null
     const perPoint = usdPerPoint(p)
     const mine = myPoints[p.slug]
-    if (perPoint !== null && mine) return `受取見込み ${formatUsd(perPoint * mine)}`
-    return `エアドロ規模 ${formatUsdM(pool)}`
+    const mark = p.airdrop?.estimated ? '（推定）' : ''
+    if (perPoint !== null && mine) return `受取見込み ${formatUsd(perPoint * mine)}${mark}`
+    return `エアドロ規模 ${formatUsdM(pool)}${mark}`
   }
 
   const tabButton = (t: Tab) => {
@@ -98,15 +98,24 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
         {TABS.map(tabButton)}
       </div>
 
+      <div className="flex flex-wrap gap-2 mb-3" role="group" aria-label="参加のしかた">
+        {(['all', ...ACTIVITY_ORDER] as const).map(a => {
+          const selected = activity === a
+          const color = a === 'all' ? 'var(--accent)' : ACTIVITY_COLOR[a]
+          return (
+            <button key={a} type="button" aria-pressed={selected} onClick={() => setActivity(a)}
+              className="text-xs font-semibold px-3 py-1.5 rounded-full border transition-colors"
+              style={{ color: selected ? 'var(--background)' : color, backgroundColor: selected ? color : 'transparent', borderColor: color }}>
+              {a === 'all' ? 'すべて' : ACTIVITY_LABEL[a]}
+            </button>
+          )
+        })}
+      </div>
+
       <div className="flex flex-col sm:flex-row gap-2 mb-5">
         <input type="search" value={query} onChange={e => setQuery(e.target.value)}
           placeholder="プロジェクト名・VC・国で検索" aria-label="プロジェクト名・VC・国で検索"
           className="flex-1 text-sm rounded-md border px-3 py-2.5" style={controlStyle} />
-        <select value={category} onChange={e => setCategory(e.target.value)} aria-label="カテゴリ"
-          className="text-sm rounded-md border px-3 py-2.5" style={controlStyle}>
-          <option value="all">カテゴリ: すべて</option>
-          {categories.map(c => <option key={c} value={c}>{c}</option>)}
-        </select>
         <select value={sortKey} onChange={e => setSortKey(e.target.value as SortKey)} aria-label="並び替え"
           className="text-sm rounded-md border px-3 py-2.5" style={controlStyle}>
           <option value="score">スコア順</option>
@@ -132,8 +141,8 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
           ].filter(Boolean)
 
           return (
-            <li key={p.slug} className="relative rounded-2xl border transition-colors hover:border-[var(--accent)]"
-              style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}>
+            <li key={p.slug} className="relative rounded-2xl border border-l-4 transition-colors hover:border-[var(--accent)]"
+              style={{ borderColor: 'var(--border)', borderLeftColor: ACTIVITY_COLOR[p.activity], backgroundColor: 'var(--surface)' }}>
               <div className="flex items-center gap-3 px-3 sm:px-5 py-3">
                 <span className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold font-mono flex-shrink-0"
                   style={i < 3
@@ -149,7 +158,8 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
                     {p.name}
                   </Link>
                   <p className="text-xs truncate" style={muted}>
-                    {p.category} · {p.chain}
+                    <span className="font-semibold mr-1.5" style={{ color: ACTIVITY_COLOR[p.activity] }}>{ACTIVITY_LABEL[p.activity]}</span>
+                    {p.chain}
                     {overrides[p.slug] && STATUS_ORDER.includes(overrides[p.slug]) && `（ara: ${STATUS_LABEL[p.status]}）`}
                   </p>
                 </div>

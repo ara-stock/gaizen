@@ -1,4 +1,4 @@
-import type { Phase, Project, ProjectStatus, TgeSourceType } from '@/types/project'
+import type { Activity, Phase, Project, ProjectStatus, TgeSourceType } from '@/types/project'
 
 export const STATUS_ORDER: ProjectStatus[] = ['active', 'waiting', 'watching', 'done']
 
@@ -14,6 +14,22 @@ export const STATUS_COLOR: Record<ProjectStatus, string> = {
   waiting: 'var(--chart-crypto)',
   watching: 'var(--chart-gold)',
   done: 'var(--chart-cash)',
+}
+
+export const ACTIVITY_ORDER: Activity[] = ['perps', 'staking', 'points', 'hold']
+
+export const ACTIVITY_LABEL: Record<Activity, string> = {
+  perps: 'Perp取引',
+  staking: 'Staking',
+  points: 'ポイント活動',
+  hold: 'ホールド',
+}
+
+export const ACTIVITY_COLOR: Record<Activity, string> = {
+  perps: 'var(--chart-us)',
+  staking: 'var(--chart-crypto)',
+  points: 'var(--chart-us-2)',
+  hold: 'var(--chart-gold)',
 }
 
 export const PHASE_LABEL: Record<Phase, string> = {
@@ -65,7 +81,8 @@ export function formatFollowers(count: number): string {
 
 /** Estimated airdrop pool in USD millions: FDV scenario × airdrop share. */
 export function airdropPoolUsdM(p: Project): number | null {
-  const { sharePct, fdvUsdM } = p.airdrop ?? {}
+  const { sharePct, fdvUsdM, poolUsdM } = p.airdrop ?? {}
+  if (poolUsdM) return poolUsdM
   if (!sharePct || !fdvUsdM) return null
   return (fdvUsdM * sharePct) / 100
 }
