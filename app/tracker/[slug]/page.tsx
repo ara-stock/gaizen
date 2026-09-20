@@ -2,9 +2,9 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getProjectBySlug, getProjectsData } from '@/lib/projects'
-import { STATUS_COLOR, STATUS_LABEL, T, countryFlag, formatFunding } from '@/components/tracker/labels'
-import RatingDots from '@/components/tracker/RatingDots'
-import { TgeCell } from '@/components/tracker/TrackerBoard'
+import { STATUS_COLOR, STATUS_LABEL, countryFlag, formatFollowers, formatFunding } from '@/components/tracker/labels'
+import { PhaseMeter, TgeCell } from '@/components/tracker/cells'
+import AirdropEstimate from '@/components/tracker/AirdropEstimate'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!project) return {}
   return {
     title: `${project.name}のTGE時期・調達額・チーム情報`,
-    description: `${project.name}（${project.category}）のTGE見込み、ポイントプログラム、VC調達額、運営チームと拠点、リスクを一次情報つきで整理。筆者の取組状況と評価も公開しています。`,
+    description: `${project.name}（${project.category}）のTGE見込み、ポイントプログラムの進み具合、エアドロップの受取見込み試算、VC調達額、運営チームと拠点、リスクを出典つきで整理。`,
     alternates: { canonical: `https://gaizen.xyz/tracker/${slug}/` },
   }
 }
@@ -34,9 +34,9 @@ function Row({ label, children }: { label: string; children: React.ReactNode }) 
   )
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({ title, id, children }: { title: string; id?: string; children: React.ReactNode }) {
   return (
-    <section className="mb-8 p-5 sm:p-6 rounded-xl border" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}>
+    <section id={id} className="scroll-mt-20 mb-8 p-5 sm:p-6 rounded-xl border" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}>
       <h2 className="text-base font-semibold mb-3" style={{ color: 'var(--foreground)' }}>{title}</h2>
       {children}
     </section>
@@ -47,12 +47,11 @@ export default async function ProjectPage({ params }: Props) {
   const { slug } = await params
   const p = getProjectBySlug(slug)
   if (!p) notFound()
-  const t = T.ja
   const note = { color: 'var(--prose-body)' }
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <Link href="/tracker/" className="text-xs underline" style={{ color: 'var(--accent)' }}>← トラッカー一覧</Link>
+      <Link href="/" className="text-xs underline" style={{ color: 'var(--accent)' }}>← トラッカー一覧</Link>
 
       <header className="mt-4 mb-8">
         <p className="text-xs mb-2" style={{ color: 'var(--muted)' }}>{p.category} · {p.chain}</p>
@@ -60,7 +59,7 @@ export default async function ProjectPage({ params }: Props) {
         <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
           <span className="inline-flex items-center gap-1.5">
             <span aria-hidden="true" className="w-2 h-2 rounded-full" style={{ backgroundColor: STATUS_COLOR[p.status] }} />
-            {t.authorStatus}: {STATUS_LABEL.ja[p.status]}
+            araの状況: {STATUS_LABEL[p.status]}
           </span>
           <span className="text-xs" style={{ color: 'var(--muted)' }}>最終更新: {p.updatedAt}</span>
         </p>
@@ -69,42 +68,60 @@ export default async function ProjectPage({ params }: Props) {
 
       <Section title="TGE・ポイント">
         <dl>
-          <Row label={t.tge}><TgeCell project={p} locale="ja" /></Row>
+          <Row label="フェーズ">
+            <PhaseMeter phase={p.phase} />
+            {p.phaseNote && <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>{p.phaseNote}</span>}
+          </Row>
+          <Row label="TGE"><TgeCell project={p} /></Row>
           <Row label="ポイントプログラム">
             {p.points.exists ? (
               <>
                 {p.points.name}
                 {p.points.status && <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>{p.points.status}</span>}
               </>
-            ) : t.noPoints}
+            ) : 'ポイントなし'}
           </Row>
           {p.points.communityAllocation && <Row label="コミュニティ配分">{p.points.communityAllocation}</Row>}
-          <Row label={`${t.points}（主観）`}>
-            <RatingDots value={p.points.exists ? p.points.expectation : undefined} emptyLabel={p.points.exists ? t.unrated : t.noPoints} />
-            {p.points.expectationNote && <span className="block mt-2 leading-relaxed" style={note}>{p.points.expectationNote}</span>}
-          </Row>
         </dl>
       </Section>
 
-      <Section title="チーム・資金調達">
+      <Section title="エアドロップ受取見込みの試算" id="estimate">
+        <AirdropEstimate project={p} />
+      </Section>
+
+      <Section title="チーム・資金調達・利用者規模">
         <dl>
           <Row label="拠点">
             {countryFlag(p.team.countryCode)} {p.team.base}
-            <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>（{p.team.baseKind === 'company HQ' ? '会社所在地' : p.team.baseKind === 'founder base' ? '創業者の拠点' : '未確認'}）</span>
+            {p.team.baseKind !== 'unverified' && (
+              <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>（{p.team.baseKind === 'company HQ' ? '会社所在地' : '創業者の拠点'}）</span>
+            )}
           </Row>
           <Row label="創業者・トップ">
-            {p.team.doxxed ? p.team.founders.join('、') : t.anonymous}
+            {p.team.founders.length > 0 ? p.team.founders.join('、') : '未公表'}
+            {!p.team.doxxed && <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>（チームの公開は限定的）</span>}
             {p.team.background && <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>{p.team.background}</span>}
           </Row>
-          <Row label={t.funding}>
-            <span className="font-mono">{formatFunding(p.funding.totalUsdM, 'ja')}</span>
+          <Row label="VC調達額">
+            <span className="font-mono">{formatFunding(p.funding.totalUsdM)}</span>
             {p.funding.rounds && <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>{p.funding.rounds}</span>}
           </Row>
           {p.funding.investors.length > 0 && <Row label="主な投資家">{p.funding.investors.join('、')}</Row>}
-          <Row label={`${t.trust}（主観）`}>
-            <RatingDots value={p.team.trust} emptyLabel={t.unrated} />
-            {p.team.trustNote && <span className="block mt-2 leading-relaxed" style={note}>{p.team.trustNote}</span>}
-          </Row>
+          {p.audience?.xFollowers && (
+            <Row label="Xフォロワー">
+              <span className="font-mono">{formatFollowers(p.audience.xFollowers)}</span>
+              {p.audience.xHandle && (
+                <a href={`https://x.com/${p.audience.xHandle}`} target="_blank" rel="noopener nofollow" className="underline ml-2" style={{ color: 'var(--accent)' }}>@{p.audience.xHandle}</a>
+              )}
+              {p.audience.asOf && <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>{p.audience.asOf}時点</span>}
+            </Row>
+          )}
+          {p.audience?.users && (
+            <Row label="利用者数の目安">
+              {p.audience.users}
+              {p.audience.usersSource && <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>{p.audience.usersSource}</span>}
+            </Row>
+          )}
         </dl>
       </Section>
 
@@ -119,8 +136,6 @@ export default async function ProjectPage({ params }: Props) {
       <Section title="リンク">
         <ul className="space-y-2 text-sm">
           <li><a href={p.links.site} target="_blank" rel="noopener nofollow" className="underline" style={{ color: 'var(--accent)' }}>公式サイト</a></li>
-          {p.links.x && <li><a href={p.links.x} target="_blank" rel="noopener nofollow" className="underline" style={{ color: 'var(--accent)' }}>公式X</a></li>}
-          {p.links.article && <li><Link href={p.links.article} className="underline" style={{ color: 'var(--accent)' }}>このプロジェクトについて書いた記事</Link></li>}
         </ul>
         {p.links.referral && (
           <div className="mt-5">
@@ -130,7 +145,7 @@ export default async function ProjectPage({ params }: Props) {
               {p.name}を始める（紹介リンク）
             </a>
             <p className="text-xs mt-2 leading-relaxed" style={{ color: 'var(--muted)' }}>
-              紹介リンクです。登録や取引に応じて筆者が報酬を受け取る場合があります。評価は報酬と連動させていません。
+              紹介リンクです。登録や取引に応じて筆者が報酬を受け取る場合があります。掲載内容は報酬と連動させていません。
             </p>
           </div>
         )}

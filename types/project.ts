@@ -1,9 +1,9 @@
-export type ProjectStatus = 'active' | 'watching' | 'claimed' | 'dropped'
+export type ProjectStatus = 'active' | 'waiting' | 'watching' | 'claimed' | 'dropped'
+
+/** Where the points / airdrop campaign stands. */
+export type Phase = 'early' | 'mid' | 'late' | 'ended' | 'none'
 
 export type TgeSourceType = 'official' | 'media' | 'rumor' | 'none'
-
-/** 1 (low) – 5 (high). Subjective rating by the author, always shown with a note. */
-export type Rating = 1 | 2 | 3 | 4 | 5
 
 export interface ProjectSource {
   title: string
@@ -34,8 +34,27 @@ export interface Project {
     name?: string
     status?: string
     communityAllocation?: string
-    expectation?: Rating
-    expectationNote?: string
+  }
+  phase: Phase
+  phaseNote?: string
+  /** Inputs for the airdrop estimate. Every number needs a source in `basis`; omit what is unknown. */
+  airdrop?: {
+    /** Share of total supply expected to go to the airdrop, in percent. */
+    sharePct?: number
+    /** Fully diluted valuation scenario in USD millions. */
+    fdvUsdM?: number
+    /** Total points issued so far, used for the per-point value. */
+    totalPoints?: number
+    totalPointsAsOf?: string
+    basis: string
+  }
+  audience?: {
+    xHandle?: string
+    xFollowers?: number
+    asOf?: string
+    /** Published user metric, e.g. "累計トレーダー 12万人". */
+    users?: string
+    usersSource?: string
   }
   funding: {
     /** Disclosed total in USD millions. null = undisclosed / unverified. */
@@ -51,16 +70,11 @@ export interface Project {
     base: string
     baseKind: 'company HQ' | 'founder base' | 'unverified'
     background?: string
-    trust?: Rating
-    trustNote?: string
   }
   flags: string[]
   links: {
     site: string
-    x?: string
     referral?: string
-    /** Related article on this site, e.g. "/blog/jupiter-defi-yield/". */
-    article?: string
   }
   sources: ProjectSource[]
   updatedAt: string

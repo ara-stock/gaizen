@@ -1,30 +1,21 @@
-'use client'
-
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 export default function Footer() {
-  const pathname = usePathname()
-  const isEn = pathname.startsWith('/en')
-  const p = isEn ? '/en' : ''
-
   const contentLinks: [string, string][] = [
-    [isEn ? 'Articles' : '記事一覧', `${p}/blog/`],
-    [isEn ? 'Asset Workbook' : '資産管理Excel', `${p}/blog/monthly-asset-tracking/`],
-    [isEn ? 'Portfolio' : '保有方針', `${p}/portfolio/`],
-    [isEn ? 'About' : '筆者について', `${p}/about/`],
+    ['トラッカー', '/'],
+    ['保有方針', '/portfolio/'],
+    ['計算ツール', '/tools/'],
+    ['紹介リンク一覧', '/referral/'],
+    ['筆者について', '/about/'],
   ]
 
   const legalLinks: [string, string][] = [
-    [isEn ? 'Editorial Policy' : '編集・検証方針', `${p}/editorial-policy/`],
-    [isEn ? 'Disclaimer' : '免責事項', `${p}/disclaimer/`],
-    [isEn ? 'Privacy Policy' : 'プライバシーポリシー', `${p}/privacy/`],
-    [isEn ? 'Contact' : 'お問い合わせ・訂正依頼', `${p}/contact/`],
+    ['免責事項', '/disclaimer/'],
+    ['プライバシーポリシー', '/privacy/'],
+    ['お問い合わせ・訂正依頼', '/contact/'],
   ]
 
-  const disclaimer = isEn
-    ? 'Content on this site is not investment advice. Invest at your own risk.'
-    : '本サイトの情報は投資助言ではありません。投資は自己責任で。'
+  const disclaimer = '本サイトの情報は投資助言ではありません。投資は自己責任で。'
 
   return (
     <footer className="border-t mt-24" style={{ borderColor: 'var(--border)' }}>

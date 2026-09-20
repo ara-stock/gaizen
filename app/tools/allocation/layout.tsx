@@ -6,10 +6,6 @@ export const metadata: Metadata = {
   keywords: ['ポートフォリオ', '資産配分', '期待リターン', 'シャープレシオ', '分散投資', 'リスク管理'],
   alternates: {
     canonical: 'https://gaizen.xyz/tools/allocation/',
-    languages: {
-      ja: 'https://gaizen.xyz/tools/allocation/',
-      en: 'https://gaizen.xyz/en/tools/allocation/',
-    },
   },
 }
 

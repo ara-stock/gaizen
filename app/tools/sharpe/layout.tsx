@@ -6,10 +6,6 @@ export const metadata: Metadata = {
   keywords: ['シャープレシオ', 'リスク調整後リターン', 'S&P500', 'Bitcoin', '資産比較', '投資分析'],
   alternates: {
     canonical: 'https://gaizen.xyz/tools/sharpe/',
-    languages: {
-      ja: 'https://gaizen.xyz/tools/sharpe/',
-      en: 'https://gaizen.xyz/en/tools/sharpe/',
-    },
   },
 }
 
