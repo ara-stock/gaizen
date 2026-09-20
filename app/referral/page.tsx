@@ -72,7 +72,7 @@ const referrals: ReferralGroup[] = [
         name: 'Nado',
         description: 'Kraken系L2「Ink」上の板取引型Perp・現物DEX。旧Vertexチームが開発。ポイントは$INKに変換される想定（INKのTGE時期は未発表）。',
         tags: ['Ink', 'Perp', 'Points'],
-        href: 'https://app.nado.xyz?join=bseutrt',
+        href: 'https://app.nado.xyz?join=arastock',
       },
     ],
   },
