@@ -24,6 +24,11 @@ export function getLocalePaths(pathname: string) {
     return { jaPath: `${path}/`, enPath: '/en/tools/' }
   }
 
+  // The project tracker is Japanese-only, including its per-project pages.
+  if (path === '/tracker' || path.startsWith('/tracker/')) {
+    return { jaPath: `${path}/`, enPath: '/en/' }
+  }
+
   const jaPath = isEnglish ? path.slice(3) || '/' : path
   const enPath = isEnglish ? path : `/en${path === '/' ? '' : path}`
 

@@ -1,7 +1,7 @@
 ---
 title: "Portfolio Rebalancing: How Far Should Index Investors Go?"
 date: "2026-05-22"
-updatedAt: "2026-08-10"
+updatedAt: "2026-09-11"
 description: "A clear-eyed look at how rebalancing works and the risk of overdoing it. Selling in a taxable brokerage account triggers capital gains tax, meaning frequent rebalancing becomes a cost. Here I walk through a practical approach centered on adjusting contribution allocations instead."
 tags: ["rebalancing", "index investing", "S&P500", "NISA", "long-term investing", "portfolio management"]
 category: "us-stock"
@@ -20,7 +20,7 @@ Say you started with an 80% stocks / 20% bonds allocation. If stocks rise sharpl
 1. To keep your risk level consistent (a higher stock weighting means taking on more risk)
 2. To capture a "buy low, sell high" effect by trimming what has risen and adding to what has fallen
 
-That said, this is purely a theoretical argument. It only holds when rebalancing can be done without cost.
+The primary purpose is risk control, not a guaranteed return improvement. Trimming an asset that keeps rising can reduce returns compared with leaving it alone. Include taxes and trading costs in the decision.
 
 ---
 
@@ -33,9 +33,9 @@ There are two schools of thought on when to rebalance.
 | Time-based | Rebalance on a fixed schedule, e.g., once a year or every six months | Simple and easy to manage |
 | Threshold-based | Rebalance only when drift exceeds a set amount, e.g., ±5% from target | Act only when necessary |
 
-Personally, I use a **threshold-based** approach. "Moving because it's time" is less efficient than "moving only when the drift has become meaningful." Checking every month and making small tweaks is unlikely to produce results worth the effort.
+These are alternative methods, not my documented trading rules. I record balances monthly but do not mechanically track target weights or position caps. A five-percentage-point threshold (80% to 85%, for example) is illustrative, not a universal recommendation.
 
-The key insight is that when you detect drift, the goal should be to **buy more of the underweight asset** rather than **sell the overweight one back down**. If no selling is involved, there is no tax cost and no consumption of account allowances.
+First consider whether new savings or redirected contributions can restore the allocation. Avoiding a sale avoids realizing a gain on that sale. **New purchases inside NISA still consume annual purchase capacity and the overall acquisition-cost allowance.**
 
 > Keeping up your regular contributions matters far more than trying to rebalance perfectly.
 
@@ -43,15 +43,13 @@ The key insight is that when you detect drift, the goal should be to **buy more 
 
 ## Rebalancing for Index Investors
 
-If you are accumulating in a single fund such as S&P 500 or an all-country (global stock) index fund, rebalancing is almost never necessary.
+You do not need to replace the underlying holdings of an index fund yourself. However, the fund's internal maintenance is separate from managing your household allocation.
 
 **There are two reasons for this.**
 
 First, **index funds implement changes made to their benchmark**. S&P Dow Jones Indices says S&P 500 weights are adjusted quarterly for current share counts and float, while constituent changes may occur at any time in response to company and market developments. An index-fund investor does not need to replace the individual companies manually.
 
-Second, **cross-asset-class rebalancing only matters when you hold multiple asset classes**. If you are invested in a single equity index, the concept of "restoring a drifted allocation" does not even apply.
-
-For index investors, rebalancing only becomes genuinely relevant when holding a combination of asset classes such as stocks, bonds, and cash.
+Second, even one equity fund can grow relative to the cash you need for household spending. Individual shares or regional funds add other concentration risks. The fund does not manage those household-level decisions for you.
 
 ---
 
@@ -83,7 +81,9 @@ Selling within a NISA (Japan's tax-free investment account) does not trigger cap
 
 **When you sell from a NISA account, the annual investment limit for the current year does not increase. However, the used lifetime allowance is restored from the following year, allowing you to reinvest that amount in future years.**
 
-The annual contribution caps remain fixed at ¥1.2M (tsumitate) + ¥2.4M (growth) = ¥3.6M per year regardless of sales. This means you cannot immediately reinvest in the same year — you must wait until the following year when the lifetime allowance recovers.
+The annual caps remain ¥1.2M (tsumitate) and ¥2.4M (growth). **Same-year purchases are possible when unused annual capacity and overall allowance remain.** A sale does not create additional capacity that year.
+
+For example, ¥1M of growth-allowance purchases leaves ¥1.4M of annual capacity. Selling ¥200,000 afterward does not increase that remaining capacity to ¥1.6M. Subject to available overall allowance, the unused ¥1.4M can still be used. Capacity restored from the following year is based on acquisition cost, not sale proceeds. See the [FSA's NISA explanation](https://www.fsa.go.jp/policy/nisa2/know/index.html).
 
 > NISA works best when treated as an account designed for holding indefinitely, not for trading.
 
@@ -95,7 +95,15 @@ Rebalancing within NISA should be reserved for situations where the allocation h
 
 **Core principle: don't sell — buy more of whatever is underweight.**
 
-The textbook description of rebalancing involves selling the overperformer and buying the underperformer, but in practice you can handle most situations simply by directing new purchases.
+Whether contributions are enough depends on their size relative to the portfolio. Consider this fictional calculation, ignoring taxes, costs, and price changes:
+
+| Method | Stocks | Cash | Total | Stock weight |
+|---|---:|---:|---:|---:|
+| Before adjustment | ¥900,000 | ¥100,000 | ¥1,000,000 | 90% |
+| Sell ¥100,000 of stocks into cash | ¥800,000 | ¥200,000 | ¥1,000,000 | 80% |
+| Instead add ¥125,000 of new savings to cash | ¥900,000 | ¥225,000 | ¥1,125,000 | 80% |
+
+The second adjustment requires new money. If cash is the underweight asset, buying another investment product does not solve that shortfall.
 
 **Step by step:**
 
@@ -112,18 +120,16 @@ As your total assets grow and buying alone can no longer close the gap, partial 
 ## Summary
 
 - **Threshold-based** timing is the most practical. Only act when the drift has become meaningful
-- Adjust by **buying the underweight side**, not by selling to reset — this avoids both tax costs and allowance consumption
-- Rebalancing is not always necessary; it **only makes sense when you hold multiple asset classes**
-- If you hold a single fund like S&P 500 or an all-country index, rebalancing is unnecessary because the index handles it internally
+- Consider new savings before selling; NISA purchases still consume capacity
+- One equity fund does not remove the need to review household cash or other holdings
+- Rebalancing manages risk; it does not guarantee higher returns
 - In a taxable account, **20.315% tax applies to realized gains**. Limit sell-based rebalancing to cases of large drift
 - Selling from a NISA account does not increase the current year's annual limit, but the lifetime allowance recovers from the following year. **The best use of NISA is to hold without frequent selling**
 
 The most important factor in long-term investing is staying in the market. Rather than treating rebalancing as a chore to be done frequently, focusing on keeping costs down and continuing to contribute consistently will do more for your total returns over time.
 
 :::comment
-My rebalancing rule is no selling by default. When allocations drift, I buy more of the underweight positions. Selling a profitable position in a taxable account realizes a taxable capital gain, which I prefer to avoid when new contributions can restore the allocation.
-
-That said, I'm flexible about what "rebalancing" means in practice. If a position is consistently underperforming and I no longer have conviction in it, I'll exit it entirely rather than just buy more. Rebalancing isn't just mechanical ratio adjustment — it's also a checkpoint to ask: "Do I still want to own this?" Sometimes the answer is no, and that's fine too.
+I generally do not realize profits simply because a price has risen. I intend to hold until the business deteriorates materially, and compare growth potential and valuation with other holdings when adding. That is not a mechanical target-weight strategy. The allocation examples here are teaching examples, not my trade history.
 :::
 
 ---

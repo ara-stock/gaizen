@@ -25,11 +25,11 @@ export default function BlogPage() {
       <div className="mb-12 max-w-3xl">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>BLOG</p>
         <h1 className="text-3xl sm:text-5xl font-bold mb-4 tracking-tight" style={{ color: 'var(--foreground)' }}>
-          長期投資を、順番に理解する。
+          調べる。記録する。判断する。
         </h1>
         <p className="text-sm sm:text-base leading-relaxed" style={{ color: 'var(--muted)' }}>
-          投資の始め方、NISA、資産管理、企業分析を、実際の失敗と運用経験を交えながら整理しています。
-          初心者向けの手順と、筆者自身の投資判断ノートを分けて読むことができます。
+          保有企業の判断事例、月次資産管理のExcel、投資を始める手順をまとめています。
+          今知りたいテーマから、具体例と一次資料へ進んでください。
         </p>
         <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs" style={{ color: 'var(--muted)' }}>
           <span>執筆: 個人投資家 ara</span>

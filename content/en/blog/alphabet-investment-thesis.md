@@ -1,7 +1,7 @@
 ---
 title: "Why I Hold Alphabet Long Term | YouTube and AI Infrastructure"
 date: "2026-08-24"
-updatedAt: "2026-08-24"
+updatedAt: "2026-09-11"
 description: "A shareholder's decision record for Alphabet, covering YouTube, Google Cloud, Gemini, TPUs, add-on-buy criteria, and the conditions that would invalidate the thesis."
 tags: ["US stocks", "Alphabet", "YouTube", "Google Cloud", "AI", "individual stocks", "long-term investing"]
 category: "us-stock"
@@ -24,6 +24,8 @@ I do not see Alphabet as only an advertising company or simply an AI growth stoc
 | Thesis review condition | Advertising and Cloud profit growth stalls across several quarters |
 
 This table describes my own process, not a forecast or guarantee of returns.
+
+This article combines my interview answers with supporting primary-source research. It is not a transaction diary containing trade dates or execution prices. My research sequence and a suggested recording template are set out in [How I Build an Individual-Stock Thesis](/en/blog/individual-stock-investment-thesis/).
 
 ---
 
@@ -86,7 +88,7 @@ The decline itself does not establish undervaluation. A stock can fall 5% while 
 2. Check for structural changes in advertising and Cloud revenue or profit.
 3. Compare valuation with Alphabet's own history and other holdings under consideration.
 4. Decide whether the expected growth is more attractive than other uses of capital.
-5. Check whether an additional purchase would make the position too concentrated.
+5. Check post-purchase concentration (a suggested check; I do not use a fixed position cap).
 
 :::comment
 I compare expected growth and current valuation across the companies I own. I do not buy Alphabet only because it is cheaper than it was yesterday.
@@ -115,7 +117,7 @@ Product experience can reveal a change before it becomes obvious in financial st
 
 My original answer was that the thesis would fail if advertising or Cloud profits stalled or turned negative. A single weak quarter is too crude a test, however. Growth spending and one-time costs can temporarily reduce margins.
 
-I now look for several of the following conditions persisting across multiple quarters:
+The following are supplementary review questions, not verified rules from my trading history. They help distinguish temporary costs from a change in the business:
 
 - Search and YouTube usage and advertising revenue weaken without a credible path to recovery;
 - Google Cloud growth and operating margin deteriorate together;
@@ -151,7 +153,7 @@ The Alphabet cycle I am investing in is straightforward:
 
 In Q2 2026, YouTube advertising and Google Cloud both grew, and Cloud profit expanded. Capital expenditure also accelerated sharply. I will judge the thesis by profit and cash flow generated from that investment, not by the strength of the AI narrative alone.
 
-This article is not a recommendation to buy or sell any security. Individual stocks can lose value, and the criteria above are a record of my personal decision process.
+This article is not a recommendation to buy or sell any security. Individual stocks can lose value. The interview-based reasons and supplementary review questions are not a record of executed trades or investment performance.
 
 ---
 
@@ -163,4 +165,3 @@ Unless otherwise stated, figures cover the three or six months ended June 30, 20
 - [Tensor Processing Units (Google Cloud)](https://cloud.google.com/tpu)
 - [Google global network (Google Cloud)](https://cloud.google.com/resources/google-global-network)
 - [Google network infrastructure investments (Google Cloud Blog)](https://cloud.google.com/blog/products/infrastructure/google-network-infrastructure-investments)
-

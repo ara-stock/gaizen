@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
 declare global {
   interface Window {
@@ -18,17 +18,20 @@ interface AdUnitProps {
 export default function AdUnit({ slot, format = 'auto', responsive = true, className }: AdUnitProps) {
   const publisherId = process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID
   const adUnitsEnabled = process.env.NEXT_PUBLIC_ADSENSE_AD_UNITS_ENABLED === 'true'
+  const enabled = adUnitsEnabled && !!publisherId && publisherId !== 'ca-pub-XXXXXXXXXXXXXXXX'
+  const initialized = useRef(false)
 
   useEffect(() => {
-    if (!adUnitsEnabled) return
+    if (!enabled || initialized.current) return
     try {
       ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+      initialized.current = true
     } catch {
       // ignore if adsbygoogle is not yet loaded
     }
-  }, [adUnitsEnabled])
+  }, [enabled])
 
-  if (!adUnitsEnabled || !publisherId || publisherId === 'ca-pub-XXXXXXXXXXXXXXXX') return null
+  if (!enabled) return null
 
   return (
     <aside className={`ad-slot ${className ?? ''}`} aria-label="Advertisement">

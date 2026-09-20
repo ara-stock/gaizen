@@ -1,7 +1,7 @@
 ---
 title: "Mortgage Prepayment vs. Investing: Which Should You Prioritize?"
 date: "2026-05-28"
-updatedAt: "2026-06-11"
+updatedAt: "2026-09-11"
 description: "Should you pay off your mortgage early or keep investing? The answer depends on interest rate conditions, market environment, and how much you borrowed in the first place. A framework for making the right call."
 tags: ["mortgage", "prepayment", "investing", "real estate", "wealth building", "FIRE", "long-term investing"]
 category: "us-stock"
@@ -51,7 +51,7 @@ Running this alongside a day job and an investment portfolio adds complexity tha
 
 Buy a home you plan to live in for the long term. This reframes the decision.
 
-A home you occupy doesn't generate income — it's a liability with leverage attached. Unlike stocks, you can't easily exit a bad position. If you over-borrow and the market or your income shifts, the options are limited and painful.
+A home is an asset; its mortgage is a liability. Not receiving rental income does not turn the property itself into a liability. However, maintenance, sale costs, and the time needed to sell mean its value is not equivalent to readily available cash.
 
 Choosing for the long term means buying within your means based on your current and likely future income — not at the edge of what lenders will approve.
 
@@ -59,7 +59,7 @@ Choosing for the long term means buying within your means based on your current 
 
 If you don't have a down payment or meaningful savings: don't force the purchase.
 
-The more practical path is **cheap rental housing or, for Tokyo residents, public housing (都営住宅)**. Public housing has income limits, but the rent is dramatically below market. Using that cost advantage to maximize investment contributions and build equity first is a legitimate strategy.
+Consider affordable rental options first. Public housing is not available to everyone: income, residency, household, and application conditions must be checked with the municipality. Build an adequate household cash reserve before maximizing investment contributions.
 
 Buying a home is not time-sensitive in the way compound growth is. Getting the investment flywheel spinning early matters more than homeownership timing.
 
@@ -69,7 +69,7 @@ Buying a home is not time-sensitive in the way compound growth is. Getting the i
 |---|---|---|
 | Loan rate | High or difficult to absorb if it rises | Low with comfortable repayment capacity |
 | Mortgage tax credit | Expired or offers little benefit | Still provides meaningful benefit |
-| Cash reserves | Adequate emergency savings remain afterward | Cash reserves are limited |
+| Cash reserves | Adequate emergency savings remain afterward | Cash for repayments, living costs, and planned expenses remains after investing |
 | Risk tolerance | Prioritize reducing debt and uncertainty | Can accept volatility and invest long term |
 
 :::comment
@@ -81,6 +81,8 @@ I currently live in a multi-generational household — my situation changed when
 
 Three reasons: you can move when circumstances change, you can scale costs up or down as your household size and needs evolve, and mortgage interest competes directly with investment capital. When monthly repayments are high, the investment budget shrinks — and that drag compounds over years. Absent a specific life event that makes ownership clearly rational, renting and investing the difference tends to win on the numbers.
 :::
+
+**If cash reserves are limited, neither prepayment nor more investing may be appropriate.** Rebuild emergency savings first rather than forcing a binary choice.
 
 ## Summary
 

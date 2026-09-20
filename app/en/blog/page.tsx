@@ -26,11 +26,11 @@ export default function EnBlogPage() {
       <div className="mb-12 max-w-3xl">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>BLOG</p>
         <h1 className="text-3xl sm:text-5xl font-bold mb-4 tracking-tight" style={{ color: 'var(--foreground)' }}>
-          Learn long-term investing in order.
+          Research. Record. Decide.
         </h1>
         <p className="text-sm sm:text-base leading-relaxed" style={{ color: 'var(--muted)' }}>
-          Practical guidance on first steps, NISA, and asset tracking sits alongside research notes on businesses and investment decisions.
-          Both are grounded in the author&apos;s mistakes, ongoing practice, and primary sources.
+          Investment theses for businesses I own, a monthly asset workbook, and practical first steps.
+          Choose a topic and work through the examples and primary sources.
         </p>
         <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs" style={{ color: 'var(--muted)' }}>
           <span>Written by individual investor ara</span>

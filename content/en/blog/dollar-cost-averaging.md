@@ -1,7 +1,7 @@
 ---
 title: "Dollar-Cost Averaging — Daily, Monthly, or Lump Sum: What Works Best"
 date: "2026-05-20"
-updatedAt: "2026-08-10"
+updatedAt: "2026-09-11"
 description: "A practical guide to daily and monthly investing, how to evaluate an immediately available lump sum, a 10% take-home reference point, and starting with ¥1,000."
 tags: ["dollar-cost averaging", "index investing", "NISA", "long-term investing", "wealth building"]
 category: "us-stock"
@@ -63,7 +63,7 @@ Time spent staring at charts wondering "should I wait a little longer?" contribu
 
 Lump sum only makes sense if you have the cash available upfront.
 
-If you're investing from monthly income, **monthly DCA is perfectly fine.** If you can save over the prior year and invest in a lump sum at the start of the next, it's worth considering. Either way, **starting and continuing** is what matters most.
+Monthly investing is appropriate when money arrives through monthly pay. Deliberately waiting until January with already available money is a different decision from the immediate-investment research above. Preserve cash for household needs first.
 
 ---
 
@@ -80,26 +80,23 @@ If you are unsure where to start, **10% of take-home pay can be a useful referen
 | ¥300,000 | ¥30,000/month |
 | ¥400,000 | ¥40,000/month |
 
-### Why 10%?
+### 10% Is a Budgeting Example, Not a Rule
 
-**Because public pension alone won't cover your retirement.**
-
-The full basic pension (老齢基礎年金) is about ¥70,608/month (FY2026). A couple receives about ¥140,000/month. Maintaining your working-life standard of living requires building your own assets.
-
-10% is also the threshold where "this is manageable." If you can live on the remaining 90%, the habit becomes sustainable. That's the goal.
+Rent, dependents, debt, and upcoming expenses change what is affordable. Building cash may take priority when an emergency reserve is missing. Pension income also varies with contribution history and any employees' pension coverage. Check your own expected benefits and spending rather than assuming one retirement shortfall for everyone.
 
 ### After 30 Years
 
-Projected outcomes at 7% annual return:
+Investing ¥20,000 at each month-end for 30 years contributes ¥7.2M. These are constant-return hypothetical scenarios, not forecasts or my performance:
 
-| Take-home | Monthly investment (10%) | After 30 years (7% p.a.) |
-|---|---|---|
-| ¥150,000 | ¥15,000 | ~**¥18.3M** |
-| ¥200,000 | ¥20,000 | ~**¥24.4M** |
-| ¥300,000 | ¥30,000 | ~**¥36.6M** |
-| ¥400,000 | ¥40,000 | ~**¥48.8M** |
+| Assumed annual return | Ending balance |
+|---|---:|
+| -2% | About ¥5.40M |
+| 0% | ¥7.20M |
+| 3% | About ¥11.57M |
+| 5% | About ¥16.31M |
+| 7% | About ¥23.39M |
 
-To put that in perspective: investing ¥20,000/month for 30 years means you contribute ¥7.2M in principal — and end up with about ¥24.4M. **Compounding more than triples your money.** That small 10% habit makes an enormous difference over 30 years.
+Use the monthly rate `r = (1 + annual return)^(1/12) - 1` and `20,000 × ((1+r)^360 - 1) / r`; at zero return, simply add contributions. Taxes, costs, and inflation are excluded. Actual returns fluctuate and long holding periods do not eliminate losses.
 
 ---
 
@@ -107,7 +104,7 @@ To put that in perspective: investing ¥20,000/month for 30 years means you cont
 
 "I'm scared to invest tens of thousands right away" — that's completely normal. Everyone feels that way at first.
 
-I started with ¥1,000. As I got used to the ups and downs and my small position turned into a paper gain, I realized: "If I'd put in more, I'd have gained even more." That feeling drove me to gradually increase my monthly amount, leading to the investment style I have today.
+My first investment was an individual stock during graduate school. I did not understand the business well enough and sold several years later after its price had halved. That experience is why I recommend a small fund contribution, such as ¥1,000, to beginners. It is a recommendation, not a claim that I personally started with ¥1,000 contributions.
 
 **The most important thing is to start. The amount doesn't matter.**
 

@@ -1,7 +1,7 @@
 ---
 title: "Exit Strategy for Long-Term Investors: When and How to Sell"
 date: "2026-05-28"
-updatedAt: "2026-08-10"
+updatedAt: "2026-09-11"
 description: "Exit strategy isn't just for FIRE seekers. Every investor eventually needs to convert assets into income. Here's how to think about the withdrawal phase — and how it connects to your work and life decisions."
 tags: ["exit strategy", "withdrawal", "FIRE", "4% rule", "wealth building", "long-term investing", "retirement"]
 category: "us-stock"
@@ -31,9 +31,9 @@ These two axes connect. Your investment exit plan shapes your work exit options,
 
 ## The 4% Rule as a Starting Point
 
-The "4% rule" has two foundational sources: William Bengen's 1994 paper "Determining Withdrawal Rates Using Historical Data" (Journal of Financial Planning), and the 1998 study "Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable" by Cooley, Hubbard, and Walz — commonly called the Trinity Study. Both conclude that withdrawing 4% of your portfolio annually gives the portfolio a high probability of lasting 30+ years, assuming a stock/bond mix typical of US markets.
+The "4% rule" generally means withdrawing 4% of the **starting portfolio in year one**, then adjusting that currency amount for inflation. It is not the same as selling 4% of the remaining balance every year. Bengen's 1994 research and later work including the Trinity Study used historical US stock and bond data; they do not guarantee a safe future withdrawal rate.
 
-If your annual living expenses are ¥3,000,000, you'd need ¥75,000,000 to apply the 4% rule.
+For a fictional ¥75M starting portfolio, the first withdrawal is ¥3M. With 2% inflation, the second is ¥3.06M, rather than 4% of the new balance. Withdrawals following an early market decline can therefore be particularly damaging. ¥75M is not a universally sufficient retirement target.
 
 The 4% rule has assumptions:
 - US stock and bond allocation

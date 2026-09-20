@@ -1,7 +1,7 @@
 ---
 title: "Your First 30 Days of Investing in Japan — Set Up a ¥1,000 NISA Contribution"
 date: "2026-06-11"
-updatedAt: "2026-06-11"
+updatedAt: "2026-09-11"
 description: "A practical 30-day roadmap for beginning investors in Japan: open Rakuten Securities and Rakuten Bank, connect them, open a NISA account, and start a ¥1,000 monthly S&P500 index fund contribution."
 tags: ["beginner investing", "NISA", "Rakuten Securities", "Rakuten Bank", "index fund", "S&P500", "recurring investment"]
 category: "us-stock"
@@ -16,12 +16,14 @@ You do not need to understand every part of investing before you begin.
 The goal for your first 30 days is to complete five tasks:
 
 1. Open a Rakuten Securities account
-2. Open Rakuten Bank and connect it to Rakuten Securities
+2. Choose a payment method (Rakuten Bank integration is optional)
 3. Open a NISA account at Rakuten Securities
 4. Select an S&P500 index fund
 5. Set up a ¥1,000 monthly contribution through the NISA accumulation allowance
 
-You do not need a large portfolio after 30 days. If an automated monthly investment has started running, the first stage is complete.
+Thirty days is a planning guide, not a promise that the first purchase will execute within that period. Account review and payment deadlines may push it into a later month. Confirm the account type, amount, and scheduled date, then check the transaction after execution.
+
+Rakuten Securities is the author's example. An existing NISA account at another brokerage can be used for the same checks. Neither a Rakuten Bank account nor a credit card is required to start NISA investing.
 
 :::comment
 I first invested during my first year of graduate school. One of my classmates was an investor and recommended "A Random Walk Down Wall Street."
@@ -80,10 +82,10 @@ As you open Rakuten Securities, confirm the following:
 
 | Item | Purpose |
 |---|---|
-| Rakuten Bank | Simplify transfers between cash and investments |
-| Money Bridge | Connect Rakuten Bank and Rakuten Securities |
+| Rakuten Bank (optional) | Simplify transfers between cash and investments |
+| Money Bridge (optional) | Connect Rakuten Bank and Rakuten Securities |
 | NISA account | Make eligible investment gains tax-free |
-| Rakuten Card contribution | Automate the monthly fund purchase |
+| Rakuten Card contribution (optional) | One payment method; non-card recurring purchases are also available |
 
 You can use NISA through only one financial institution at a time. If you already use NISA elsewhere, changing financial institutions requires a separate procedure.
 
@@ -109,7 +111,9 @@ Distribution option: Reinvestment
 
 Several funds have similar names. Before confirming, check the fund name, asset manager, tracked index, and expense ratio.
 
-## Week 4: Confirm the Purchase, Then Leave It Alone
+## Week 4: Confirm the Setup and First Scheduled Purchase
+
+Before the first purchase date, an empty transaction history is not necessarily an error. Compare the date in the setup screen with the deadlines and purchase schedule in [Rakuten's official card contribution guide](https://www.rakuten-sec.co.jp/web/rfund/guide/creditcard.html). Check the executed transaction after that date.
 
 After completing the setup, confirm the scheduled date and purchase result.
 
@@ -155,18 +159,17 @@ After confirming that the automated contribution works and your household financ
 
 Base increases on available monthly cash, not on whether the market recently rose or fell.
 
-I currently use Rakuten Card contributions in my Rakuten Securities NISA account to invest automatically in eMAXIS Slim US Equities (S&P500). I did not begin at my current contribution amount. I increased it after understanding the system and confirming that I could continue.
+I currently use card-funded NISA contributions. The staged amounts above are examples for readers, not a record of the exact increases I made.
 
 ## 30-Day Checklist
 
 - [ ] Reviewed monthly expenses and available cash
 - [ ] Confirmed that ¥1,000 per month is affordable
 - [ ] Opened Rakuten Securities
-- [ ] Opened Rakuten Bank
-- [ ] Enabled Money Bridge
+- [ ] Chosen a payment method, adding bank/card integration if needed
 - [ ] Opened a NISA account at Rakuten Securities
 - [ ] Set an index fund contribution through the NISA accumulation allowance
-- [ ] Confirmed the first ¥1,000 purchase
+- [ ] Confirmed the first scheduled date, then checked the JPY 1,000 transaction after execution
 - [ ] Confirmed that future contributions remain automated
 
 ## Summary

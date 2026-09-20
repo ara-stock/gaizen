@@ -9,16 +9,17 @@ export default function Footer() {
   const p = isEn ? '/en' : ''
 
   const contentLinks: [string, string][] = [
-    ['Blog', `${p}/blog/`],
-    ['Portfolio', `${p}/portfolio/`],
-    ['About', `${p}/about/`],
+    [isEn ? 'Articles' : '記事一覧', `${p}/blog/`],
+    [isEn ? 'Asset Workbook' : '資産管理Excel', `${p}/blog/monthly-asset-tracking/`],
+    [isEn ? 'Portfolio' : '保有方針', `${p}/portfolio/`],
+    [isEn ? 'About' : '筆者について', `${p}/about/`],
   ]
 
   const legalLinks: [string, string][] = [
     [isEn ? 'Editorial Policy' : '編集・検証方針', `${p}/editorial-policy/`],
-    ['Disclaimer', `${p}/disclaimer/`],
-    ['Privacy Policy', `${p}/privacy/`],
-    ['Contact', `${p}/contact/`],
+    [isEn ? 'Disclaimer' : '免責事項', `${p}/disclaimer/`],
+    [isEn ? 'Privacy Policy' : 'プライバシーポリシー', `${p}/privacy/`],
+    [isEn ? 'Contact' : 'お問い合わせ・訂正依頼', `${p}/contact/`],
   ]
 
   const disclaimer = isEn
