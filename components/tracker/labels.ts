@@ -1,21 +1,19 @@
 import type { Phase, Project, ProjectStatus, TgeSourceType } from '@/types/project'
 
-export const STATUS_ORDER: ProjectStatus[] = ['active', 'waiting', 'watching', 'claimed', 'dropped']
+export const STATUS_ORDER: ProjectStatus[] = ['active', 'waiting', 'watching', 'done']
 
 export const STATUS_LABEL: Record<ProjectStatus, string> = {
   active: '継続中',
   waiting: '受取待ち',
   watching: '様子見',
-  claimed: '受領済',
-  dropped: '撤退',
+  done: '終了',
 }
 
 export const STATUS_COLOR: Record<ProjectStatus, string> = {
   active: 'var(--chart-jp)',
   waiting: 'var(--chart-crypto)',
   watching: 'var(--chart-gold)',
-  claimed: 'var(--chart-us)',
-  dropped: 'var(--chart-cash)',
+  done: 'var(--chart-cash)',
 }
 
 export const PHASE_LABEL: Record<Phase, string> = {
@@ -26,8 +24,14 @@ export const PHASE_LABEL: Record<Phase, string> = {
   none: '未発表',
 }
 
-/** How many of the three progress segments are filled. */
-export const PHASE_STEP: Record<Phase, number> = { early: 1, mid: 2, late: 3, ended: 0, none: 0 }
+/** Early is the best time to join, late the worst — the badge colour follows that. */
+export const PHASE_BADGE: Record<Phase, { mark: string; color: string }> = {
+  early: { mark: '○', color: 'var(--chart-jp)' },
+  mid: { mark: '△', color: 'var(--chart-gold)' },
+  late: { mark: '×', color: 'var(--chart-real-estate)' },
+  ended: { mark: '–', color: 'var(--chart-cash)' },
+  none: { mark: '–', color: 'var(--chart-cash)' },
+}
 
 export const TGE_SOURCE_LABEL: Record<TgeSourceType, string> = {
   official: '公式',
@@ -94,4 +98,45 @@ export function writeStored<T>(key: string, value: Record<string, T>) {
   } catch {
     // The page keeps working for this visit when browser storage is unavailable.
   }
+}
+
+/** 0..1 position of `value` between `min` and `max` on a log scale. */
+function logScale(value: number, min: number, max: number): number {
+  if (value <= min) return 0
+  return Math.min(1, Math.log10(value / min) / Math.log10(max / min))
+}
+
+export interface Score {
+  quality: number
+  reward: number
+  total: number
+}
+
+/**
+ * Mechanical score from published data. 質 (quality, 0–50) = funding + X audience + team disclosure.
+ * 酬 (reward, 0–50) = whether a programme runs + how early it is + estimated airdrop pool.
+ * The formula is described on the home page; `scoreOverride` wins when the author sets it.
+ */
+export function scoreProject(p: Project): Score {
+  const { totalUsdM } = p.funding
+  // Self-funded by choice (0) is not a weakness; undisclosed (null) is scored low.
+  const funding = totalUsdM === null ? 5 : totalUsdM === 0 ? 12 : 5 + 20 * logScale(totalUsdM, 1, 100)
+  const audience = 15 * logScale(p.audience?.xFollowers ?? 0, 5_000, 500_000)
+  const team = (p.team.doxxed ? 6 : 0) + (p.team.baseKind !== 'unverified' ? 4 : 0)
+
+  const programme = p.points.exists ? 15 : p.token.launched ? 0 : 8
+  const timing = { early: 15, mid: 10, late: 5, none: 6, ended: 0 }[p.phase]
+  const pool = airdropPoolUsdM(p)
+  const size = pool !== null ? 20 * logScale(pool, 10, 500) : p.token.launched ? (p.points.exists ? 6 : 0) : 8
+
+  const quality = Math.round(p.scoreOverride?.quality ?? Math.min(50, funding + audience + team))
+  const reward = Math.round(p.scoreOverride?.reward ?? Math.min(50, programme + timing + size))
+  return { quality, reward, total: quality + reward }
+}
+
+export function scoreColor(total: number): string {
+  if (total >= 75) return 'var(--chart-jp)'
+  if (total >= 55) return 'var(--chart-us-2)'
+  if (total >= 35) return 'var(--chart-gold)'
+  return 'var(--muted)'
 }

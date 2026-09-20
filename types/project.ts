@@ -1,4 +1,4 @@
-export type ProjectStatus = 'active' | 'waiting' | 'watching' | 'claimed' | 'dropped'
+export type ProjectStatus = 'active' | 'waiting' | 'watching' | 'done'
 
 /** Where the points / airdrop campaign stands. */
 export type Phase = 'early' | 'mid' | 'late' | 'ended' | 'none'
@@ -14,6 +14,8 @@ export interface ProjectSource {
 export interface Project {
   slug: string
   name: string
+  /** Path under /public, e.g. "/logos/extended.svg". */
+  logo?: string
   category: string
   chain: string
   /** Author's own engagement status. Visitors can override it locally in the browser. */
@@ -75,7 +77,12 @@ export interface Project {
   links: {
     site: string
     referral?: string
+    /** One-time invitation codes, for venues that have no referral URL. */
+    inviteCodes?: string[]
+    inviteNote?: string
   }
+  /** Author's own scores (0–50 each). When set, they replace the computed ones. */
+  scoreOverride?: { quality?: number; reward?: number }
   sources: ProjectSource[]
   updatedAt: string
 }
