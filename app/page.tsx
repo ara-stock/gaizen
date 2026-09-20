@@ -16,7 +16,7 @@ export default function HomePage() {
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
       <div className="mb-6">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>PROJECT TRACKER</p>
-        <h1 className="text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>仮想通貨プロジェクト トラッカー</h1>
+        <h1 className="text-xl sm:text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>仮想通貨プロジェクト トラッカー</h1>
         <p className="text-sm leading-relaxed max-w-3xl" style={{ color: 'var(--muted)' }}>
           筆者が実際に触っている、または参加を検討しているプロジェクトの一覧です。調達額・チーム・TGE時期は公式発表と報道で確認し、
           出典を各プロジェクトのページに載せています。受取見込みは「FDVの想定 × エアドロ配分」による機械的な試算です。
@@ -29,7 +29,7 @@ export default function HomePage() {
       <section className="mt-12 p-5 rounded-xl border text-xs leading-relaxed" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)', color: 'var(--muted)' }}>
         <h2 className="text-sm font-semibold mb-2" style={{ color: 'var(--foreground)' }}>このページの読み方と注意</h2>
         <ul className="list-disc pl-5 space-y-1.5">
-          <li>一覧は筆者の参加のしかた（Perp取引・Staking・ポイント活動・ホールド）ごとに分けています。列の見出しを押すと並び替えできます。</li>
+          <li>一覧は筆者の参加のしかた（Perp取引・Staking・ポイント活動・ホールド）ごとに分けています。列の見出しを押すと並び替えできます。初期の並びは、紹介リンク・招待コードのあるものを上に、その中で筆者が主力として取り組んでいるもの（「主力」）を先にしています。「おすすめ外」は、イベント参加など限定的な理由で触っているだけのものです。</li>
           <li>「推定」と付いたエアドロ規模は、未発表の評価額や配分を仮置きした数値です。根拠と仮置きの内容は各プロジェクトのページに書いています。</li>
           <li>フェーズ（序盤・中盤・終盤）は、ポイントプログラムの経過期間とTGEまでの距離から筆者が判断したものです。根拠は各プロジェクトのページに書いています。</li>
           <li>Xフォロワー数は利用者規模の目安です。ボットや休眠アカウントを含むため、実際の利用者数とは一致しません。</li>

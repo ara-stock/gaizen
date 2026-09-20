@@ -50,6 +50,7 @@ export default async function ProjectPage({ params }: Props) {
   const p = getProjectBySlug(slug)
   if (!p) notFound()
   const note = { color: 'var(--prose-body)' }
+  const phased = p.activity === 'perps' || p.activity === 'points'
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
@@ -69,19 +70,31 @@ export default async function ProjectPage({ params }: Props) {
             <span aria-hidden="true" className="w-2 h-2 rounded-full" style={{ backgroundColor: STATUS_COLOR[p.status] }} />
             araの状況: {STATUS_LABEL[p.status]}
           </span>
-          <PhaseMeter phase={p.phase} />
+          {phased && <PhaseMeter phase={p.phase} />}
           <span className="text-xs" style={{ color: 'var(--muted)' }}>最終更新: {p.updatedAt}</span>
         </p>
         <p className="mt-3"><MyStatus project={p} /></p>
         {p.statusNote && <p className="mt-3 text-sm leading-relaxed" style={note}>{p.statusNote}</p>}
       </header>
 
+      {p.staking && (
+        <Section title="ステーキング">
+          <dl>
+            <Row label="トークン"><span className="font-mono">${p.staking.token}</span></Row>
+            {p.staking.apy && <Row label="APYの目安">{p.staking.apy}</Row>}
+            <Row label="報酬">{p.staking.reward}</Row>
+            {p.staking.note && <Row label="補足">{p.staking.note}</Row>}
+          </dl>
+        </Section>
+      )}
+
       <Section title="TGE・ポイント">
         <dl>
-          <Row label="フェーズ">
+          {phased && <Row label="フェーズ">
             <PhaseMeter phase={p.phase} />
             {p.phaseNote && <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>{p.phaseNote}</span>}
-          </Row>
+          </Row>}
+          {!phased && p.phaseNote && <Row label="現状">{p.phaseNote}</Row>}
           <Row label="TGE"><TgeCell project={p} /></Row>
           <Row label="ポイントプログラム">
             {p.points.exists ? (
@@ -95,9 +108,11 @@ export default async function ProjectPage({ params }: Props) {
         </dl>
       </Section>
 
-      <Section title="エアドロップ受取見込みの試算" id="estimate">
-        <AirdropEstimate project={p} />
-      </Section>
+      {phased && (
+        <Section title="エアドロップ受取見込みの試算" id="estimate">
+          <AirdropEstimate project={p} />
+        </Section>
+      )}
 
       <Section title="チーム・資金調達・利用者規模">
         <dl>
@@ -148,7 +163,7 @@ export default async function ProjectPage({ params }: Props) {
           <li><a href={p.links.site} target="_blank" rel="noopener nofollow" className="underline" style={{ color: 'var(--accent)' }}>公式サイト</a></li>
         </ul>
         {p.links.inviteCodes && (
-          <div className="mt-5">
+          <div id="invite" className="mt-5 scroll-mt-20">
             <h3 className="text-sm font-semibold mb-2" style={{ color: 'var(--foreground)' }}>招待コード</h3>
             <InviteCodes codes={p.links.inviteCodes} />
             {p.links.inviteNote && <p className="text-xs mt-2 leading-relaxed" style={{ color: 'var(--muted)' }}>{p.links.inviteNote}</p>}

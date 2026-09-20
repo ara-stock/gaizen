@@ -21,6 +21,10 @@ export interface Project {
   logo?: string
   category: string
   activity: Activity
+  /** 1 = main focus, 2 = normal, 3 = not recommended (listed last and dimmed). */
+  priority: 1 | 2 | 3
+  /** Shown instead of phase and airdrop size for staking positions. */
+  staking?: { token: string; reward: string; apy?: string; note?: string }
   chain: string
   /** Author's own engagement status. Visitors can override it locally in the browser. */
   status: ProjectStatus

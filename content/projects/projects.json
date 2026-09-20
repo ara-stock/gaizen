@@ -72,7 +72,8 @@
         "usersSource": "Datawallet（Hyperliquidの統計ダッシュボードを引用した二次情報）"
       },
       "logo": "/logos/hyperliquid.png",
-      "activity": "perps"
+      "activity": "perps",
+      "priority": 1
     },
     {
       "slug": "trade-xyz",
@@ -148,7 +149,8 @@
         "fdvUsdM": 1500,
         "estimated": true,
         "basis": "トークンは未発表。FDV $1.5Bは2026年8月の調達の噂にあった評価額、配分10%は仮置き。ポイントがないため個人の受取額は試算できない。"
-      }
+      },
+      "priority": 2
     },
     {
       "slug": "entropy",
@@ -230,7 +232,8 @@
         "fdvUsdM": 100,
         "estimated": true,
         "basis": "トークンは未発表。FDV $100Mはシード$14Mからの仮置き（評価額は非開示）、配分10%も仮置き。"
-      }
+      },
+      "priority": 1
     },
     {
       "slug": "lighter",
@@ -322,7 +325,8 @@
         "usersSource": "Lighter公式Xの発表。2026年の数値は未確認。"
       },
       "logo": "/logos/lighter.png",
-      "activity": "perps"
+      "activity": "perps",
+      "priority": 1
     },
     {
       "slug": "extended",
@@ -415,7 +419,8 @@
         "asOf": "2026-09-20"
       },
       "logo": "/logos/extended.svg",
-      "activity": "perps"
+      "activity": "perps",
+      "priority": 1
     },
     {
       "slug": "qfex",
@@ -508,7 +513,8 @@
         "fdvUsdM": 95,
         "estimated": true,
         "basis": "トークンは未発表。FDV $95Mはシード時の評価額（報道）、配分10%は仮置き。"
-      }
+      },
+      "priority": 2
     },
     {
       "slug": "grvt",
@@ -602,7 +608,8 @@
         "usersSource": "FinanceFeedsなどの二次情報。フォロワー数に対して利用者が少ない点に注意。"
       },
       "logo": "/logos/grvt.ico",
-      "activity": "perps"
+      "activity": "perps",
+      "priority": 2
     },
     {
       "slug": "edgex",
@@ -610,7 +617,7 @@
       "category": "Perp DEX",
       "chain": "StarkEx / Arc（Circle）",
       "status": "active",
-      "statusNote": "EDGEはTGE済みでエアドロップは終了。2026-09-16に始まったArc版での取引プログラムを継続している。",
+      "statusNote": "おすすめではない。EDGEはTGE済みでエアドロップは終了しており、2026-09-16に始まったArcのイベントに参加しているだけ。",
       "token": {
         "launched": true,
         "ticker": "EDGE",
@@ -687,7 +694,8 @@
         "usersSource": "The Block掲載のスポンサー記事。2026年の数値は一次情報で未確認。"
       },
       "logo": "/logos/edgex.ico",
-      "activity": "perps"
+      "activity": "perps",
+      "priority": 3
     },
     {
       "slug": "variational",
@@ -777,7 +785,8 @@
         "asOf": "2026-09-20"
       },
       "logo": "/logos/variational.png",
-      "activity": "perps"
+      "activity": "perps",
+      "priority": 2
     },
     {
       "slug": "nado",
@@ -861,7 +870,8 @@
         "totalPointsAsOf": "2026-09-18（公式の週次配布量からの計算値）",
         "estimated": true,
         "basis": "INKのFDVもNadoへの配分も未発表。FDV $500M・配分5%は根拠のない仮置きで、情報が出たら差し替える。総ポイントは公式の週95万ポイント×経過週数＋移行期200万の計算値。"
-      }
+      },
+      "priority": 2
     },
     {
       "slug": "jupiter",
@@ -921,6 +931,11 @@
           "title": "The Block - Class action over Melania, LIBRA",
           "url": "https://www.theblock.co/post/375832/ben-chow-melania-libra-memecoin",
           "date": "2025-10"
+        },
+        {
+          "title": "Jupiter - Active Staking Rewards Apr-Jun 2026",
+          "url": "https://jup.ag/rewards/asr-2026-q2",
+          "date": "2026"
         }
       ],
       "updatedAt": "2026-09-20",
@@ -932,7 +947,14 @@
         "asOf": "2026-09-20"
       },
       "logo": "/logos/jupiter.svg",
-      "activity": "staking"
+      "activity": "staking",
+      "priority": 2,
+      "staking": {
+        "token": "JUP",
+        "reward": "DAO投票の参加者に四半期ごと5,000万JUPを配分",
+        "apy": "年率18〜20%（推定）",
+        "note": "Active Staking Rewards（ASR）。年率は2026年Q2のコミュニティ推定で、公式の数値ではない。アンステークの待機期間は7日。投票に参加しないと受け取れない。"
+      }
     },
     {
       "slug": "meteora",
@@ -1015,7 +1037,13 @@
       ],
       "updatedAt": "2026-09-20",
       "logo": "/logos/meteora.svg",
-      "activity": "staking"
+      "activity": "staking",
+      "priority": 2,
+      "staking": {
+        "token": "MET",
+        "reward": "DLMMの手数料の一部をUSDCで受け取る（APY非公表）",
+        "note": "2026-07-26開始。2026-08-13時点で2,442人が7,000万METをステーク。"
+      }
     },
     {
       "slug": "stonk",
@@ -1023,7 +1051,7 @@
       "category": "DeFi",
       "chain": "Solana",
       "status": "active",
-      "statusNote": "STONKをホールドしている。",
+      "statusNote": "TGE済みのミーム系インフラとしてSTONKをホールドしている。",
       "token": {
         "launched": true,
         "ticker": "STONK",
@@ -1035,7 +1063,7 @@
         "status": "ポイントプログラムは確認できない。"
       },
       "phase": "none",
-      "phaseNote": "エアドロップ・ポイントの予定はない。手数料収入の約6割でSTONKを買い戻してバーンする設計（報道）。",
+      "phaseNote": "TGE済みのミーム系インフラ。エアドロップの予定はおそらくない",
       "audience": {
         "xHandle": "LaunchOnSF",
         "xFollowers": 45926,
@@ -1077,7 +1105,8 @@
       ],
       "updatedAt": "2026-09-20",
       "logo": "/logos/stonk.png",
-      "activity": "hold"
+      "activity": "hold",
+      "priority": 2
     },
     {
       "slug": "xstocks",
@@ -1151,7 +1180,8 @@
         "usersSource": "Kraken公式ブログ（2026年）"
       },
       "logo": "/logos/xstocks.svg",
-      "activity": "points"
+      "activity": "points",
+      "priority": 2
     },
     {
       "slug": "solstice",
@@ -1226,7 +1256,8 @@
       },
       "logo": "/logos/solstice.svg",
       "statusNote": "参加を終了した。",
-      "activity": "points"
+      "activity": "points",
+      "priority": 2
     },
     {
       "slug": "huma",
@@ -1309,7 +1340,82 @@
       },
       "logo": "/logos/huma.svg",
       "activity": "staking",
-      "statusNote": "HUMAはTGE済み。現在はHUMAをステーキングしている。"
+      "statusNote": "HUMAはTGE済み。現在はHUMAをステーキングしている。",
+      "priority": 2,
+      "staking": {
+        "token": "HUMA",
+        "reward": "ポイント「Feathers」で付与（APY非公表）",
+        "note": "30日あたり（Staking Factor ÷ α）× ステーク量で計算され、開始時は1,000 HUMAで500 Feathers。シーズンごとのエアドロップ配分に合算される。利回りはFeathersの価値次第。"
+      }
+    },
+    {
+      "slug": "arcus",
+      "name": "Arcus",
+      "logo": "/logos/arcus.png",
+      "category": "Perp DEX",
+      "activity": "perps",
+      "priority": 1,
+      "chain": "Robinhood Chain",
+      "status": "active",
+      "statusNote": "主力として取り組みたい取引所。現物（トークン化株式）は利用でき、Perpはウェイトリストの順番待ち。",
+      "token": {
+        "launched": false,
+        "tgeExpectation": "時期未定",
+        "tgeSourceType": "media"
+      },
+      "points": {
+        "exists": false,
+        "status": "ポイントプログラムは未発表。dYdX FoundationのCEOがArcus独自トークンの発行を明言しているが、配分・配布方法・時期は非開示。"
+      },
+      "phase": "early",
+      "phaseNote": "2026年7月に現物が開始。Perpのベータは2026-07-01からウェイトリスト登録者へ段階的に開放中で、正式開始は2026年内の予定。",
+      "audience": {
+        "xHandle": "arcus_xyz",
+        "xFollowers": 370540,
+        "asOf": "2026-09-20",
+        "users": "Perpのウェイトリスト登録8.5万人超、累計取引高$2B超",
+        "usersSource": "The Block（2026-08-25）ほか"
+      },
+      "funding": {
+        "totalUsdM": null,
+        "rounds": "Arcus単体の調達は開示されていない。dYdX LabsとRobinhood Cryptoによるプロジェクト。",
+        "investors": []
+      },
+      "team": {
+        "founders": [
+          "dYdX Labs"
+        ],
+        "doxxed": true,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "dYdXの開発チームが手がける、Robinhood Chain上のセルフカストディ型取引所。"
+      },
+      "flags": [
+        "Perpはウェイトリスト制で、まだ全員は使えない。",
+        "トークン化株式を持っても株主権はない。",
+        "日本からの利用条件は未確認。"
+      ],
+      "links": {
+        "site": "https://arcus.xyz/"
+      },
+      "sources": [
+        {
+          "title": "Arcus - Arcus x Robinhood: Trade Stocks & Perpetuals, 24/7",
+          "url": "https://arcus.xyz/blog/arcus-x-robinhood-trade-stocks-perpetuals-24-7",
+          "date": "2026-07"
+        },
+        {
+          "title": "The Block - Arcus launches pTokens",
+          "url": "https://www.theblock.co/news/defi/2026-08-25-robinhood-chain-dex-arcus-ptokens-perps-erc-20s-412696",
+          "date": "2026-08-25"
+        },
+        {
+          "title": "Coinmonks - Arcus Review 2026",
+          "url": "https://medium.com/coinmonks/arcus-review-dydx-stock-token-perps-dex-0675570be68b",
+          "date": "2026"
+        }
+      ],
+      "updatedAt": "2026-09-20"
     }
   ]
 }
