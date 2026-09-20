@@ -280,7 +280,8 @@
         "2025年12月のエアドロップでシビル判定をめぐる論争があり、異議申し立ての手続きが設けられた。"
       ],
       "links": {
-        "site": "https://lighter.xyz/"
+        "site": "https://lighter.xyz/",
+        "referral": "https://robinhoodchain.lighter.xyz/?referral=28895L3X&source=none"
       },
       "sources": [
         {
@@ -1326,6 +1327,11 @@
         {
           "title": "Huma blog - $HUMA Staking Rewards",
           "url": "https://blog.huma.finance/huma-staking-rewards"
+        },
+        {
+          "title": "Huma docs - Modes: Classic vs Maxi",
+          "url": "https://docs.huma.finance/products/huma-2.0/modes",
+          "date": "2026-09-20閲覧"
         }
       ],
       "updatedAt": "2026-09-20",
@@ -1339,13 +1345,14 @@
         "usersSource": "Messari「State of Huma Finance Q4 2025」"
       },
       "logo": "/logos/huma.svg",
-      "activity": "staking",
-      "statusNote": "HUMAはTGE済み。現在はHUMAをステーキングしている。",
+      "activity": "defi",
+      "statusNote": "USDCを長期でレンディングしている。HUMAはTGE済みで、ステーキングもしている。",
       "priority": 2,
       "staking": {
-        "token": "HUMA",
-        "reward": "ポイント「Feathers」で付与（APY非公表）",
-        "note": "30日あたり（Staking Factor ÷ α）× ステーク量で計算され、開始時は1,000 HUMAで500 Feathers。シーズンごとのエアドロップ配分に合算される。利回りはFeathersの価値次第。"
+        "token": "USDC",
+        "apy": "年率約8%（Classic、変動）",
+        "reward": "決済向け融資の利回りをUSDCで受け取り、Feathersも付く",
+        "note": "Huma 2.0のClassicモードはUSDC建ての利回り＋Feathers、Maxiモードは利回りを放棄してFeathersを増やす。ロックアップはなし・3か月・6か月から選べ、長いほどFeathersの倍率が上がる（公式ドキュメント）。HUMAのステーキング報酬もFeathersで付与される。利回りは時期により変わる。"
       }
     },
     {
@@ -1413,6 +1420,87 @@
           "title": "Coinmonks - Arcus Review 2026",
           "url": "https://medium.com/coinmonks/arcus-review-dydx-stock-token-perps-dex-0675570be68b",
           "date": "2026"
+        }
+      ],
+      "updatedAt": "2026-09-20"
+    },
+    {
+      "slug": "theo",
+      "name": "Theo Network",
+      "logo": "/logos/theo.png",
+      "category": "DeFi",
+      "activity": "defi",
+      "priority": 2,
+      "chain": "Ethereumほか",
+      "status": "active",
+      "statusNote": "USDCを長期のボールトに預けてレンディングしている。",
+      "staking": {
+        "token": "USDC",
+        "apy": "年率6.5〜11%（ボールト別）",
+        "reward": "ロック型ボールトの利回りをthUSDで受け取り、thUSDポイントも付く",
+        "note": "Core（3か月ロック）6.5%、Core+（6か月ロック）7.2%、Boost（6か月ロック、Morpho経由）11%。いずれもthUSD・USDC・USDTで預けられ、thUSDで返ってくる（公式ブログ 2026-06-25時点）。sthUSDの償還は平均約2週間の待ち行列がある。"
+      },
+      "token": {
+        "launched": false,
+        "tgeSourceType": "none"
+      },
+      "points": {
+        "exists": true,
+        "name": "thUSD Points",
+        "status": "2026-06-25に開始。thUSDの保有・ステーク、Core / Core+ / Boostの各ボールトで貯まり、ボールトの倍率が最も高い。前シーズン（thBILLポイント）は2026-06-19に終了。",
+        "communityAllocation": "トークンは未発表で、配分も不明。"
+      },
+      "phase": "mid",
+      "phaseNote": "ポイントは2シーズン目。トークンの発行は公式には確認されていない。",
+      "audience": {
+        "xHandle": "Theo_Network",
+        "xFollowers": 119530,
+        "asOf": "2026-09-20"
+      },
+      "funding": {
+        "totalUsdM": 20,
+        "rounds": "2025-04-22に$20M（Hack VC、Anthos Capitalなど）。2026年3月の$100M「Genesis Vault」は運用資金の枠で、株式での調達ではない。",
+        "investors": [
+          "Hack VC",
+          "Anthos Capital",
+          "Manifold Trading",
+          "Mirana Ventures",
+          "Flowdesk",
+          "Amber Group"
+        ]
+      },
+      "team": {
+        "founders": [],
+        "doxxed": true,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "元Optiverのトレーダーが創業（報道）。創業者名はこの調査では確認していない。"
+      },
+      "flags": [
+        "thUSDの利回りは主に金（ゴールド）の裁定・キャリー取引によるもので、米ドル預金のような元本保証はない。",
+        "ボールトは3〜6か月ロックで、途中で引き出せない。sthUSDの償還にも約2週間の待ちがある。",
+        "Boostボールトは Morpho を経由するため、DeFiのスマートコントラクトリスクが重なる。",
+        "日本からの利用条件は未確認。"
+      ],
+      "links": {
+        "site": "https://theo.xyz/",
+        "referral": "https://app.theo.xyz/referrals?invite=arastock"
+      },
+      "sources": [
+        {
+          "title": "Theo - Announcing the thUSD Points Program",
+          "url": "https://theo.xyz/articles/thusd-points-program",
+          "date": "2026-06-25"
+        },
+        {
+          "title": "CoinDesk - Theo raises $20M from Hack VC, Anthos Capital",
+          "url": "https://www.coindesk.com/markets/2025/04/22/theo-raises-usd20m-to-bring-wall-street-grade-trading-tools-to-crypto",
+          "date": "2025-04-22"
+        },
+        {
+          "title": "Tech Funding News - Theo $100M Genesis Vault",
+          "url": "https://techfundingnews.com/theo-100m-genesis-vault-thusd-gold-stablecoin/",
+          "date": "2026-03"
         }
       ],
       "updatedAt": "2026-09-20"

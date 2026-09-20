@@ -1,7 +1,7 @@
 export type ProjectStatus = 'active' | 'waiting' | 'watching' | 'done'
 
-/** How the author takes part: trading perps, staking the token, farming points, or just holding. */
-export type Activity = 'perps' | 'staking' | 'points' | 'hold'
+/** How the author takes part: trading perps, lending in DeFi, staking the token, farming points, or just holding. */
+export type Activity = 'perps' | 'defi' | 'staking' | 'points' | 'hold'
 
 /** Where the points / airdrop campaign stands. */
 export type Phase = 'early' | 'mid' | 'late' | 'ended' | 'none'
@@ -23,7 +23,7 @@ export interface Project {
   activity: Activity
   /** 1 = main focus, 2 = normal, 3 = not recommended (listed last and dimmed). */
   priority: 1 | 2 | 3
-  /** Shown instead of phase and airdrop size for staking positions. */
+  /** Shown instead of phase and airdrop size for DeFi lending and staking positions. `token` is the asset put in. */
   staking?: { token: string; reward: string; apy?: string; note?: string }
   chain: string
   /** Author's own engagement status. Visitors can override it locally in the browser. */
