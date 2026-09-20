@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import type { Phase, Project, ProjectStatus } from '@/types/project'
 import {
-  ACTIVITY_COLOR, ACTIVITY_LABEL, ACTIVITY_ORDER, POINTS_STORAGE_KEY, STATUS_LABEL, STATUS_ORDER, STATUS_STORAGE_KEY,
+  ACTIVITY_COLOR, ACTIVITY_LABEL, ACTIVITY_ORDER, CHEAP_MULTIPLE, POINTS_STORAGE_KEY, STATUS_LABEL, STATUS_ORDER, STATUS_STORAGE_KEY,
   airdropPoolUsdM, formatFollowers, formatFunding, formatUsd, formatUsdM,
-  readStored, usdPerPoint,
+  fdvMultiples, formatMultiple, readStored, usdPerPoint,
 } from './labels'
 import { PhaseMeter, ProjectLogo, TgeCell } from './cells'
 
@@ -144,6 +144,23 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
     </span>
   )
 
+  /** Held tokens are judged on valuation, so those groups swap funding and followers for FDV and its multiple. */
+  const valued = (p: Project) => p.activity === 'staking' || p.activity === 'hold'
+
+  const multipleCell = (p: Project) => {
+    const m = fdvMultiples(p)
+    if (!m) return <span style={muted}>—</span>
+    const cheap = m.trailing !== null && m.trailing <= CHEAP_MULTIPLE
+    return (
+      <span>
+        <span className="font-mono tabular-nums font-semibold" style={{ color: cheap ? 'var(--accent)' : undefined }}>{formatMultiple(m.trailing)}</span>
+        <span className="block text-xs font-mono tabular-nums" style={muted}>直近 {formatMultiple(m.runRate)}</span>
+      </span>
+    )
+  }
+
+  const fdvCell = (p: Project) => <span className="font-mono tabular-nums">{p.valuation?.fdvUsdM ? formatUsdM(p.valuation.fdvUsdM) : '—'}</span>
+
   const tokenCell = (p: Project) => {
     const token = p.staking?.token ?? p.token.ticker
     return <span className="font-mono">{token ? (p.activity === 'defi' ? token : `$${token}`) : '—'}</span>
@@ -206,8 +223,12 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
                         // Staking and hold rows have no campaign: those three columns become token + reward.
                         if (!phased && i === 2) return <th key={i} scope="col" colSpan={2} className="px-3 py-2.5 font-medium text-left whitespace-nowrap">{activity === 'hold' ? 'メモ' : '利回り・報酬'}</th>
                         if (!phased && i === 3) return null
-                        const label = !phased && i === 1 ? (activity === 'defi' ? '預ける資産' : 'トークン') : c.label
-                        const sortable = c.key && (phased || i > 3)
+                        const valuedGroup = activity === 'staking' || activity === 'hold'
+                        const label = !phased && i === 1 ? (activity === 'defi' ? '預ける資産' : 'トークン')
+                          : valuedGroup && i === 4 ? 'FDV'
+                          : valuedGroup && i === 5 ? 'FDV÷収益'
+                          : c.label
+                        const sortable = c.key && (phased || (i > 3 && !valuedGroup))
                         return (
                           <th key={i} scope="col" className={`px-3 py-2.5 font-medium whitespace-nowrap ${c.align === 'right' ? 'text-right' : 'text-left'}`}
                             aria-sort={sortable && sortKey === c.key ? 'ascending' : undefined}>
@@ -244,8 +265,17 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
                             <td colSpan={2} className="px-3 py-2.5">{stakingCell(p)}</td>
                           </>
                         )}
-                        <td className="px-3 py-2.5 text-right font-mono tabular-nums">{formatFunding(p.funding.totalUsdM)}</td>
-                        <td className="px-3 py-2.5 text-right font-mono tabular-nums">{p.audience?.xFollowers ? formatFollowers(p.audience.xFollowers) : '—'}</td>
+                        {valued(p) ? (
+                          <>
+                            <td className="px-3 py-2.5 text-right">{fdvCell(p)}</td>
+                            <td className="px-3 py-2.5 text-right">{multipleCell(p)}</td>
+                          </>
+                        ) : (
+                          <>
+                            <td className="px-3 py-2.5 text-right font-mono tabular-nums">{formatFunding(p.funding.totalUsdM)}</td>
+                            <td className="px-3 py-2.5 text-right font-mono tabular-nums">{p.audience?.xFollowers ? formatFollowers(p.audience.xFollowers) : '—'}</td>
+                          </>
+                        )}
                         <td className="px-3 py-2.5 text-xs leading-snug">{p.team.base}</td>
                         <td className="px-3 py-2.5 text-right">{referral(p)}</td>
                       </tr>
@@ -281,8 +311,13 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
                         [p.activity === 'defi' ? '預ける資産' : 'トークン', tokenCell(p)],
                         [p.activity === 'hold' ? 'メモ' : '利回り・報酬', stakingCell(p)],
                       ] as const),
-                      ['VC調達額', <span key="f" className="font-mono tabular-nums">{formatFunding(p.funding.totalUsdM)}</span>],
-                      ['Xフォロワー', <span key="x" className="font-mono tabular-nums">{p.audience?.xFollowers ? formatFollowers(p.audience.xFollowers) : '—'}</span>],
+                      ...(valued(p) ? [
+                        ['FDV', fdvCell(p)],
+                        ['FDV÷収益', multipleCell(p)],
+                      ] as const : [
+                        ['VC調達額', <span key="f" className="font-mono tabular-nums">{formatFunding(p.funding.totalUsdM)}</span>],
+                        ['Xフォロワー', <span key="x" className="font-mono tabular-nums">{p.audience?.xFollowers ? formatFollowers(p.audience.xFollowers) : '—'}</span>],
+                      ] as const),
                       ['拠点', p.team.base],
                     ] as const).map(([label, value]) => (
                       <div key={label} className="contents">

@@ -73,7 +73,20 @@
       },
       "logo": "/logos/hyperliquid.png",
       "activity": "perps",
-      "priority": 1
+      "priority": 1,
+      "valuation": {
+        "coingeckoId": "hyperliquid",
+        "defillamaSlug": "hyperliquid",
+        "note": "手数料の約97%をAssistance Fundで買い戻し、バーン扱い。FDVに対しては高い倍率。",
+        "priceUsd": 91.55,
+        "marketCapUsdM": 20365.8,
+        "fdvUsdM": 87462.2,
+        "revenue365UsdM": 695.09,
+        "revenue90UsdM": 138.67,
+        "holders365UsdM": 695.09,
+        "holders90UsdM": 138.67,
+        "asOf": "2026-09-20"
+      }
     },
     {
       "slug": "trade-xyz",
@@ -327,7 +340,20 @@
       },
       "logo": "/logos/lighter.png",
       "activity": "perps",
-      "priority": 1
+      "priority": 1,
+      "valuation": {
+        "coingeckoId": "lighter",
+        "defillamaSlug": "lighter",
+        "note": "手数料の100%で買い戻し、2026年7月から全量バーン。2026-12-27から関係者分5億LITの解放が始まる。",
+        "priceUsd": 4.72,
+        "marketCapUsdM": 1180.7,
+        "fdvUsdM": 4722.7,
+        "revenue365UsdM": 61.11,
+        "revenue90UsdM": 8.76,
+        "holders365UsdM": 28.07,
+        "holders90UsdM": 7.11,
+        "asOf": "2026-09-20"
+      }
     },
     {
       "slug": "extended",
@@ -955,6 +981,19 @@
         "reward": "DAO投票の参加者に四半期ごと5,000万JUPを配分",
         "apy": "年率18〜20%（推定）",
         "note": "Active Staking Rewards（ASR）。年率は2026年Q2のコミュニティ推定で、公式の数値ではない。アンステークの待機期間は7日。投票に参加しないと受け取れない。"
+      },
+      "valuation": {
+        "coingeckoId": "jupiter-exchange-solana",
+        "defillamaSlug": "jupiter",
+        "note": "収益の50%でJUPを市場から買い戻し、3年ロックする（バーンではない）。未流通分が多く、時価総額ベースより倍率が高く出る。",
+        "priceUsd": 0.271468,
+        "marketCapUsdM": 901.1,
+        "fdvUsdM": 1862.7,
+        "revenue365UsdM": 89.32,
+        "revenue90UsdM": 16.15,
+        "holders365UsdM": 44.65,
+        "holders90UsdM": 8.07,
+        "asOf": "2026-09-20"
       }
     },
     {
@@ -1044,6 +1083,19 @@
         "token": "MET",
         "reward": "DLMMの手数料の一部をUSDCで受け取る（APY非公表）",
         "note": "2026-07-26開始。2026-08-13時点で2,442人が7,000万METをステーク。"
+      },
+      "valuation": {
+        "coingeckoId": "meteora",
+        "defillamaSlug": "meteora",
+        "note": "買い戻しは任意で、2025年Q4の$10Mのあと2026年Q1は約$1M、直近90日はDefiLlama上ゼロ。チームと準備金が毎月約720万MET解放される。",
+        "priceUsd": 0.249759,
+        "marketCapUsdM": 137.8,
+        "fdvUsdM": 249.2,
+        "revenue365UsdM": 47.34,
+        "revenue90UsdM": 6.51,
+        "holders365UsdM": 13.66,
+        "holders90UsdM": 0.0,
+        "asOf": "2026-09-20"
       }
     },
     {
@@ -1107,7 +1159,20 @@
       "updatedAt": "2026-09-20",
       "logo": "/logos/stonk.png",
       "activity": "hold",
-      "priority": 2
+      "priority": 2,
+      "valuation": {
+        "coingeckoId": "stonk-3",
+        "defillamaSlug": "stonkfun",
+        "note": "手数料の約60%でSTONKを買い戻してバーンする設計（報道）。稼働から約2か月で、直近の収益ペースは長期の実力を示さない可能性が高い。",
+        "priceUsd": 0.287993,
+        "marketCapUsdM": 239.8,
+        "fdvUsdM": 239.8,
+        "revenue365UsdM": 14.77,
+        "revenue90UsdM": 14.77,
+        "holders365UsdM": 7.04,
+        "holders90UsdM": 7.04,
+        "asOf": "2026-09-20"
+      }
     },
     {
       "slug": "xstocks",

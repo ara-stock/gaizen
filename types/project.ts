@@ -85,6 +85,21 @@ export interface Project {
     baseKind: 'company HQ' | 'founder base' | 'unverified'
     background?: string
   }
+  /** Filled by scripts/fetch-valuation.py. All amounts in USD millions. */
+  valuation?: {
+    coingeckoId: string
+    defillamaSlug: string
+    note?: string
+    priceUsd?: number
+    marketCapUsdM?: number
+    fdvUsdM?: number
+    revenue365UsdM?: number | null
+    revenue90UsdM?: number | null
+    /** Revenue passed to holders through buybacks, burns or distributions. */
+    holders365UsdM?: number | null
+    holders90UsdM?: number | null
+    asOf?: string
+  }
   flags: string[]
   links: {
     site: string
