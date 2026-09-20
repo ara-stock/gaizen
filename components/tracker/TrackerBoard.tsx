@@ -155,6 +155,9 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
       <span>
         <span className="font-mono tabular-nums font-semibold" style={{ color: cheap ? 'var(--accent)' : undefined }}>{formatMultiple(m.trailing)}</span>
         <span className="block text-xs font-mono tabular-nums" style={muted}>直近 {formatMultiple(m.runRate)}</span>
+        {m.atEntry !== null && (
+          <span className="block text-xs font-mono tabular-nums" style={{ color: m.atEntry <= CHEAP_MULTIPLE ? 'var(--accent)' : 'var(--muted)' }}>取得時 {formatMultiple(m.atEntry)}</span>
+        )}
       </span>
     )
   }

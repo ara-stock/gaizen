@@ -78,9 +78,9 @@
         "coingeckoId": "hyperliquid",
         "defillamaSlug": "hyperliquid",
         "note": "手数料の約97%をAssistance Fundで買い戻し、バーン扱い。FDVに対しては高い倍率。",
-        "priceUsd": 91.55,
-        "marketCapUsdM": 20365.8,
-        "fdvUsdM": 87462.2,
+        "priceUsd": 91.27,
+        "marketCapUsdM": 20294.8,
+        "fdvUsdM": 87157.1,
         "revenue365UsdM": 695.09,
         "revenue90UsdM": 138.67,
         "holders365UsdM": 695.09,
@@ -345,9 +345,9 @@
         "coingeckoId": "lighter",
         "defillamaSlug": "lighter",
         "note": "手数料の100%で買い戻し、2026年7月から全量バーン。2026-12-27から関係者分5億LITの解放が始まる。",
-        "priceUsd": 4.72,
-        "marketCapUsdM": 1180.7,
-        "fdvUsdM": 4722.7,
+        "priceUsd": 4.69,
+        "marketCapUsdM": 1173.7,
+        "fdvUsdM": 4694.7,
         "revenue365UsdM": 61.11,
         "revenue90UsdM": 8.76,
         "holders365UsdM": 28.07,
@@ -986,9 +986,9 @@
         "coingeckoId": "jupiter-exchange-solana",
         "defillamaSlug": "jupiter",
         "note": "収益の50%でJUPを市場から買い戻し、3年ロックする（バーンではない）。未流通分が多く、時価総額ベースより倍率が高く出る。",
-        "priceUsd": 0.271468,
-        "marketCapUsdM": 901.1,
-        "fdvUsdM": 1862.7,
+        "priceUsd": 0.269165,
+        "marketCapUsdM": 893.7,
+        "fdvUsdM": 1847.5,
         "revenue365UsdM": 89.32,
         "revenue90UsdM": 16.15,
         "holders365UsdM": 44.65,
@@ -1002,7 +1002,7 @@
       "category": "DeFi",
       "chain": "Solana",
       "status": "active",
-      "statusNote": "METをステーキングしている。",
+      "statusNote": "METをステーキングしている。取得価格は$0.20以下。",
       "token": {
         "launched": true,
         "ticker": "MET",
@@ -1088,14 +1088,15 @@
         "coingeckoId": "meteora",
         "defillamaSlug": "meteora",
         "note": "買い戻しは任意で、2025年Q4の$10Mのあと2026年Q1は約$1M、直近90日はDefiLlama上ゼロ。チームと準備金が毎月約720万MET解放される。",
-        "priceUsd": 0.249759,
-        "marketCapUsdM": 137.8,
-        "fdvUsdM": 249.2,
+        "priceUsd": 0.248566,
+        "marketCapUsdM": 137.1,
+        "fdvUsdM": 248.0,
         "revenue365UsdM": 47.34,
         "revenue90UsdM": 6.51,
         "holders365UsdM": 13.66,
         "holders90UsdM": 0.0,
-        "asOf": "2026-09-20"
+        "asOf": "2026-09-20",
+        "entryPriceUsd": 0.2
       }
     },
     {
@@ -1164,9 +1165,9 @@
         "coingeckoId": "stonk-3",
         "defillamaSlug": "stonkfun",
         "note": "手数料の約60%でSTONKを買い戻してバーンする設計（報道）。稼働から約2か月で、直近の収益ペースは長期の実力を示さない可能性が高い。",
-        "priceUsd": 0.287993,
-        "marketCapUsdM": 239.8,
-        "fdvUsdM": 239.8,
+        "priceUsd": 0.288514,
+        "marketCapUsdM": 240.8,
+        "fdvUsdM": 240.8,
         "revenue365UsdM": 14.77,
         "revenue90UsdM": 14.77,
         "holders365UsdM": 7.04,
@@ -1566,6 +1567,97 @@
           "title": "Tech Funding News - Theo $100M Genesis Vault",
           "url": "https://techfundingnews.com/theo-100m-genesis-vault-thusd-gold-stablecoin/",
           "date": "2026-03"
+        }
+      ],
+      "updatedAt": "2026-09-20"
+    },
+    {
+      "slug": "etherfi",
+      "name": "ether.fi",
+      "logo": "/logos/etherfi.jpg",
+      "category": "DeFi",
+      "activity": "hold",
+      "priority": 2,
+      "chain": "Ethereum",
+      "status": "watching",
+      "statusNote": "まだ保有していない。買い戻しの仕組みと希薄化の小ささから、割安になれば拾いたい銘柄として監視している。",
+      "token": {
+        "launched": true,
+        "ticker": "ETHFI",
+        "tgeDate": "2024-03-18",
+        "tgeSourceType": "official"
+      },
+      "points": {
+        "exists": false,
+        "status": "ポイント目的の対象ではない。"
+      },
+      "phase": "none",
+      "phaseNote": "買い戻したETHFIをステーカーに配る仕組み。供給の約97%が流通済みで、今後の希薄化は小さい",
+      "audience": {
+        "xHandle": "ether_fi",
+        "xFollowers": 202177,
+        "asOf": "2026-09-20"
+      },
+      "funding": {
+        "totalUsdM": 27,
+        "rounds": "2024-02-28にシリーズA $23M（Bullish Capital、CoinFund主導）。2023年末にSAFEで$4M。",
+        "investors": [
+          "Bullish Capital",
+          "CoinFund",
+          "OKX Ventures",
+          "Foresight Ventures",
+          "Consensys",
+          "Amber"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Mike Silagadze（CEO）"
+        ],
+        "doxxed": true,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "リキッド・リステーキング（eETH）から、運用（Liquid）とカード（Cash）へ事業を広げている。"
+      },
+      "valuation": {
+        "coingeckoId": "ether-fi",
+        "defillamaSlug": "ether.fi",
+        "note": "eETHの出金手数料の100%を毎週、Stake・Liquid・Cashの収益の一部を毎月の買い戻しに充て、買い戻したETHFIはバーンせずステーカー（sETHFI）に配る。価格が$3未満の間は財団が最大$50Mまで買い戻せる。DefiLlama上は直近90日の保有者還元がゼロと出ており、公式の説明と食い違うため、実額は公式のDuneダッシュボードで要確認。",
+        "priceUsd": 0.694617,
+        "marketCapUsdM": 670.3,
+        "fdvUsdM": 670.3,
+        "revenue365UsdM": 46.16,
+        "revenue90UsdM": 9.46,
+        "holders365UsdM": 9.86,
+        "holders90UsdM": 0.0,
+        "asOf": "2026-09-20"
+      },
+      "flags": [
+        "買い戻しはバーンではなくステーカーへの分配で、供給量は減らない。",
+        "DefiLlamaの集計では直近90日の保有者還元がゼロで、公式説明と一致していない。",
+        "収益はETHのステーキング需要と金利環境に左右される。"
+      ],
+      "links": {
+        "site": "https://www.ether.fi/"
+      },
+      "sources": [
+        {
+          "title": "ether.fi Governance - ETHFI Buyback Program",
+          "url": "https://etherfi.gitbook.io/gov/ethfi-buyback-program"
+        },
+        {
+          "title": "The Block - Ether.fi DAO proposes $50 million ETHFI buyback",
+          "url": "https://www.theblock.co/post/377106/ether-fi-dao-proposes-50-million-ethfi-buyback-as-defis-repurchase-wave-tops-1-4-billion",
+          "date": "2025-10"
+        },
+        {
+          "title": "CoinDesk - Ether.Fi raises $23M Series A",
+          "url": "https://www.coindesk.com/business/2024/02/28/liquid-restaking-protocol-etherfi-raises-23m-series-a",
+          "date": "2024-02-28"
+        },
+        {
+          "title": "Dune - ETHFI Buybacks & Protocol Revenue Sources",
+          "url": "https://dune.com/ether_fi/ethfi-buybacks-and-protocol-revenue-sources"
         }
       ],
       "updatedAt": "2026-09-20"

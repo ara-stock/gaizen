@@ -102,6 +102,12 @@ export default async function ProjectPage({ params }: Props) {
               <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>過去365日の収益 {v.revenue365UsdM ? formatUsdM(v.revenue365UsdM) : '—'}</span>
               <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>直近90日×4では {formatMultiple(multiples.runRate)}（年換算 {v.revenue90UsdM ? formatUsdM(v.revenue90UsdM * 4) : '—'}）</span>
             </Row>
+            {multiples.atEntry !== null && (
+              <Row label="筆者の取得価格で">
+                <span className="font-mono font-semibold" style={{ color: multiples.atEntry <= CHEAP_MULTIPLE ? 'var(--accent)' : undefined }}>{formatMultiple(multiples.atEntry)}</span>
+                <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>取得価格 ${v.entryPriceUsd} 以下 → FDV換算 {formatUsdM((v.fdvUsdM! * v.entryPriceUsd!) / v.priceUsd!)}（収益は現在の過去365日の値）</span>
+              </Row>
+            )}
             <Row label="FDV ÷ 保有者還元">
               <span className="font-mono">{formatMultiple(multiples.holdersRunRate)}</span>
               <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>直近90日の買い戻し・バーン・分配 {v.holders90UsdM ? formatUsdM(v.holders90UsdM) : 'なし'}（×4で年換算）</span>
