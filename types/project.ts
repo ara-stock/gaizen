@@ -90,6 +90,8 @@ export interface Project {
     coingeckoId: string
     defillamaSlug: string
     note?: string
+    /** Author's average purchase price, used to show the multiple at cost. */
+    entryPriceUsd?: number
     priceUsd?: number
     marketCapUsdM?: number
     fdvUsdM?: number

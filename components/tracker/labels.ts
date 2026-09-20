@@ -118,6 +118,8 @@ export interface Multiples {
   runRate: number | null
   /** FDV ÷ (holders' revenue, last 90 days × 4). */
   holdersRunRate: number | null
+  /** FDV at the author's purchase price ÷ trailing 365-day revenue. */
+  atEntry: number | null
 }
 
 export function fdvMultiples(p: Project): Multiples | null {
@@ -128,6 +130,7 @@ export function fdvMultiples(p: Project): Multiples | null {
     trailing: ratio(v.revenue365UsdM),
     runRate: ratio((v.revenue90UsdM ?? 0) * 4),
     holdersRunRate: ratio((v.holders90UsdM ?? 0) * 4),
+    atEntry: v.entryPriceUsd && v.priceUsd && v.revenue365UsdM ? (v.fdvUsdM * v.entryPriceUsd) / v.priceUsd / v.revenue365UsdM : null,
   }
 }
 
