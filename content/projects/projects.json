@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20",
+  "updatedAt": "2026-09-22",
   "projects": [
     {
       "slug": "hyperliquid",
@@ -1661,6 +1661,112 @@
         }
       ],
       "updatedAt": "2026-09-20"
+    },
+    {
+      "slug": "hibachi",
+      "name": "Hibachi",
+      "logo": "/logos/hibachi.png",
+      "category": "Perp DEX",
+      "activity": "perps",
+      "priority": 1,
+      "chain": "オフチェーン板＋ZK決済（入金は Arbitrum / Base / Arc）",
+      "status": "active",
+      "statusNote": "主力として組み込みを進めている。メイカー手数料が0で、両建ての carry と相性がよい。",
+      "token": {
+        "launched": false,
+        "ticker": "HEAT",
+        "tgeExpectation": "時期未定",
+        "tgeSourceType": "media"
+      },
+      "points": {
+        "exists": true,
+        "name": "Hibachi Points（Playoffs）",
+        "status": "週100万ポイントを毎週月曜 03:00 UTC に配布。Regular Season は2026-04-30に終了し、現在は「Playoffs」。2026-04-27時点で週の配布先は約2,300人、累計発行5,150万pt。採点要素は出来高・OI・PnL・最大ドローダウン・手数料で、重みは非公開。",
+        "communityAllocation": "未発表"
+      },
+      "phase": "mid",
+      "phaseNote": "2シーズン目（Playoffs）。運営は「短くする」としており、TGE は Arc 上の FX 開始後との報道（二次情報）。",
+      "airdrop": {
+        "sharePct": 15,
+        "fdvUsdM": 200,
+        "estimated": true,
+        "basis": "トークンの供給・配分・評価額はすべて未発表。FDV $200M・配分15%は根拠のない仮置きで、情報が出たら差し替える。総ポイント数は2026-04-27の公式値5,150万に週100万を足した推計（約7,200万）だが、個人の受取額の試算には使っていない。"
+      },
+      "audience": {
+        "xHandle": "hibachi_xyz",
+        "xFollowers": 25878,
+        "asOf": "2026-09-22",
+        "users": "累計入金者 3.6万、週の配布先 約2,300人（2026-04）",
+        "usersSource": "Dune（コミュニティ製）/ 公式X 2026-04-27"
+      },
+      "funding": {
+        "totalUsdM": 5,
+        "rounds": "2025-03-19にシード$5M（Dragonfly主導、Electric Capital、Echo）。2026-02に Circle Ventures の Arc Builders Fund に参加（金額非開示）。",
+        "investors": [
+          "Dragonfly",
+          "Electric Capital",
+          "Echo",
+          "Circle Ventures"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Varun Kumar（共同創業者・CEO）",
+          "Chip Dempsey（共同創業者）"
+        ],
+        "doxxed": true,
+        "countryCode": "SG",
+        "base": "シンガポール",
+        "baseKind": "company HQ",
+        "background": "Varun Kumar は Hashflow の共同創業者。プレスリリースの所在地はニューヨーク。"
+      },
+      "flags": [
+        "板の照合はオフチェーンで、決済の正しさを ZK 証明で担保する方式。出金は証明のバッチ待ちで10〜30分かかる。",
+        "全銘柄 USDT 決済。USDC を入れると約0.9992で換算される。",
+        "メール登録の口座は取引所が鍵を持って代理署名する。自分で鍵を持ちたい場合はウォレット登録にする。",
+        "洗い取引・複数口座・相場操縦は「失格または調整」と明記。ポイントの重みは非公開。",
+        "HEAT のコントラクト（GitHub 公開）には口座単位の凍結権限と追加発行権限がある。",
+        "FX は 24/5 で、金曜17:00 ET〜日曜17:00 ET は停止。",
+        "監査は Hexens と Quantstamp。Immunefi の対象は API のみ（最大$2万）。",
+        "利用規約で米国・英国は利用不可。"
+      ],
+      "links": {
+        "site": "https://hibachi.xyz/",
+        "referral": "https://hibachi.xyz/r/ara_stock"
+      },
+      "sources": [
+        {
+          "title": "Hibachi docs - Hibachi Points",
+          "url": "https://docs.hibachi.xyz/hibachi-rewards/hibachi-points",
+          "date": "2026-09-22閲覧"
+        },
+        {
+          "title": "Hibachi docs - Fees",
+          "url": "https://docs.hibachi.xyz/hibachi-docs/trading/fees",
+          "date": "2026-09-22閲覧"
+        },
+        {
+          "title": "Hibachi on X - last week of the Regular Season",
+          "url": "https://x.com/hibachi_xyz/status/2048822266553614631",
+          "date": "2026-04-27"
+        },
+        {
+          "title": "Arc blog - How Hibachi is bringing FX price discovery to Arc",
+          "url": "https://www.arc.io/blog/how-hibachi-is-bringing-fx-price-discovery-to-arc",
+          "date": "2026-07-29"
+        },
+        {
+          "title": "GitHub - hibachi-xyz/heat",
+          "url": "https://github.com/hibachi-xyz/heat",
+          "date": "2026-08"
+        },
+        {
+          "title": "Immunefi - Hibachi bug bounty",
+          "url": "https://immunefi.com/bug-bounty/hibachi/information/",
+          "date": "2026-09-22閲覧"
+        }
+      ],
+      "updatedAt": "2026-09-22"
     }
   ]
 }
