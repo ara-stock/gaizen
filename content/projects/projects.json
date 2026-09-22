@@ -1767,6 +1767,80 @@
         }
       ],
       "updatedAt": "2026-09-22"
+    },
+    {
+      "slug": "jumper",
+      "name": "Jumper Perps",
+      "logo": "/logos/jumper.webp",
+      "category": "Perp アグリゲーター",
+      "activity": "perps",
+      "priority": 2,
+      "chain": "Perp DEX 集約（LI.FI 系）",
+      "status": "active",
+      "statusNote": "ウェイトリストに登録済み。Perp の提供開始を待っている。",
+      "token": {
+        "launched": false,
+        "ticker": "JUMP",
+        "tgeExpectation": "セール予定",
+        "tgeSourceType": "official"
+      },
+      "points": {
+        "exists": true,
+        "name": "Jumper Loyalty Pass（XP）／Perps ウェイトリスト",
+        "status": "Loyalty Pass の XP は常設プログラムで、ブリッジ・スワップなどの利用で貯まる。Perps はウェイトリスト中で、X 連携・紹介・リーダーボードで順位が決まる（詳細は公開前）。",
+        "communityAllocation": "未発表。JUMP のトークンセールのみ告知されており、XP 保有者へのエアドロップは公式に明言されていない。"
+      },
+      "phase": "early",
+      "phaseNote": "2026-09-22 に LI.FI からの独立と JUMP のトークンセール（Legion）を発表。Jumper Perps は「数週間以内に開始」とされ、現在はウェイトリスト段階。",
+      "funding": {
+        "totalUsdM": 51.7,
+        "rounds": "母体の LI.FI の累計調達。2022年7月シード $5.5M（1kx）、2023年3月シリーズA $17.5M（CoinFund・Superscrypt）、2025年12月シリーズA延長 $29M（Multicoin・CoinFund）。独立後の Jumper は株式調達を行わず、JUMP のトークンセールで資金を集める方針。",
+        "investors": [
+          "Multicoin Capital",
+          "CoinFund",
+          "1kx",
+          "Superscrypt"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Marko Jurina（CEO）"
+        ],
+        "doxxed": true,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "LI.FI の消費者向けアプリとして生まれ、2026-09 に独立。ブリッジ集約で累計 $400億超、月間利用者10万人超、ブリッジ集約のシェア15%超（公式発表）。"
+      },
+      "flags": [
+        "Perps は未公開で、どの取引所を集約するか・手数料・ポイントの付き方は未発表。",
+        "集約アプリなので、実際の取引は下の取引所（Hyperliquid など）で行われる。手数料が上乗せされる可能性がある。",
+        "Loyalty Pass の XP 保有者へのエアドロップは公式に約束されていない。XP は約277万ウォレットに付与済み（第三者の集計）で、薄まりやすい。"
+      ],
+      "links": {
+        "site": "https://jumper.xyz/",
+        "referral": "https://waitlist.jumper.xyz/r/JMP-174E2616"
+      },
+      "sources": [
+        {
+          "title": "GlobeNewswire - Jumper to Launch JUMP Token Sale on Legion as it Spins Out",
+          "url": "https://www.globenewswire.com/news-release/2026/09/22/3366401/0/en/jumper-to-launch-jump-token-sale-on-legion-as-it-spins-out-to-build-the-super-app-for-onchain-finance.html",
+          "date": "2026-09-22"
+        },
+        {
+          "title": "The Block - Multicoin leads LI.FI $29M Series A extension",
+          "url": "https://www.theblock.co/post/382242/multicoin-joins-as-lead-investor-in-li-fis-29-million-series-a-extension-round",
+          "date": "2025-12"
+        },
+        {
+          "title": "TheStreet - Jumper Exchange Expands Perpetuals Routing Across HyperEVM, Hyperliquid, Base, and BNB Chain",
+          "url": "https://www.thestreet.com/crypto/press-releases/jumper-exchange-expands-perpetuals-routing-across-hyperevm-hyperliquid-base-and-bnb-chain"
+        },
+        {
+          "title": "CoinGecko Learn - Jumper Loyalty Pass XP",
+          "url": "https://www.coingecko.com/learn/what-is-jumper-potential-jumper-airdrop"
+        }
+      ],
+      "updatedAt": "2026-09-22"
     }
   ]
 }
