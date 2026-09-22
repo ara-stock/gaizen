@@ -43,7 +43,7 @@ export default function AirdropEstimate({ project }: { project: Project }) {
       <dl className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-5">
         {([
           ['FDVの想定', airdrop.fdvUsdM ? formatUsdM(airdrop.fdvUsdM) : '—'],
-          ['エアドロ配分', airdrop.sharePct ? `${airdrop.sharePct}%` : '—'],
+          ['エアドロップ配分', airdrop.sharePct ? `${airdrop.sharePct}%` : '—'],
           ['配布総額の見込み', formatUsdM(pool)],
           ['1ポイントあたり', perPoint === null ? '—' : `$${perPoint < 1 ? perPoint.toPrecision(3) : perPoint.toFixed(2)}`],
         ] as const).map(([label, value]) => (
@@ -74,7 +74,7 @@ export default function AirdropEstimate({ project }: { project: Project }) {
         {airdrop.totalPoints && `（発行済みポイント ${airdrop.totalPoints.toLocaleString('en-US')}、${airdrop.totalPointsAsOf}時点）`}
       </p>
       <p className="text-xs leading-relaxed mt-2" style={muted}>
-        配布総額 = FDVの想定 × エアドロ配分。1ポイントの価値は現時点の発行済みポイントで割っているため、今後ポイントが増えるほど下がります。
+        配布総額 = FDVの想定 × エアドロップ配分。1ポイントの価値は現時点の発行済みポイントで割っているため、今後ポイントが増えるほど下がります。
         配分方法・ロック・シビル判定によって実際の受取額は大きく変わります。入力したポイントはこのブラウザにだけ保存されます。
       </p>
     </div>

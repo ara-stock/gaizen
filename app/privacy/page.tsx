@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'プライバシーポリシー',
+  title: 'Privacy',
   description: 'GAIZEN FINANCEのプライバシーポリシー。ローカルストレージの利用、アクセス解析、個人情報の取り扱いについて説明します。',
   alternates: { canonical: 'https://gaizen.xyz/privacy/' },
 }
@@ -11,7 +11,7 @@ export default function PrivacyPage() {
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
       <div className="mb-12">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>LEGAL</p>
-        <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>プライバシーポリシー</h1>
+        <h1 className="text-xl sm:text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>プライバシーポリシー</h1>
         <p className="text-xs" style={{ color: 'var(--muted)' }}>最終更新: 2026年7月</p>
       </div>
 

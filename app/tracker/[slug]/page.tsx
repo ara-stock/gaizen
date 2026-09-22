@@ -70,7 +70,7 @@ export default async function ProjectPage({ params }: Props) {
         <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
           <span className="inline-flex items-center gap-1.5">
             <span aria-hidden="true" className="w-2 h-2 rounded-full" style={{ backgroundColor: STATUS_COLOR[p.status] }} />
-            araの状況: {STATUS_LABEL[p.status]}
+            筆者の状況: {STATUS_LABEL[p.status]}
           </span>
           {phased && <PhaseMeter phase={p.phase} />}
           <span className="text-xs" style={{ color: 'var(--muted)' }}>最終更新: {p.updatedAt}</span>

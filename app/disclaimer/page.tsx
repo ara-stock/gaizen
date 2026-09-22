@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '免責事項',
+  title: 'Disclaimer',
   description: 'GAIZEN FINANCEの免責事項。投資助言ではない旨、情報の正確性、リスク、著作権、リンク先、リファラルリンクに関する注意事項を記載しています。',
   alternates: { canonical: 'https://gaizen.xyz/disclaimer/' },
 }
@@ -50,7 +50,7 @@ export default function DisclaimerPage() {
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
       <div className="mb-12">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>LEGAL</p>
-        <h1 className="text-3xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>免責事項</h1>
+        <h1 className="text-xl sm:text-2xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>免責事項</h1>
         <p className="text-xs" style={{ color: 'var(--muted)' }}>最終更新: 2026年6月</p>
       </div>
 

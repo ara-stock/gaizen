@@ -11,7 +11,7 @@ export default function ContactPage() {
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
       <div className="mb-12">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>CONTACT</p>
-        <h1 className="text-3xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>お問い合わせ</h1>
+        <h1 className="text-xl sm:text-2xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>お問い合わせ</h1>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>
           掲載内容に関するご意見・ご質問はSNSよりお気軽にどうぞ。
         </p>

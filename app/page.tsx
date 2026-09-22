@@ -4,8 +4,8 @@ import { getProjectsData } from '@/lib/projects'
 import TrackerBoard from '@/components/tracker/TrackerBoard'
 
 export const metadata: Metadata = {
-  title: { absolute: 'GAIZEN FINANCE | エアドロップ参加状況' },
-  description: '筆者が実際に触っている仮想通貨プロジェクトを、TGE時期・進み具合・エアドロップ受取見込み・VC調達額・Xフォロワー・運営拠点で一覧比較。参加のしかた別に、フェーズと受取見込みを一覧で確認できます。',
+  title: { absolute: 'GAIZEN FINANCE | Airdrop' },
+  description: '筆者が実際に参加している仮想通貨のエアドロップ・ポイントプログラムを、TGE時期・進み具合・受取見込み・VC調達額・Xフォロワー・運営拠点で一覧にしています。',
   alternates: { canonical: 'https://gaizen.xyz/' },
 }
 
@@ -15,10 +15,10 @@ export default function HomePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
       <div className="mb-6">
-        <h1 className="text-xl sm:text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>エアドロップ参加状況</h1>
+        <h1 className="text-xl sm:text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>Airdrop</h1>
         <p className="text-sm leading-relaxed max-w-3xl" style={{ color: 'var(--muted)' }}>
-          筆者が実際に触っている、または参加を検討しているプロジェクトの一覧です。調達額・チーム・TGE時期は公式発表と報道で確認し、
-          出典を各プロジェクトのページに載せています。受取見込みは「FDVの想定 × エアドロ配分」による機械的な試算です。
+          筆者が実際に参加している、または参加を検討しているエアドロップ・ポイントプログラムの一覧です。調達額・チーム・TGE時期は公式発表と報道で確認し、
+          出典を各プロジェクトのページに載せています。受取見込みは「FDVの想定 × エアドロップ配分」による機械的な試算です。
         </p>
         <p className="text-xs mt-3" style={{ color: 'var(--muted)' }}>最終更新: {updatedAt}</p>
       </div>
@@ -30,7 +30,7 @@ export default function HomePage() {
         <ul className="list-disc pl-5 space-y-1.5">
           <li>一覧は筆者の参加のしかた（Perp取引・DeFiレンディング・Staking・ポイント活動・ホールド）ごとに分けています。列の見出しを押すと並び替えできます。初期の並びは、紹介リンク・招待コードのあるものを上に、その中で筆者が主力として取り組んでいるもの（「主力」）を先にしています。「おすすめ外」は、イベント参加など限定的な理由で触っているだけのものです。</li>
           <li>Stakingとホールドの枠の「FDV÷収益」は、希薄化後の評価額を過去365日の収益で割った倍率です（下段は直近90日×4）。筆者は5倍以下を割安の目安にしており、該当するものは色を変えています。分母は利益ではなく収益です。</li>
-          <li>「推定」と付いたエアドロ規模は、未発表の評価額や配分を仮置きした数値です。根拠と仮置きの内容は各プロジェクトのページに書いています。</li>
+          <li>「推定」と付いたエアドロップ規模は、未発表の評価額や配分を仮置きした数値です。根拠と仮置きの内容は各プロジェクトのページに書いています。</li>
           <li>フェーズ（序盤・中盤・終盤）は、ポイントプログラムの経過期間とTGEまでの距離から筆者が判断したものです。根拠は各プロジェクトのページに書いています。</li>
           <li>Xフォロワー数は利用者規模の目安です。ボットや休眠アカウントを含むため、実際の利用者数とは一致しません。</li>
           <li>「始める」ボタンは紹介（リファラル）リンクです。登録や取引に応じて筆者が報酬を受け取る場合があります。掲載内容は報酬と連動させていません。</li>
