@@ -56,7 +56,7 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
-      <Link href="/" className="text-xs underline" style={{ color: 'var(--accent)' }}>← トラッカー一覧</Link>
+      <Link href="/" className="text-xs underline" style={{ color: 'var(--accent)' }}>← 一覧に戻る</Link>
 
       <header className="mt-4 mb-8">
         <p className="text-xs mb-2" style={{ color: 'var(--muted)' }}>

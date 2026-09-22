@@ -34,7 +34,7 @@ export default function PrivacyPage() {
           </p>
           <ul className="list-disc list-inside space-y-1 text-sm" style={{ color: 'var(--muted)' }}>
             <li>ローカルストレージによるテーマ設定（ダークモード/ライトモード）の保存</li>
-            <li>トラッカーで自分用に変更したステータスと、試算用に入力した保有ポイントの保存（外部には送信されません）</li>
+            <li>プロジェクト一覧で自分用に変更したステータスと、試算用に入力した保有ポイントの保存（外部には送信されません）</li>
           </ul>
           <p className="text-sm leading-relaxed mt-3" style={{ color: 'var(--muted)' }}>
             ブラウザの設定で無効にすることも可能ですが、その場合、テーマ設定やステータスの保存など一部機能が正常に動作しない場合があります。
