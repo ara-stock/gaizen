@@ -22,7 +22,7 @@ export default function PortfolioPage() {
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
       <div className="mb-12">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>PORTFOLIO</p>
-        <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>資産ポートフォリオ</h1>
+        <h1 className="text-xl sm:text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>資産ポートフォリオ</h1>
         <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs" style={{ color: 'var(--muted)' }}>
           <span>保有銘柄更新: {portfolio.updatedAt}</span>
           <span>資産配分基準日: {portfolio.allocationAsOf}</span>

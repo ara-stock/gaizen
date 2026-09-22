@@ -137,7 +137,7 @@ export default function SharpePage() {
 
   if (!raw) return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>ローリング・シャープレシオ</h1>
+      <h1 className="text-xl sm:text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>ローリング・シャープレシオ</h1>
       <p className="text-sm" style={{ color: 'var(--muted)' }}>読み込み中...</p>
     </div>
   )
@@ -147,7 +147,7 @@ export default function SharpePage() {
       <div className="mb-10">
         <Link href="/tools/" className="text-xs mb-4 block" style={{ color: 'var(--muted)' }}>← Tools に戻る</Link>
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>TOOLS</p>
-        <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>ローリング・シャープレシオ</h1>
+        <h1 className="text-xl sm:text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>ローリング・シャープレシオ</h1>
         <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
           直近12ヶ月のウィンドウを1ヶ月ずつスライドさせながらシャープレシオを連続計算し、その推移を折れ線グラフで表示します。
           値が高いほどリスクあたりのリターンが優れており、トレンドの変化から各銘柄のリスク効率の改善・悪化を読み取れます。データ更新: {raw.updatedAt}

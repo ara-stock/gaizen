@@ -3,8 +3,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '筆者について',
-  description: '個人投資家ara。株式の長期投資を続けながら、現在はPerp DEXやDeFiなど仮想通貨プロダクトを実際に触り、その参加状況を公開しています。',
+  title: 'About',
+  description: '個人投資家ara。株式の長期投資を続けながら、現在はPerp DEXやDeFiなど仮想通貨のエアドロップ・ポイントプログラムに参加し、その状況を公開しています。',
   alternates: { canonical: 'https://gaizen.xyz/about/' },
 }
 
@@ -22,7 +22,7 @@ export default function AboutPage() {
       <div className="flex items-center gap-5 mb-6">
         <Image src="/images/profile.jpg" width={72} height={72} alt="ara" className="rounded-full" />
         <div>
-          <h1 className="text-3xl font-bold">あら。/ ara</h1>
+          <h1 className="text-xl sm:text-2xl font-bold">あら。/ ara</h1>
           <p className="mt-2 text-sm text-muted leading-relaxed">株式の長期投資と、仮想通貨プロダクトの実践を続ける個人投資家。</p>
         </div>
       </div>

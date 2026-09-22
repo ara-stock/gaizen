@@ -63,7 +63,7 @@ export default function ThesisPage() {
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
       <div className="mb-12">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>THESIS / NOW</p>
-        <h1 className="text-3xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>現在注目しているテーマ</h1>
+        <h1 className="text-xl sm:text-2xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>現在注目しているテーマ</h1>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>
           長期的な視点で注目しているテーマの個人的な観測リスト。売買推奨ではありません。
         </p>

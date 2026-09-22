@@ -6,7 +6,7 @@ import { serializeJsonLd } from '@/lib/json-ld'
 
 const SITE_URL = 'https://gaizen.xyz'
 const SITE_NAME = 'GAIZEN FINANCE'
-const SITE_DESCRIPTION = '実際に触っている仮想通貨プロジェクトを、TGE時期・エアドロップ見込み・調達額・チームで一覧で比較する個人サイト。'
+const SITE_DESCRIPTION = '筆者が実際に参加している仮想通貨のエアドロップ・ポイントプログラムを、TGE時期・進み具合・受取見込み・調達額・チームで一覧にした個人サイト。'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

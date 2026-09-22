@@ -127,7 +127,7 @@ export default function AllocationSimulator() {
           ← Tools に戻る
         </Link>
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>TOOLS</p>
-        <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>ポートフォリオ配分シミュレーター</h1>
+        <h1 className="text-xl sm:text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>ポートフォリオ配分シミュレーター</h1>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>
           スライダーで配分を調整し、仮定したリターン・リスク・シャープレシオを比較できます。
         </p>

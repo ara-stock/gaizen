@@ -137,7 +137,7 @@ export default function FireSimulator() {
           ← Tools に戻る
         </Link>
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>TOOLS</p>
-        <h1 className="text-3xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>FIRE 資産推移シミュレーター</h1>
+        <h1 className="text-xl sm:text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>FIRE 資産推移シミュレーター</h1>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>積立と複利でいつFIREに到達するかを試算します。</p>
       </div>
 

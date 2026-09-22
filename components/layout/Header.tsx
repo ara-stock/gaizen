@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import { useState, useSyncExternalStore } from 'react'
 
 const NAV_LINKS = [
-  { href: '/', label: 'エアドロップ' },
+  { href: '/', label: 'Airdrop' },
   { href: '/portfolio/', label: '保有方針' },
   { href: '/tools/', label: '計算ツール' },
   { href: '/about/', label: '筆者について' },

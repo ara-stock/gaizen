@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   const contentLinks: [string, string][] = [
-    ['エアドロップ参加状況', '/'],
+    ['Airdrop', '/'],
     ['保有方針', '/portfolio/'],
     ['計算ツール', '/tools/'],
     ['紹介リンク一覧', '/referral/'],

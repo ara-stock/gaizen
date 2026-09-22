@@ -114,15 +114,15 @@ export default function ReferralPage() {
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
       <div className="mb-12">
         <p className="text-xs tracking-widest mb-2 font-semibold" style={{ color: 'var(--accent)' }}>REFERRAL</p>
-        <h1 className="text-3xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>リファラルまとめ</h1>
+        <h1 className="text-2xl font-bold mb-3" style={{ color: 'var(--foreground)' }}>紹介リンク一覧</h1>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>
-          利用経験または調査内容に基づいて掲載しているサービスのリファラルリンクです。
+          筆者が利用している、または調べたサービスの紹介（リファラル）リンクです。各プロジェクトの詳細は Airdrop のページにあります。
         </p>
       </div>
 
       <div className="mb-8 p-4 rounded-lg border text-xs leading-relaxed"
         style={{ backgroundColor: 'rgba(0,201,122,0.05)', borderColor: 'rgba(0,201,122,0.15)', color: 'var(--muted)' }}>
-        本ページにはリファラルリンクが含まれます。リンク経由の登録・利用により、読者または運営者に紹介特典・報酬が付与されることがあります。
+        本ページの各リンクは紹介リンクです。リンク経由の登録や取引に応じて、読者に特典が付き、筆者が報酬を受け取ることがあります。掲載内容は報酬と連動させていません。
         掲載サービスの利用・投資判断はご自身でご確認の上、自己責任でお願いします。
       </div>
 

@@ -21,7 +21,7 @@ const COLUMNS: { key?: SortKey; label: string; width?: number; align?: 'right' }
   { label: 'プロジェクト' },
   { key: 'phase', label: 'フェーズ', width: 124 },
   { key: 'tge', label: 'TGE', width: 150 },
-  { key: 'pool', label: 'エアドロ規模', width: 132, align: 'right' },
+  { key: 'pool', label: 'エアドロップ規模', width: 132, align: 'right' },
   { key: 'funding', label: 'VC調達額', width: 108, align: 'right' },
   { key: 'followers', label: 'Xフォロワー', width: 116, align: 'right' },
   { label: '拠点', width: 140 },
@@ -202,7 +202,7 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
           <option value="focus">おすすめ順</option>
           <option value="phase">フェーズが早い順</option>
           <option value="tge">TGEが近い順</option>
-          <option value="pool">エアドロ規模が大きい順</option>
+          <option value="pool">エアドロップ規模が大きい順</option>
           <option value="funding">調達額が多い順</option>
           <option value="followers">Xフォロワーが多い順</option>
         </select>
@@ -309,7 +309,7 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
                       ...(usesPhase(p) ? [
                         ['フェーズ', <PhaseMeter key="ph" phase={p.phase} />],
                         ['TGE', <TgeCell key="tge" project={p} />],
-                        ['エアドロ規模', airdropCell(p)],
+                        ['エアドロップ規模', airdropCell(p)],
                       ] as const : [
                         [p.activity === 'defi' ? '預ける資産' : 'トークン', tokenCell(p)],
                         [p.activity === 'hold' ? 'メモ' : '利回り・報酬', stakingCell(p)],
