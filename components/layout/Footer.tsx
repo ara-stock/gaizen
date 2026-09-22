@@ -3,10 +3,10 @@ import Link from 'next/link'
 export default function Footer() {
   const contentLinks: [string, string][] = [
     ['Airdrop', '/'],
-    ['保有方針', '/portfolio/'],
-    ['計算ツール', '/tools/'],
-    ['紹介リンク一覧', '/referral/'],
-    ['筆者について', '/about/'],
+    ['Portfolio', '/portfolio/'],
+    ['Tools', '/tools/'],
+    ['Referral', '/referral/'],
+    ['About', '/about/'],
   ]
 
   const legalLinks: [string, string][] = [
