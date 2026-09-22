@@ -4,7 +4,7 @@ import { getProjectsData } from '@/lib/projects'
 import TrackerBoard from '@/components/tracker/TrackerBoard'
 
 export const metadata: Metadata = {
-  title: { absolute: 'GAIZEN FINANCE | Projects' },
+  title: { absolute: 'GAIZEN FINANCE | エアドロップ参加状況' },
   description: '筆者が実際に触っている仮想通貨プロジェクトを、TGE時期・進み具合・エアドロップ受取見込み・VC調達額・Xフォロワー・運営拠点で一覧比較。参加のしかた別に、フェーズと受取見込みを一覧で確認できます。',
   alternates: { canonical: 'https://gaizen.xyz/' },
 }
@@ -15,7 +15,7 @@ export default function HomePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
       <div className="mb-6">
-        <h1 className="text-xl sm:text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>Projects</h1>
+        <h1 className="text-xl sm:text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>エアドロップ参加状況</h1>
         <p className="text-sm leading-relaxed max-w-3xl" style={{ color: 'var(--muted)' }}>
           筆者が実際に触っている、または参加を検討しているプロジェクトの一覧です。調達額・チーム・TGE時期は公式発表と報道で確認し、
           出典を各プロジェクトのページに載せています。受取見込みは「FDVの想定 × エアドロ配分」による機械的な試算です。
