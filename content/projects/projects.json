@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22",
+  "updatedAt": "2026-09-23",
   "projects": [
     {
       "slug": "hyperliquid",
@@ -78,14 +78,14 @@
         "coingeckoId": "hyperliquid",
         "defillamaSlug": "hyperliquid",
         "note": "手数料の約97%をAssistance Fundで買い戻し、バーン扱い。FDVに対しては高い倍率。",
-        "priceUsd": 91.27,
-        "marketCapUsdM": 20294.8,
-        "fdvUsdM": 87157.1,
-        "revenue365UsdM": 695.09,
-        "revenue90UsdM": 138.67,
-        "holders365UsdM": 695.09,
-        "holders90UsdM": 138.67,
-        "asOf": "2026-09-20"
+        "priceUsd": 97.37,
+        "marketCapUsdM": 21663.7,
+        "fdvUsdM": 93036.1,
+        "revenue365UsdM": 694.51,
+        "revenue90UsdM": 140.51,
+        "holders365UsdM": 694.51,
+        "holders90UsdM": 140.51,
+        "asOf": "2026-09-23"
       }
     },
     {
@@ -345,14 +345,14 @@
         "coingeckoId": "lighter",
         "defillamaSlug": "lighter",
         "note": "手数料の100%で買い戻し、2026年7月から全量バーン。2026-12-27から関係者分5億LITの解放が始まる。",
-        "priceUsd": 4.69,
-        "marketCapUsdM": 1173.7,
-        "fdvUsdM": 4694.7,
-        "revenue365UsdM": 61.11,
-        "revenue90UsdM": 8.76,
-        "holders365UsdM": 28.07,
-        "holders90UsdM": 7.11,
-        "asOf": "2026-09-20"
+        "priceUsd": 5.18,
+        "marketCapUsdM": 1296.9,
+        "fdvUsdM": 5187.6,
+        "revenue365UsdM": 61.65,
+        "revenue90UsdM": 9.04,
+        "holders365UsdM": 28.34,
+        "holders90UsdM": 7.15,
+        "asOf": "2026-09-23"
       }
     },
     {
@@ -986,14 +986,14 @@
         "coingeckoId": "jupiter-exchange-solana",
         "defillamaSlug": "jupiter",
         "note": "収益の50%でJUPを市場から買い戻し、3年ロックする（バーンではない）。未流通分が多く、時価総額ベースより倍率が高く出る。",
-        "priceUsd": 0.269165,
-        "marketCapUsdM": 893.7,
-        "fdvUsdM": 1847.5,
-        "revenue365UsdM": 89.32,
-        "revenue90UsdM": 16.15,
-        "holders365UsdM": 44.65,
-        "holders90UsdM": 8.07,
-        "asOf": "2026-09-20"
+        "priceUsd": 0.302015,
+        "marketCapUsdM": 1002.0,
+        "fdvUsdM": 2071.3,
+        "revenue365UsdM": 88.45,
+        "revenue90UsdM": 16.24,
+        "holders365UsdM": 44.22,
+        "holders90UsdM": 8.11,
+        "asOf": "2026-09-23"
       }
     },
     {
@@ -1088,14 +1088,14 @@
         "coingeckoId": "meteora",
         "defillamaSlug": "meteora",
         "note": "買い戻しは任意で、2025年Q4の$10Mのあと2026年Q1は約$1M、直近90日はDefiLlama上ゼロ。チームと準備金が毎月約720万MET解放される。",
-        "priceUsd": 0.248566,
-        "marketCapUsdM": 137.1,
-        "fdvUsdM": 248.0,
-        "revenue365UsdM": 47.34,
-        "revenue90UsdM": 6.51,
+        "priceUsd": 0.354175,
+        "marketCapUsdM": 195.3,
+        "fdvUsdM": 353.2,
+        "revenue365UsdM": 47.47,
+        "revenue90UsdM": 6.75,
         "holders365UsdM": 13.66,
         "holders90UsdM": 0.0,
-        "asOf": "2026-09-20",
+        "asOf": "2026-09-23",
         "entryPriceUsd": 0.2
       }
     },
@@ -1165,14 +1165,14 @@
         "coingeckoId": "stonk-3",
         "defillamaSlug": "stonkfun",
         "note": "手数料の約60%でSTONKを買い戻してバーンする設計（報道）。稼働から約2か月で、直近の収益ペースは長期の実力を示さない可能性が高い。",
-        "priceUsd": 0.288514,
-        "marketCapUsdM": 240.8,
-        "fdvUsdM": 240.8,
-        "revenue365UsdM": 14.77,
-        "revenue90UsdM": 14.77,
-        "holders365UsdM": 7.04,
-        "holders90UsdM": 7.04,
-        "asOf": "2026-09-20"
+        "priceUsd": 0.341347,
+        "marketCapUsdM": 281.2,
+        "fdvUsdM": 281.5,
+        "revenue365UsdM": 21.04,
+        "revenue90UsdM": 21.04,
+        "holders365UsdM": 10.38,
+        "holders90UsdM": 10.38,
+        "asOf": "2026-09-23"
       }
     },
     {
@@ -1623,14 +1623,14 @@
         "coingeckoId": "ether-fi",
         "defillamaSlug": "ether.fi",
         "note": "eETHの出金手数料の100%を毎週、Stake・Liquid・Cashの収益の一部を毎月の買い戻しに充て、買い戻したETHFIはバーンせずステーカー（sETHFI）に配る。価格が$3未満の間は財団が最大$50Mまで買い戻せる。DefiLlama上は直近90日の保有者還元がゼロと出ており、公式の説明と食い違うため、実額は公式のDuneダッシュボードで要確認。",
-        "priceUsd": 0.694617,
-        "marketCapUsdM": 670.3,
-        "fdvUsdM": 670.3,
-        "revenue365UsdM": 46.16,
-        "revenue90UsdM": 9.46,
+        "priceUsd": 0.710018,
+        "marketCapUsdM": 684.8,
+        "fdvUsdM": 684.8,
+        "revenue365UsdM": 45.97,
+        "revenue90UsdM": 9.56,
         "holders365UsdM": 9.86,
         "holders90UsdM": 0.0,
-        "asOf": "2026-09-20"
+        "asOf": "2026-09-23"
       },
       "flags": [
         "買い戻しはバーンではなくステーカーへの分配で、供給量は減らない。",
@@ -1841,6 +1841,86 @@
         }
       ],
       "updatedAt": "2026-09-22"
+    },
+    {
+      "slug": "astock",
+      "name": "ASTOCK（ArcStocks）",
+      "category": "RWA",
+      "activity": "hold",
+      "priority": 2,
+      "chain": "Arc（Circle）",
+      "status": "active",
+      "statusNote": "ASTOCK をホールドしている。",
+      "token": {
+        "launched": true,
+        "ticker": "ASTOCK",
+        "tgeDate": "2026-09",
+        "tgeSourceType": "media"
+      },
+      "points": {
+        "exists": false,
+        "status": "ポイントプログラムはない。"
+      },
+      "phase": "none",
+      "phaseNote": "ASTOCK の売買には4%（スワップ税3%＋プール手数料1%）がかかり、その90%が保有者へ株式の形で還元される設計。120分ごとにUSDCプールの1.5%で .arc トークンを1銘柄買い付け、保有量に応じて配分される（公式サイト）",
+      "audience": {
+        "xHandle": "TryArcStocks",
+        "xFollowers": 689,
+        "asOf": "2026-09-23"
+      },
+      "funding": {
+        "totalUsdM": null,
+        "rounds": "VCからの調達は確認できない。",
+        "investors": []
+      },
+      "team": {
+        "founders": [],
+        "doxxed": false,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "Arc 上で USDC を使って株式トークン（NVDA.arc、AAPL.arc など）を売買できる仕組み。裏付けとなるトークン化株式は Robinhood Chain 上の保管庫で1:1で保有されるとしている。"
+      },
+      "valuation": {
+        "coingeckoId": "arcstocks",
+        "note": "ASTOCK 自体は取引手数料の還元を受ける設計で、DefiLlama には未収載のため収益は取得できない。時価総額は流通量が未報告のため算出されず、FDV のみ表示している。",
+        "priceUsd": 0.00057684,
+        "marketCapUsdM": 0.0,
+        "fdvUsdM": 0.6,
+        "revenue365UsdM": null,
+        "revenue90UsdM": null,
+        "holders365UsdM": null,
+        "holders90UsdM": null,
+        "asOf": "2026-09-23"
+      },
+      "flags": [
+        "稼働からまだ1週間程度。Xアカウントの開設は2026-09-16、CoinGecko への掲載は2026-09-23。",
+        "FDV 約$58万と極めて小さく、値動きが激しい。史上最高値は2026-09-23で、取引を始めたばかり。",
+        "24時間の出来高の大半が Argus という1つのDEXに集中している。流動性が偏っている。",
+        "チーム・運営法人・監査の情報が確認できない。",
+        "裏付けの現物株は運営が Robinhood Chain 上の保管庫で管理するとしており、運営への信用リスクがある。",
+        "売買のたびに4%かかるため、短期の出入りには向かない。売却時は別途0.25%（保有中は無料）。"
+      ],
+      "links": {
+        "site": "https://arcstocks.app/"
+      },
+      "sources": [
+        {
+          "title": "ArcStocks 公式サイト",
+          "url": "https://arcstocks.app/",
+          "date": "2026-09-23閲覧"
+        },
+        {
+          "title": "CoinGecko - ArcStocks (ASTOCK)",
+          "url": "https://www.coingecko.com/en/coins/arcstocks",
+          "date": "2026-09-23"
+        },
+        {
+          "title": "Arc Explorer - ASTOCK トークン",
+          "url": "https://explorer.arc.io/token/0x4c9b47dbd5933aa4574b2c27f82419e4dbbd0222"
+        }
+      ],
+      "updatedAt": "2026-09-23",
+      "logo": "/logos/astock.jpg"
     }
   ]
 }

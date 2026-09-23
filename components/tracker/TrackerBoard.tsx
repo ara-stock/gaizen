@@ -149,7 +149,7 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
 
   const multipleCell = (p: Project) => {
     const m = fdvMultiples(p)
-    if (!m) return <span style={muted}>—</span>
+    if (!m || (m.trailing === null && m.runRate === null)) return <span style={muted}>—</span>
     const cheap = m.trailing !== null && m.trailing <= CHEAP_MULTIPLE
     return (
       <span>
