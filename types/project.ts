@@ -88,7 +88,8 @@ export interface Project {
   /** Filled by scripts/fetch-valuation.py. All amounts in USD millions. */
   valuation?: {
     coingeckoId: string
-    defillamaSlug: string
+    /** Omit when DefiLlama does not track the protocol's revenue. */
+    defillamaSlug?: string
     note?: string
     /** Author's average purchase price, used to show the multiple at cost. */
     entryPriceUsd?: number

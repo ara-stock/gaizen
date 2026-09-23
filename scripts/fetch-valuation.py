@@ -2,7 +2,8 @@
 """Refresh the `valuation` block of each project in content/projects/projects.json.
 
 FDV and market cap come from CoinGecko, revenue and holders' revenue from DefiLlama.
-Only projects that already carry `valuation.coingeckoId` and `valuation.defillamaSlug` are touched.
+Only projects that already carry `valuation.coingeckoId` are touched; revenue is skipped when
+there is no `defillamaSlug`.
 
 Usage: python3 scripts/fetch-valuation.py
 """
@@ -50,8 +51,9 @@ def main():
         if not market:
             print(f"{p['slug']}: not found on CoinGecko, skipped")
             continue
-        revenue = llama(v['defillamaSlug'], 'dailyRevenue')
-        holders = llama(v['defillamaSlug'], 'dailyHoldersRevenue')
+        slug = v.get('defillamaSlug')
+        revenue = llama(slug, 'dailyRevenue') if slug else []
+        holders = llama(slug, 'dailyHoldersRevenue') if slug else []
         v.update({
             'priceUsd': market['current_price'],
             'marketCapUsdM': round(market['market_cap'] / 1e6, 1),

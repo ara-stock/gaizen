@@ -95,28 +95,28 @@ export default async function ProjectPage({ params }: Props) {
           <dl>
             <Row label="FDV（希薄化後）">
               <span className="font-mono">{formatUsdM(v.fdvUsdM!)}</span>
-              <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>時価総額 {formatUsdM(v.marketCapUsdM!)}</span>
+              {v.marketCapUsdM ? <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>時価総額 {formatUsdM(v.marketCapUsdM)}</span> : null}
             </Row>
-            <Row label="FDV ÷ 収益">
+            {v.revenue365UsdM ? <Row label="FDV ÷ 収益">
               <span className="font-mono font-semibold" style={{ color: multiples.trailing !== null && multiples.trailing <= CHEAP_MULTIPLE ? 'var(--accent)' : undefined }}>{formatMultiple(multiples.trailing)}</span>
               <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>過去365日の収益 {v.revenue365UsdM ? formatUsdM(v.revenue365UsdM) : '—'}</span>
               <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>直近90日×4では {formatMultiple(multiples.runRate)}（年換算 {v.revenue90UsdM ? formatUsdM(v.revenue90UsdM * 4) : '—'}）</span>
-            </Row>
+            </Row> : null}
             {multiples.atEntry !== null && (
               <Row label="筆者の取得価格で">
                 <span className="font-mono font-semibold" style={{ color: multiples.atEntry <= CHEAP_MULTIPLE ? 'var(--accent)' : undefined }}>{formatMultiple(multiples.atEntry)}</span>
                 <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>取得価格 ${v.entryPriceUsd} 以下 → FDV換算 {formatUsdM((v.fdvUsdM! * v.entryPriceUsd!) / v.priceUsd!)}（収益は現在の過去365日の値）</span>
               </Row>
             )}
-            <Row label="FDV ÷ 保有者還元">
+            {v.holders90UsdM || v.holders365UsdM ? <Row label="FDV ÷ 保有者還元">
               <span className="font-mono">{formatMultiple(multiples.holdersRunRate)}</span>
               <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>直近90日の買い戻し・バーン・分配 {v.holders90UsdM ? formatUsdM(v.holders90UsdM) : 'なし'}（×4で年換算）</span>
-            </Row>
+            </Row> : null}
             {v.note && <Row label="補足">{v.note}</Row>}
           </dl>
           <p className="text-xs leading-relaxed mt-3" style={{ color: 'var(--muted)' }}>
-            {v.asOf}時点。FDVはCoinGecko、収益と保有者還元はDefiLlamaの数値です。分母は利益ではなく収益なので、株式のPERより売上倍率（PSR）に近い指標です。
-            筆者は「FDV÷収益が{CHEAP_MULTIPLE}倍以下」を割安の目安にしていますが、収益の変動やアンロックで大きく変わります。
+            {v.asOf}時点。FDVはCoinGecko、収益と保有者還元はDefiLlamaの数値です。
+            {v.revenue365UsdM ? `分母は利益ではなく収益なので、株式のPERより売上倍率（PSR）に近い指標です。筆者は「FDV÷収益が${CHEAP_MULTIPLE}倍以下」を割安の目安にしていますが、収益の変動やアンロックで大きく変わります。` : null}
           </p>
         </Section>
       )}
