@@ -5,7 +5,7 @@ import TrackerBoard from '@/components/tracker/TrackerBoard'
 
 export const metadata: Metadata = {
   title: { absolute: 'GAIZEN FINANCE | Airdrop' },
-  description: '筆者が実際に参加している仮想通貨のエアドロップ・ポイントプログラムを、TGE時期・進み具合・受取見込み・VC調達額・Xフォロワー・運営拠点で一覧にしています。',
+  description: '筆者が実際に参加している仮想通貨のエアドロップ・ポイントプログラムを、TGE時期・進み具合・VC調達額・Xフォロワー・運営拠点で一覧にしています。',
   alternates: { canonical: 'https://gaizen.xyz/' },
 }
 
@@ -18,7 +18,7 @@ export default function HomePage() {
         <h1 className="text-xl sm:text-2xl font-bold mb-2" style={{ color: 'var(--foreground)' }}>Airdrop</h1>
         <p className="text-sm leading-relaxed max-w-3xl" style={{ color: 'var(--muted)' }}>
           筆者が実際に参加している、または参加を検討しているエアドロップ・ポイントプログラムの一覧です。調達額・チーム・TGE時期は公式発表と報道で確認し、
-          出典を各プロジェクトのページに載せています。受取見込みは「FDVの想定 × エアドロップ配分」による機械的な試算です。
+          出典を各プロジェクトのページに載せています。
         </p>
         <p className="text-xs mt-3" style={{ color: 'var(--muted)' }}>最終更新: {updatedAt}</p>
       </div>
