@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23",
+  "updatedAt": "2026-09-28",
   "projects": [
     {
       "slug": "hyperliquid",
@@ -78,14 +78,14 @@
         "coingeckoId": "hyperliquid",
         "defillamaSlug": "hyperliquid",
         "note": "手数料の約97%をAssistance Fundで買い戻し、バーン扱い。FDVに対しては高い倍率。",
-        "priceUsd": 97.37,
-        "marketCapUsdM": 21663.7,
-        "fdvUsdM": 93036.1,
-        "revenue365UsdM": 694.51,
-        "revenue90UsdM": 140.51,
-        "holders365UsdM": 694.51,
-        "holders90UsdM": 140.51,
-        "asOf": "2026-09-23"
+        "priceUsd": 88.74,
+        "marketCapUsdM": 19761.1,
+        "fdvUsdM": 84865.3,
+        "revenue365UsdM": 687.91,
+        "revenue90UsdM": 142.29,
+        "holders365UsdM": 687.91,
+        "holders90UsdM": 142.29,
+        "asOf": "2026-09-28"
       }
     },
     {
@@ -345,14 +345,14 @@
         "coingeckoId": "lighter",
         "defillamaSlug": "lighter",
         "note": "手数料の100%で買い戻し、2026年7月から全量バーン。2026-12-27から関係者分5億LITの解放が始まる。",
-        "priceUsd": 5.18,
-        "marketCapUsdM": 1296.9,
-        "fdvUsdM": 5187.6,
-        "revenue365UsdM": 61.65,
-        "revenue90UsdM": 9.04,
-        "holders365UsdM": 28.34,
-        "holders90UsdM": 7.15,
-        "asOf": "2026-09-23"
+        "priceUsd": 4.38,
+        "marketCapUsdM": 1097.5,
+        "fdvUsdM": 4390.0,
+        "revenue365UsdM": 62.38,
+        "revenue90UsdM": 9.39,
+        "holders365UsdM": 28.77,
+        "holders90UsdM": 7.22,
+        "asOf": "2026-09-28"
       }
     },
     {
@@ -986,14 +986,14 @@
         "coingeckoId": "jupiter-exchange-solana",
         "defillamaSlug": "jupiter",
         "note": "収益の50%でJUPを市場から買い戻し、3年ロックする（バーンではない）。未流通分が多く、時価総額ベースより倍率が高く出る。",
-        "priceUsd": 0.302015,
-        "marketCapUsdM": 1002.0,
-        "fdvUsdM": 2071.3,
-        "revenue365UsdM": 88.45,
-        "revenue90UsdM": 16.24,
-        "holders365UsdM": 44.22,
-        "holders90UsdM": 8.11,
-        "asOf": "2026-09-23"
+        "priceUsd": 0.342627,
+        "marketCapUsdM": 1138.0,
+        "fdvUsdM": 2352.4,
+        "revenue365UsdM": 86.03,
+        "revenue90UsdM": 16.44,
+        "holders365UsdM": 43.01,
+        "holders90UsdM": 8.22,
+        "asOf": "2026-09-28"
       }
     },
     {
@@ -1088,14 +1088,14 @@
         "coingeckoId": "meteora",
         "defillamaSlug": "meteora",
         "note": "買い戻しは任意で、2025年Q4の$10Mのあと2026年Q1は約$1M、直近90日はDefiLlama上ゼロ。チームと準備金が毎月約720万MET解放される。",
-        "priceUsd": 0.354175,
-        "marketCapUsdM": 195.3,
-        "fdvUsdM": 353.2,
-        "revenue365UsdM": 47.47,
-        "revenue90UsdM": 6.75,
+        "priceUsd": 0.338484,
+        "marketCapUsdM": 188.7,
+        "fdvUsdM": 338.0,
+        "revenue365UsdM": 47.56,
+        "revenue90UsdM": 7.04,
         "holders365UsdM": 13.66,
         "holders90UsdM": 0.0,
-        "asOf": "2026-09-23",
+        "asOf": "2026-09-28",
         "entryPriceUsd": 0.2
       }
     },
@@ -1165,14 +1165,14 @@
         "coingeckoId": "stonk-3",
         "defillamaSlug": "stonkfun",
         "note": "手数料の約60%でSTONKを買い戻してバーンする設計（報道）。稼働から約2か月で、直近の収益ペースは長期の実力を示さない可能性が高い。",
-        "priceUsd": 0.341347,
-        "marketCapUsdM": 281.2,
-        "fdvUsdM": 281.5,
-        "revenue365UsdM": 21.04,
-        "revenue90UsdM": 21.04,
-        "holders365UsdM": 10.38,
-        "holders90UsdM": 10.38,
-        "asOf": "2026-09-23"
+        "priceUsd": 0.259384,
+        "marketCapUsdM": 211.3,
+        "fdvUsdM": 211.3,
+        "revenue365UsdM": 25.45,
+        "revenue90UsdM": 25.45,
+        "holders365UsdM": 12.76,
+        "holders90UsdM": 12.76,
+        "asOf": "2026-09-28"
       }
     },
     {
@@ -1623,14 +1623,14 @@
         "coingeckoId": "ether-fi",
         "defillamaSlug": "ether.fi",
         "note": "eETHの出金手数料の100%を毎週、Stake・Liquid・Cashの収益の一部を毎月の買い戻しに充て、買い戻したETHFIはバーンせずステーカー（sETHFI）に配る。価格が$3未満の間は財団が最大$50Mまで買い戻せる。DefiLlama上は直近90日の保有者還元がゼロと出ており、公式の説明と食い違うため、実額は公式のDuneダッシュボードで要確認。",
-        "priceUsd": 0.710018,
-        "marketCapUsdM": 684.8,
-        "fdvUsdM": 684.8,
-        "revenue365UsdM": 45.97,
-        "revenue90UsdM": 9.56,
-        "holders365UsdM": 9.86,
+        "priceUsd": 0.674917,
+        "marketCapUsdM": 652.3,
+        "fdvUsdM": 652.3,
+        "revenue365UsdM": 45.65,
+        "revenue90UsdM": 9.74,
+        "holders365UsdM": 9.66,
         "holders90UsdM": 0.0,
-        "asOf": "2026-09-23"
+        "asOf": "2026-09-28"
       },
       "flags": [
         "買い戻しはバーンではなくステーカーへの分配で、供給量は減らない。",
@@ -1850,7 +1850,7 @@
       "priority": 2,
       "chain": "Arc（Circle）",
       "status": "active",
-      "statusNote": "ASTOCK をホールドしている。株式そのものの売買手数料は0.25%と一般的な水準に収まっている一方、ASTOCK の売買には4%という高い手数料がかかり、その大半が保有者への株式配分に回る。「売買する人が保有する人を支える」設計と、持っているだけで株式が配られる点に妙味を感じて買った。気がかりなのは買い戻しとバーンが実装されていないことで、供給が減らない以上、還元は株式の配分だけに依存する。",
+      "statusNote": "ASTOCK をホールドしている（一部は利確済み）。株式そのものの売買手数料は0.25%と一般的な水準に収まっている一方、ASTOCK の売買には4%という高い手数料がかかり、その大半が保有者への株式配分に回る。「売買する人が保有する人を支える」設計と、持っているだけで株式が配られる点に妙味を感じて買った。気がかりなのは買い戻しとバーンが実装されていないことで、供給が減らない以上、還元は株式の配分だけに依存する。",
       "token": {
         "launched": true,
         "ticker": "ASTOCK",
@@ -1883,14 +1883,14 @@
       "valuation": {
         "coingeckoId": "arcstocks",
         "note": "ASTOCK は取引手数料の還元を受ける設計だが、還元はトークンの買い戻しではなく株式の現物配分で行われる。DefiLlama に未収載のため収益は取得できず、時価総額は流通量が未報告のため算出されない。表示は FDV のみ。",
-        "priceUsd": 0.00057684,
-        "marketCapUsdM": 0.0,
-        "fdvUsdM": 0.6,
+        "priceUsd": 0.00107318,
+        "marketCapUsdM": 1.0,
+        "fdvUsdM": 1.0,
         "revenue365UsdM": null,
         "revenue90UsdM": null,
         "holders365UsdM": null,
         "holders90UsdM": null,
-        "asOf": "2026-09-23"
+        "asOf": "2026-09-28"
       },
       "flags": [
         "買い戻しとバーンの仕組みがない。総供給10億枚で固定だが減らないため、手数料収入は保有者への株式配分に回るだけで、トークンの価格を直接は支えない。",
@@ -1920,8 +1920,180 @@
           "url": "https://explorer.arc.io/token/0x4c9b47dbd5933aa4574b2c27f82419e4dbbd0222"
         }
       ],
-      "updatedAt": "2026-09-23",
+      "updatedAt": "2026-09-28",
       "logo": "/logos/astock.jpg"
+    },
+    {
+      "slug": "hype",
+      "name": "HYPE",
+      "logo": "/logos/hyperliquid.png",
+      "category": "Perp DEX / L1",
+      "activity": "staking",
+      "priority": 2,
+      "chain": "独自L1（HyperCore + HyperEVM）",
+      "status": "active",
+      "statusNote": "HYPE を保有し、バリデータに委任してステーキングしている。取引所としての Hyperliquid は別の項目に載せている。",
+      "token": {
+        "launched": true,
+        "ticker": "HYPE",
+        "tgeDate": "2024-11-29",
+        "tgeSourceType": "official"
+      },
+      "points": {
+        "exists": false,
+        "status": "公式に稼働中のポイントプログラムはない。"
+      },
+      "phase": "none",
+      "staking": {
+        "token": "HYPE",
+        "apy": "年率2.2〜2.4%（変動）",
+        "reward": "バリデータへの委任でHYPEを受け取る（自動複利）",
+        "note": "報酬率は総ステーク量の平方根に反比例する設計で、4億HYPEがステークされた状態でおよそ年2.37%。報酬は毎分積み上がり毎日配分され、同じバリデータへ自動で再委任される。バリデータの手数料は1〜5%程度。アンステークは約7日の待ち行列があり、委任のロック1日と合わせて最大8日ほど動かせない。"
+      },
+      "audience": {
+        "xHandle": "HyperliquidX",
+        "xFollowers": 428252,
+        "asOf": "2026-09-28"
+      },
+      "funding": {
+        "totalUsdM": 0,
+        "rounds": "VCからの調達はなく、自己資金で運営されている。",
+        "investors": []
+      },
+      "team": {
+        "founders": [
+          "Jeff Yan"
+        ],
+        "doxxed": true,
+        "countryCode": "SG",
+        "base": "シンガポール",
+        "baseKind": "company HQ",
+        "background": "Jeff Yanは元Hudson River Tradingのクオンツ。共同創業者の1人は匿名。"
+      },
+      "valuation": {
+        "coingeckoId": "hyperliquid",
+        "defillamaSlug": "hyperliquid",
+        "note": "手数料の約97%をAssistance Fundでの買い戻しに充て、2025年12月のバリデータ投票でその保有分はバーン扱いとされた。供給上限は10億枚。未流通分が多く、FDVでは高い倍率になる。",
+        "priceUsd": 88.74,
+        "marketCapUsdM": 19761.1,
+        "fdvUsdM": 84865.3,
+        "revenue365UsdM": 687.91,
+        "revenue90UsdM": 142.29,
+        "holders365UsdM": 687.91,
+        "holders90UsdM": 142.29,
+        "asOf": "2026-09-28"
+      },
+      "flags": [
+        "ステーキングの利回りは変動し、保証されていない。総ステーク量が増えるほど下がる設計。",
+        "アンステークに約7日かかる。急な資金需要には応えられない。",
+        "2025年3月のJELLY相場操縦事件で、バリデータが上場廃止と強制決済を実施した前例がある。",
+        "2026年5月にCMEとICEが米規制当局に調査を促したと報道され、6月には英FCAが警告リストに追加した。"
+      ],
+      "links": {
+        "site": "https://hyperfoundation.org/"
+      },
+      "sources": [
+        {
+          "title": "Hyperliquid Docs - Staking",
+          "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/staking",
+          "date": "2026-09-28閲覧"
+        },
+        {
+          "title": "Staking Rewards - Hyperliquid (HYPE)",
+          "url": "https://www.stakingrewards.com/asset/hyperliquid",
+          "date": "2026-09-28"
+        },
+        {
+          "title": "Hyper Foundation on X - Assistance Fund の保有分をバーン扱いとする投票",
+          "url": "https://x.com/HyperFND/status/2003684257949188396",
+          "date": "2025-12"
+        }
+      ],
+      "updatedAt": "2026-09-28"
+    },
+    {
+      "slug": "cake",
+      "name": "CAKE（PancakeSwap）",
+      "logo": "/logos/cake.png",
+      "category": "DEX",
+      "activity": "staking",
+      "priority": 2,
+      "chain": "BNB Chain ほか",
+      "status": "active",
+      "statusNote": "CAKE を保有し、Syrup Pool でステーキングしている。",
+      "token": {
+        "launched": true,
+        "ticker": "CAKE",
+        "tgeDate": "2020-09",
+        "tgeSourceType": "media"
+      },
+      "points": {
+        "exists": false,
+        "status": "ポイントプログラムはない。"
+      },
+      "phase": "none",
+      "staking": {
+        "token": "CAKE",
+        "apy": "プールにより変動",
+        "reward": "Syrup Pool に預けて他トークンまたはCAKEを受け取る",
+        "note": "2025年4月の Tokenomics 3.0 で veCAKE・ゲージ投票・収益分配・ファームブーストは廃止された。現在の CAKE ステーキングは Syrup Pool（いつでも引き出せる柔軟型と、利回りが上がる期間固定型）で、利回りはプールごとに変動する。"
+      },
+      "audience": {
+        "xHandle": "PancakeSwap",
+        "xFollowers": 2127227,
+        "asOf": "2026-09-28"
+      },
+      "funding": {
+        "totalUsdM": null,
+        "rounds": "VCからの調達は開示されていない。",
+        "investors": []
+      },
+      "team": {
+        "founders": [],
+        "doxxed": false,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "開発チームは「Chef」名義の匿名。BNB Chain 最大のDEXで、Solana・Aptos・Monad にも展開している。"
+      },
+      "valuation": {
+        "coingeckoId": "pancakeswap-token",
+        "defillamaSlug": "pancakeswap",
+        "note": "排出は続いているがバーンがそれを上回る設計で、2025年の純減は8.19%、目標は年4%以上。2026年1月に最大供給を4.5億枚から4億枚へ引き下げた。ほぼ全量が流通しており、FDVと時価総額の差が小さい。",
+        "priceUsd": 2.7,
+        "marketCapUsdM": 1016.0,
+        "fdvUsdM": 1047.4,
+        "revenue365UsdM": 84.35,
+        "revenue90UsdM": 15.03,
+        "holders365UsdM": 55.27,
+        "holders90UsdM": 10.11,
+        "asOf": "2026-09-28"
+      },
+      "flags": [
+        "チームは匿名（「Chef」名義）。",
+        "収益が BNB Chain の出来高、とくにミームコインの活況に依存する。",
+        "2025年4月に veCAKE と収益分配が廃止され、保有者への還元はバーン中心に変わった。ステーキング報酬は Syrup Pool のプール次第。"
+      ],
+      "links": {
+        "site": "https://pancakeswap.finance/"
+      },
+      "sources": [
+        {
+          "title": "PancakeSwap Blog - Implementation of CAKE Tokenomics 3.0",
+          "url": "https://blog.pancakeswap.finance/articles/implementation-of-cake-tokenomics-3-0-what-you-need-to-know",
+          "date": "2025-04"
+        },
+        {
+          "title": "PancakeSwap Docs - Syrup Pools",
+          "url": "https://docs.pancakeswap.finance/earn/cake-staking/syrup-pool",
+          "date": "2026-09-28閲覧"
+        },
+        {
+          "title": "PancakeSwap Docs - CAKE Tokenomics",
+          "url": "https://docs.pancakeswap.finance/protocol/cake-tokenomics",
+          "date": "2026-09-28閲覧"
+        }
+      ],
+      "updatedAt": "2026-09-28"
     }
   ]
 }
