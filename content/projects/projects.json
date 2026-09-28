@@ -1775,7 +1775,7 @@
       "category": "Perp アグリゲーター",
       "activity": "perps",
       "priority": 2,
-      "chain": "Perp DEX 集約（LI.FI 系）",
+      "chain": "Perp DEX 集約",
       "status": "active",
       "statusNote": "ウェイトリストに登録済み。Perp の提供開始を待っている。",
       "token": {
@@ -1793,14 +1793,9 @@
       "phase": "early",
       "phaseNote": "2026-09-22 に LI.FI からの独立と JUMP のトークンセール（Legion）を発表。Jumper Perps は「数週間以内に開始」とされ、現在はウェイトリスト段階。",
       "funding": {
-        "totalUsdM": 51.7,
-        "rounds": "母体の LI.FI の累計調達。2022年7月シード $5.5M（1kx）、2023年3月シリーズA $17.5M（CoinFund・Superscrypt）、2025年12月シリーズA延長 $29M（Multicoin・CoinFund）。独立後の Jumper は株式調達を行わず、JUMP のトークンセールで資金を集める方針。",
-        "investors": [
-          "Multicoin Capital",
-          "CoinFund",
-          "1kx",
-          "Superscrypt"
-        ]
+        "totalUsdM": 0,
+        "rounds": "Jumper 自体は株式での調達を行わず、JUMP のトークンセール（Legion）だけで資金を集める方針。2026-09-22 まで LI.FI の一部門だった（LI.FI 自体は Multicoin・CoinFund などから累計$51.7Mを調達しているが、独立後の Jumper の資金ではない）。",
+        "investors": []
       },
       "team": {
         "founders": [
