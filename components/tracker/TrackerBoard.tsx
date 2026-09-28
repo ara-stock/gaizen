@@ -4,13 +4,13 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import type { Phase, Project, ProjectStatus } from '@/types/project'
 import {
-  ACTIVITY_COLOR, ACTIVITY_LABEL, ACTIVITY_ORDER, CHEAP_MULTIPLE, POINTS_STORAGE_KEY, STATUS_LABEL, STATUS_ORDER, STATUS_STORAGE_KEY,
-  airdropPoolUsdM, formatFollowers, formatFunding, formatUsd, formatUsdM,
-  fdvMultiples, formatMultiple, readStored, usdPerPoint,
+  ACTIVITY_COLOR, ACTIVITY_LABEL, ACTIVITY_ORDER, CHEAP_MULTIPLE, STATUS_LABEL, STATUS_ORDER, STATUS_STORAGE_KEY,
+  formatFollowers, formatFunding, formatUsdM,
+  fdvMultiples, formatMultiple, readStored,
 } from './labels'
 import { PhaseMeter, ProjectLogo, TgeCell } from './cells'
 
-type SortKey = 'focus' | 'phase' | 'tge' | 'pool' | 'funding' | 'followers'
+type SortKey = 'focus' | 'phase' | 'tge' | 'funding' | 'followers'
 type Tab = ProjectStatus | 'all'
 
 const TABS: Tab[] = [...STATUS_ORDER, 'all']
@@ -20,8 +20,7 @@ const PHASE_RANK: Record<Phase, number> = { early: 0, mid: 1, late: 2, none: 3, 
 const COLUMNS: { key?: SortKey; label: string; width?: number; align?: 'right' }[] = [
   { label: 'プロジェクト' },
   { key: 'phase', label: 'フェーズ', width: 124 },
-  { key: 'tge', label: 'TGE', width: 150 },
-  { key: 'pool', label: 'エアドロップ規模', width: 132, align: 'right' },
+  { key: 'tge', label: 'TGE', width: 170 },
   { key: 'funding', label: 'VC調達額', width: 108, align: 'right' },
   { key: 'followers', label: 'Xフォロワー', width: 116, align: 'right' },
   { label: '拠点', width: 140 },
@@ -48,16 +47,13 @@ function tgeSortValue(p: Project): string {
 
 export default function TrackerBoard({ projects }: { projects: Project[] }) {
   const [overrides, setOverrides] = useState<Record<string, ProjectStatus>>({})
-  const [myPoints, setMyPoints] = useState<Record<string, number>>({})
   const [tab, setTab] = useState<Tab>('active')
   const [query, setQuery] = useState('')
   const [sortKey, setSortKey] = useState<SortKey>('focus')
 
   useEffect(() => {
-    /* eslint-disable react-hooks/set-state-in-effect -- localStorage is only readable after mount */
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- localStorage is only readable after mount
     setOverrides(readStored<ProjectStatus>(STATUS_STORAGE_KEY))
-    setMyPoints(readStored<number>(POINTS_STORAGE_KEY))
-    /* eslint-enable react-hooks/set-state-in-effect */
   }, [])
 
   // A stored status from an older version of the page may no longer exist.
@@ -76,7 +72,6 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
       switch (sortKey) {
         case 'tge': return tgeSortValue(a).localeCompare(tgeSortValue(b))
         case 'funding': return (b.funding.totalUsdM ?? -1) - (a.funding.totalUsdM ?? -1)
-        case 'pool': return (airdropPoolUsdM(b) ?? -1) - (airdropPoolUsdM(a) ?? -1)
         case 'followers': return (b.audience?.xFollowers ?? -1) - (a.audience?.xFollowers ?? -1)
         case 'phase': return PHASE_RANK[a.phase] - PHASE_RANK[b.phase] || a.name.localeCompare(b.name)
         default: return focusOrder(a, b)
@@ -89,22 +84,6 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
 
   const muted = { color: 'var(--muted)' }
   const controlStyle = { backgroundColor: 'var(--surface)', borderColor: 'var(--border)', color: 'var(--foreground)' }
-
-  const airdropCell = (p: Project) => {
-    const pool = airdropPoolUsdM(p)
-    if (pool === null) return <span style={muted}>—</span>
-    const perPoint = usdPerPoint(p)
-    const mine = myPoints[p.slug]
-    return (
-      <span>
-        <span className="font-mono tabular-nums">{formatUsdM(pool)}</span>
-        {p.airdrop?.estimated && <span className="text-xs ml-1" style={muted}>推定</span>}
-        {perPoint !== null && mine ? (
-          <span className="block text-xs font-mono tabular-nums" style={{ color: 'var(--accent)' }}>自分 {formatUsd(perPoint * mine)}</span>
-        ) : null}
-      </span>
-    )
-  }
 
   const referral = (p: Project) => p.links.referral ? (
     <a href={p.links.referral} target="_blank" rel="sponsored nofollow noopener"
@@ -202,7 +181,6 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
           <option value="focus">おすすめ順</option>
           <option value="phase">フェーズが早い順</option>
           <option value="tge">TGEが近い順</option>
-          <option value="pool">エアドロップ規模が大きい順</option>
           <option value="funding">調達額が多い順</option>
           <option value="followers">Xフォロワーが多い順</option>
         </select>
@@ -223,15 +201,14 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
                   <thead>
                     <tr className="text-xs" style={{ ...muted, backgroundColor: 'var(--surface-2)' }}>
                       {COLUMNS.map((c, i) => {
-                        // Staking and hold rows have no campaign: those three columns become token + reward.
-                        if (!phased && i === 2) return <th key={i} scope="col" colSpan={2} className="px-3 py-2.5 font-medium text-left whitespace-nowrap">{activity === 'hold' ? 'メモ' : '利回り・報酬'}</th>
-                        if (!phased && i === 3) return null
+                        // Staking and hold rows have no campaign: the phase and TGE columns become token + reward.
+                        if (!phased && i === 2) return <th key={i} scope="col" className="px-3 py-2.5 font-medium text-left whitespace-nowrap">{activity === 'hold' ? 'メモ' : '利回り・報酬'}</th>
                         const valuedGroup = activity === 'staking' || activity === 'hold'
                         const label = !phased && i === 1 ? (activity === 'defi' ? '預ける資産' : 'トークン')
-                          : valuedGroup && i === 4 ? 'FDV'
-                          : valuedGroup && i === 5 ? 'FDV÷収益'
+                          : valuedGroup && i === 3 ? 'FDV'
+                          : valuedGroup && i === 4 ? 'FDV÷収益'
                           : c.label
-                        const sortable = c.key && (phased || (i > 3 && !valuedGroup))
+                        const sortable = c.key && (phased || (i > 2 && !valuedGroup))
                         return (
                           <th key={i} scope="col" className={`px-3 py-2.5 font-medium whitespace-nowrap ${c.align === 'right' ? 'text-right' : 'text-left'}`}
                             aria-sort={sortable && sortKey === c.key ? 'ascending' : undefined}>
@@ -260,12 +237,11 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
                           <>
                             <td className="px-3 py-2.5"><PhaseMeter phase={p.phase} /></td>
                             <td className="px-3 py-2.5"><TgeCell project={p} /></td>
-                            <td className="px-3 py-2.5 text-right">{airdropCell(p)}</td>
                           </>
                         ) : (
                           <>
                             <td className="px-3 py-2.5">{tokenCell(p)}</td>
-                            <td colSpan={2} className="px-3 py-2.5">{stakingCell(p)}</td>
+                            <td className="px-3 py-2.5">{stakingCell(p)}</td>
                           </>
                         )}
                         {valued(p) ? (
@@ -309,7 +285,6 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
                       ...(usesPhase(p) ? [
                         ['フェーズ', <PhaseMeter key="ph" phase={p.phase} />],
                         ['TGE', <TgeCell key="tge" project={p} />],
-                        ['エアドロップ規模', airdropCell(p)],
                       ] as const : [
                         [p.activity === 'defi' ? '預ける資産' : 'トークン', tokenCell(p)],
                         [p.activity === 'hold' ? 'メモ' : '利回り・報酬', stakingCell(p)],
