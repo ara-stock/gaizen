@@ -102,8 +102,17 @@ export default async function ProjectPage({ params }: Props) {
               <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>過去365日の収益 {v.revenue365UsdM ? formatUsdM(v.revenue365UsdM) : '—'}</span>
               <span className="block text-xs mt-1" style={{ color: 'var(--muted)' }}>直近90日×4では {formatMultiple(multiples.runRate)}（年換算 {v.revenue90UsdM ? formatUsdM(v.revenue90UsdM * 4) : '—'}）</span>
             </Row> : null}
+            {v.entryPriceUsd && v.priceUsd ? (
+              <Row label="筆者の取得価格">
+                <span className="font-mono">${v.entryPriceUsd.toLocaleString('en-US')}</span>
+                <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>
+                  現在 ${v.priceUsd.toLocaleString('en-US', { maximumFractionDigits: 6 })}（
+                  {v.priceUsd >= v.entryPriceUsd ? '+' : ''}{(((v.priceUsd - v.entryPriceUsd) / v.entryPriceUsd) * 100).toFixed(1)}%）
+                </span>
+              </Row>
+            ) : null}
             {multiples.atEntry !== null && (
-              <Row label="筆者の取得価格で">
+              <Row label="取得価格での倍率">
                 <span className="font-mono font-semibold" style={{ color: multiples.atEntry <= CHEAP_MULTIPLE ? 'var(--accent)' : undefined }}>{formatMultiple(multiples.atEntry)}</span>
                 <span className="text-xs ml-2" style={{ color: 'var(--muted)' }}>取得価格 ${v.entryPriceUsd} 以下 → FDV換算 {formatUsdM((v.fdvUsdM! * v.entryPriceUsd!) / v.priceUsd!)}（収益は現在の過去365日の値）</span>
               </Row>
@@ -115,7 +124,7 @@ export default async function ProjectPage({ params }: Props) {
             {v.note && <Row label="補足">{v.note}</Row>}
           </dl>
           <p className="text-xs leading-relaxed mt-3" style={{ color: 'var(--muted)' }}>
-            {v.asOf}時点。FDVはCoinGecko、収益と保有者還元はDefiLlamaの数値です。
+            {v.asOf}時点。FDVと価格はCoinGecko{v.revenue365UsdM ? '、収益と保有者還元はDefiLlama' : ''}の数値です。
             {v.revenue365UsdM ? `分母は利益ではなく収益なので、株式のPERより売上倍率（PSR）に近い指標です。筆者は「FDV÷収益が${CHEAP_MULTIPLE}倍以下」を割安の目安にしていますが、収益の変動やアンロックで大きく変わります。` : null}
           </p>
         </Section>
