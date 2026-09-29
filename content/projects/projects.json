@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28",
+  "updatedAt": "2026-09-29",
   "projects": [
     {
       "slug": "hyperliquid",
@@ -2089,6 +2089,90 @@
         }
       ],
       "updatedAt": "2026-09-28"
+    },
+    {
+      "slug": "zec",
+      "name": "ZEC（Zcash）",
+      "logo": "/logos/zec.png",
+      "category": "プライバシー通貨",
+      "activity": "hold",
+      "priority": 2,
+      "chain": "独自チェーン（PoW）",
+      "status": "active",
+      "statusNote": "ZEC をホールドしている。取得価格は1ZECあたり約$1,411。",
+      "token": {
+        "launched": true,
+        "ticker": "ZEC",
+        "tgeDate": "2016-10-28",
+        "tgeSourceType": "official"
+      },
+      "points": {
+        "exists": false,
+        "status": "ポイントプログラムはない。"
+      },
+      "phase": "none",
+      "phaseNote": "供給上限2,100万枚のPoWチェーン。ビットコインと同じ半減期を持ち、次回は2028年11月の見込み。ゼロ知識証明による遮蔽（シールデッド）取引が特徴で、遮蔽取引はネットワークの取引量の約59%を占める",
+      "audience": {
+        "xHandle": "zcash",
+        "xFollowers": 84487,
+        "asOf": "2026-09-29"
+      },
+      "funding": {
+        "totalUsdM": 0,
+        "rounds": "トークンのセールやVCラウンドはなく、PoWの採掘で発行される。開発は Electric Coin Company と Zcash Foundation が担う。",
+        "investors": []
+      },
+      "team": {
+        "founders": [
+          "Zooko Wilcox"
+        ],
+        "doxxed": true,
+        "countryCode": "US",
+        "base": "アメリカ",
+        "baseKind": "company HQ",
+        "background": "2016年に公開。ゼロ知識証明（zk-SNARKs）を実用化した最初期のチェーンのひとつ。"
+      },
+      "valuation": {
+        "coingeckoId": "zcash",
+        "entryPriceUsd": 1411,
+        "note": "プロトコルの収益がないため「FDV÷収益」は算出できない。ほぼ全量が流通しており、FDVと時価総額はほぼ同じ。",
+        "priceUsd": 1422.46,
+        "marketCapUsdM": 24121.8,
+        "fdvUsdM": 24121.8,
+        "asOf": "2026-09-29"
+      },
+      "flags": [
+        "日本の登録取引所では扱われていない。2018年にコインチェックが匿名通貨の取り扱いを廃止して以降、bitbank・Coincheck・GMOコイン・bitFlyer のいずれも扱っておらず、JVCEAの国内取扱い銘柄一覧にも含まれていない（2026年9月時点）。円で直接買う手段はない。",
+        "値動きが非常に大きい。直近1年で約20倍、直近30日でも約70%上昇している。一方で2016年の公開直後につけた最高値$3,191からは約55%下。",
+        "2026年の上昇は、SEC調査の終結（2026年1月、措置なし）、Grayscaleの現物ETF（ZCSH、2026-08-25にNYSE Arca上場）、遮蔽取引の増加が主因とされる。材料が出尽くすと反転しうる。",
+        "匿名性の高い通貨は各国で規制の対象になりやすく、取引所からの上場廃止リスクが残る。"
+      ],
+      "links": {
+        "site": "https://z.cash/"
+      },
+      "sources": [
+        {
+          "title": "CoinGecko - Zcash (ZEC)",
+          "url": "https://www.coingecko.com/en/coins/zcash",
+          "date": "2026-09-29"
+        },
+        {
+          "title": "The Block - Grayscale moves closer to launching first Zcash ETF",
+          "url": "https://www.theblock.co/news/regulation/2026-08-21-grayscale-moves-closer-launching-first-zcash-etf-in-us-sec-amended-filing-412517",
+          "date": "2026-08-21"
+        },
+        {
+          "title": "crypto.news - Zcash hits $1,000: privacy coin gets first US spot ETF",
+          "url": "https://crypto.news/zcash-1000-privacy-coin-spot-etf-grayscale/",
+          "date": "2026"
+        },
+        {
+          "title": "CoinPost - ジーキャッシュ（ZEC）は日本で扱われている？",
+          "url": "https://coinpost.jp/crypto/zcash/",
+          "date": "2026-09閲覧"
+        }
+      ],
+      "updatedAt": "2026-09-29"
     }
   ]
 }
