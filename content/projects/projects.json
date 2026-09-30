@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29",
+  "updatedAt": "2026-09-30",
   "projects": [
     {
       "slug": "hyperliquid",
@@ -1576,11 +1576,11 @@
       "name": "ether.fi",
       "logo": "/logos/etherfi.jpg",
       "category": "DeFi",
-      "activity": "hold",
+      "activity": "staking",
       "priority": 2,
       "chain": "Ethereum",
-      "status": "watching",
-      "statusNote": "まだ保有していない。買い戻しの仕組みと希薄化の小ささから、割安になれば拾いたい銘柄として監視している。",
+      "status": "active",
+      "statusNote": "ETHFI を保有し、ステーキング（sETHFI）している。買い戻した ETHFI が sETHFI 保有者に配られる仕組みと、供給の約97%が流通済みで希薄化が小さい点に注目して、もともと監視していた銘柄。",
       "token": {
         "launched": true,
         "ticker": "ETHFI",
@@ -1634,11 +1634,13 @@
       },
       "flags": [
         "買い戻しはバーンではなくステーカーへの分配で、供給量は減らない。",
-        "DefiLlamaの集計では直近90日の保有者還元がゼロで、公式説明と一致していない。",
+        "利回りは公表されておらず、買い戻しの原資（出金手数料とプロトコル収益）しだいで変動する。",
+        "DefiLlamaの集計では直近90日の保有者還元がゼロで、公式説明と一致していない。実額は公式のDuneダッシュボードで要確認。",
         "収益はETHのステーキング需要と金利環境に左右される。"
       ],
       "links": {
-        "site": "https://www.ether.fi/"
+        "site": "https://www.ether.fi/",
+        "referral": "https://www.ether.fi/@ara_stock"
       },
       "sources": [
         {
@@ -1658,9 +1660,20 @@
         {
           "title": "Dune - ETHFI Buybacks & Protocol Revenue Sources",
           "url": "https://dune.com/ether_fi/ethfi-buybacks-and-protocol-revenue-sources"
+        },
+        {
+          "title": "ether.fi Governance - ETHFI Staking",
+          "url": "https://etherfi.gitbook.io/gov/ethfi/ethfi-staking",
+          "date": "2026-09-30閲覧"
         }
       ],
-      "updatedAt": "2026-09-20"
+      "updatedAt": "2026-09-30",
+      "staking": {
+        "token": "ETHFI",
+        "apy": "非公表（買い戻し額しだい）",
+        "reward": "買い戻されたETHFIがsETHFI保有者に配られる。ether.fiのロイヤリティポイントも貯まる",
+        "note": "ETHFI をステークすると sETHFI になる。eETH の出金手数料の100%を原資とする週次の買い戻しと、Stake・Liquid・Cash の収益の一部を原資とする月次の買い戻しが、いずれも sETHFI 保有者に分配される（公式ドキュメント）。ステークしたままDAOの投票にも参加できる。ロイヤリティポイントは weETH との相対価格から算出され、公式の計算例では 1 ETHFI あたり 1日5.7ポイント。分配はバーンではないため供給は減らない。"
+      }
     },
     {
       "slug": "hibachi",
