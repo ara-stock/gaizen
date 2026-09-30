@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30",
+  "updatedAt": "2026-10-01",
   "projects": [
     {
       "slug": "hyperliquid",
@@ -502,13 +502,18 @@
       "links": {
         "site": "https://www.qfex.com/",
         "inviteCodes": [
-          "VM2NSHED",
           "TS426CX8",
-          "Y8VYNQSQ",
-          "HTBS83YX",
-          "8742JTZF"
+          "3AZSJ4B5",
+          "T2KB7VWV",
+          "0R75FS5X",
+          "8TPWH58K",
+          "4D0JDGGK",
+          "Z45B2PHR",
+          "YXRNN41A",
+          "4AE53SSR",
+          "3YFMWSGR"
         ],
-        "inviteNote": "QFEXは招待制で、登録時に招待コードの入力が必要です。コードは1回限り・発行から14日間有効のため、すでに使用済みまたは期限切れの場合があります。招待コード経由の登録は取引手数料が10%割引になり、筆者には紹介報酬が入ります。"
+        "inviteNote": "QFEXは招待制で、登録時に招待コードの入力が必要です。コードは1回限り・発行から14日間有効のため、すでに使用済みまたは期限切れの場合があります。上から順にお試しください。招待コード経由の登録は取引手数料が10%割引になり、筆者には紹介報酬が入ります。（2026-10-01 に差し替え）"
       },
       "sources": [
         {
@@ -532,7 +537,7 @@
           "date": "2026-09-20閲覧"
         }
       ],
-      "updatedAt": "2026-09-20",
+      "updatedAt": "2026-10-01",
       "logo": "/logos/qfex.svg",
       "activity": "perps",
       "airdrop": {
