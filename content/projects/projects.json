@@ -1580,7 +1580,7 @@
       "priority": 2,
       "chain": "Ethereum",
       "status": "active",
-      "statusNote": "ETHFI を保有し、ステーキング（sETHFI）している。買い戻した ETHFI が sETHFI 保有者に配られる仕組みと、供給の約97%が流通済みで希薄化が小さい点に注目して、もともと監視していた銘柄。",
+      "statusNote": "ETHFI を保有し、ステーキング（sETHFI）している。買い戻しの仕組みよりも、実際に触ってみてサービスの使い勝手がよかったことが投資の決め手。Cash のバーチャルカードはまだ使っていないが、今後利用する予定。",
       "token": {
         "launched": true,
         "ticker": "ETHFI",
