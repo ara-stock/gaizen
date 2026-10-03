@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-10-03",
   "projects": [
     {
       "slug": "hyperliquid",
@@ -86,7 +86,8 @@
         "holders365UsdM": 687.91,
         "holders90UsdM": 142.29,
         "asOf": "2026-09-28"
-      }
+      },
+      "rank": 8
     },
     {
       "slug": "trade-xyz",
@@ -163,7 +164,8 @@
         "estimated": true,
         "basis": "トークンは未発表。FDV $1.5Bは2026年8月の調達の噂にあった評価額、配分10%は仮置き。ポイントがないため個人の受取額は試算できない。"
       },
-      "priority": 2
+      "priority": 2,
+      "rank": 7
     },
     {
       "slug": "entropy",
@@ -246,7 +248,8 @@
         "estimated": true,
         "basis": "トークンは未発表。FDV $100Mはシード$14Mからの仮置き（評価額は非開示）、配分10%も仮置き。"
       },
-      "priority": 1
+      "priority": 1,
+      "rank": 2
     },
     {
       "slug": "lighter",
@@ -353,7 +356,8 @@
         "holders365UsdM": 28.77,
         "holders90UsdM": 7.22,
         "asOf": "2026-09-28"
-      }
+      },
+      "rank": 6
     },
     {
       "slug": "extended",
@@ -447,7 +451,8 @@
       },
       "logo": "/logos/extended.svg",
       "activity": "perps",
-      "priority": 1
+      "priority": 1,
+      "rank": 4
     },
     {
       "slug": "qfex",
@@ -546,7 +551,8 @@
         "estimated": true,
         "basis": "トークンは未発表。FDV $95Mはシード時の評価額（報道）、配分10%は仮置き。"
       },
-      "priority": 2
+      "priority": 2,
+      "rank": 5
     },
     {
       "slug": "grvt",
@@ -1493,7 +1499,8 @@
           "date": "2026"
         }
       ],
-      "updatedAt": "2026-09-20"
+      "updatedAt": "2026-09-20",
+      "rank": 1
     },
     {
       "slug": "theo",
@@ -1784,7 +1791,8 @@
           "date": "2026-09-22閲覧"
         }
       ],
-      "updatedAt": "2026-09-22"
+      "updatedAt": "2026-09-22",
+      "rank": 3
     },
     {
       "slug": "jumper",
@@ -1795,7 +1803,7 @@
       "priority": 2,
       "chain": "Perp DEX 集約",
       "status": "active",
-      "statusNote": "ウェイトリストに登録済み。Perp の提供開始を待っている。",
+      "statusNote": "ウェイトリストに登録済み。ただし使うかどうかは未定で、優先度は低い。",
       "token": {
         "launched": false,
         "ticker": "JUMP",
@@ -1853,7 +1861,7 @@
           "url": "https://www.coingecko.com/learn/what-is-jumper-potential-jumper-airdrop"
         }
       ],
-      "updatedAt": "2026-09-22"
+      "updatedAt": "2026-10-03"
     },
     {
       "slug": "astock",

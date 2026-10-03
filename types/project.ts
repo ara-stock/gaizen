@@ -23,6 +23,8 @@ export interface Project {
   activity: Activity
   /** 1 = main focus, 2 = normal, 3 = not recommended (listed last and dimmed). */
   priority: 1 | 2 | 3
+  /** The author's explicit recommendation order within the default sort (1 = first). Unranked entries follow. */
+  rank?: number
   /** Shown instead of phase and airdrop size for DeFi lending and staking positions. `token` is the asset put in. */
   staking?: { token: string; reward: string; apy?: string; note?: string }
   chain: string

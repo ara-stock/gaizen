@@ -29,9 +29,13 @@ const COLUMNS: { key?: SortKey; label: string; width?: number; align?: 'right' }
 
 const hasInvite = (p: Project) => Boolean(p.links.referral || p.links.inviteCodes?.length)
 
-/** Default order: not-recommended last, then venues with an invite link, then main focus, then phase. */
+/**
+ * Default order: the author's explicit `rank` first, then not-recommended last,
+ * then venues with an invite link, then main focus, then phase.
+ */
 function focusOrder(a: Project, b: Project): number {
   return (
+    (a.rank ?? Infinity) - (b.rank ?? Infinity) ||
     Number(a.priority === 3) - Number(b.priority === 3) ||
     Number(hasInvite(b)) - Number(hasInvite(a)) ||
     a.priority - b.priority ||
