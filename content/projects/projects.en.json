@@ -2,7 +2,7 @@
   "_comment": "English text for /en/. Keyed by slug and deep-merged over projects.json: objects merge, arrays of the same length merge element by element (null keeps the Japanese value), anything else replaces. Numbers, links and codes live only in projects.json.",
   "hyperliquid": {
     "chain": "Own L1 (HyperCore + HyperEVM)",
-    "statusNote": "My main exchange. I also reach the trade.xyz and Entropy HIP-3 markets from here. No referral code yet, because I haven't met the volume requirement.",
+    "statusNote": "My main exchange. I also reach the trade.xyz and Entropy HIP-3 markets from here.",
     "points": {
       "name": "Points (ended before genesis)",
       "status": "No officially announced live points program. \"Season 2\" is speculation.",
