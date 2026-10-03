@@ -1441,7 +1441,7 @@
       "priority": 1,
       "chain": "Robinhood Chain",
       "status": "active",
-      "statusNote": "主力として取り組みたい取引所。現物（トークン化株式）は利用でき、Perpはウェイトリストの順番待ち。",
+      "statusNote": "主力として取り組みたい取引所。現物（トークン化株式）は紹介リンクから利用できる。Perp はウェイトリストの順番待ちで、筆者も招待コードはまだ持っていないため、紹介リンク経由でも Perp はすぐには使えない可能性がある。",
       "token": {
         "launched": false,
         "tgeExpectation": "時期未定",
@@ -1480,7 +1480,8 @@
         "日本からの利用条件は未確認。"
       ],
       "links": {
-        "site": "https://arcus.xyz/"
+        "site": "https://arcus.xyz/",
+        "referral": "https://app.arcus.xyz/ref/ARA_STOCK"
       },
       "sources": [
         {
@@ -1499,7 +1500,7 @@
           "date": "2026"
         }
       ],
-      "updatedAt": "2026-09-20",
+      "updatedAt": "2026-10-03",
       "rank": 1
     },
     {
