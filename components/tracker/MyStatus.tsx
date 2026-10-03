@@ -2,10 +2,12 @@
 
 import { useEffect, useState } from 'react'
 import type { Project, ProjectStatus } from '@/types/project'
-import { STATUS_LABEL, STATUS_ORDER, STATUS_STORAGE_KEY, readStored, writeStored } from './labels'
+import { STATUS_ORDER, STATUS_STORAGE_KEY, readStored, writeStored } from './labels'
+import { dict, type Locale } from './i18n'
 
 /** Lets a visitor file the project under their own status. Stored in this browser only. */
-export default function MyStatus({ project }: { project: Project }) {
+export default function MyStatus({ project, locale = 'ja' }: { project: Project; locale?: Locale }) {
+  const d = dict(locale)
   const [status, setStatus] = useState<ProjectStatus>(project.status)
 
   useEffect(() => {
@@ -24,11 +26,11 @@ export default function MyStatus({ project }: { project: Project }) {
 
   return (
     <label className="inline-flex items-center gap-2 text-xs" style={{ color: 'var(--muted)' }}>
-      自分のステータス
+      {d.myStatus}
       <select value={status} onChange={e => update(e.target.value as ProjectStatus)}
         className="text-xs rounded border px-2 py-1.5"
         style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', color: 'var(--foreground)' }}>
-        {STATUS_ORDER.map(s => <option key={s} value={s}>{STATUS_LABEL[s]}</option>)}
+        {STATUS_ORDER.map(s => <option key={s} value={s}>{d.status[s]}</option>)}
       </select>
     </label>
   )

@@ -54,6 +54,13 @@ ${projectsData.projects.map(p => entry({
   changefreq: 'weekly',
   priority: '0.7',
 })).join('\n')}
+${entry({ url: `${SITE_URL}/en/`, priority: '0.9', changefreq: 'weekly', lastmod: projectsData.updatedAt })}
+${projectsData.projects.map(p => entry({
+  url: `${SITE_URL}/en/tracker/${p.slug}/`,
+  lastmod: p.updatedAt,
+  changefreq: 'weekly',
+  priority: '0.6',
+})).join('\n')}
 </urlset>`
 
 if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true })
@@ -62,4 +69,4 @@ fs.writeFileSync(path.join(OUT_DIR, 'sitemap.xml'), xml, 'utf-8')
 // It intentionally contains the URL set directly instead of a sitemap index,
 // so Search Console can discover pages even if it does not fetch child sitemaps.
 fs.writeFileSync(path.join(OUT_DIR, 'sitemap-index.xml'), xml, 'utf-8')
-console.log(`[sitemap] Generated with ${staticRoutes.length + projectsData.projects.length} URLs`)
+console.log(`[sitemap] Generated with ${staticRoutes.length + 1 + projectsData.projects.length * 2} URLs`)

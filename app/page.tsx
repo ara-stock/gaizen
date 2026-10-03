@@ -6,7 +6,7 @@ import TrackerBoard from '@/components/tracker/TrackerBoard'
 export const metadata: Metadata = {
   title: { absolute: 'GAIZEN FINANCE | Airdrop' },
   description: '筆者が実際に参加している仮想通貨のエアドロップ・ポイントプログラムを、TGE時期・進み具合・VC調達額・Xフォロワー・運営拠点で一覧にしています。',
-  alternates: { canonical: 'https://gaizen.xyz/' },
+  alternates: { canonical: 'https://gaizen.xyz/', languages: { ja: 'https://gaizen.xyz/', en: 'https://gaizen.xyz/en/' } },
 }
 
 export default function HomePage() {

@@ -1,8 +1,10 @@
 'use client'
 
 import { useState } from 'react'
+import { dict, type Locale } from './i18n'
 
-export default function InviteCodes({ codes }: { codes: string[] }) {
+export default function InviteCodes({ codes, locale = 'ja' }: { codes: string[]; locale?: Locale }) {
+  const d = dict(locale)
   const [copied, setCopied] = useState<string | null>(null)
 
   const copy = async (code: string) => {
@@ -23,7 +25,7 @@ export default function InviteCodes({ codes }: { codes: string[] }) {
             className="font-mono text-sm px-3 py-2 rounded-lg border select-all"
             style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface-2)', color: 'var(--foreground)' }}>
             {code}
-            <span className="ml-2 text-xs font-sans" style={{ color: 'var(--accent)' }}>{copied === code ? 'コピーしました' : 'コピー'}</span>
+            <span className="ml-2 text-xs font-sans" style={{ color: 'var(--accent)' }}>{copied === code ? d.copied : d.copy}</span>
           </button>
         </li>
       ))}

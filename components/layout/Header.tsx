@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import { useState, useSyncExternalStore } from 'react'
 
 const NAV_LINKS = [
-  { href: '/', label: 'Airdrop' },
+  { href: '/', label: 'Airdrop', en: '/en/' },
   { href: '/portfolio/', label: 'Portfolio' },
   { href: '/tools/', label: 'Tools' },
   { href: '/about/', label: 'About' },
@@ -17,7 +17,7 @@ function subscribeToTheme(onChange: () => void) {
   return () => observer.disconnect()
 }
 
-function ThemeToggle() {
+function ThemeToggle({ isEn }: { isEn: boolean }) {
   const isLight = useSyncExternalStore(
     subscribeToTheme,
     () => !document.documentElement.classList.contains('dark'),
@@ -40,7 +40,7 @@ function ThemeToggle() {
       aria-label="Toggle theme"
       className="w-11 h-11 flex items-center justify-center rounded-md transition-colors"
       style={{ color: 'var(--muted)', border: '1px solid var(--border)' }}
-      title={isLight ? 'ダークモードへ' : 'ライトモードへ'}
+      title={isEn ? (isLight ? 'Dark mode' : 'Light mode') : (isLight ? 'ダークモードへ' : 'ライトモードへ')}
     >
       {isLight ? (
         // Moon icon
@@ -65,15 +65,37 @@ function ThemeToggle() {
   )
 }
 
+/** Only the Airdrop list and project pages have English versions; other pages switch to the English list. */
+function switchLanguage(pathname: string, isEn: boolean): string {
+  if (isEn) return pathname.replace(/^\/en(?=\/|$)/, '') || '/'
+  return pathname === '/' || pathname.startsWith('/tracker/') ? `/en${pathname}` : '/en/'
+}
+
 export default function Header() {
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
+  const isEn = pathname === '/en' || pathname.startsWith('/en/')
+  const nav = NAV_LINKS.map(l => ({ ...l, href: isEn && l.en ? l.en : l.href }))
+  const languageLink = (
+    <Link href={switchLanguage(pathname, isEn)} hrefLang={isEn ? 'ja' : 'en'} lang={isEn ? 'ja' : 'en'}
+      onClick={() => {
+        try {
+          localStorage.setItem('gaizen-lang', isEn ? 'ja' : 'en')
+        } catch {
+          // Without storage the switch still works; only the first-visit redirect may repeat.
+        }
+      }}
+      className="h-11 px-2.5 inline-flex items-center rounded-md text-xs font-semibold transition-colors"
+      style={{ color: 'var(--muted)', border: '1px solid var(--border)' }}>
+      {isEn ? '日本語' : 'EN'}
+    </Link>
+  )
 
   return (
     <header className="sticky top-0 z-50 border-b" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--header-bg)', backdropFilter: 'blur(12px)' }}>
-      <a className="skip-link" href="#main-content">本文へ移動</a>
+      <a className="skip-link" href="#main-content">{isEn ? 'Skip to content' : '本文へ移動'}</a>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-2 tracking-widest text-sm font-bold flex-shrink-0" aria-label="GAIZEN FINANCE home">
+        <Link href={isEn ? '/en/' : '/'} className="flex items-center gap-2 tracking-widest text-sm font-bold flex-shrink-0" aria-label="GAIZEN FINANCE home">
           <svg aria-hidden="true" width="24" height="24" viewBox="0 0 32 32" fill="none" style={{ color: 'var(--accent)' }}>
             <path d="M2 2h28v28H2zM19.4 3.4 3.4 12.6l9.2 16 16-9.2-9.2-16ZM13.7 7.3l-6.4 11 11 6.4 6.4-11-11-6.4Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="miter" />
           </svg>
@@ -84,8 +106,8 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav aria-label="メインメニュー" className="hidden md:flex items-center gap-6 flex-1 justify-center">
-          {NAV_LINKS.map(({ href, label }) => {
+        <nav aria-label={isEn ? 'Main menu' : 'メインメニュー'} className="hidden md:flex items-center gap-6 flex-1 justify-center">
+          {nav.map(({ href, label }) => {
             const active = pathname === href
             return (
               <Link key={href} href={href}
@@ -99,13 +121,14 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-1.5 sm:gap-3">
-          <ThemeToggle />
+          {languageLink}
+          <ThemeToggle isEn={isEn} />
           {/* Mobile menu button */}
           <button
             className="md:hidden w-11 h-11 flex items-center justify-center text-sm"
             style={{ color: 'var(--muted)' }}
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="メニュー"
+            aria-label={isEn ? 'Menu' : 'メニュー'}
             aria-controls="mobile-navigation"
             aria-expanded={menuOpen}
           >
@@ -116,8 +139,8 @@ export default function Header() {
 
       {/* Mobile nav */}
       {menuOpen && (
-        <nav id="mobile-navigation" aria-label="モバイルメニュー" className="md:hidden border-t px-4 py-4 flex flex-col gap-2" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--background)' }}>
-          {NAV_LINKS.map(({ href, label }) => (
+        <nav id="mobile-navigation" aria-label={isEn ? 'Mobile menu' : 'モバイルメニュー'} className="md:hidden border-t px-4 py-4 flex flex-col gap-2" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--background)' }}>
+          {nav.map(({ href, label }) => (
             <Link key={href} href={href} className="text-sm min-h-11 flex items-center" style={{ color: 'var(--muted)' }} onClick={() => setMenuOpen(false)}>
               {label}
             </Link>

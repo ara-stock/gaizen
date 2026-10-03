@@ -1,0 +1,734 @@
+{
+  "_comment": "English text for /en/. Keyed by slug and deep-merged over projects.json: objects merge, arrays of the same length merge element by element (null keeps the Japanese value), anything else replaces. Numbers, links and codes live only in projects.json.",
+  "hyperliquid": {
+    "chain": "Own L1 (HyperCore + HyperEVM)",
+    "statusNote": "My main exchange. I also reach the trade.xyz and Entropy HIP-3 markets from here. No referral code yet, because I haven't met the volume requirement.",
+    "points": {
+      "name": "Points (ended before genesis)",
+      "status": "No officially announced live points program. \"Season 2\" is speculation.",
+      "communityAllocation": "31% went out in the genesis airdrop. 38.888% is reserved for future emissions and community rewards. No allocation to investors."
+    },
+    "funding": {
+      "rounds": "No VC funding (self-funded)."
+    },
+    "team": {
+      "base": "Singapore",
+      "background": "Jeff Yan is a former quant at Hudson River Trading. One co-founder is anonymous."
+    },
+    "flags": [
+      "In the March 2025 JELLY manipulation incident, validators delisted the market and force-settled positions.",
+      "May 2026: CME and ICE reportedly urged US regulators to investigate (CoinDesk / Bloomberg).",
+      "June 2026: added to the UK FCA warning list (CryptoSlate).",
+      "No KYC. Restricted for the US, Ontario and sanctioned regions."
+    ],
+    "phaseNote": "No officially announced live points program. 38.888% of supply is reserved for future emissions and community rewards.",
+    "audience": {
+      "users": "About 1.17M total users (2026-03-25)",
+      "usersSource": "Datawallet (secondary source citing Hyperliquid's stats dashboard)"
+    },
+    "valuation": {
+      "note": "About 97% of fees buy back HYPE through the Assistance Fund, treated as burned. The multiple is high on an FDV basis."
+    }
+  },
+  "trade-xyz": {
+    "chain": "Hyperliquid (HIP-3)",
+    "statusNote": "I use it to trade equity and index perps on Hyperliquid.",
+    "points": {
+      "status": "The official docs mention no points, rewards or referral program (checked 2026-09-20)."
+    },
+    "phaseNote": "No token and no points announced.",
+    "audience": {
+      "users": "Over 300K total wallets (June 2026)"
+    },
+    "funding": {
+      "rounds": "No disclosed round. An August 2026 rumor said it raised $200M at a $1.5B valuation; the company has not confirmed it."
+    },
+    "team": {
+      "base": "Unverified",
+      "background": "Several outlets report it was built by the Unit (Hyperunit) team. The official docs do not name the operating entity."
+    },
+    "flags": [
+      "2026-07-27: the SK Hynix perp's mark price picked up thin quotes and dropped about 19%, causing over $60M in liquidations (CoinDesk). The team announced a one-time discretionary compensation.",
+      "US residents and \"other restricted regions\" cannot use it. The docs give no full list of restricted regions, and Japan's status is unverified.",
+      "The official docs do not identify the operating entity."
+    ],
+    "airdrop": {
+      "basis": "No token announced. The $1.5B FDV is the valuation from the August 2026 funding rumor; the 10% share is a placeholder. With no points, an individual payout cannot be estimated."
+    }
+  },
+  "entropy": {
+    "chain": "Hyperliquid (HIP-3)",
+    "statusNote": "I use it to trade perps on private (pre-IPO) companies and equities on Hyperliquid.",
+    "points": {
+      "status": "No points program. There are tiered fee rebates and referral rewards (official docs)."
+    },
+    "phaseNote": "Launched only on 2026-08-24. No token announced.",
+    "funding": {
+      "rounds": "$14M seed on 2026-08-24 led by Ribbit Capital (official X). Separately backed with about $40M of staked HYPE for its HIP-3 deployment."
+    },
+    "team": {
+      "base": "Unverified",
+      "background": "Founders not named. The team is described as ex-Citadel Securities, Optiver, Millennium and Polymarket."
+    },
+    "flags": [
+      "Japan is not on the official restricted list (US, Canada, most of the EU/EEA, UK, Singapore, Australia and others; checked 2026-09-20).",
+      "Pre-IPO perps carry no shares, voting rights or dividends. There is no spot market; the oracle tracks an estimated valuation.",
+      "Less than a month since launch. The OpenAI market was delisted without a single trade."
+    ],
+    "airdrop": {
+      "basis": "No token announced. The $100M FDV is a placeholder based on the $14M seed (valuation undisclosed); the 10% share is also a placeholder."
+    }
+  },
+  "lighter": {
+    "name": "Lighter (Robinhood Chain)",
+    "chain": "Own ZK rollup / Robinhood Chain version",
+    "statusNote": "I use the Robinhood Chain version of Lighter. A program is running that doubles points when you trade through Robinhood Wallet.",
+    "points": {
+      "name": "Robinhood Wallet × Lighter points",
+      "status": "Started 2026-08-10, distributed weekly since 2026-08-21. 2x through Robinhood Wallet, 1x on the Lighter web app.",
+      "communityAllocation": "50% of the 1B LIT supply goes to ecosystem and community; 25% of that was distributed at the 2025-12-30 TGE."
+    },
+    "funding": {
+      "rounds": "$68M in November 2025 at about a $1.5B valuation, led by Founders Fund and Ribbit Capital. Earlier rounds not verified from primary sources."
+    },
+    "team": {
+      "founders": [
+        "Vladimir Novakovski (founder, CEO)"
+      ],
+      "base": "United States",
+      "background": "Ex-Citadel. Lighter was founded in 2022."
+    },
+    "flags": [
+      "Perps through Robinhood Wallet are unavailable to residents of the UK, US, Canada, Switzerland, UAE, Singapore and others. Japan's status is unverified.",
+      "An outage in October 2025; affected traders were compensated with points (The Defiant).",
+      "The December 2025 airdrop drew disputes over sybil filtering, and an appeals process was set up."
+    ],
+    "phaseNote": "LIT has had its TGE. Points on the Robinhood Chain version started 2026-08-10, are distributed weekly, and convert from a dedicated LIT pool.",
+    "airdrop": {
+      "basis": "The pool for the Robinhood community is reported inconsistently: Robinhood says \"11M LIT\", while The Block and others say \"$11M worth of LIT\". The conservative $11M is used as a placeholder (11M LIT would be about $51M). Total points are not published."
+    },
+    "audience": {
+      "users": "Over 188K unique accounts (October 2025, official X)",
+      "usersSource": "Lighter's official X. 2026 figures unverified."
+    },
+    "valuation": {
+      "note": "100% of fees buy back LIT, all burned since July 2026. Unlocks of 500M LIT for insiders begin 2026-12-27."
+    }
+  },
+  "extended": {
+    "statusNote": "Pre-TGE. I'm building points by trading.",
+    "token": {
+      "tgeExpectation": "Date not set"
+    },
+    "points": {
+      "status": "Live, distributed weekly. 67,733,148 points issued in total as of 2026-09-15 (official docs).",
+      "communityAllocation": "The official docs state that the allocation and distribution date are not final. \"About 30% to the community\" comes from press reports."
+    },
+    "funding": {
+      "rounds": "$6.5M in 2024, then a $12.5M strategic round led by eToro on 2026-07-02 (Jump Crypto and others joined; valuation undisclosed)."
+    },
+    "team": {
+      "founders": [
+        "Ruslan Fakhrutdinov (CEO)"
+      ],
+      "base": "Unverified",
+      "background": "Led by Revolut's former head of crypto operations."
+    },
+    "flags": [
+      "Japan is not on the official restricted country list (US, UK, Canada, China and others; checked September 2026).",
+      "The founder's guidance of a TGE in the first half of 2026 did not happen."
+    ],
+    "phaseNote": "Points started 2025-04-30, about 17 months ago. The founder's \"H1 2026 TGE\" has passed and no official date has been announced.",
+    "airdrop": {
+      "basis": "The 30% share is from press reports (the official docs say it is not final). The $300M FDV uses a report that the team turned down further funding at an FDV above $300M (FinanceFeeds, 2026-06-17) as a floor."
+    }
+  },
+  "qfex": {
+    "chain": "Own matching engine (USDC margin)",
+    "statusNote": "I use it to trade US stock, index and FX perps around the clock.",
+    "points": {
+      "status": "No official points program found. There is an invite/referral program; referrers receive 10–30% of fees (official docs)."
+    },
+    "phaseNote": "No token and no points announced. Airdrop talk is speculation.",
+    "funding": {
+      "rounds": "$9.5M seed on 2026-03-05 led by General Catalyst (reported $95M valuation). Y Combinator Spring 2025 batch."
+    },
+    "team": {
+      "founders": [
+        "Annanay Kapila (CEO)",
+        "Joshua Wharton (CTO)"
+      ],
+      "base": "United Kingdom (London)",
+      "background": "The CEO is ex-Tower Research, the CTO ex-Citadel. Location per the Y Combinator company page."
+    },
+    "flags": [
+      "KYC is required for every user before trading.",
+      "Japan is not among the prohibited countries in the official FAQ (US, UK, France, Spain, Russia and others; checked 2026-09-20).",
+      "It calls itself a \"hybrid\", but custody and on-chain settlement are not clearly disclosed. There is counterparty risk.",
+      "Whether it holds a regulatory license is unverified."
+    ],
+    "links": {
+      "inviteNote": "QFEX is invite-only and asks for an invite code at sign-up. Each code works once and expires 14 days after it is issued, so some may already be used or expired. Try them from the top. Signing up with a code gives a 10% trading fee discount, and I receive a referral reward. (Replaced 2026-10-01)"
+    },
+    "airdrop": {
+      "basis": "No token announced. The $95M FDV is the reported seed valuation; the 10% share is a placeholder."
+    }
+  },
+  "grvt": {
+    "chain": "ZKsync Validium (Ethereum)",
+    "statusNote": "Post-TGE. The airdrop unlocks gradually over 12 months, so I'm waiting to receive the rest.",
+    "points": {
+      "status": "Seasons 1 and 2 were converted into the airdrop (280M GRVT in total, unlocking over 12 months from TGE). Post-TGE seasons unverified.",
+      "communityAllocation": "28% of the 1B supply to community and airdrop (official help center)."
+    },
+    "funding": {
+      "rounds": "$19M Series A on 2025-09-18; $34M in total (CEO's X post).",
+      "investors": [
+        "ZKsync (Matter Labs)",
+        null,
+        null,
+        null
+      ]
+    },
+    "team": {
+      "founders": [
+        "Hong Yea (co-founder, CEO)"
+      ],
+      "base": "Singapore",
+      "background": "Operated by an entity licensed by the Bermuda Monetary Authority."
+    },
+    "flags": [
+      "KYC is required.",
+      "The airdrop unlocks over 12 months. Each batch expires if not claimed within 30 days.",
+      "The TGE slipped from late June to July 30.",
+      "Conditions for users in Japan are unverified."
+    ],
+    "phaseNote": "TGE on 2026-07-30. Each user has been told their allocation, which unlocks over 12 months.",
+    "audience": {
+      "users": "Over 10K active traders (January 2026)",
+      "usersSource": "Secondary sources such as FinanceFeeds. Note how few users there are relative to followers."
+    }
+  },
+  "edgex": {
+    "chain": "StarkEx / Arc (Circle)",
+    "statusNote": "Not a recommendation. EDGE has had its TGE and the airdrop is over; I'm only taking part in the Arc event that started 2026-09-16.",
+    "points": {
+      "name": "Arc trading program",
+      "status": "Started with the Arc mainnet launch on 2026-09-16. Rewards and allocation unverified. The old points program ended at the 2026-03-31 TGE.",
+      "communityAllocation": "Of the 1B supply: 25% airdropped at TGE, up to 5% for the Pre-TGE Season, 35% for ecosystem and community (press reports)."
+    },
+    "funding": {
+      "rounds": "Pre-seed in December 2024 led by Amber Group (amount undisclosed). Strategic investment from Circle Ventures in February 2026 (amount undisclosed)."
+    },
+    "team": {
+      "founders": [
+        "Kevin Wang (co-founder, per The Block)"
+      ],
+      "base": "Unverified",
+      "background": "Incubated by Amber Group. The team is only partly public."
+    },
+    "flags": [
+      "The amount raised has never been disclosed.",
+      "At TGE the team closed replies on its X announcement and was criticized over vesting and allocation transparency (crypto.news, 2026-03-31).",
+      "Restricted for the US and sanctioned regions. Conditions for users in Japan are unverified."
+    ],
+    "phaseNote": "Arc mainnet launched 2026-09-16. edgeX opened 150+ markets on Arc, including FX (starting with USD/JPY). Arc-related rewards are not confirmed from primary sources.",
+    "audience": {
+      "users": "149K users (2025-11-26)",
+      "usersSource": "Sponsored article on The Block. 2026 figures not verified from primary sources."
+    }
+  },
+  "variational": {
+    "statusNote": "I'll decide after checking KYC, access from Japan and how API keys work.",
+    "token": {
+      "tgeExpectation": "Expected 2026 Q4"
+    },
+    "points": {
+      "status": "Started 2025-12-17, distributed every Friday. The official docs say distribution ends by the end of 2026 Q3 at the latest.",
+      "communityAllocation": "About 50% of VAR supply to the community (project statements and press reports)."
+    },
+    "funding": {
+      "rounds": "$10.3M seed in October 2024 co-led by Bain Capital Crypto and Peak XV, a $1.5M strategic round, and a $50M Series A on 2026-05-20 led by Dragonfly."
+    },
+    "team": {
+      "founders": [
+        "Lucas Schuermann (CEO)",
+        null
+      ],
+      "base": "Cayman Islands (registered entity)",
+      "background": "The founders' own location is unverified."
+    },
+    "flags": [
+      "Omni is the sole counterparty to every trade (the OLP model), which is a structural counterparty risk.",
+      "Conditions for users in Japan are unverified."
+    ],
+    "phaseNote": "The official docs say weekly points end \"by the end of 2026 Q3 at the latest\". No TGE date announced.",
+    "airdrop": {
+      "basis": "The 50% share was reported as a team statement. The $610M FDV is the reported pre-market price in May 2026. Total points are not published, so the midpoint of community estimates (about 9–10M), 9.5M, is a placeholder.",
+      "totalPointsAsOf": "projected at the end of September 2026"
+    }
+  },
+  "nado": {
+    "chain": "Ink (Kraken's OP Stack L2)",
+    "token": {
+      "tgeExpectation": "INK timing not announced"
+    },
+    "points": {
+      "status": "Season 1 started 2026-01-30, with 950K points distributed every Friday (official post). The conversion rate to INK is not published.",
+      "communityAllocation": "Not published. There is no separate token; points are expected to convert into INK."
+    },
+    "funding": {
+      "rounds": "Undisclosed. Built by the former Vertex Protocol team after it joined the Ink Foundation (July 2025, terms undisclosed)."
+    },
+    "team": {
+      "founders": [
+        "Darius Tabai (former Vertex co-founder)"
+      ],
+      "base": "Unverified",
+      "background": "The former team of Vertex Protocol, a perp DEX on Arbitrum."
+    },
+    "flags": [
+      "Its predecessor Vertex retired the VRTX token when it moved to Ink, drawing criticism from some holders.",
+      "The \"TGE in July–September 2026\" claim came from an adviser, not from Ink or Kraken.",
+      "Conditions for users in Japan are unverified."
+    ],
+    "phaseNote": "Season 1 started 2026-01-30, with 950K points a week. Neither INK's TGE date nor Nado's share has been announced.",
+    "airdrop": {
+      "totalPointsAsOf": "2026-09-18 (calculated from the official weekly amount)",
+      "basis": "Neither INK's FDV nor Nado's share has been announced. The $500M FDV and 5% share are unsupported placeholders, to be replaced when information appears. Total points are calculated as the official 950K a week × weeks elapsed + 2M from the migration period."
+    }
+  },
+  "jupiter": {
+    "statusNote": "I use it daily for swaps and stake JUP.",
+    "points": {
+      "name": "Jupuary (annual airdrop)",
+      "status": "The 2026 Jupuary was postponed indefinitely by DAO vote (2026-02-22). No live points program."
+    },
+    "funding": {
+      "rounds": "Self-funded, then a $35M strategic token investment from ParaFi Capital on 2026-02-02."
+    },
+    "team": {
+      "founders": [
+        "Meow (pseudonym)",
+        null
+      ],
+      "base": "Unverified",
+      "background": "Meow is also a co-founder of Meteora."
+    },
+    "flags": [
+      "In the February 2025 LIBRA / MELANIA memecoin affair, a related Meteora executive resigned, and a class action is underway in the US (The Block). Meow denies involvement in wrongdoing.",
+      "The 2026 airdrop was called off by DAO vote."
+    ],
+    "phaseNote": "The 2026 Jupuary (annual airdrop) was postponed indefinitely by DAO vote. No live points program.",
+    "staking": {
+      "reward": "50M JUP per quarter shared among DAO voters",
+      "apy": "18–20% a year (estimate)",
+      "note": "Active Staking Rewards (ASR). The rate is a community estimate for 2026 Q2, not an official figure. Unstaking takes 7 days. You only receive rewards if you vote."
+    },
+    "valuation": {
+      "note": "50% of revenue buys JUP on the market and locks it for three years (not a burn). Much of the supply is not circulating, so the multiple is higher than on a market-cap basis."
+    }
+  },
+  "meteora": {
+    "statusNote": "I stake MET. Bought at $0.20 or less.",
+    "points": {
+      "name": "LP points (Seasons 1 and 2, ended)",
+      "status": "Converted into the TGE airdrop. The claim window closed 2026-04-23.",
+      "communityAllocation": "48% of the 1B supply circulated at TGE (20% former Mercurial stakeholders, 15% Meteora users, 3% JUP stakers and others). Team 18% and reserve 34% unlock over six years."
+    },
+    "phaseNote": "Airdrop distribution and claims are over. Staking, which started 2026-07-26, pays a share of DLMM protocol fees in USDC.",
+    "audience": {
+      "users": "2,442 MET stakers with 70M MET (2026-08-13)",
+      "usersSource": "Meteora community call (Solana Compass summary)"
+    },
+    "funding": {
+      "rounds": "No VC round disclosed under the Meteora name. Funding from its predecessor Mercurial Finance (2021) appears only on aggregators and is not verified from primary sources."
+    },
+    "team": {
+      "founders": [
+        "Meow (pseudonym)",
+        "Ben Chow (resigned February 2025)"
+      ],
+      "base": "Unverified",
+      "background": "Formerly Mercurial Finance. A sister project of Jupiter with overlapping co-founders."
+    },
+    "flags": [
+      "LIBRA / MELANIA: co-founder Ben Chow resigned in February 2025. Chow and Meteora are defendants in a US class action (Hurlock v. Kelsier Ventures). Developments after October 2025 unverified.",
+      "At TGE there was criticism over allocations to wallets that appeared to be insiders.",
+      "About 22M MET unlocks every quarter.",
+      "MET price $0.2512, FDV $250.7M (CoinGecko, 2026-09-20)."
+    ],
+    "staking": {
+      "reward": "A share of DLMM fees paid in USDC (APY not published)",
+      "note": "Started 2026-07-26. As of 2026-08-13, 2,442 stakers had staked 70M MET."
+    },
+    "valuation": {
+      "note": "Buybacks are discretionary: $10M in 2025 Q4, then about $1M in 2026 Q1, and zero over the last 90 days on DefiLlama. About 7.2M MET from the team and reserve unlocks every month."
+    }
+  },
+  "stonk": {
+    "name": "STONK (StonkFun)",
+    "statusNote": "I hold STONK as post-TGE meme infrastructure.",
+    "points": {
+      "status": "No points program found."
+    },
+    "phaseNote": "Post-TGE meme infrastructure. Probably no airdrop planned.",
+    "funding": {
+      "rounds": "No VC funding disclosed."
+    },
+    "team": {
+      "base": "Unverified",
+      "background": "A Solana launchpad that issues new tokens paired against tokenized stocks (xStocks) or SOL."
+    },
+    "flags": [
+      "Anonymous team, about two months since launch.",
+      "Extreme price swings (market cap about $4M on 2026-08-05 → about $223M on 2026-09-20).",
+      "It is priced in a SPYx pool, so the dollar value moves with both the pair rate and SPYx.",
+      "Holding STONK or stock-pair tokens gives no shareholder rights or dividends.",
+      "No audit information found."
+    ],
+    "valuation": {
+      "note": "Designed to buy back and burn STONK with about 60% of fees (press reports). Only about two months live, so the recent revenue pace likely says little about the long run."
+    }
+  },
+  "xstocks": {
+    "chain": "Solana and other chains",
+    "points": {
+      "status": "Started March 2026. Only on-chain activity (trading, LP, DeFi) counts; holding or trading inside Kraken does not.",
+      "communityAllocation": "Not announced (no token announced)."
+    },
+    "funding": {
+      "rounds": "Issuer Backed Finance raised a $9.5M Series A in 2024 led by Gnosis. Kraken announced its acquisition on 2025-12-02 (amount undisclosed).",
+      "investors": [
+        null,
+        null,
+        null,
+        "Kraken (acquisition)"
+      ]
+    },
+    "team": {
+      "founders": [
+        "Adam Levi (Backed co-founder)"
+      ],
+      "base": "Switzerland",
+      "background": "Backed Finance AG, now part of the Kraken group."
+    },
+    "flags": [
+      "According to Kraken support, xStocks is not offered in Japan (regional restriction). US residents are also excluded.",
+      "Token holders have no shareholder rights."
+    ],
+    "phaseNote": "Points started March 2026. No token announced and the allocation is unknown.",
+    "audience": {
+      "users": "Over 85K on-chain holders, over $25B in total volume",
+      "usersSource": "Kraken official blog (2026)"
+    }
+  },
+  "solstice": {
+    "points": {
+      "status": "Season 3 runs 2026-08-01 to 2026-12-01 (official docs). Flares convert to SLX pro rata at the end of the season.",
+      "communityAllocation": "Of the 1B supply: 10% airdrop through Flares, 37.71% community (official tokenomics)."
+    },
+    "funding": {
+      "rounds": "Fully funded and incubated by Deus X Capital (amount undisclosed). Public sale on Legion in December 2025."
+    },
+    "team": {
+      "founders": [
+        "Ben Nadareski (CEO)",
+        null,
+        null
+      ],
+      "base": "Switzerland (Zug)",
+      "background": "Solstice Labs AG, part of Deus X Capital."
+    },
+    "flags": [
+      "On 2025-12-26 USX briefly fell to about $0.10 on Solana DEXs. The team said collateral exceeded 100% and 1:1 redemptions were unaffected, and the price recovered.",
+      "Conditions for users in Japan are unverified."
+    ],
+    "phaseNote": "SLX has had its TGE. Flares Season 3 runs 2026-08-01 to 12-01.",
+    "audience": {
+      "users": "Over 30K USX holders, TVL over $400M (2026-05-20)",
+      "usersSource": "Solstice website / SLX launch press release"
+    },
+    "statusNote": "I've stopped participating."
+  },
+  "huma": {
+    "chain": "Solana and others",
+    "points": {
+      "status": "Seasonal airdrops continue after TGE. Season 3 started November 2025 (official X). Later seasons are known only from secondary sources.",
+      "communityAllocation": "5% of the 10B supply in the first airdrop at TGE, plus 2.1% about three months later (official blog)."
+    },
+    "funding": {
+      "rounds": "$38M Series A in September 2024 ($10M equity, $28M invested in yield-bearing RWAs; led by Distributed Global). Seed amount not verified from primary sources."
+    },
+    "team": {
+      "base": "Unverified",
+      "background": "Merged with payments company Arf in 2024."
+    },
+    "flags": [
+      "Of the \"$38M raised\", only $10M was equity.",
+      "Institutional products require KYC.",
+      "Conditions for users in Japan are unverified."
+    ],
+    "phaseNote": "Staking rewards are paid in Feathers points and count toward each season's airdrop allocation (official blog).",
+    "audience": {
+      "users": "Over 100K depositors"
+    },
+    "statusNote": "I lend USDC long-term. HUMA has had its TGE, and I stake it too.",
+    "staking": {
+      "apy": "About 8% a year (Classic, variable)",
+      "reward": "Yield from payment financing paid in USDC, plus Feathers",
+      "note": "In Huma 2.0, Classic mode pays USDC yield plus Feathers, while Maxi mode gives up the yield for more Feathers. You can choose no lockup, 3 months or 6 months; longer locks raise the Feathers multiplier (official docs). HUMA staking rewards are also paid in Feathers. Yields change over time."
+    }
+  },
+  "arcus": {
+    "statusNote": "An exchange I want to make a main focus. Spot (tokenized stocks) is available through the referral link. Perps are waitlisted and I don't have an invite code yet either, so perps may not be available right away even through the referral link.",
+    "token": {
+      "tgeExpectation": "Date not set"
+    },
+    "points": {
+      "status": "No points program announced. The dYdX Foundation CEO has said Arcus will issue its own token, but the allocation, distribution method and timing are undisclosed."
+    },
+    "phaseNote": "Spot launched July 2026. The perps beta has been opening to waitlisted users in stages since 2026-07-01, with a full launch planned within 2026.",
+    "audience": {
+      "users": "Over 85K on the perps waitlist, over $2B in total volume",
+      "usersSource": "The Block (2026-08-25) and others"
+    },
+    "funding": {
+      "rounds": "No funding disclosed for Arcus itself. A project of dYdX Labs and Robinhood Crypto."
+    },
+    "team": {
+      "base": "Unverified",
+      "background": "A self-custodial exchange on Robinhood Chain built by the dYdX development team."
+    },
+    "flags": [
+      "Perps are waitlisted and not yet open to everyone.",
+      "Holding tokenized stocks gives no shareholder rights.",
+      "Conditions for users in Japan are unverified."
+    ]
+  },
+  "theo": {
+    "chain": "Ethereum and others",
+    "statusNote": "I lend USDC in a long-term vault.",
+    "staking": {
+      "apy": "6.5–11% a year (by vault)",
+      "reward": "Locked-vault yield paid in thUSD, plus thUSD points",
+      "note": "Core (3-month lock) 6.5%, Core+ (6-month lock) 7.2%, Boost (6-month lock, via Morpho) 11%. All accept thUSD, USDC or USDT and pay out in thUSD (official blog, as of 2026-06-25). sthUSD redemptions have a queue of about two weeks on average."
+    },
+    "points": {
+      "status": "Started 2026-06-25. Earned by holding or staking thUSD and in the Core / Core+ / Boost vaults, which have the highest multipliers. The previous season (thBILL points) ended 2026-06-19.",
+      "communityAllocation": "No token announced and the allocation is unknown."
+    },
+    "phaseNote": "Second points season. A token has not been officially confirmed.",
+    "funding": {
+      "rounds": "$20M on 2025-04-22 (Hack VC, Anthos Capital and others). The $100M \"Genesis Vault\" in March 2026 is capacity for deposits, not equity funding."
+    },
+    "team": {
+      "base": "Unverified",
+      "background": "Founded by former Optiver traders (press reports). Founder names were not verified in this research."
+    },
+    "flags": [
+      "thUSD yield comes mainly from gold arbitrage and carry trades. Principal is not guaranteed like a dollar deposit.",
+      "Vaults lock for 3–6 months with no early withdrawal. sthUSD redemptions also take about two weeks.",
+      "The Boost vault goes through Morpho, adding another layer of DeFi smart-contract risk.",
+      "Conditions for users in Japan are unverified."
+    ]
+  },
+  "etherfi": {
+    "statusNote": "I hold ETHFI and stake it (sETHFI). What decided it for me was not the buyback mechanism but how good the product felt when I actually used it. I haven't used the Cash virtual card yet, but I plan to.",
+    "points": {
+      "status": "Not a points play."
+    },
+    "phaseNote": "Bought-back ETHFI is distributed to stakers. About 97% of supply already circulates, so future dilution is small.",
+    "funding": {
+      "rounds": "$23M Series A on 2024-02-28 led by Bullish Capital and CoinFund. $4M on a SAFE in late 2023."
+    },
+    "team": {
+      "founders": [
+        "Mike Silagadze (CEO)"
+      ],
+      "base": "Unverified",
+      "background": "Expanding from liquid restaking (eETH) into asset management (Liquid) and cards (Cash)."
+    },
+    "valuation": {
+      "note": "100% of eETH withdrawal fees fund weekly buybacks, and part of Stake, Liquid and Cash revenue funds monthly buybacks. Bought-back ETHFI is not burned but distributed to stakers (sETHFI). While the price is below $3, the foundation may buy back up to $50M. DefiLlama shows zero holder revenue over the last 90 days, which conflicts with the official description; check the actual amounts on the official Dune dashboard."
+    },
+    "flags": [
+      "Buybacks are distributed to stakers rather than burned, so supply does not shrink.",
+      "The yield is not published and depends on what funds the buybacks (withdrawal fees and protocol revenue).",
+      "DefiLlama shows zero holder revenue over the last 90 days, which does not match the official description. Check the actual amounts on the official Dune dashboard.",
+      "Revenue depends on demand for ETH staking and the interest-rate environment."
+    ],
+    "staking": {
+      "apy": "Not published (depends on buybacks)",
+      "reward": "Bought-back ETHFI is distributed to sETHFI holders. You also earn ether.fi loyalty points",
+      "note": "Staking ETHFI gives you sETHFI. Weekly buybacks funded by 100% of eETH withdrawal fees and monthly buybacks funded by part of Stake, Liquid and Cash revenue both go to sETHFI holders (official docs). You can still vote in the DAO while staked. Loyalty points are calculated from the price relative to weETH; the official example gives 5.7 points per ETHFI per day. Distributions are not burns, so supply does not shrink."
+    }
+  },
+  "hibachi": {
+    "chain": "Off-chain order book + ZK settlement (deposits on Arbitrum / Base / Arc)",
+    "statusNote": "A main focus that I'm building into my setup. Maker fees are zero, which suits a hedged carry strategy.",
+    "token": {
+      "tgeExpectation": "Date not set"
+    },
+    "points": {
+      "name": "Hibachi Points (Playoffs)",
+      "status": "1M points a week, distributed every Monday at 03:00 UTC. The Regular Season ended 2026-04-30; it is now in the \"Playoffs\". As of 2026-04-27, about 2,300 accounts received points each week and 51.5M points had been issued. Scoring uses volume, OI, PnL, max drawdown and fees, with undisclosed weights.",
+      "communityAllocation": "Not announced"
+    },
+    "phaseNote": "Second season (Playoffs). The team says it will be short, and the TGE is reported (secondary source) to come after FX launches on Arc.",
+    "airdrop": {
+      "basis": "Supply, allocation and valuation are all unannounced. The $200M FDV and 15% share are unsupported placeholders, to be replaced when information appears. Total points (about 72M) are estimated as the official 51.5M on 2026-04-27 plus 1M a week, but are not used to estimate individual payouts."
+    },
+    "audience": {
+      "users": "36K total depositors, about 2,300 weekly recipients (April 2026)",
+      "usersSource": "Dune (community-built) / official X, 2026-04-27"
+    },
+    "funding": {
+      "rounds": "$5M seed on 2025-03-19 led by Dragonfly, with Electric Capital and Echo. Joined Circle Ventures' Arc Builders Fund in February 2026 (amount undisclosed)."
+    },
+    "team": {
+      "founders": [
+        "Varun Kumar (co-founder, CEO)",
+        "Chip Dempsey (co-founder)"
+      ],
+      "base": "Singapore",
+      "background": "Varun Kumar co-founded Hashflow. Press releases list New York as the location."
+    },
+    "flags": [
+      "Orders are matched off-chain and settlement is backed by ZK proofs. Withdrawals wait for proof batches and take 10–30 minutes.",
+      "Every market settles in USDT. USDC deposits are converted at about 0.9992.",
+      "Email-registered accounts have keys held by the exchange, which signs on your behalf. Register with a wallet if you want to hold your own keys.",
+      "Wash trading, multiple accounts and manipulation are stated to lead to \"disqualification or adjustment\". Point weights are not disclosed.",
+      "The HEAT contract (public on GitHub) has per-account freeze and mint permissions.",
+      "FX trades 24/5 and stops from Friday 17:00 ET to Sunday 17:00 ET.",
+      "Audited by Hexens and Quantstamp. The Immunefi scope covers only the API (up to $20K).",
+      "The terms of service exclude the US and UK."
+    ]
+  },
+  "jumper": {
+    "category": "Perp aggregator",
+    "chain": "Perp DEX aggregation",
+    "statusNote": "I'm on the waitlist, but I haven't decided whether to use it, and it's a low priority.",
+    "token": {
+      "tgeExpectation": "Sale planned"
+    },
+    "points": {
+      "name": "Jumper Loyalty Pass (XP) / Perps waitlist",
+      "status": "Loyalty Pass XP is an ongoing program earned through bridging, swapping and more. Perps is in waitlist mode; rank depends on X linking, referrals and a leaderboard (details not yet public).",
+      "communityAllocation": "Not announced. Only the JUMP token sale has been announced; an airdrop to XP holders has not been officially promised."
+    },
+    "phaseNote": "On 2026-09-22 Jumper announced its spin-out from LI.FI and a JUMP token sale (Legion). Jumper Perps is said to launch \"within weeks\" and is currently in the waitlist stage.",
+    "funding": {
+      "rounds": "Jumper itself is not raising equity and plans to raise only through the JUMP token sale (Legion). It was a division of LI.FI until 2026-09-22 (LI.FI has raised $51.7M in total from Multicoin, CoinFund and others, but that is not the independent Jumper's money)."
+    },
+    "team": {
+      "founders": [
+        "Marko Jurina (CEO)"
+      ],
+      "base": "Unverified",
+      "background": "Over $40B in total bridge aggregation volume, over 100K monthly users and over 15% share (official announcement)."
+    },
+    "flags": [
+      "Perps is not live yet; which venues it aggregates, its fees and how points work are unannounced.",
+      "As an aggregator, the actual trades happen on underlying venues (such as Hyperliquid). Fees may be added on top.",
+      "An airdrop to Loyalty Pass XP holders is not officially promised. XP has been given to about 2.77M wallets (third-party count), so it is easily diluted."
+    ]
+  },
+  "hype": {
+    "chain": "Own L1 (HyperCore + HyperEVM)",
+    "statusNote": "I hold HYPE and stake it by delegating to a validator. Hyperliquid as an exchange is listed separately.",
+    "points": {
+      "status": "No officially live points program."
+    },
+    "staking": {
+      "apy": "2.2–2.4% a year (variable)",
+      "reward": "HYPE from delegating to a validator (auto-compounding)",
+      "note": "The reward rate is designed to be inversely proportional to the square root of total stake; with 400M HYPE staked it is about 2.37% a year. Rewards accrue every minute, are distributed daily and are automatically redelegated to the same validator. Validator commission is roughly 1–5%. Unstaking has a queue of about 7 days, and with the 1-day delegation lock, funds can be stuck for up to about 8 days."
+    },
+    "funding": {
+      "rounds": "No VC funding; self-funded."
+    },
+    "team": {
+      "base": "Singapore",
+      "background": "Jeff Yan is a former quant at Hudson River Trading. One co-founder is anonymous."
+    },
+    "valuation": {
+      "note": "About 97% of fees go to buybacks through the Assistance Fund, and a December 2025 validator vote deemed those holdings burned. Supply is capped at 1B. Much of the supply is not circulating, so the multiple is high on an FDV basis."
+    },
+    "flags": [
+      "Staking yield is variable and not guaranteed. It is designed to fall as total stake grows.",
+      "Unstaking takes about 7 days, so it cannot cover a sudden need for cash.",
+      "There is precedent: in the March 2025 JELLY manipulation incident, validators delisted the market and force-settled positions.",
+      "In May 2026 CME and ICE reportedly urged US regulators to investigate, and in June the UK FCA added it to its warning list."
+    ],
+    "sources": [
+      null,
+      null,
+      {
+        "title": "Hyper Foundation on X - vote to treat Assistance Fund holdings as burned"
+      }
+    ]
+  },
+  "cake": {
+    "name": "CAKE (PancakeSwap)",
+    "chain": "BNB Chain and others",
+    "statusNote": "I hold CAKE and stake it in a Syrup Pool.",
+    "points": {
+      "status": "No points program."
+    },
+    "staking": {
+      "apy": "Varies by pool",
+      "reward": "Stake in a Syrup Pool to earn other tokens or CAKE",
+      "note": "Tokenomics 3.0 in April 2025 removed veCAKE, gauge voting, revenue sharing and farm boosts. CAKE staking now means Syrup Pools (flexible, withdraw any time, or fixed-term with higher yield), and yields vary by pool."
+    },
+    "funding": {
+      "rounds": "No VC funding disclosed."
+    },
+    "team": {
+      "base": "Unverified",
+      "background": "The development team is anonymous, going by \"Chef\". The largest DEX on BNB Chain, also deployed on Solana, Aptos and Monad."
+    },
+    "valuation": {
+      "note": "Emissions continue, but burns are designed to exceed them: net supply fell 8.19% in 2025, with a target of at least 4% a year. In January 2026 the max supply was cut from 450M to 400M. Almost all supply circulates, so FDV and market cap are close."
+    },
+    "flags": [
+      "The team is anonymous (\"Chef\").",
+      "Revenue depends on BNB Chain volume, especially memecoin activity.",
+      "veCAKE and revenue sharing were removed in April 2025, so returns to holders now come mainly from burns. Staking rewards depend on the Syrup Pool."
+    ]
+  },
+  "zec": {
+    "name": "ZEC (Zcash)",
+    "category": "Privacy coin",
+    "chain": "Own chain (PoW)",
+    "statusNote": "I hold ZEC. My cost is about $1,411 per ZEC.",
+    "points": {
+      "status": "No points program."
+    },
+    "phaseNote": "A PoW chain with a 21M supply cap. It halves on the same schedule as Bitcoin; the next halving is expected in November 2028. It is known for shielded transactions using zero-knowledge proofs, which make up about 59% of network transactions.",
+    "funding": {
+      "rounds": "No token sale or VC round; ZEC is issued through PoW mining. Development is handled by the Electric Coin Company and the Zcash Foundation."
+    },
+    "team": {
+      "base": "United States",
+      "background": "Launched in 2016. One of the first chains to put zero-knowledge proofs (zk-SNARKs) into practice."
+    },
+    "valuation": {
+      "note": "There is no protocol revenue, so FDV ÷ revenue cannot be calculated. Almost all supply circulates, so FDV and market cap are nearly the same."
+    },
+    "flags": [
+      "Not handled by registered exchanges in Japan. Since Coincheck dropped privacy coins in 2018, none of bitbank, Coincheck, GMO Coin or bitFlyer list it, and it is not on the JVCEA list of coins handled in Japan (as of September 2026). There is no way to buy it directly with yen.",
+      "Very volatile: up about 20x over the past year and about 70% in the last 30 days, yet still about 55% below the $3,191 high set right after the 2016 launch.",
+      "The 2026 rally is attributed mainly to the SEC closing its investigation (January 2026, no action), Grayscale's spot ETF (ZCSH, listed on NYSE Arca on 2026-08-25) and growth in shielded transactions. It could reverse once these catalysts are priced in.",
+      "Privacy coins are prone to regulation in many countries, and the risk of exchange delistings remains."
+    ],
+    "sources": [
+      null,
+      null,
+      null,
+      {
+        "title": "CoinPost - Is Zcash (ZEC) available in Japan? (Japanese)"
+      }
+    ]
+  }
+}

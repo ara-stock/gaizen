@@ -1,13 +1,7 @@
-import type { Activity, Phase, Project, ProjectStatus, TgeSourceType } from '@/types/project'
+import type { Activity, Phase, Project, ProjectStatus } from '@/types/project'
+import { dict, type Locale } from './i18n'
 
 export const STATUS_ORDER: ProjectStatus[] = ['active', 'waiting', 'watching', 'done']
-
-export const STATUS_LABEL: Record<ProjectStatus, string> = {
-  active: '継続中',
-  waiting: '受取待ち',
-  watching: '様子見',
-  done: '終了',
-}
 
 export const STATUS_COLOR: Record<ProjectStatus, string> = {
   active: 'var(--chart-jp)',
@@ -18,14 +12,6 @@ export const STATUS_COLOR: Record<ProjectStatus, string> = {
 
 export const ACTIVITY_ORDER: Activity[] = ['perps', 'defi', 'staking', 'points', 'hold']
 
-export const ACTIVITY_LABEL: Record<Activity, string> = {
-  perps: 'Perp取引',
-  defi: 'DeFi（レンディング）',
-  staking: 'Staking',
-  points: 'ポイント活動',
-  hold: 'ホールド',
-}
-
 export const ACTIVITY_COLOR: Record<Activity, string> = {
   perps: 'var(--chart-us)',
   defi: 'var(--chart-jp)',
@@ -34,23 +20,8 @@ export const ACTIVITY_COLOR: Record<Activity, string> = {
   hold: 'var(--chart-gold)',
 }
 
-export const PHASE_LABEL: Record<Phase, string> = {
-  early: '序盤',
-  mid: '中盤',
-  late: '終盤',
-  ended: '終了',
-  none: '未発表',
-}
-
 /** How many of the three progress segments are filled. */
 export const PHASE_STEP: Record<Phase, number> = { early: 1, mid: 2, late: 3, ended: 3, none: 0 }
-
-export const TGE_SOURCE_LABEL: Record<TgeSourceType, string> = {
-  official: '公式',
-  media: '報道',
-  rumor: '噂',
-  none: '未発表',
-}
 
 export const POINTS_STORAGE_KEY = 'gaizen-tracker-points'
 export const STATUS_STORAGE_KEY = 'gaizen-tracker-status'
@@ -60,9 +31,9 @@ export function formatUsdM(valueUsdM: number): string {
   return `$${valueUsdM >= 100 ? Math.round(valueUsdM) : Number(valueUsdM.toFixed(1))}M`
 }
 
-export function formatFunding(totalUsdM: number | null): string {
-  if (totalUsdM === null) return '非開示'
-  if (totalUsdM === 0) return 'なし'
+export function formatFunding(totalUsdM: number | null, locale: Locale = 'ja'): string {
+  if (totalUsdM === null) return dict(locale).undisclosed
+  if (totalUsdM === 0) return dict(locale).none
   return formatUsdM(totalUsdM)
 }
 
@@ -70,7 +41,12 @@ export function formatUsd(value: number): string {
   return `$${Math.round(value).toLocaleString('en-US')}`
 }
 
-export function formatFollowers(count: number): string {
+export function formatFollowers(count: number, locale: Locale = 'ja'): string {
+  if (locale === 'en') {
+    if (count >= 1_000_000) return `${Number((count / 1_000_000).toFixed(2))}M`
+    if (count >= 1000) return `${Number((count / 1000).toFixed(1))}K`
+    return String(count)
+  }
   if (count >= 10000) return `${Number((count / 10000).toFixed(1))}万`
   return count.toLocaleString('en-US')
 }
@@ -134,7 +110,7 @@ export function fdvMultiples(p: Project): Multiples | null {
   }
 }
 
-export function formatMultiple(value: number | null): string {
+export function formatMultiple(value: number | null, locale: Locale = 'ja'): string {
   if (value === null) return '—'
-  return `${value >= 100 ? Math.round(value) : value.toFixed(1)}倍`
+  return `${value >= 100 ? Math.round(value) : value.toFixed(1)}${locale === 'en' ? 'x' : '倍'}`
 }

@@ -1,7 +1,9 @@
 # Hostname redirects are configured with Cloudflare Redirect Rules.
 # The site was restructured around the project tracker in 2026-09.
 /tracker/ / 301
+/tracker/astock/ / 301
+/en/tracker/astock/ /en/ 301
 /blog/* / 301
-/en/* / 301
+/en/blog/* /en/ 301
 /editorial-policy/ /about/ 301
 /feed.xml / 301
