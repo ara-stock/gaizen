@@ -1,21 +1,31 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Footer() {
+  const pathname = usePathname()
+  const isEn = pathname === '/en' || pathname.startsWith('/en/')
   const contentLinks: [string, string][] = [
-    ['Airdrop', '/'],
+    ['Airdrop', isEn ? '/en/' : '/'],
     ['Portfolio', '/portfolio/'],
     ['Tools', '/tools/'],
     ['Referral', '/referral/'],
     ['About', '/about/'],
   ]
 
-  const legalLinks: [string, string][] = [
+  // The legal pages exist in Japanese only.
+  const legalLinks: [string, string][] = isEn ? [
+    ['Disclaimer (JA)', '/disclaimer/'],
+    ['Privacy policy (JA)', '/privacy/'],
+    ['Contact / corrections (JA)', '/contact/'],
+  ] : [
     ['免責事項', '/disclaimer/'],
     ['プライバシーポリシー', '/privacy/'],
     ['お問い合わせ・訂正依頼', '/contact/'],
   ]
 
-  const disclaimer = '本サイトの情報は投資助言ではありません。投資は自己責任で。'
+  const disclaimer = isEn ? 'Nothing on this site is investment advice. Invest at your own risk.' : '本サイトの情報は投資助言ではありません。投資は自己責任で。'
 
   return (
     <footer className="border-t mt-24" style={{ borderColor: 'var(--border)' }}>

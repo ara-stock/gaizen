@@ -12,12 +12,12 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const project = getProjectBySlug((await params).slug, 'ja')
-  return project ? projectMetadata(project, 'ja') : {}
+  const project = getProjectBySlug((await params).slug, 'en')
+  return project ? projectMetadata(project, 'en') : {}
 }
 
 export default async function ProjectPage({ params }: Props) {
-  const project = getProjectBySlug((await params).slug, 'ja')
+  const project = getProjectBySlug((await params).slug, 'en')
   if (!project) notFound()
-  return <ProjectDetail project={project} locale="ja" />
+  return <ProjectDetail project={project} locale="en" />
 }

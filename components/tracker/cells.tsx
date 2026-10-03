@@ -1,8 +1,9 @@
 import type { Phase, Project } from '@/types/project'
-import { PHASE_LABEL, PHASE_STEP, TGE_SOURCE_LABEL } from './labels'
+import { PHASE_STEP } from './labels'
+import { dict, type Locale } from './i18n'
 
 /** Three-segment progress meter: the further along, the less room is left to join. */
-export function PhaseMeter({ phase }: { phase: Phase }) {
+export function PhaseMeter({ phase, locale = 'ja' }: { phase: Phase; locale?: Locale }) {
   const closed = phase === 'ended'
   return (
     <span className="inline-flex items-center gap-2 whitespace-nowrap">
@@ -12,7 +13,7 @@ export function PhaseMeter({ phase }: { phase: Phase }) {
             style={{ backgroundColor: n <= PHASE_STEP[phase] ? (closed ? 'var(--muted)' : 'var(--accent)') : 'var(--border)' }} />
         ))}
       </span>
-      <span className="text-xs" style={{ color: closed || phase === 'none' ? 'var(--muted)' : 'var(--foreground)' }}>{PHASE_LABEL[phase]}</span>
+      <span className="text-xs" style={{ color: closed || phase === 'none' ? 'var(--muted)' : 'var(--foreground)' }}>{dict(locale).phase[phase]}</span>
     </span>
   )
 }
@@ -33,21 +34,22 @@ export function ProjectLogo({ project, size = 40 }: { project: Project; size?: n
   )
 }
 
-export function TgeCell({ project }: { project: Project }) {
+export function TgeCell({ project, locale = 'ja' }: { project: Project; locale?: Locale }) {
   const { token } = project
+  const d = dict(locale)
   if (token.launched) {
     return (
       <span>
-        <span className="font-mono">{token.ticker ? `$${token.ticker}` : '上場済'}</span>
-        <span className="block text-xs" style={{ color: 'var(--muted)' }}>{token.tgeDate ?? '上場済'}</span>
+        <span className="font-mono">{token.ticker ? `$${token.ticker}` : d.listed}</span>
+        <span className="block text-xs" style={{ color: 'var(--muted)' }}>{token.tgeDate ?? d.listed}</span>
       </span>
     )
   }
   return (
     <span>
-      <span>{token.tgeExpectation || TGE_SOURCE_LABEL.none}</span>
+      <span>{token.tgeExpectation || d.tgeSource.none}</span>
       {token.tgeExpectation && (
-        <span className="block text-xs" style={{ color: 'var(--muted)' }}>{TGE_SOURCE_LABEL[token.tgeSourceType]}</span>
+        <span className="block text-xs" style={{ color: 'var(--muted)' }}>{d.tgeSource[token.tgeSourceType]}</span>
       )}
     </span>
   )
