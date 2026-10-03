@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import type { Phase, Project, ProjectStatus } from '@/types/project'
 import {
@@ -50,6 +51,7 @@ function tgeSortValue(p: Project): string {
 }
 
 export default function TrackerBoard({ projects }: { projects: Project[] }) {
+  const router = useRouter()
   const [overrides, setOverrides] = useState<Record<string, ProjectStatus>>({})
   const [tab, setTab] = useState<Tab>('active')
   const [query, setQuery] = useState('')
@@ -89,6 +91,16 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
   const muted = { color: 'var(--muted)' }
   const controlStyle = { backgroundColor: 'var(--surface)', borderColor: 'var(--border)', color: 'var(--foreground)' }
 
+  /**
+   * The whole row or card opens the detail page. The name stays a real <Link> for keyboard,
+   * screen readers and open-in-new-tab; clicks on the referral button or while selecting text are left alone.
+   */
+  const openDetail = (slug: string) => (e: React.MouseEvent) => {
+    if ((e.target as HTMLElement).closest('a, button, select, input')) return
+    if (window.getSelection()?.toString()) return
+    router.push(`/tracker/${slug}/`)
+  }
+
   const referral = (p: Project) => p.links.referral ? (
     <a href={p.links.referral} target="_blank" rel="sponsored nofollow noopener"
       className="inline-block whitespace-nowrap text-xs font-semibold px-2.5 py-1 rounded-md border"
@@ -105,16 +117,21 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
 
   const usesPhase = (p: Project) => p.activity === 'perps' || p.activity === 'points'
 
+  // The chevron is always visible so the link reads as a link on touch screens, where hover never fires.
   const nameBlock = (p: Project) => (
     <span className="min-w-0">
       <span className="flex items-center gap-1.5 min-w-0">
-        <span className="text-sm font-semibold truncate" style={{ color: 'var(--foreground)' }}>{p.name}</span>
+        <span className="text-sm font-semibold truncate transition-colors text-[var(--foreground)] group-hover:text-[var(--accent)] group-hover:underline underline-offset-2">{p.name}</span>
         {p.priority === 1 && (
           <span className="flex-shrink-0 text-[10px] font-semibold px-1.5 py-px rounded" style={{ color: 'var(--accent)', backgroundColor: 'var(--accent-subtle)' }}>主力</span>
         )}
         {p.priority === 3 && (
           <span className="flex-shrink-0 text-[10px] font-semibold px-1.5 py-px rounded border" style={{ ...muted, borderColor: 'var(--border)' }}>おすすめ外</span>
         )}
+        <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+          className="flex-shrink-0 transition-transform text-[var(--muted)] group-hover:text-[var(--accent)] group-hover:translate-x-0.5">
+          <path d="m9 18 6-6-6-6" />
+        </svg>
       </span>
       <span className="block text-xs truncate" style={muted}>{p.chain}</span>
     </span>
@@ -230,7 +247,9 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
                   </thead>
                   <tbody>
                     {items.map(p => (
-                      <tr key={p.slug} className="border-t align-middle" style={{ borderColor: 'var(--border)', opacity: p.priority === 3 ? 0.6 : 1 }}>
+                      <tr key={p.slug} onClick={openDetail(p.slug)}
+                        className="group border-t align-middle cursor-pointer transition-colors hover:bg-[var(--surface-2)]"
+                        style={{ borderColor: 'var(--border)', opacity: p.priority === 3 ? 0.6 : 1 }}>
                         <th scope="row" className="px-3 py-2.5 text-left font-normal">
                           <Link href={`/tracker/${p.slug}/`} className="flex items-center gap-3 min-w-0">
                             <ProjectLogo project={p} size={28} />
@@ -276,15 +295,17 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
         {groups.map(({ activity, items }) => (
           <section key={activity}>
             <h2 className="mb-3">{groupHeading(activity, items.length)}</h2>
-            <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {items.map(p => (
-                <li key={p.slug} className="rounded-xl border p-4" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)', opacity: p.priority === 3 ? 0.6 : 1 }}>
+                <li key={p.slug} onClick={openDetail(p.slug)}
+                  className="group min-w-0 rounded-xl border p-4 cursor-pointer transition-colors border-[var(--border)] hover:border-[var(--accent)]"
+                  style={{ backgroundColor: 'var(--surface)', opacity: p.priority === 3 ? 0.6 : 1 }}>
                   <div className="flex items-center gap-3 mb-3">
                     <ProjectLogo project={p} size={28} />
                     <Link href={`/tracker/${p.slug}/`} className="min-w-0 flex-1">{nameBlock(p)}</Link>
                     {referral(p)}
                   </div>
-                  <dl className="grid grid-cols-[6.5rem_1fr] gap-y-1.5 text-sm border-t pt-3" style={{ borderColor: 'var(--border)' }}>
+                  <dl className="grid grid-cols-[6.5rem_minmax(0,1fr)] gap-y-1.5 text-sm border-t pt-3" style={{ borderColor: 'var(--border)' }}>
                     {([
                       ...(usesPhase(p) ? [
                         ['フェーズ', <PhaseMeter key="ph" phase={p.phase} />],
@@ -304,7 +325,7 @@ export default function TrackerBoard({ projects }: { projects: Project[] }) {
                     ] as const).map(([label, value]) => (
                       <div key={label} className="contents">
                         <dt className="text-xs pt-0.5" style={muted}>{label}</dt>
-                        <dd>{value}</dd>
+                        <dd className="min-w-0 break-words">{value}</dd>
                       </div>
                     ))}
                   </dl>
