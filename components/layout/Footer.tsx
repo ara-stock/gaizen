@@ -8,6 +8,7 @@ export default function Footer() {
   const isEn = pathname === '/en' || pathname.startsWith('/en/')
   const contentLinks: [string, string][] = [
     ['Airdrop', isEn ? '/en/' : '/'],
+    ['Cards', '/cards/'],
     ['Portfolio', '/portfolio/'],
     ['Tools', '/tools/'],
     ['Referral', '/referral/'],

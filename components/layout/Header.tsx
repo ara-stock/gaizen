@@ -6,6 +6,7 @@ import { useState, useSyncExternalStore } from 'react'
 
 const NAV_LINKS = [
   { href: '/', label: 'Airdrop', en: '/en/' },
+  { href: '/cards/', label: 'Cards' },
   { href: '/portfolio/', label: 'Portfolio' },
   { href: '/tools/', label: 'Tools' },
   { href: '/about/', label: 'About' },

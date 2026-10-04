@@ -2120,6 +2120,89 @@
         }
       ],
       "updatedAt": "2026-09-29"
+    },
+    {
+      "slug": "near-com",
+      "name": "near.com",
+      "logo": "/logos/near-com.svg",
+      "category": "ウォレット・スワップ",
+      "activity": "points",
+      "priority": 2,
+      "chain": "NEAR Intents（35超のチェーン）",
+      "status": "active",
+      "statusNote": "NEAR@6.66 の対象になるために利用している。",
+      "token": {
+        "launched": true,
+        "ticker": "NEAR",
+        "tgeDate": "2020-10-13",
+        "tgeSourceType": "official"
+      },
+      "points": {
+        "exists": true,
+        "name": "NEAR@ マイルストーン（Confidential Intents）",
+        "status": "near.com の Confidential（秘匿）モードの利用者に、譲渡できないマイルストーントークンを配る仕組み。第1弾の NEAR@3.33 は2026-06-11開始で、Confidential の残高が$100超かつ秘匿スワップ1回以上が条件。Confidential Intents の TVL が$70Mに達した時点（2026年9月中旬）でスナップショットを取り、333,333枚を配布。NEARの3日間のVWAPが$3.33以上になると1:1でNEARに変わる。NEAR@6.66 は、NEARが$6.66を超えたときに配られる次の段階（配布枚数・対象条件は公式の一次情報で未確認）。",
+        "communityAllocation": "NEAR@3.33 は333,333枚（$3.33換算で約$111万）。NEAR@6.66 の枚数は未確認。"
+      },
+      "phase": "mid",
+      "phaseNote": "第1弾の NEAR@3.33 はスナップショット済み。NEARは2026年9月下旬から$3.33を上回っている（CoinGecko）が、変換が実行されたかは公式発表で未確認。NEAR@6.66 は現在値（約$4.7）から約4割の上昇が必要。",
+      "airdrop": {
+        "estimated": true,
+        "basis": "NEAR@6.66 の配布枚数が未確認のため試算しない。参考：NEAR@3.33 と同じ333,333枚なら、$6.66到達時の総額は約$222万。"
+      },
+      "audience": {
+        "xHandle": "NEARProtocol",
+        "xFollowers": 1827979,
+        "asOf": "2026-10-03",
+        "users": "Confidential Intents の TVL $70M超（2026年9月）",
+        "usersSource": "CoinCentral ほか報道。near.com の利用者数は未公表。"
+      },
+      "funding": {
+        "totalUsdM": null,
+        "rounds": "near.com 単体の調達は開示されていない。母体の NEAR Protocol は2022年に$350M（Tiger Global主導）などを調達しているが、near.com の運営主体は公式サイトで確認できない。",
+        "investors": []
+      },
+      "team": {
+        "founders": [
+          "Illia Polosukhin（NEAR共同創業者）"
+        ],
+        "doxxed": true,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "NEAR Protocol が2026-02-23の NEARCON で公開したアプリ。ウォレット・チェーン横断スワップ・株式トークン・Perp を1つのアカウントで扱う。"
+      },
+      "flags": [
+        "マイルストーントークンは譲渡できず、NEARの価格条件（3日間のVWAP）を満たすまでNEARに変わらない。価格が届かなければ受け取れない可能性がある。",
+        "NEAR@6.66 の配布枚数・対象条件・期限は、公式の一次情報で確認できていない。",
+        "登録はウォレットかパスキーで、メール・KYCは不要。",
+        "Confidential モードは取引内容を外から見えなくする仕組みで、規制の扱いが今後変わる可能性がある。"
+      ],
+      "links": {
+        "site": "https://near.com/",
+        "referral": "https://near.com/login?ref=dbj2hyym"
+      },
+      "sources": [
+        {
+          "title": "near.com 公式サイト",
+          "url": "https://near.com/",
+          "date": "2026-10-03閲覧"
+        },
+        {
+          "title": "NEAR Protocol on X - Near@3.33 is live",
+          "url": "https://x.com/NEARProtocol/status/2065057506708038122",
+          "date": "2026-06-11"
+        },
+        {
+          "title": "CoinMarketCap - NEAR Surges on Confidential Intents TVL Milestone",
+          "url": "https://coinmarketcap.com/top-stories/6ab04a64d28b6a241fa0300d/",
+          "date": "2026-09"
+        },
+        {
+          "title": "Let's Data Science - NEAR launches multichain super app near.com",
+          "url": "https://www.letsdatascience.com/news/near-launches-multichain-super-app-nearcom-for-onchain-finan-5ace494b",
+          "date": "2026-02"
+        }
+      ],
+      "updatedAt": "2026-10-03"
     }
   ]
 }
