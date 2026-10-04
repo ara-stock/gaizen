@@ -58,7 +58,8 @@ const TEXT = {
     risks: 'リスク・注意点',
     links: 'リンク',
     site: '公式サイト',
-    officialX: (h: string) => `公式X（@${h}）`,
+    officialXLabel: '公式X',
+    followersCount: (n: string) => `フォロワー ${n}`,
     invite: '招待コード',
     startWith: (name: string) => `${name}を始める（紹介リンク）`,
     referralNote: '紹介リンクです。登録や取引に応じて筆者が報酬を受け取る場合があります。掲載内容は報酬と連動させていません。',
@@ -116,7 +117,8 @@ const TEXT = {
     risks: 'Risks and caveats',
     links: 'Links',
     site: 'Official website',
-    officialX: (h: string) => `Official X (@${h})`,
+    officialXLabel: 'Official X',
+    followersCount: (n: string) => `${n} followers`,
     invite: 'Invite codes',
     startWith: (name: string) => `Start on ${name} (ref link)`,
     referralNote: 'This is a referral link. The author may be rewarded when you sign up or trade. What is written here is not tied to those rewards.',
@@ -140,6 +142,23 @@ export function projectMetadata(p: Project, locale: Locale): Metadata {
       },
     },
   }
+}
+
+function hostOf(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '')
+  } catch {
+    return url
+  }
+}
+
+function ExternalIcon() {
+  return (
+    <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+      className="flex-shrink-0 text-[var(--muted)] group-hover:text-[var(--accent)]">
+      <path d="M7 17 17 7M8 7h9v9" />
+    </svg>
+  )
 }
 
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
@@ -316,10 +335,38 @@ export default function ProjectDetail({ project: p, locale }: { project: Project
       )}
 
       <Section title={t.links}>
-        <ul className="space-y-2 text-sm">
-          <li><a href={p.links.site} target="_blank" rel="noopener nofollow" className="underline" style={{ color: 'var(--accent)' }}>{t.site}</a></li>
+        {/* Card-style links: easier to tap than inline text, and they show which account is the real one. */}
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <li>
+            <a href={p.links.site} target="_blank" rel="noopener nofollow"
+              className="group flex items-center gap-3 p-3 rounded-lg border transition-colors border-[var(--border)] hover:border-[var(--accent)]"
+              style={{ backgroundColor: 'var(--surface-2)' }}>
+              <ProjectLogo project={p} size={36} />
+              <span className="min-w-0 flex-1">
+                <span className="block text-xs" style={{ color: 'var(--muted)' }}>{t.site}</span>
+                <span className="block text-sm font-semibold truncate group-hover:text-[var(--accent)]" style={{ color: 'var(--foreground)' }}>{hostOf(p.links.site)}</span>
+              </span>
+              <ExternalIcon />
+            </a>
+          </li>
           {p.audience?.xHandle && (
-            <li><a href={`https://x.com/${p.audience.xHandle}`} target="_blank" rel="noopener nofollow" className="underline" style={{ color: 'var(--accent)' }}>{t.officialX(p.audience.xHandle)}</a></li>
+            <li>
+              <a href={`https://x.com/${p.audience.xHandle}`} target="_blank" rel="noopener nofollow"
+                className="group flex items-center gap-3 p-3 rounded-lg border transition-colors border-[var(--border)] hover:border-[var(--accent)]"
+                style={{ backgroundColor: 'var(--surface-2)' }}>
+                <span aria-hidden="true" className="w-9 h-9 flex-shrink-0 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'var(--foreground)', color: 'var(--background)' }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.912-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-xs" style={{ color: 'var(--muted)' }}>{t.officialXLabel}</span>
+                  <span className="block text-sm font-semibold truncate group-hover:text-[var(--accent)]" style={{ color: 'var(--foreground)' }}>@{p.audience.xHandle}</span>
+                  {p.audience.xFollowers ? (
+                    <span className="block text-xs font-mono" style={{ color: 'var(--muted)' }}>{t.followersCount(formatFollowers(p.audience.xFollowers, locale))}</span>
+                  ) : null}
+                </span>
+                <ExternalIcon />
+              </a>
+            </li>
           )}
         </ul>
         {p.links.inviteCodes && (
