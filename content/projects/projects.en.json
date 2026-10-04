@@ -807,6 +807,9 @@
       null,
       null,
       null
-    ]
+    ],
+    "links": {
+      "inviteNote": "Connect your wallet in HyperLink's official app (app.hyperlink.xyz) and enter this code to sign up — no need to use the referral link below. The code works for the first 10 people only and may already be full. Signing up with it pays the author a referral reward, and you get 10% of your HyperLink fees back for 90 days."
+    }
   }
 }

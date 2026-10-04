@@ -2257,7 +2257,11 @@
       ],
       "links": {
         "site": "https://hyperlink.xyz/",
-        "referral": "https://app.hyperlink.xyz/join/HLHYPE"
+        "referral": "https://app.hyperlink.xyz/join/HLHYPE",
+        "inviteCodes": [
+          "HLHYPE"
+        ],
+        "inviteNote": "HyperLink の公式アプリ（app.hyperlink.xyz）でウォレットを接続し、このコードを入力すれば登録できます。下の紹介リンクを使わなくても同じです。コードは先着10名までで、埋まっている場合は使えません。コード経由の登録では筆者に紹介報酬が入り、登録した人には90日間 HyperLink 手数料の10%が戻ります。"
       },
       "sources": [
         {

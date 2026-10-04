@@ -58,6 +58,7 @@ const TEXT = {
     risks: 'リスク・注意点',
     links: 'リンク',
     site: '公式サイト',
+    officialX: (h: string) => `公式X（@${h}）`,
     invite: '招待コード',
     startWith: (name: string) => `${name}を始める（紹介リンク）`,
     referralNote: '紹介リンクです。登録や取引に応じて筆者が報酬を受け取る場合があります。掲載内容は報酬と連動させていません。',
@@ -115,6 +116,7 @@ const TEXT = {
     risks: 'Risks and caveats',
     links: 'Links',
     site: 'Official website',
+    officialX: (h: string) => `Official X (@${h})`,
     invite: 'Invite codes',
     startWith: (name: string) => `Start on ${name} (ref link)`,
     referralNote: 'This is a referral link. The author may be rewarded when you sign up or trade. What is written here is not tied to those rewards.',
@@ -316,6 +318,9 @@ export default function ProjectDetail({ project: p, locale }: { project: Project
       <Section title={t.links}>
         <ul className="space-y-2 text-sm">
           <li><a href={p.links.site} target="_blank" rel="noopener nofollow" className="underline" style={{ color: 'var(--accent)' }}>{t.site}</a></li>
+          {p.audience?.xHandle && (
+            <li><a href={`https://x.com/${p.audience.xHandle}`} target="_blank" rel="noopener nofollow" className="underline" style={{ color: 'var(--accent)' }}>{t.officialX(p.audience.xHandle)}</a></li>
+          )}
         </ul>
         {p.links.inviteCodes && (
           <div id="invite" className="mt-5 scroll-mt-20">
