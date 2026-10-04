@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-05",
   "projects": [
     {
       "slug": "hyperliquid",
@@ -88,7 +88,7 @@
         "holders90UsdM": 142.29,
         "asOf": "2026-09-28"
       },
-      "rank": 8
+      "rank": 9
     },
     {
       "slug": "trade-xyz",
@@ -166,7 +166,7 @@
         "basis": "トークンは未発表。FDV $1.5Bは2026年8月の調達の噂にあった評価額、配分10%は仮置き。ポイントがないため個人の受取額は試算できない。"
       },
       "priority": 2,
-      "rank": 7
+      "rank": 8
     },
     {
       "slug": "entropy",
@@ -250,7 +250,7 @@
         "basis": "トークンは未発表。FDV $100Mはシード$14Mからの仮置き（評価額は非開示）、配分10%も仮置き。"
       },
       "priority": 1,
-      "rank": 2
+      "rank": 3
     },
     {
       "slug": "lighter",
@@ -358,7 +358,7 @@
         "holders90UsdM": 7.22,
         "asOf": "2026-09-28"
       },
-      "rank": 6
+      "rank": 7
     },
     {
       "slug": "extended",
@@ -453,7 +453,7 @@
       "logo": "/logos/extended.svg",
       "activity": "perps",
       "priority": 1,
-      "rank": 4
+      "rank": 5
     },
     {
       "slug": "qfex",
@@ -553,7 +553,7 @@
         "basis": "トークンは未発表。FDV $95Mはシード時の評価額（報道）、配分10%は仮置き。"
       },
       "priority": 2,
-      "rank": 5
+      "rank": 6
     },
     {
       "slug": "grvt",
@@ -1794,7 +1794,7 @@
         }
       ],
       "updatedAt": "2026-09-22",
-      "rank": 3
+      "rank": 4
     },
     {
       "slug": "jumper",
@@ -2203,6 +2203,96 @@
         }
       ],
       "updatedAt": "2026-10-03"
+    },
+    {
+      "slug": "hyperlink",
+      "name": "HyperLink",
+      "logo": "/logos/hyperlink.png",
+      "category": "Perp DEX（プライムブローカー）",
+      "activity": "perps",
+      "priority": 2,
+      "chain": "Hyperliquid（共有コントラクト経由）",
+      "status": "active",
+      "statusNote": "Hyperliquid の取引の一部を HyperLink 経由で行っている。",
+      "token": {
+        "launched": false,
+        "tgeSourceType": "none"
+      },
+      "points": {
+        "exists": false,
+        "status": "ポイント・エアドロップの制度は公式ドキュメントに記載がない（2026-10-05確認）。紹介コードを紐付けると、90日間 HyperLink 手数料の10%がキャッシュバックされる。"
+      },
+      "phase": "early",
+      "phaseNote": "招待制で始まったばかりの段階。トークンもポイントも未発表で、筆者は初期段階と判断している。hlHYPE はステークした HYPE の受取証で、運営のトークンではない。",
+      "audience": {
+        "xHandle": "hyperlink_xyz",
+        "xFollowers": 1733,
+        "asOf": "2026-10-05"
+      },
+      "funding": {
+        "totalUsdM": null,
+        "rounds": "調達額は非開示。Alliance、Divergence Ventures、Reveries などが出資（公式サイト）。",
+        "investors": [
+          "Alliance",
+          "Divergence Ventures",
+          "Reveries"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Suki Sohi（創業者）"
+        ],
+        "doxxed": true,
+        "countryCode": "US",
+        "base": "米国（ニューヨーク）",
+        "baseKind": "company HQ",
+        "background": "Hyperliquid 向けのプライムブローカー。利用者の注文を1つの共有コントラクトにまとめて Hyperliquid の板に出し、合算した取引量とステーク量で安い手数料ランクを全員に適用する。注文は隔離されたハードウェア（TEE）で処理される。"
+      },
+      "flags": [
+        "招待制。Hyperliquid の累計取引高が$500万以上か、招待コード（紹介コード）の紐付けが必要。コードは1つにつき最初10枠で、埋まっている場合がある。紐付けは一度きりで変更できない。",
+        "手数料は Perp のテイカーで約0.026%（Hyperliquid の料金0.021%＋HyperLink 0.005%）、メイカーで約0.0028%。post-only の注文と現物の買いは HyperLink 手数料なし。出金は0.05%（上限$1）。",
+        "資金は自己管理型のコントラクトに置かれるが、スマートコントラクト・TEE（ハードウェアの隔離）・HyperEVM の不具合で資金や匿名性が損なわれるリスクがある（公式のリスク説明）。",
+        "入金と出金は HyperCore 上で公開される。匿名になるのは取引の中身だけ。",
+        "監査は Trail of Bits、Zenith、Sherlock、Obsidian、Octane、V12。"
+      ],
+      "links": {
+        "site": "https://hyperlink.xyz/",
+        "referral": "https://app.hyperlink.xyz/join/HLHYPE"
+      },
+      "sources": [
+        {
+          "title": "HyperLink 公式サイト",
+          "url": "https://hyperlink.xyz/",
+          "date": "2026-10-05閲覧"
+        },
+        {
+          "title": "HyperLink Docs - Fees",
+          "url": "https://docs.hyperlink.xyz/trade/fees.md",
+          "date": "2026-10-05閲覧"
+        },
+        {
+          "title": "HyperLink Docs - Getting started",
+          "url": "https://docs.hyperlink.xyz/start/getting-started.md",
+          "date": "2026-10-05閲覧"
+        },
+        {
+          "title": "HyperLink Docs - Referral Program",
+          "url": "https://docs.hyperlink.xyz/trade/referral-program.md",
+          "date": "2026-10-05閲覧"
+        },
+        {
+          "title": "HyperLink Docs - Risks",
+          "url": "https://docs.hyperlink.xyz/security/risks.md",
+          "date": "2026-10-05閲覧"
+        },
+        {
+          "title": "Alliance - HyperLink",
+          "url": "https://alliance.xyz/companies/hyperlink",
+          "date": "2026-10-05閲覧"
+        }
+      ],
+      "updatedAt": "2026-10-05",
+      "rank": 2
     }
   ]
 }

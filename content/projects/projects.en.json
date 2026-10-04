@@ -772,5 +772,41 @@
       null,
       null
     ]
+  },
+  "hyperlink": {
+    "category": "Perp DEX (prime broker)",
+    "chain": "Hyperliquid (via a shared contract)",
+    "statusNote": "I route part of my Hyperliquid trading through HyperLink.",
+    "points": {
+      "status": "The official docs mention no points or airdrop program (checked 2026-10-05). Linking a referral code gives 10% cashback on HyperLink fees for 90 days."
+    },
+    "phaseNote": "Invite-only and just getting started. No token and no points announced; the author judges it to be at an early stage. hlHYPE is a receipt for staked HYPE, not a project token.",
+    "funding": {
+      "rounds": "Amount undisclosed. Backed by Alliance, Divergence Ventures, Reveries and others (official website)."
+    },
+    "team": {
+      "founders": [
+        "Suki Sohi (founder)"
+      ],
+      "base": "United States (New York)",
+      "background": "A prime broker for Hyperliquid. It pools users' orders through one shared contract onto Hyperliquid's order book, so everyone gets the low fee tier earned by the combined volume and stake. Orders are processed inside isolated hardware (a TEE)."
+    },
+    "flags": [
+      "Invite-only. You need either $5M+ in lifetime Hyperliquid volume or a linked invite (referral) code. Each code starts with 10 slots and may be full. Linking is permanent and cannot be changed.",
+      "Perp fees are about 0.026% taker (Hyperliquid's 0.021% + HyperLink's 0.005%) and about 0.0028% maker. Post-only orders and spot buys pay no HyperLink fee. Withdrawals cost 0.05% (capped at $1).",
+      "Funds sit in a self-custodial contract, but bugs in the smart contracts, the TEE (hardware isolation) or HyperEVM could cost funds or privacy (official risk disclosure).",
+      "Deposits and withdrawals are public on HyperCore; only the trading itself is private.",
+      "Audited by Trail of Bits, Zenith, Sherlock, Obsidian, Octane and V12."
+    ],
+    "sources": [
+      {
+        "title": "HyperLink official website"
+      },
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
   }
 }
