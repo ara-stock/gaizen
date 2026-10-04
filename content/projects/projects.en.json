@@ -730,5 +730,47 @@
         "title": "CoinPost - Is Zcash (ZEC) available in Japan? (Japanese)"
       }
     ]
+  },
+  "near-com": {
+    "category": "Wallet / swap",
+    "chain": "NEAR Intents (35+ chains)",
+    "statusNote": "I use it to qualify for NEAR@6.66.",
+    "points": {
+      "name": "NEAR@ milestones (Confidential Intents)",
+      "status": "Non-transferable milestone tokens for people using Confidential mode on near.com. The first stage, NEAR@3.33, started 2026-06-11; it required a Confidential balance above $100 and at least one confidential swap. A snapshot was taken when Confidential Intents TVL reached $70M (mid-September 2026), and 333,333 tokens were distributed. They convert 1:1 into NEAR once NEAR's 3-day VWAP is $3.33 or higher. NEAR@6.66 is the next stage, paid out when NEAR exceeds $6.66 (supply and eligibility not verified from primary sources).",
+      "communityAllocation": "NEAR@3.33: 333,333 tokens (about $1.11M at $3.33). NEAR@6.66 supply unverified."
+    },
+    "phaseNote": "The first stage, NEAR@3.33, has had its snapshot. NEAR has traded above $3.33 since late September 2026 (CoinGecko), but whether the conversion has run is not confirmed by an official announcement. NEAR@6.66 needs about a 40% rise from the current price (about $4.7).",
+    "airdrop": {
+      "basis": "No estimate, because the NEAR@6.66 supply is unverified. For reference: at the same 333,333 tokens as NEAR@3.33, the total would be about $2.22M when NEAR reaches $6.66."
+    },
+    "audience": {
+      "users": "Confidential Intents TVL above $70M (September 2026)",
+      "usersSource": "CoinCentral and other press. near.com user numbers are not published."
+    },
+    "funding": {
+      "rounds": "No funding disclosed for near.com itself. Its parent, NEAR Protocol, raised $350M in 2022 (led by Tiger Global) among other rounds, but the website does not identify near.com's operating entity."
+    },
+    "team": {
+      "founders": [
+        "Illia Polosukhin (NEAR co-founder)"
+      ],
+      "base": "Unverified",
+      "background": "An app NEAR Protocol launched at NEARCON on 2026-02-23. Wallet, cross-chain swaps, stock tokens and perps in one account."
+    },
+    "flags": [
+      "Milestone tokens cannot be transferred and only become NEAR once the price condition (3-day VWAP) is met. If the price never gets there, you may receive nothing.",
+      "NEAR@6.66's supply, eligibility and deadline have not been verified from primary sources.",
+      "You sign up with a wallet or passkey; no email or KYC.",
+      "Confidential mode hides transaction details from outside view, and how regulators treat it may change."
+    ],
+    "sources": [
+      {
+        "title": "near.com official website"
+      },
+      null,
+      null,
+      null
+    ]
   }
 }

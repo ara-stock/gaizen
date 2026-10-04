@@ -20,6 +20,7 @@ function xmlEscape(value) {
 const projectsData = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/projects/projects.json'), 'utf-8'))
 const staticRoutes = [
   { url: `${SITE_URL}/`, priority: '1.0', changefreq: 'weekly', lastmod: projectsData.updatedAt },
+  { url: `${SITE_URL}/cards/`, priority: '0.7', changefreq: 'monthly' },
   { url: `${SITE_URL}/portfolio/`, priority: '0.6', changefreq: 'monthly' },
   { url: `${SITE_URL}/tools/`, priority: '0.6', changefreq: 'monthly' },
   { url: `${SITE_URL}/tools/allocation/`, priority: '0.5', changefreq: 'yearly' },
