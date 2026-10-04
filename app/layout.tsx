@@ -3,10 +3,11 @@ import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { serializeJsonLd } from '@/lib/json-ld'
+import { OG_IMAGE } from '@/lib/og'
 
 const SITE_URL = 'https://gaizen.xyz'
 const SITE_NAME = 'GAIZEN FINANCE'
-const SITE_DESCRIPTION = '筆者が実際に参加している仮想通貨のエアドロップ・ポイントプログラムを、TGE時期・進み具合・受取見込み・調達額・チームで一覧にした個人サイト。'
+const SITE_DESCRIPTION = '筆者が実際に参加している仮想通貨のエアドロップ・ポイントプログラムを、Perp DEX・DeFi・Staking ごとに、筆者のメモと出典つきで一覧にした個人サイト。'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -24,13 +25,13 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
-    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: SITE_NAME }],
+    images: [OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
-    images: [`${SITE_URL}/og-image.png`],
+    images: [OG_IMAGE.url],
   },
 }
 

@@ -2,12 +2,13 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getProjectsData } from '@/lib/projects'
 import TrackerBoard from '@/components/tracker/TrackerBoard'
+import { OG_IMAGE } from '@/lib/og'
 
 export const metadata: Metadata = {
   title: { absolute: 'GAIZEN FINANCE | Airdrop' },
   description: 'The crypto airdrop and points programs the author actually takes part in, listed by TGE timing, progress, VC funding, X followers and team base.',
   alternates: { canonical: 'https://gaizen.xyz/en/', languages: { ja: 'https://gaizen.xyz/', en: 'https://gaizen.xyz/en/' } },
-  openGraph: { locale: 'en_US' },
+  openGraph: { locale: 'en_US', images: [OG_IMAGE] },
 }
 
 export default function EnglishHomePage() {

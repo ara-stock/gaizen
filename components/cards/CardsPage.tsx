@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { AS_OF, CARDS, type Card } from '@/content/cards/cards'
 import { CARDS_EN } from '@/content/cards/cards.en'
+import { OG_IMAGE } from '@/lib/og'
 
 export type Locale = 'ja' | 'en'
 
@@ -101,7 +102,7 @@ export function cardsMetadata(locale: Locale): Metadata {
       ? 'Crypto cards (ether.fi Cash, Ethena Pay, KAST, Tria, Plasma One, MetaMask Card, Bybit Card, Bitget Wallet Card, RedotPay) compared on cashback rates and monthly caps, card and annual fees, FX fees, KYC and tier requirements, from official sources.'
       : '仮想通貨カード（ether.fi Cash・Ethena Pay・KAST・Tria・Plasma One・MetaMask Card・Bybit Card・Bitget Wallet Card・RedotPay）のキャッシュバック率と月の上限、発行費・年会費、為替手数料、KYC、上位ランクの条件を公式資料で比べた一覧。',
     alternates: { canonical: locale === 'en' ? en : ja, languages: { ja, en } },
-    ...(locale === 'en' ? { openGraph: { locale: 'en_US' } } : {}),
+    ...(locale === 'en' ? { openGraph: { locale: 'en_US', images: [OG_IMAGE] } } : {}),
   }
 }
 
