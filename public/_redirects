@@ -6,4 +6,5 @@
 /blog/* / 301
 /en/blog/* /en/ 301
 /editorial-policy/ /about/ 301
+/portfolio/ /about/ 301
 /feed.xml / 301

@@ -6,8 +6,7 @@ import { useState, useSyncExternalStore } from 'react'
 
 const NAV_LINKS = [
   { href: '/', label: 'Airdrop', en: '/en/' },
-  { href: '/cards/', label: 'Cards' },
-  { href: '/portfolio/', label: 'Portfolio' },
+  { href: '/cards/', label: 'Cards', en: '/en/cards/' },
   { href: '/tools/', label: 'Tools' },
   { href: '/about/', label: 'About' },
 ]
@@ -66,10 +65,10 @@ function ThemeToggle({ isEn }: { isEn: boolean }) {
   )
 }
 
-/** Only the Airdrop list and project pages have English versions; other pages switch to the English list. */
+/** The Airdrop list, project pages and Cards have English versions; other pages switch to the English list. */
 function switchLanguage(pathname: string, isEn: boolean): string {
   if (isEn) return pathname.replace(/^\/en(?=\/|$)/, '') || '/'
-  return pathname === '/' || pathname.startsWith('/tracker/') ? `/en${pathname}` : '/en/'
+  return pathname === '/' || pathname.startsWith('/tracker/') || pathname.startsWith('/cards') ? `/en${pathname}` : '/en/'
 }
 
 export default function Header() {

@@ -21,7 +21,6 @@ const projectsData = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/project
 const staticRoutes = [
   { url: `${SITE_URL}/`, priority: '1.0', changefreq: 'weekly', lastmod: projectsData.updatedAt },
   { url: `${SITE_URL}/cards/`, priority: '0.7', changefreq: 'monthly' },
-  { url: `${SITE_URL}/portfolio/`, priority: '0.6', changefreq: 'monthly' },
   { url: `${SITE_URL}/tools/`, priority: '0.6', changefreq: 'monthly' },
   { url: `${SITE_URL}/tools/allocation/`, priority: '0.5', changefreq: 'yearly' },
   { url: `${SITE_URL}/tools/fire/`, priority: '0.5', changefreq: 'yearly' },
@@ -56,6 +55,7 @@ ${projectsData.projects.map(p => entry({
   priority: '0.7',
 })).join('\n')}
 ${entry({ url: `${SITE_URL}/en/`, priority: '0.9', changefreq: 'weekly', lastmod: projectsData.updatedAt })}
+${entry({ url: `${SITE_URL}/en/cards/`, priority: '0.6', changefreq: 'monthly' })}
 ${projectsData.projects.map(p => entry({
   url: `${SITE_URL}/en/tracker/${p.slug}/`,
   lastmod: p.updatedAt,
@@ -70,4 +70,4 @@ fs.writeFileSync(path.join(OUT_DIR, 'sitemap.xml'), xml, 'utf-8')
 // It intentionally contains the URL set directly instead of a sitemap index,
 // so Search Console can discover pages even if it does not fetch child sitemaps.
 fs.writeFileSync(path.join(OUT_DIR, 'sitemap-index.xml'), xml, 'utf-8')
-console.log(`[sitemap] Generated with ${staticRoutes.length + 1 + projectsData.projects.length * 2} URLs`)
+console.log(`[sitemap] Generated with ${staticRoutes.length + 2 + projectsData.projects.length * 2} URLs`)

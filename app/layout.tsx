@@ -43,7 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* First visit only: a browser with no Japanese among its languages opens the English Airdrop pages.
             A choice made with the header's language button is stored and always wins. Crawlers are left alone
             so both language versions stay indexed. */}
-        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var p=location.pathname;if(p!=='/'&&p.indexOf('/tracker/')!==0)return;if(/bot|crawl|spider|slurp|preview|lighthouse/i.test(navigator.userAgent))return;if(localStorage.getItem('gaizen-lang'))return;var l=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'ja'];for(var i=0;i<l.length;i++){if(/^ja/i.test(l[i]))return;}location.replace('/en'+p+location.search+location.hash);}catch(e){}})()` }} />
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var p=location.pathname;if(p!=='/'&&p.indexOf('/tracker/')!==0&&p.indexOf('/cards/')!==0)return;if(/bot|crawl|spider|slurp|preview|lighthouse/i.test(navigator.userAgent))return;if(localStorage.getItem('gaizen-lang'))return;var l=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'ja'];for(var i=0;i<l.length;i++){if(/^ja/i.test(l[i]))return;}location.replace('/en'+p+location.search+location.hash);}catch(e){}})()` }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd({
           '@context': 'https://schema.org',
           '@type': 'WebSite',
