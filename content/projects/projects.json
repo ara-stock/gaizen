@@ -74,7 +74,7 @@
       },
       "logo": "/logos/hyperliquid.png",
       "activity": "perps",
-      "priority": 1,
+      "priority": 2,
       "valuation": {
         "coingeckoId": "hyperliquid",
         "defillamaSlug": "hyperliquid",
@@ -88,7 +88,7 @@
         "holders90UsdM": 142.29,
         "asOf": "2026-09-28"
       },
-      "rank": 8
+      "rank": 7
     },
     {
       "slug": "trade-xyz",
@@ -166,7 +166,7 @@
         "basis": "トークンは未発表。FDV $1.5Bは2026年8月の調達の噂にあった評価額、配分10%は仮置き。ポイントがないため個人の受取額は試算できない。"
       },
       "priority": 2,
-      "rank": 7
+      "rank": 8
     },
     {
       "slug": "entropy",
@@ -249,8 +249,8 @@
         "estimated": true,
         "basis": "トークンは未発表。FDV $100Mはシード$14Mからの仮置き（評価額は非開示）、配分10%も仮置き。"
       },
-      "priority": 1,
-      "rank": 2
+      "priority": 2,
+      "rank": 4
     },
     {
       "slug": "lighter",
@@ -344,7 +344,7 @@
       },
       "logo": "/logos/lighter.png",
       "activity": "perps",
-      "priority": 1,
+      "priority": 2,
       "valuation": {
         "coingeckoId": "lighter",
         "defillamaSlug": "lighter",
@@ -452,8 +452,8 @@
       },
       "logo": "/logos/extended.svg",
       "activity": "perps",
-      "priority": 1,
-      "rank": 4
+      "priority": 2,
+      "rank": 10
     },
     {
       "slug": "qfex",
@@ -553,7 +553,7 @@
         "basis": "トークンは未発表。FDV $95Mはシード時の評価額（報道）、配分10%は仮置き。"
       },
       "priority": 2,
-      "rank": 5
+      "rank": 9
     },
     {
       "slug": "grvt",
@@ -836,7 +836,8 @@
       },
       "logo": "/logos/variational.png",
       "activity": "perps",
-      "priority": 1
+      "priority": 1,
+      "rank": 2
     },
     {
       "slug": "nado",
@@ -1706,7 +1707,7 @@
       "logo": "/logos/hibachi.png",
       "category": "Perp DEX",
       "activity": "perps",
-      "priority": 1,
+      "priority": 2,
       "chain": "オフチェーン板＋ZK決済（入金は Arbitrum / Base / Arc）",
       "status": "active",
       "statusNote": "主力として組み込みを進めている。メイカー手数料が0で、両建ての carry と相性がよい。",
@@ -1805,7 +1806,7 @@
         }
       ],
       "updatedAt": "2026-09-22",
-      "rank": 3
+      "rank": 5
     },
     {
       "slug": "jumper",
@@ -2314,7 +2315,7 @@
       "logo": "/logos/popdex.png",
       "category": "Perp DEX",
       "activity": "perps",
-      "priority": 2,
+      "priority": 1,
       "chain": "独自L1（USDT 証拠金）",
       "status": "active",
       "statusNote": "エアドロップはないと考えていて、目当てはコンペティション（取引大会）で USDT が直接戻ってくること。ポイント制度で後から何かもらえるのを待つのではなく、その場で還元されるのが良いところ。板の厚みもある程度ある。",
@@ -2400,7 +2401,8 @@
       "updatedAt": "2026-10-16",
       "airdrop": {
         "basis": "エアドロップの予定はなく、還元は取引大会の USDT と MegaPop で行われるため、受取見込みは試算しない。"
-      }
+      },
+      "rank": 3
     }
   ]
 }
