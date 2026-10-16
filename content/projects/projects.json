@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05",
+  "updatedAt": "2026-10-16",
   "projects": [
     {
       "slug": "hyperliquid",
@@ -2297,6 +2297,100 @@
       ],
       "updatedAt": "2026-10-05",
       "rank": 2
+    },
+    {
+      "slug": "popdex",
+      "name": "PopDEX",
+      "logo": "/logos/popdex.png",
+      "category": "Perp DEX",
+      "activity": "perps",
+      "priority": 2,
+      "chain": "独自L1（USDT 証拠金）",
+      "status": "active",
+      "statusNote": "エアドロップはないと考えていて、目当てはコンペティション（取引大会）で USDT が直接戻ってくること。ポイント制度で後から何かもらえるのを待つのではなく、その場で還元されるのが良いところ。板の厚みもある程度ある。",
+      "token": {
+        "launched": false,
+        "tgeSourceType": "none"
+      },
+      "points": {
+        "exists": true,
+        "status": "ポイント制度もガバナンストークンもない。代わりに期間を区切った取引大会（Trader & Contributor Rewards など）で USDT を配っている。たとえば2026-09-06〜09-20の取引が1回分の対象だった（公式X）。今後は手数料から積み立てる賞金プール「MegaPop」が始まる見込みだが、仕組みは未公表。",
+        "name": "取引大会（USDT で還元）"
+      },
+      "phase": "none",
+      "phaseNote": "トークン・ポイント・エアドロップの予定は発表されていない。手数料収入を利用者に戻す方針（「100% value return to real contributors」）で、還元は取引大会の USDT と MegaPop で行う形。",
+      "audience": {
+        "xHandle": "popdex_",
+        "xFollowers": 9246,
+        "asOf": "2026-10-16",
+        "users": "BTC 先物の24時間出来高 約$6,350万、BTC のスプレッド約0.24bps（2026-10-16、公開API）。直近30日の手数料は約$29万（DefiLlama）",
+        "usersSource": "PopDEX の公開API（筆者が取得）、DefiLlama"
+      },
+      "funding": {
+        "totalUsdM": 30,
+        "rounds": "2026年5月に$30Mの戦略シード（Foresight Ventures 主導、ほかの投資家は非開示）。",
+        "investors": [
+          "Foresight Ventures"
+        ]
+      },
+      "team": {
+        "founders": [],
+        "doxxed": false,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "招待制のテストから始まった Perp DEX。暗号資産のほか、株価指数・個別株・金属などの RWA 先物を多く扱う。価格は Binance・OKX・Bybit・Coinbase・Bitget の現物価格の加重中央値から作る独自のオラクル。"
+      },
+      "flags": [
+        "取引手数料は最初のランク（VIP 0）でメイカー0.010%・テイカー0.032%、USDT で精算（公式ドキュメント）。14日間の取引高でランクが上がる。",
+        "取引大会の配分の決め方は毎回の告知しだいで、続く保証もない。MegaPop の仕組みは未公表。",
+        "紹介コードの紐付けは1回限りで、あとから変更できない。紹介者の取り分（最大20%）のうち、どれだけを招待された人に戻すかは紹介者が決める。筆者のコードは招待された人への還元0%（20%すべて筆者）に設定している。",
+        "チームは公表されていない。監査はブリッジ部分（BlockSec、2026-07-03）のみ公開されている。",
+        "証拠金はクロスのみで、出金には異議申し立て期間（チャレンジ期間）がある（2026-09時点の公式ドキュメント）。"
+      ],
+      "links": {
+        "site": "https://popdex.xyz/",
+        "referral": "https://app.popdex.xyz/tools/app-launch?referralCode=ARASTOCK",
+        "inviteCodes": [
+          "ARASTOCK"
+        ],
+        "inviteNote": "PopDEX のアプリで登録後（または初回入金後）、Referral ページでこのコードを入力できます。下の紹介リンクを使わなくても同じです。紐付けは1回限りで変更できません。このコードでは手数料の割引はなく、招待された人の手数料の20%が筆者に紹介報酬として入ります。"
+      },
+      "sources": [
+        {
+          "title": "PopDEX Docs - Trading Fees",
+          "url": "https://popdex.xyz/docs/product-docs/trading/fees",
+          "date": "2026-10-16閲覧"
+        },
+        {
+          "title": "PopDEX Docs - Referral Program",
+          "url": "https://popdex.xyz/docs/product-docs/rewards/referral",
+          "date": "2026-10-16閲覧"
+        },
+        {
+          "title": "PopDEX on X - Trader & Contributor Rewards",
+          "url": "https://x.com/popdex_/status/2097235875113681356",
+          "date": "2026-09-08"
+        },
+        {
+          "title": "DefiLlama - PopDEX（MegaPop の賞金プールの扱い、BlockSec 監査へのリンク）",
+          "url": "https://github.com/DefiLlama/dimension-adapters/pull/9768",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "BlockSec - PopDEX bridge audit",
+          "url": "https://popdex.xyz/docs/assets/files/blocksec-bridge-audit-20260703-c91e2e7c21f19ba02c0e83ae598b447c.pdf",
+          "date": "2026-07-03"
+        },
+        {
+          "title": "Yahoo Finance - PopDEX Raises $30 Million",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/popdex-raises-30-million-vcs-132129181.html",
+          "date": "2026-05-23"
+        }
+      ],
+      "updatedAt": "2026-10-16",
+      "airdrop": {
+        "basis": "エアドロップの予定はなく、還元は取引大会の USDT と MegaPop で行われるため、受取見込みは試算しない。"
+      }
     }
   ]
 }

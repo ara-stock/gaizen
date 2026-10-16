@@ -811,5 +811,48 @@
     "links": {
       "inviteNote": "Connect your wallet in HyperLink's official app (app.hyperlink.xyz) and enter this code to sign up — no need to use the referral link below. The code works for the first 10 people only and may already be full. Signing up with it pays the author a referral reward, and you get 10% of your HyperLink fees back for 90 days."
     }
+  },
+  "popdex": {
+    "chain": "Own L1 (USDT margin)",
+    "statusNote": "I don't expect an airdrop here. What I'm after is the trading competitions that pay USDT straight back. Instead of waiting to see what a points program might be worth later, the reward comes back right away. The order books are reasonably deep, too.",
+    "points": {
+      "status": "No points program and no governance token. Instead it runs time-boxed trading competitions (Trader & Contributor Rewards and others) paid in USDT — for example, trading from 2026-09-06 to 09-20 counted toward one round (official X). A fee-funded prize pool called \"MegaPop\" is expected next, but how it works has not been published.",
+      "name": "Trading competitions (paid in USDT)"
+    },
+    "phaseNote": "No token, points or airdrop announced. The stated aim is to return protocol value to users (\"100% value return to real contributors\"), through USDT trading competitions and MegaPop.",
+    "audience": {
+      "users": "About $63.5M of 24h BTC perp volume, BTC spread about 0.24 bps (2026-10-16, public API). About $290K in fees over the last 30 days (DefiLlama)",
+      "usersSource": "PopDEX public API (fetched by the author), DefiLlama"
+    },
+    "funding": {
+      "rounds": "$30M strategic seed in May 2026, led by Foresight Ventures (other investors undisclosed)."
+    },
+    "team": {
+      "base": "Unverified",
+      "background": "A perp DEX that started in invite-only testing. Besides crypto, it lists many RWA futures — stock indices, single stocks, metals and more. Prices come from its own oracle: a weighted median of spot prices on Binance, OKX, Bybit, Coinbase and Bitget."
+    },
+    "flags": [
+      "Fees on the starting tier (VIP 0) are 0.010% maker and 0.032% taker, settled in USDT (official docs). The tier rises with 14-day volume.",
+      "How each competition is allocated depends on its announcement, and there is no guarantee they continue. How MegaPop works has not been published.",
+      "A referral code can be bound only once and cannot be changed. The referrer decides how much of their share (up to 20%) goes back to the person they invite. The author's code is set to 0% for invitees (the full 20% goes to the author).",
+      "The team is not public. Only the bridge has a published audit (BlockSec, 2026-07-03).",
+      "Cross margin only, and withdrawals have a challenge period (official docs as of September 2026)."
+    ],
+    "links": {
+      "inviteNote": "After signing up (or after your first deposit) in the PopDEX app, you can enter this code on the Referral page — no need to use the referral link below. Binding is one-time and cannot be changed. This code gives no fee discount; 20% of your fees go to the author as a referral reward."
+    },
+    "sources": [
+      null,
+      null,
+      null,
+      {
+        "title": "DefiLlama - PopDEX (how the MegaPop prize pool is counted, link to the BlockSec audit)"
+      },
+      null,
+      null
+    ],
+    "airdrop": {
+      "basis": "No airdrop is planned; rewards come from USDT trading competitions and MegaPop, so no payout estimate is made."
+    }
   }
 }
