@@ -88,7 +88,7 @@
         "holders90UsdM": 142.29,
         "asOf": "2026-09-28"
       },
-      "rank": 9
+      "rank": 8
     },
     {
       "slug": "trade-xyz",
@@ -166,7 +166,7 @@
         "basis": "トークンは未発表。FDV $1.5Bは2026年8月の調達の噂にあった評価額、配分10%は仮置き。ポイントがないため個人の受取額は試算できない。"
       },
       "priority": 2,
-      "rank": 8
+      "rank": 7
     },
     {
       "slug": "entropy",
@@ -250,7 +250,7 @@
         "basis": "トークンは未発表。FDV $100Mはシード$14Mからの仮置き（評価額は非開示）、配分10%も仮置き。"
       },
       "priority": 1,
-      "rank": 3
+      "rank": 2
     },
     {
       "slug": "lighter",
@@ -358,7 +358,7 @@
         "holders90UsdM": 7.22,
         "asOf": "2026-09-28"
       },
-      "rank": 7
+      "rank": 6
     },
     {
       "slug": "extended",
@@ -453,7 +453,7 @@
       "logo": "/logos/extended.svg",
       "activity": "perps",
       "priority": 1,
-      "rank": 5
+      "rank": 4
     },
     {
       "slug": "qfex",
@@ -553,7 +553,7 @@
         "basis": "トークンは未発表。FDV $95Mはシード時の評価額（報道）、配分10%は仮置き。"
       },
       "priority": 2,
-      "rank": 6
+      "rank": 5
     },
     {
       "slug": "grvt",
@@ -655,8 +655,8 @@
       "name": "edgeX",
       "category": "Perp DEX",
       "chain": "StarkEx / Arc（Circle）",
-      "status": "active",
-      "statusNote": "おすすめではない。EDGEはTGE済みでエアドロップは終了しており、2026-09-16に始まったArcのイベントに参加しているだけ。",
+      "status": "done",
+      "statusNote": "今は利用していない。EDGE は TGE 済みでエアドロップも終わっている。",
       "token": {
         "launched": true,
         "ticker": "EDGE",
@@ -722,8 +722,8 @@
           "date": "2026-09"
         }
       ],
-      "updatedAt": "2026-09-20",
-      "phase": "early",
+      "updatedAt": "2026-10-16",
+      "phase": "ended",
       "phaseNote": "Arcメインネットは2026-09-16に公開。edgeXはArc上でFX（USD/JPYから）を含む150超の市場を開始した。Arc関連の報酬内容は一次情報で確認できていない。",
       "audience": {
         "xHandle": "edgeX_exchange",
@@ -741,20 +741,20 @@
       "name": "Variational (Omni)",
       "category": "Perp DEX",
       "chain": "Arbitrum",
-      "status": "watching",
-      "statusNote": "KYC・日本からの利用可否・APIキーの仕様を確認してから判断する。",
+      "status": "active",
+      "statusNote": "TGE が見えているからこそ触っている。期待値込みで1ポイント約$40と見積もっていて、それ以下のコストでポイントを取れるよう試行錯誤している。$VAR は第二の Hyperliquid になると思っている。",
       "token": {
         "launched": false,
         "ticker": "VAR",
-        "tgeExpectation": "2026年Q4見込み",
+        "tgeExpectation": "2026年Q4（公式）",
         "tgeTarget": "2026-12",
-        "tgeSourceType": "media"
+        "tgeSourceType": "official"
       },
       "points": {
         "exists": true,
         "name": "Omni Points",
-        "status": "2025-12-17開始、毎週金曜に配布。配布は遅くとも2026年Q3末までに終了すると公式ドキュメントに明記。",
-        "communityAllocation": "VAR供給の約50%をコミュニティへ（プロジェクト発表・報道ベース）"
+        "status": "2025-12-17開始、毎週金曜に配布。当初はQ3末で終了の予定だったが、大型の提携を理由に延長され、TGE（2026年Q4）まで毎週15万ポイントを配る（公式X、2026-09-24）。",
+        "communityAllocation": "供給の32%をポイントに応じてエアドロップ（TGE時に全量解放、未請求分は焼却）。エコシステム準備金18%、チーム・投資家50%（TGE後12か月ロック、その後3年以上で解放）（公式X）。"
       },
       "funding": {
         "totalUsdM": 61.8,
@@ -780,10 +780,16 @@
       },
       "flags": [
         "Omniが全取引の唯一のカウンターパーティになる構造（OLPモデル）で、構造上のカウンターパーティリスクがある。",
-        "日本からの利用条件は未確認。"
+        "チーム・投資家の配分が50%と大きい。TGE後12か月はロックされるが、その後3年以上かけて市場に出てくる。",
+        "財団に入る収益の100%で VAR を買い戻して焼却する方針（公式X）。具体的な仕組みはTGE前に発表予定。"
       ],
       "links": {
-        "site": "https://variational.io/"
+        "site": "https://variational.io/",
+        "referral": "https://omni.variational.io/?ref=OMNIKGC3OUBL",
+        "inviteCodes": [
+          "OMNIKGC3OUBL"
+        ],
+        "inviteNote": "Variational Omni（omni.variational.io）で登録するときに、この紹介コードを入力できます。下の紹介リンクを使わなくても同じです。紹介した人が得たポイントの10%が、紹介者に追加で付きます（公式ドキュメント）。"
       },
       "sources": [
         {
@@ -805,18 +811,23 @@
           "title": "Variational docs - Omni Points",
           "url": "https://docs.variational.io/omni/rewards/points",
           "date": "2026-09-20閲覧"
+        },
+        {
+          "title": "Variational on X - $VAR Tokenomics and TGE Timing",
+          "url": "https://x.com/variational_io/status/2102929439063765192",
+          "date": "2026-09-24"
         }
       ],
-      "updatedAt": "2026-09-20",
+      "updatedAt": "2026-10-16",
       "phase": "late",
-      "phaseNote": "ポイントの毎週配布は「遅くとも2026年Q3末まで」と公式ドキュメントに明記。TGE日は未発表。",
+      "phaseNote": "TGEは2026年Q4と公式に発表済みで、ポイント配布はTGEまで。TGE前に非公開ベータを終えて一般公開、取引APIの公開、買い戻しの詳細の発表が予定されている。",
       "airdrop": {
-        "sharePct": 50,
+        "sharePct": 32,
         "fdvUsdM": 610,
-        "basis": "配分50%はチーム発言として報じられたもの。FDV $610Mは2026年5月のプレマーケット価格の報道値。総ポイント数は未公表のため、コミュニティ推定（約900万〜1,000万）の中間値950万を仮置き。",
-        "totalPoints": 9500000,
-        "totalPointsAsOf": "2026-09末の終了時見込み",
-        "estimated": true
+        "estimated": true,
+        "totalPoints": 9950000,
+        "totalPointsAsOf": "2026-10-16（推定）",
+        "basis": "配分32%は公式発表（2026-09-24）。FDV $610Mは2026年5月のプレマーケット価格の報道値で仮置き。総ポイント数は未公表のため、9月末時点のコミュニティ推定約950万に、その後の毎週15万×3週を足した推定値。 この前提だと1ポイントあたり約$20。筆者は期待値込みで約$40（FDV 約$12.4億に相当）と見ている。"
       },
       "audience": {
         "xHandle": "variational_io",
@@ -825,7 +836,7 @@
       },
       "logo": "/logos/variational.png",
       "activity": "perps",
-      "priority": 2
+      "priority": 1
     },
     {
       "slug": "nado",
@@ -1794,7 +1805,7 @@
         }
       ],
       "updatedAt": "2026-09-22",
-      "rank": 4
+      "rank": 3
     },
     {
       "slug": "jumper",
@@ -1802,10 +1813,10 @@
       "logo": "/logos/jumper.webp",
       "category": "Perp アグリゲーター",
       "activity": "perps",
-      "priority": 2,
+      "priority": 3,
       "chain": "Perp DEX 集約",
-      "status": "active",
-      "statusNote": "ウェイトリストに登録済み。ただし使うかどうかは未定で、優先度は低い。",
+      "status": "watching",
+      "statusNote": "今は使っておらず、おすすめもしない。",
       "token": {
         "launched": false,
         "ticker": "JUMP",
@@ -1863,7 +1874,7 @@
           "url": "https://www.coingecko.com/learn/what-is-jumper-potential-jumper-airdrop"
         }
       ],
-      "updatedAt": "2026-10-03"
+      "updatedAt": "2026-10-16"
     },
     {
       "slug": "hype",
@@ -2210,10 +2221,10 @@
       "logo": "/logos/hyperlink.png",
       "category": "Perp DEX（プライムブローカー）",
       "activity": "perps",
-      "priority": 2,
+      "priority": 3,
       "chain": "Hyperliquid（共有コントラクト経由）",
-      "status": "active",
-      "statusNote": "Hyperliquid の取引の一部を HyperLink 経由で行っている。",
+      "status": "watching",
+      "statusNote": "今は使っておらず、おすすめもしない。",
       "token": {
         "launched": false,
         "tgeSourceType": "none"
@@ -2295,8 +2306,7 @@
           "date": "2026-10-05閲覧"
         }
       ],
-      "updatedAt": "2026-10-05",
-      "rank": 2
+      "updatedAt": "2026-10-16"
     },
     {
       "slug": "popdex",

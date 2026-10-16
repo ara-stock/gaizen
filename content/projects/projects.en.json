@@ -211,7 +211,7 @@
   },
   "edgex": {
     "chain": "StarkEx / Arc (Circle)",
-    "statusNote": "Not a recommendation. EDGE has had its TGE and the airdrop is over; I'm only taking part in the Arc event that started 2026-09-16.",
+    "statusNote": "I'm not using it now. EDGE has had its TGE and the airdrop is over.",
     "points": {
       "name": "Arc trading program",
       "status": "Started with the Arc mainnet launch on 2026-09-16. Rewards and allocation unverified. The old points program ended at the 2026-03-31 TGE.",
@@ -239,13 +239,13 @@
     }
   },
   "variational": {
-    "statusNote": "I'll decide after checking KYC, access from Japan and how API keys work.",
+    "statusNote": "I'm trading it precisely because the TGE is in sight. Including expected upside, I value a point at about $40, and I'm experimenting to earn points for less than that. I think $VAR can be the next Hyperliquid.",
     "token": {
-      "tgeExpectation": "Expected 2026 Q4"
+      "tgeExpectation": "2026 Q4 (official)"
     },
     "points": {
-      "status": "Started 2025-12-17, distributed every Friday. The official docs say distribution ends by the end of 2026 Q3 at the latest.",
-      "communityAllocation": "About 50% of VAR supply to the community (project statements and press reports)."
+      "status": "Started 2025-12-17, distributed every Friday. It was meant to end at the end of Q3, but was extended because of major strategic partnerships: 150K points a week until the TGE in 2026 Q4 (official X, 2026-09-24).",
+      "communityAllocation": "32% of supply airdropped in proportion to points (fully unlocked at TGE; unclaimed tokens are burned). Ecosystem reserve 18%, team and investors 50% (locked 12 months after TGE, then unlocking over at least 3 years) (official X)."
     },
     "funding": {
       "rounds": "$10.3M seed in October 2024 co-led by Bain Capital Crypto and Peak XV, a $1.5M strategic round, and a $50M Series A on 2026-05-20 led by Dragonfly."
@@ -260,12 +260,23 @@
     },
     "flags": [
       "Omni is the sole counterparty to every trade (the OLP model), which is a structural counterparty risk.",
-      "Conditions for users in Japan are unverified."
+      "Team and investors hold a large 50%. It is locked for 12 months after TGE, then reaches the market over at least 3 years.",
+      "100% of revenue going to the treasury is intended to buy back and burn VAR (official X). Details are due before TGE."
     ],
-    "phaseNote": "The official docs say weekly points end \"by the end of 2026 Q3 at the latest\". No TGE date announced.",
+    "phaseNote": "The TGE is officially set for 2026 Q4, and points run until then. Before TGE the team plans to end the private beta and open to the public, publish a trading API, and share buyback details.",
     "airdrop": {
-      "basis": "The 50% share was reported as a team statement. The $610M FDV is the reported pre-market price in May 2026. Total points are not published, so the midpoint of community estimates (about 9–10M), 9.5M, is a placeholder.",
-      "totalPointsAsOf": "projected at the end of September 2026"
+      "basis": "The 32% share is official (2026-09-24). The $610M FDV is the reported pre-market price in May 2026, used as a placeholder. Total points are not published; the estimate is the community figure of about 9.5M at the end of September plus 150K a week for 3 weeks. On these assumptions a point is worth about $20. The author values it at about $40 including expected upside (equivalent to an FDV of about $1.24B).",
+      "totalPointsAsOf": "2026-10-16 (estimate)"
+    },
+    "sources": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "links": {
+      "inviteNote": "You can enter this referral code when signing up on Variational Omni (omni.variational.io) — no need to use the referral link below. The referrer gets an extra 10% of the points the people they refer earn (official docs)."
     }
   },
   "nado": {
@@ -608,7 +619,7 @@
   "jumper": {
     "category": "Perp aggregator",
     "chain": "Perp DEX aggregation",
-    "statusNote": "I'm on the waitlist, but I haven't decided whether to use it, and it's a low priority.",
+    "statusNote": "I'm not using it now and don't recommend it.",
     "token": {
       "tgeExpectation": "Sale planned"
     },
@@ -776,7 +787,7 @@
   "hyperlink": {
     "category": "Perp DEX (prime broker)",
     "chain": "Hyperliquid (via a shared contract)",
-    "statusNote": "I route part of my Hyperliquid trading through HyperLink.",
+    "statusNote": "I'm not using it now and don't recommend it.",
     "points": {
       "status": "The official docs mention no points or airdrop program (checked 2026-10-05). Linking a referral code gives 10% cashback on HyperLink fees for 90 days."
     },
