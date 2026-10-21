@@ -825,7 +825,6 @@
   },
   "popdex": {
     "chain": "Own L1 (USDT margin)",
-    "statusNote": "I don't expect an airdrop here. What I'm after is the trading competitions that pay USDT straight back. Instead of waiting to see what a points program might be worth later, the reward comes back right away. The order books are reasonably deep, too.",
     "points": {
       "status": "No points program and no governance token. Instead it runs time-boxed trading competitions (Trader & Contributor Rewards and others) paid in USDT — for example, trading from 2026-09-06 to 09-20 counted toward one round (official X). A fee-funded prize pool called \"MegaPop\" is expected next, but how it works has not been published.",
       "name": "Trading competitions (paid in USDT)"

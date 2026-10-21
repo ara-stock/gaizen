@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16",
+  "updatedAt": "2026-10-20",
   "projects": [
     {
       "slug": "hyperliquid",
@@ -88,7 +88,7 @@
         "holders90UsdM": 142.29,
         "asOf": "2026-09-28"
       },
-      "rank": 7
+      "rank": 6
     },
     {
       "slug": "trade-xyz",
@@ -166,7 +166,7 @@
         "basis": "トークンは未発表。FDV $1.5Bは2026年8月の調達の噂にあった評価額、配分10%は仮置き。ポイントがないため個人の受取額は試算できない。"
       },
       "priority": 2,
-      "rank": 8
+      "rank": 7
     },
     {
       "slug": "entropy",
@@ -250,7 +250,7 @@
         "basis": "トークンは未発表。FDV $100Mはシード$14Mからの仮置き（評価額は非開示）、配分10%も仮置き。"
       },
       "priority": 2,
-      "rank": 4
+      "rank": 3
     },
     {
       "slug": "lighter",
@@ -358,7 +358,7 @@
         "holders90UsdM": 7.22,
         "asOf": "2026-09-28"
       },
-      "rank": 6
+      "rank": 5
     },
     {
       "slug": "extended",
@@ -453,7 +453,7 @@
       "logo": "/logos/extended.svg",
       "activity": "perps",
       "priority": 2,
-      "rank": 10
+      "rank": 9
     },
     {
       "slug": "qfex",
@@ -553,7 +553,7 @@
         "basis": "トークンは未発表。FDV $95Mはシード時の評価額（報道）、配分10%は仮置き。"
       },
       "priority": 2,
-      "rank": 9
+      "rank": 8
     },
     {
       "slug": "grvt",
@@ -1806,7 +1806,7 @@
         }
       ],
       "updatedAt": "2026-09-22",
-      "rank": 5
+      "rank": 4
     },
     {
       "slug": "jumper",
@@ -2315,10 +2315,9 @@
       "logo": "/logos/popdex.png",
       "category": "Perp DEX",
       "activity": "perps",
-      "priority": 1,
+      "priority": 3,
       "chain": "独自L1（USDT 証拠金）",
-      "status": "active",
-      "statusNote": "エアドロップはないと考えていて、目当てはコンペティション（取引大会）で USDT が直接戻ってくること。ポイント制度で後から何かもらえるのを待つのではなく、その場で還元されるのが良いところ。板の厚みもある程度ある。",
+      "status": "done",
       "token": {
         "launched": false,
         "tgeSourceType": "none"
@@ -2398,11 +2397,10 @@
           "date": "2026-05-23"
         }
       ],
-      "updatedAt": "2026-10-16",
+      "updatedAt": "2026-10-20",
       "airdrop": {
         "basis": "エアドロップの予定はなく、還元は取引大会の USDT と MegaPop で行われるため、受取見込みは試算しない。"
-      },
-      "rank": 3
+      }
     }
   ]
 }
