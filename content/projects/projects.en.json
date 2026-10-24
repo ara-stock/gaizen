@@ -864,5 +864,53 @@
     "airdrop": {
       "basis": "No airdrop is planned; rewards come from USDT trading competitions and MegaPop, so no payout estimate is made."
     }
+  },
+  "superform": {
+    "name": "Superform (SPCX SuperVault)",
+    "category": "Yield (vault)",
+    "statusNote": "I deposit SPCXc (a SpaceX stock token) in the SPCX SuperVault on Base.",
+    "staking": {
+      "apy": "About 20% a year (variable)",
+      "reward": "Paid in USDC and sUP (a receipt for deposited UP, Superform's token). The base yield is 0%; it is all rewards",
+      "note": "The yield is DefiLlama's figure on 2026-10-25; it was about 42% in early October. SPCXc is Coinbase's SpaceX stock token on Base (a 1:1-backed B20 token for non-US users, launched 2026-09-04). It carries no shareholder rights. This vault holds only about $220K, and its yield moves a lot with the rewards on offer."
+    },
+    "points": {
+      "status": "Not a points play. The yield comes from USDC and UP rewards."
+    },
+    "phaseNote": "UP is listed after the December 2025 token sale. This vault's yield is paid as rewards, so it falls when rewards fall.",
+    "audience": {
+      "users": "About 180K active users (December 2025, official announcement)",
+      "usersSource": "Superform press release (Chainwire, 2025-12-18)"
+    },
+    "funding": {
+      "rounds": "$6.5M seed in November 2022 and a $3M strategic round led by VanEck Ventures on 2024-12-12 ($9.5M in total). A $3M UP public sale on 2025-12-18 ($4.7M committed, on cookie.fun / Legion). The company puts the total at $11.5M including the token sale."
+    },
+    "team": {
+      "founders": [
+        "Vikram Arun (co-founder, CEO)"
+      ],
+      "base": "Unverified",
+      "background": "Builds vaults (SuperVaults) that route deposits across many DeFi yield sources automatically. SuperVaults v2 combines variable-rate lending with fixed-term Pendle positions."
+    },
+    "valuation": {
+      "note": "The figures are for UP, the reward token, not for the SPCXc you deposit. Protocol revenue is small (about $32K over the last 365 days), so the multiple against FDV is very high."
+    },
+    "flags": [
+      "All of the yield is rewards (USDC and sUP); the base yield is 0%. If rewards drop, the yield drops right away.",
+      "Part of the reward is paid in UP, so a lower UP price means a lower real yield.",
+      "SPCXc is a stock token issued by Coinbase and carries no shareholder rights (votes, dividends). There is issuer credit risk, and US users cannot use it.",
+      "The vault holds only about $220K, so withdrawals arriving together could run into thin liquidity.",
+      "Smart-contract risk applies. SuperVaults were audited by yAudit and Spearbit-affiliated researchers (official announcement)."
+    ],
+    "links": {
+      "inviteNote": "You can enter this referral code when signing up in the Superform app (app.superform.xyz), or sign up through the invite page (join.superform.xyz/3Q33YW) — no need to use the referral link below. The author may earn a referral reward when you sign up this way."
+    },
+    "sources": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
   }
 }

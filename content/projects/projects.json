@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-25",
   "projects": [
     {
       "slug": "hyperliquid",
@@ -2401,6 +2401,120 @@
       "airdrop": {
         "basis": "エアドロップの予定はなく、還元は取引大会の USDT と MegaPop で行われるため、受取見込みは試算しない。"
       }
+    },
+    {
+      "slug": "superform",
+      "name": "Superform（SPCX SuperVault）",
+      "logo": "/logos/superform.png",
+      "category": "利回り（Vault）",
+      "activity": "staking",
+      "priority": 2,
+      "chain": "Base",
+      "status": "active",
+      "statusNote": "Base の SPCX SuperVault に SPCXc（SpaceX の株のトークン）を預けている。",
+      "staking": {
+        "token": "SPCXc",
+        "apy": "年率約20%（変動）",
+        "reward": "USDC と sUP（Superform のトークン UP を預けた証書）で受け取る。基本の利回りは0%で、全部が報酬分",
+        "note": "利回りは2026-10-25時点の DefiLlama の値で、10月上旬は約42%だった。SPCXc は Coinbase が Base で出している SpaceX の株のトークン（1:1 で裏付けされた B20 形式、米国外のユーザー向け、2026-09-04 開始）。株主としての権利はない。この Vault の預かり残高は約$22万と小さく、利回りは配る報酬しだいで大きく動く。"
+      },
+      "token": {
+        "launched": true,
+        "ticker": "UP",
+        "tgeSourceType": "official"
+      },
+      "points": {
+        "exists": false,
+        "status": "ポイント制度の対象ではない。利回りは USDC と UP の報酬で付く。"
+      },
+      "phase": "none",
+      "phaseNote": "UP は2025年12月のトークンセール後に上場済み。この Vault の利回りは報酬で付けているため、報酬が減ると利回りも下がる。",
+      "audience": {
+        "xHandle": "superformxyz",
+        "xFollowers": 122833,
+        "asOf": "2026-10-25",
+        "users": "アクティブユーザー約18万（2025-12、公式発表）",
+        "usersSource": "Superform のプレスリリース（Chainwire、2025-12-18）"
+      },
+      "funding": {
+        "totalUsdM": 9.5,
+        "rounds": "2022年11月にシード$6.5M、2024-12-12に VanEck Ventures 主導の戦略ラウンド$3M（累計$9.5M）。2025-12-18に UP のパブリックセールで$3M（申し込みは$4.7M、cookie.fun・Legion）。公式はトークンセールを含めて累計$11.5Mと表記。",
+        "investors": [
+          "VanEck Ventures",
+          "Polychain Capital",
+          "Circle",
+          "BlockTower Capital",
+          "Maven11 Capital",
+          "CMT Digital",
+          "Amber Group",
+          "Arthur Hayes"
+        ]
+      },
+      "team": {
+        "founders": [
+          "Vikram Arun（共同創業者・CEO）"
+        ],
+        "doxxed": true,
+        "base": "未確認",
+        "baseKind": "unverified",
+        "background": "いろいろな DeFi の利回り先をまとめて、自動で運用する Vault（SuperVaults）を出している。SuperVaults v2 は変動金利の貸し出しと Pendle の固定期間の運用を組み合わせる。"
+      },
+      "valuation": {
+        "coingeckoId": "superform",
+        "defillamaSlug": "superform",
+        "note": "表示しているのは報酬で配られる UP トークンの評価額で、預けている SPCXc のものではない。プロトコルの収益は直近365日で約$3.2万と小さく、FDV に対して非常に高い倍率。",
+        "priceUsd": 0.096359,
+        "marketCapUsdM": 23.16,
+        "fdvUsdM": 96.22,
+        "revenue365UsdM": 0.0322,
+        "revenue90UsdM": 0.00566,
+        "holders365UsdM": 0.0129,
+        "holders90UsdM": 0.0058,
+        "asOf": "2026-10-25"
+      },
+      "flags": [
+        "利回りの全部が報酬（USDC と sUP）で、基本の利回りは0%。報酬が減れば利回りもすぐ下がる。",
+        "報酬の一部は UP で配られるので、UP の価格が下がると実際の利回りも下がる。",
+        "SPCXc は Coinbase が発行する株のトークンで、株主としての権利（議決権・配当など）はない。発行元への信用リスクがある。米国のユーザーは使えない。",
+        "Vault の預かり残高が約$22万と小さく、引き出しが重なると流動性が足りない可能性がある。",
+        "スマートコントラクトのリスクがある。SuperVaults の監査は yAudit と Spearbit 系の研究者（公式発表）。"
+      ],
+      "links": {
+        "site": "https://www.superform.xyz/",
+        "referral": "https://app.superform.xyz/?ref=3Q33YW",
+        "inviteCodes": [
+          "3Q33YW"
+        ],
+        "inviteNote": "Superform のアプリ（app.superform.xyz）で登録するときに、この紹介コードを入力できます。招待ページ（join.superform.xyz/3Q33YW）からも登録できます。下の紹介リンクを使わなくても同じです。紹介経由の登録では筆者に紹介報酬が入る場合があります。"
+      },
+      "sources": [
+        {
+          "title": "Chainwire - Superform Raises $3M, Led by VanEck Ventures",
+          "url": "https://chainwire.org/2024/12/12/superform-raises-3m-to-launch-supervaults-intelligent-onchain-high-yield-products-led-by-vaneck-ventures/",
+          "date": "2024-12-12"
+        },
+        {
+          "title": "Chainwire - Superform Closes Token Sale with $4.7M in Commitments",
+          "url": "https://chainwire.org/2025/12/18/superform-closes-token-sale-with-4-7m-in-commitments-as-supervaults-v2-launches/",
+          "date": "2025-12-18"
+        },
+        {
+          "title": "DefiLlama Yields - Superform SUPERSPCX (Base)",
+          "url": "https://defillama.com/yields/pool/2641f5c8-27d0-5d42-aa69-69bdc760a874",
+          "date": "2026-10-25閲覧"
+        },
+        {
+          "title": "Crypto Briefing - Coinbase's SPCXc tokenized SpaceX stock",
+          "url": "https://cryptobriefing.com/coinbase-spcxc-tokenized-spacex-dex-volume/",
+          "date": "2026-09"
+        },
+        {
+          "title": "Portals - DeFi TVL October 2026 Week 1",
+          "url": "https://blog.portals.fi/defi-tvl-october-2026-week-1/",
+          "date": "2026-10"
+        }
+      ],
+      "updatedAt": "2026-10-25"
     }
   ]
 }

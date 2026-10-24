@@ -27,6 +27,8 @@ export const POINTS_STORAGE_KEY = 'gaizen-tracker-points'
 export const STATUS_STORAGE_KEY = 'gaizen-tracker-status'
 
 export function formatUsdM(valueUsdM: number): string {
+  // Below $1M the M scale rounds to "$0M", so small figures are shown in thousands.
+  if (valueUsdM > 0 && valueUsdM < 1) return valueUsdM < 0.001 ? '<$1K' : `$${Math.round(valueUsdM * 1000)}K`
   if (valueUsdM >= 1000) return `$${(valueUsdM / 1000).toFixed(valueUsdM >= 10000 ? 0 : 1)}B`
   return `$${valueUsdM >= 100 ? Math.round(valueUsdM) : Number(valueUsdM.toFixed(1))}M`
 }
