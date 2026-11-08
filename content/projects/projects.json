@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-11-08",
   "projects": [
     {
       "slug": "hyperliquid",
@@ -1128,8 +1128,8 @@
       "name": "STONK（StonkFun）",
       "category": "DeFi",
       "chain": "Solana",
-      "status": "active",
-      "statusNote": "TGE済みのミーム系インフラとしてSTONKをホールドしている。",
+      "status": "done",
+      "statusNote": "現在は保有していない。",
       "token": {
         "launched": true,
         "ticker": "STONK",
@@ -1181,7 +1181,7 @@
           "date": "2026-09-20"
         }
       ],
-      "updatedAt": "2026-09-20",
+      "updatedAt": "2026-11-08",
       "logo": "/logos/stonk.png",
       "activity": "hold",
       "priority": 2,
